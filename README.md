@@ -7,8 +7,10 @@ Current status and tasks
 ----------------
 
 * **[DONE]** Create this repo
-* Research import scripts
-* Perform Bulk import of SparkFun-Eagle-Libraries
+* **[DONE]** Research import scripts
+  * There is only one written by [lachlanA](https://github.com/lachlanA)
+* **[DONE]** Perform Bulk import of SparkFun-Eagle-Libraries
+  * This may need to be repeated several times during tool chain development
 * Create set of accepted footprints
 * Create equivilent libraries in this repo
 * Link libraries to footprints
