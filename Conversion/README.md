@@ -34,7 +34,7 @@ Do this by "saving as" within kicad
 
 The descriptions are not formatted as well but do show up on the part browser.  The product IDs could be added as keywords (and would be indexed for searching).
 
-![alt text](https://raw.githubusercontent.com/sparkfun/SparkFun-KiCad-libraries/master/Conversion/description_tag_example.jpg "Example description")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/description_tag_example.jpg?raw=true "Example description")
 
 File format:
 

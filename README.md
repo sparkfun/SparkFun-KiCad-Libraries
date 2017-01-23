@@ -18,7 +18,7 @@ Current status and tasks
 Contents
 -------------------
 
-* /Conversion -- Information and scripts having to do with converting eagle components to KiCad (See contained README.md)
+* [/Conversion](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/master/Conversion) -- Information and scripts having to do with converting eagle components to KiCad (See contained README.md)
 * README.md -- This file
 
 Resource
