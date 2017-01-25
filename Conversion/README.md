@@ -10,7 +10,7 @@ Tasks:
 * Convert .mod to new format: .pretty (.kicad_mod)
 * Determine where the descriptions and prod IDs should live
 
-**Convert bulk of libraries/boards to Kicad**
+### Convert bulk of libraries/boards to Kicad
 
 Use this script for libraries
 
@@ -22,17 +22,17 @@ https://github.com/lachlanA/eagle-to-kicad
 
 **Note:** This is very hacky.  It would be best to establish the proper libraries first, then link to those rather than have the script spit out specific libs for each board.  This insures the resultant file is consistent with the KiCad libraries.
 
-**Combine footprints and have single source for common footprints**
+### Combine footprints and have single source for common footprints
 
 A tool for moving symbols and footprints between .mod and .lib files:
 
 http://www.compuphase.com/electronics/kicadlibrarian_en.htm
 
-**Convert .mod to new format: .pretty (.kicad_mod)**
+### Convert .mod to new format: .pretty (.kicad_mod)
 
 Do this by "saving as" within kicad
 
-**Determine where the descriptions and prod IDs should live**
+### Determine where the descriptions and prod IDs should live
 
 The descriptions are not formatted as well but do show up on the part browser.  The product IDs could be added as keywords (and would be indexed for searching).
 
@@ -42,10 +42,14 @@ A better location for the PROD_IDs would be as a field of the components (probab
 
 ![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/fieldsView.jpg?raw=true "Example description")
 
-The BOM generation script will need to be adjusted to output the extra fields in a useful way.
+With a special BOM plugin, the output CSV contains the extra fields:
+
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/generatedBOM.jpg?raw=true "Example description")
 
 File format:
 
 https://en.wikibooks.org/wiki/Kicad/file_formats#Schematic_Libraries_Files_Format
+
+------
 
 *the hardest part of any task is starting* 
