@@ -1,13 +1,27 @@
 import os
 from lxml import etree
 from lxml import objectify
+import sys
 
-myFileName = "C:\github\SparkFun-Eagle-Libraries\SparkFun-IC-Conversion.lbr"
+print"" # print a new line
 
-statinfo = os.stat(myFileName)
+numArgs = len(sys.argv)
+if numArgs < 2:
+	#Print help
+	print "Not enough arguments"
+	print "Example: Python file.py C:\github\SparkFun-Eagle-Libraries\SparkFun-IC-Conversion.lbr"
+	exit()
 
-myFile = open(myFileName, "r")
-#print myFile.read(statinfo.st_size)
+myFileName = sys.argv[1]
+
+if os.path.isfile(myFileName) == True:
+	statinfo = os.stat(myFileName)
+	myFile = open(myFileName, "r")
+else:
+	print "Invalid file name"
+	exit()
+	
+	#print myFile.read(statinfo.st_size)
 
 #root = objectify.parse(myFileName)
 root = objectify.fromstring(myFile.read(statinfo.st_size))
