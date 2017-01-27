@@ -34,10 +34,28 @@ print root.drawing.library.devicesets.deviceset[0].devices.device.technologies.t
 #print root.drawing.library.devicesets.deviceset[0].devices.device.technologies.technology.attrib[2]
 
 print ""
+
+# make a 2 dimentional array of "name" and "Prod ID"
+listNames = []
+listProdIDs = []
+listTemp = []
+
 for i in range(0, 100):
-	try: root.drawing.library.devicesets.deviceset[i]
-	except: break
-	print root.drawing.library.devicesets.deviceset[i].attrib
+	try:
+		root.drawing.library.devicesets.deviceset[i]
+	except:
+		break
+	else:
+		print root.drawing.library.devicesets.deviceset[i].attrib
+		del listTemp[:]
+		listTemp.extend(root.drawing.library.devicesets.deviceset[i].values())
+		if len(listTemp) > 0:
+			listNames.extend(" ")
+			listNames[len(listNames) - 1] = listTemp[0]
+		print root.drawing.library.devicesets.deviceset[i].devices.device.technologies.technology.attribute.attrib
+
+# print that array
+print listNames
 
 myFile.close()
 print "File IO complete"
