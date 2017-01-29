@@ -9,13 +9,13 @@ This is the evolving breakdown of tasks required to transfer the full set of spa
 
 * Convert bulk of libraries to Kicad *Manual operation*
   * Use "Out put new part for every foot print type" in lachlanA's ULP
-* Load and save-as for all .lib files in order to produce .dcm files *Manual operation*
-* Use custom script to (for each Eagle .lbr):
-  * Detag and copy descriptions to .dcm files
-  * Add fields for PROD_ID for each KiCad part
-  * Add PROD_ID:XXX-00000 keyword for each part
-  * Scrub errant footprint filters by reference Footprint field
-  * Report statistics to validate script operation
+* Use .bat file to run script for all libraries (check paths within)
+  * Use custom script to (for each Eagle .lbr):
+    * Detag and copy descriptions to .dcm files
+    * Add fields for PROD_ID for each KiCad part
+    * Add PROD_ID:XXX-00000 keyword for each part
+    * Scrub errant footprint filters by reference Footprint field
+    * Report statistics to validate script operation
 * Load and save-as for all .mod files to convert to .pretty format. *Manual operation*
 * Combine all .mod files to a single .pretty folder. *Manual operation*
   * There will be duplicate file names (should be identical)

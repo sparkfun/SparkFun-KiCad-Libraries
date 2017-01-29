@@ -3,20 +3,6 @@ SparkFun Electronics KiCad Libraries
 
 This repository is to contain a KiCad conversion of the "post-DFM" cleanup of the SparkFun-Eagle-Libraries.
 
-Current status and tasks
-----------------
-
-* **[DONE]** Create this repo
-* **[DONE]** Research import scripts
-  * There is only one written by [lachlanA](https://github.com/lachlanA)
-* **[DONE]** Perform Bulk import of SparkFun-Eagle-Libraries
-  * This may need to be repeated several times during tool chain development
-* Create set of accepted footprints
-* Create equivilent libraries in this repo
-* Link libraries to footprints
-* Check documentation is OK
-* Consider 3D models.
-
 Contents
 -------------------
 
@@ -26,6 +12,22 @@ Contents
 * README.md -- This file
 * *Library Files*
 
+Versions
+-------------------
+* [V0.1](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/V_0.1) - Script generated with little manual touch-up work.  Parts have imported PROD_IDs and descriptions.  Footprints have been combined within a single folder.
+
+
+Example
+-------------------
+An example using SparkFun-Eagle-Libraries V0.1
+
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example1.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example2.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example3.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example4.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example5.jpg?raw=true "example")
+
+License
 -------------------
 
 This library is released under the [Creative Commons ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) license. 
