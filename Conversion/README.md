@@ -13,13 +13,18 @@ This is the evolving breakdown of tasks required to transfer the full set of spa
   * Use custom script to (for each Eagle .lbr):
     * Detag and copy descriptions to .dcm files
     * Add fields for PROD_ID for each KiCad part
-    * Add PROD_ID:XXX-00000 keyword for each part
+    * Add PROD_ID keyword for each part
+	  * If not found, apply XXX-00000 for prod id
     * Scrub errant footprint filters by reference Footprint field
     * Report statistics to validate script operation
 * Load and save-as for all .mod files to convert to .pretty format. *Manual operation*
 * Combine all .mod files to a single .pretty folder. *Manual operation*
   * There will be duplicate file names (should be identical)
   * There will be similar footprint .mod files (should be identical)
+* Weed out (about 3) spare F8 commands that were not saved correctly in the lib files (KiCad will tell you they are broken)
+* Convert line graphics of .kicad_mod files to poly graphics using other bat
+  * Output ends up in Export.pretty
+  * When satisfied, overwrite Sparkfun.pretty with contents of Export.pretty
 
 ## Notes that led to the above process
 

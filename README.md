@@ -15,6 +15,7 @@ Contents
 Versions
 -------------------
 * [V0.1](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/V_0.1) - Script generated with little manual touch-up work.  Parts have imported PROD_IDs and descriptions.  Footprints have been combined within a single folder.
+* [V0.2](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/V_0.2) - Unfilled footprints (for graphics) now converted by script.  All parts re-exported applying XXX-00000 if they don't have a product ID.
 
 
 Example

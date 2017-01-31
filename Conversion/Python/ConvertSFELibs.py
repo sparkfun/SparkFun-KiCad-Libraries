@@ -86,21 +86,31 @@ skippedParts = 0
 notFoundInKicadLib = 0
 dcmRecordsCreated = 0
 prodIDFieldsAdded = 0
+defaultProdIDsCreated = 0
+
+logFile.write( "Starting to parse the eagle library\n" )
 
 listNames = []
 for i in range(0, MAX_EAGLE_PARTS):
 	try:
+		logFile.write("\n") #start with newline
+		logFile.write( "Testing the devicset object\n" )
 		root.drawing.library.devicesets.deviceset[i]
 	except:
+		logFile.write( "\ndeviceset exception occured\n" )
 		break
 	else:
 		for j in range(0, MAX_EAGLE_PARTS):
 			try:
+				logFile.write("\n") #start with newline
+				logFile.write( "Testing the subdevice object\n" )
 				root.drawing.library.devicesets.deviceset[i].devices.device[j]
 			except:
+				logFile.write( "\nSub-device exception occured\n" )
 				break
 			else:
 				try:
+					logFile.write( "Attempting to get name... " )
 					partsInspected = partsInspected + 1
 					# Getting here means that a single valid device, or iterated device has been found
 					
@@ -112,11 +122,21 @@ for i in range(0, MAX_EAGLE_PARTS):
 					tempName = tempName.replace(")", '_')
 					tempName = tempName.replace("/", '_')
 					tempName = tempName.replace(",", '_')
+					logFile.write( "Name found, converted to: " + tempName + "\n")
 					
-					#		Get the PROD_ID			
-					tempProdID = ''.join(root.drawing.library.devicesets.deviceset[i].devices.device[j].technologies.technology.attribute.values()[1])
+					try:
+						logFile.write( "Attempting to get the product id... " )
+						#		Get the PROD_ID			
+						tempProdID = ''.join(root.drawing.library.devicesets.deviceset[i].devices.device[j].technologies.technology.attribute.values()[1])
+						logFile.write( "PROD_ID found: " + tempProdID + "\n")
+					except:
+						logFile.write( "PROD_ID not found, setting to XXX-00000\n")
+						tempProdID = "XXX-00000"
+						defaultProdIDsCreated = defaultProdIDsCreated + 1
+						
 					
 					#		Get the description
+					logFile.write( "Attempting to get the description... " )
 					tempDescription = root.drawing.library.devicesets.deviceset[i].description.text
 					tempDescription = ''.join([k if ord(k) != 181 else 'u' for k in tempDescription]) #replace mu symbol with u
 					tempDescription = ''.join([k if ord(k) < 128 else ' ' for k in tempDescription]) #replace other non-ascii with space
@@ -127,11 +147,13 @@ for i in range(0, MAX_EAGLE_PARTS):
 					tempDescription = tempDescription.replace("<p>", '')
 					tempDescription = tempDescription.replace("</p>", ' ')
 					tempDescription = tempDescription.replace("\n", '')
-
+					logFile.write( "Description found: " + tempDescription[:30] + "(...)\n")
+					
 					#		Print what you know
 					#print tempName, tempProdID#, tempDescription
 					validParts = validParts + 1
-					print tempDescription
+					#print tempDescription
+					
 					#***********HERE IS WHERE THE WORK WOULD BE DONE*************
 					# First, add the PROD_ID to the .lib file
 					# Seek out the correct part
@@ -176,6 +198,7 @@ for i in range(0, MAX_EAGLE_PARTS):
 				except:
 					skippedParts = skippedParts + 1
 					print "\nSkipped a part\n"
+					logFile.write( "\nParsing exception occured\n" )
 					print tempDescription
 					break
 
@@ -186,6 +209,7 @@ print "Number of parts skipped: ", skippedParts
 print "Number not found in KiCad libs: ", notFoundInKicadLib
 print "Number of DCM entries created: ", dcmRecordsCreated
 print "Number PROD_ID fields created: ", prodIDFieldsAdded
+print "Default PROD_ID used: ", defaultProdIDsCreated
 print ""
 
 logFile.write( "Number of parts inspected: " + str(partsInspected) + '\n' )
@@ -194,6 +218,7 @@ logFile.write( "Number of parts skipped: " + str(skippedParts) + '\n' )
 logFile.write( "Number not found in KiCad libs: " + str(notFoundInKicadLib) + '\n' )
 logFile.write( "Number of DCM entries created: " + str(dcmRecordsCreated) + '\n' )
 logFile.write( "Number PROD_ID fields created: " + str(prodIDFieldsAdded) + '\n' )
+logFile.write( "Default PROD_ID used: " + str(defaultProdIDsCreated) + '\n' )
 
 eagleLbrFile.close()
 
