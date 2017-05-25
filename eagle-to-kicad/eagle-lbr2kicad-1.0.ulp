@@ -1280,7 +1280,9 @@ void write_kikad_polygon( UL_GATE G, int transX, int transY, int gatePos )
         if( polyCoord[0] == ' ' )  // Remove leading space, not sure how it gets in the string !!
             polyCoord = strsub( polyCoord, 1);
 
-        printf("P %d %d %d %d %s %c N\n", countPolyCoord, gatePos, 1, 0, polyCoord, fillPattern);
+        int lineThickness = 10; //KiCad Library Convention
+		
+		printf("P %d %d %d %d %s %c N\n", countPolyCoord, gatePos, 1, lineThickness, polyCoord, fillPattern);
 
     }
 }
@@ -1426,7 +1428,10 @@ void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
 				int y1     = WIRE.y1 / g_Fact - transY;
 				int x2     = WIRE.x2 / g_Fact - transX;
 				int y2     = WIRE.y2 / g_Fact - transY;
-				printf("P 2 %d %d %d %d %d %d %d N\n", gatePos, 0, 0, x1, y1, x2, y2 );
+
+				int lineThickness = 10; //KiCad Library Convention
+		
+				printf("P 2 %d %d %d %d %d %d %d N\n", gatePos, 0, lineThickness, x1, y1, x2, y2 );
 			}
 		}
 	}
@@ -1749,7 +1754,8 @@ void write_kikad_pins( UL_GATE G, int  transX, int transY, int gatePos )
                 pinType = 'W';   // Change meaning for virtual supply to Input
 
 
-            printf("P 2 %d %d %d %d %d %d %d N\n", gatePos, 0, 0, posX, posY, x2, y2 );
+			int lineThickness = 10; //KiCad Library Convention 
+            printf("P 2 %d %d %d %d %d %d %d N\n", gatePos, 0, lineThickness, posX, posY, x2, y2 );
             printf( "X %s %s %d %d %d %c %d %d %d %d %c %s\n", charstr_replace( "!", "~", stripArfterAT(P.name, '@', deleteTextArfterATsysbolInPinName)), "~",
                     posX, posY,
                     pinLength, orient,
