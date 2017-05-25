@@ -1,0 +1,1279 @@
+#usage "en:<b>Export of libraries from a drawing.</b><p>\n"
+          "This can be used to make individual changes to components in a project. "
+          "Just load schematic, board or both, use this ULP to generate one or several libraries "
+          "containing the used components. Make your changes in the library/libraries and use the "
+          "UPDATE command to introduce the changes to schematic and/or board.<p>"
+          "See Help for further details.<p>",
+       "de:<b>Export von Bibliotheken aus einer Zeichnungsdatei.</b><p>\n"
+          "Damit können Sie individuelle Änderungen an Komponenten in einem Projekt machen. "
+          "Laden Sie dazu Schaltplan, Board oder beides, verwenden Sie dieses ULP, um eine oder mehrere Bibliotheken "
+          "mit den verwendeten Komponenten zu generieren. Machen Sie Ihre Änderungen in der/den Bibliothek(en) "
+          "und verwenden Sie den UPDATE-Befehl, um die Änderungen in Schaltplan und/oder Board zu bringen.<p>"
+          "Siehe Hilfe für weitere Details.<p>"
+          
+/**/              
+//-------------------------------------------------------------------------------- 
+// Change log.
+// Date:    Note:
+// 25-Feb-2017  Inc Version number. L. A, and comment out requires 6.0301
+// 23-Feb-2017  Inc Version number. L. A
+// 09-Oct-2015  Fix layers for limted version of Eagle L. A.
+// 25-Aug-2015  Fix space in Path problem, for windows by adding ' ' L. A.
+// 31-Jul-2015  Fix some spelling mistakes.  L. A.
+// 28-Jul-2015  Fix a number of problems where,  Pin and pads over lap, and add error reporting log file.
+// 13-Mar-2015  Add more help to info boxs.  L. A.
+// 10-Feb-2015  Change hooks to work the other conversion programs.  L. A.
+//  
+//#require 6.0301
+#include "eagle_to_kicad_include.inc"
+//
+string Version = "6.8";
+
+int TEMP_HOLD_FOR_OVER_LAPPING_PIN = 19180;  //  Temporary of the symbol editor when we have overlapping pins to deal with
+int TEMP_HOLD_FOR_OVER_LAPPING_SMD_PAD = 19180;  //  Temporary of the symbol editor when we have overlapping hole/smd pads to deal with
+
+
+
+string infoCombineLibNames  = "Combine all the separate Eagle libraries into one KiCad library<br>"+
+                              "This makes the conversion proccess easy and faster,<br>"+
+                              "<b>but means that you lose tack of which parts<br>"+
+                              "come from which Eagle library</b><br>";
+
+string infoLibNameToSymbolPackageDevice = "When combining libraries it is helpful to add the library name<br>"+
+                                          "to Part/Device/Footprint to reduce the name conflict if more than<br>"+
+                                          "one part has the same name from different libraries";
+
+// 
+//
+// Language:
+//----------
+// Please keep to alphabetic sorting for maintainability !
+string Dictionary[] = {
+  "en\v"
+  "de\v",
+  "Back\v"
+  "Zurück\v",
+  "Cancel\v"
+  "Abbrechen\v",
+  "Creation mode\v"
+  "Erzeugungsmodus\v",
+  "&Browse\v"
+  "&Durchsuchen\v",
+  "Export EAGLE libraries - Help\v"
+  "Export von EAGLE-Bibliotheken - Hilfe\v",
+  "Export EAGLE libraries from drawing\v"
+  "Export von EAGLE-Bibliotheken aus der Zeichnung\v",
+  "Export original libraries\v"
+  "Original-Bibliotheken exportieren\v",
+  "File \v"
+  "Datei \v",
+  "Help\v"
+  "Hilfe\v",
+  "Load\v"
+  "Laden\v",
+  "Merge to one library, \v"
+  "In eine Bibliothek integrieren, \v",
+  "original library names as prefix for symbol, package and device names\v"
+  "Original-Bibliotheksnamen als Präfix für Symbol-, Package- und Devicenamen verwenden\v",
+  "Path\v"
+  "Pfad\v",
+  "Please start from schematic or board editor!\v"
+  "Bitte starten Sie vom Schaltplan- oder Board-Editor!\v",
+  "Start\v"
+  "Start\v",
+  "unchanged symbol, package and device names\v"
+  "Symbol-, Package- und Devicenamen unverändert\v"
+};
+
+string DlgLang = language();
+if (DlgLang != "de") DlgLang = "en";
+int LangIdx = strstr(Dictionary[0], DlgLang) / 3;
+
+// Translate, based on dictionary
+string TR(string s) {
+  string t = lookup(Dictionary, s, LangIdx, '\v');
+  return t ? t : s;
+}
+//-----------------------------------------------------------------------------
+
+// Used in DrawText
+string AlignName[];
+AlignName[ALIGN_BOTTOM_LEFT]   = "BOTTOM LEFT";
+AlignName[ALIGN_BOTTOM_CENTER] = "BOTTOM CENTER";
+AlignName[ALIGN_BOTTOM_RIGHT]  = "BOTTOM RIGHT";
+AlignName[ALIGN_CENTER_LEFT]   = "CENTER LEFT";
+AlignName[ALIGN_CENTER]        = "CENTER CENTER";
+AlignName[ALIGN_CENTER_RIGHT]  = "CENTER RIGHT";
+AlignName[ALIGN_TOP_LEFT]      = "TOP LEFT";
+AlignName[ALIGN_TOP_CENTER]    = "TOP CENTER";
+AlignName[ALIGN_TOP_RIGHT]     = "TOP RIGHT";
+
+string Croute[];
+Croute[CONTACT_ROUTE_ALL] = "ALL";
+Croute[CONTACT_ROUTE_ANY] = "ANY";  // 2012-09-26
+
+// Used in DrawDimension
+string DimType[];
+DimType[DIMENSION_PARALLEL] = "PARALLEL";
+DimType[DIMENSION_HORIZONTAL] = "HORIZONTAL";
+DimType[DIMENSION_VERTICAL] = "VERTICAL";
+DimType[DIMENSION_RADIUS] = "RADIUS";
+DimType[DIMENSION_DIAMETER] = "DIAMETER";
+DimType[DIMENSION_ANGLE] = "ANGLE";
+DimType[DIMENSION_LEADER] = "LEADER";
+
+string UnitName[];
+UnitName[GRID_UNIT_MIC] = "MIC";
+UnitName[GRID_UNIT_MM] = "MM";
+UnitName[GRID_UNIT_MIL] = "MIL";
+UnitName[GRID_UNIT_INCH] = "INCH";
+
+string x[] = { " " };
+string CurrentLbrName   = "";
+string EditName = "";
+string h, cmd = "";
+string ScriptName, PureScriptName;
+string WorkPath;
+string Status = "";
+int    n;
+int    NameIndex = 0;
+int    Merge = 0;
+
+int    AddLibPrefix = 0;
+int    ConflictPartsCount = 0;
+//int    OverWrieNoWarning = 0;
+//string myULP_HOME = EAGLE_HOME + '/';
+string myULP_HOME = "";
+
+char   ascii127[]       =   { 181,  196,  214,  220,  223, 0 }; // not allowed character 2010-05-12
+// www: In 8859-1 these chars are { � ,Ä ,Ö, Ü, ß } and therefore actually allowed as object names.
+//      Change this if requested ! What's also allowed but deprecated is { ä, ö, ü }. Should be replaced
+//      by { Ä, Ö, Ü }. All other chars allowed for file names are allwoed also for object names.
+//      Lower case is automatically converted to upper case (except the umlauts).
+string Newascii127[]    =   { "U", "AE", "OE", "UE", "SS", "" }; // change to allowed character
+
+string HelpText[] = {
+  "The library export collects the devices or packages from a schematic or board and stores them back "
+  "into one or several libraries."
+  "<p>"
+  "By default all contained libraries are exported with their original name into the drawing path."
+  "Thus you can edit symbols and/or packages in these libraries and "
+  "use the UPDATE command to change all respective parts in schematic or board."
+  "<p>"
+  "Alternatively all objects can be merged into a single library with the name of the schematic or board."
+  "You can choose between using the names of the original libraries as prefix for package, symbol and device names or not."
+  "Not using these prefixes can lead to ambiguities and therefore is not recommended."
+  "<p>"
+  "The export path can be adjusted by 'Browse' to select a directory."
+  "If one of the library files to be created already exists, you will be prompted if "
+  "the existing file may be deleted."
+  ,
+  "Der Bibliotheks-Export sammelt Devices und Packages eines Schaltplans oder Boards und speichert "
+  "sie in eine oder mehrere Bibliotheken."
+  "<p>"
+  "Standardmässig werden alle enthaltenen Bibliotheken mit ihrem Orignialnamen in den Pfad der Zeichnungsdatei(en) "
+  "exportiert. So können Sie Symbole und/oder Packages editieren und mit dem UPDATE-Befehl alle entsprechenden "
+  "Bauteile in Schaltplan und Board aktualisieren."
+  "<p>"
+  "Alternativ können alle Objekte in eine einzige Bibliothek mit Schaltplan- bzw. Boardnamen integriert werden. "
+  "Sie können wählen, ob Sie die Namen der Original-Bibliotheken als Präfix für die Package-, Symbol- und Devicenamen verwenden "
+  "oder nicht. Diese Präfixe nicht zu verwenden kann zu Mehrdeutigkeit führen und wird daher nicht empfohlen."
+  "<p>"
+  "Der Export-Pfad kann mit 'Durchsuchen' eingestellt werden. "
+  "Wenn eines der Bibliotheken bereits existiert, werden Sie gefragt, ob die bestehende Datei gelöscht werden darf."
+};
+
+int PinX[]; //  space for checking over lapping x/y
+int PinY[];
+string Pname[]; // Name of the overlap
+int overLappingPinErrorCount = 0;
+int waring_count = 0;
+int error_count = 0;
+
+string logfile;     // log file
+string logfileName;
+
+string checkFor_bad = "";
+string checkFor_badPostion = "";
+
+//------------------------------------------------------
+// Replaces all occurrences of a character in a string with a string
+//------------------------------------------------------
+string charstr_replace(string search, string replace, string subject)
+{
+  int lastpos = 0;
+  int pos = 0;
+  string before;
+  string after;
+
+  for( pos = 0; pos < strlen(search); pos++ )
+  {
+    lastpos = 0;
+    while( (( lastpos = strchr( subject, search[ pos ], lastpos)) != -1 ))
+    {
+      before = strsub(subject, 0, lastpos);  //  get the before string
+      after = strsub(subject, lastpos + 1, strlen(subject) - lastpos );
+      subject = before + replace + after;
+      lastpos = strlen(before) + strlen( replace ); // 
+    }
+  }
+  return subject;
+}
+
+// Check for Bad Characters
+// Return int count of bad characters.
+// and set 
+// string checkFor_bad: list of bad characters"";
+// string checkFor_badPostion: postion of bad character;
+//
+int checkForBadCharstr( string search, string subject)
+{
+  int lastpos = 0;
+  int pos = 0;
+  int badcount = 0;
+
+  checkFor_badPostion = subject;
+  checkFor_bad = "";
+  
+  // space fill string
+  for( pos = 0; pos < strlen( subject ); pos++ )
+    checkFor_badPostion[pos] = ' ';
+  
+  for( pos = 0; pos < strlen(search); pos++ )
+  {
+    lastpos = 0;
+    while( (( lastpos = strchr( subject, search[ pos ], lastpos)) != -1 ))
+    {
+      checkFor_badPostion[ lastpos ] = search[ pos ];
+      checkFor_bad += search[ pos ];
+      badcount++;
+      if ( ++lastpos > strlen(subject))
+        return badcount;
+    }
+  }
+
+  return badcount;
+}
+
+
+
+
+
+// *******************************************
+//
+// Output a string to a file.
+// openOverWriteCreateAppendMode sets options
+// openOverWriteCreateAppendMode = 0,   Append to a existing file only, returns -2 if the file is not found.
+// openOverWriteCreateAppendMode = 1,   Append to a existing file or create a new file if it does exist.
+// openOverWriteCreateAppendMode = 2,   Over write a existing file or create a new file if it does exist.
+// binaryText ='B' or 'b' for output binary mode
+// binaryText ='T' or 't' for output binary text mode
+// returns -1 if input error
+// or -2 if no file found
+// or output of file error, which I have no idea what it will be, just if 0, then write was ok.
+//
+int outputStringToFile( string fileName, string outputString, char openOverWriteCreateAppendMode, char binaryText )
+{
+  string fa[];
+  int n;
+  string  mode = "Ft";
+  
+  fileerror();
+
+  switch( binaryText )
+  {
+    case 't':
+    case 'T':
+      mode = "Ft";
+      break;
+
+    case 'b':
+    case 'B':
+      mode = "Fb";
+      break;
+    default:
+      return -1;
+  }
+
+  switch( openOverWriteCreateAppendMode )
+  {
+    case 0:
+      if( fileglob( fa, fileName ) == 0 )
+        return -2;
+      mode += "a";
+      break;
+    case 1:
+      mode += "a";
+      break;
+    case 2:
+      mode += "w";
+      break;
+    default:
+      return -1;
+
+  }
+
+  // Out put the data to fileName  
+  output( fileName, mode )
+  {
+    
+    printf("%s", outputString );
+    n = fileerror();
+  }
+
+  return n;
+}
+
+// **************
+// check for overlapping pins
+//
+int check_overlap( UL_PIN P, int pincount )
+{
+  int i;
+
+  PinX[ pincount ] = P.x;
+  PinY[ pincount ] = P.y;
+  Pname[ pincount ] = P.name;
+  
+  for( i = 0; i < pincount; i++ )
+  {
+    if( ( PinX[ i ] == P.x ) && ( PinY[ i ] == P.y ))
+    {
+      overLappingPinErrorCount++;
+      return i+1;
+    }
+  }
+  return 0;
+}
+
+//
+// Wright log file.
+//
+void wright_log_to_disk( string logdata )
+{
+  //  logfile = filesetext(EditName, "");
+  logfileName = WorkPath + filesetext( EditName, "_conversion_log.txt");  
+  output( logfileName, "at")
+      printf("%s", logdata );
+}
+
+
+// Wright comand file -----------
+void show_save_script_file(string cm) {
+  ScriptName = WorkPath+PureScriptName;
+  output(ScriptName, "wtD") printf("%s", cm);
+  return;
+}
+
+
+void DisplayHelp() {
+  dlgDialog(TR("Export EAGLE libraries - Help")) {
+    dlgHBoxLayout dlgSpacing(400);
+    dlgTextView(HelpText[LangIdx]);
+    dlgHBoxLayout {
+      dlgStretch(1);
+      dlgPushButton("+" + TR("Back")) dlgReject();
+      dlgStretch(1);
+    }
+  };
+}
+
+string get_project_path() {
+  if (board)     board(B)     return(filedir(B.name));
+  if (schematic) schematic(B) return(filedir(B.name));
+  if (library)   library(B)   return(filedir(B.name));
+}
+
+string replacenewline(string nl) {
+  string a[];
+  int n = strsplit(a, nl, '\n');
+  if (n > 0) {
+    nl = "";
+    for (int x = 0; x < n - 1; x++) {
+      nl += a[x] + "\\n";
+    }
+    nl += a[x];
+  }
+  return nl;
+}
+
+// Da der ganze String in ' eingeschlossen wird,
+// müssen die Apostrophen verdoppelt werden.
+string addApostroph(string name) {  // 2012-03-23
+  string t[];
+  int cnt = strsplit(t, name, '\''); // check Apostroph
+  if (cnt > 1) {
+    name = "";
+    for (int i = 0; i < cnt; i++) {
+      if (i == 0) {
+        if (t[i]) name += t[i];
+      }
+      else if (i) name += "''" + t[i];
+    }
+  }
+  return name;
+}
+
+string replaceascii127(string s, int n, string newascii) {
+  if (n == strlen(s)) return strsub(s, 0, n) + newascii;
+  else return strsub(s, 0, n) + newascii + strsub(s, n+1);
+}
+
+string check_ascii127(string s) {  // 2009-02-02
+  int n = 0;
+  int pos;
+  do {
+    pos = strchr(s, ascii127[n]);
+    if (pos > -1)
+      s = replaceascii127(s, pos, Newascii127[n]);
+    if (pos < 0) n++;  // 2012-02-08
+  } while (ascii127[n]);
+  return s;
+}
+
+// Remove this as soon as the "@-problem" is solved !
+string ReplaceAt(string s) {
+  for (int i = 0; i < strlen(s); i++)
+      if (s[i]=='@') s[i]='$';  // Creates problems when name is used in ADD and other commands
+  return s;
+}
+
+string ReplaceInvalidCharsForObjNames(string s) {
+  for (int i = 0; i < strlen(s); i++)
+      if (s[i]==' ') s[i]='-';  // No '_' to distinguish from prefix ending !
+
+  return ReplaceAt(s);
+}
+
+string LbrPrefix(string s) {
+  s = check_ascii127(s);
+  return ReplaceInvalidCharsForObjNames(s) + "_";
+}
+
+//
+// check for existing file
+// Returns 1 if found.
+//
+int exist_file(string FileName)
+{
+  string a[];
+  int n = fileglob(a, FileName);
+  if (n == 0) return 0;
+  else return 1;
+}
+
+void CreateLBRdescription(string project_name) {
+  // !!! Wird nicht vorherige Description überschrieben ?
+  sprintf(h, "DESCRIPTION 'Generated from <b>%s</b><p>\\n\\\nby %s';\n", filename(project_name), filename(argv[0]));
+  cmd += h;
+  return;
+}
+
+//******
+void CreateHeader(UL_LIBRARY LBR) {
+  int layerCt = 1;
+
+  LBR.layers(L) {
+    if( (layerCt < 2) || (layerCt > 15 ) ) // ok funny biz for limited free version of eagle
+    {
+      sprintf(h, "Layer %d %s;\n", L.number, L.name);
+      cmd += h;
+    }
+    layerCt++;
+  }
+
+sprintf(h, "Set Wire_bend 2;\nSet Select_factor 0;\nSet Undo_log off;\n"); cmd += h;
+  sprintf(h, "Grid mic 1;\n"); cmd += h;
+  sprintf(h, "Display All;\n"); cmd += h;
+  cmd  += "DESCRIPTION '" + addApostroph(replacenewline(LBR.description)) + "';\n";
+}
+
+void CreateTrailer(void) {
+  sprintf(h, "Set Undo_log On;\nSet Select_factor 0.02;\nGrid last;\n"); cmd += h;
+}
+
+void PrintValidLayer(int LNr) {
+  sprintf(h, "Layer %d;\n", LNr); cmd += h;
+}
+
+void DrawDimension(UL_DIMENSION D) { // 2011-12-06
+  sprintf(h, "CHANGE LAYER %d;\n", D.layer); cmd += h;
+  sprintf(h, "CHANGE SIZE %f;\n", u2mic(D.size)); cmd += h;
+  sprintf(h, "CHANGE RATIO %d;\n", D.ratio); cmd += h;
+  sprintf(h, "CHANGE DUNIT %s %s %d;\n", UnitName[D.unit], (D.visible==0) ? "off" : "on", D.precision); cmd += h;
+  sprintf(h, "CHANGE DLINE %f %f %f %f;\n", u2mic(D.width), u2mic(D.extwidth), u2mic(D.extlength), u2mic(D.extoffset)); cmd += h;
+  sprintf(h, "DIMENSION %s (C%f %f) (%f %f) (%f %f);\n",  // Warum das C ?
+              DimType[D.dtype],
+              u2mic(D.x1), u2mic(D.y1),
+              u2mic(D.x2), u2mic(D.y2),
+              u2mic(D.x3), u2mic(D.y3) );
+  cmd += h;
+  return;
+}
+
+void DrawFrame(UL_FRAME F) {
+  PrintValidLayer(F.layer);
+
+  string FBorder = "";
+  if (F.border & 1) FBorder += " BOTTOM";
+  if (F.border & 2) FBorder += " RIGHT";
+  if (F.border & 4) FBorder += " TOP";
+  if (F.border & 8) FBorder += " LEFT";
+
+  sprintf(h, "FRAME %d %d %s (%f %f) (%f %f);\n",
+            F.columns, F.rows,
+            FBorder,
+            u2mic(F.x1), u2mic(F.y1),
+            u2mic(F.x2), u2mic(F.y2) );
+            cmd += h;
+  return;
+}
+
+void DrawCircle(UL_CIRCLE C) {
+  PrintValidLayer(C.layer);
+  sprintf(h, "Circle %f (%f %f) (%f %f);\n",
+            u2mic(C.width),
+            u2mic(C.x), u2mic(C.y),
+            u2mic(C.x + C.radius), u2mic(C.y));
+            cmd += h;
+  return;
+}
+
+void DrawWire(UL_WIRE W) {
+  PrintValidLayer(W.layer);
+  if (W.arc) {    // 2008-09-11
+    sprintf(h, "WIRE %f %s (%f %f) %+f (%.f %.f);\n",
+              u2mic(W.width),
+              W.cap == CAP_ROUND ? "ROUND" : "FLAT",  // 2011-09-07
+              u2mic(W.x1), u2mic(W.y1),
+              W.curve,
+              u2mic(W.x2), u2mic(W.y2));
+    cmd += h;
+  }
+  else {
+    sprintf(h, "Wire %f (%f %f) (%f %f);\n",
+            u2mic(W.width), u2mic(W.x1), u2mic(W.y1), u2mic(W.x2), u2mic(W.y2));
+    cmd += h;
+  }
+}
+
+void DrawRectangle(UL_RECTANGLE R) {
+  PrintValidLayer(R.layer);
+  sprintf(h, "Rect R%.1f (%f %f) (%f %f);\n",
+           R.angle,
+           u2mic(R.x1), u2mic(R.y1),
+           u2mic(R.x2), u2mic(R.y2));
+           cmd += h;
+}
+//
+// Draw contact and SMD pad
+//
+void DrawContact(UL_CONTACT C) {
+  string ShapeString;
+  string ShapeFlag;
+  if (C.pad) {
+    switch(C.pad.shape[17]) {  //!!!
+      case PAD_SHAPE_SQUARE    : ShapeString = "Square";  break;
+      case PAD_SHAPE_ROUND     : ShapeString = "Round";   break;
+      case PAD_SHAPE_OCTAGON   : ShapeString = "Octagon"; break;
+      case PAD_SHAPE_LONG      : ShapeString = "Long";    break;
+      case PAD_SHAPE_OFFSET    : ShapeString = "Offset";  break;
+    }
+    if (!(C.pad.flags & PAD_FLAG_STOP) )     ShapeFlag  = "NOSTOP ";
+    if (!(C.pad.flags & PAD_FLAG_THERMALS) ) ShapeFlag += "NOTHERMALS ";
+    if ((C.pad.flags & PAD_FLAG_FIRST) )     ShapeFlag += "FIRST ";     // 22.11.2004 support@cadsoft
+    //
+    // PAD [diameter] [shape] [orientation] [flags] ['name'] *..
+    //
+     sprintf(h, "Change Drill %f;\n", u2mic(C.pad.drill)); cmd += h;
+     sprintf(h, "Pad %f %s R%.1f %s '%s' (%f %f);\n",
+               u2mic(C.pad.diameter[17]),
+               ShapeString,
+               C.pad.angle,
+               ShapeFlag,
+               addApostroph(C.pad.name),  // 2012-03-29
+               u2mic(C.pad.x), u2mic(C.pad.y));
+               cmd += h;
+  }
+  else if (C.smd) {
+    if (!(C.smd.flags & PAD_FLAG_STOP) )     ShapeFlag  = "NOSTOP ";
+    if (!(C.smd.flags & SMD_FLAG_THERMALS) ) ShapeFlag += "NOTHERMALS ";
+    if (!(C.smd.flags & SMD_FLAG_CREAM) )    ShapeFlag += "NOCREAM ";
+
+    PrintValidLayer(C.smd.layer);
+     sprintf(h, "CHANGE Roundness %d;\n", C.smd.roundness); cmd += h;
+    //
+    // SMD [x_width y_width] [-roundness] [orientation] [flags] ['name'] *..
+    //
+     //     sprintf(h, "SMD %f %f -%d R%.1f %s '%s' (%f %f);\n", u2mic(C.smd.dx), u2mic(C.smd.dy), C.smd.roundness, C.smd.angle, ShapeFlag, addApostroph(C.smd.name), u2mic(C.smd.x), u2mic(C.smd.y));
+
+     sprintf(h, "SMD %f %f -%d R%.1f %s '%s' (%f %f);\n", u2mic(C.smd.dx), u2mic(C.smd.dy), C.smd.roundness, C.smd.angle, ShapeFlag, addApostroph(C.smd.name), u2mic( TEMP_HOLD_FOR_OVER_LAPPING_SMD_PAD ), u2mic( TEMP_HOLD_FOR_OVER_LAPPING_SMD_PAD ));
+     cmd += h;
+     sprintf(h, "move (%f %f)(%f %f);\n", u2mic( TEMP_HOLD_FOR_OVER_LAPPING_SMD_PAD ), u2mic( TEMP_HOLD_FOR_OVER_LAPPING_SMD_PAD ),  u2mic( C.smd.x ), u2mic( C.smd.y ));    
+     cmd += h;
+  }
+}
+
+void DrawText(UL_TEXT T) {
+  PrintValidLayer(T.layer);
+  switch(T.font) {
+       case FONT_VECTOR       : sprintf(h, "CHANGE FONT VECTOR;\n");
+                                cmd += h;
+                                break;
+       case FONT_PROPORTIONAL : sprintf(h, "CHANGE FONT PROPORTIONAL;\n");
+                                cmd += h;
+                                break;
+       case FONT_FIXED        : sprintf(h, "CHANGE FONT FIXED;\n");
+                                cmd += h;
+                                break;
+  }
+
+  string Spin = "";
+  string Mirror = "";
+  if (T.spin) Spin = "S";
+  if (T.mirror) Mirror = "M";
+
+  sprintf(h, "Change Size %f;\n", u2mic(T.size));
+  cmd += h;
+  sprintf(h, "Change Ratio %d;\n", T.ratio);
+  cmd += h;
+  sprintf(h, "Change Align %s;\n", AlignName[T.align]);
+  cmd += h;
+  sprintf(h, "Change Linedistance %d;\n", T.linedistance);
+  cmd += h;
+
+  sprintf(h, "Text %s%sR%.1f '%s' (%f %f);\n",
+           Spin, Mirror, T.angle, addApostroph(T.value), u2mic(T.x), u2mic(T.y) // AddApostroph ?
+         );
+  cmd += h;
+}
+
+void DrawHole(UL_HOLE H) {
+  sprintf(h, "Change Drill %f;\n", u2mic(H.drill)); cmd += h;
+  sprintf(h, "Hole (%f %f);\n", u2mic(H.x), u2mic(H.y)); cmd += h;
+}
+
+void DrawPolygon(UL_POLYGON PL) {
+  PrintValidLayer(PL.layer);
+  //sprintf(h, "Change Isolate %f;\n", u2mic(PL.isolate)); cmd += h; exist only in board
+  sprintf(h, "Change Spacing %f;\n", u2mic(PL.spacing)); cmd += h;
+  if (PL.pour == POLYGON_POUR_SOLID) {
+     sprintf(h, "Change Pour Solid;\n"); cmd += h;
+  }
+  else {
+     sprintf(h, "Change Pour Hatch;\n"); cmd += h;
+  }
+  sprintf(h, "Polygon %f ", u2mic(PL.width)); cmd += h;
+  PL.wires(W) {
+    sprintf(h, "(%f %f) ", u2mic(W.x1), u2mic(W.y1)); cmd += h; /*start coord.*/
+    break;
+  }
+  PL.wires(W) {
+    sprintf(h, " %+f (%f %f) ", W.curve, u2mic(W.x2), u2mic(W.y2)); cmd += h;
+  }
+  sprintf(h, ";\n"); cmd += h;
+}
+
+//
+// Draw pin command
+int DrawPin(UL_PIN P, int printhead, int error, string symbol_name )
+{
+  string DIR = "", FUNC = "", LEN = "", VIS = "", ANGLE = "R0";
+  if (P.angle == 90)  (ANGLE  = "R90");
+  if (P.angle == 180) (ANGLE  = "R180");
+  if (P.angle == 270) (ANGLE  = "R270");
+
+  if (P.function == PIN_FUNCTION_FLAG_NONE)  (FUNC = "None");
+  if (P.function == PIN_FUNCTION_FLAG_DOT)   (FUNC  = "Dot");
+  if (P.function == PIN_FUNCTION_FLAG_CLK)   (FUNC  = "Clk");
+  if (P.function == (PIN_FUNCTION_FLAG_DOT | PIN_FUNCTION_FLAG_CLK))
+                                             (FUNC  = "DotClk");
+
+  if (P.visible == PIN_VISIBLE_FLAG_OFF)    (VIS  = "Off");
+  if (P.visible == PIN_VISIBLE_FLAG_PIN)    (VIS  = "Pin");
+  if (P.visible == PIN_VISIBLE_FLAG_PAD)    (VIS  = "Pad");
+  if (P.visible == (PIN_VISIBLE_FLAG_PIN | PIN_VISIBLE_FLAG_PAD))
+                                            (VIS  = "Both");
+
+  switch(P.direction) {
+    case PIN_DIRECTION_NC  : DIR = "NC";  break;
+    case PIN_DIRECTION_IN  : DIR = "In";  break;
+    case PIN_DIRECTION_OUT : DIR = "Out"; break;
+    case PIN_DIRECTION_IO  : DIR = "IO";  break;  // 2011-10-10
+    case PIN_DIRECTION_OC  : DIR = "OC";  break;
+    case PIN_DIRECTION_PWR : DIR = "Pwr"; break;
+    case PIN_DIRECTION_PAS : DIR = "Pas"; break;
+    case PIN_DIRECTION_HIZ : DIR = "Hiz"; break;
+    case PIN_DIRECTION_SUP : DIR = "Sup";
+  }
+
+  switch(P.length) {
+    case PIN_LENGTH_POINT  : LEN = "Point";  break;
+    case PIN_LENGTH_SHORT  : LEN = "Short";  break;
+    case PIN_LENGTH_MIDDLE : LEN = "Middle"; break;
+    case PIN_LENGTH_LONG   : LEN = "Long";
+  }
+  if( error )
+  {
+    string xt;
+    sprintf(h, "Pin '%s' %s %s %s %s %s %d (%f %f);\n", addApostroph( P.name ), DIR, FUNC, LEN, ANGLE, VIS, P.swaplevel, u2mic( TEMP_HOLD_FOR_OVER_LAPPING_PIN ), u2mic( TEMP_HOLD_FOR_OVER_LAPPING_PIN ));    
+    cmd += h;
+    sprintf(h, "move (%f %f)(%f %f);\n", u2mic( TEMP_HOLD_FOR_OVER_LAPPING_PIN ), u2mic( TEMP_HOLD_FOR_OVER_LAPPING_PIN ),  u2mic(P.x), u2mic(P.y));    
+    cmd += h;
+    
+    if( !printhead )
+    {
+      sprintf(xt, "\nWARNING: Over lapping Pin(s) on SYMBOL:%s", symbol_name );
+      logfile += xt;    
+    }
+    sprintf(xt, "\n   Pin =%s", addApostroph( P.name ));
+    logfile += xt;
+    printhead = 1;
+    return 1;
+    //    outputStringToFile( logfile, "\nWORNING OVER LAPPING PIN:    " + xt, 1, 't');
+  }
+  else
+    sprintf(h, "Pin '%s' %s %s %s %s %s %d (%f %f);\n", addApostroph( P.name ), DIR, FUNC, LEN, ANGLE, VIS, P.swaplevel, u2mic(P.x), u2mic(P.y));
+
+  cmd += h;
+
+  return printhead;
+
+}
+
+void DrawSymbol(UL_SYMBOL S) {
+  int pinCount = 0;
+  int error_ofsetX = 1;
+  int error_ofsetY = 1;  
+  int ofsetX;
+  int ofsetY;
+  int printheader = 0;
+  S.circles(C)
+      DrawCircle(C);
+
+  printheader = 0;  
+  S.rectangles(R)
+      DrawRectangle(R);
+
+  printheader = 0;  
+  S.wires(W)
+      DrawWire(W);
+
+  pinCount = 0;
+  printheader = 0;  
+  S.pins(P)
+  {
+    if( check_overlap( P, pinCount ))
+    {
+      printheader = DrawPin(P, printheader, 1, S.name );
+    }
+    else
+      DrawPin(P, printheader, 0, "" );
+
+    pinCount++;
+  }
+
+  printheader = 0;    
+  S.texts(T)      DrawText(T);
+  S.polygons(PL)  DrawPolygon(PL);
+  S.frames(F)     DrawFrame(F);
+  S.dimensions(D) DrawDimension(D);
+  cmd  += "DESCRIPTION '" + addApostroph(replacenewline(S.description)) + "';\n";
+}
+
+void DrawPackage(UL_PACKAGE P) {
+  sprintf(h, "GRID mic;\n"); cmd+=h; // 2011-04-11
+  P.circles(C)
+      DrawCircle(C);
+  P.wires(W)
+      DrawWire(W);
+  P.rectangles(R)
+      DrawRectangle(R);
+  P.contacts(C)
+      DrawContact(C);
+  P.texts(T)
+      DrawText(T);
+  P.holes(H)
+      DrawHole(H);
+  P.polygons(PL)
+      DrawPolygon(PL);
+  P.frames(F)
+      DrawFrame(F);
+  P.dimensions(D)
+      DrawDimension(D);
+  cmd  += "DESCRIPTION '" + addApostroph(replacenewline(P.description)) + "';\n";
+}
+
+//          ************************************************
+// see also *** export-schematic_mil-board_mm-script.ulp ***
+//          ************************************************
+
+void DrawDevice(UL_DEVICESET D, UL_LIBRARY LBR) {
+  cmd  += "DESCRIPTION '" + addApostroph(replacenewline(D.description)) + "';\n";
+  cmd  += "PREFIX '" + D.prefix + "';\n";
+  cmd  += "VALUE " + D.value + ";\n";
+  D.gates(G)
+  {
+    string GateAddlevel;
+    switch (G.addlevel) {
+      case GATE_ADDLEVEL_NEXT    : GateAddlevel = "Next";    break;
+      case GATE_ADDLEVEL_MUST    : GateAddlevel = "Must";    break;
+      case GATE_ADDLEVEL_CAN     : GateAddlevel = "Can";     break;
+      case GATE_ADDLEVEL_REQUEST : GateAddlevel = "Request"; break;
+      case GATE_ADDLEVEL_ALWAYS  : GateAddlevel = "Always";
+    };
+    sprintf(h, "CHANGE Addlevel  %s;\n", GateAddlevel); cmd += h;
+    sprintf(h, "CHANGE Swaplevel %d;\n", G.swaplevel); cmd += h;
+    string symname = G.symbol.name; // No problem with @...
+    if( AddLibPrefix == 1)  //    if (Merge == 1)
+      symname = LbrPrefix(LBR.name) + symname;
+    sprintf(h, "ADD '%s' '%s' (%f %f);\n", addApostroph(symname), addApostroph(G.name), u2mic(G.x), u2mic(G.y)); // 2012-02-07
+    cmd += h;
+  }
+  
+  D.devices(DV)
+  {
+    int result;
+    string tmpS;
+    
+    if (DV.package) {
+      string pacname = ReplaceAt(DV.package.name); // !!!
+    if( AddLibPrefix == 1)       //if (Merge == 1)
+        pacname = LbrPrefix(LBR.name) + pacname;
+
+    if( result = checkForBadCharstr( "()", DV.name ))
+    {
+      error_count++;
+      sprintf( tmpS, "\n%s%s%s", "ERROR: package name:", pacname,"  Has Bad/illegal charter in it's package Alisa name!\n");
+      logfile += tmpS;
+      sprintf( tmpS, "\n%s%s", "   Package Alaise  Name:", DV.name);
+      logfile += tmpS;
+      sprintf( tmpS, "\n%s%s", "   Error Postion & Char:", checkFor_badPostion );
+      logfile += tmpS;
+      sprintf( tmpS, "\n%s", "   Bad charter(s) have been replaced with  '_'  This MAY FIX OR, CAUSE MORE ERROR'S! Plese fix the Alias!\n");
+      logfile += tmpS;
+      cmd += ("PACKAGE '" + addApostroph(pacname) + "' " + charstr_replace("()", "_", DV.name ) + ";\n"); // addApostroph here problematic !
+    }
+    else
+      cmd += "PACKAGE '" + addApostroph(pacname) + "' " + DV.name + ";\n"; // addApostroph here problematic !
+    }
+    DV.gates(G) {
+      if (DV.package) {
+        G.symbol.pins(P) {
+          string cont = "";
+          P.contacts(C) {  // 2011-12-06
+            if (!cont) sprintf(h, "%s", addApostroph(C.name)); // 2012-03-29
+            else sprintf(h, " %s", addApostroph(C.name)); // 2012-003-29
+            cont += h;
+          }
+          if (cont) {
+            sprintf(h, "CONNECT %s '%s.%s' '%s';\n",  // //2012-03-23 problem with # in pin name
+                        Croute[P.route],
+                        addApostroph(G.name), // 2012-03-29
+                        addApostroph(P.name),                // 2012-03-29
+                        cont
+                   );
+            cmd += h;
+          }
+        }
+      }
+    }
+
+    string t[];
+    int n = strsplit(t, DV.technologies, ' ');
+    for (int i = 0; i < n; i++) {
+      sprintf(h,"TECHNOLOGY '%s';\n", addApostroph(t[i]));  // 2012-03-23
+      cmd += h;
+      DV.attributes(A, t[i]) {
+        string const = "";
+        if (A.constant) const = " CONSTANT";
+        sprintf(h,"ATTRIBUTE '%s' '%s' %s\n", A.name, addApostroph(A.value), const); // 2010-10-14
+        cmd += h;
+      }
+    }
+  }
+  return;
+}
+
+//----------------
+int is_new(void) { // n = nr of entries
+  int i;
+  if (n == 0) return 1;
+  for (i = 0; i < n; i++) {
+    if (x[n] == x[i]) {
+       return(0);
+    }
+  }
+  return 1;
+}
+
+// ---------
+void CreateOneLibHeader(UL_LIBRARY LBR, string project_name) {
+  if (exist_file(WorkPath+CurrentLbrName+".lbr")) {
+     sprintf(h, "REMOVE '%s';\n", WorkPath+CurrentLbrName+".lbr"); cmd += h; // delete existing lbr
+  }
+  sprintf(h, "OPEN '~dummy~.lbr';\nCLOSE;\nOPEN '%s.lbr';\n", WorkPath+CurrentLbrName);  // 2012-02-07 to close an opened library first
+  cmd += h;
+  CreateHeader(LBR);
+  CreateLBRdescription(project_name);
+}
+
+// ---------
+void OutputPackages(UL_LIBRARY LBR) {
+  LBR.packages(P) {
+    string pacname = ReplaceAt(P.name);
+    if( AddLibPrefix == 1) //    if ( Merge == 1)
+       pacname = LbrPrefix(LBR.name) + pacname;
+    n++;
+    x[n] = pacname;
+    if (is_new()) {
+      Status = "   PAC: " + P.name; dlgRedisplay();
+      sprintf(h, "\nEdit '%s.PAC';\n", addApostroph(pacname)); cmd += h;
+      DrawPackage(P);
+    }
+  }
+}
+
+void OutputSymbols(UL_LIBRARY LBR) {
+  LBR.symbols(S) {
+    string symname =  S.name;
+    if( AddLibPrefix == 1)    //    if (Merge == 1)
+       symname = LbrPrefix(LBR.name) + symname;
+    n++;
+    x[n] = symname;
+    if (is_new()) {
+      Status = "   SYM: " + S.name;  dlgRedisplay();
+      sprintf(h, "\nEdit '%s.SYM';\n", addApostroph(symname)); cmd += h;
+      DrawSymbol(S);
+    }
+  }
+}
+
+void OutputDevices(UL_LIBRARY LBR) {
+  LBR.devicesets(D) {
+    string dname = D.name;
+    if( AddLibPrefix == 1) //    if (Merge == 1)
+       dname = LbrPrefix(LBR.name) + dname;
+    n++;
+    x[n] = dname;
+    if (is_new()) {
+      Status = "   DEV: " + D.name;  dlgRedisplay();
+      NameIndex = 0;
+      sprintf(h, "\nEdit '%s.DEV';\n", addApostroph(dname)); cmd += h;
+      DrawDevice(D, LBR);
+    }
+  }
+}
+
+//----------------------------------
+// Make one lib file script command
+void CreateLbr(UL_LIBRARY LBR) {
+  if (exist_file(WorkPath+CurrentLbrName+".lbr")) {
+     sprintf(h, "REMOVE '%s.lbr';\n", WorkPath+CurrentLbrName);
+     cmd += h; // delete existing lbr
+  }
+  sprintf(h, "OPEN '~dummy~.lbr';\nCLOSE;\nOPEN '%s.lbr';\n", WorkPath+CurrentLbrName);  // 2012-02-07 to close a opened library first
+  cmd += h;
+  CreateHeader(LBR);
+}
+
+//-------------------------------
+// Make seprate libs
+//
+void make_lbr(void) {
+
+//  dlgMessageBox("got here 1");
+  
+  if (board) board(B)
+    {
+
+
+      int first = 1;
+      B.libraries(LBR)
+      {
+        CurrentLbrName = LBR.name;
+
+        if( (Merge == 1 ) && first) // Only output lib once if merged lib
+        {
+          CreateLbr(LBR);
+          first = 0;
+        }
+        if( Merge == 0 ) // output many libs ?
+          CreateLbr(LBR);
+        
+        LBR.packages(PAC)
+        {
+          OutputPackages(LBR);
+          cmd += "WRITE;\n";
+          break;
+        };
+      }
+    }
+
+  if (schematic) schematic(SCH)
+    {
+
+      
+      int first = 1;
+      SCH.libraries(LBR)
+      {
+        CurrentLbrName = LBR.name;
+
+        //        CreateLbr(LBR);
+        if( (Merge == 1 ) && first) // Only output lib once if merged lib
+        {
+          CreateLbr(LBR);
+          first = 0;
+        }
+        if( Merge == 0 ) // output many libs ?
+          CreateLbr(LBR);
+
+        LBR.devices(DEV)
+        {
+          OutputPackages( LBR );
+          n=0;
+          OutputSymbols( LBR );
+          n=0;
+          OutputDevices( LBR );
+          cmd += "WRITE;\n";
+          break;
+        };
+      }
+    }
+  CreateTrailer();
+}
+
+
+//---------------------------------------
+// make one lib for all devices
+//---------------------------------------
+void make_one_lbr(void) {
+
+//  dlgMessageBox("got here 2");             
+
+  int noLbrs = 1;
+  if (board) board(B)
+    {
+//      dlgMessageBox("Got to board" );             
+
+      /* B.elements(E) */
+      /* { */
+      /*   dlgMessageBox("Got to elements" );              */
+      /*   printf("##Element=: %s\n", E.name); */
+      /*   printf("##ElementValue=: %s\n", E.value); */
+      /* }; */
+
+      B.libraries(LBR)
+      {
+        CurrentLbrName = filesetext(EditName, "");
+        CreateOneLibHeader(LBR, B.name);
+        noLbrs = 0;
+        break;
+      }
+      n = 0;
+      B.libraries(LBR)
+      {
+        OutputPackages(LBR);
+      }
+
+    }
+  if (schematic) schematic(SCH)
+    {
+//      dlgMessageBox("Got to SCH" );             
+
+      SCH.libraries(LBR)
+      {
+        CurrentLbrName = filesetext(EditName, "");
+        CreateOneLibHeader(LBR, SCH.name);
+        noLbrs = 0;
+        break;
+      }
+      n = 0;
+      SCH.libraries(LBR)
+      {
+        OutputPackages(LBR);
+      }
+      n = 0;
+      SCH.libraries(LBR)
+      {
+        LBR.devices(DEV)
+        {
+          OutputSymbols(LBR);
+        }
+      }
+      n = 0;
+      SCH.libraries(LBR)
+      {
+        LBR.devices(DEV)
+        {
+          OutputDevices(LBR);
+        }
+      }
+    }
+  if (!noLbrs)
+  {
+    cmd += "WRITE;\n";
+    CreateTrailer();
+  }
+  return;
+}
+
+
+
+//-----------------------------------------------
+//  main.
+//-----------------------------------------------
+string myname = filename( argv[0]);
+string datetime = t2string(time(), "dd-MM-yyyy :hh:mm:ss");
+sprintf(logfile, "#********** START OF %s %s %s LOG **********#", myname, Version, datetime);
+
+if (library) {
+  dlgMessageBox(TR("Please start from schematic or board editor!"));
+  exit(1);
+}
+else {
+  if (board)
+    board(B)
+        EditName = filename(B.name);  // name of loaded board/schematic w/o path
+  if (schematic)
+    schematic(S)
+        EditName = filename(S.name);
+}
+
+PureScriptName = filesetext(EditName, ".scr");               // name of generated script w/o path
+
+string tmpSX;
+
+// Check to see if there is a config file path set for target directory
+if( strlen( tmpSX = cfgget( cfg_TARGET_DIR )) > 0 )
+{
+  WorkPath = tmpSX;  // Yes .. so use it.
+}
+else
+  WorkPath = get_project_path();  // No so use the default
+
+// get the save settings from eagle6xxx ulp
+if( strlen( tmpSX = cfgget( cfg_conflictPartsLibsListsize )) > 0 )
+    ConflictPartsCount = strtol( tmpSX );
+    
+    // add prefix ?    
+if( strlen( tmpSX = cfgget( cfg_addLibPrefix )) > 0 )
+    AddLibPrefix = strtol( tmpSX );
+
+int Result = dlgDialog(TR("Export EAGLE libraries from drawing")) {
+    dlgHBoxLayout {
+      dlgLabel("&" + TR("Path") + ":");
+      dlgStringEdit(WorkPath);
+      dlgPushButton(TR("&Browse") + "...") {
+        if (cmd) cmd = "";
+        h = WorkPath;
+        WorkPath = dlgDirectory("", WorkPath);
+        if (WorkPath == "") WorkPath = h;
+        else WorkPath += "/";     // 29.03.2005 support@cadsoft.de
+      }
+    }
+
+    string tmpSX1;
+    tmpSX1 = cfgget( cfg_CombinedLrbFileName ); // See if the COMBINEBRFileName is set 
+    if( strlen(tmpSX1) >= 1 )
+      Merge = 1;
+
+    
+    dlgVBoxLayout
+    {
+      //      dlgCheckBox("Over write existing target files with out warning ?", OverWrieNoWarning ); // Add prefix ?
+      dlgHBoxLayout
+      {
+        dlgCheckBox("Combine libs into one libary file =", Merge ); dlgLabel( "<nobr><b>" + filesetext( EditName, ".lbr") + "</b></nobr>" , 1);
+        dlgPushButton("Info") { if (dlgMessageBox( infoCombineLibNames, "Ok") == 0); }; 
+      }
+      dlgHBoxLayout
+      {
+        dlgCheckBox("Add library names as prefix to symbol package and device names", AddLibPrefix); // Add prefix ?
+        dlgPushButton("Info") { if (dlgMessageBox( infoLibNameToSymbolPackageDevice, "Ok") == 0); }; 
+      }
+    }
+    //    dlgGroup(TR("Creation mode")) {
+    //      dlgRadioButton("&" + TR("Export original libraries"), Merge); //name like drawing
+    //      dlgRadioButton("&" + TR("Merge to one library, ") +       TR("original library names as prefix for symbol, package and device names"), Merge);
+    //      dlgRadioButton(      TR("Merge to one library, ") + "&" + TR("unchanged symbol, package and device names"), Merge);
+    //    }
+
+    
+    dlgLabel( Status, 1);   // displays exection status
+    dlgHBoxLayout
+    {
+      dlgStretch(1);
+      dlgPushButton("&" + TR("Help") + "...")  DisplayHelp();
+      dlgPushButton("+&" + TR("OK")) {
+        cmd = "";
+
+        if( ( ConflictPartsCount > 0 ) && ( AddLibPrefix != 1 ))
+        {
+          if( dlgMessageBox("Warning! There are parts with the same names but from diffent libraries" +
+                            " KiCad will reject parts which have identical names." +
+                            " Please check the <i>Add library names as prefix</i> to get around this problem." +
+                            " Or fix the part name in the library reference"+
+                            " Continue or Add a prefix to conflicting names?", "&Continue", "&Add Prefix" ) == 1 )
+            AddLibPrefix = 1;
+        }
+
+        string tmpS1;
+
+        
+        if( Merge > 0)
+          make_one_lbr(); // one lib for all devices
+        else
+          make_lbr();  //  septrate libs for all devices
+        show_save_script_file(cmd);
+
+
+        logfileName = WorkPath + filesetext( EditName, "_conversion_log.txt");          
+
+        if( overLappingPinErrorCount || error_count )
+        {
+          //          wright_log_to_disk( );
+
+          if( overLappingPinErrorCount )
+            dlgMessageBox( "<font color=\"purple\">There were OverLappingPinPad warnings<br>"+
+                           "during export. Please read the log for more information<br><b>File:</b> " + logfileName  );
+
+          if( error_count )
+            dlgMessageBox( "<font color=\"red\">There were errors during export. Please read the log for more information<br><b>File:</b> " + logfileName  );
+        }
+        else
+        {
+          logfile += "\nOK: Eagle library export from SCH/PCB successful";
+          //          wright_log_to_disk( logfile );
+        }
+        
+        tmpS1 = cfgget( cfg_SCRIPT_ULP );
+        if( strlen( tmpS1 ) > 1 )
+          myULP_HOME = tmpS1;
+
+        int spos = 0;
+        int iC = 0;
+        string c;  
+        while( (spos = strrchr( logfile, 0x0a, spos )) != -1 )
+        {
+          if( ++iC > 2 )
+            break;
+          spos++;
+        }
+        if( iC < 3 )
+          logfile += "\n    Conversion completed with no messages";
+        sprintf(c, "\n#********** END OF %s %s %s LOG **********#\n\n", myname, Version, datetime);
+        logfile += c;
+        output(logfileName, "at") printf("%s", logfile);
+
+
+        
+        sprintf(tmpS1, "SCRIPT '%s'\n;run '%s'\n", ScriptName, myULP_HOME + "eagle-lbr2kicad-1.0.ulp" );
+        exit( tmpS1 );
+        
+        //        exit("SCRIPT '"+ScriptName+"';\n"); // pass script file name back to eagle sch/pcb
+        //        exit("SCRIPT '"+ScriptName+"';run /home/laudas/eagle/eagle-lbr2kicad-1.0.ulp;\n"); // pass script file name back to eagle sch/pcb
+      }
+      dlgPushButton("-&" + TR("Cancel")) dlgReject();
+    }
+};
