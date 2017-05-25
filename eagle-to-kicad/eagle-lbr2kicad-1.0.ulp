@@ -1006,6 +1006,7 @@ void write_kicad_mod_text(UL_PACKAGE PAC)
         }
 
         size = egl2ki(T.size );
+		
         switch (int(T.angle))
         {
         case 0:
@@ -1825,10 +1826,19 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
             int posX   = 0;
             int posY   = 0;
             int offset = 0;
+			int topAlignOffset = 0;
 
-            switch ( angle )
+           switch ( angle )
             {
             case 0:
+			
+				//Some >Value have anchor in top left corner rather than default bottom left
+				//If it is we need to bump the text down by the height of the text
+				if(int(T.align) == 6) //ALIGN_TOP_LEFT
+				{
+					topAlignOffset = -(T.size) / g_Fact;
+				}
+				
                 orient = 'H';
                 hAlign = 'L';
                 vAlign = 'B';
@@ -1857,10 +1867,8 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
             if ( strupr(T.value) == ">VALUE" )
             {
                 name_X = T.x / g_Fact - transX + offset;
-                name_Y = T.y / g_Fact - transY;
+                name_Y = T.y / g_Fact - transY + topAlignOffset;
                 hasValue = 1;  // Mark to display Value
-
-
             }
 
             if ( strupr(T.value) == ">NAME" )
