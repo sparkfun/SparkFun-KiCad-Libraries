@@ -867,7 +867,7 @@ void write_kicad_mod_shapes(UL_PACKAGE PAC)
     //writing shapes
     //also we must convert inverted y-coordinates (take it with minus)
     //
-    //segments (always from Eagle's rectangles,wires and optional polygons)
+    //segments (always from Eagle's rectangles, wires and optional polygons)
 
     // converting rectangles -------------------------------------------------------------
     int layer;
@@ -1248,7 +1248,7 @@ void write_kikad_polygon( UL_GATE G, int transX, int transY, int gatePos )
 {
     G.symbol.polygons(POLY)
     {
-        string polyCoord   = "";
+        string polyCoord = "";
         int countPolyCoord = 0;
         char fillPattern;
 
@@ -1276,7 +1276,7 @@ void write_kikad_polygon( UL_GATE G, int transX, int transY, int gatePos )
             countPolyCoord += 2;
         }
 
-        if( polyCoord[0] == ' ' )  // Remove leading space, not shure how it get's in the string !!
+        if( polyCoord[0] == ' ' )  // Remove leading space, not sure how it gets in the string !!
             polyCoord = strsub( polyCoord, 1);
 
         printf("P %d %d %d %d %s %c N\n", countPolyCoord, gatePos, 1, 0, polyCoord, fillPattern);
@@ -1296,32 +1296,139 @@ void write_kikad_polygon( UL_GATE G, int transX, int transY, int gatePos )
  */
 void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
 {
+	//Count the number of wires in this record. If it's four we may have a box that needs to be a rectangle instead of discrete lines
+	int lineCount = 0;
     G.symbol.wires(WIRE)
     {
+		lineCount++;
         if ( WIRE.arc)
         {
-            int x1     = WIRE.arc.x1 / g_Fact - transX;
-            int y1     = WIRE.arc.y1 / g_Fact - transY;
-            int x2     = WIRE.arc.x2 / g_Fact - transX;
-            int y2     = WIRE.arc.y2 / g_Fact - transY;
-            int xc     = WIRE.arc.xc / g_Fact - transX;
-            int yc     = WIRE.arc.yc / g_Fact - transY;
-            int radius = WIRE.arc.radius / g_Fact;
-            int angle1 = (WIRE.arc.angle1 * 10) - 3599;
-            int angle2 = (WIRE.arc.angle2 * 10) - 3601;
+			lineCount += 10; //If we find an arc, this is not a square and we need to skip trying to create a square
+			//TODO: Look for a closed loop shape in the future, regardless of square-ness and make all shapes have background fill
+		}
+	}
+	
+	if(lineCount == 4) //Only deal with things that have four sides
+	{
+		//Now we must verify that there are only four unique corners
 
-            printf("A %d %d %d %d %d %d %d %d N %d %d %d %d\n", xc, yc, radius, angle1, angle2,
-                   gatePos, 1, 0, x1, y1, x2, y2 );
-        }
-        else
-        {
-            int x1     = WIRE.x1 / g_Fact - transX;
-            int y1     = WIRE.y1 / g_Fact - transY;
-            int x2     = WIRE.x2 / g_Fact - transX;
-            int y2     = WIRE.y2 / g_Fact - transY;
-            printf("P 2 %d %d %d %d %d %d %d N\n", gatePos, 0, 0, x1, y1, x2, y2 );
-        }
-    }
+		int xCoordinates[];
+		int yCoordinates[];
+		
+		//Clear array
+		for(int i = 0 ; i < 10 ; i++)
+		{
+			xCoordinates[i] = 7891; //Random unique number
+			yCoordinates[i] = 7891; //Random unique number
+		}
+		
+		//Step through these four wires looking at x1/y1/x2/y2
+		int xCount = 0;
+		int yCount = 0;
+		G.symbol.wires(WIRE)
+		{
+			//Run tests on x1/y1 and x2/y2
+			
+			for(int tests = 0 ; tests < 2 ; tests++)
+			{
+				int xTest;
+				int yTest;
+				if(tests == 0)
+				{
+					xTest = WIRE.x1 / g_Fact - transX;
+					yTest = WIRE.y1 / g_Fact - transY;
+				}
+				else
+				{
+					xTest = WIRE.x2 / g_Fact - transX;
+					yTest = WIRE.y2 / g_Fact - transY;
+				}
+				
+				//See it x coordinate is new
+				for(int j = 0 ; j < 10 ; j++)
+				{
+					if(xTest == xCoordinates[j])
+					{
+						//We've seen this coordinate before, ignore it
+						break;
+					}
+					else if(xCoordinates[j] == 7891) //This is an open spot in the array
+					{
+						//We have a new coordinate, store it
+						xCount++;
+						
+						xCoordinates[j] = xTest;
+						
+						break;
+					}
+				}
+
+				//See if y coordinate is new
+				for(j = 0 ; j < 10 ; j++)
+				{
+					if(yTest == yCoordinates[j])
+					{
+						//We've seen this coordinate before, ignore it
+						break;
+					}
+					else if(yCoordinates[j] == 7891) //This is an open spot in the array
+					{
+						//We have a new coordinate, store it
+						yCount++;
+						
+						yCoordinates[j] = yTest;
+						
+						break;
+					}
+				}
+			} //end coordinate tests
+		}
+
+		if(xCount == 2 && yCount == 2)
+		{
+			//We have a closed square!
+			//Draw a square instead of wires
+
+			int lineThickness = 10; //KiCad Library Convention
+			string backgroundFill = "f"; //Make the background of a the square yellow
+			
+			int x1 = xCoordinates[0];
+			int y1 = yCoordinates[0];
+			int x2 = xCoordinates[1];
+			int y2 = yCoordinates[1];
+			printf("S %d %d %d %d %d %d %d %s\n", x1, y1, x2, y2, gatePos, 1, lineThickness, backgroundFill);
+		}
+	}
+	else
+	{
+		G.symbol.wires(WIRE)
+		{
+			
+			if ( WIRE.arc)
+			{
+				int x1     = WIRE.arc.x1 / g_Fact - transX;
+				int y1     = WIRE.arc.y1 / g_Fact - transY;
+				int x2     = WIRE.arc.x2 / g_Fact - transX;
+				int y2     = WIRE.arc.y2 / g_Fact - transY;
+				int xc     = WIRE.arc.xc / g_Fact - transX;
+				int yc     = WIRE.arc.yc / g_Fact - transY;
+				int radius = WIRE.arc.radius / g_Fact;
+				int angle1 = (WIRE.arc.angle1 * 10) - 3599;
+				int angle2 = (WIRE.arc.angle2 * 10) - 3601;
+
+				printf("A %d %d %d %d %d %d %d %d N %d %d %d %d\n", xc, yc, radius, angle1, angle2,
+					   gatePos, 1, 0, x1, y1, x2, y2 );
+			}
+			else
+			{
+				int x1     = WIRE.x1 / g_Fact - transX;
+				int y1     = WIRE.y1 / g_Fact - transY;
+				int x2     = WIRE.x2 / g_Fact - transX;
+				int y2     = WIRE.y2 / g_Fact - transY;
+				printf("P 2 %d %d %d %d %d %d %d N\n", gatePos, 0, 0, x1, y1, x2, y2 );
+			}
+		}
+	}
 }
 
 /**
@@ -1333,15 +1440,20 @@ void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
  */
 void write_kikad_rectangle( UL_GATE G, int transX, int transY, int gatePos )
 {
+	int lineThickness = 10; //KiCad Library Convention
+	string backgroundFill = "test"; //"f"; //Make the background of a the square yellow
+	
     G.symbol.rectangles(RECT)
     {
         int x1 = (RECT.x1 / g_Fact) - transX;
         int y1 = (RECT.y1 / g_Fact) - transY;
         int x2 = (RECT.x2 / g_Fact) - transX;
         int y2 = (RECT.y2 / g_Fact) - transY;
-        printf("S %d %d %d %d %d %d %d F\n", x1, y1, x2, y2, gatePos, 1, 0 );
+//        printf("S %d %d %d %d %d %d %d F\n", x1, y1, x2, y2, gatePos(unit), 1(convert), 0(thickness));
+        printf("S %d %d %d %d %d %d %d %s\n", x1, y1, x2, y2, gatePos, 1, lineThickness, backgroundFill);
     }
 }
+
 /**
  * @brief write kicad circle entries
  * @param G       UL_GATE http://web.mit.edu/xavid/arch/i386_rhel4/help/173.htm
@@ -1617,11 +1729,14 @@ void write_kikad_pins( UL_GATE G, int  transX, int transY, int gatePos )
             {
                 pinShape = "N";
             }
+			
+			int pinNumberSize = 50;
+			int pinNameSize = 50;
 
             printf( "X %s %s %d %d %d %c %d %d %d %d %c %s\n", charstr_replace( "!", "~", stripArfterAT(P.name, '@', deleteTextArfterATsysbolInPinName)),  pad.name,
                     posX, posY,
                     pinLength, orient,
-                    40, 40, gatePos, 1,
+                    pinNumberSize, pinNameSize, gatePos, 1,
                     pinType, pinShape );
             padCount++;
         }
@@ -1758,12 +1873,14 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
     }
 
 
+	int fieldTextSize = 50; //KiCad Library Convention for all schematic component text fields
+
     //    if ( DEV.prefix == "" ) // No prefix ?
     //    {
     if ( hasName  )  // Does it have a >Name? Use the generated prefix
-        printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", prefixString, prefix_X, prefix_Y, 45, orient, 'V', hAlign, vAlign);
+        printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", prefixString, prefix_X, prefix_Y, fieldTextSize, orient, 'V', hAlign, vAlign);
     else
-        printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", prefixString, prefix_X, prefix_Y, 45, orient, 'I', hAlign, vAlign);
+        printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", prefixString, prefix_X, prefix_Y, fieldTextSize, orient, 'I', hAlign, vAlign);
     //    }
     //    else  // Good, we have prefix so use that
     //    {
@@ -1772,24 +1889,24 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
     //	 else
     //	    printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", DEV.prefix, prefix_X, prefix_Y, 50, orient, 'I', hAlign, vAlign);
     //    }
-
+	
     if ( hasValue )
-        printf("F1 \"%s\" %d %d %d %c %c %c %cNN\n", charstr_replace( ",/()", "_", symbolName), name_X, name_Y, 45, orient, 'V', hAlign, vAlign);  // Display then
+        printf("F1 \"%s\" %d %d %d %c %c %c %cNN\n", charstr_replace( ",/()", "_", symbolName), name_X, name_Y, fieldTextSize, orient, 'V', hAlign, vAlign);  // Display then
     else
-        printf("F1 \"%s\" %d %d %d %c %c %c %cNN\n", charstr_replace( ",/()", "_", symbolName), name_X, name_Y, 45, orient, 'I', hAlign, vAlign);  // Else no display
+        printf("F1 \"%s\" %d %d %d %c %c %c %cNN\n", charstr_replace( ",/()", "_", symbolName), name_X, name_Y, fieldTextSize, orient, 'I', hAlign, vAlign);  // Else no display
 
 
     if ( DEV.package && eaglePartToKiCadPartConversion == 1 )
         switch( outPutFootPrint )
         {
         case 0: // Don't prefix lib name to footprint name
-            printf("F2 \"%s\" 30 150 20 H I C CNN\n", escape_quotes( charstr_replace(",/()", "_", DEV.package.name)));
+            printf("F2 \"%s\" 30 150 %d H I C CNN\n", escape_quotes( charstr_replace(",/()", "_", DEV.package.name)), fieldTextSize);
             break;
         case 1: // Prefix lib name to footprint name
-            printf("F2 \"%s_%s\" 30 150 20 H I C CNN\n", footPrintPreFix, escape_quotes( charstr_replace(",/()", "_", DEV.package.name)));
+            printf("F2 \"%s_%s\" 30 150 %d H I C CNN\n", footPrintPreFix, escape_quotes( charstr_replace(",/()", "_", DEV.package.name)), fieldTextSize);
             break;
         case 2: // Prefix name to footprint name
-            printf("F2 \"%s_%s\" 30 150 20 H I C CNN\n", footPrintPreFix, escape_quotes( charstr_replace(",/()", "_", DEV.package.name)));
+            printf("F2 \"%s_%s\" 30 150 %d H I C CNN\n", footPrintPreFix, escape_quotes( charstr_replace(",/()", "_", DEV.package.name)), fieldTextSize);
             break;
         }
 
@@ -2362,11 +2479,13 @@ void write_kikad_lib( string fileName )
                             //                printf("\n####DEF %s_%s %s %d %d %s %s %d %c %c\n", g_lib_prefix, escape_quotes( nameString + tmpsx ) , prefixString, 0, 40, drawPinNumberStr, drawPinNameStr, countGates, 'L', 'N');
 
 
-                            if( add_libnamePrefixToPartName )
-                                printf("\nDEF %s_%s %s %d %d %s %s %d %c %c\n", g_lib_prefix, escape_quotes( charstr_replace( ",/()", "_",nameString ) + tmpsx  ) , prefixString, 0, 40, drawPinNumberStr, drawPinNameStr, countGates, 'L', partType );
+                            int textFieldSize = 50;
+							
+							if( add_libnamePrefixToPartName )
+                                printf("\nDEF %s_%s %s %d %d %s %s %d %c %c\n", g_lib_prefix, escape_quotes( charstr_replace( ",/()", "_",nameString ) + tmpsx  ) , prefixString, 0, textFieldSize, drawPinNumberStr, drawPinNameStr, countGates, 'L', partType );
                             //                printf("\nDEF %s_%s %s %d %d %s %s %d %c %c\n", g_lib_prefix, escape_quotes( str_replace( ",", "_",nameString ) + tmpsx  ) , prefixString, 0, 40, drawPinNumberStr, drawPinNameStr, countGates, 'L', 'N');
                             else
-                                printf("\nDEF %s %s %d %d %s %s %d %c %c\n", escape_quotes( charstr_replace( ",/()", "_", nameString ) + tmpsx), prefixString, 0, 40, drawPinNumberStr, drawPinNameStr, countGates, 'L', partType );
+                                printf("\nDEF %s %s %d %d %s %s %d %c %c\n", escape_quotes( charstr_replace( ",/()", "_", nameString ) + tmpsx), prefixString, 0, textFieldSize, drawPinNumberStr, drawPinNameStr, countGates, 'L', partType );
                             //              printf("\nDEF %s %s %d %d %s %s %d %c %c\n", escape_quotes( str_replace( ",", "_", nameString ) + tmpsx), prefixString, 0, 40, drawPinNumberStr, drawPinNameStr, countGates, 'L', 'N');
 
                             int gatePos = 0;
@@ -2380,6 +2499,7 @@ void write_kikad_lib( string fileName )
                                     write_kikad_def_alias(DEV, G, escape_quotes( nameString + tmpsx ), gatePos, prefixString );
                                     printf("DRAW\n");
                                 }
+								
                                 write_kikad_elements(G, gatePos);
                             }
                             printf("ENDDRAW\n");
