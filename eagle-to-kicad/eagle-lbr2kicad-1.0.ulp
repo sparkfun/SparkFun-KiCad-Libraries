@@ -1419,8 +1419,10 @@ void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
 				int angle1 = (WIRE.arc.angle1 * 10) - 3599;
 				int angle2 = (WIRE.arc.angle2 * 10) - 3601;
 
+				int lineThickness = 10; //KiCad Library Convention
+
 				printf("A %d %d %d %d %d %d %d %d N %d %d %d %d\n", xc, yc, radius, angle1, angle2,
-					   gatePos, 1, 0, x1, y1, x2, y2 );
+					   gatePos, 1, lineThickness, x1, y1, x2, y2 );
 			}
 			else
 			{
