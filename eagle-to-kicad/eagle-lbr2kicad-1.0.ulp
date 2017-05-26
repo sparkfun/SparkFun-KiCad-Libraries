@@ -1602,7 +1602,7 @@ void write_kikad_pins( UL_GATE G, int  transX, int transY, int gatePos )
             dlgMessageBox("Canceled! To many pin numbers. (>9999)" );
             exit(EXIT_FAILURE);
         }
-
+		
         switch (P.length)
         {
         case PIN_LENGTH_POINT:
@@ -1625,7 +1625,11 @@ void write_kikad_pins( UL_GATE G, int  transX, int transY, int gatePos )
             pinLength = 200;
             break;
         }
-
+		
+		//For SparkFun parts we want to force a pin length of short
+		//If length was originally 200 then we need to move pin posX and posY 100 more pixels to make it line up with edge of symbol
+		int pinLengthAdjust = pinLength - 100; 
+		pinLength = 100;
 
         pinAngle = P.angle;
 
@@ -1635,32 +1639,38 @@ void write_kikad_pins( UL_GATE G, int  transX, int transY, int gatePos )
             orient = 'R';
             x2 = posX + pinLength;
             y2 = posY;
+			posX = posX + pinLengthAdjust; //Adjust posX and posY for SparkFun components
             break;
 
         case 90:
             orient = 'U';
             x2 = posX;
             y2 = posY + pinLength;
+			posY = posY + pinLengthAdjust; //Adjust posX and posY for SparkFun components
             break;
 
         case 180:
             orient = 'L';
             x2 = posX + pinLength;
             y2 = posY;
+			posX = posX - pinLengthAdjust; //Adjust posX and posY for SparkFun components
             break;
 
         case 270:
             orient = 'D';
             x2 = posX;
             y2 = posY - pinLength;
+			posY = posY - pinLengthAdjust; //Adjust posX and posY for SparkFun components
             break;
 
         default:
             orient = 'R';
             x2 = posX + pinLength;
             y2 = posY;
+			posX = posX + pinLengthAdjust; //Adjust posX and posY for SparkFun components
             break;
         }
+		
 
 
         switch (P.direction)
@@ -1728,6 +1738,7 @@ void write_kikad_pins( UL_GATE G, int  transX, int transY, int gatePos )
             pinShape  = "";
             break;
         }
+
 
         P.contacts(pad)  // Real component ?
         {   // Yes
@@ -1910,7 +1921,9 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
         printf("F1 \"%s\" %d %d %d %c %c %c %cNN\n", charstr_replace( ",/()", "_", symbolName), name_X, name_Y, fieldTextSize, orient, 'I', hAlign, vAlign);  // Else no display
 
 
-    if ( DEV.package && eaglePartToKiCadPartConversion == 1 )
+    //Turn off layer that prints footprint in schematic symbol.
+	/* 
+	if ( DEV.package && eaglePartToKiCadPartConversion == 1 )
         switch( outPutFootPrint )
         {
         case 0: // Don't prefix lib name to footprint name
@@ -1923,6 +1936,7 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
             printf("F2 \"%s_%s\" 30 150 %d H I C CNN\n", footPrintPreFix, escape_quotes( charstr_replace(",/()", "_", DEV.package.name)), fieldTextSize);
             break;
         }
+	*/
 
     if( outPutAlias )
     {
@@ -1951,7 +1965,9 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
         if( strlen( aliasList ) > 0 )  // Check for any aliases
             printf("ALIAS %s\n", aliasList );
     }
-
+	
+	footPrintList = str_replace(" ", "", footPrintList);
+	footPrintList = "SparkFun_" + footPrintList; //Add SparkFun leader in order to limit one schematic part to one footprint
 
     if ( DEV.package )
     {
@@ -1961,7 +1977,7 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
             break;
         case 1:
         case 2:
-            printf("$FPLIST\n%s$ENDFPLIST\n", charstr_replace("/", "_", footPrintList ));
+            printf("$FPLIST\n%s$ENDFPLIST\n", charstr_replace("/", "_", footPrintList )); 
             break;
         }
     }
