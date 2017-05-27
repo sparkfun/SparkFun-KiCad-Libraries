@@ -1848,27 +1848,155 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
 			int verticalAdjustment = 0;
 			int horizontalAdjustment = 0;
 
-			//printf("\n Alignment: %d", int(T.align));
-			//printf("\n Angle: %d", int(T.angle));
+
+			//Establish where the cross hairs are regardless of alignment, angle or mirroring. Hezus cristo.
+			int BOTTOM_LEFT = 0;
+			int BOTTOM_RIGHT = 1;
+			int TOP_LEFT = 2;
+			int TOP_RIGHT = 3;
+			int CENTER_LEFT = 4;
+			int CENTER_RIGHT = 5;
+			int TOP_CENTER = 6;
+			int BOTTOM_CENTER = 7;
+			
+			int anchorPosition = 0;
+			
+			if(int(T.align) == ALIGN_BOTTOM_LEFT) anchorPosition = BOTTOM_LEFT;
+			if(int(T.align) == ALIGN_TOP_LEFT) anchorPosition = TOP_LEFT;
+			if(int(T.align) == ALIGN_BOTTOM_RIGHT) anchorPosition = BOTTOM_LEFT;
+			if(int(T.align) == ALIGN_TOP_RIGHT) anchorPosition = TOP_LEFT;
+
+			if(int(T.align) == ALIGN_BOTTOM_LEFT && int(T.angle) == 0 && T.mirror == 0) anchorPosition = BOTTOM_LEFT;
+			if(int(T.align) == ALIGN_BOTTOM_LEFT && int(T.angle) == 180 && T.mirror == 0) anchorPosition = TOP_RIGHT;
+			if(int(T.align) == ALIGN_BOTTOM_LEFT && int(T.angle) == 0 && T.mirror != 0) anchorPosition = BOTTOM_RIGHT;
+			if(int(T.align) == ALIGN_BOTTOM_LEFT && int(T.angle) == 180 && T.mirror != 0) anchorPosition = TOP_LEFT;
+
+			if(int(T.align) == ALIGN_BOTTOM_CENTER && int(T.angle) == 0 && T.mirror == 0) anchorPosition = BOTTOM_CENTER;
+			if(int(T.align) == ALIGN_BOTTOM_CENTER && int(T.angle) == 180 && T.mirror == 0) anchorPosition = TOP_CENTER;
+			if(int(T.align) == ALIGN_BOTTOM_CENTER && int(T.angle) == 0 && T.mirror != 0) anchorPosition = BOTTOM_CENTER;
+			if(int(T.align) == ALIGN_BOTTOM_CENTER && int(T.angle) == 180 && T.mirror != 0) anchorPosition = TOP_CENTER;
+
+			if(int(T.align) == ALIGN_BOTTOM_RIGHT && int(T.angle) == 0 && T.mirror == 0) anchorPosition = BOTTOM_RIGHT;
+			if(int(T.align) == ALIGN_BOTTOM_RIGHT && int(T.angle) == 180 && T.mirror == 0) anchorPosition = TOP_LEFT;
+			if(int(T.align) == ALIGN_BOTTOM_RIGHT && int(T.angle) == 0 && T.mirror != 0) anchorPosition = BOTTOM_LEFT;
+			if(int(T.align) == ALIGN_BOTTOM_RIGHT && int(T.angle) == 180 && T.mirror != 0) anchorPosition = TOP_RIGHT;
+
+			if(int(T.align) == ALIGN_CENTER_LEFT && int(T.angle) == 0 && T.mirror == 0) anchorPosition = CENTER_LEFT;
+			if(int(T.align) == ALIGN_CENTER_LEFT && int(T.angle) == 180 && T.mirror == 0) anchorPosition = CENTER_RIGHT;
+			if(int(T.align) == ALIGN_CENTER_LEFT && int(T.angle) == 0 && T.mirror != 0) anchorPosition = CENTER_RIGHT;
+			if(int(T.align) == ALIGN_CENTER_LEFT && int(T.angle) == 180 && T.mirror != 0) anchorPosition = CENTER_LEFT;
+
+			if(int(T.align) == ALIGN_CENTER_RIGHT && int(T.angle) == 0 && T.mirror == 0) anchorPosition = CENTER_RIGHT;
+			if(int(T.align) == ALIGN_CENTER_RIGHT && int(T.angle) == 180 && T.mirror == 0) anchorPosition = CENTER_LEFT;
+			if(int(T.align) == ALIGN_CENTER_RIGHT && int(T.angle) == 0 && T.mirror != 0) anchorPosition = CENTER_LEFT;
+			if(int(T.align) == ALIGN_CENTER_RIGHT && int(T.angle) == 180 && T.mirror != 0) anchorPosition = CENTER_RIGHT;
+
+			if(int(T.align) == ALIGN_TOP_LEFT && int(T.angle) == 0 && T.mirror == 0) anchorPosition = TOP_LEFT;
+			if(int(T.align) == ALIGN_TOP_LEFT && int(T.angle) == 180 && T.mirror == 0) anchorPosition = BOTTOM_RIGHT;
+			if(int(T.align) == ALIGN_TOP_LEFT && int(T.angle) == 0 && T.mirror != 0) anchorPosition = TOP_RIGHT;
+			if(int(T.align) == ALIGN_TOP_LEFT && int(T.angle) == 180 && T.mirror != 0) anchorPosition = BOTTOM_LEFT;
+
+			if(int(T.align) == ALIGN_TOP_CENTER && int(T.angle) == 0 && T.mirror == 0) anchorPosition = TOP_CENTER;
+			if(int(T.align) == ALIGN_TOP_CENTER && int(T.angle) == 180 && T.mirror == 0) anchorPosition = BOTTOM_CENTER;
+			if(int(T.align) == ALIGN_TOP_CENTER && int(T.angle) == 0 && T.mirror != 0) anchorPosition = TOP_CENTER;
+			if(int(T.align) == ALIGN_TOP_CENTER && int(T.angle) == 180 && T.mirror != 0) anchorPosition = BOTTOM_CENTER;
+
+			if(int(T.align) == ALIGN_TOP_RIGHT && int(T.angle) == 0 && T.mirror == 0) anchorPosition = TOP_RIGHT;
+			if(int(T.align) == ALIGN_TOP_RIGHT && int(T.angle) == 180 && T.mirror == 0) anchorPosition = BOTTOM_LEFT;
+			if(int(T.align) == ALIGN_TOP_RIGHT && int(T.angle) == 0 && T.mirror != 0) anchorPosition = TOP_LEFT;
+			if(int(T.align) == ALIGN_TOP_RIGHT && int(T.angle) == 180 && T.mirror != 0) anchorPosition = BOTTOM_RIGHT;
 
            switch ( angle )
             {
             case 0:
+			case 180:
 			
-				//Some >Value have anchor in top left corner rather than default bottom left
-				//If it is we need to bump the text down by the height of the text
-				if(int(T.align) == 6) //ALIGN_TOP_LEFT
+                //No matter where Eagle had the anchor we are putting it bottom left
+				orient = 'H';
+                vAlign = 'B';
+                hAlign = 'L';
+
+				if(anchorPosition == TOP_LEFT)
 				{
+					//If >Value/>Name has anchor in top left corner then we need to bump the text down by the height of the text
 					verticalAdjustment = -(T.size) / g_Fact;
 				}
+				else if(anchorPosition == TOP_RIGHT)
+				{
+					//Move text down to adjust for bottom alignment
+					verticalAdjustment = -(T.size) / g_Fact;
+
+					//If original marker was in upper right corner then move text to left to adjust for left alignment
+					if ( strupr(T.value) == ">VALUE")
+					{
+						string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
+						horizontalAdjustment = strlen(tempValue) * 45; //For each character, move 45 to left. 
+					}
+					else
+					{
+						horizontalAdjustment = 2 * 45; //Assume >Names are two characters
+					}
+				}
+				else if(anchorPosition == TOP_CENTER)
+				{
+					//Move text down to adjust for bottom alignment
+					verticalAdjustment = -(T.size) / g_Fact;
+
+					if ( strupr(T.value) == ">VALUE")
+					{
+						string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
+						horizontalAdjustment = strlen(tempValue) * 45 / 2; //For each character, move 45 to left. Divide by two because this is center marker.
+					}
+					else
+					{
+						horizontalAdjustment = 2 * 45; //Assume >Names are two characters
+					}
+				}
+				else if(anchorPosition == BOTTOM_CENTER)
+				{
+					if ( strupr(T.value) == ">VALUE")
+					{
+						string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
+						horizontalAdjustment = strlen(tempValue) * 45 / 2; //For each character, move 45 to left. Divide by two because this is center marker.
+					}
+					else
+					{
+						horizontalAdjustment = 2 * 45; //Assume >Names are two characters
+					}
+				}
+				else if(anchorPosition == CENTER_RIGHT)
+				{
+					//Move text down (by half) to adjust for bottom alignment
+					verticalAdjustment = -(T.size) / g_Fact / 2;
+
+					if ( strupr(T.value) == ">VALUE")
+					{
+						string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
+						horizontalAdjustment = strlen(tempValue) * 45 / 2; //For each character, move 45 to left. Divide by two because this is center marker.
+					}
+					else
+					{
+						horizontalAdjustment = 2 * 45; //Assume >Names are two characters
+					}
 				
-                orient = 'H';
-                hAlign = 'L';
-                vAlign = 'B';
+				}
+				else if(anchorPosition == BOTTOM_RIGHT)
+				{
+					if ( strupr(T.value) == ">VALUE")
+					{
+						string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
+						horizontalAdjustment = strlen(tempValue) * 45; //For each character, move 45 to left. 
+					}
+					else
+					{
+						horizontalAdjustment = 2 * 45; //Assume >Names are two characters
+					}
+				}
+				
                 break;
 
             case 90:
-				if(int(T.align) == 6) //ALIGN_TOP_LEFT
+				if(anchorPosition == TOP_LEFT)
 				{
 					horizontalAdjustment = -(T.size) / g_Fact;
 				}
@@ -1877,29 +2005,6 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
                 orient = 'V';
                 hAlign = 'L';
                 vAlign = 'B';
-                break;
-
-            case 180:
-                orient = 'H';
-                
-				//Force horizontal align to left
-				//hAlign = 'R';
-				hAlign = 'L';
-
-				//If original marker was in upper right corner then move text to left to adjust for left alignment
-				if(T.mirror == 0)
-				{
-					string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
-					horizontalAdjustment = strlen(tempValue) * 45; //For each character, move 45 to left
-				}
-
-				//Force vertical alignment to bottom
-				//vAlign = 'T';
-				vAlign = 'B';
-				
-				//Now move text down to adjust for bottom alignment
-				verticalAdjustment = -(T.size) / g_Fact;
-
                 break;
 
             case 270:
@@ -1918,13 +2023,12 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
 
             if ( strupr(T.value) == ">NAME" )
             {
-                prefix_X = T.x / g_Fact - transX + offset;
-                prefix_Y = T.y / g_Fact - transY;
+                prefix_X = T.x / g_Fact - transX + offset - horizontalAdjustment;
+                prefix_Y = T.y / g_Fact - transY + verticalAdjustment;
                 hasName = 1;  // Mark to display Name
             }
         }
     }
-
 
 	int fieldTextSize = 50; //KiCad Library Convention for all schematic component text fields
 
