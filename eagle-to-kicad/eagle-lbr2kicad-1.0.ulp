@@ -1476,14 +1476,16 @@ void write_kikad_circle( UL_GATE G, int transX, int transY, int gatePos )
         int x = (C.x / g_Fact) - transX;
         int y = (C.y / g_Fact) - transY;
         int radius = C.radius / g_Fact;
+		
+		int lineThickness = 10;
 
         if ( radius > 0 && radius < 10 )
         {
-            printf("C %d %d %d %d %d %d F\n", x, y, radius, gatePos, 1, 0);
+            printf("C %d %d %d %d %d %d F\n", x, y, radius, gatePos, 1, lineThickness);
         }
         else
         {
-            printf("C %d %d %d %d %d %d N\n", x, y, radius, gatePos, 1, 0);
+            printf("C %d %d %d %d %d %d N\n", x, y, radius, gatePos, 1, lineThickness);
         }
     }
 }
@@ -1514,8 +1516,6 @@ void write_kikad_text( UL_GATE G, int transX, int transY, int gatePos )
 
         if( T.layer > 200 )
             continue;
-
-        // printf("writing text\n");
 
         // Check for valid characters and replace with '~' if not
         // Note that includes ' '  will be replaced with '~'
@@ -1845,7 +1845,11 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
             int posX   = 0;
             int posY   = 0;
             int offset = 0;
-			int topAlignOffset = 0;
+			int verticalAdjustment = 0;
+			int horizontalAdjustment = 0;
+
+			//printf("\n Alignment: %d", int(T.align));
+			//printf("\n Angle: %d", int(T.angle));
 
            switch ( angle )
             {
@@ -1855,7 +1859,7 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
 				//If it is we need to bump the text down by the height of the text
 				if(int(T.align) == 6) //ALIGN_TOP_LEFT
 				{
-					topAlignOffset = -(T.size) / g_Fact;
+					verticalAdjustment = -(T.size) / g_Fact;
 				}
 				
                 orient = 'H';
@@ -1864,6 +1868,11 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
                 break;
 
             case 90:
+				if(int(T.align) == 6) //ALIGN_TOP_LEFT
+				{
+					horizontalAdjustment = -(T.size) / g_Fact;
+				}
+
                 offset = -(T.size / 2) / g_Fact;
                 orient = 'V';
                 hAlign = 'L';
@@ -1872,8 +1881,25 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
 
             case 180:
                 orient = 'H';
-                hAlign = 'R';
-                vAlign = 'T';
+                
+				//Force horizontal align to left
+				//hAlign = 'R';
+				hAlign = 'L';
+
+				//If original marker was in upper right corner then move text to left to adjust for left alignment
+				if(T.mirror == 0)
+				{
+					string tempValue = charstr_replace( ",/()", "_", symbolName); //This is what the value will be
+					horizontalAdjustment = strlen(tempValue) * 45; //For each character, move 45 to left
+				}
+
+				//Force vertical alignment to bottom
+				//vAlign = 'T';
+				vAlign = 'B';
+				
+				//Now move text down to adjust for bottom alignment
+				verticalAdjustment = -(T.size) / g_Fact;
+
                 break;
 
             case 270:
@@ -1885,8 +1911,8 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
 
             if ( strupr(T.value) == ">VALUE" )
             {
-                name_X = T.x / g_Fact - transX + offset;
-                name_Y = T.y / g_Fact - transY + topAlignOffset;
+                name_X = T.x / g_Fact - transX + offset - horizontalAdjustment;
+                name_Y = T.y / g_Fact - transY + verticalAdjustment;
                 hasValue = 1;  // Mark to display Value
             }
 
@@ -1902,12 +1928,16 @@ void write_kikad_def_alias( UL_DEVICE DEV, UL_GATE G, string symbolName, int cou
 
 	int fieldTextSize = 50; //KiCad Library Convention for all schematic component text fields
 
+	hasName = 1; //Let's force all schematic devices to have a >Name indicator
+
     //    if ( DEV.prefix == "" ) // No prefix ?
     //    {
+
     if ( hasName  )  // Does it have a >Name? Use the generated prefix
         printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", prefixString, prefix_X, prefix_Y, fieldTextSize, orient, 'V', hAlign, vAlign);
     else
         printf("F0 \"%s\" %d %d %d %c %c %c %cNN\n", prefixString, prefix_X, prefix_Y, fieldTextSize, orient, 'I', hAlign, vAlign);
+
     //    }
     //    else  // Good, we have prefix so use that
     //    {
@@ -2030,7 +2060,8 @@ void write_kikad_lib( string fileName )
                 LIB.devicesets(D)
                 {
                     string nameDeviceSet = D.name;
-                    string nameDeviceSetDescrtiption = D.description;
+                    string nameDeviceSetDescription = D.description;
+					
                     footPrintList = " ";
 
                     devicesCount = 0;
