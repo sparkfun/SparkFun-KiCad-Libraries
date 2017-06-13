@@ -1148,7 +1148,9 @@ int outputCmpPro( string fileName, int xcount )
     printf("version=1\n");
     printf("LibDir=\n");
     printf("[eeschema/libraries]\n");
-    printf("LibName1=%s\n", project_liblist[0] );
+    printf("LibName1=%s\n", project_liblist[0]);
+    printf("[schematic_editor]\n");
+    printf("LabSize=50\n"); //Set text size to 50 by default for this project
     //    printf("(END)\n");
   }
   return 0;
