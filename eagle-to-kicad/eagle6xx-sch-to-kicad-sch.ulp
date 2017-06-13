@@ -1203,8 +1203,11 @@ string writeInstanceText( UL_TEXT T, int visable, int posX, int posY, int r, int
   //  int  y        = ( T.y / g_Fact) - (( symYPostionRaw * 2) / g_Fact ) + g_transY;  
   int  angle    = T.angle;
   int  textMirro = T.mirror;
-  int  fontSize = int( (T.size/g_Fact) * fontSize_PartPreFix_Ajust );
+
+  //int  fontSize = int( (T.size/g_Fact) * fontSize_PartPreFix_Ajust );
   //  int  fontSize = T.size/g_Fact;  
+  int  fontSize = 50; //Force to 50 to match KiCad Library Conventions
+
   char hAlign   = 'L';
   char vAlign   = 'B';
   char orient   = 'H';
