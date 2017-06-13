@@ -1930,6 +1930,8 @@ void writeTextNetLabel( string textString, real textAngle, int fontSize, int pos
          break;
      }     
 
+   //Supress all the small text on the nets
+   /*
    if( global )
      printf("Text GLabel %d %d %d %d %s %s %d\n", posX, -posY, Xorient, fontSize, "UnSpc", "~", 0 );
    else
@@ -1937,6 +1939,7 @@ void writeTextNetLabel( string textString, real textAngle, int fontSize, int pos
 
    printf("%s\n", charstr_replace( "!", "~", textString )); // Swich over bar start end charters  
    //   printf("%s\n", textString);
+	*/
 }
 
 
@@ -1951,36 +1954,37 @@ void write_kicad_bus_segments( UL_SHEET SH )
    {
       N.segments(SEG)
       {
-         SEG.wires(W) 
-	 {
+        SEG.wires(W) 
+	    {
             int x1 = W.x1/g_Fact + g_transX;
             int y1 = W.y1/g_Fact + g_transY;
             int x2 = W.x2/g_Fact + g_transX;
             int y2 = W.y2/g_Fact + g_transY;
 
-	    printf( "Wire Bus Line\n" );
-	    printf( "%d %d %d %d\n", x1, -y1, x2, -y2 );
-	 }
+	        printf( "Wire Bus Line\n" );
+	        printf( "%d %d %d %d\n", x1, -y1, x2, -y2 );
+	    }
 	 
-         SEG.junctions(J)
-	 {
-	    int x = J.x/g_Fact + g_transX;
-	    int y = J.y/g_Fact + g_transY;
+        SEG.junctions(J)
+	    {
+	        int x = J.x/g_Fact + g_transX;
+	        int y = J.y/g_Fact + g_transY;
 	    
-	    printf("Connection ~ %d %d\n", x, -y);
-	 }
+			printf("Connection ~ %d %d\n", x, -y);
+		}
 
          
-         SEG.labels(L) // New version, supposed to be better?
-         {
-           writeTextLabels( L );
-         }
-         /*
-         SEG.texts(T)  // Old Version
-         {
-	    writeTextSegments(T);
-         }
-         */
+        SEG.labels(L) // New version, supposed to be better?
+        {
+		   writeTextLabels( L );
+        }
+         
+		/*
+		SEG.texts(T)  // Old Version
+		{
+			(T);
+		}
+		*/
       }
    }
 }
@@ -1990,46 +1994,46 @@ void write_kicad_bus_segments( UL_SHEET SH )
 //------------------------------------------------------
 void write_kicad_wire_segments( UL_SHEET SH )
 {
-   SH.nets(N)
-   {
-      N.segments(SEG)
-      {
-         SEG.wires(W) 
-         {
-            int x1 = W.x1/g_Fact + g_transX;
-            int y1 = W.y1/g_Fact + g_transY;
-            int x2 = W.x2/g_Fact + g_transX;
-            int y2 = W.y2/g_Fact + g_transY;
+	SH.nets(N)
+	{
+		N.segments(SEG)
+		{
+			SEG.wires(W) 
+			{
+				int x1 = W.x1/g_Fact + g_transX;
+				int y1 = W.y1/g_Fact + g_transY;
+				int x2 = W.x2/g_Fact + g_transX;
+				int y2 = W.y2/g_Fact + g_transY;
 
-            printf( "Wire Wire Line\n" );
+				printf( "Wire Wire Line\n" );
 
-	    if( outPutVersion == 1 )
-	      printf( "%d %d %d %d\n", x1, -y1, x2, -y2 );
-	    if( outPutVersion == 2 )
-	      printf( "\t%d %d %d %d\n", x1, -y1, x2, -y2 );
-         }
+			if( outPutVersion == 1 )
+				printf( "%d %d %d %d\n", x1, -y1, x2, -y2 );
+			if( outPutVersion == 2 )
+				printf( "\t%d %d %d %d\n", x1, -y1, x2, -y2 );
+			}
 	 
-         SEG.junctions(J)
-        {
-            int x = J.x/g_Fact + g_transX;
-            int y = J.y/g_Fact + g_transY;
+			SEG.junctions(J)
+			{
+				int x = J.x/g_Fact + g_transX;
+				int y = J.y/g_Fact + g_transY;
 	    
-            printf("Connection ~ %d %d\n", x, -y);
-        }
+				printf("Connection ~ %d %d\n", x, -y);
+			}
 	 
 
-         SEG.labels(L) // New version, supposed to be better?
-         {
-           writeTextLabels( L );
-         }
+			SEG.labels(L) // New version, supposed to be better?
+			{
+				writeTextLabels( L );
+			}
 
-         //         SEG.texts(T)
-         //         {
-         //            writeTextSegments(T);
-         //         }
+			//         SEG.texts(T)
+			//         {
+			//            writeTextSegments(T);
+			//         }
 
-      }
-   }
+		}
+	}
 }
 
 //------------------------------------------------------
