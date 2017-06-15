@@ -2121,545 +2121,520 @@ void write_kicad_noconnect( UL_SHEET SH )
 //------------------------------------------------------
 //write kicad schematic component entries
 //------------------------------------------------------
-void write_kicad_components( UL_SHEET S )
+void write_kicad_components(UL_SHEET S)
 {
-  S.parts(P)
+    S.parts(P)
     {
-      string libName = P.deviceset.library;
 
-      if(P.device.package)  // Do we have a package ?..   If not, output it in different way
-      {  // ******* Yes we have a package !
+        //NES - There are a variety of components we should not import. Foremost is the schematic frame. KiCad already has its frame.
+        if (P.device.name == "FRAME-LETTER") {
+            //Do nothing. Don't import this component.
+        }
+	
+        else
+		{
+			//printf("\nname: %s\n", P.device.name); //Debugging
+		
+            string libName = P.deviceset.library;
 
-//        printf("#P.device.name:%s, P.deviceset.name:%s, P.name:%s, P.device.package.name:%s\n", P.device.name, P.deviceset.name, P.name, P.device.package.name );
+			//NES - Additionally, there are stock components that we want to use from KiCad, and not import from EAGLE
+			//Power symbols, resistors, caps, etc.
+			//if(libName == "SPARKFUN-POWERSYMBOLS")
+			//{
+				//Pull in device from KiCad			
+			//}
 
+            if (P.device.package) // Do we have a package ?..   If not, output it in different way
+            { // ******* Yes we have a package !
 
-          string deviceName = P.device.name;
-          //          string deviceName = P.deviceset.name;
-	  string refanceName  = P.name;
-	  int instanceCount = 0;
-	  int numberOfSubParts = 0;
+                //        printf("#P.device.name:%s, P.deviceset.name:%s, P.name:%s, P.device.package.name:%s\n", P.device.name, P.deviceset.name, P.name, P.device.package.name );
 
-          string timehash;
-          sprintf( timehash, "%X", getCurrentTimeHack());
+                string deviceName = P.device.name;
+                //          string deviceName = P.deviceset.name;
+                string refanceName = P.name;
+                int instanceCount = 0;
+                int numberOfSubParts = 0;
 
+                string timehash;
+                sprintf(timehash, "%X", getCurrentTimeHack());
 
-          if ( addLibPrefix )
-            cmpList[ cmpListSize++ ] = timehash + " " + P.name + " " + charstr_replace(",", "_", deviceName ) + " " + libName + libNamePartLibNameSeperator + charstr_replace(",", "_", P.device.package.name ) ;
-          else
-            cmpList[ cmpListSize++ ] = timehash + " " + P.name + " " + charstr_replace(",", "_", deviceName ) + " " + charstr_replace(",", "_", P.device.package.name );
+                if (addLibPrefix)
+                    cmpList[cmpListSize++] = timehash + " " + P.name + " " + charstr_replace(",", "_", deviceName) + " " + libName + libNamePartLibNameSeperator + charstr_replace(",", "_", P.device.package.name);
+                else
+                    cmpList[cmpListSize++] = timehash + " " + P.name + " " + charstr_replace(",", "_", deviceName) + " " + charstr_replace(",", "_", P.device.package.name);
 
+                if (refanceName == "")
+                    refanceName = "NNN";
 
-          if(refanceName == "")
-            refanceName= "NNN";
-         
-	  if( strlen(deviceName) < 1 ) // ????
-            deviceName = "1uF";
- 
-	  // Replace all spaces with '_' in part number
-	  // Replace all spaces or '/' with '_' in part number
-	  for (int idx = 0; deviceName[idx]; ++idx)
-	    {
-	      //	      if( deviceName[idx] == ' ' || deviceName[idx] == '/')
-	      if( deviceName[idx] == ' ' )
-		deviceName[idx] = '_';
-	    }
+                if (strlen(deviceName) < 1) // ????
+                    deviceName = "1uF";
 
-	  //	  printf( "$Comp\n" );
-	  //	  	  printf( "##L %s %s\n", deviceName, refanceName );
-	  //	  printf( "U %d %d %X\n", 1, 1, time() );
-     
-	  P.instances(I)
-	    {
-	      numberOfSubParts++;
-	    }
-
-          
-
-	  P.instances(I)   
-	    {
-	      char orient = 'H';
-	      char hAlign = 'L';
-	      char vAlign = 'T';
-	      int posX = I.x / g_Fact + g_transX;
-	      int posY = I.y / g_Fact + g_transY;
-              //	      int posYraw = I.y;
-	      int count = 0;
-	      int partAngle = I.angle;
-	      int partMirror = I.mirror;
-
-	      string gateNameSplit[];
-	      int getNameSplitCount = 0;
-	      string strF0F1F2[];
-	      int strF0F1F2foundFlag[] = {0,0,0};
-	      string strItext[];
-	      string strItextOutPut[];
-	      int strItextFoundflag[];
-	      string IgateSymText[];
-	      string IgateSymTextOutPut[];
-	      int IgateSymTextFoundFlag[];
-
-
-	      printf( "$Comp\n" );
-	      if( addLibPrefix )
-                printf( "L %s %s\n", strupr( libName ) + libNamePartNameSeperator + charstr_replace( ",()/", "_", deviceName), refanceName );
-              //                printf( "L %s %s\n", strupr( libName ) + libNamePartNameSeperator + str_replace( ",", "_", deviceName), refanceName );              
-	      else
-		printf( "L %s %s\n", charstr_replace( ",()/", "_", deviceName), refanceName );
-              //		printf( "L %s %s\n", str_replace( ",", "_", deviceName), refanceName );
-	      //	      printf( "L %s %s\n", deviceName, refanceName );
-	      //	      printf( "U %d %d %X\n", 1, 1, time() );
-	      //	      printf( "U %d %d %X\n", instanceCount++, 1, time()  );
-
-
-              //              printf("\n##### numberOfSubParts %d", numberOfSubParts );
-              
-              instanceCount = 1;              
-              int j;
-              // look for matching multi gate part
-              //              if( numberOfSubParts > 1 )
-                if( j = compairStringToStringArray( deviceName )) // Is this a multi gate part ?
-                {  // Yes..
-                  int k,a;
-                  string tmpSA[];
-                  
-                  j--;  // Ajust J
-                  
-                  k = strsplit( tmpSA, mulitiGateList[ j ], ' ' ); // Make up target search array.
-
-                  //                  for( int nn = 0; nn < k; nn++ )
-                  //                    printf("\n##### %s", tmpSA[nn] );
-
-
-                  
-                  for( a = 2; a < k; )  // Ok search for gate name in that array then use the index, as part index for KiCad
-                  {
-                    if( stringCompair( tmpSA[ a ], I.gate.name )  )
-                    {
-                      instanceCount = ( a - 2 );
-                      break;
-                    }
-                    a++;
-                  }
+                // Replace all spaces with '_' in part number
+                // Replace all spaces or '/' with '_' in part number
+                for (int idx = 0; deviceName[idx]; ++idx) {
+                    //	      if( deviceName[idx] == ' ' || deviceName[idx] == '/')
+                    if (deviceName[idx] == ' ')
+                        deviceName[idx] = '_';
                 }
-              
-            
-              printf( "U %d %d %X\n", instanceCount, 1, getCurrentTimeHack() );
-	      printf( "P %d %d\n", posX, -posY );
-        
-	      count = 0;
 
-	      int ItextCount = 0;
-	      int IgateSymolTextCount = 0;
+                //	  printf( "$Comp\n" );
+                //	  	  printf( "##L %s %s\n", deviceName, refanceName );
+                //	  printf( "U %d %d %X\n", 1, 1, time() );
 
+                P.instances(I)
+                {
+                    numberOfSubParts++;
+                }
 
-	      strF0F1F2[ 0 ] = refanceName;
-	      strF0F1F2[ 1 ] = I.value;
- 	      strF0F1F2[ 2 ] = P.device.package.name;
+                P.instances(I)
+                {
+                    char orient = 'H';
+                    char hAlign = 'L';
+                    char vAlign = 'T';
+                    int posX = I.x / g_Fact + g_transX;
+                    int posY = I.y / g_Fact + g_transY;
+                    //	      int posYraw = I.y;
+                    int count = 0;
+                    int partAngle = I.angle;
+                    int partMirror = I.mirror;
 
-	      // Smash text section, note only the >NAME and >VALUE can be smashed !
-	      // if >NAME and >VALUE are not smashed, they won't apear here, rather in I.gate.symbol.texts(T) section
-		  // Also note that depending on whether the 
-	      // >NAME and/or >VALUE have been changed/deleted then added back in the Eagle lib, and the sch is updated from
-	      // that Eagle libs, the >NAME and/or >VALUE could be in any order in I.gate.symbol.texts(T)
-	      // sections!! How brain dead is that!!
-	      I.texts(T)
-		{
-		  strItext[ ItextCount ] = T.value;
-		  strItextOutPut[ ItextCount ] = writeInstanceText(  T, 0, posX, -posY, partAngle, partMirror, "", "" );
-		  strItextFoundflag[ ItextCount ] = 0;
-		  strF0F1F2foundFlag[ ItextCount ] = 0;
-		  ItextCount++;
-		}
-	      // None smash section
-	      I.gate.symbol.texts(T)
-		{
-		  IgateSymText[ IgateSymolTextCount ] = T.value;
-		  IgateSymTextOutPut[ IgateSymolTextCount ] = writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, "", "" );
-		  IgateSymTextFoundFlag[ IgateSymolTextCount ] = 0;
-		  strF0F1F2foundFlag[ IgateSymolTextCount ] = 0;
-		  IgateSymolTextCount++;  
-		}
+                    string gateNameSplit[];
+                    int getNameSplitCount = 0;
+                    string strF0F1F2[];
+                    int strF0F1F2foundFlag[] = { 0, 0, 0 };
+                    string strItext[];
+                    string strItextOutPut[];
+                    int strItextFoundflag[];
+                    string IgateSymText[];
+                    string IgateSymTextOutPut[];
+                    int IgateSymTextFoundFlag[];
 
-	      /*
-	      for( count = 0; count < ItextCount; count++ )
-		{
-		  printf("\n#count:%d\tstrItext: %s", count, strItext[ count ] );
-		  printf("\n#count:%d\tstrItextOut: %s", count, strItextOutPut[ count ] );
-		}
-	      printf("\n");
-	      for( count = 0; count < IgateSymolTextCount; count++ )
-		{
-		  printf("\n#count:%d\tIgateSymolText: %s", count,  IgateSymText[ count ] );
-		  printf("\n#count:%d\tIgateSymolTextOut: %s", count, IgateSymTextOutPut[  count ] );
-		}
-	      printf("\n");
-	      */
+                    printf("$Comp\n");
+                    if (addLibPrefix)
+                        printf("L %s %s\n", strupr(libName) + libNamePartNameSeperator + charstr_replace(",()/", "_", deviceName), refanceName);
+                    //                printf( "L %s %s\n", strupr( libName ) + libNamePartNameSeperator + str_replace( ",", "_", deviceName), refanceName );
+                    else
+                        printf("L %s %s\n", charstr_replace(",()/", "_", deviceName), refanceName);
+                    //		printf( "L %s %s\n", str_replace( ",", "_", deviceName), refanceName );
+                    //	      printf( "L %s %s\n", deviceName, refanceName );
+                    //	      printf( "U %d %d %X\n", 1, 1, time() );
+                    //	      printf( "U %d %d %X\n", instanceCount++, 1, time()  );
 
-	      count =  0;
+                    //              printf("\n##### numberOfSubParts %d", numberOfSubParts );
 
-	      int ct = 0;  //  ct =  F ct 
-	      int found = 0;
-	      //Output F0...
-	      //	      for( count = 0; count < 3; count++ )
-	      //		{
+                    instanceCount = 1;
+                    int j;
+                    // look for matching multi gate part
+                    //              if( numberOfSubParts > 1 )
+                    if (j = compairStringToStringArray(deviceName)) // Is this a multi gate part ?
+                    { // Yes..
+                        int k, a;
+                        string tmpSA[];
 
-		  for( ct = 0; ct < 3; ct++)  // find header 
-		    {
-                      // find header In smashed text
-		      for( int ct1 = 0; ct1 < ItextCount; ct1++ )
-			{
-			  if( ( strstr( strItext[ ct1 ], strF0F1F2[ ct ], 0) == 0) && ( ct == 0) || ( strF0F1F2[ ct ] == strItext[ ct1 ] ))
-			    //			  if( strF0F1F2[ ct ] == strItext[ ct1 ] )  // found  so output it
-			    {
-			      //			      printf("\nfound!!!  ct=%d ct1=%d  %s   %s", ct, ct1,  strF0F1F2[ct], strItext[ ct1 ] );
+                        j--; // Ajust J
 
-                              //                              printf("\nX1 ct=%d  numberOfSubParts=%d  %s", ct, numberOfSubParts, strItextOutPut[ ct1 ]);    //  Debug
-                              
-                              if(( ct == 0 ) && ( numberOfSubParts > 1 ) )  // Outping F0 ?
-                                //                              if(( ct == 0 ) && ( numberOfSubParts > 1 ) )  // Output F0 ?                                
-                              {
-                                string tmpSA[];
-                                int i;
+                        k = strsplit(tmpSA, mulitiGateList[j], ' '); // Make up target search array.
 
-                                i = strsplit( tmpSA, strItextOutPut[ ct1 ], ' ');    // Split output
-                                tmpSA[ 0 ] = "\"" + refanceName + "\"";  // Over write refance
-                                printf("F %d %s", ct, strjoin( tmpSA, ' ' ));    // Print out hacked F0 reference
-                              }
-                              else
-                                if( ct == 2) // on F 2 repalce "," with "_"
-                                {
-                                  if( addLibPrefix )
-                                  {
-                                    string tmpXA[];
-                                    strsplit( tmpXA, strItextOutPut[ ct1 ], ' ' );
-                                    tmpXA[ 0 ] = stripQutes( str_replace( ",", "_", tmpXA[ 0 ] ));
-                                    tmpXA[ 0 ] = "\"" + strupr( libName ) + libNamePartNameSeperator + tmpXA[ 0 ] + "\"";
-                                    tmpXA[ 6 ] = "0001";  // Dont display
-                                    printf("F %d %s", ct, strjoin( tmpXA, ' ' ));    // Print smashed text
-                                    
-                                    //                                    printf("F %d %s\n", ct, "\"" + strupr( libName ) + libNamePartNameSeperator + stripQutes( str_replace( ",", "_", strItextOutPut[ ct1 ])));    // Print smashed text
-                                  }
-                                  else
-                                  {
-                                    string tmpXA[];
-                                    strsplit( tmpXA, strItextOutPut[ ct1 ], ' ' );
-                                    tmpXA[ 6 ] = "0001";  // Dont display
-                                    printf("F %d %s", ct, str_replace( ",", "_", strjoin( tmpXA, ' ' )));    // Print smashed text
-                                    //  printf("F %d %s", ct,  str_replace( ",", "_", strItextOutPut[ ct1 ]));    // Print smashed text
-                                  }
-                                }
-                                else
-                                  printf("F %d %s", ct,  strItextOutPut[ ct1 ]);    // Print smashed text
-                              
-			      strF0F1F2foundFlag[ ct ] = 1;
-			      strItextFoundflag[ ct1 ] = 1;  //  Mark so we don't output this
-			      found = 1;
-			      break;
-			    }
-			  else
-			    strF0F1F2foundFlag[ ct ] = 0; // Mark as not found
-			}
-		      if(found)
-			{
-			  found = 0;
-			  continue;
-			}
+                        //                  for( int nn = 0; nn < k; nn++ )
+                        //                    printf("\n##### %s", tmpSA[nn] );
 
-                      // find header in non-smashed text
-		      for( ct1 = 0; ct1 < IgateSymolTextCount; ct1++ )
-			{
-			  if( ( strstr( IgateSymText[ ct1 ], strF0F1F2[ ct ], 0) == 0) && ( ct == 0) || ( strF0F1F2[ ct ] == IgateSymText[ ct1 ] ))
-			    //			  if( strF0F1F2[ ct ] == IgateSymText[ ct1 ] )  // found  so output it
-			    {
-                              // Print non-smashed text
-
-                              //                              printf("\nX2 ct=%d  numberOfSubParts=%d  %s", ct, numberOfSubParts, IgateSymTextOutPut[ ct1 ]);    //  Debug
-                              
-                              if(( ct == 0 ) && ( numberOfSubParts > 1 ) )  // Outping F0 ?
-                                //                                if(( ct == 0 ) && ( numberOfSubParts > 1 ) )  // Outping F0 ?
-                              {
-                                string tmpSA[];
-                                int i;
-
-                                i = strsplit( tmpSA, IgateSymTextOutPut[ ct1 ], ' ');    // Split out put
-                                tmpSA[ 0 ] = "\"" + refanceName + "\"";  // Over write reference
-                                printf("F %d %s", ct,  strjoin( tmpSA, ' ' ));    // Print out hacked F0 reference
-                              }
-                              else
-                                if( ct == 2) // on F 2 repalce "," with "_"
-                                {
-                                  if( addLibPrefix )
-                                  {
-                                    string tmpXA[];
-                                    strsplit( tmpXA, IgateSymTextOutPut[ ct1 ], ' ' );
-                                    tmpXA[ 0 ] = stripQutes( str_replace( ",", "_", tmpXA[ 0 ] ));
-                                    tmpXA[ 0 ] = "\"" + strupr( libName ) + libNamePartNameSeperator + tmpXA[ 0 ] + "\"";
-                                    //                                    if( numberOfSubParts > 1 ) // If we have subparts then dont show package in sch
-                                      tmpXA[ 6 ] = "0001";
-                                    printf("F %d %s", ct, strjoin( tmpXA, ' ' ));    // Print smashed text
-                                    //                                    printf("F %d \"%s\"\n", ct, strupr( libName ) + libNamePartNameSeperator + stripQutes( str_replace( ",", "_", IgateSymTextOutPut[ ct1 ])));
-                                  }
-                                  else
-                                  {
-                                    if( numberOfSubParts > 1 ) // If we have subparts then don't show package in sch
-                                    {
-                                      string tmpXA[];
-                                      strsplit( tmpXA, IgateSymTextOutPut[ ct1 ], ' ' );
-                                      tmpXA[ 6 ] = "0001";
-                                      printf("F %d %s", ct,  str_replace( ",", "_", strjoin( tmpXA, ' ' )));
-                                    }
-                                    else
-                                      printf("F %d %s", ct,  str_replace( ",", "_", IgateSymTextOutPut[ ct1 ]));
-                                  }
-                                }
-                                else
-                                  printf("F %d %s", ct,  IgateSymTextOutPut[ ct1 ]);
-
-
-                              
-			      strF0F1F2foundFlag[ ct ] = 1;
-			      IgateSymTextFoundFlag[ ct1 ] = 1;  //  Mark so we don't output this
-			      found = 1;
-			      break;
-			    }
-			  else
-			    strF0F1F2foundFlag[ ct ] = 0; // Mark as not found
-			}
-		      if(found)
-			{
-			  found = 0;
-			  continue;
-			}
-
-                      // Ok we have not found any place to put it, so just stick it above the reference point,
-                      // and hide it from display
-
-		      string tmp = strF0F1F2[ ct ];
-
-                      //		      if(( ct == 0 ) && addLibPrefix )  // add prefix to reference name?
-                      //			tmp = strupr( libName ) + libNamePartNameSeperator + tmp;                      
-
-		      if(( ct == 2 ))  // add prefix to footprint? and replace "," or "/"  with "_"
-                      {
-                        if( addLibPrefix )
+                        for (a = 2; a < k;) // Ok search for gate name in that array then use the index, as part index for KiCad
                         {
-                          tmp = strupr( libName ) + libNamePartLibNameSeperator + charstr_replace( ",/", "_", tmp );
+                            if (stringCompair(tmpSA[a], I.gate.name)) {
+                                instanceCount = (a - 2);
+                                break;
+                            }
+                            a++;
+                        }
+                    }
+
+                    printf("U %d %d %X\n", instanceCount, 1, getCurrentTimeHack());
+                    printf("P %d %d\n", posX, -posY);
+
+                    count = 0;
+
+                    int ItextCount = 0;
+                    int IgateSymolTextCount = 0;
+
+                    strF0F1F2[0] = refanceName;
+                    strF0F1F2[1] = I.value;
+                    strF0F1F2[2] = P.device.package.name;
+
+                    // Smash text section, note only the >NAME and >VALUE can be smashed !
+                    // if >NAME and >VALUE are not smashed, they won't apear here, rather in I.gate.symbol.texts(T) section
+                    // Also note that depending on whether the
+                    // >NAME and/or >VALUE have been changed/deleted then added back in the Eagle lib, and the sch is updated from
+                    // that Eagle libs, the >NAME and/or >VALUE could be in any order in I.gate.symbol.texts(T)
+                    // sections!! How brain dead is that!!
+                    I.texts(T)
+                    {
+                        strItext[ItextCount] = T.value;
+                        strItextOutPut[ItextCount] = writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, "", "");
+                        strItextFoundflag[ItextCount] = 0;
+                        strF0F1F2foundFlag[ItextCount] = 0;
+                        ItextCount++;
+                    }
+                    // None smash section
+                    I.gate.symbol.texts(T)
+                    {
+                        IgateSymText[IgateSymolTextCount] = T.value;
+                        IgateSymTextOutPut[IgateSymolTextCount] = writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, "", "");
+                        IgateSymTextFoundFlag[IgateSymolTextCount] = 0;
+                        strF0F1F2foundFlag[IgateSymolTextCount] = 0;
+                        IgateSymolTextCount++;
+                    }
+
+                    /*
+			  for( count = 0; count < ItextCount; count++ )
+			{
+			  printf("\n#count:%d\tstrItext: %s", count, strItext[ count ] );
+			  printf("\n#count:%d\tstrItextOut: %s", count, strItextOutPut[ count ] );
+			}
+			  printf("\n");
+			  for( count = 0; count < IgateSymolTextCount; count++ )
+			{
+			  printf("\n#count:%d\tIgateSymolText: %s", count,  IgateSymText[ count ] );
+			  printf("\n#count:%d\tIgateSymolTextOut: %s", count, IgateSymTextOutPut[  count ] );
+			}
+			  printf("\n");
+			  */
+
+                    count = 0;
+
+                    int ct = 0; //  ct =  F ct
+                    int found = 0;
+                    //Output F0...
+                    //	      for( count = 0; count < 3; count++ )
+                    //		{
+
+                    for (ct = 0; ct < 3; ct++) // find header
+                    {
+                        // find header In smashed text
+                        for (int ct1 = 0; ct1 < ItextCount; ct1++) {
+                            if ((strstr(strItext[ct1], strF0F1F2[ct], 0) == 0) && (ct == 0) || (strF0F1F2[ct] == strItext[ct1]))
+                            //			  if( strF0F1F2[ ct ] == strItext[ ct1 ] )  // found  so output it
+                            {
+                                //			      printf("\nfound!!!  ct=%d ct1=%d  %s   %s", ct, ct1,  strF0F1F2[ct], strItext[ ct1 ] );
+
+                                //                              printf("\nX1 ct=%d  numberOfSubParts=%d  %s", ct, numberOfSubParts, strItextOutPut[ ct1 ]);    //  Debug
+
+                                if ((ct == 0) && (numberOfSubParts > 1)) // Outping F0 ?
+                                //                              if(( ct == 0 ) && ( numberOfSubParts > 1 ) )  // Output F0 ?
+                                {
+                                    string tmpSA[];
+                                    int i;
+
+                                    i = strsplit(tmpSA, strItextOutPut[ct1], ' '); // Split output
+                                    tmpSA[0] = "\"" + refanceName + "\""; // Over write refance
+                                    printf("F %d %s", ct, strjoin(tmpSA, ' ')); // Print out hacked F0 reference
+                                }
+                                else if (ct == 2) // on F 2 repalce "," with "_"
+                                {
+                                    if (addLibPrefix) {
+                                        string tmpXA[];
+                                        strsplit(tmpXA, strItextOutPut[ct1], ' ');
+                                        tmpXA[0] = stripQutes(str_replace(",", "_", tmpXA[0]));
+                                        tmpXA[0] = "\"" + strupr(libName) + libNamePartNameSeperator + tmpXA[0] + "\"";
+                                        tmpXA[6] = "0001"; // Dont display
+                                        printf("F %d %s", ct, strjoin(tmpXA, ' ')); // Print smashed text
+
+                                        //                                    printf("F %d %s\n", ct, "\"" + strupr( libName ) + libNamePartNameSeperator + stripQutes( str_replace( ",", "_", strItextOutPut[ ct1 ])));    // Print smashed text
+                                    }
+                                    else {
+                                        string tmpXA[];
+                                        strsplit(tmpXA, strItextOutPut[ct1], ' ');
+                                        tmpXA[6] = "0001"; // Dont display
+                                        printf("F %d %s", ct, str_replace(",", "_", strjoin(tmpXA, ' '))); // Print smashed text
+                                        //  printf("F %d %s", ct,  str_replace( ",", "_", strItextOutPut[ ct1 ]));    // Print smashed text
+                                    }
+                                }
+                                else
+                                    printf("F %d %s", ct, strItextOutPut[ct1]); // Print smashed text
+
+                                strF0F1F2foundFlag[ct] = 1;
+                                strItextFoundflag[ct1] = 1; //  Mark so we don't output this
+                                found = 1;
+                                break;
+                            }
+                            else
+                                strF0F1F2foundFlag[ct] = 0; // Mark as not found
+                        }
+                        if (found) {
+                            found = 0;
+                            continue;
+                        }
+
+                        // find header in non-smashed text
+                        for (ct1 = 0; ct1 < IgateSymolTextCount; ct1++) {
+                            if ((strstr(IgateSymText[ct1], strF0F1F2[ct], 0) == 0) && (ct == 0) || (strF0F1F2[ct] == IgateSymText[ct1]))
+                            //			  if( strF0F1F2[ ct ] == IgateSymText[ ct1 ] )  // found  so output it
+                            {
+                                // Print non-smashed text
+
+                                //                              printf("\nX2 ct=%d  numberOfSubParts=%d  %s", ct, numberOfSubParts, IgateSymTextOutPut[ ct1 ]);    //  Debug
+
+                                if ((ct == 0) && (numberOfSubParts > 1)) // Outping F0 ?
+                                //                                if(( ct == 0 ) && ( numberOfSubParts > 1 ) )  // Outping F0 ?
+                                {
+                                    string tmpSA[];
+                                    int i;
+
+                                    i = strsplit(tmpSA, IgateSymTextOutPut[ct1], ' '); // Split out put
+                                    tmpSA[0] = "\"" + refanceName + "\""; // Over write reference
+                                    printf("F %d %s", ct, strjoin(tmpSA, ' ')); // Print out hacked F0 reference
+                                }
+                                else if (ct == 2) // on F 2 repalce "," with "_"
+                                {
+                                    if (addLibPrefix) {
+                                        string tmpXA[];
+                                        strsplit(tmpXA, IgateSymTextOutPut[ct1], ' ');
+                                        tmpXA[0] = stripQutes(str_replace(",", "_", tmpXA[0]));
+                                        tmpXA[0] = "\"" + strupr(libName) + libNamePartNameSeperator + tmpXA[0] + "\"";
+                                        //                                    if( numberOfSubParts > 1 ) // If we have subparts then dont show package in sch
+                                        tmpXA[6] = "0001";
+                                        printf("F %d %s", ct, strjoin(tmpXA, ' ')); // Print smashed text
+                                        //                                    printf("F %d \"%s\"\n", ct, strupr( libName ) + libNamePartNameSeperator + stripQutes( str_replace( ",", "_", IgateSymTextOutPut[ ct1 ])));
+                                    }
+                                    else {
+                                        if (numberOfSubParts > 1) // If we have subparts then don't show package in sch
+                                        {
+                                            string tmpXA[];
+                                            strsplit(tmpXA, IgateSymTextOutPut[ct1], ' ');
+                                            tmpXA[6] = "0001";
+                                            printf("F %d %s", ct, str_replace(",", "_", strjoin(tmpXA, ' ')));
+                                        }
+                                        else
+                                            printf("F %d %s", ct, str_replace(",", "_", IgateSymTextOutPut[ct1]));
+                                    }
+                                }
+                                else
+                                    printf("F %d %s", ct, IgateSymTextOutPut[ct1]);
+
+                                strF0F1F2foundFlag[ct] = 1;
+                                IgateSymTextFoundFlag[ct1] = 1; //  Mark so we don't output this
+                                found = 1;
+                                break;
+                            }
+                            else
+                                strF0F1F2foundFlag[ct] = 0; // Mark as not found
+                        }
+                        if (found) {
+                            found = 0;
+                            continue;
+                        }
+
+                        // Ok we have not found any place to put it, so just stick it above the reference point,
+                        // and hide it from display
+
+                        string tmp = strF0F1F2[ct];
+
+                        //		      if(( ct == 0 ) && addLibPrefix )  // add prefix to reference name?
+                        //			tmp = strupr( libName ) + libNamePartNameSeperator + tmp;
+
+                        if ((ct == 2)) // add prefix to footprint? and replace "," or "/"  with "_"
+                        {
+                            if (addLibPrefix) {
+                                tmp = strupr(libName) + libNamePartLibNameSeperator + charstr_replace(",/", "_", tmp);
+                            }
+                            else
+                                tmp = charstr_replace(",/", "_", tmp); // just fixed
+                        }
+
+                        if (outPutVersion == 1)
+                            printf("F %d \"%s\" H %d %d 65  %.4d %c %c\n", ct, tmp, (posX - 10), -(posY + 10 + (ct * 100)), 1, hAlign, vAlign);
+                        if (outPutVersion == 2)
+                            printf("F %d \"%s\" H %d %d 65  %.4d %c %cNN\n", ct, tmp, (posX - 10), -(posY + 10 + (ct * 100)), 1, hAlign, vAlign);
+                    }
+
+                    //		}
+
+                    // Output smashed text
+                    /* ct = 3; */
+                    /* for( int ct1 = 0; ct1 < ItextCount; ct1++ )                 */
+                    /* { */
+                    /*     if( strItextFoundflag[ ct1 ] == 0 )  // found so output it */
+                    /*       { */
+                    /*         printf("F %d %s", ct,  strItextOutPut[ ct1 ] );   // Print smashed text */
+                    /*         strItextFoundflag[ ct1 ] = 1;  //  Mark so we don't output this */
+                    /*       } */
+                    /*     ct++; */
+                    /* } */
+                    /* // Out put none smashed text */
+                    /* for( ct1 = 0; ct1 < IgateSymolTextCount && ct1 < 3; ct1++ )  // Only output Name and Value, other text is in Lib sym */
+                    /*   //	      for( ct1 = 0; ct1 < IgateSymolTextCount; ct1++ ) */
+                    /*   { */
+                    /*     if( IgateSymTextFoundFlag[ ct1 ] == 0 )  // found so output it */
+                    /*       { */
+                    /*         printf("F %d %s", ct,  IgateSymTextOutPut[ ct1 ] ); */
+                    /*         IgateSymTextFoundFlag[ ct1 ] = 1;  //  Mark so we don't output this */
+                    /*       } */
+                    /*     ct++; */
+                    /*   } */
+
+                    //	      if( outPutVersion == 1 )
+                    //		printf("F 2 \"%s\" H %d %d 70 %.4d %c %c\n", strF0F1F2[ 2 ],
+                    //		       (posX - 10), -(posY+10), 1, hAlign, vAlign );
+                    //	      if( outPutVersion == 2 )
+                    //		printf("F 2 \"%s\" H %d %d 70 %.4d %c %cNN\n", strF0F1F2[ 2 ],
+                    //		       (posX - 10), -(posY+10), 1, hAlign, vAlign );
+
+                    //	      printf( "\t%-4d %-4d %-4d\n", 1, posX, -posY );
+                    printf("\t%-4d %-4d %-4d\n", instanceCount, posX, -posY);
+                    //              printf( "\n#t\tAngle:%d,    Mirror:%d\n", partAngle, partMirror );
+                    printf("\t%s\n", angleToKiCadMatrix(partAngle, partMirror));
+                    //	      printf( "\t%-4d %-4d %-4d %-4d\n", 1, 0, 0, -1 );
+                    printf("$EndComp\n");
+                }
+                //	  printf( "$EndComp\n" );
+            }
+            else { //*******  Ok no package but it may be a power/ground.. ?
+
+                //	  printf("\nP.deviceset.name:%s, P.name:%s, P.device.package.name:%s\n", P.deviceset.name, P.name, P.device.package.name );
+                //        printf("#P.device.name:%s, P.deviceset.name:%s, P.name:%s, P.device.package.name:%s\n", P.device.name, P.deviceset.name, P.name, P.device.package.name );
+
+                string deviceName = P.device.name;
+                //          string deviceName = P.deviceset.name;
+                string refanceName = P.name;
+                int instanceCount = 1;
+                int numberOfSubParts = 0;
+
+                P.instances(I)
+                {
+                    numberOfSubParts++;
+                }
+
+                if (refanceName == "")
+                    refanceName = "NNN";
+
+                if (strlen(deviceName) < 1) // ????
+                    deviceName = "1uF";
+
+                // Replace all spaces or '/' with '_' in part number
+                for (int idx = 0; deviceName[idx]; ++idx) {
+                    if (deviceName[idx] == ' ' || deviceName[idx] == '/')
+                        //	      if( deviceName[idx] == ' ' )
+                        deviceName[idx] = '_';
+                }
+
+                //	  printf( "$Comp\n" );
+                //	  printf( "L %s %s\n", deviceName, refanceName );
+                //	  printf( "U %d %d %X\n", 1, 1, time() );
+
+                P.instances(I)
+                {
+                    char orient = 'H';
+                    char hAlign = 'L';
+                    char vAlign = 'T';
+                    int posX = I.x / g_Fact + g_transX;
+                    int posY = I.y / g_Fact + g_transY;
+                    //	      int posYraw = I.y;
+                    int count = 0;
+                    int partAngle = I.angle;
+                    int partMirror = I.mirror;
+                    string gateNameSplit[];
+                    int getNameSplitCount = 0;
+
+                    // split the gate name to get number form the gate name IE: G$1...
+                    if ((getNameSplitCount = strsplit(gateNameSplit, I.gate.name, '$')) < 2) {
+                        instanceCount = 1;
+                    }
+                    else {
+                        instanceCount = strtol(gateNameSplit[1]);
+                        if (instanceCount == 0)
+                            instanceCount = 1; // error of some kind ?
+                    }
+
+                    printf("$Comp\n");
+                    if (addLibPrefix)
+                        printf("L %s %s\n", strupr(libName) + libNamePartNameSeperator + charstr_replace(",()/", "_", deviceName), "#" + refanceName);
+                    //              printf( "L %s %s\n", strupr( libName ) + libNamePartNameSeperator + str_replace( ",", "_", deviceName), "#" + refanceName );
+                    else
+                        printf("L %s %s\n", charstr_replace(",()/", "_", deviceName), "#" + refanceName);
+                    //              printf( "L %s %s\n", str_replace( ",", "_", deviceName), "#" + refanceName );
+
+                    //	      printf( "L %s %s\n", deviceName, refanceName );
+                    //	      printf( "U %d %d %X\n", 1, 1, time() );
+                    //	      printf( "U %d %d %X\n", instanceCount++, 1, time()  );
+                    printf("U %d %d %X\n", instanceCount, 1, getCurrentTimeHack());
+
+                    //	      printf( "\n## I.name:%s  I.gate.name:%s  I.gate.symbol.name:%s  X:%d  Y:%d\n", I.name, I.gate.name, I.gate.symbol.name,  I.x, I.y );
+
+                    printf("P %d %d\n", posX, -posY);
+
+                    // Smash text section, note only the >NAME and >VALUE can be smashed !
+                    // If >NAME and >VALUE are not smashed, they won't apear here, but will in the I.gate.symbol.texts(T) section.
+                    // Also note that depending on whether the
+                    // >NAME and/or >VALUE have been changed/deleted then added back in the Eagle lib, and the sch is update from
+                    // that Eagle libs, the >NAME and/or >VALUE could be in any order in I.gate.symbol.texts(T)
+                    // sections!! How brain dead is that.!!
+                    count = 0;
+                    string prefixToValue = "";
+
+                    // output smashed text
+                    I.texts(T)
+                    {
+                        if (count == 0) {
+                            prefixToValue = "#"; // Mark F0 as virtual part
+                            printf("F %d %s", count, writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, prefixToValue, refanceName));
+                            printf("F %d %s", count + 1, writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, "", ""));
+
+                            printf("F %d \"\" H %d %d 60 0001 C CNN\n", count + 2, posX, -posY);
+                            printf("F %d \"\" H %d %d 60 0001 C CNN\n", count + 3, posX, -posY);
+
+                            count + 4;
+                            continue;
                         }
                         else
-                          tmp = charstr_replace( ",/", "_", tmp );   // just fixed                       
-                      }
+                            prefixToValue = "";
 
-		      if( outPutVersion == 1 )
-			printf("F %d \"%s\" H %d %d 65  %.4d %c %c\n", ct,  tmp, (posX - 10), -(posY+10+(ct*100)), 1, hAlign, vAlign );
-		      if( outPutVersion == 2 )
-			printf("F %d \"%s\" H %d %d 65  %.4d %c %cNN\n", ct, tmp, (posX - 10), -(posY+10+(ct*100)), 1, hAlign, vAlign );
+                        printf("F %d %s", count, writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, prefixToValue, ""));
+                        count++;
+                    }
 
-		    }
-		    
-		  //		}
+                    // output non-smashed text
+                    I.gate.symbol.texts(T)
+                    {
+                        if (count == 0) {
+                            prefixToValue = "#"; // Mark F0 as virtual part
+                            printf("F %d %s", count, writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, prefixToValue, refanceName));
+                            //                    printf("F %d %s", count,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, prefixToValue, "\"" + refanceName + "\"" ));
+                            printf("F %d %s", count + 1, writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, "", ""));
 
-	      // Output smashed text
-	      /* ct = 3; */
-              /* for( int ct1 = 0; ct1 < ItextCount; ct1++ )                 */
-              /* { */
-	      /*     if( strItextFoundflag[ ct1 ] == 0 )  // found so output it */
-	      /*       { */
-              /*         printf("F %d %s", ct,  strItextOutPut[ ct1 ] );   // Print smashed text */
-	      /*         strItextFoundflag[ ct1 ] = 1;  //  Mark so we don't output this */
-	      /*       } */
-	      /*     ct++; */
-              /* } */
-	      /* // Out put none smashed text */
-	      /* for( ct1 = 0; ct1 < IgateSymolTextCount && ct1 < 3; ct1++ )  // Only output Name and Value, other text is in Lib sym */
-              /*   //	      for( ct1 = 0; ct1 < IgateSymolTextCount; ct1++ ) */
-	      /*   { */
-	      /*     if( IgateSymTextFoundFlag[ ct1 ] == 0 )  // found so output it */
-	      /*       { */
-	      /*         printf("F %d %s", ct,  IgateSymTextOutPut[ ct1 ] ); */
-	      /*         IgateSymTextFoundFlag[ ct1 ] = 1;  //  Mark so we don't output this */
-	      /*       } */
-	      /*     ct++; */
-	      /*   } */
-	    
+                            printf("F %d \"\" H %d %d 60 0001 C CNN\n", count + 2, posX, -posY);
+                            printf("F %d \"\" H %d %d 60 0001 C CNN\n", count + 3, posX, -posY);
+                            count + 4;
+                            continue;
+                        }
+                        else
+                            prefixToValue = "";
 
-	      //	      if( outPutVersion == 1 )
-	      //		printf("F 2 \"%s\" H %d %d 70 %.4d %c %c\n", strF0F1F2[ 2 ], 
-	      //		       (posX - 10), -(posY+10), 1, hAlign, vAlign );
-	      //	      if( outPutVersion == 2 )
-	      //		printf("F 2 \"%s\" H %d %d 70 %.4d %c %cNN\n", strF0F1F2[ 2 ], 
-	      //		       (posX - 10), -(posY+10), 1, hAlign, vAlign );
+                        printf("F %d %s", count, writeInstanceText(T, 0, posX, -posY, partAngle, partMirror, prefixToValue, ""));
+                        count++;
+                    }
 
+                    /*
+			  if( outPutVersion == 1 )
+			printf("F 2 \"%s\" V %d %d 70 %.4d %c %c\n", P.device.name, 
+				   posX, -posY, 0, hAlign, vAlign );
+			  if( outPutVersion == 2 )
+			printf("F 2 \"%s\" V %d %d 70 %.4d %c %cNN\n", P.device.name, 
+				   posX, -posY, 0, hAlign, vAlign );
+			  */
 
-	      //	      printf( "\t%-4d %-4d %-4d\n", 1, posX, -posY );
-	      printf( "\t%-4d %-4d %-4d\n", instanceCount, posX, -posY );
-	      //              printf( "\n#t\tAngle:%d,    Mirror:%d\n", partAngle, partMirror );	      
-	      printf( "\t%s\n", angleToKiCadMatrix(partAngle, partMirror ));
-	      //	      printf( "\t%-4d %-4d %-4d %-4d\n", 1, 0, 0, -1 );
-	      printf( "$EndComp\n" );
-	    }
-	  //	  printf( "$EndComp\n" );
-	}
-      else 
-	{  //*******  Ok no package but it may be a power/ground.. ?
+                    //	      printf( "\t%-4d %-4d %-4d\n", 1, posX, -posY );
+                    printf("\t%-4d %-4d %-4d\n", instanceCount, posX, -posY);
 
-	  //	  printf("\nP.deviceset.name:%s, P.name:%s, P.device.package.name:%s\n", P.deviceset.name, P.name, P.device.package.name );
-          //        printf("#P.device.name:%s, P.deviceset.name:%s, P.name:%s, P.device.package.name:%s\n", P.device.name, P.deviceset.name, P.name, P.device.package.name );
+                    //              printf( "\n#t\tAngle:%d,    Mirror:%d\n", partAngle, partMirror );
 
-          string deviceName = P.device.name;
-          //          string deviceName = P.deviceset.name;
-	  string refanceName  = P.name;
-	  int instanceCount = 1;
-	  int numberOfSubParts = 0;
+                    printf("\t%s\n", angleToKiCadMatrix(partAngle, partMirror));
+                    //      printf( "\t%-4d %-4d %-4d %-4d\n", 1, 0, 0, -1 );
 
-	  P.instances(I)
-	    {
-	      numberOfSubParts++;
-	    }
+                    printf("$EndComp\n");
+                }
+                //	  printf( "$EndComp\n" );
+            }
+        } //End check for components to skip
 
-	  if(refanceName == "")
-            refanceName= "NNN";
-         
-	  if( strlen(deviceName) < 1 ) // ????
-            deviceName = "1uF";
- 
-	  // Replace all spaces or '/' with '_' in part number
-	  for (int idx = 0; deviceName[idx]; ++idx)
-	    {
-              if( deviceName[idx] == ' ' || deviceName[idx] == '/')
-                //	      if( deviceName[idx] == ' ' )
-		deviceName[idx] = '_';
-	    }
-
-	  //	  printf( "$Comp\n" );
-	  //	  printf( "L %s %s\n", deviceName, refanceName );
-	  //	  printf( "U %d %d %X\n", 1, 1, time() );
-     
-	  P.instances(I)   
-	    {
-	      char orient = 'H';
-	      char hAlign = 'L';
-	      char vAlign = 'T';
-	      int posX = I.x / g_Fact + g_transX;
-	      int posY = I.y / g_Fact + g_transY;
-              //	      int posYraw = I.y;
-	      int count = 0;
-	      int partAngle = I.angle;
-	      int partMirror = I.mirror;
-	      string gateNameSplit[];
-	      int getNameSplitCount = 0;
-
-
-	      // split the gate name to get number form the gate name IE: G$1...
-	      if( (getNameSplitCount = strsplit( gateNameSplit, I.gate.name, '$')) < 2 )
-		{
-		  instanceCount = 1;
-		}
-	      else
-		{
-		  instanceCount = strtol( gateNameSplit[1] );
-		  if( instanceCount == 0 )
-		    instanceCount = 1;  // error of some kind ?
-		}
-
-	      printf( "$Comp\n" );
-	      if( addLibPrefix )
-		printf( "L %s %s\n", strupr( libName ) + libNamePartNameSeperator + charstr_replace( ",()/", "_", deviceName), "#" + refanceName );
-              //              printf( "L %s %s\n", strupr( libName ) + libNamePartNameSeperator + str_replace( ",", "_", deviceName), "#" + refanceName );
-	      else
-		printf( "L %s %s\n", charstr_replace( ",()/", "_", deviceName), "#" + refanceName );
-              //              printf( "L %s %s\n", str_replace( ",", "_", deviceName), "#" + refanceName );              
-
-	      //	      printf( "L %s %s\n", deviceName, refanceName );
-	      //	      printf( "U %d %d %X\n", 1, 1, time() );
-	      //	      printf( "U %d %d %X\n", instanceCount++, 1, time()  );
-	      printf( "U %d %d %X\n", instanceCount, 1, getCurrentTimeHack() );
-
-	      //	      printf( "\n## I.name:%s  I.gate.name:%s  I.gate.symbol.name:%s  X:%d  Y:%d\n", I.name, I.gate.name, I.gate.symbol.name,  I.x, I.y );
-
-	      printf( "P %d %d\n", posX, -posY );
-
-	      // Smash text section, note only the >NAME and >VALUE can be smashed !
-	      // If >NAME and >VALUE are not smashed, they won't apear here, but will in the I.gate.symbol.texts(T) section. 
-		  // Also note that depending on whether the 
-	      // >NAME and/or >VALUE have been changed/deleted then added back in the Eagle lib, and the sch is update from
-	      // that Eagle libs, the >NAME and/or >VALUE could be in any order in I.gate.symbol.texts(T)
-	      // sections!! How brain dead is that.!!
-              count = 0;
-              string prefixToValue = "";
-
-              // output smashed text
-              I.texts(T)
-		{   
-                  if( count == 0 )
-                  {
-                    prefixToValue = "#";  // Mark F0 as virtual part
-                    printf("F %d %s", count,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, prefixToValue, refanceName ));
-                    printf("F %d %s", count + 1,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, "", "" ));
-
-                    printf("F %d \"\" H %d %d 60 0001 C CNN\n", count+2, posX, -posY );
-                    printf("F %d \"\" H %d %d 60 0001 C CNN\n", count+3, posX, -posY );
-                    
-                    count + 4;
-                    continue;
-                  }
-                  else
-                    prefixToValue ="";
-
-		  printf("F %d %s", count,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, prefixToValue, "" ));
-		  count++;
-		}
-
-              // output non-smashed text
-              I.gate.symbol.texts(T)
-		{
-                  if( count == 0 )
-                  {
-                    prefixToValue ="#";  // Mark F0 as virtual part
-                    printf("F %d %s", count,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, prefixToValue, refanceName  ));
-                    //                    printf("F %d %s", count,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, prefixToValue, "\"" + refanceName + "\"" ));                    
-                    printf("F %d %s", count + 1,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, "", "" ));
-
-                    printf("F %d \"\" H %d %d 60 0001 C CNN\n", count+2, posX, -posY );
-                    printf("F %d \"\" H %d %d 60 0001 C CNN\n", count+3, posX, -posY );
-                    count + 4;
-                    continue;
-                  }
-                  else
-                    prefixToValue ="";
-
-		  printf("F %d %s", count,  writeInstanceText( T, 0, posX, -posY, partAngle, partMirror, prefixToValue, "" ));
-		  count++;
-		}
-
-
-
-	      /*
-	      if( outPutVersion == 1 )
-		printf("F 2 \"%s\" V %d %d 70 %.4d %c %c\n", P.device.name, 
-		       posX, -posY, 0, hAlign, vAlign );
-	      if( outPutVersion == 2 )
-		printf("F 2 \"%s\" V %d %d 70 %.4d %c %cNN\n", P.device.name, 
-		       posX, -posY, 0, hAlign, vAlign );
-	      */
-
-
-
-	      //	      printf( "\t%-4d %-4d %-4d\n", 1, posX, -posY );
-	      printf( "\t%-4d %-4d %-4d\n", instanceCount, posX, -posY );
-
-
-	      
-	      //              printf( "\n#t\tAngle:%d,    Mirror:%d\n", partAngle, partMirror );	      
-
-	      printf( "\t%s\n", angleToKiCadMatrix(partAngle, partMirror ));
-	      //      printf( "\t%-4d %-4d %-4d %-4d\n", 1, 0, 0, -1 );
-
-	      printf( "$EndComp\n" );
-	    }
-	  //	  printf( "$EndComp\n" );
-
-
-	}
     } // Parts
 }
 
