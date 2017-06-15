@@ -15,6 +15,7 @@ Open Kicad then open the .sch file of the project. Things to clean up in the sch
 * Change page size to US letter (File->Page Setup)
 * Remove the yellow frame
 * Move contents of schematic into KiCad frame
+* Add the device, logo, and power libraries to the project
 * Remove and re-add correct OSHW logo from ‘Logo’ library
 * Remove and re-add power/GND symbols from ‘Power’ library
 * Remove and re-add any I2C connectors from ‘SparkX’ library (SparkFun-KiCad-Libraries repo \NewlyCreated’)

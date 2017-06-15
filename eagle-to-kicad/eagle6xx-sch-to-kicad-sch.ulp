@@ -1849,7 +1849,11 @@ void writeTextLabels( UL_LABEL L )
    char   orient      = 0;
    real   textAngle   = L.text.angle;
    string textString  = L.text.value;
-   int    fontSize    = L.text.size/( g_Fact + 500 );
+
+   //NES - Force text to 0.050
+   int    fontSize    = 50;
+   //Original: int    fontSize    = L.text.size/( g_Fact + 500 );
+
    int    posX        = L.text.x/g_Fact + g_transX;
    int    posY        = L.text.y/g_Fact + g_transY;
    int    offset      = (( L.text.size * strlen( L.text.value )) /2 ) / g_Fact;
@@ -1857,24 +1861,59 @@ void writeTextLabels( UL_LABEL L )
    switch( int(textAngle) )
    {
      case 0:
-       orient = 0;
-       if( L.text.mirror )
-         orient = 2;
+
+		if(L.xref == 1) //NES - If it's an Xref looking label then bump the position
+		{
+			orient = 2;
+			if( L.text.mirror )
+				orient = 0;
+
+			posY += 25; //NES - Force the labels to line up with the net
+			posX -= 50;
+		}
+		else
+		{
+			orient = 0;
+			if( L.text.mirror )
+				orient = 2;
+		}
+
        break;
      case 90:
        orient = 1;
        break;
      case 180:
-       orient = 2;
-       if( L.text.mirror )
-         orient = 0;
-       posY = posY - (( L.text.size / g_Fact ) * 1.2 );
+
+		if(L.xref == 1) //NES - If it's an Xref looking label then bump the position
+		{
+			orient = 0;
+			if( L.text.mirror )
+				orient = 2;
+			posY = posY - (( L.text.size / g_Fact ) * 1.2 );
+
+			posY += 35; //NES - Force the labels to line up with the net
+			posX += 50;
+		}
+		else
+		{
+			orient = 2;
+			if( L.text.mirror )
+				orient = 0;
+			posY = posY - (( L.text.size / g_Fact ) * 1.2 );
+		}
+
        break;
      case 270:
        orient = 3;
        break;
    }
-   printf("Text Label %d %d %d    %d   ~ 0\n", posX, -posY, orient, fontSize);
+   
+	//NES - If lable is xRef type lable then import as hierarchical labels. It's how SparkFun does it by default.
+    if(L.xref == 1)
+		printf("Text HLabel %d %d %d    %d   ~ 0\n", posX, -posY, orient, fontSize);
+	else
+		printf("Text Label %d %d %d    %d   ~ 0\n", posX, -posY, orient, fontSize);
+
    printf("%s\n", charstr_replace( "!", "~", textString )); // Swich over bar start end charters  
           //   printf("%s\n", textString);
 }
