@@ -24,3 +24,5 @@ To Import the PCB Layout:
 * File-Open. Then select *.brd from the file type drop down (lower right corner)
 * Open the original .brd file from the Eagle project
 * 'File-Save As' into the KiCad project directory (wherever the *.pro file lives)
+
+For more detailed instructions see https://github.com/lachlanA/eagle-to-kicad
