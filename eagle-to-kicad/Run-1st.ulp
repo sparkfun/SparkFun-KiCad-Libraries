@@ -1,0 +1,853 @@
+#usage "<b>Renumber the parts of a schematic</b><p>"
+"This version renumbers only devices with packages (no supply)."
+"Sorted by sheets and coordinates (vertical/descending, horizontal/ascending).<br>"
+"Optional: The starting point for the numeration of parts on the first sheet "
+"defines an offset value for the following pages.<br>"
+"Example:<br>"
+" - 0 = R1 ... Rn<br>"
+" - 100 sheet 1: R101..R199 sheet 2: R201..R299 ...<br>"
+" - 500 sheet 1: R501..R999 sheet 2: R1001..R1499 ...<br>"
+" - 1000 sheet 1: R1001..R1999 sheet 2: R2001..R2999 ...<br>"
+"<p>"
+"<author>Author: support@cadsoft.de</author>"
+
+
+// THIS PROGRAM IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED
+
+string Version = "ULP Version 4.4.4";
+#include "eagle_to_kicad_include.inc"
+
+/*
+ * CHANGELOG================================================
+ * 11.02.2016: Inc version.
+ *             Thanks to: Lachlan  "lachlanusa (at) gmail.com" 
+ *              
+ * 01.10.2015: Add logfile
+ *             Thanks to: Lachlan  "lachlanusa (at) gmail.com" 
+ * 18.08.2015: Add save command, so sch and pcb are update, save user having to rember
+ *             to save the change's
+ *             Thanks to: Lachlan  "lachlanusa (at) gmail.com" 
+ *
+ * 27.02.2015: Programed moded to only add reference numbers
+ *             to parts which have no reference numbers
+ *             Thanks to: Lachlan  "lachlanusa (at) gmail.com" 
+ *
+ * 2006.08.23 alf@cadsoft.de
+ * correct counter if crossing page by same prefix
+ * 2008.01.30 alf@cadsoft.de
+ * renumber only the current sheet by start sheet-number * numerical_order
+ * 2012-06-21 - corrected sort by weighting of emphasis in Y-direction
+ * alf@cadsoft.de
+ */
+
+string Info = "ATTENTION<p>" +
+    "Please verify that the corresponding PCB layout (if it exists) " +
+    "has been loaded and is consistant with the PCB.<p>" +
+    "Otherwise renumbering of parts won't work and KiCad schematic part to PCB part matching will fail!";
+
+string Infoplus =
+    " You can change the following sorting parameters:<p>" +
+    " descx = 0 (X ascending [left >> right])<br>" +
+    " descx = 1 (X descending [right >> left])<br>" +
+    " descy = 0 (Y ascending [bottom >> top])<br>" +
+    " descy = 1 (Y descending [top >> bottom])<br>";
+
+
+int    descy = 1;               // set to 0 sorting ascending
+int    descx = 0;               // set to 1 sorting descending
+int    numerical_order = 0;     // sort from sheet 1, or sort by start counter for sheet
+int    emphases = 0;            // weighting of emphasis, first X second Y or first Y second X
+
+int    actual_sheet = 0;        // 2008.01.30
+int    only_actual_sheet = 0;   // 2008.01.30
+string sheet_info        = "";
+
+numeric string OldNames[], NewNames[], Prefix[];
+int x[], y[], Index[], Sheet[];
+int nrNames = 0;
+
+numeric string SymNames[];     // Device-Name of Symbol
+int symsh[];
+int SymX[], SymY[];
+int Snr = 0;
+int Dnr = 0;
+
+string Error = "";
+string SymPrefix[];    // holds Reference/prefix - any trailing number
+string DevPrefix[];
+string DevName[];      // holds Reference/prefix with trailing number
+string SymDevName[];      // holds Reference/prefix with trailing number
+
+string NoPrefixRenumber = ""; // Prefix do not renumber testpoints
+
+int    ckx[], cky[], cksh[];
+string ckname[];
+
+
+string cmd;  // holds the script to renumbering in schematic
+string c;
+
+real Grid = 100; // in 100 Mil
+string lbr[], dev[], sym[];
+
+
+int maxRefNumber = 0;   // Hold the maxium reference number on this schematic
+// this will be the start of the number parts which don't have a reference
+
+//string outputPath = EAGLE_HOME + '/';
+//string myULP_HOME = EAGLE_HOME + '/';
+string outputPath = "";
+string myULP_HOME = "";
+
+string schname = "";
+string pcbname = "";
+
+string infoTargetDirectory  = "<b>Set the target directory for the KiCad/Eagle files.<br>"+
+    "<b>Note this directory should be a clean directory<br>"+
+    "with no other files. The directory contents <br><center><font color=\"red\">WILL BE OVER WRITTEN WITHOUT WARNING!</b></center>";
+
+string infoULPdir           = "<b>Eagle ULP conversion script location</b>";
+
+string ULP_Path;
+char bkslash = '/';
+int pos = strrchr(argv[0], bkslash);
+
+string logfile;
+string logfileName;
+int renamedCt = 0;
+//
+//--------------------------------------------------------------------------------
+//Returns 1, if EAGLE is running under Windows (0 for Linux/Mac)
+//
+int IsWindows()
+{
+  if ((strsub(argv[0],0,1)=="/") && (strsub(argv[0],0,2)!="//"))
+    return 0;
+  return 1;
+}
+
+
+//--------------------
+// check for existing file
+// Returns 1 if found
+int check_for_exist_file(string FileName) {
+  string a[];
+  int n = fileglob(a, FileName);
+  if (n == 0) return 0;
+  else return 1;
+}
+
+
+//------------------------------------------------------
+// Replaces all occurrences of a character in a string with a string
+//------------------------------------------------------
+string charstr_replace(string search, string replace, string subject)
+{
+  int lastpos = 0;
+  int pos = 0;
+  string before;
+  string after;
+
+  for( pos = 0; pos < strlen(search); pos++ )
+  {
+    lastpos = 0;
+    while( (( lastpos = strchr( subject, search[ pos ], lastpos)) != -1 ))
+    {
+      before = strsub(subject, 0, lastpos);  //  get the before string
+      after = strsub(subject, lastpos + 1, strlen(subject) - lastpos );
+      subject = before + replace + after;
+      lastpos = strlen(before) + strlen( replace ); // 
+    }
+  }
+  return subject;
+}
+//------------------------------------------------------
+//Replaces all occurrences of a substring found within a string.
+//------------------------------------------------------
+string str_replace(string search, string replace, string subject)
+{
+  int lastpos = 0;
+  int pos;
+  string before;
+  string after;
+
+  // Check if there is anything to replace
+  if( strstr(subject, search, lastpos) == -1)
+    return subject;  // No so just return input string
+    
+  while (strstr(subject, search, lastpos) >= 0)
+  {
+    pos = strstr(subject, search, lastpos);
+    before = strsub(subject, 0, pos);
+    after = strsub(subject, pos + strlen(search), strlen(subject) - ( pos + strlen(search)) );
+    subject = before + replace + after;
+    lastpos = pos + strlen(replace);
+  }
+  return subject;
+}
+
+
+//--------------------------------------------------------------------------------
+// check for existing file
+// Returns 1 if found.
+//
+int exist_file(string FileName)
+{
+  string a[];
+  int n = fileglob(a, FileName);
+  if (n == 0) return 0;
+  else return 1;
+}
+
+
+//--------------------------------------------------------------------------------
+// Returns the index of the first digit of the numeric part of Name
+// -1 indicates there is no numeric part in Name
+int GetNumberIndex(string Name)
+{
+  int l = strlen(Name) - 1;
+  for (int Index = l; Index >= 0; --Index) {
+    if (!isdigit(Name[Index]))
+      return Index < l ? Index + 1 : -1;
+  }
+  return 0;
+}
+
+//--------------------------------------------------------------------------------
+// Return reference without trailing number
+// 
+string prefix(string name) {     // Prefix of Device
+  int num = GetNumberIndex(name);
+  if (num < 1)
+    return name;
+  else {
+    string pfx = name;
+    pfx[num] = 0;   //  put in 0 to terminate string
+    return pfx;
+  }
+}
+
+void DescendingY(void) {
+  for (int ny = 0;  ny < nrNames ; ny++) {
+    y[ny] = 0 - y[ny];
+  }
+  return;
+}
+
+void DescendingX(void) {
+  for (int nx = 0;  nx < nrNames ; nx++) {
+    x[nx] = 0 - x[nx];
+  }
+  return;
+}
+
+void SortElements(void) {
+  // Sorts the elements according to their location, first by ascending
+  // x coordinates, then by ascending y coordinates.
+  // If you prefer a different kind of sorting, you can implement this here.
+  // As a result, the integer array Index[] must contain the new sequence
+  // in which to renumber the elements.
+
+  // 2008-07-24 alf, weighting of emphases first X second Y or first Y second X
+
+  if (descy) DescendingY();
+  if (descx) DescendingX();
+
+  if(!numerical_order)
+  {
+    if (!emphases)
+      sort(nrNames, Index, NewNames, Sheet, x, y);
+    else
+      sort(nrNames, Index, NewNames, Sheet, y, x);
+  }
+  else {
+    if (!emphases) sort(nrNames, Index, Sheet, NewNames, x, y);
+    if (emphases) sort(nrNames, Index, Sheet, NewNames, y, x); // 2012-06-21 correct sort on emphases
+  }
+  if (descy) DescendingY();
+  if (descx) DescendingX();
+  return;
+}
+
+
+void CheckSameOrigin(int chk) {  // eagle can not rename an element
+  // if another element is on the same coordinate
+  int index[];
+  string checklist, h;
+  sort(chk, index, cksh, ckx, cky);
+  for (int n = 0; n < nrNames; n++) {
+    if(ckx[index[n]] == ckx[index[n+1]] && cky[index[n]] == cky[index[n+1]] && cksh[index[n]] == cksh[index[n+1]]) {
+      sprintf(h, "%s & %s on same coordinate (%d %d) mil in sheet %d\n",
+              ckname[index[n]], ckname[index[n+1]],
+              ckx[index[n]],
+              cky[index[n]],
+              cksh[index[n]]);
+      checklist += h;
+    }
+  }
+  if (checklist) {
+    dlgDialog("Check coordinates") {
+      dlgLabel("Eagle can not rename elements that are placed at the same position!");
+      dlgHBoxLayout {
+        dlgSpacing(300);
+      }
+      dlgTextView(checklist);
+      dlgHBoxLayout {
+        dlgPushButton("Break") dlgAccept();
+        dlgStretch(1);
+      }
+    };
+    exit(0);
+  }
+  return;
+}
+
+//--------------------------------------------------------------------------------
+//
+//--------------------------------------------------------------------------------
+void GenerateNames(void) {
+  string memprefix = "";
+  int mem_sh = 0;
+  if(!numerical_order) {
+    // Generates new numeric parts to the element names in NewNames
+    int k;
+    for (int n = 0; n <= nrNames - 1; ++n)
+    {
+      if (memprefix != NewNames[Index[n]])   // Start of new reference prefix name ?
+      {
+        memprefix = NewNames[Index[n]];
+        //         k = 0;                             // Reset to zero
+        k = maxRefNumber;
+      }
+      sprintf(NewNames[Index[n]], "%s%d", NewNames[Index[n]], ++k);
+    }
+  }
+  else {   // renumber sheets by 100.. 200.. 300..
+    string h;
+    int newdevnr;
+    for(int n = 0; n < nrNames  ; ++n) {
+      if (memprefix != NewNames[Index[n]])
+      {
+        memprefix = NewNames[Index[n]];
+        newdevnr = numerical_order * Sheet[Index[n]] +1;
+      }
+      if (mem_sh != Sheet[Index[n]])
+      {  // a new Sheet is starting by old prefix *** 2006.08.23 alf@cadsoft.de
+        mem_sh = Sheet[Index[n]];
+        newdevnr = numerical_order * Sheet[Index[n]] +1;
+      }
+      sprintf(NewNames[Index[n]], "%s%d", NewNames[Index[n]], newdevnr);
+      newdevnr++;
+      if (newdevnr-(Sheet[Index[n]]*numerical_order) >= numerical_order)
+      {
+        sprintf(h, "<qt><nobr>More parts with prefix '%s' than starting point %d on sheet %d<br>Start the ULP with <b>numerical order</b> >= %d</nobr>",
+                memprefix, numerical_order, Sheet[Index[n]], numerical_order*10);
+        dlgMessageBox(h, "Break");
+        exit(0);
+      }
+    }
+  }
+  return;
+}
+
+//--------------------------------------------------------------------------------
+// output script for renumber part
+//--------------------------------------------------------------------------------
+void Rename(int x, int y, string New) {
+  // Generates the EAGLE command necessary to change element name Old to New
+  sprintf(c, "Name '%s' (%d %d);#209\n", New, x, y);
+  cmd += c;
+  return;
+}
+
+//--------------------------------------------------------------------------------
+// Generates an EAGLE script file that does the whole renumbering.
+// The tricky part here is that we cannot rename an element to a name
+// that already exists in the schematic (which, e.g. might be necessary if
+// we had to swap the names of two elements). Therefore we have to
+// use a ScratchName wherever this is necessary.
+// If there is nothing to do, the resulting script file will be empty.
+void GenerateScript(void)
+{
+  string ScratchName;
+  int sch = 0;
+  int n;
+  for ( n = 0; n < nrNames; ++n) {
+    if (Sheet[Index[n]] != sch) {
+      sch = Sheet[Index[n]];              // *** change sheet
+      sprintf(c, "Edit .s%d;\n", sch);
+      cmd += c;
+    }
+    sprintf( ScratchName, "$%d_%d_$", sch, n);
+    Rename(x[Index[n]],y[Index[n]], ScratchName); // output script for renumber part
+  }
+  for ( n = 0; n < nrNames; ++n) {
+    if (Sheet[Index[n]] != sch) {
+      sch = Sheet[Index[n]];              // *** change sheet
+      sprintf(c, "Edit .s%d;\n", sch);
+      cmd += c;
+    }
+    Rename(x[Index[n]],y[Index[n]], NewNames[Index[n]]); // output script for renumber part
+    if( (renamedCt & 0x1f) == 0 )
+    {
+      sprintf( c, "%s","\n#OldRef\t\t\t\tSheetNumber\tNewRef" );
+      logfile += c;
+    }
+    sprintf( c, "\n%s\t\t\t\t%d\t%s", OldNames[Index[n]], Sheet[Index[n]], NewNames[Index[n]] );
+    logfile += c;
+    renamedCt++;
+
+  }
+  return;
+}
+
+//--------------------------------------------------------------------------------
+// *** check collision before rename ***
+//--------------------------------------------------------------------------------
+string CheckNames(void) {
+  string new_name = ";";
+  string h;
+
+  for (int Dn = 0; Dn < Dnr; Dn++ ) {
+    for (int Sn = 0; Sn < Snr; Sn++) {
+      if (DevPrefix[Dn] == SymPrefix[Sn]) {
+        sprintf(h, "# Do not use Prefix %s on Device with Package (%s) and Device without Package (%s)\n",
+                SymPrefix[Sn], DevName[Dn], SymDevName[Sn]);
+        Error += h;
+        break;
+      }
+    }
+  }
+  for (int n = 0; n < nrNames - 1; ++n) {     // make a long string
+    new_name += NewNames[n] + ";";
+  }
+
+  for (int xx = 0; xx < Snr - 1; xx++) {
+    string sd = SymNames[xx];
+    if(sd[0] == '$') {                       // if first character is a $ on Symbolname
+      Error +=  "# Do not use $ character at first position in device names\n";
+      sprintf(h, "# RENAME %s at (%.4f %.4f) - sheet %d before running this ULP again' (%.4f %.4f)\n",
+              SymNames[xx], SymX[xx] / 1000.0, SymY[xx] / 1000.0, symsh[xx], SymX[xx] / 1000.0, SymY[xx] / 1000.0);
+      Error += h;
+    }
+    int s;
+    int pos = strrstr(new_name, ";" + SymNames[xx] + ";");
+    if (pos > 0 ) {
+      for (s = 0; s < nrNames - 1; s++)
+      {
+        if(NewNames[s] == SymNames[xx])
+        {
+          break;
+        }
+      }
+      Error +=  "# Collision of symbol name and device name (eg. Frames, Supply ...)\n";
+      sprintf(h, "# Rename PREFIX of Device %s at (%.4f %.4f) - sheet %d before renaming %s at (%.4f %.4f) - sheet %d';\n",
+              SymNames[xx], SymX[xx] / 1000.0, SymY[xx] / 1000.0, symsh[xx],
+              OldNames[s], x[s] / 1000.0, y[s] / 1000.0, Sheet[s] );
+      Error += h;
+    }
+  }
+  return Error;
+}
+
+//--------------------------------------------------------------------------------
+void setgridmil (void) {
+  sprintf(c, "GRID MIL 100 OFF;\n");
+  cmd += c;
+  // ## only display layer 94 (symbol) if placed a text
+  // ## at symbol origin.  15.06.2004 alf@cadsoft.de
+  sprintf(c, "DISPLAY NONE 94 -95 -96;\n");
+  cmd += c;
+  return;
+}
+
+//--------------------------------------------------------------------------------
+void visible(UL_SCHEMATIC S) {
+  sprintf(c, "DISP NONE ");
+  cmd += c;
+  S.layers(L) {
+    if (L.visible) {
+      sprintf(c, "%d ", L.number);
+      cmd += c;
+    }
+  }
+  cmd += ";\n";
+  return;
+}
+
+//--------------------------------------------------------------------------------
+//
+//
+void menue(void)
+{
+  int result;
+  int rs = 0;
+  string tmpSX;
+  int space = 10;
+  int saveAsDefault = 1;
+  int saveAsDefaultULP_Path = 1;
+  string tmpS10 = "";
+
+  
+  result = dlgDialog("Add numbers to unnumbered part references. " + "BUILD DATE: " + BUILD_DATE )
+      {
+
+        dlgLabel("<b><font color=\"red\">This ULP will add any missing part references.</font></b><br>" +
+				 "For example: 'C' will become 'C1', etc.<br>"+
+                 "Note 1: Parts with proper numeric references will not be changed.<br>"+
+                 "Note 2: This will modify the Eagle SCH/PCB files and save the results in TARGET-DIRECTORY/modified_eagle_files/");
+
+        dlgHBoxLayout dlgSpacing(900);
+        dlgHBoxLayout
+        {
+          dlgStretch(0);
+          dlgSpacing(space);
+
+          if( strlen( tmpS10 ))
+          {
+            myULP_HOME = tmpS10;
+          }
+          else
+          {
+            tmpSX = cfgget( cfg_SCRIPT_ULP, myULP_HOME );
+            if( strlen(tmpSX ) )
+              myULP_HOME = tmpSX;
+          }
+          //                dlgMessageBox( myULP_HOME + "/exp-lbrs.ulp");
+          if( !(check_for_exist_file( myULP_HOME + "exp-lbrs.ulp" ) &&  check_for_exist_file( myULP_HOME + "eagle-lbr2kicad-1.0.ulp") && check_for_exist_file( myULP_HOME + "renumber-sheet.ulp" )) )
+          {
+            dlgLabel("<b><font color=\"red\">ULP conversion script files location not correct!");
+            tmpS10 = myULP_HOME;
+            rs = 1;
+          }
+          else
+          {
+            dlgLabel("<nobr>ULP conversion script files location</nobr>");
+            rs = 0;
+            tmpS10 = "";                  
+          }
+                
+          dlgStringEdit(  myULP_HOME );
+          dlgCheckBox("Save as default", saveAsDefaultULP_Path );
+          dlgPushButton("Edit") {
+            string xs;int it;
+            xs = dlgDirectory("Select directory containing conversion ULPs", "C:\\");
+            if( strlen(xs) )
+              tmpS10 = myULP_HOME = xs + '/';
+          }
+
+          //                { tmpS10 = myULP_HOME = dlgDirectory("Select Target directory", "C:\\") + '/' ; rs = 1; dlgAccept(); };
+
+                
+          dlgPushButton("Info") { if (dlgMessageBox( infoULPdir, "Ok") == 0); };
+          dlgStretch(0);
+
+          /* if( !(check_for_exist_file( myULP_HOME + "exp-lbrs.ulp" ) &&  check_for_exist_file( myULP_HOME + "eagle-lbr2kicad-1.0.ulp") && check_for_exist_file( myULP_HOME + "renum.ulp" ) )) */
+          /*   { */
+                
+          /*   } */
+
+
+        }
+        
+        dlgHBoxLayout
+        {
+          dlgStretch(0);
+          dlgSpacing(space);
+          dlgLabel("Target directory for KiCad files");
+          tmpSX = cfgget( cfg_TARGET_DIR, outputPath );
+
+          //          if( strlen(tmpSX ) )
+          //            outputPath = tmpSX;
+
+          dlgStringEdit( outputPath );
+          //          dlgCheckBox("Save as default", saveAsDefault );
+          dlgPushButton("Edit") {
+            string xs;int it;
+            xs = dlgDirectory("Select target directory", "C:\\");
+            if( strlen(xs) )
+              outputPath = xs + '/';
+          }// ( outputPath = dlgDirectory("Select target directory", "C:\\") + '/' );
+          dlgPushButton("Info") { if (dlgMessageBox( infoTargetDirectory, "Ok") == 0); };
+          dlgStretch(0);
+        }
+
+        dlgVBoxLayout 
+        {
+          dlgStretch(0);
+          dlgHBoxLayout 
+          {
+            dlgStretch(1);
+            dlgPushButton("+OK")
+            {
+              //              if( saveAsDefault )
+                cfgset( cfg_TARGET_DIR, outputPath );
+              /* else */
+              /*   cfgset( cfg_TARGET_DIR, "" ); */
+
+              if( saveAsDefaultULP_Path )
+                cfgset( cfg_SCRIPT_ULP, myULP_HOME );
+              /* else */
+              /*   cfgset(cfg_TARGET_DIR, "" ); */
+
+              dlgAccept();
+            };
+
+            dlgSpacing(space);
+            dlgPushButton("-Cancel") dlgReject();
+            dlgStretch(0);
+            dlgSpacing(space);
+          }
+          dlgStretch(10);
+        }
+      };
+
+  if (!result)
+    exit (0);
+  return ;
+}
+
+
+
+//
+//--------------------------------------------------------------------------------
+// Main
+//
+if (pos >= 0) 
+{ 
+  string tmpSX = ""; 
+
+  ULP_Path = strsub( argv[0], 0, pos + 1);
+
+  tmpSX = cfgget( cfg_SCRIPT_ULP, myULP_HOME );
+  if( strlen(tmpSX ) )
+    myULP_HOME = tmpSX;
+  else
+    myULP_HOME = ULP_Path; 
+}
+
+
+  schematic(S) {
+    outputPath = filedir( S.name ) + "kicad/";
+    myULP_HOME = filedir( argv[ 0 ] );
+  }
+
+string myname = filename( argv[0]);
+string datetime = t2string(time(), "dd-MM-yyyy :hh:mm:ss");
+sprintf(logfile, "#********** START OF %s %s %s LOG **********#", myname, Version, datetime);
+
+if (schematic) {
+  if (sheet) {
+    sheet(S) actual_sheet = S.number;
+    sprintf(sheet_info, "The current sheet is %d", actual_sheet);
+  }
+  schematic(S) {
+    schname = filename( S.name );
+    pcbname = filesetext( filename(S.name),".brd");
+
+    
+    menue();
+    int l = 1;
+    int chk;
+
+    // find the hightest number part of the reference name
+    S.sheets(SH) 
+    {
+      int  tmpn;
+      string tmpS;
+      SH.parts(P)
+      {
+        if( ( tmpn = GetNumberIndex(P.name)) == -1 )
+          continue;
+        else
+        {
+          if( ( tmpn = strtol( strsub( P.name, tmpn ))) > maxRefNumber )
+            maxRefNumber = tmpn;
+        }
+      }
+    }  // sheets(SH) 
+
+    
+    S.sheets(SH) {
+      if (only_actual_sheet) {
+        ; // do not change the actual sheet number
+      }
+      else {
+        actual_sheet = SH.number;  // set the numer to actual sheet number
+      }
+      if (actual_sheet == SH.number) { // 2008.01.30
+
+        SH.parts(P)
+        {
+          int n = GetNumberIndex(P.name);  // index to start of reference number in reference
+
+          if( n == -1 )           // Only renumber parts which have no numbers!
+            n = strlen(P.name);
+          else
+            n = 0;  // Has reference number so invert the meaning for the next check.
+            
+          if (n > 0)  // do we have a reference number on the end?
+          { // Yes !
+            if (P.device.package)    // **** only Devices with Packages
+            {                        // **** without Supply symbol Frames ect...
+              // **** DO NOT RENUMBER Elements with this PREFIX
+              if (prefix(P.name) == NoPrefixRenumber)    // returns reference without any trailing number
+                ;    // Do thing is match
+              else {
+                DevPrefix[Dnr] = prefix(P.name);   // Returns reference without any trailing number
+                DevName[Dnr] = P.name; // holds reference prefix with trailing number
+                ++Dnr;
+                P.instances(I) {
+                  int found = -1;
+                  for (int fn = 0; fn < nrNames; fn++) {
+                    if (OldNames[fn] == P.name)
+                    {
+                      found = fn;
+                      break;
+                    }
+                  }
+                  if (found < 0) {
+                    x[nrNames] = u2mil(I.x);    // cannot use E.x/y directly because of
+                    y[nrNames] = u2mil(I.y);    // sort() problem with integers > 32767
+                    OldNames[nrNames] = P.name; // in version 3.50
+                    NewNames[nrNames] = strsub(P.name, 0, n);
+                    Sheet[nrNames] = I.sheet;
+                    Prefix[nrNames] = prefix(P.name);   // Returns reference without any trailing number
+                    ++nrNames;
+                  }
+
+                  else
+                  {
+                    if (Sheet[fn] == I.sheet)
+                    {
+                      if ( u2mil(I.x) < x[fn] || u2mil(I.y) > y[fn] )
+                      {
+                        // tausche wenn x kleiner oder y groesser
+                        x[fn] > u2mil(I.x);
+                        y[fn] > u2mil(I.y);
+                      }
+                    }
+                  }
+                }
+              }
+            }   // if (P.device.package) {    // **** only devices with packages    // Only Symbol (Supply, Port, Frame...)
+            else
+            {  // *** check PartName on Symbols Supply, Port, Frame ... ***
+              SymPrefix[Snr] = prefix(P.name);  // Returns reference without any trailing numbers
+              SymDevName[Snr] = P.name; // Holds reference/prefix with trailing number
+              P.instances(I) {
+                SymNames[Snr] = P.name;     // Device-Name of Symbol
+                SymX[Snr] = u2mil(I.x);       // cannot use E.x/y directly because of
+                SymY[Snr] = u2mil(I.y);       // sort() problem with integers > 32767
+                symsh[Snr] = I.sheet;
+                ++Snr;
+                break;
+              }
+            }
+          }   // if (n > 0)  // do we have a reference number on the end?
+
+          P.instances(I) {
+            ckx[chk] = u2mil(I.x);  // cannot use E.x/y directly because of
+            cky[chk] = u2mil(I.y);  // sort() problem with integers > 32767
+            ckname[chk] = I.name;
+            cksh[chk] = I.sheet;
+            chk++;
+          }
+        }
+      } // 2008.01.30
+    }
+
+    CheckSameOrigin(chk);
+    SortElements();
+    GenerateNames();  // Add new number to reference and put in NewNames
+    setgridmil ();
+    GenerateScript();
+
+    if (CheckNames()) { //check collision before rename ***
+      int select;
+      dlgDialog("Symbol ref Device Names") {
+        dlgVBoxLayout {
+          dlgLabel("Warnings for renumber!");
+          dlgTextView(Error);
+        }
+        dlgHBoxLayout {
+          dlgSpacing(450);
+        }
+        dlgHBoxLayout {
+          dlgPushButton("+&OK") dlgAccept();
+          dlgStretch(1);
+        }
+      };
+      exit (-1);
+    }
+
+    sprintf(c, "GRID INCH 0.1;\n");
+    cmd += c;
+    sprintf(c, "EDIT .S%d;\n", actual_sheet);
+    cmd += c;
+    visible(S);
+
+    //    dlgMessageBox(ULP_Path,"aroo","aree");                       //opens a dialog box with the path in the notification area
+
+    if( IsWindows() == 0 ) // Returns 0 for Linux/Mac
+    { // Linux
+      if( system( "mkdir -p " +"'"+ outputPath + "modified_eagle_files"+"'" ) != 0 )
+      {
+        dlgMessageBox("Could not Make Director " +"'"+ outputPath + "modified_eagle_files"+"'" ); 
+        exit (-1);
+      }
+    }
+    else
+    { // Windows
+      //      string t = "'" + str_replace("/", "\\\\", outputPath + "modified_eagle_files"  )+"'";
+      //      dlgMessageBox(  "cmd.exe /c mkdir " + t );
+      //      dlgMessageBox(  "cmd.exe /c mkdir " +"'" + str_replace("/", "\\\\", outputPath + "modified_eagle_files"  )+"'");
+      //      system( "cmd.exe /c mkdir \"" + str_replace("/", "\\\\", outputPath )+"\"");
+      if( system( "cmd.exe /c mkdir \"" + str_replace("/", "\\\\", outputPath + "modified_eagle_files"  )+"\""))
+      {
+        dlgMessageBox("Could not Make Director " +"'"+ outputPath + "modified_eagle_files"+"'" ); 
+        exit (-1);
+      }
+    }
+      
+    // write save command
+    if( IsWindows() == 0 ) // Returns 0 for Linux/Mac
+      sprintf(c, "write '@%s';\n", outputPath + "modified_eagle_files" +"/"+ schname );
+    else
+      sprintf(c, "write '@%s';\n", outputPath + "modified_eagle_files" +"\\"+ schname );
+    cmd += c;
+
+    sprintf(c, "board;\n");    
+    cmd += c;
+    if( IsWindows() == 0 ) // Returns 0 for Linux/Mac
+      sprintf(c, "write '@%s';\n", outputPath + "modified_eagle_files" +"/"+ pcbname );
+    else
+      sprintf(c, "write '@%s';\n", outputPath + "modified_eagle_files" +"\\"+ pcbname );            
+    cmd += c;
+
+    sprintf(c, "\n");    
+    cmd += c;    
+    sprintf(c, "run fix_via_hack.ulp;\n");    
+    cmd += c;
+
+    logfileName = filesetext( outputPath + filename(S.name), "_conversion_log.txt");
+
+    cfgset( cfg_ConversionLogFileName, logfileName ); // Set log file name
+
+    
+    if( renamedCt == 0 )
+      logfile += "\n    Conversion completed with no Messages";
+    sprintf(c, "\n#********** END OF %s %s %s LOG **********#\n\n", myname, Version, datetime);
+    logfile += c;
+    output(logfileName, "wt") printf("%s", logfile);
+    
+    string fname = filesetext(S.name, "~renumsch.scr");
+    output(fname, "wtD") printf("%s", cmd);
+    exit ("SCRIPT '" + fname + "';");
+  }
+}  // if (schematic) {
+else
+{
+  dlgMessageBox("\n    Start this ULP in a schematic    \n");
+  exit (0);
+}

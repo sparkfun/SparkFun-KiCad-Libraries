@@ -304,7 +304,7 @@ string dummyKiCadPcb = "(kicad_pcb (version 4) (host pcbnew \"(2015-10-05 BZR 62
 string g_comboBoxArray[] = { "A0 (1188mm x 840mm)", "A1 (840mm x 594mm)", "A2(594mm x 420mm)",
                              "A3 (420mm x 297mm)", "A4(297mm x 210mm)", 
                              "A5(210mm x 148mm)", "A6(148mm x 105mm)", 
-			     "Letter (11 x 8,5)", "Legal (14 x 8.5)", 
+			     "Letter (11 x 8.5)", "Legal (14 x 8.5)", 
 			     "Folio  (13 x 8.5)", "Executive (10.5 x 7.25)",
 			     "A (11 x 8)", "B (16 x 11)", "C (22 x 16)", "D (32 x 22)", "E (44 x 32)",
 			     "User defined" };
@@ -317,7 +317,8 @@ string g_sheetSizes[]     = { "46811 33110", "33070 23400", "23400 16535", "1653
                               "11000 8500", "14000 8500", "13000 8500", "10500 7250",
 			      "11000 8000", "16000 11000", "22000 16000", "32000 22000", "44000 32000" };
 			  
-int g_selected = 0; // initially selects "A0" 
+//int g_selected = 0; // initially selects "A0" 
+int g_selected = 7; // initially selects Letter
 
 int g_dimX = 16000;
 int g_dimY = 11000;
@@ -2680,7 +2681,10 @@ void write_kicad_header( UL_SCHEMATIC SCH, int current_sheet, int number_of_shee
    
    if( g_selected >= 0 && g_selected < 16 )
    {
-     printf("$Descr %s %s\n", g_sheetSizeArray[ sheetsizes[ current_sheet ] ], g_sheetSizes[ sheetsizes[ current_sheet ] ]);
+     //NES - Dropdown from ULP doesn't work. Force to letter by default. This covers 90% of our designs. Can be modified in KiCad after.
+	 printf("$Descr USLetter 11000 8500\n");
+
+     //Original: printf("$Descr %s %s\n", g_sheetSizeArray[ sheetsizes[ current_sheet ] ], g_sheetSizes[ sheetsizes[ current_sheet ] ]);
      //     printf("$Descr %s %s\n", g_sheetSizeArray[ g_selected ], g_sheetSizes[ g_selected ]);
    }
    else
