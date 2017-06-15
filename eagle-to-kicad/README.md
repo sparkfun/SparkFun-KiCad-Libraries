@@ -10,7 +10,7 @@ How to convert eagle design to kicad
 5. In 3rd window (‘Export Eagle Schematic’) verify that ULP file location text box points correctly to SparkFun-KiCad-Libraries\eagle-to-kicad repo
 6. Click OK on all the various windows
 7. Conversion should complete, usually with some warnings or errors but these can be ignored.
- 
+
 Open Kicad then open the .sch file of the project. Things to clean up in the schematic:
 * Change page size to US letter (File->Page Setup)
 * Remove the yellow frame
@@ -18,3 +18,9 @@ Open Kicad then open the .sch file of the project. Things to clean up in the sch
 * Remove and re-add correct OSHW logo from ‘Logo’ library
 * Remove and re-add power/GND symbols from ‘Power’ library
 * Remove and re-add any I2C connectors from ‘SparkX’ library (SparkFun-KiCad-Libraries repo \NewlyCreated’)
+
+To Import the PCB Layout:
+* Run PcbNew.exe directly from command prompt or navigate to it
+* File-Open. Then select *.brd from the file type drop down (lower right corner)
+* Open the original .brd file from the Eagle project
+* 'File-Save As' into the KiCad project directory (wherever the *.pro file lives)
