@@ -6,6 +6,8 @@ This repository is to contain a KiCad conversion of the "post-DFM" cleanup of th
 Contents
 -------------------
 
+TODO: Fix this table and links
+
 * [/Conversion](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/master/Conversion) -- Information and scripts having to do with converting eagle components to KiCad (See contained README.md)
 * [/KiCadBomPlugin](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/master/KiCadBomPlugin) -- A bom generator that includes extra fields
 * [InstallationNotes.md](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/master/InstallationNotes.md) -- Notes for installing KiCad.
@@ -17,17 +19,17 @@ Versions
 * [V0.1](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/V_0.1) - Script generated with little manual touch-up work.  Parts have imported PROD_IDs and descriptions.  Footprints have been combined within a single folder.
 * [V0.2](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/V_0.2) - Unfilled footprints (for graphics) now converted by script.  All parts re-exported applying XXX-00000 if they don't have a product ID.
 * [V0.3](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/V_0.3) - Tagged at last SparkX script work before reorganization.
-
+* V0.3 - Final DFM valid libraries, currently in progress.
 
 Example
 -------------------
 An example using SparkFun-Eagle-Libraries V0.1
 
-![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example1.jpg?raw=true "example")
-![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example2.jpg?raw=true "example")
-![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example3.jpg?raw=true "example")
-![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example4.jpg?raw=true "example")
-![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Conversion/example5.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Tools/SparkFun-Eagle-Libraries_Conversion/example1.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Tools/SparkFun-Eagle-Libraries_Conversion/example2.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Tools/SparkFun-Eagle-Libraries_Conversion/example3.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Tools/SparkFun-Eagle-Libraries_Conversion/example4.jpg?raw=true "example")
+![alt text](https://github.com/sparkfun/SparkFun-KiCad-Libraries/blob/master/Tools/SparkFun-Eagle-Libraries_Conversion/example5.jpg?raw=true "example")
 
 License
 -------------------
