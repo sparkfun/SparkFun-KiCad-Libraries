@@ -1,0 +1,38 @@
+
+How to make your own:
+---------------------
+
+Watch / read this first:
+
+* http://www.kicad-pcb.org/display/KICAD/Videos+by+zupnikal
+
+The last two videos should be helpful for how to create a custom .emp file from images.
+
+
+* http://www.re-innovation.co.uk/web12/index.php/en/blog-75/230-adding-logo-to-kicad
+
+If you use linux (which you should), you don't have to use the online-scaler. Just use the scripts!
+
+
+---
+
+
+* Create a folder to hold your new footprint library.
+* Copy the scripts 'make_lib.sh' and 'scale.pl' into that folder.
+* Make sure these files are executable (chmod u+x ...).
+* Copy your custom .emp file into that foler.
+
+* Run the 'make_lib.sh' script as follows:
+
+./make_lib.sh input-file.emp lib-name.mod START END
+
+
+START and END are placeholders for positive integer numbers (1,2,3...) that determine
+the range of created footprint sizes. The units are metric (mm).
+
+The 'lib-name.mod' file will show up in the 'lib' sub-folder. Add it to your pcbnew
+library settings as usual.
+
+Footprints that are created for back-layers are automagically mirrored horizontally.
+To place them onto a back-layer, hover the mouse-pointer over them and press 'f' for 'flip'.
+

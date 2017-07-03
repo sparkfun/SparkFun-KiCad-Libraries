@@ -1345,14 +1345,13 @@ void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
         }
     }
 //	logfile += "\n";
-	//Print table
-//	for( int z = 0; z < wireEntryPtr; z++)
+//	//Print table
+//	for( z = 0; z < wireEntryPtr; z++)
 //	{
 //		debugOutput = "";
 //		sprintf( debugOutput, "entry %d = (%d, %d), (%d, %d), %d\n", z, wiresX1[z], wiresY1[z], wiresX2[z], wiresY2[z], wiresV[z]);
 //		logfile += debugOutput;
 //	}
-
 	//Now we have arcs drawn, no lines drawn, but all lines contained in a table
 	//Go through and follow each connected path.  If it ever comes back to itself, call that a polygon and remove it.
 	int exitConditionMet = 0;
@@ -1364,6 +1363,8 @@ void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
 	int j;
 	while( exitConditionMet == 0 )
 	{
+		//Increment through table,
+		// Attempt to follow polygon for each entry.
 		for(int i = 0; i < wireEntryPtr; i++)
 		{
 			while((i<wireEntryPtr)&&(wiresV[i] == 1))i++; //Skip over used wires
@@ -1373,88 +1374,97 @@ void write_kikad_arc_line( UL_GATE G, int transX, int transY, int gatePos )
 			//For each entry, loop until the begining is found, or all possibilities expended
 			if(i < wireEntryPtr )
 			{
+				//Set start line of poly to i (starting on next iteration)
 				startLine = i;
-				workingLine = 0;
 				tempPoly[0] = startLine; //create a list of entries that may or not be a polygon
 				tempPolyPtr = 1;
+				//Seek out first unused wire that is not the startLine
+				//for(j = 0; (j < wireEntryPtr)&&((wiresV[j] == 1)||(j == startLine)); j++);
+				
+				//Set the working line to the current i
+				j = 0;
+				workingLine = i;
 				workingOnPoly = 1;
-				while(workingOnPoly == 1)
+				if(j < wireEntryPtr)
 				{
-					logfile += "workingOnPoly\n";
-					//This next loop:
-					// Counts through wires entries
-					// Exits if:
-					//  j >= wireEntryPtr
-					//  working line's endpoint matches j's start point
-					for(j = 0; (j < wireEntryPtr)&&((wiresX2[workingLine] != wiresX1[j])||(wiresY2[workingLine] != wiresY1[j])); j++)
+					while(workingOnPoly == 1)
 					{
-						while((j<wireEntryPtr)&&(wiresV[j] == 1))j++; //Skip over used wires
-					}
-//					debugOutput = "";
-//					sprintf( debugOutput, "j = %d \n", j );
-//					logfile += debugOutput;
-					if(j < wireEntryPtr )//connection has been found
-					{
-//						logfile += "Connection Found\n";
-						//move working line
-						workingLine = j;
-						tempPoly[tempPolyPtr] = workingLine;
-						tempPolyPtr++;
-						if(tempPolyPtr > 200)
+//						logfile += "workingOnPoly\n";
+						//This next loop:
+						// Counts through wires entries
+						// Exits if:
+						//  j >= wireEntryPtr
+						//  working line's endpoint matches j's start point
+//						debugOutput = "";
+//						sprintf( debugOutput, "workingLine = %d \n", workingLine );
+//						logfile += debugOutput;
+						for(j = 0; (j < wireEntryPtr)&&(((wiresX2[workingLine] != wiresX1[j])||(wiresY2[workingLine] != wiresY1[j]))||(wiresV[j] == 1)); j++)
 						{
-							workingOnPoly = 0;
-							logfile += "WOP > 200\n";
+							//while((j<wireEntryPtr)&&(wiresV[j] == 1))j++; //Skip over used wires
 						}
-//						for( z = 0; z < tempPolyPtr; z++)
-//						{
-//							debugOutput = "";
-//							sprintf( debugOutput, "tPoly %d = %d\n", z, tempPoly[z]);
-//							logfile += debugOutput;
-//						}
-
-						if((wiresX2[j] == wiresX1[startLine])&&(wiresY2[j] == wiresY1[startLine]))//polygon has been found
+//						debugOutput = "";
+//						sprintf( debugOutput, "j = %d \n", j );
+//						logfile += debugOutput;
+						if(j < wireEntryPtr )//connection has been found
 						{
-							workingOnPoly = 0; //force exit
-							//i = wireEntryPtr; //force exit
-							//logfile += "Forcing exit with i = WEP\n";
-							for(int k = 0; k < tempPolyPtr; k++)
+//							logfile += "Connection Found\n";
+							//move working line
+							workingLine = j;
+							tempPoly[tempPolyPtr] = workingLine;
+							tempPolyPtr++;
+							if(tempPolyPtr > 10000)
 							{
-								//mark entry
-								wiresV[tempPoly[k]] = 1;
+								workingOnPoly = 0;
+								logfile += "WOP > 10000\n";
 							}
-//							logfile += "POLYGON FOUND!\n";
-							//print table
-//							for( int z = 0; z < wireEntryPtr; z++)
+//							for( z = 0; z < tempPolyPtr; z++)
 //							{
 //								debugOutput = "";
-//								sprintf( debugOutput, "entry %d = (%d, %d), (%d, %d), %d\n", z, wiresX1[z], wiresY1[z], wiresX2[z], wiresY2[z], wiresV[z]);
+//								sprintf( debugOutput, "tPoly %d = %d\n", z, tempPoly[z]);
 //								logfile += debugOutput;
 //							}
-							//write entry
-							//Form as:  printf("P %d %d %d %d %s %c N\n", countPolyCoord, gatePos, 1, 0, polyCoord, fillPattern);
-							printf("P %d %d %d %d ", (tempPolyPtr + 1), gatePos, 1, 0);
-							for( z = 0; z < tempPolyPtr; z++)
+	
+							if((wiresX2[j] == wiresX1[startLine])&&(wiresY2[j] == wiresY1[startLine]))//polygon has been found
 							{
-								debugOutput = "";
-								sprintf( debugOutput, "tPoly %d = %d\n", z, tempPoly[z]);
-								logfile += debugOutput;
-								printf("%d %d ", wiresX1[tempPoly[z]], wiresY1[tempPoly[z]]);
+								workingOnPoly = 0; //force exit
+								//i = wireEntryPtr; //force exit
+								//logfile += "Forcing exit with i = WEP\n";
+								for(int k = 0; k < tempPolyPtr; k++)
+								{
+									//mark entry
+									wiresV[tempPoly[k]] = 1;
+								}
+//								logfile += "POLYGON FOUND!\n";
+								//print table
+//								for( z = 0; z < wireEntryPtr; z++)
+//								{
+//									debugOutput = "";
+//									sprintf( debugOutput, "entry %d = (%d, %d), (%d, %d), %d\n", z, wiresX1[z], wiresY1[z], wiresX2[z], wiresY2[z], wiresV[z]);
+//									logfile += debugOutput;
+//								}
+								//write entry
+								//Form as:  printf("P %d %d %d %d %s %c N\n", countPolyCoord, gatePos, 1, 0, polyCoord, fillPattern);
+								printf("P %d %d %d %d ", (tempPolyPtr + 1), gatePos, 1, 0);
+								for( z = 0; z < tempPolyPtr; z++)
+								{
+//									debugOutput = "";
+//									sprintf( debugOutput, "tPoly %d = %d\n", z, tempPoly[z]);
+//									logfile += debugOutput;
+									printf("%d %d ", wiresX1[tempPoly[z]], wiresY1[tempPoly[z]]);
+								}
+								//Also need start point again
+								printf("%d %d ", wiresX1[tempPoly[0]], wiresY1[tempPoly[0]]);
+								printf("%c N\n", 'f');
+								
 							}
-							//Also need start point again
-							printf("%d %d ", wiresX1[tempPoly[0]], wiresY1[tempPoly[0]]);
-							printf("%c N\n", 'f');
-							
 						}
-					}
-					else
-					{
-						//connection not found, bail and let i increment
-						workingOnPoly = 0;
-					}
-//					debugOutput = "";
-//					sprintf( debugOutput, "workingLine = %d \n", workingLine );
-//					logfile += debugOutput;
+						else
+						{
+							//connection not found, bail and let i increment
+							workingOnPoly = 0;
+						}
 					
+					}
 				}
 			}
 		}
