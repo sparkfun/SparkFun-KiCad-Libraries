@@ -1,18 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP LCD-16X2SILK
-D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/255">Basic 16x2 Green</a></li><li><a href="https://www.sparkfun.com/products/11122">Basic 8x2 Green</a></li></ul> 
-K PROD_ID:LCD-00255
-$ENDCMP
-#
-$CMP LCD-16X2NOSILK
-D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/255">Basic 16x2 Green</a></li><li><a href="https://www.sparkfun.com/products/11122">Basic 8x2 Green</a></li></ul> 
-K PROD_ID:LCD-00255
-$ENDCMP
-#
-$CMP LCD-16X2NOHOLES
-D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/255">Basic 16x2 Green</a></li><li><a href="https://www.sparkfun.com/products/11122">Basic 8x2 Green</a></li></ul> 
-K PROD_ID:LCD-00255
+$CMP LCD-16X2-MINMIN4-RGB
+D RGB 16x2 parallel input LCD, 4bit only Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/10862">Basic 16x2 RGB</a></li></ul> 
+K PROD_ID:LCD-10862
 $ENDCMP
 #
 $CMP LCD-16X28X2
@@ -25,12 +15,27 @@ D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line displa
 K PROD_ID:LCD-11122
 $ENDCMP
 #
-$CMP LCD-G12864-FULL
+$CMP LCD-16X2NOHOLES
+D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/255">Basic 16x2 Green</a></li><li><a href="https://www.sparkfun.com/products/11122">Basic 8x2 Green</a></li></ul> 
+K PROD_ID:LCD-00255
+$ENDCMP
+#
+$CMP LCD-16X2NOSILK
+D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/255">Basic 16x2 Green</a></li><li><a href="https://www.sparkfun.com/products/11122">Basic 8x2 Green</a></li></ul> 
+K PROD_ID:LCD-00255
+$ENDCMP
+#
+$CMP LCD-16X2SILK
+D Standard text-only 16x2 parallel input LCD Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/255">Basic 16x2 Green</a></li><li><a href="https://www.sparkfun.com/products/11122">Basic 8x2 Green</a></li></ul> 
+K PROD_ID:LCD-00255
+$ENDCMP
+#
+$CMP LCD-G12864-BARE
 D Graphical LCD 128x64 Graphical LCD 644x128 with LED Backlight.<br>STN Type.<br> KS0108B parallel interface chipset. <br><a href="https://www.sparkfun.com/datasheets/LCD/GDM12864H.pdf">Datasheet</a>SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/710">Graphic LCD 128x64</a></li></ul> 
 K PROD_ID:LCD-00710
 $ENDCMP
 #
-$CMP LCD-G12864-BARE
+$CMP LCD-G12864-FULL
 D Graphical LCD 128x64 Graphical LCD 644x128 with LED Backlight.<br>STN Type.<br> KS0108B parallel interface chipset. <br><a href="https://www.sparkfun.com/datasheets/LCD/GDM12864H.pdf">Datasheet</a>SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/710">Graphic LCD 128x64</a></li></ul> 
 K PROD_ID:LCD-00710
 $ENDCMP
@@ -50,9 +55,9 @@ D Micro OLED <i>TODO: Add description</i>SparkFun Products:<ul><li><a href="http
 K PROD_ID:LCD-12019
 $ENDCMP
 #
-$CMP LCD-16X2-MINMIN4-RGB
-D RGB 16x2 parallel input LCD, 4bit only Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset  SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/10862">Basic 16x2 RGB</a></li></ul> 
-K PROD_ID:LCD-10862
+$CMP OLED128X64BOTTOM
+D Micro OLED <i>TODO: Add description</i>SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/13003">product</a></li></ul> 
+K PROD_ID:XXX-00000
 $ENDCMP
 #
 $CMP OLED128X64SIDE
@@ -65,7 +70,4 @@ D Micro OLED <i>TODO: Add description</i>SparkFun Products:<ul><li><a href="http
 K PROD_ID:LCD-13577
 $ENDCMP
 #
-$CMP OLED128X64BOTTOM
-D Micro OLED <i>TODO: Add description</i>SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/13003">product</a></li></ul> 
-K PROD_ID:XXX-00000
-$ENDCMP
+#End Doc Library

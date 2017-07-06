@@ -39,7 +39,11 @@ During this stage, select
 
 for each library.
 
-When complete, move the log files to ../Tools/SparkFun-Eagle-Libraries_Conversion/EagleExportLogs
+When complete
+
+* move the log files to ../Tools/SparkFun-Eagle-Libraries_Conversion/EagleExportLogs
+* Copy .lib and .mod files to ../Libraries
+* Delete originals when you are happy
 
 ### Use batch files to convert internal part names and DFM stuff
 

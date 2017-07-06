@@ -1,13 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP AD8607
-D Micropower Low-noise Rail to Rail OP-AMP  <a href="">Datasheet</a> <h4>SparkFun Products</h4><ul><li><a href=""></a> ()</li></ul><br>Currently in prototype (unknown project) 
-K PROD_ID:IC-13133
-$ENDCMP
-#
 $CMP AD8045-PAD
 D Unity-gain stable feedback amplifier Low noise, low distortion, 1GHz BW.  <a href="https://cdn.sparkfun.com/datasheets/BreakoutBoards/AD8045.pdf">Datasheet</a> <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/11420">SparkFun MiniGen - Pro Mini Signal Generator Shield</a> (BOB-11420)</li></ul><br>
 K PROD_ID:IC-11224
+$ENDCMP
+#
+$CMP AD8607
+D Micropower Low-noise Rail to Rail OP-AMP  <a href="">Datasheet</a> <h4>SparkFun Products</h4><ul><li><a href=""></a> ()</li></ul><br>Currently in prototype (unknown project) 
+K PROD_ID:IC-13133
 $ENDCMP
 #
 $CMP LM339
@@ -50,19 +50,14 @@ D  Single gate rail-to-rail output op-amp. Inputs extend 300mV past rails. <a hr
 K PROD_ID:IC-08251
 $ENDCMP
 #
-$CMP OPAMP-DUALU
-D Generic op-amp footprint This component is for the standard 358 pinning of a dual op-amp From the LM358 datasheet:<ul><li>Pin 1: Output A</li><li>Pin 2: Inverting Input A</li><li>Pin 3: Non-Inverting Input A</li><li>Pin 4: Gnd</li><li>Pin 5: Non-Inverting Input B</li><li>Pin 6: Inverting Input B</li><li>Pin 7: Output B</li><li>Pin 8: V+</li></ul>
-K PROD_ID:NA-XXXXX
-$ENDCMP
-#
 $CMP OPAMP-DUAL
 D Generic op-amp footprint This component is for the standard 358 pinning of a dual op-amp From the LM358 datasheet:<ul><li>Pin 1: Output A</li><li>Pin 2: Inverting Input A</li><li>Pin 3: Non-Inverting Input A</li><li>Pin 4: Gnd</li><li>Pin 5: Non-Inverting Input B</li><li>Pin 6: Inverting Input B</li><li>Pin 7: Output B</li><li>Pin 8: V+</li></ul>
 K PROD_ID:NA-XXXXX
 $ENDCMP
 #
-$CMP TPA6138A2
-D Headphone driver amp Differential to single-ended audio amplifier. <a href="">Datasheet</a> <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/11924">SparkFun Purpletooth Jamboree - BC127 Development Board</a> (WRL-11924)</li></ul>
-K PROD_ID:IC-11779
+$CMP OPAMP-DUALU
+D Generic op-amp footprint This component is for the standard 358 pinning of a dual op-amp From the LM358 datasheet:<ul><li>Pin 1: Output A</li><li>Pin 2: Inverting Input A</li><li>Pin 3: Non-Inverting Input A</li><li>Pin 4: Gnd</li><li>Pin 5: Non-Inverting Input B</li><li>Pin 6: Inverting Input B</li><li>Pin 7: Output B</li><li>Pin 8: V+</li></ul>
+K PROD_ID:NA-XXXXX
 $ENDCMP
 #
 $CMP TPA2005D1DGN
@@ -79,3 +74,10 @@ $CMP TPA6111SMD-T
 D TPA6111A2 Basic 150mW stereo headphone amplifier. <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/12938">SparkFun FM Tuner Evaluation Board - Si4703</a> (WRL-12938)</li></ul>
 K PROD_ID:IC-10149
 $ENDCMP
+#
+$CMP TPA6138A2
+D Headphone driver amp Differential to single-ended audio amplifier. <a href="">Datasheet</a> <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/11924">SparkFun Purpletooth Jamboree - BC127 Development Board</a> (WRL-11924)</li></ul>
+K PROD_ID:IC-11779
+$ENDCMP
+#
+#End Doc Library

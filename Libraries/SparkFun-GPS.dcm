@@ -1,13 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP ANTENNAGPS-2X8MM
-D Single-ended Antennae 1.575GHz antennae with just one terminal. These are all chip antennae. <b>1575MHz (GPS) Antennae</b><ul><li><b>ANT-GPS-2X7MM</b> - 2.0 x 7.0 mm chip antenna. (<a href="https://www.sparkfun.com/products/9131">SparkFun Product</a>)</li><li><b>ANT-GPS-2X8MM</b> - 2.0 x 8.0 mm chip antenna. (<a href="https://www.sparkfun.com/products/8418">SparkFun Product</a>)</li></ul> 
-K PROD_ID:GPS-08510
-$ENDCMP
-#
 $CMP ANTENNAGPS-2X7MM
 D Single-ended Antennae 1.575GHz antennae with just one terminal. These are all chip antennae. <b>1575MHz (GPS) Antennae</b><ul><li><b>ANT-GPS-2X7MM</b> - 2.0 x 7.0 mm chip antenna. (<a href="https://www.sparkfun.com/products/9131">SparkFun Product</a>)</li><li><b>ANT-GPS-2X8MM</b> - 2.0 x 8.0 mm chip antenna. (<a href="https://www.sparkfun.com/products/8418">SparkFun Product</a>)</li></ul> 
 K PROD_ID:ANT-09087
+$ENDCMP
+#
+$CMP ANTENNAGPS-2X8MM
+D Single-ended Antennae 1.575GHz antennae with just one terminal. These are all chip antennae. <b>1575MHz (GPS) Antennae</b><ul><li><b>ANT-GPS-2X7MM</b> - 2.0 x 7.0 mm chip antenna. (<a href="https://www.sparkfun.com/products/9131">SparkFun Product</a>)</li><li><b>ANT-GPS-2X8MM</b> - 2.0 x 8.0 mm chip antenna. (<a href="https://www.sparkfun.com/products/8418">SparkFun Product</a>)</li></ul> 
+K PROD_ID:GPS-08510
 $ENDCMP
 #
 $CMP COPERNICUSSMD
@@ -30,11 +30,6 @@ D ADH-tech GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Modul
 K PROD_ID:CONN-08249
 $ENDCMP
 #
-$CMP VENUS638FLPX-L
-D Venus638FLPX-L GPS Receiver Venus638FLPx is a high performance, low cost, single chip GPS receiver targeting mobile consumer and cellular handset applications. It offers very low power consumption, high sensitivity, and best in class signal acquisition and time-to-first-fix performance.Venus638FLPx contains all the necessary components of a complete GPS receiver, includes 1.2dB cascaded system NF RF front-end, GPS baseband signal processor, 0.5ppm TCXO, 32.768kHz RTC crystal, RTC LDO regulator, and passive components. It requires very low external component count and takes up only 100mm2 PCB footprint.Dedicated massive-correlator signal parameter search engine within the baseband enables rapid search of all the available satellites and acquisition of very weak signal. An advanced track engine allows weak signal tracking and positioning in harsh environments such as urban canyons and under deep foliage. The self-contained architecture keeps GPS processing off the host and allows integration into applications with very little resource. <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/10919">GPS Module - Venus638FLPx-L 20Hz (14 Channel)</a> (GPS-10919)</li></ul>
-K PROD_ID:IC-10734
-$ENDCMP
-#
 $CMP GP3906-TLP
 D GP3906-TLP PoT GPS Module The GP3906-TLP is a POT (Patch on Top) GPS module which is special designed for ultra low power consumption purpose environment. It is a GPS receiver providing a solution that high position and speed accuracy performances as well as high sensitivity and tracking capabilities in urban conditions. The GPS chipsets inside the module are designed by MediaTek Inc., which is the world's leading digital media solution provider and largest fab-less IC company in Taiwan. The module can support up to 66 channels. The GPS solution enables small form factor devices. They deliver major advancements in GPS performances, accuracy, integration, computing power and flexibility. They are designed to simplify the embedded system integration process. Features:<ul><li>Based on MediaTek Single Chip Architecture (MT3339).</li><li>ARM7 based application processor</li><li>High sensitivity: -165dBm tracking</li><li>L1 frequency, C/A code</li><li>Channels: 66 acquisition, 22 simultaneous tracking</li><li>Low power consumption: 26mA @ acquisition, 20mA @ tracking</li><li>Cold/Warm/Hot start time: <35/<33/<1 seconds</li><li>Maximum update rate up to 10Hz</li><li>GPS data interface: TTL level serial port</li><li>Support NMEA 0183 standard V3.01 and backward compliance</li><li>Support SBAS   WAAS, EGNOS, GAGAN and MSAS</li><li>Dimension 16mm x 16mm x 6.7mm</li><li>RoHS compliant</li><li>Advanced software features</li><ul><li>AlwaysLocate TM advanced location awareness technology</li><li>EPO TM orbit prediction</li><li>Supports logger function (LOCUS)</li></ul></ul> <b>SparkFun Products</b><ul><li><a href="https://www.sparkfun.com/products/13750">SparkFun GPS Logger Shield</a> </li></ul> 
 K PROD_ID:GPS-13174
@@ -44,3 +39,10 @@ $CMP TITAN_X1_GPS
 D Titan X1 GPS
 K PROD_ID:GPS-13693
 $ENDCMP
+#
+$CMP VENUS638FLPX-L
+D Venus638FLPX-L GPS Receiver Venus638FLPx is a high performance, low cost, single chip GPS receiver targeting mobile consumer and cellular handset applications. It offers very low power consumption, high sensitivity, and best in class signal acquisition and time-to-first-fix performance.Venus638FLPx contains all the necessary components of a complete GPS receiver, includes 1.2dB cascaded system NF RF front-end, GPS baseband signal processor, 0.5ppm TCXO, 32.768kHz RTC crystal, RTC LDO regulator, and passive components. It requires very low external component count and takes up only 100mm2 PCB footprint.Dedicated massive-correlator signal parameter search engine within the baseband enables rapid search of all the available satellites and acquisition of very weak signal. An advanced track engine allows weak signal tracking and positioning in harsh environments such as urban canyons and under deep foliage. The self-contained architecture keeps GPS processing off the host and allows integration into applications with very little resource. <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/10919">GPS Module - Venus638FLPx-L 20Hz (14 Channel)</a> (GPS-10919)</li></ul>
+K PROD_ID:IC-10734
+$ENDCMP
+#
+#End Doc Library
