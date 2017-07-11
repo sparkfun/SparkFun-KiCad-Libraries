@@ -336,17 +336,20 @@ for filename in os.listdir(sourcePath):
 				print ""
 			else:
 				print "[IGNORED]"
+		else:
+			fileList.append(fullFilePath)
+			print ""
 
 if subArgString == "1":
 	#Save contents of source into directoryList, only choosing files with .pretty
 	for filename in os.listdir(sourcePath):
 		if filename[len(filename) - 7:] == ".pretty":
 			fullFilePath = filename
-			print "directory:",
-			print fullFilePath
 			directoryList.append(fullFilePath)
 	#extend fileList with subdirs
 	for directoryname in directoryList:
+		print "directory:",
+		print directoryname
 		for filename in os.listdir(sourcePath + "\\" + directoryname):
 			if filename[len(filename) - 10:] == ".kicad_mod":
 				fullFilePath = directoryname + "\\" + filename
@@ -359,6 +362,9 @@ if subArgString == "1":
 						print ""
 					else:
 						print "[IGNORED]"
+				else:
+					fileList.append(fullFilePath)
+					print ""
 	
 
 #print fileList
@@ -504,7 +510,7 @@ for filename in fileList:
 								var3 = remArgString.find(".", 0, len(remArgString))
 								if var3 != -1:
 									searchString = " *." + remArgString[var3+1:]
-									replaceString = "F." + remArgString[var3+1:] + " B." + remArgString[var3+1:]
+									replaceString = " F." + remArgString[var3+1:] + " B." + remArgString[var3+1:]
 									removeString = " " + remArgString
 									#Look for the (layers .....) param
 									var1 = workingFileMemory.find("(layers ", leftParen, rightParen)
