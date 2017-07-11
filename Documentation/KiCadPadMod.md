@@ -1,10 +1,17 @@
 ## Pad Modification Script
 
-The script KiCadPadMod.py modifies KiCad model files
+The script KiCadPadMod.py modifies KiCad model files.  It operates on pads and can change parameters as configured with options.
+
+Features:
+
+* Operate on SMD, PTH, or NPTH per each pass
+* Exclude, or only operate on, pads at origin
+* Add or remove paste or mask layers
+* modify pad clearance, mask margin, or paste margin
 
 ### Syntax
 
-Running the script by itself is not useful.  Instead, kludge together massive option lists in a batch file and run it that way for the options you want.
+Running the script by itself is not useful.  Instead, kludge together option lists in a batch file and run it that way for the options you want.
 
 `KiCadPadMod [options list] [input directory] [output directory] [(optional search term)]`
 
@@ -38,11 +45,11 @@ Only operate on pads at 0,0.
 
 **-rem [F.Paste|B.Paste|F.Mask|B.Mask]**
 
+These allow you to add or subtract pad parameters.
+
 **-mod [PadClearance|MaskClearance|PasteClearance] [*value*]**
 
-These allow you to add or subtract pad parameters, as well as modify clearances.
-
-TODO: Implement mod operation
+This allows you to modify clearances.  Using -mod will change any existing values, or add a new value if none exists.
 
 **[input directory]**
 
@@ -54,15 +61,13 @@ Full path to the directory where the modified files will be saved.  Directory st
 
 **[(optional search term)]**
 
-Add a partial file name here.  The script will only apply to filenames that contain the search term.  This can be a whole file name, or part (like 0603)
-
-TODO: Complete this function
+Add a partial file name here.  The script will only apply to filenames that contain the search term.  This can be a whole file name, or part (like 0603).  All directories will be searched if -sub 1
 
 ### Usage
 
 All arguments are shown here, though the command is invalid and will fail the checks:
 
-* `python KiCadPadMod.py -l -sub 0 -pad SMD -nopad CENTER -onlypad CENTER -add F.Mask -rem F.Paste -mod PadClearance 0.004 C:\temp\input C:\temp\output 0603`
+* `python KiCadPadMod.py -l -sub 0 -pad SMD -nopad CENTER -onlypad CENTER -add F.Mask -rem F.Paste -mod PadClearance 0.004 C:\temp\input\ C:\temp\output\ 0603`
 
 This example says, root folder only, operate on all PTH pads and add a F.Mask layer:
 

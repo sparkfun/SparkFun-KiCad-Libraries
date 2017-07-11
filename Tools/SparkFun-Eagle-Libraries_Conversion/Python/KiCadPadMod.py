@@ -34,6 +34,7 @@ addArgString = "undef"
 remArgString = "undef"
 modArgString = "undef"
 modArgValueString = "undef"
+modArgValueMMString = "undef"
 sourcePath = "undef"
 destPath = "undef"
 searchTermString = "undef"
@@ -127,6 +128,7 @@ if sys.argv[argPointer] == "-mod" and notEnoughArgs == 0 :
 		modArgString = sys.argv[argPointer]
 		argPointer += 1
 		modArgValueString = sys.argv[argPointer]
+		modArgValueMMString = "{:6.4f}".format(float(sys.argv[argPointer]) * 25.4)
 		argPointer += 1
 	else:
 		notEnoughArgs = 1
@@ -140,9 +142,6 @@ argPointer += 1
 #If there is another term, it's the search term
 if argPointer <= lastArg:
 	searchTermString = sys.argv[argPointer]
-	
-#clearance = "{:6.4f}".format(float(sys.argv[3]) * 25.4)
-
 
 if justListArgs == 1 or notEnoughArgs == 1:
 	print ""
@@ -169,6 +168,8 @@ if justListArgs == 1 or notEnoughArgs == 1:
 	print modArgString
 	print "modArgValueString:",
 	print modArgValueString
+	print "modArgValueMMString:",
+	print modArgValueMMString
 	print "sourcePath:",
 	print sourcePath
 	print "destPath:",
@@ -327,8 +328,14 @@ for filename in os.listdir(sourcePath):
 	if filename[len(filename) - 10:] == ".kicad_mod":
 		fullFilePath = filename
 		print "file:",
-		print fullFilePath
-		fileList.append(fullFilePath)
+		print fullFilePath,
+		if searchTermString != "undef":
+			if filename.find(searchTermString, 0, len(filename)) != -1:
+				#found match
+				fileList.append(fullFilePath)
+				print ""
+			else:
+				print "[IGNORED]"
 
 if subArgString == "1":
 	#Save contents of source into directoryList, only choosing files with .pretty
@@ -343,9 +350,15 @@ if subArgString == "1":
 		for filename in os.listdir(sourcePath + "\\" + directoryname):
 			if filename[len(filename) - 10:] == ".kicad_mod":
 				fullFilePath = directoryname + "\\" + filename
-				print "file:",
-				print fullFilePath
-				fileList.append(fullFilePath)
+				print "   file:",
+				print fullFilePath,
+				if searchTermString != "undef":
+					if filename.find(searchTermString, 0, len(filename)) != -1:
+						#found match
+						fileList.append(fullFilePath)
+						print ""
+					else:
+						print "[IGNORED]"
 	
 
 #print fileList
@@ -421,54 +434,60 @@ for filename in fileList:
 						#if counts are equal, do a thing then bail
 						workOnPad = 0
 						if leftParenCount == rightParenCount:
+							print "Found: ",
 							if workingFileMemory.find("(at 0 0)", leftParen, nextParen) > 0:
 								#This is a center pad
-								print "Center pad found!"
+								print "Center,",
 								if nopadArgString != "CENTER":
-									print "   working on center pad"
+									print "(will modify)",
 									#work on this pad
 									workOnPad = 1
 								else:
 									countIsNonZero = 0 #break
+									print "(ignored)"
 							if workingFileMemory.find("(at 0 0)", leftParen, nextParen) == -1:
-								print "Regular pad found!"
+								print "Normal,",
 								#This is not a center pad
 								if onlypadArgString != "CENTER":
-									print "   working on regular pad"
+									print "(will modify)",
 									#work on this pad
 									workOnPad = 1
 								else:
 									countIsNonZero = 0 #break
+									print "(ignored)"
 						# Now test for the type of pad, but only after center rules adhered to
 						if workOnPad == 1:
 							workOnPad = 0
 							if workingFileMemory.find(" smd ", leftParen + 4, nextParen) > 0: #adding 4 insures pad named 'smd' doesn't trigger
 								#This is a smd pad
-								print "   smd pad found!"
+								print "Type: SMD",
 								if padArgString == "SMD":
-									print "      working on smd pad"
+									print "(will modify)"
 									#work on this pad
 									workOnPad = 1
 								else:
 									countIsNonZero = 0 #break
+									print "(ignored)"
 							if workingFileMemory.find(" thru_hole ", leftParen + 4, nextParen) > 0: #adding 4 insures pad named 'thru_hole' doesn't trigger
 								#This is a thru_hole pad
-								print "   thru_hole pad found!"
+								print "Type: PTH",
 								if padArgString == "PTH":
-									print "      working on thru_hole pad"
+									print "(will modify)"
 									#work on this pad
 									workOnPad = 1
 								else:
 									countIsNonZero = 0 #break
+									print "(ignored)"
 							if workingFileMemory.find(" np_thru_hole ", leftParen + 4, nextParen) > 0: #adding 4 insures pad named 'np_thru_hole' doesn't trigger
 								#This is a np_thru_hole pad
-								print "   np_thru_hole pad found!"
+								print "Type: NPTH",
 								if padArgString == "NPTH":
-									print "      working on np_thru_hole pad"
+									print "(will modify)"
 									#work on this pad
 									workOnPad = 1
 								else:
 									countIsNonZero = 0 #break
+									print "(ignored)"
 							
 						if workOnPad == 1:
 							countIsNonZero = 0
@@ -540,24 +559,49 @@ for filename in fileList:
 											rightParen += len(addString)
 											var2 += len(addString)										
 											workingFileMemory = tempFileMemory
-											print workingFileMemory[leftParen:rightParen]
+											#print workingFileMemory[leftParen:rightParen]
 #If mod was used, remove the attrib and reapply it.
-	
-							#Look for existing parameter
-	#						var1 = workingFileMemory.find("solder_mask_margin", leftParen, rightParen)
-	#						if var1 != -1:
-	#							#delete it
-	#							var2 = workingFileMemory.find(")", var1, rightParen)
-	#							tempFileMemory = workingFileMemory[:var1-2] + workingFileMemory[var2+1:]
-	#							#Calculate the number of chars removed
-	#							removedChars = var2 - var1 + 3
-	#							#offset rightParen
-	#							rightParen = rightParen - removedChars
-	#							workingFileMemory = tempFileMemory
-	#						#Now write the new value
-	#						tempFileMemory = workingFileMemory[:rightParen-1] + " (solder_mask_margin " + clearance + ")" + workingFileMemory[rightParen-1:]
-	#						workingFileMemory = tempFileMemory
-	#						
+							if modArgString != "undef" and modArgValueMMString != "undef":
+								#We will be modifying a parameter
+								#Generate string data
+								searchString = "undef"
+								if modArgString == "PadClearance":
+									searchString = "(clearance"
+								if modArgString == "MaskClearance":
+									searchString = "(solder_mask_margin"
+								if modArgString == "PasteClearance":
+									searchString = "(solder_paste_margin"
+								
+								if searchString != "undef":
+									#good to go!
+									addString = searchString + " " + modArgValueMMString + ")"
+									
+									#Look for instance of search term
+									var3 = workingFileMemory.find(searchString, leftParen, rightParen)
+									if var3 != -1:
+										#found it -- index it
+										var1 = workingFileMemory.find(searchString, leftParen, rightParen)
+										var2 = workingFileMemory.find(")", var1, rightParen)
+										#Calculate length of this string
+										stringLen = var2 - var1 + 1
+										#remove it
+										tempFileMemory = workingFileMemory[:var1] + workingFileMemory[var1 + stringLen:]
+										workingFileMemory = tempFileMemory
+										rightParen -= stringLen
+										var2 -= stringLen
+										#var1 should now equal var2
+										
+									#Now add the new tag
+									if workingFileMemory[rightParen - 2] != " ":
+										tempString = " " + addString
+										addString = tempString
+									tempFileMemory = workingFileMemory[:rightParen - 1] + addString + workingFileMemory[rightParen - 1:] 
+									rightParen += len(addString)
+									var2 += len(addString)										
+									workingFileMemory = tempFileMemory
+									#print workingFileMemory[leftParen:rightParen]
+								else:
+									print "Invalid modArgString"
 				else:
 					parsingFile = 0
 	#		print workingFileMemory[locVar-3:locVar+3]
