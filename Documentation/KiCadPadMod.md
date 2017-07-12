@@ -76,3 +76,17 @@ This example says, root folder only, operate on all PTH pads and add a F.Mask la
 This says, dry run remove all F.Paste from only the center pad of root and subdirectories:
 
 * `python KiCadPadMod.py -l -sub 1 -pad NPTH -onlypad CENTER -rem F.Paste C:\temp\input\ C:\temp\output\`
+
+**Batch usage**
+
+This batch file is used to remove all paste from all PTH and NPTH holes:
+
+```dos
+REM This is used to remove all paste from all sparkfun libs (Note: Took 1min 27s)
+REM Manualy put the output into the input after checking results.
+
+python KiCadPadMod.py -sub 1 -pad PTH -rem F.Paste C:\github\SparkFun-KiCad-Libraries\Footprints\ C:\temp\output\
+python KiCadPadMod.py -sub 1 -pad PTH -rem B.Paste C:\temp\output\ C:\temp\output2\
+python KiCadPadMod.py -sub 1 -pad NPTH -rem F.Paste C:\temp\output2\ C:\temp\output3\
+python KiCadPadMod.py -sub 1 -pad NPTH -rem B.Paste C:\temp\output3\ C:\temp\output4\
+```
