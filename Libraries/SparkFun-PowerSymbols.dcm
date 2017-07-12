@@ -10,8 +10,18 @@ D 1.8V Supply Symbol Power supply symbol for a specifically-stated 1.8V source.
 K PROD_ID:XXX-00000
 $ENDCMP
 #
+$CMP 12V
+D 12V Supply Symbol Power supply symbol for a specifically-stated 12V source. 
+K PROD_ID:XXX-00000
+$ENDCMP
+#
 $CMP 2.8V
 D 2.8V Supply Symbol Power supply symbol for a specifically-stated 2.8V source. 
+K PROD_ID:XXX-00000
+$ENDCMP
+#
+$CMP 2PT_GND_TIE
+D Dual Ground Supply Power supply symbol for connecting two grounds. SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/11611">SparkFun AutoDriver - Stepper Motor Driver</a></li></ul> 
 K PROD_ID:XXX-00000
 $ENDCMP
 #
@@ -22,11 +32,6 @@ $ENDCMP
 #
 $CMP 5V
 D 5V Supply Symbol Power supply symbol for a specifically-stated 5V source. 
-K PROD_ID:XXX-00000
-$ENDCMP
-#
-$CMP 12V
-D 12V Supply Symbol Power supply symbol for a specifically-stated 12V source. 
 K PROD_ID:XXX-00000
 $ENDCMP
 #
@@ -45,23 +50,18 @@ D Ground Supply Symbol Generic signal ground supply symbol.
 K PROD_ID:XXX-00000
 $ENDCMP
 #
-$CMP GND-ISO
-D Isolated Ground Supply Generic isolated ground supply symbol. 
-K PROD_ID:XXX-00000
-$ENDCMP
-#
 $CMP GND2
 D Ground Supply (Earth Ground style) Ground supply with a traditional "earth ground" symbol. 
 K PROD_ID:XXX-00000
 $ENDCMP
 #
-$CMP VCC
-D VCC Voltage Supply Positive voltage supply (traditionally for a BJT device, C=collector). 
+$CMP ISOGND
+D Isolated Ground Supply Generic isolated ground supply symbol. 
 K PROD_ID:XXX-00000
 $ENDCMP
 #
-$CMP VCC-ISO
-D Isolated power supply Generic symbol for an isolated power supply. 
+$CMP VCC
+D VCC Voltage Supply Positive voltage supply (traditionally for a BJT device, C=collector). 
 K PROD_ID:XXX-00000
 $ENDCMP
 #
@@ -105,6 +105,11 @@ D Negative Voltage Supply Generic negative voltage terminal.
 K PROD_ID:XXX-00000
 $ENDCMP
 #
+$CMP VOUT
+D VOUT Voltage Output Output voltage  
+K PROD_ID:XXX-00000
+$ENDCMP
+#
 $CMP V_BATT
 D Battery Voltage Supply Generic symbol for the battery input to a system. 
 K PROD_ID:XXX-00000
@@ -115,12 +120,4 @@ D USB Voltage Supply
 K PROD_ID:XXX-00000
 $ENDCMP
 #
-$CMP 2PT_GND_TIE
-D Dual Ground Supply Power supply symbol for connecting two grounds. SparkFun Products:<ul><li><a href="https://www.sparkfun.com/products/11611">SparkFun AutoDriver - Stepper Motor Driver</a></li></ul> 
-K PROD_ID:XXX-00000
-$ENDCMP
-#
-$CMP VOUT
-D VOUT Voltage Output Output voltage  
-K PROD_ID:XXX-00000
-$ENDCMP
+#End Doc Library
