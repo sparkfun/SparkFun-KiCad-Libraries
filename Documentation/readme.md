@@ -13,4 +13,8 @@
 
 ### Usage
 
+* [ProductionOutputs.md](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/master/Documentation/ProductionOutputs.md) -- What settings to select when ordering PCBs
+
+### Todo:
+
 * [SparkFunProcess.md](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/master/Documentation/SparkFunProcess.md) -- text
