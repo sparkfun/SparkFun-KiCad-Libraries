@@ -19,9 +19,9 @@ Installation Notes
   * Add -> navigate to SparkFun-KiCad-Libraries -> select all .lib files -> open, then hit OK
   * Test by selecting an active library.  All sparkfun libraries should be displayed.  Close the library editor
 * Open the "PCB Footprint Editor"
-* Prefrences -> Footprint Library Manager
+* Preferences -> Footprint Library Manager
   * Remove all (if any) libraries, hit OK
-* Prefrences -> Footprint Libraries Wizard
+* Preferences -> Footprint Libraries Wizard
   * Next (files on my computer)
   * Navigate to SparkFun-KiCad-Libraries -> select all .mod files and hit ok
   * Next
@@ -30,5 +30,6 @@ Installation Notes
   * Close the editor
 * Save the project (Green arrow into extern HDD icon, no menu exists)
 
-Now, This project is linked to the libraries.  Open a schematic and place components.  See kicad enginursday post for converting from schematic into board (Note: You need to have nets for this to work... not just unconnected components)
-License Information
+Now, this project is linked to the libraries.  Open a schematic and place components.  See KiCad enginursday post for converting from schematic into board (Note: You need to have nets for this to work... not just unconnected components)
+
+**License Information**
