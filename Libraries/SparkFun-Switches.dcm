@@ -60,11 +60,6 @@ D 4-Position DIP Switch 4-circuit DIP (dual inline package) switch. Commonly use
 K PROD_ID:SWCH-12418
 $ENDCMP
 #
-$CMP DIP08-PTH
-D 8-Position DIP Switch 8-circuit DIP (dual inline package) switch. Commonly used to physcially set a circuit's behavior. <h4>SparkFun Products</h4><ul><li><a href="https://www.sparkfun.com/products/8034">DIP Switch - 8 Position</a> (COM-08034)</li></ul>
-K PROD_ID:SWCH-12197
-$ENDCMP
-#
 $CMP ENCODER
 D Rotary Encoder Encoders rotate similarly to potentiometers, but they re different from potentiometers in that an encoder has full rotation without limits. They output gray code so that you can tell how much and in which direction the encoder has been turned. <h4>SparkFun Products</h4><ul><li>Used on the <a href="https://www.sparkfun.com/products/11043">https://www.sparkfun.com/products/11043</a> (COM-11043)</li></ul>
 K PROD_ID:RES-11299
@@ -208,6 +203,11 @@ $ENDCMP
 $CMP REED_SWITCH-PTH-INSULATED
 D Reed Switch A reed switch is a magnetically-actuated switch. When the device is exposed to a magnetic field, the two ferrous materials inside the switch pull together and the switch closes. <h4>Variant Overview</h4><h5>PTH-GLASS</h5><ul><li><a href="https://www.sparkfun.com/products/8642">Reed Switch</a> (COM-08642) - PTH reed switch w/ glass body (6.0 x 0.9 mm)</li></ul><h5>PTH-INSULATED</h5><ul><li><a href="https://www.sparkfun.com/products/10601">Reed Switch - Insulated</a> (COM-10601) - PTH reed switch w/ insulated body (15.1 x 4.2 mm)</li></ul>
 K PROD_ID:SWCH-10467
+$ENDCMP
+#
+$CMP ROCKER_SWITCH-SPST_PTH_RIGHT_ANGLE
+D Momentary Switch (Pushbutton) - SPST Normally-open (NO) SPST momentary switches (buttons, pushbuttons). <h4>Variants</h4><h5>PTH-12MM - 12mm square, through-hole</h5><ul><li><a href="https://www.sparkfun.com/products/9190">Momentary Pushbutton Switch - 12mm Square</a> (COM-09190)</li></ul><h5>PTH-6.0MM, PTH-6.0MM-KIT - 6.0mm square, through-hole</h5><ul><li><a href="https://www.sparkfun.com/products/97">Mini Pushbutton Switch</a> (COM-00097)</li><li>KIT package intended for soldering kit's - only one side of pads' copper is exposed.</li></ul><h5>PTH-RIGHT-ANGLE-KIT - Right-angle, through-hole</h5><ul><li><a href="https://www.sparkfun.com/products/10791">Right Angle Tactile Button</a> - Used on <a href="https://www.sparkfun.com/products/11734">SparkFun BigTime Watch Kit</a></li></ul><h5>SMD-12MM - 12mm square, surface-mount</h5><ul><li><a href="https://www.sparkfun.com/products/12993">Tactile Button - SMD (12mm)</a> (COM-12993)</li><li>Used on <a href="https://www.sparkfun.com/products/11888">SparkFun PicoBoard</a></li></ul><h5>SMD-4.5MM - 4.5mm Square Trackball Switch</h5><ul><li>Used on <a href="https://www.sparkfun.com/products/13169">SparkFun Blackberry Trackballer Breakout</a></li></ul><h5>SMD-4.6MMX2.8MM -  4.60mm x 2.80mm, surface mount</h5><ul><li>Used on <a href="https://www.sparkfun.com/products/13664">SparkFun SAMD21 Mini Breakout</a></li></ul><h5>SMD-5.2MM, SMD-5.2-REDUNDANT - 5.2mm square, surface-mount</h5><ul><li><a href="https://www.sparkfun.com/products/8720">Mini Pushbutton Switch - SMD</a> (COM-08720)</li><li>Used on <a href="https://www.sparkfun.com/products/11114">Arduino Pro Mini</a></li><li>REDUNDANT package connects both switch circuits together</li></ul><h5>SMD-6.0X3.5MM - 6.0 x 3.5mm, surface mount</h5><ul><li><a href="https://www.sparkfun.com/products/8229">Momentary Reset Switch SMD</a> (COM-08229)</li></ul><h5>SMD-6.2MM-TALL - 6.2mm square, surface mount</h5><ul><li><a href="https://www.sparkfun.com/products/12992">Tactile Button - SMD (6mm)</a></li><li>Used on <a href="https://www.sparkfun.com/products/12651">SparkFun Digital Sandbox</a></li></ul><h5>SMD-RIGHT-ANGLE - Right-angle, surface mount</h5><ul><li>Used on <a href="https://www.sparkfun.com/products/13036">SparkFun Block for Intel  Edison - Arduino</a></li></ul>
+K PROD_ID:COMP-12265
 $ENDCMP
 #
 $CMP SWITCH-3PDT-PTH-STOMP
