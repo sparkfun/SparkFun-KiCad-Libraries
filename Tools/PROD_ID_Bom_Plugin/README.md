@@ -7,6 +7,7 @@ Use the command line:
 xsltproc -o "%O.csv" "C:\Github\SparkFun-KiCad-Libraries\Tools\PROD_ID_Bom_Plugin\bom2groupedCsv.xsl" "%I"
 
 The BOM file will be exported as a .csv to the project folder. When opening this file, use commas as delimiters.
+If a .csv isn't generated, but a .xml is, make sure that none of your files have any spaces in their names.
 
 The information originally came from a comment by fritsjan, referenced by ContextualElectronics in a video:
 https://www.youtube.com/watch?v=9yFZ6PUwKL8
