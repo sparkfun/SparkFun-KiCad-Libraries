@@ -121,6 +121,8 @@ Assign nets:
 
 #### Perform layout
 
+View must be set to default to organize parts.  Use menu or press F9.
+
 Click IC with arrows (Mode: footprint)
 
 Right click on component pile -> global spread and place -> spread out all footprints
