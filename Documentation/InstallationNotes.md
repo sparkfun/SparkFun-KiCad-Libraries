@@ -1,12 +1,12 @@
 Installation Notes
 ----------------
 
-* [The KiCad site](http://kicad-pcb.org/)
+* [The KiCad site](http://kicad.org/)
 
 **KiCad installation**
 
 * Uninstall previous versions of KiCad
-* Download KiCad stable version 4.0.5 from [http://kicad-pcb.org/download/](http://kicad-pcb.org/download/windows/) and install
+* Download KiCad stable version 4.0.5 from [http://kicad.org/download/](http://kicad.org/download/windows/) and install
 * After install, you'll be prompted to install "Wings 3D", check this box to be redirected to [http://www.wings3d.com/](http://www.wings3d.com/)
 * Download and install the stable release 2.1.5
 
