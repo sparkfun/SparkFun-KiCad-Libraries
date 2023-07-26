@@ -1,0 +1,42 @@
+(footprint "SMT-JUMPER_2_NC_TRACE_NO-SILK" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
+    (tstamp 2648d739-a347-45ba-9d4e-1b786eb3e20c)
+  )
+  (fp_text value "SMT-JUMPER_2_NC_TRACE_NO-SILK" (at 0 1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
+    (tstamp 25422dc0-fce5-4d6b-ba2f-4004963fc759)
+  )
+  (fp_poly
+    (pts
+      (xy 0.03175 0.13335)
+      (xy -0.70485 0.13335)
+      (xy -0.70485 -0.13335)
+      (xy 0.03175 -0.13335)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp b995c4ab-d467-4cfd-8006-1f81810f8d3d))
+  (fp_poly
+    (pts
+      (xy 0.70485 0.13335)
+      (xy -0.03175 0.13335)
+      (xy -0.03175 -0.13335)
+      (xy 0.70485 -0.13335)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp f339297a-981a-4cb0-be4b-152d5396fe2a))
+  (fp_poly
+    (pts
+      (xy 0.254 0.1905)
+      (xy -0.254 0.1905)
+      (xy -0.254 -0.1905)
+      (xy 0.254 -0.1905)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Mask") (tstamp f9e3a682-8ebf-43df-9d09-d4bced096bae))
+  (pad "1" smd rect (at -0.5207 0) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 45) (tstamp bd819715-fc0a-48ed-9886-ebe8780b8c30))
+  (pad "2" smd rect (at 0.5207 0) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 45) (tstamp e1b97780-d302-45ac-a80e-4c4899853f84))
+)
