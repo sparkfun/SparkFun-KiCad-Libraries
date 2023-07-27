@@ -2,11 +2,11 @@
   (layer "F.Cu")
   (descr "<h3>SOIC-16</h3>\n<p>Specifications:\n<ul><li>Pin count: 16</li>\n<li>Width:0.15\"</li>\n</ul></p>\n<p>Example device(s):\n<ul><li>HEX_CONVERTER</li>\n</ul></p>")
   (fp_text reference "REF**" (at 0 -5.715) (layer "F.Fab")
-      (effects (font (size 0.48768 0.48768) (thickness 0.12192)) (justify bottom))
+      (effects (font (size 0.5 0.5) (thickness 0.1)) (justify bottom))
     (tstamp 300f7928-e489-47d7-bb29-1ff3e093ca4f)
   )
   (fp_text value "SO16" (at 0 6.35) (layer "F.Fab")
-      (effects (font (size 0.48768 0.48768) (thickness 0.12192)) (justify bottom))
+      (effects (font (size 0.5 0.5) (thickness 0.1)) (justify bottom))
     (tstamp e765313d-da0b-43f8-bcd8-2e8e18caff95)
   )
   (fp_line (start -1.9463 -4.8768) (end -1.9463 4.9768)
@@ -31,6 +31,8 @@
     (stroke (width 0.2032) (type solid)) (layer "F.SilkS") (tstamp 7957ed4d-4f92-44fa-bc12-b75b746b4ef6))
   (fp_circle (center -2.4 -5.5) (end -2.4 -5.4)
     (stroke (width 0.2) (type solid)) (fill solid) (layer "F.SilkS") (tstamp f472a8f8-8327-4180-a2dc-8b7f5c43de21))
+  (fp_rect (start 3.5 -5.4) (end -3.5 5.4)
+    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp f5f4b3da-5f55-412b-8142-308cabeae313))
   (fp_poly
     (pts
       (xy -3.302 -4.699)
