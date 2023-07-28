@@ -1,5 +1,6 @@
 (footprint "SMT-JUMPER_3_1-NC_TRACE_NO-SILK" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (net_tie_pad_groups "2,3")
   (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
     (tstamp 2b57be6e-95f2-4ae0-bc36-c68e20c37fc0)
@@ -10,28 +11,19 @@
   )
   (fp_poly
     (pts
-      (xy 0.53975 0.13335)
-      (xy -0.19685 0.13335)
-      (xy -0.19685 -0.13335)
-      (xy 0.53975 -0.13335)
+      (xy 0.25 -0.15)
+      (xy 0.8 -0.15)
+      (xy 0.8 0.15)
+      (xy 0.25 0.15)
     )
 
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp ac3459d1-8fea-4f06-b9a1-d507591e0aef))
+    (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp c6839870-2a35-414f-b090-8030f52525ca))
   (fp_poly
     (pts
-      (xy 1.23825 0.13335)
-      (xy 0.50165 0.13335)
-      (xy 0.50165 -0.13335)
-      (xy 1.23825 -0.13335)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp 98229dd8-e710-453d-80fb-d784f779e03c))
-  (fp_poly
-    (pts
-      (xy 0.762 0.1905)
-      (xy 0.254 0.1905)
-      (xy 0.254 -0.1905)
-      (xy 0.762 -0.1905)
+      (xy 0.762 0.2405)
+      (xy 0.254 0.2405)
+      (xy 0.254 -0.2405)
+      (xy 0.762 -0.2405)
     )
 
     (stroke (width 0) (type default)) (fill solid) (layer "F.Mask") (tstamp d24163c0-fdf4-46a2-9e0d-e7dd160954b3))
