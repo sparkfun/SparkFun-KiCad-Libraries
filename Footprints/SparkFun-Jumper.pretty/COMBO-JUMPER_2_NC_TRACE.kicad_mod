@@ -1,5 +1,6 @@
 (footprint "COMBO-JUMPER_2_NC_TRACE" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
+  (net_tie_pad_groups "1,2,3,4")
   (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
       (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
     (tstamp a9a0b8d0-04a3-4897-ad28-d9af15274ff9)
@@ -8,24 +9,8 @@
       (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
     (tstamp 715b74cc-d237-437b-94cd-6d25d35d31ec)
   )
-  (fp_poly
-    (pts
-      (xy 0.03175 0.28575)
-      (xy -0.70485 0.28575)
-      (xy -0.70485 -0.28575)
-      (xy 0.03175 -0.28575)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp 62aeff12-de65-4818-8ce3-4c0ff93f296a))
-  (fp_poly
-    (pts
-      (xy 0.70485 0.28575)
-      (xy -0.03175 0.28575)
-      (xy -0.03175 -0.28575)
-      (xy 0.70485 -0.28575)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Cu") (tstamp baa5a3c0-a548-4cc4-bdfd-6350f4a15819))
+  (fp_rect (start -0.25 -0.4) (end 0.25 0.4)
+    (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp e780af3a-7f5a-4cee-a562-d5a5393d2e3d))
   (fp_line (start 0.508 -0.889) (end -0.508 -0.889)
     (stroke (width 0.2032) (type solid)) (layer "F.SilkS") (tstamp a70d16df-0fa8-4fbb-b379-eb0a23c2834d))
   (fp_line (start 0.508 0.889) (end -0.508 0.889)
