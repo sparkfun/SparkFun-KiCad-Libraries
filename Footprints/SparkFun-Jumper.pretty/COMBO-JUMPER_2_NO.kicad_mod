@@ -1,0 +1,50 @@
+(footprint "COMBO-JUMPER_2_NO" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
+    (tstamp d57db0ab-3b23-470d-a12e-fe74ad2509d7)
+  )
+  (fp_text value "COMBO-JUMPER_2_NO" (at 0 1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
+    (tstamp 8c0de7f1-b307-4a70-a6ca-e77175eb36ac)
+  )
+  (fp_line (start 0.508 -0.889) (end -0.508 -0.889)
+    (stroke (width 0.2032) (type solid)) (layer "F.SilkS") (tstamp 0f2024eb-207b-4ff8-8152-57544d9986b2))
+  (fp_line (start 0.508 0.889) (end -0.508 0.889)
+    (stroke (width 0.2032) (type solid)) (layer "F.SilkS") (tstamp 5bd6c7b6-2ede-4cf9-a831-f54aa2d061ab))
+  (fp_poly
+    (pts
+      (xy 0.254 0.7239)
+      (xy -0.254 0.7239)
+      (xy -0.254 -0.7239)
+      (xy 0.254 -0.7239)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Mask") (tstamp 49b5a0b8-f730-43c4-adcf-0be96047af89))
+  (fp_poly
+    (pts
+      (xy -1.524 0.254)
+      (xy -1.016 0.254)
+      (xy -1.016 -0.254)
+      (xy -1.524 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp e81a0230-8317-42a2-96d0-5f1c5d63fc07))
+  (fp_poly
+    (pts
+      (xy 1.016 0.254)
+      (xy 1.524 0.254)
+      (xy 1.524 -0.254)
+      (xy 1.016 -0.254)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 7c9a651c-e85c-4d38-95b0-5187271f288e))
+  (pad "1" smd rect (at -0.508 0) (size 0.635 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 45) (tstamp 15878d97-509f-4a7b-aa3e-8d64dbdec2e4))
+  (pad "2" smd rect (at 0.508 0) (size 0.635 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 45) (tstamp 3dfcd092-a7ef-436c-8087-036493f1c789))
+  (pad "3" thru_hole circle (at -1.27 0 90) (size 1.8796 1.8796) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.1016) (tstamp e800251c-7fb7-4073-8a5c-9ed71dc21e7a))
+  (pad "4" thru_hole circle (at 1.27 0 90) (size 1.8796 1.8796) (drill 1.016) (layers "*.Cu" "*.Mask")
+    (solder_mask_margin 0.1016) (tstamp 4040f4de-0895-4a92-9bfa-a467c2cb90dd))
+)
