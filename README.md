@@ -27,7 +27,7 @@ Contents
 
 * [/Footprints](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/Footprints) -- PCB footprints
 * [/Symbols](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/Symbols) -- Schematic symbols
-* [/Pre_v7](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/SparkX) -- The 2017 era of KiCad footprints. This approach was to convert the entire [SparkFun Eagle Library](https://github.com/sparkfun/SparkFun-Eagle-Libraries) with varying degrees of success.
+* [/Pre_v7](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/Pre_v7) -- The 2017 era of KiCad footprints. This approach was to convert the entire [SparkFun Eagle Library](https://github.com/sparkfun/SparkFun-Eagle-Libraries) with varying degrees of success.
 
 License
 -------------------
