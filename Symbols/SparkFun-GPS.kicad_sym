@@ -9,8 +9,11 @@
     (property "Footprint" "SparkFun-GPS:UM980" (at 0 -29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at -12.7 -25.4 0)
+    (property "Datasheet" "https://cdn.sparkfun.com/assets/c/0/6/7/5/UM980_Datasheet.pdf" (at -11.43 -34.29 0)
       (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "PROD_ID" "GPS-19527" (at 0 -31.75 0)
+      (effects (font (size 1.27 1.27)))
     )
     (symbol "UM980_1_1"
       (rectangle (start -12.7 22.86) (end 11.43 -25.4)
@@ -46,9 +49,29 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "12" (effects (font (size 1.27 1.27))))
       )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
       (pin power_in line (at -15.24 -24.13 0) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "18" (effects (font (size 1.27 1.27))))
       )
       (pin output line (at 13.97 -17.78 180) (length 2.54)
         (name "PVT_STAT" (effects (font (size 1.27 1.27))))
@@ -65,6 +88,22 @@
       (pin output line (at 13.97 -12.7 180) (length 2.54)
         (name "ERR_STAT" (effects (font (size 1.27 1.27))))
         (number "21" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "22" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "23" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "24" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "25" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at 13.97 13.97 180) (length 2.54)
         (name "RXD2" (effects (font (size 1.27 1.27))))
@@ -106,6 +145,10 @@
         (name "VCC" (effects (font (size 1.27 1.27))))
         (number "34" (effects (font (size 1.27 1.27))))
       )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "35" (effects (font (size 1.27 1.27))))
+      )
       (pin power_in line (at -15.24 19.05 0) (length 2.54)
         (name "V_BCKP" (effects (font (size 1.27 1.27))))
         (number "36" (effects (font (size 1.27 1.27))))
@@ -114,9 +157,21 @@
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "37" (effects (font (size 1.27 1.27))))
       )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "38" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "39" (effects (font (size 1.27 1.27))))
+      )
       (pin input line (at -15.24 8.89 0) (length 2.54)
         (name "ANT_DETECT" (effects (font (size 1.27 1.27))))
         (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "40" (effects (font (size 1.27 1.27))))
       )
       (pin power_in line (at -15.24 -24.13 0) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
@@ -138,6 +193,14 @@
         (name "SCL" (effects (font (size 1.27 1.27))))
         (number "45" (effects (font (size 1.27 1.27))))
       )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "46" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "47" (effects (font (size 1.27 1.27))))
+      )
       (pin power_in line (at -15.24 -24.13 0) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
         (number "48" (effects (font (size 1.27 1.27))))
@@ -150,13 +213,25 @@
         (name "ANT_OFF" (effects (font (size 1.27 1.27))))
         (number "5" (effects (font (size 1.27 1.27))))
       )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "50" (effects (font (size 1.27 1.27))))
+      )
       (pin input line (at 13.97 -24.13 180) (length 2.54)
         (name "EVENT" (effects (font (size 1.27 1.27))))
         (number "51" (effects (font (size 1.27 1.27))))
       )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "52" (effects (font (size 1.27 1.27))))
+      )
       (pin output line (at 13.97 -21.59 180) (length 2.54)
         (name "PPS" (effects (font (size 1.27 1.27))))
         (number "53" (effects (font (size 1.27 1.27))))
+      )
+      (pin no_connect line (at -12.7 -7.62 0) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
+        (number "54" (effects (font (size 1.27 1.27))))
       )
       (pin power_in line (at -15.24 -24.13 0) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
