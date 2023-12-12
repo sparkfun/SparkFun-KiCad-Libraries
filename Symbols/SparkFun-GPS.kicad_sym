@@ -1388,6 +1388,11 @@
       )
       (pin power_in line (at -16.51 -54.61 0) (length 2.54) hide
         (name "GND" (effects (font (size 1.27 1.27))))
+        (number "P1" (effects (font (size 1.27 1.27))))
+        (alternate "PowerPins" input line)
+      )
+      (pin power_in line (at -16.51 -54.61 0) (length 2.54) hide
+        (name "GND" (effects (font (size 1.27 1.27))))
         (number "P2" (effects (font (size 1.27 1.27))))
         (alternate "PowerPins" input line)
       )
@@ -1404,6 +1409,11 @@
       (pin power_in line (at -16.51 26.67 0) (length 2.54) hide
         (name "VANT" (effects (font (size 1.27 1.27))))
         (number "P23" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -16.51 -54.61 0) (length 2.54) hide
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "P3" (effects (font (size 1.27 1.27))))
+        (alternate "PowerPins" input line)
       )
       (pin input line (at -16.51 1.27 0) (length 2.54)
         (name "ETHER_RXD0" (effects (font (size 1.27 1.27))))
@@ -1422,6 +1432,11 @@
       (pin power_in line (at -16.51 26.67 0) (length 2.54)
         (name "VANT" (effects (font (size 1.27 1.27))))
         (number "R23" (effects (font (size 1.27 1.27))))
+      )
+      (pin power_in line (at -16.51 -54.61 0) (length 2.54) hide
+        (name "GND" (effects (font (size 1.27 1.27))))
+        (number "R3" (effects (font (size 1.27 1.27))))
+        (alternate "PowerPins" input line)
       )
       (pin input line (at -16.51 3.81 0) (length 2.54)
         (name "ETHER_RXD1" (effects (font (size 1.27 1.27))))
