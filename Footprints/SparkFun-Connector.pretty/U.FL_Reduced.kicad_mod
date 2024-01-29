@@ -1,0 +1,111 @@
+(footprint "U.FL_Reduced" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (descr "U.FL SMD Antenna Connector")
+  (fp_text reference "REF**" (at 0 -2.5) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
+    (tstamp eeae8be0-7fe7-4a0d-88a2-578e6d7c89ee)
+  )
+  (fp_text value "Val**" (at 0 2) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
+    (tstamp 1c843385-0df2-401f-8fac-e409998afe79)
+  )
+  (fp_poly
+    (pts
+      (xy -1.1 -1.05)
+      (xy 0.9 -1.05)
+      (xy 0.9 -1.75)
+      (xy -1.1 -1.75)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Paste") (tstamp afcf6b91-a8cd-4e33-8478-41fd1656ba5b))
+  (fp_poly
+    (pts
+      (xy -1.1 1.75)
+      (xy 0.9 1.75)
+      (xy 0.9 1.05)
+      (xy -1.1 1.05)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Paste") (tstamp 570e645c-3265-4e3f-89a5-7eee8e0c3502))
+  (fp_poly
+    (pts
+      (xy 1.1 0.4)
+      (xy 1.95 0.4)
+      (xy 1.95 -0.4)
+      (xy 1.1 -0.4)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Paste") (tstamp d562cc59-8fad-4924-ac5f-06a209adf273))
+  (fp_line (start -1.524 -1.778) (end -1.016 -2.286)
+    (stroke (width 0.1524) (type solid)) (layer "F.SilkS") (tstamp c1dfb74b-6490-43f3-be2f-83771bd42b23))
+  (fp_line (start -1.524 -1.016) (end -1.524 -1.778)
+    (stroke (width 0.1524) (type solid)) (layer "F.SilkS") (tstamp 94cda822-3da9-4223-afbc-2973e7000de1))
+  (fp_line (start -1.016 -2.286) (end -0.254 -2.286)
+    (stroke (width 0.1524) (type solid)) (layer "F.SilkS") (tstamp dea35e49-d33f-42f3-a77e-66afbe566e88))
+  (fp_line (start -1.3 -1.3) (end 1.3 -1.3)
+    (stroke (width 0.1524) (type solid)) (layer "F.Fab") (tstamp 4cd227e9-a767-44f2-890b-c9ef0d6beda3))
+  (fp_line (start -1.3 1.3) (end -1.3 -1.3)
+    (stroke (width 0.1524) (type solid)) (layer "F.Fab") (tstamp 9f40182c-680f-4f34-a2ee-20bc4d22c321))
+  (fp_line (start -1.3 1.3) (end 1.3 1.3)
+    (stroke (width 0.1524) (type solid)) (layer "F.Fab") (tstamp bddbe6f2-af80-4e23-a91f-863f465c0703))
+  (fp_line (start 1.3 1.3) (end 1.3 -1.3)
+    (stroke (width 0.1524) (type solid)) (layer "F.Fab") (tstamp c6f0227c-e725-443f-8122-92970eac73ee))
+  (fp_circle (center 0 0) (end 0.15 0)
+    (stroke (width 0.3) (type solid)) (fill none) (layer "F.Fab") (tstamp 907c9a35-436e-4bf5-9ecc-afda59d220c1))
+  (fp_poly
+    (pts
+      (xy -1.55 0.3)
+      (xy -1.3 0.3)
+      (xy -1.3 -0.3)
+      (xy -1.55 -0.3)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp fcb3a45d-a2a8-48cd-8897-d05792c65d0b))
+  (fp_poly
+    (pts
+      (xy -0.9 -1.1)
+      (xy 0.9 -1.1)
+      (xy 0.9 -1.5)
+      (xy -0.9 -1.5)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp d3afb2aa-b4cd-4f1f-a020-ea0603ff57f9))
+  (fp_poly
+    (pts
+      (xy -0.9 1.5)
+      (xy 0.9 1.5)
+      (xy 0.9 1.1)
+      (xy -0.9 1.1)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp bdba6292-3600-4dd7-bfc4-29804c2b9183))
+  (fp_poly
+    (pts
+      (xy 0 0.3)
+      (xy 1.55 0.3)
+      (xy 1.55 -0.3)
+      (xy 0 -0.3)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 6387a7a8-57ad-4c06-b9d4-bc17b4e8e6fe))
+  (pad "1" smd rect (at -0.1 -1.375) (size 2 0.85) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 4dcdebc7-1f64-4b0f-936c-58b39cf8d874))
+  (pad "2" smd rect (at -0.1 1.375) (size 2 0.85) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 7ba62e7e-0416-4fa6-b47e-c3fb976456fa))
+  (pad "FEED" smd rect (at 1.575 0) (size 1.05 1) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp ac7eb445-d262-4146-8dd7-f17fecd3760a))
+  (zone (net 0) (net_name "") (layer "F.Cu") (tstamp a51074bb-ecef-4acd-8bb6-12c166d1eae8) (hatch edge 0.5)
+    (connect_pads (clearance 0))
+    (min_thickness 0.25) (filled_areas_thickness no)
+    (keepout (tracks not_allowed) (vias not_allowed) (pads not_allowed) (copperpour not_allowed) (footprints allowed))
+    (fill (thermal_gap 0.5) (thermal_bridge_width 0.5))
+    (polygon
+      (pts
+        (xy -1.143 0.762)
+        (xy 0.762 0.762)
+        (xy 0.762 -0.762)
+        (xy -1.143 -0.762)
+      )
+    )
+  )
+)

@@ -1,0 +1,36 @@
+(footprint "SMT-JUMPER_3_1-NC_TRACE_NoSilk" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (net_tie_pad_groups "1,2")
+  (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
+    (tstamp 2b57be6e-95f2-4ae0-bc36-c68e20c37fc0)
+  )
+  (fp_text value "SMT-JUMPER_3_1-NC_TRACE_NoSilk" (at 0 1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
+    (tstamp 6d6d68f7-2cc9-4f0b-9cf0-a8bf940e1d8f)
+  )
+  (fp_poly
+    (pts
+      (xy -0.7707 -0.15)
+      (xy -0.2707 -0.15)
+      (xy -0.2707 0.15)
+      (xy -0.7707 0.15)
+    )
+
+    (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp cbe2ec9e-c46c-4bc8-afcd-3b8356e1f8a5))
+  (fp_poly
+    (pts
+      (xy -0.2667 0.2405)
+      (xy -0.7747 0.2405)
+      (xy -0.7747 -0.2405)
+      (xy -0.2667 -0.2405)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Mask") (tstamp 780ac4e9-6979-417c-b040-8ad0204649de))
+  (pad "1" smd rect (at -1.0414 0) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 5825a752-6d96-4dda-b5be-52e8a006691d))
+  (pad "2" smd rect (at 0 0) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 65050347-5a2b-4dcf-b33d-40ae53ad76ec))
+  (pad "3" smd rect (at 1.0414 0 180) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 35e2dbc7-666d-45c7-b2c8-957bf594e701))
+)

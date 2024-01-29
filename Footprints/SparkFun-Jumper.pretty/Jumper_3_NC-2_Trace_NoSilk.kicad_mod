@@ -1,0 +1,54 @@
+(footprint "SMT-JUMPER_3_2-NC_TRACE_NoSilk" (version 20221018) (generator pcbnew)
+  (layer "F.Cu")
+  (net_tie_pad_groups "1,2,3")
+  (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
+    (tstamp c31990b5-fec9-4ca5-80de-68a4e488d73a)
+  )
+  (fp_text value "SMT-JUMPER_3_2-NC_TRACE_NoSilk" (at 0 1.143) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
+    (tstamp ef19031b-af7c-463e-b035-c1e9e7fc3720)
+  )
+  (fp_poly
+    (pts
+      (xy -0.7707 -0.15)
+      (xy -0.2707 -0.15)
+      (xy -0.2707 0.15)
+      (xy -0.7707 0.15)
+    )
+
+    (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp e197dd16-39a8-4149-b826-8f6583bbb2c9))
+  (fp_poly
+    (pts
+      (xy 0.262 -0.173)
+      (xy 0.762 -0.173)
+      (xy 0.762 0.127)
+      (xy 0.262 0.127)
+    )
+
+    (stroke (width 0) (type solid)) (fill solid) (layer "F.Cu") (tstamp 1e878ef7-1f89-4f86-9d79-a6184ae02c55))
+  (fp_poly
+    (pts
+      (xy -0.2667 0.2405)
+      (xy -0.7747 0.2405)
+      (xy -0.7747 -0.2405)
+      (xy -0.2667 -0.2405)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Mask") (tstamp d13d16ed-7a87-4319-9f9f-9da5ad761b30))
+  (fp_poly
+    (pts
+      (xy 0.766 0.2175)
+      (xy 0.258 0.2175)
+      (xy 0.258 -0.2635)
+      (xy 0.766 -0.2635)
+    )
+
+    (stroke (width 0) (type default)) (fill solid) (layer "F.Mask") (tstamp 6479dae3-6318-466b-aba7-d6b72e0d6ac4))
+  (pad "1" smd rect (at -1.0414 0) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 4aeaea7b-8299-435c-91a4-c62a5f5677b6))
+  (pad "2" smd rect (at 0 0) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp bfd9f0fd-22d9-4955-aa8f-c01b31294ee6))
+  (pad "3" smd rect (at 1.0414 0 180) (size 0.6604 1.27) (layers "F.Cu" "F.Mask")
+    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 3ebac080-acd1-4979-9dfa-03104862230b))
+)
