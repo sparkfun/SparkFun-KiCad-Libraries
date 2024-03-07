@@ -195,8 +195,8 @@
         (name "VDDIO" (effects (font (size 1.27 1.27))))
         (number "15" (effects (font (size 1.27 1.27))))
       )
-      (pin no_connect line (at 11.43 -16.51 180) (length 2.54) hide
-        (name "NC" (effects (font (size 1.27 1.27))))
+      (pin power_in line (at -13.97 16.51 0) (length 2.54)
+        (name "VDD" (effects (font (size 1.27 1.27))))
         (number "16" (effects (font (size 1.27 1.27))))
       )
       (pin power_out line (at -13.97 -19.05 0) (length 2.54)
@@ -251,8 +251,8 @@
         (name "NC" (effects (font (size 1.27 1.27))))
         (number "6" (effects (font (size 1.27 1.27))))
       )
-      (pin power_in line (at -13.97 16.51 0) (length 2.54)
-        (name "VDD" (effects (font (size 1.27 1.27))))
+      (pin no_connect line (at 11.43 -16.51 180) (length 2.54) hide
+        (name "NC" (effects (font (size 1.27 1.27))))
         (number "7" (effects (font (size 1.27 1.27))))
       )
       (pin input line (at -13.97 -16.51 0) (length 2.54)
