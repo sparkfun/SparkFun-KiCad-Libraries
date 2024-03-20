@@ -1,55 +1,182 @@
-(footprint "1206" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (descr "<p><b>Generic 3216 (1206) package</b></p>\n<p>0.2mm courtyard excess rounded to nearest 0.05mm.</p>")
-  (fp_text reference "REF**" (at 0 -1.143) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
-    (tstamp 73415575-c86f-4ff4-b2c3-19460b633f0b)
-  )
-  (fp_text value "1206" (at 0 1.143) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
-    (tstamp ebed5f93-2fe7-43cf-a073-040da06dc30b)
-  )
-  (fp_poly
-    (pts
-      (xy -0.1999 0.4001)
-      (xy 0.1999 0.4001)
-      (xy 0.1999 -0.4001)
-      (xy -0.1999 -0.4001)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Adhes") (tstamp 92d34a80-4af8-44c6-b454-9f5e0d031691))
-  (fp_line (start -2.4 -1.1) (end 2.4 -1.1)
-    (stroke (width 0.0508) (type solid)) (layer "F.CrtYd") (tstamp 5d3fa511-a62a-455f-922a-60e2ad79e9ca))
-  (fp_line (start -2.4 1.1) (end -2.4 -1.1)
-    (stroke (width 0.0508) (type solid)) (layer "F.CrtYd") (tstamp ea8d926f-aeee-4356-b1a2-f2cb22e5f19f))
-  (fp_line (start 2.4 -1.1) (end 2.4 1.1)
-    (stroke (width 0.0508) (type solid)) (layer "F.CrtYd") (tstamp aad5755f-b45e-4c97-8293-cbf2cc2f3c46))
-  (fp_line (start 2.4 1.1) (end -2.4 1.1)
-    (stroke (width 0.0508) (type solid)) (layer "F.CrtYd") (tstamp 3d884175-cf3b-4a01-9ba0-5babd4c610fb))
-  (fp_line (start -0.965 -0.787) (end 0.965 -0.787)
-    (stroke (width 0.1016) (type solid)) (layer "F.Fab") (tstamp 48332093-abcf-4efb-8c2f-6c83d4801e90))
-  (fp_line (start -0.965 0.787) (end 0.965 0.787)
-    (stroke (width 0.1016) (type solid)) (layer "F.Fab") (tstamp 1fe65fc7-6e65-425d-8f61-f19e2af71041))
-  (fp_poly
-    (pts
-      (xy -1.7018 0.8509)
-      (xy -0.9517 0.8509)
-      (xy -0.9517 -0.8491)
-      (xy -1.7018 -0.8491)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp e695d732-3c29-48b0-9ac1-d21504e8b93a))
-  (fp_poly
-    (pts
-      (xy 0.9517 0.8491)
-      (xy 1.7018 0.8491)
-      (xy 1.7018 -0.8509)
-      (xy 0.9517 -0.8509)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 0b978475-7f63-41e9-99ce-ca6ae861db22))
-  (pad "1" smd rect (at -1.4 0) (size 1.6 1.8) (layers "F.Cu" "F.Paste" "F.Mask")
-    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 11d3e884-1a07-482e-950a-5e06ce614053))
-  (pad "2" smd rect (at 1.4 0) (size 1.6 1.8) (layers "F.Cu" "F.Paste" "F.Mask")
-    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 1ff2fc16-719e-42dc-9804-c333658d8e17))
+(footprint "1206"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<p><b>Generic 3216 (1206) package</b></p>\n<p>0.2mm courtyard excess rounded to nearest 0.05mm.</p>")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -1.143 0)
+		(layer "F.Fab")
+		(uuid "73415575-c86f-4ff4-b2c3-19460b633f0b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "1206"
+		(at 0 1.143 0)
+		(layer "F.Fab")
+		(uuid "ebed5f93-2fe7-43cf-a073-040da06dc30b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a3a3f79-803e-4287-81ca-ccbcf2c1d30a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0708a4ad-1f4e-43ef-8dc3-4b9011716173")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d2c25612-7d81-4321-95f2-1c931a351087")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy -0.1999 0.4001) (xy 0.1999 0.4001) (xy 0.1999 -0.4001) (xy -0.1999 -0.4001)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Adhes")
+		(uuid "92d34a80-4af8-44c6-b454-9f5e0d031691")
+	)
+	(fp_line
+		(start -2.4 -1.1)
+		(end 2.4 -1.1)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5d3fa511-a62a-455f-922a-60e2ad79e9ca")
+	)
+	(fp_line
+		(start -2.4 1.1)
+		(end -2.4 -1.1)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ea8d926f-aeee-4356-b1a2-f2cb22e5f19f")
+	)
+	(fp_line
+		(start 2.4 -1.1)
+		(end 2.4 1.1)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "aad5755f-b45e-4c97-8293-cbf2cc2f3c46")
+	)
+	(fp_line
+		(start 2.4 1.1)
+		(end -2.4 1.1)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d884175-cf3b-4a01-9ba0-5babd4c610fb")
+	)
+	(fp_line
+		(start -0.965 -0.787)
+		(end 0.965 -0.787)
+		(stroke
+			(width 0.1016)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "48332093-abcf-4efb-8c2f-6c83d4801e90")
+	)
+	(fp_line
+		(start -0.965 0.787)
+		(end 0.965 0.787)
+		(stroke
+			(width 0.1016)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1fe65fc7-6e65-425d-8f61-f19e2af71041")
+	)
+	(fp_poly
+		(pts
+			(xy -1.7018 0.8509) (xy -0.9517 0.8509) (xy -0.9517 -0.8491) (xy -1.7018 -0.8491)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "e695d732-3c29-48b0-9ac1-d21504e8b93a")
+	)
+	(fp_poly
+		(pts
+			(xy 0.9517 0.8491) (xy 1.7018 0.8491) (xy 1.7018 -0.8509) (xy 0.9517 -0.8509)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "0b978475-7f63-41e9-99ce-ca6ae861db22")
+	)
+	(pad "1" smd rect
+		(at -1.4 0)
+		(size 1.6 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "11d3e884-1a07-482e-950a-5e06ce614053")
+	)
+	(pad "2" smd rect
+		(at 1.4 0)
+		(size 1.6 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "1ff2fc16-719e-42dc-9804-c333658d8e17")
+	)
 )

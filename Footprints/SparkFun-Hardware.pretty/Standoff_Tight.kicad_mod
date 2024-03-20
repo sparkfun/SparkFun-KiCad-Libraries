@@ -1,14 +1,85 @@
-(footprint "STAND-OFF-TIGHT" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (fp_text reference "REF**" (at 0 -2.54) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1)) (justify bottom))
-    (tstamp 8bd37bb3-71ab-4c7a-a16c-586c1d902c5c)
-  )
-  (fp_text value "STAND-OFF-TIGHT" (at 0 1.651) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1)) (justify top))
-    (tstamp 0c5a706e-67e6-4032-afa0-55771e322154)
-  )
-  (fp_circle (center 0 0) (end 2.794 0)
-    (stroke (width 0.127) (type solid)) (fill none) (layer "F.CrtYd") (tstamp a004b3f4-66bb-4e4f-98ab-7bff20ca868f))
-  (pad "" np_thru_hole circle (at 0 0) (size 3.048 3.048) (drill 3.048) (layers "*.Cu" "*.Mask") (tstamp 08f225bb-86a4-419a-b95e-51a74617fc8a))
+(footprint "Standoff_Tight"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -2.54 0)
+		(layer "F.Fab")
+		(uuid "8bd37bb3-71ab-4c7a-a16c-586c1d902c5c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "STAND-OFF-TIGHT"
+		(at 0 1.651 0)
+		(layer "F.Fab")
+		(uuid "0c5a706e-67e6-4032-afa0-55771e322154")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75a85ac6-af6d-490f-bc03-99db94d96b13")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "54a2e47e-c306-48a9-8147-08458a14fb49")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a349ba7-9a45-41f5-8cf4-144a3ed8496b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.794 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "a004b3f4-66bb-4e4f-98ab-7bff20ca868f")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 3.048 3.048)
+		(drill 3.048)
+		(layers "*.Cu" "*.Mask")
+		(uuid "08f225bb-86a4-419a-b95e-51a74617fc8a")
+	)
 )

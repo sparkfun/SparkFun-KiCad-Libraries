@@ -1,20 +1,101 @@
-(footprint "Ordering_Instructions" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (descr "Examples: Layers: 2, Soldermask Color: Red, Thickness:1.6mm")
-  (fp_text reference "Ref**" (at 2.54 -1.27) (layer "F.Fab") hide
-      (effects (font (size 1.27 1.27) (thickness 0.15)))
-    (tstamp 7c8dfc00-3f81-4231-8747-21f6773e0712)
-  )
-  (fp_text value "Val**" (at 2.54 -2.54) (layer "F.Fab") hide
-      (effects (font (size 1.27 1.27) (thickness 0.15)))
-    (tstamp b440668c-94d5-4fb8-b553-fbdc91da04d9)
-  )
-  (fp_text user "Ordering Instructions:" (at 1.27 1.27) (layer "User.1")
-      (effects (font (size 2.5908 2.5908) (thickness 0.4572)) (justify left top))
-    (tstamp 0f285b17-0ea1-4d71-b910-89220947b7f5)
-  )
-  (fp_line (start 0 4.445) (end 63.5 4.445)
-    (stroke (width 0.2032) (type solid)) (layer "User.1") (tstamp 33deb798-1315-43c9-865d-7fd9916fce00))
-  (fp_rect (start 0 0) (end 63.5 50.8)
-    (stroke (width 0.2) (type default)) (fill none) (layer "User.1") (tstamp 91ce8450-cbdc-4327-ad75-5cdf945f4624))
+(footprint "Ordering_Instructions"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Examples: Layers: 2, Soldermask Color: Red, Thickness:1.6mm")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 2.54 -1.27 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c8dfc00-3f81-4231-8747-21f6773e0712")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 2.54 -2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b440668c-94d5-4fb8-b553-fbdc91da04d9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cda069e6-ee03-4439-9f2e-3b9ea2071226")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "118ce1ea-2747-422b-8923-e992fbc38d25")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "643b830f-565a-478b-8692-dfd9eb52dd6d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_line
+		(start 0 4.445)
+		(end 63.5 4.445)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "User.1")
+		(uuid "33deb798-1315-43c9-865d-7fd9916fce00")
+	)
+	(fp_rect
+		(start 0 0)
+		(end 63.5 50.8)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "91ce8450-cbdc-4327-ad75-5cdf945f4624")
+	)
+	(fp_text user "Ordering Instructions:"
+		(at 1.27 1.27 0)
+		(layer "User.1")
+		(uuid "0f285b17-0ea1-4d71-b910-89220947b7f5")
+		(effects
+			(font
+				(size 2.5908 2.5908)
+				(thickness 0.4572)
+			)
+			(justify left top)
+		)
+	)
 )

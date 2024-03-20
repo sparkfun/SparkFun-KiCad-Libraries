@@ -1,14 +1,79 @@
-(footprint "Pad-CapacitiveTouch" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (descr "<h3>Conductive Button</h3>\n<p>Used with rubber key pads on the <a href=\"https://www.sparkfun.com/products/retired/8602\">Nordic Key FOB</a>. This one was designed and proven to work with the <a href=\"https://www.sparkfun.com/products/retired/9377\">PolyCase Key FOB enclosures</a>.</p>")
-  (fp_text reference "Ref**" (at 0 6.3 180) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify bottom))
-    (tstamp ecd9a125-6941-4436-aeb6-3dc41bc808f5)
-  )
-  (fp_text value "Val**" (at 0 7.2 180) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1) bold) (justify top))
-    (tstamp 22276301-2839-4eae-bdc9-ebb3b152b381)
-  )
-  (pad "1" smd roundrect (at 0 0) (size 10 10) (layers "F.Cu") (roundrect_rratio 0.25)
-    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp db983d21-fc99-42a4-b7d9-5a768d383bfe))
+(footprint "Pad-CapacitiveTouch"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<h3>Conductive Button</h3>\n<p>Used with rubber key pads on the <a href=\"https://www.sparkfun.com/products/retired/8602\">Nordic Key FOB</a>. This one was designed and proven to work with the <a href=\"https://www.sparkfun.com/products/retired/9377\">PolyCase Key FOB enclosures</a>.</p>")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 6.3 180)
+		(layer "F.Fab")
+		(uuid "ecd9a125-6941-4436-aeb6-3dc41bc808f5")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 7.2 180)
+		(layer "F.Fab")
+		(uuid "22276301-2839-4eae-bdc9-ebb3b152b381")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9676bad9-8b68-40f8-91ab-598b41314735")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6898c10b-92ac-4e6c-89c3-3bd2389c6a18")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cc8efd6a-a5a8-4906-b6ee-e34e69436804")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 10 10)
+		(layers "F.Cu")
+		(roundrect_rratio 0.25)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "db983d21-fc99-42a4-b7d9-5a768d383bfe")
+	)
 )

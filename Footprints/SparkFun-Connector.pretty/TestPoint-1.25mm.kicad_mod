@@ -1,15 +1,87 @@
-(footprint "TestPoint-1.25mm" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (fp_text reference "Ref**" (at 0 -1.27) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1) bold))
-    (tstamp c301fc9a-a12c-4bc3-9d92-e351a23fc023)
-  )
-  (fp_text value "Val**" (at 0 1.27) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1) bold))
-    (tstamp a1921ef1-6185-4c2c-a11a-0fe55d99416e)
-  )
-  (fp_circle (center 0 0) (end -0.6 0.4)
-    (stroke (width 0.05) (type default)) (fill none) (layer "F.CrtYd") (tstamp 82e60036-09d1-44bc-89df-59b8e738ecea))
-  (pad "1" smd roundrect (at 0 0) (size 1.25 1.25) (layers "F.Cu" "F.Mask") (roundrect_rratio 0.5)
-    (solder_mask_margin 0.1016) (thermal_bridge_angle 0) (tstamp 1cc63f13-3257-405d-a04b-3b4463e2d896))
+(footprint "TestPoint-1.25mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 -1.27 0)
+		(layer "F.Fab")
+		(uuid "c301fc9a-a12c-4bc3-9d92-e351a23fc023")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 1.27 0)
+		(layer "F.Fab")
+		(uuid "a1921ef1-6185-4c2c-a11a-0fe55d99416e")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "65cbb57a-6211-49a2-8125-e9e2e2ee78fc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7a62bc53-4141-4b2c-ad3d-e6f592eecc55")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "732975e0-ac6c-4da4-933e-e629f9667845")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_circle
+		(center 0 0)
+		(end -0.6 0.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "82e60036-09d1-44bc-89df-59b8e738ecea")
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 1.25 1.25)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.5)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "1cc63f13-3257-405d-a04b-3b4463e2d896")
+	)
 )
