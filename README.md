@@ -1,7 +1,7 @@
 SparkFun Electronics KiCad Libraries
 ====================================
 
-This repository contains the SparkFun KiCad Library of commonly used parts. It is a cultivated combination of KiCad parts (mostly symbols) and original SparkFun-designed Eagle footprints. This is a work in progress so be very cautious when using these symbols or footprints as they do contain errors.
+This repository contains the SparkFun KiCad Library of commonly used parts. It is a cultivated combination of KiCad parts (mostly symbols) and original SparkFun-designed Eagle footprints. This is a work in progress so be very cautious when using these symbols or footprints as they may contain errors.
 
 **Note:** The SparkFun KiCad components contain internal part numbers for ease of manufacture for the SparkFun SMD lines. 
 
@@ -11,7 +11,7 @@ KiCad is very good and has a large number of stock and industry common symbols a
 
 The SparkFun approach: when a new part needs to be added we decide whether to use a KiCad stock symbol, edit it for use, or create it from scratch. We give preference to the stock KiCad symbol. We give heavy preference to using the original SparkFun footprint, but look at the stock KiCad footprint for inspiration as well. We'll try to follow the [KiCad Library Conventions](https://klc.kicad.org/) where it makes sense.
 
-Additionally, SparkFun needs to assign various unique manufacturing data (ie, internal part numbers) to parts. To alleviate this, there is a large number of components with a duplicate footprint each with their own production ID information. For example, capacitors:
+Additionally, SparkFun needs to assign various unique manufacturing data (ie, internal part numbers) to parts. To alleviate this, there is a large number of components with an identical symbol each with their own production ID information. For example, capacitors:
 
 ![List of SparkFun capacitors in KiCad](Capacitor-List.png)
 
@@ -27,7 +27,6 @@ Contents
 
 * [/Footprints](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/Footprints) -- PCB footprints
 * [/Symbols](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/Symbols) -- Schematic symbols
-* [/Pre_v7](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/Pre_v7) -- The 2017 era of KiCad footprints. This approach was to convert the entire [SparkFun Eagle Library](https://github.com/sparkfun/SparkFun-Eagle-Libraries) with varying degrees of success.
 
 License
 -------------------
