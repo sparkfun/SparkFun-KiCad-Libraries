@@ -1,49 +1,110 @@
-(footprint "1x01_Castellated" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (fp_text reference "Ref**" (at 0 -1.27) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1)))
-    (tstamp 21fd6e20-c36e-4169-b08f-8e57f7b0ddb7)
-  )
-  (fp_text value "Val**" (at 0 1.27) (layer "F.Fab")
-      (effects (font (size 0.5 0.5) (thickness 0.1)))
-    (tstamp 5c500bcc-0ccd-4076-a17d-029f4ac4ddb4)
-  )
-  (fp_poly
-    (pts
-      (xy 0.254 0.254)
-      (xy 0.254 -0.254)
-      (xy -0.254 -0.254)
-      (xy -0.254 0.254)
-    )
-
-    (stroke (width 0) (type default)) (fill solid) (layer "F.Fab") (tstamp 39ac6f6d-4240-4c6f-83c1-4fc6854bba31))
-  (pad "1" thru_hole custom (at 0 0 180) (size 1.016 1.016) (drill 0.85) (layers "*.Cu" "*.Mask")
-    (solder_mask_margin 0.1016) (thermal_bridge_angle 45)
-    (options (clearance outline) (anchor circle))
-    (primitives
-      (gr_poly
-        (pts
-          (xy -0.188651 0.803455)
-          (xy -0.352371 0.733074)
-          (xy -0.497855 0.630155)
-          (xy -0.618729 0.499208)
-          (xy -0.709699 0.345969)
-          (xy -0.766779 0.17715)
-          (xy -0.7874 0.000741)
-          (xy -0.7874 -0.000592)
-          (xy -0.770781 -0.178542)
-          (xy -0.715922 -0.349474)
-          (xy -0.625481 -0.504547)
-          (xy -0.503717 -0.636459)
-          (xy -0.356363 -0.738996)
-          (xy -0.19036 -0.807333)
-          (xy -0.013803 -0.8382)
-          (xy 1.27 -0.8382)
-          (xy 1.27 0.8382)
-          (xy -0.013951 0.8382)
-        )
-        (width 0) (fill yes))
-    ) (tstamp f30250f6-8ea5-4de7-9d23-af440908c2cd))
-  (pad "1B" thru_hole circle (at -1.57 0) (size 1.75 1.75) (drill 1.7) (layers "*.Cu" "*.Mask")
-    (thermal_bridge_angle 0) (tstamp 0dc9a71f-0ba5-4395-b606-afc92eb1fd9e))
+(footprint "1x01_Castellated"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "Ref**"
+		(at 0 -1.27 0)
+		(layer "F.Fab")
+		(uuid "21fd6e20-c36e-4169-b08f-8e57f7b0ddb7")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 1.27 0)
+		(layer "F.Fab")
+		(uuid "5c500bcc-0ccd-4076-a17d-029f4ac4ddb4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "90d9c748-02ad-41c5-8a5c-c94451d9538e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e305b5b8-61ff-4059-be6b-b048c42e05c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a337853e-797b-4ddb-980b-dc6d3236c4cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_poly
+		(pts
+			(xy 0.254 0.254) (xy 0.254 -0.254) (xy -0.254 -0.254) (xy -0.254 0.254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "39ac6f6d-4240-4c6f-83c1-4fc6854bba31")
+	)
+	(pad "1" thru_hole custom
+		(at 0 0 180)
+		(size 1.016 1.016)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.188651 0.803455) (xy -0.352371 0.733074) (xy -0.497855 0.630155) (xy -0.618729 0.499208)
+					(xy -0.709699 0.345969) (xy -0.766779 0.17715) (xy -0.7874 0.000741) (xy -0.7874 -0.000592) (xy -0.770781 -0.178542)
+					(xy -0.715922 -0.349474) (xy -0.625481 -0.504547) (xy -0.503717 -0.636459) (xy -0.356363 -0.738996)
+					(xy -0.19036 -0.807333) (xy -0.013803 -0.8382) (xy 1.27 -0.8382) (xy 1.27 0.8382) (xy -0.013951 0.8382)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "f30250f6-8ea5-4de7-9d23-af440908c2cd")
+	)
+	(pad "1B" thru_hole circle
+		(at -1.57 0)
+		(size 1.75 1.75)
+		(drill 1.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "0dc9a71f-0ba5-4395-b606-afc92eb1fd9e")
+	)
 )

@@ -1,12 +1,67 @@
-(footprint "SparkFun_Flame" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (attr board_only exclude_from_pos_files exclude_from_bom)
-  (fp_text reference "G***" (at 0 -2.54) (layer "F.Fab") hide
-      (effects (font (size 0.5 0.5) (thickness 0.1)))
-    (tstamp 03a9d566-1ebb-4451-a389-cdb451b2fbc8)
-  )
-  (fp_text value "Flame" (at 0 1.163333) (layer "F.Fab") hide
-      (effects (font (size 0.5 0.5) (thickness 0.1)))
-    (tstamp c11a621c-358f-4be2-a5ff-2b2a2a502185)
-  )
+(footprint "SparkFun_Flame"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "G***"
+		(at 0 -2.54 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "03a9d566-1ebb-4451-a389-cdb451b2fbc8")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Flame"
+		(at 0 1.163333 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c11a621c-358f-4be2-a5ff-2b2a2a502185")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "12ce64e2-3a27-4db7-9886-414db66fdd26")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cee86b9c-6732-4a63-85a5-d3238d895383")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d938f61f-6018-4762-b378-b9e2a3d6a4a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
 )

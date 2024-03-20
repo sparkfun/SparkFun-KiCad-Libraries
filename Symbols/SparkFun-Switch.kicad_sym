@@ -1,2048 +1,5530 @@
-(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
-  (symbol "Capacitive Button" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Capacitive Button" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch lever" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "Capacitive Button_0_0"
-      (circle (center 0 3.048) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "Capacitive Button_1_1"
-      (pin passive line (at 0 0 90) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "DP3T_Slide_SMD_9.8x3.5mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DP3T_Slide_SMD_9.8x3.5mm" (at 0 -13.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DP3T_SMD_9.8x3.5mm" (at 0 -19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/1431/ayz.pdf" (at 0 -16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-16121" (at 0 -21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch dp3t ON-ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch three position, dual pole triple throw, 3 position switch, SP3T" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_fp_filters" "SW* DP3T*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "DP3T_Slide_SMD_9.8x3.5mm_0_0"
-      (polyline
-        (pts
-          (xy 0 -6.35)
-          (xy 0 -5.715)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -5.08)
-          (xy 0 -4.445)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -3.81)
-          (xy 0 -3.175)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -2.54)
-          (xy 0 -1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -1.27)
-          (xy 0 -0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 0)
-          (xy 0 0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "DP3T_Slide_SMD_9.8x3.5mm_0_1"
-      (circle (center -2.032 -7.62) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center -2.032 0) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.651 -7.366)
-          (xy 1.651 -5.334)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.651 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -10.16) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -7.62) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -5.08) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "DP3T_Slide_SMD_9.8x3.5mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -5.08 180) (length 2.54)
-        (name "5" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -7.62 180) (length 2.54)
-        (name "6" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 -7.62 0) (length 2.54)
-        (name "7" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -10.16 180) (length 2.54)
-        (name "8" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "DPDT_Slide_SMD_7.2x3.5mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 4.318 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DPDT_Slide_SMD_7.2x3.5mm" (at 0 -13.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_7.2x3.5mm" (at 0 -16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/SW_slide_ayz.pdf" (at 0 -21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-08179" (at 0 -19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "ABC" (at 0 -24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun AYZ0202" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch dual pole double throw" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_fp_filters" "SW*DPDT*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "DPDT_Slide_SMD_7.2x3.5mm_0_0"
-      (circle (center -2.032 -8.89) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -7.62)
-          (xy 0 -6.985)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -6.35)
-          (xy 0 -5.715)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -5.08)
-          (xy 0 -4.445)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -3.81)
-          (xy 0 -3.175)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -2.54)
-          (xy 0 -1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -1.27)
-          (xy 0 -0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 0)
-          (xy 0 0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -11.43) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "DPDT_Slide_SMD_7.2x3.5mm_0_1"
-      (polyline
-        (pts
-          (xy -1.524 -8.636)
-          (xy 1.651 -6.604)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.524 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -6.35) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "DPDT_Slide_SMD_7.2x3.5mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -6.35 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 -8.89 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -11.43 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "DPDT_Slide_SMD_9.0x3.6mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "DPDT_Slide_SMD_9.0x3.6mm" (at 0 -13.97 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_9.0x3.6mm" (at 0 -19.05 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf" (at 0 -16.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-14133" (at 0 -21.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -24.13 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch dp3t ON-ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch three position" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_fp_filters" "SW* DP3T*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "DPDT_Slide_SMD_9.0x3.6mm_0_0"
-      (circle (center -2.032 -7.62) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center -2.032 1.27) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -6.35)
-          (xy 0 -5.715)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -5.08)
-          (xy 0 -4.445)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -3.81)
-          (xy 0 -3.175)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -2.54)
-          (xy 0 -1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 -1.27)
-          (xy 0 -0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 0)
-          (xy 0 0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -10.16) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -1.27) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "DPDT_Slide_SMD_9.0x3.6mm_0_1"
-      (polyline
-        (pts
-          (xy -1.524 -7.366)
-          (xy 1.651 -5.334)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.524 1.524)
-          (xy 1.651 3.556)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -5.08) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 3.81) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "DPDT_Slide_SMD_9.0x3.6mm_1_1"
-      (pin passive line (at 5.08 3.81 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 1.27 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -1.27 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -5.08 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 -7.62 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -10.16 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SP3T_Slide_SMD_9.0x3.6mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SP3T_Slide_SMD_9.0x3.6mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_SP3T_SMD_9.7x2.6mm" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-10805" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "CUS-13B" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch dp3t ON-ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch, three position, dual pole triple throw, 3 position switch, SP3T" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_fp_filters" "SW* DP3T*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SP3T_Slide_SMD_9.0x3.6mm_0_1"
-      (circle (center -2.032 0) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.651 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SP3T_Slide_SMD_9.0x3.6mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 2.54 0) (length 2.54) hide
-        (name "NC" (effects (font (size 1.27 1.27))))
-        (number "NC" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SP3T_Slide_SMD_9.8x3.5mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SP3T_Slide_SMD_9.8x3.5mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DP3T_SMD_9.8x3.5mm" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/1431/ayz.pdf" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-16121" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Slide switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_fp_filters" "SW* DP3T*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SP3T_Slide_SMD_9.8x3.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.651 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.4572)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SP3T_Slide_SMD_9.8x3.5mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "3" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 2.54 0) (length 2.54) hide
-        (name "5" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 5.08 0) (length 2.54) hide
-        (name "6" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 7.62 0) (length 2.54) hide
-        (name "7" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 10.16 0) (length 2.54) hide
-        (name "8" (effects (font (size 1.27 1.27))))
-        (number "8" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPDT_Slide_PTH_11.6x4.0mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 4.318 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPDT_Slide_PTH_11.6x4.0mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_SPDT_PTH_11.6x4.0mm" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/Buttons/P040040c.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-08261" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mrg Part#" "" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch, single pole double throw" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPDT_Slide_PTH_11.6x4.0mm_0_0"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_PTH_11.6x4.0mm_0_1"
-      (polyline
-        (pts
-          (xy -1.524 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_PTH_11.6x4.0mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 4.318 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPDT_Slide_PTH_11.6x4.0mm-ShortPin" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_SPDT_PTH_11.6x4.0mm" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/Buttons/P040040c.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-13151" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mrg Part#" "" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch, single pole double throw" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_0_0"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_0_1"
-      (polyline
-        (pts
-          (xy -1.524 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPDT_Slide_SMD_6.7x2.6mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 4.318 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPDT_Slide_SMD_6.7x2.6mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_SPST_SMD_6.7x2.6mm" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-10651" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mrg Part#" "CUS-12B" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch, single pole double throw" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPDT_Slide_SMD_6.7x2.6mm_0_0"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_6.7x2.6mm_0_1"
-      (polyline
-        (pts
-          (xy -1.524 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_6.7x2.6mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 2.54 0) (length 2.54) hide
-        (name "NC" (effects (font (size 1.27 1.27))))
-        (number "NC" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPDT_Slide_SMD_7.2x3.5mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 4.318 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPDT_Slide_SMD_7.2x3.5mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_7.2x3.5mm" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/SW_slide_ayz.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-08179" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mrg Part#" "AYZ0202" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch, single pole double throw" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPDT_Slide_SMD_7.2x3.5mm_0_0"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_7.2x3.5mm_0_1"
-      (polyline
-        (pts
-          (xy -1.524 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_7.2x3.5mm_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 2.54 0) (length 2.54) hide
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 5.08 0) (length 2.54) hide
-        (name "5" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 7.62 0) (length 2.54) hide
-        (name "6" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 4.318 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPDT_Slide_SMD_7.2x3.5mm-HighFriction" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_7.2x3.5mm" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.cuidevices.com/product/resource/slw-713515-2a-smt-tr.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-20616" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mrg Part#" "2223-SLW-713515-2A-SMT-TR-ND" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch, single pole double throw" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_0_0"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_0_1"
-      (polyline
-        (pts
-          (xy -1.524 0.254)
-          (xy 1.651 2.286)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_1_1"
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -2.54 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 2.54 0) (length 2.54) hide
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 5.08 0) (length 2.54) hide
-        (name "5" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 7.62 0) (length 2.54) hide
-        (name "6" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPDT_Slide_SMD_9.0x3.6mm" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SPDT_Slide_SMD_9.0x3.6mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_9.0x3.6mm" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-14133" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun switch dp3t ON-ON-ON" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Switch three position" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_fp_filters" "SW* DP3T*" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPDT_Slide_SMD_9.0x3.6mm_0_0"
-      (circle (center -2.032 1.27) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 -1.27) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_9.0x3.6mm_0_1"
-      (polyline
-        (pts
-          (xy -1.524 1.524)
-          (xy 1.651 3.556)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 3.81) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPDT_Slide_SMD_9.0x3.6mm_1_1"
-      (pin passive line (at 5.08 3.81 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 1.27 0) (length 2.54)
-        (name "B" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 -1.27 180) (length 2.54)
-        (name "C" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 3.81 0) (length 2.54) hide
-        (name "4" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 6.35 0) (length 2.54) hide
-        (name "5" (effects (font (size 1.27 1.27))))
-        (number "5" (effects (font (size 1.27 1.27))))
-      )
-      (pin no_connect line (at -5.08 8.89 0) (length 2.54) hide
-        (name "6" (effects (font (size 1.27 1.27))))
-        (number "6" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_PTH_12x12mm_h8.0mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PTH_12x12mm_h8.0mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_PTH_12x12mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.omron.com/ecb/products/pdf/en-b3f.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-09185" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_PTH_12x12mm_h8.0mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "SPST_Push_PTH_12x12mm_h8.0mm_1_1"
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_PTH_LED-Red" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 7.62 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Red" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_PTH_12x12mm_LED" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/General/TSD1265.png" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-11758" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "TSL-012 (Red)" (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_PTH_LED-Red_0_0"
-      (polyline
-        (pts
-          (xy -3.81 -1.905)
-          (xy -2.54 -0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.54 -1.905)
-          (xy -1.27 -0.635)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.54 0)
-          (xy 2.54 0)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -0.635 1.27)
-          (xy -0.635 -1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -3.81 -1.27)
-          (xy -3.81 -1.905)
-          (xy -3.175 -1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.54 -1.27)
-          (xy -2.54 -1.905)
-          (xy -1.905 -1.905)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -0.635 0)
-          (xy 1.27 1.27)
-          (xy 1.27 -1.27)
-          (xy -0.635 0)
-        )
-        (stroke (width 0) (type default))
-        (fill (type outline))
-      )
-    )
-    (symbol "SPST_Push_PTH_LED-Red_0_1"
-      (circle (center -2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 3.81)
-          (xy 0 5.588)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 3.81)
-          (xy -2.54 3.81)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 2.54) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 2.54 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 2.54 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "SPST_Push_PTH_LED-Red_1_1"
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "A" (effects (font (size 1.27 1.27))))
-        (number "A" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "K" (effects (font (size 1.27 1.27))))
-        (number "K" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_PTH_RA_7.4x4.3mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PTH_RA_7.4x4.3mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_PTH_RA_7.4x4.3mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/Switches/SW016.JPG" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-10672" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_PTH_RA_7.4x4.3mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "SPST_Push_PTH_RA_7.4x4.3mm_1_1"
-      (pin passive line (at -5.08 2.54 0) (length 2.54) hide
-        (name "M1" (effects (font (size 1.27 1.27))))
-        (number "M1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 2.54 180) (length 2.54) hide
-        (name "M2" (effects (font (size 1.27 1.27))))
-        (number "M2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_PTH_RA_h7.5mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "PTH_RA_h7.5mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_PTH_RA_8-020_h7.5mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-13896" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "8-020 TS H = 7.5mm" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_PTH_RA_h7.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPST_Push_PTH_RA_h7.5mm_1_1"
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at -5.08 2.54 0) (length 2.54) hide
-        (name "M1" (effects (font (size 1.27 1.27))))
-        (number "M1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 2.54 180) (length 2.54) hide
-        (name "M2" (effects (font (size 1.27 1.27))))
-        (number "M2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_12x12mm_h8.5mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_12x12mm_h8.5mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_12x12mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://cdn.sparkfun.com/datasheets/Components/Switches/N301102.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-11967" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "EG4904TR-ND" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_12x12mm_h8.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPST_Push_SMD_12x12mm_h8.5mm_1_1"
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_4.2x3.2mm_h2.5mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_4.2x3.2mm_h2.5mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_4.2x3.2mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/3130/ck_rk_datasheet.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-21771" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_4.2x3.2mm_h2.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_4.6x2.8mm_h1.9mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_4.6x2.8mm_h1.9mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_4.6x2.8mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.ckswitches.com/media/1479/kmr2.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-13065" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_4.6x2.8mm_h1.9mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_4.6x2.8mm_h2.5mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_4.6x2.8mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-15606" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm_1_1"
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_5.2x5.2mm_h1.9mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_5.2x5.2mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/165/TL3342.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-08247" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm_1_1"
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_5.2x5.2mm_h2.5mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_5.2x5.2mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-14139" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm_1_1"
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_6.2x6.2mm_h7.0mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_6.2x6.2mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.we-online.com/components/products/datasheet/4301x2xxx8x6.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-11966" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "679-2384-2-ND" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-    )
-    (symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm_1_1"
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_6x3.5mm_h2.5mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_6x3.5mm_h2.5mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_6x3.5mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "https://www.sparkfun.com/datasheets/Components/1101.pdf" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-14278" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "8-004 SMD Button 8x3.6mm Height=2.5mm" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_6x3.5mm_h2.5mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPST_Push_SMD_6x3.5mm_h2.5mm_1_1"
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 5.08 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SMD_RA_5x3mm_h3.6mm" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "SparkFun-Switch:Push_SMD_RA_5x3mm" (at 0 -5.08 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "PROD_ID" "SWCH-12265" (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Mfg Part#" "" (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun Momentary push switch lever button" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "Single Pole Single Throw (SPST) switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm_0_1"
-      (circle (center -2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 0 1.27)
-          (xy 0 3.048)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 1.27)
-          (xy -2.54 1.27)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (circle (center 2.032 0) (radius 0.508)
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm_1_1"
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
-  (symbol "SW_Reed" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
-    (property "Reference" "SW" (at 0 2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SW_Reed" (at 0 -2.54 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_keywords" "SparkFun reed magnetic switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "ki_description" "reed switch" (at 0 0 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (symbol "SW_Reed_0_0"
-      (arc (start -2.159 1.397) (mid -3.55 0) (end -2.159 -1.397)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.54 0)
-          (xy 1.27 0.762)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -2.159 -1.397)
-          (xy 2.286 -1.397)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.159 1.397)
-          (xy -2.159 1.397)
-        )
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 2.54 0)
-          (xy -1.27 -0.762)
-        )
-        (stroke (width 0) (type default))
-        (fill (type none))
-      )
-      (arc (start 2.159 -1.397) (mid 3.55 0) (end 2.159 1.397)
-        (stroke (width 0.254) (type default))
-        (fill (type none))
-      )
-    )
-    (symbol "SW_Reed_1_1"
-      (pin passive line (at -5.08 0 0) (length 2.54)
-        (name "1" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin passive line (at 5.08 0 180) (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
+(kicad_symbol_lib
+	(version 20231120)
+	(generator "kicad_symbol_editor")
+	(generator_version "8.0")
+	(symbol "Capacitive Button"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Capacitive Button"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Pad-CapacitiveTouch"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch lever"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Capacitive Button_0_0"
+			(circle
+				(center 0 3.048)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Capacitive Button_1_1"
+			(pin passive line
+				(at 0 0 90)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "DP3T_Slide_SMD_9.8x3.5mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DP3T_Slide_SMD_9.8x3.5mm"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DP3T_SMD_9.8x3.5mm"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1431/ayz.pdf"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch three position, dual pole triple throw, 3 position switch, SP3T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-16121"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch dp3t ON-ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SW* DP3T*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DP3T_Slide_SMD_9.8x3.5mm_0_0"
+			(polyline
+				(pts
+					(xy 0 -6.35) (xy 0 -5.715)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DP3T_Slide_SMD_9.8x3.5mm_0_1"
+			(circle
+				(center -2.032 -7.62)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 -7.366) (xy 1.651 -5.334)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -10.16)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -7.62)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -5.08)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DP3T_Slide_SMD_9.8x3.5mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -5.08 180)
+				(length 2.54)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -7.62 180)
+				(length 2.54)
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 2.54)
+				(name "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -10.16 180)
+				(length 2.54)
+				(name "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "DPDT_Slide_SMD_7.2x3.5mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DPDT_Slide_SMD_7.2x3.5mm"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_7.2x3.5mm"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/SW_slide_ayz.pdf"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch dual pole double throw"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-08179"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "ABC"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun AYZ0202"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SW*DPDT*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DPDT_Slide_SMD_7.2x3.5mm_0_0"
+			(circle
+				(center -2.032 -8.89)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -7.62) (xy 0 -6.985)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -6.35) (xy 0 -5.715)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -11.43)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DPDT_Slide_SMD_7.2x3.5mm_0_1"
+			(polyline
+				(pts
+					(xy -1.524 -8.636) (xy 1.651 -6.604)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -6.35)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DPDT_Slide_SMD_7.2x3.5mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -6.35 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -8.89 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -11.43 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "DPDT_Slide_SMD_9.0x3.6mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DPDT_Slide_SMD_9.0x3.6mm"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_9.0x3.6mm"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch three position"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-14133"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch dp3t ON-ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SW* DP3T*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DPDT_Slide_SMD_9.0x3.6mm_0_0"
+			(circle
+				(center -2.032 -7.62)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center -2.032 1.27)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -6.35) (xy 0 -5.715)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -10.16)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -1.27)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DPDT_Slide_SMD_9.0x3.6mm_0_1"
+			(polyline
+				(pts
+					(xy -1.524 -7.366) (xy 1.651 -5.334)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 1.524) (xy 1.651 3.556)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -5.08)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 3.81)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "DPDT_Slide_SMD_9.0x3.6mm_1_1"
+			(pin passive line
+				(at 5.08 3.81 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 1.27 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -1.27 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -5.08 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -10.16 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SP3T_Slide_SMD_9.0x3.6mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SP3T_Slide_SMD_9.0x3.6mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_SP3T_SMD_9.7x2.6mm"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, three position, dual pole triple throw, 3 position switch, SP3T"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-10805"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "CUS-13B"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch dp3t ON-ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SW* DP3T*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SP3T_Slide_SMD_9.0x3.6mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SP3T_Slide_SMD_9.0x3.6mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SP3T_Slide_SMD_9.8x3.5mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SP3T_Slide_SMD_9.8x3.5mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DP3T_SMD_9.8x3.5mm"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1431/ayz.pdf"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Slide switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-16121"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SW* DP3T*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SP3T_Slide_SMD_9.8x3.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.651 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SP3T_Slide_SMD_9.8x3.5mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 5.08 0)
+				(length 2.54) hide
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 7.62 0)
+				(length 2.54) hide
+				(name "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 10.16 0)
+				(length 2.54) hide
+				(name "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPDT_Slide_PTH_11.6x4.0mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPDT_Slide_PTH_11.6x4.0mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_SPDT_PTH_11.6x4.0mm"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/Buttons/P040040c.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-08261"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mrg Part#" ""
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPDT_Slide_PTH_11.6x4.0mm_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_PTH_11.6x4.0mm_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_PTH_11.6x4.0mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPDT_Slide_PTH_11.6x4.0mm-ShortPin"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_SPDT_PTH_11.6x4.0mm"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/Buttons/P040040c.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-13151"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mrg Part#" ""
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPDT_Slide_SMD_6.7x2.6mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPDT_Slide_SMD_6.7x2.6mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_SPST_SMD_6.7x2.6mm"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.nidec-components.com/e/catalog/switch/cus.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-10651"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mrg Part#" "CUS-12B"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_6.7x2.6mm_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_6.7x2.6mm_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_6.7x2.6mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPDT_Slide_SMD_7.2x3.5mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPDT_Slide_SMD_7.2x3.5mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_7.2x3.5mm"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/SW_slide_ayz.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-08179"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mrg Part#" "AYZ0202"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_7.2x3.5mm_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_7.2x3.5mm_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_7.2x3.5mm_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 5.08 0)
+				(length 2.54) hide
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 7.62 0)
+				(length 2.54) hide
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 4.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPDT_Slide_SMD_7.2x3.5mm-HighFriction"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_7.2x3.5mm"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.cuidevices.com/product/resource/slw-713515-2a-smt-tr.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch, single pole double throw"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-20616"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mrg Part#" "2223-SLW-713515-2A-SMT-TR-ND"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch single-pole double-throw spdt ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_0_0"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.254) (xy 1.651 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_1_1"
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 5.08 0)
+				(length 2.54) hide
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 7.62 0)
+				(length 2.54) hide
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPDT_Slide_SMD_9.0x3.6mm"
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPDT_Slide_SMD_9.0x3.6mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Slide_DPDT_SMD_9.0x3.6mm"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1422/js.pdf"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch three position"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-14133"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun switch dp3t ON-ON-ON"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SW* DP3T*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_9.0x3.6mm_0_0"
+			(circle
+				(center -2.032 1.27)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -1.27)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_9.0x3.6mm_0_1"
+			(polyline
+				(pts
+					(xy -1.524 1.524) (xy 1.651 3.556)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 3.81)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPDT_Slide_SMD_9.0x3.6mm_1_1"
+			(pin passive line
+				(at 5.08 3.81 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 1.27 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -1.27 180)
+				(length 2.54)
+				(name "C"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 3.81 0)
+				(length 2.54) hide
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 6.35 0)
+				(length 2.54) hide
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 8.89 0)
+				(length 2.54) hide
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_PTH_12x12mm_h8.0mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTH_12x12mm_h8.0mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_PTH_12x12mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.omron.com/ecb/products/pdf/en-b3f.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-09185"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_PTH_12x12mm_h8.0mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPST_Push_PTH_12x12mm_h8.0mm_1_1"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_PTH_LED-Red"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_PTH_12x12mm_LED"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/General/TSD1265.png"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-11758"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "TSL-012 (Red)"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_PTH_LED-Red_0_0"
+			(polyline
+				(pts
+					(xy -3.81 -1.905) (xy -2.54 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.905) (xy -1.27 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 1.27) (xy -0.635 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 -1.27) (xy -3.81 -1.905) (xy -3.175 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.27) (xy -2.54 -1.905) (xy -1.905 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0) (xy 1.27 1.27) (xy 1.27 -1.27) (xy -0.635 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "SPST_Push_PTH_LED-Red_0_1"
+			(circle
+				(center -2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 3.81) (xy 0 5.588)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy -2.54 3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPST_Push_PTH_LED-Red_1_1"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_PTH_RA_7.4x4.3mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTH_RA_7.4x4.3mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_PTH_RA_7.4x4.3mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/Switches/SW016.JPG"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-10672"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_PTH_RA_7.4x4.3mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPST_Push_PTH_RA_7.4x4.3mm_1_1"
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "M1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54) hide
+				(name "M2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_PTH_RA_h7.5mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PTH_RA_h7.5mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_PTH_RA_8-020_h7.5mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-13896"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "8-020 TS H = 7.5mm"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_PTH_RA_h7.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPST_Push_PTH_RA_h7.5mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 2.54) hide
+				(name "M1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54) hide
+				(name "M2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_12x12mm_h8.5mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_12x12mm_h8.5mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_12x12mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/datasheets/Components/Switches/N301102.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-11967"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "EG4904TR-ND"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_12x12mm_h8.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_12x12mm_h8.5mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_4.2x3.2mm_h2.5mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_4.2x3.2mm_h2.5mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_4.2x3.2mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/3130/ck_rk_datasheet.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-21771"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_4.2x3.2mm_h2.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_4.6x2.8mm_h1.9mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_4.6x2.8mm_h1.9mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_4.6x2.8mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ckswitches.com/media/1479/kmr2.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-13065"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_4.6x2.8mm_h1.9mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_4.6x2.8mm_h2.5mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_4.6x2.8mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-15606"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm_1_1"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_5.2x5.2mm_h1.9mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_5.2x5.2mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/165/TL3342.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-08247"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_5.2x5.2mm_h2.5mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_5.2x5.2mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-14139"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm_1_1"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_6.2x6.2mm_h7.0mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_6.2x6.2mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/4301x2xxx8x6.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-11966"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "679-2384-2-ND"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm_1_1"
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_6x3.5mm_h2.5mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_6x3.5mm_h2.5mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_6x3.5mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Components/1101.pdf"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-14278"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" "8-004 SMD Button 8x3.6mm Height=2.5mm"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_6x3.5mm_h2.5mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_6x3.5mm_h2.5mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMD_RA_5x3mm_h3.6mm"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Switch:Push_SMD_RA_5x3mm"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "SWCH-12265"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mfg Part#" ""
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Momentary push switch lever button"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm_0_1"
+			(circle
+				(center -2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 3.048)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "SW_Reed"
+		(pin_numbers hide)
+		(pin_names
+			(offset 0) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "SW"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Reed"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "reed switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun reed magnetic switch"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SW_Reed_0_0"
+			(arc
+				(start -2.159 1.397)
+				(mid -3.55 0)
+				(end -2.159 -1.397)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0) (xy 1.27 0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.159 -1.397) (xy 2.286 -1.397)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.159 1.397) (xy -2.159 1.397)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 0) (xy -1.27 -0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 2.159 -1.397)
+				(mid 3.55 0)
+				(end 2.159 1.397)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SW_Reed_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 )
