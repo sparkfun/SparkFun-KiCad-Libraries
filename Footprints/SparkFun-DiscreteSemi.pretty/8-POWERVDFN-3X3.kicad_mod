@@ -6,12 +6,13 @@
 	(property "Reference" "REF**"
 		(at -1.9304 0 90)
 		(unlocked yes)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "951f5bac-e22c-4b97-9f9c-a5be4bbf68f4")
 		(effects
 			(font
-				(size 0.48768 0.48768)
-				(thickness 0.12192)
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
 			)
 			(justify bottom)
 		)
@@ -23,8 +24,9 @@
 		(uuid "80823459-d201-430b-ac33-3889d4411879")
 		(effects
 			(font
-				(size 0.48768 0.48768)
-				(thickness 0.12192)
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
 			)
 			(justify top)
 		)
@@ -360,28 +362,26 @@
 		(thermal_bridge_angle 0)
 		(uuid "db8c5ad6-b259-4c74-bffb-72f4352fe3b0")
 	)
-	(pad "5" smd rect
+	(pad "5" smd custom
 		(at 0 -0.7)
 		(size 2.45 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 1.225 -1.2) (xy -1.225 -1.2) (xy -1.225 0.5) (xy -1.755 0.5) (xy -1.755 0.9) (xy -1.225 0.9)
+					(xy -1.225 1.2) (xy 1.225 1.2) (xy 1.225 0.9) (xy 1.755 0.9) (xy 1.755 0.5) (xy 1.225 0.5)
+				)
+				(width 0.01)
+				(fill yes)
+			)
+		)
 		(uuid "5f944dd1-3d7a-480c-933a-44cdaa70ca49")
-	)
-	(pad "6" smd rect
-		(at -1.49 0)
-		(size 0.53 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "6e85e161-b709-4215-bd7e-e4d21f498426")
-	)
-	(pad "7" smd rect
-		(at 1.49 0)
-		(size 0.53 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "78832a44-608b-4d89-842d-e54941e90fc6")
 	)
 )
