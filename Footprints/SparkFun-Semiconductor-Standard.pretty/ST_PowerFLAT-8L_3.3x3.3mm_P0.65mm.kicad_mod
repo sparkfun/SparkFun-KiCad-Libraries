@@ -1,10 +1,10 @@
-(footprint "8-POWERVDFN-3X3"
+(footprint "ST_PowerFLAT-8L_3.3x3.3mm_P0.65mm"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at -1.9304 0 90)
+		(at 0.059 -2.096 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "951f5bac-e22c-4b97-9f9c-a5be4bbf68f4")
@@ -17,8 +17,8 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "8-POWERVDFN-3X3"
-		(at 1.8796 0 90)
+	(property "Value" "ST_PowerFLAT-8L_3.3x3.3mm_P0.65mm"
+		(at 0.496 2.228 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "80823459-d201-430b-ac33-3889d4411879")
@@ -157,6 +157,17 @@
 		(fill solid)
 		(layer "F.SilkS")
 		(uuid "25e4156e-4943-4b66-9c2b-93fe8d54e7cd")
+	)
+	(fp_rect
+		(start -2.226 -2.255)
+		(end 2.226 2.166)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "9d6221e0-1137-4365-bf44-79e4b0ceb288")
 	)
 	(fp_line
 		(start -1.5 -1.5)
