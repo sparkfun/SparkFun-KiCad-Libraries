@@ -1,4 +1,4 @@
-(footprint "SPH0641LM4H-1_MICROPHONE"
+(footprint "SPH0641LM4H-1_Microphone"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -46,14 +46,15 @@
 		)
 	)
 	(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0641LM4H-1.pdf"
-		(at -0.8 4.4 0)
+		(at 0 3.7 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "ce0942d6-e1aa-41ff-9c7a-b678cbb9934b")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -215,6 +216,17 @@
 		(fill none)
 		(layer "F.Mask")
 		(uuid "5d7b01bc-4ddf-40c8-a0f2-ef15ae3ff9fa")
+	)
+	(fp_rect
+		(start -1.7 -2.1)
+		(end 1.7 2.2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "fe318d69-c4b0-4ad0-a8c7-0b7c04bdd3f5")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 1)
