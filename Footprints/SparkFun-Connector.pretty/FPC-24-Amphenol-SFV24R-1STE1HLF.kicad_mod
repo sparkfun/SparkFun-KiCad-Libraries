@@ -7,7 +7,7 @@
 	(property "Reference" "REF**"
 		(at 0 2.3368 0)
 		(unlocked yes)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "64219987-61cf-4ed3-a6a9-3dfafa1accd5")
 		(effects
 			(font
@@ -18,7 +18,7 @@
 		)
 	)
 	(property "Value" "FPC-24-AMPHENOL-SFV24R-1STE1HLF"
-		(at 0 0 0)
+		(at -0.017 3.522 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "b41219a4-753f-4f54-8189-d85c4c4e9856")
@@ -134,6 +134,17 @@
 		)
 		(layer "F.SilkS")
 		(uuid "f3f6405e-08f4-453e-8aaf-8362eacf6e57")
+	)
+	(fp_circle
+		(center 5.758 -3.404)
+		(end 5.878283 -3.404)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "8e7fc3ae-c05e-4744-8e77-4a7cbe07cb9e")
 	)
 	(fp_line
 		(start -8.75 0.7)
@@ -719,37 +730,47 @@
 		(thermal_bridge_angle 0)
 		(uuid "591ff457-e1b5-4622-b276-43d5b70cc855")
 	)
-	(pad "MNT1@0" smd rect
-		(at -8.15 -1.5)
-		(size 1.4 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "c3275860-7995-41bc-b4d6-2f22f34a096d")
-	)
-	(pad "MNT1@1" smd rect
+	(pad "MNT1" smd custom
 		(at -6.825 -1.15)
 		(size 1.25 2.3)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.625 -1.15) (xy -2.025 -1.15) (xy -2.025 0.45) (xy -0.625 0.45) (xy -0.625 1.15) (xy 0.625 1.15)
+				)
+				(width 0.00254)
+				(fill yes)
+			)
+		)
 		(uuid "f7f4d34e-e786-4b33-bc2b-082617660f6d")
 	)
-	(pad "MNT2@0" smd rect
+	(pad "MNT2" smd custom
 		(at 6.825 -1.15)
 		(size 1.25 2.3)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.625 1.15) (xy 0.625 0.45) (xy 2.025 0.45) (xy 2.025 -1.15) (xy -0.625 -1.15) (xy -0.625 1.15)
+				)
+				(width 0.00254)
+				(fill yes)
+			)
+		)
 		(uuid "2dc7917a-b86e-4a9a-aaa0-63368c08749c")
-	)
-	(pad "MNT2@1" smd rect
-		(at 8.15 -1.5)
-		(size 1.4 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "b8f0f1f9-00af-471b-bbe2-c763434c86cb")
 	)
 	(model "C:/Users/pete.lewis/Documents/GitHub/SparkFun-KiCad-Libraries/Footprints/SparkFun-3D-models/FPC-24-Amphenol-SFV24R-1STE1HLF.step"
 		(offset
