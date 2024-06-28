@@ -1,4 +1,4 @@
-(footprint "FPC-24-Amphenol-SFV24R-1STE1HLF"
+(footprint "FPC_0.5mm-24-BottomContact"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -13,12 +13,12 @@
 		(effects
 			(font
 				(size 0.5 0.5)
-				(thickness 0.12192)
+				(thickness 0.1)
 			)
 			(justify top)
 		)
 	)
-	(property "Value" "FPC-24-AMPHENOL-SFV24R-1STE1HLF"
+	(property "Value" "FPC_0.5mm-24-Bottom"
 		(at -0.017 3.522 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -26,7 +26,7 @@
 		(effects
 			(font
 				(size 0.5 0.5)
-				(thickness 0.12192)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -39,18 +39,20 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/10171070.pdf"
-		(at 0.214 -5.339 0)
+		(at 0 4.572 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "b50576d5-0f32-4d9d-b4e3-5cc759aabc92")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -63,6 +65,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -135,17 +138,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "f3f6405e-08f4-453e-8aaf-8362eacf6e57")
-	)
-	(fp_circle
-		(center 5.758 -3.404)
-		(end 5.878283 -3.404)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill solid)
-		(layer "F.SilkS")
-		(uuid "8e7fc3ae-c05e-4744-8e77-4a7cbe07cb9e")
 	)
 	(fp_line
 		(start -8.75 0.7)
