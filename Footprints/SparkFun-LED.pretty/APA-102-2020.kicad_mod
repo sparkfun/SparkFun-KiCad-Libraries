@@ -1,0 +1,143 @@
+(footprint "APA-102-2020"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<h3>WS2812-2020 - 2020 package for the WS2812</h3>\n<p>Specifications:\n<ul><li>Pin count: 4</li>\n<li>Pin pitch: 1 mm</li>\n<li>Area: 2.2 mm x 2.0 mm</li>\n</ul></p>\n<p><a href=https://www.aliexpress.com/store/product/WS2812-2020-Intelligent-control-LED-integrated-light-source-2020-SMD-RGB-LED-with-built-in-WS2811/701799_32879024689.html?spm=2114.12010612.8148356.3.67626848TBx3Ev>Datasheet referenced for footprint</a></p>")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 1.85 0)
+		(layer "F.Fab")
+		(uuid "10e74d72-0c34-4a2f-8e03-dfb9f04329c1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 2.7 0)
+		(layer "F.Fab")
+		(uuid "4b8f39d9-f180-464c-80b4-fc6096dab4a6")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Footprint" "APA-102-2020"
+		(at 0 -2.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b7919d21-d031-4a07-ac44-c9461b53c9da")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0470634d-b42b-4b23-8a84-ab6b780613a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3eec9a1-02ca-44c9-90dc-4e8638267c2a")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_circle
+		(center -1.25 -1.25)
+		(end -1.25 -1.15)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "8961c702-93bc-4d9a-ab57-f647b158020d")
+	)
+	(fp_rect
+		(start -1.1 -1.1)
+		(end 1.1 1.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "30407a1b-a581-45ce-a364-373f14313d22")
+	)
+	(fp_rect
+		(start -1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.01)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "aac92c0c-88fc-4fde-b657-7c46e4a6820a")
+	)
+	(pad "1" smd rect
+		(at -0.775 -0.675)
+		(size 0.45 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "0f76ff3b-09c7-400f-9a3a-1c81a9b54124")
+	)
+	(pad "2" smd rect
+		(at 0 -0.675)
+		(size 0.45 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "8e054c62-47cd-4014-8c35-fd022a2e8c53")
+	)
+	(pad "3" smd rect
+		(at 0.775 -0.675)
+		(size 0.45 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "f8bfc9e4-e3c6-48cf-934d-1e9da8ff35b3")
+	)
+	(pad "4" smd rect
+		(at -0.775 0.675)
+		(size 0.45 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "5d267480-2ea8-464e-ba7e-2fb3afc08cb0")
+	)
+	(pad "5" smd rect
+		(at 0 0.575)
+		(size 0.45 0.85)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "3878fbf7-93bd-4867-9db4-5b66f730949a")
+	)
+	(pad "6" smd rect
+		(at 0.775 0.675)
+		(size 0.45 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.05)
+		(uuid "2d513aae-3a46-4817-8a1e-108f3657db9e")
+	)
+)
