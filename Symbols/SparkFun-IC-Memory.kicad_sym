@@ -22,7 +22,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Semiconductor-Standard:WDFN-8_6x5mm-SkinnyCenterPad"
+		(property "Footprint" "SparkFun-Semiconductor-Standard:USON-8_3x2mm-SkinnyCenterPad"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -227,6 +227,24 @@
 					)
 				)
 				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -5.08 0)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
