@@ -40,6 +40,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -52,6 +53,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -64,6 +66,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -132,6 +135,17 @@
 		)
 		(layer "F.SilkS")
 		(uuid "dea35e49-d33f-42f3-a77e-66afbe566e88")
+	)
+	(fp_rect
+		(start -1.651 -2.032)
+		(end 2.286 2.032)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "0a5ffbc9-ab66-4744-9d13-8af57fa1237b")
 	)
 	(fp_line
 		(start -1.3 -1.3)
@@ -233,6 +247,14 @@
 		(uuid "6387a7a8-57ad-4c06-b9d4-bc17b4e8e6fe")
 	)
 	(pad "1" smd rect
+		(at 1.575 0)
+		(size 1.05 1)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "ac7eb445-d262-4146-8dd7-f17fecd3760a")
+	)
+	(pad "2" smd rect
 		(at -0.1 -1.375)
 		(size 2 0.85)
 		(layers "F.Cu" "F.Mask")
@@ -247,14 +269,6 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "7ba62e7e-0416-4fa6-b47e-c3fb976456fa")
-	)
-	(pad "FEED" smd rect
-		(at 1.575 0)
-		(size 1.05 1)
-		(layers "F.Cu" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "ac7eb445-d262-4146-8dd7-f17fecd3760a")
 	)
 	(zone
 		(net 0)

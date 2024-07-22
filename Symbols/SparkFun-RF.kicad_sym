@@ -8977,6 +8977,7 @@
 		)
 	)
 	(symbol "RP-SMA_EdgeMount"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -8990,7 +8991,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "RP-SMA_Edge"
 			(at 2.921 0 90)
 			(effects
 				(font
@@ -8998,7 +8999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:RP-SMA-Edge"
+		(property "Footprint" "SparkFun-Connector:RP-SMA_Edge"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -9007,7 +9008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Wireless/Antenna/RPSMA-Connector.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -9017,7 +9018,7 @@
 			)
 		)
 		(property "Description" "Reverse Polarized SMA PCB Edge Mount connector"
-			(at 0 0 0)
+			(at 0 -14.9225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9153,6 +9154,7 @@
 		)
 	)
 	(symbol "RP-SMA_EdgeMount_SMD"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -9166,7 +9168,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "RP-SMA_Edge_SMD"
 			(at 2.921 0 90)
 			(effects
 				(font
@@ -9174,7 +9176,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:RP-SMA-EDGE"
+		(property "Footprint" "SparkFun-Connector:RP-SMA_Edge_SMD"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -9183,7 +9185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "https://sparkle.sparkfun.com/sparkle/file_store/parts/15471/8/2020-10-15_12:39:57/SMA-02-269-TGG.pdf"
 			(at 0 -11.43 0)
 			(effects
 				(font
@@ -9193,7 +9195,7 @@
 			)
 		)
 		(property "Description" "Reverse Polarized SMA PCB Edge Mount connector"
-			(at 0 0 0)
+			(at 0 -13.6525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9343,7 +9345,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "SMA_Edge"
 			(at 3.81 0 90)
 			(effects
 				(font
@@ -9351,7 +9353,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:SMA-Edge"
+		(property "Footprint" "SparkFun-Connector:SMA_Edge"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -9360,7 +9362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Wireless/Antenna/SMA-Connector.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -9370,7 +9372,7 @@
 			)
 		)
 		(property "Description" "SMA PCB Edge Mount connector"
-			(at 0 0 0)
+			(at 0 -14.9225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9468,9 +9470,9 @@
 		)
 		(symbol "SMA_EdgeMount_1_1"
 			(pin passive line
-				(at 0 -5.08 90)
+				(at -5.08 0 0)
 				(length 2.54)
-				(name "1"
+				(name "In"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9487,8 +9489,8 @@
 			)
 			(pin passive line
 				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "2"
+				(length 2.54)
+				(name "Ext"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -9503,63 +9505,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "In"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "SIG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 	)
 	(symbol "SMA_EdgeMount_SMD"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -9573,7 +9522,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "SMA_Edge_SMD"
 			(at 2.921 0 90)
 			(effects
 				(font
@@ -9581,7 +9530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:SMA-Edge-SMD"
+		(property "Footprint" "SparkFun-Connector:SMA_Edge_SMD"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -9590,7 +9539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "https://sparkle.sparkfun.com/sparkle/file_store/parts/15470/8/2020-10-01_09:03:37/SMA-02-40-2-TGG.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -9600,7 +9549,7 @@
 			)
 		)
 		(property "Description" "SMA PCB Edge Mount connector SMD"
-			(at 0 0 0)
+			(at 0 -14.9225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9736,6 +9685,7 @@
 		)
 	)
 	(symbol "U.FL"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -9776,7 +9726,7 @@
 			)
 		)
 		(property "Description" "SMA PCB Edge Mount connector SMD"
-			(at 0 0 0)
+			(at 0.3175 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
