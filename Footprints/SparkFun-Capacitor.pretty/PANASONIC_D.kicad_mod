@@ -1,4 +1,4 @@
-(footprint "Panasonic_D"
+(footprint "PANASONIC_D"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -40,6 +40,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -52,6 +53,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -64,6 +66,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -168,6 +171,19 @@
 		)
 		(layer "F.SilkS")
 		(uuid "a73bd248-27e2-443a-8695-962280db5dfe")
+	)
+	(fp_poly
+		(pts
+			(xy -4.25 -1) (xy -4.25 1) (xy -3.5 1) (xy -3.5 3.5) (xy 1.5 3.5) (xy 3.5 1.5) (xy 3.5 1) (xy 4.25 1)
+			(xy 4.25 -1) (xy 3.5 -1) (xy 3.5 -1.5) (xy 1.5 -3.5) (xy -3.5 -3.5) (xy -3.5 -1)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "c97c9ad1-0969-4ec5-a801-689f7ff67168")
 	)
 	(fp_line
 		(start -3.25 -3.25)
