@@ -35,6 +35,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -47,6 +48,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -59,6 +61,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -142,6 +145,46 @@
 		)
 		(layer "F.Fab")
 		(uuid "3de90133-c44d-43ac-b0cd-523e78cc4901")
+	)
+	(fp_line
+		(start -4.25 -1.95)
+		(end -4.25 3.93)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fe746681-6b8c-4ee9-95b2-42c1ca4ec605")
+	)
+	(fp_line
+		(start -4.25 -1.95)
+		(end 4.25 -1.95)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "344c6c34-c730-4bda-b3cc-8bb139bf1a2d")
+	)
+	(fp_line
+		(start -4.25 3.93)
+		(end 4.25 3.93)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "76103e9e-332b-44a4-afd0-169e718a43d7")
+	)
+	(fp_line
+		(start 4.25 3.93)
+		(end 4.25 -1.95)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "ea2371c1-220a-4d4d-80ab-b9405ce9636f")
 	)
 	(fp_line
 		(start 5.375 -3.05)
@@ -259,50 +302,10 @@
 		(layer "F.Fab")
 		(uuid "157acf48-a0a7-44d2-8999-a6a406e87129")
 	)
-	(fp_line
-		(start -4.25 -1.95)
-		(end -4.25 3.93)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "fe746681-6b8c-4ee9-95b2-42c1ca4ec605")
-	)
-	(fp_line
-		(start -4.25 -1.95)
-		(end 4.25 -1.95)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "344c6c34-c730-4bda-b3cc-8bb139bf1a2d")
-	)
-	(fp_line
-		(start -4.25 3.93)
-		(end 4.25 3.93)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "76103e9e-332b-44a4-afd0-169e718a43d7")
-	)
-	(fp_line
-		(start 4.25 3.93)
-		(end 4.25 -1.95)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "User.1")
-		(uuid "ea2371c1-220a-4d4d-80ab-b9405ce9636f")
-	)
 	(fp_text user "Connector"
 		(at 0 3.048 0)
 		(unlocked yes)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "4c429db4-d435-4f97-b13b-abe077a88856")
 		(effects
 			(font
@@ -315,7 +318,7 @@
 	(fp_text user "Mating"
 		(at 0 2.032 0)
 		(unlocked yes)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "d9cb497d-b40f-4f4d-9dfd-712262023aba")
 		(effects
 			(font
