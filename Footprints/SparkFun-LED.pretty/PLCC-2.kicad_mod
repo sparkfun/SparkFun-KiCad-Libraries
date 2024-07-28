@@ -1,0 +1,202 @@
+(footprint "PLCC-2"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun UV LED")
+	(property "Reference" "REF**"
+		(at 0 -1.65995 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a9ce3564-fd7d-4e41-9201-1bf997d934f3")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "PLCC-2"
+		(at 0 1.5695 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9f16efe9-39a8-4c42-94e5-87d7ec2beec6")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "622a14b5-102a-433e-bd49-6ba6e8ae5aae")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.vishay.com/docs/82556/vlmu3100.pdf"
+		(at 0 2.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8563887e-4ab6-4282-abba-19b83b0a2269")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0cad52ff-4fa2-4def-8fe4-f00c8881ecb5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_line
+		(start -1.7 -1.4)
+		(end 1.7 -1.4)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f5589ef4-5b79-48fe-98a1-f9fb76ceb3da")
+	)
+	(fp_line
+		(start -1.7 1.4)
+		(end 1.7 1.4)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "07cf1b94-3235-4aa7-878d-a6040ea5a7f4")
+	)
+	(fp_circle
+		(center -2.1 -1.8)
+		(end -2.2 -1.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "4f8a030b-fc28-4fcb-9980-535f2f209a27")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.557643 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "75fe1f62-6a10-4934-a3c8-8e4d0302a9a6")
+	)
+	(fp_poly
+		(pts
+			(xy 0.0635 0.0635) (xy -0.631208 0.0635) (xy -0.601625 -0.161205) (xy -0.539402 -0.311424) (xy -0.44042 -0.44042)
+			(xy -0.311424 -0.539402) (xy -0.161205 -0.601625) (xy 0.0635 -0.631208)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "ea30bd8c-73f1-4389-b0b2-d31a710d4ca1")
+	)
+	(fp_line
+		(start -1.75 -1.4)
+		(end -1.75 1.4)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5c7a72e6-0d81-4aa1-92cf-af3eff53012c")
+	)
+	(fp_line
+		(start -1.75 1.4)
+		(end 1.75 1.4)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "591adf69-567c-4963-abd1-463d01d228cd")
+	)
+	(fp_line
+		(start -1.1662 -1.3598)
+		(end -1.7162 -0.8098)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "14120704-60a3-434b-8d3b-c92dc239c658")
+	)
+	(fp_line
+		(start 1.75 -1.4)
+		(end -1.75 -1.4)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0581381f-918b-40cb-b252-0cd4acb10f33")
+	)
+	(fp_line
+		(start 1.75 1.4)
+		(end 1.75 -1.4)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a5b61fa2-f27d-422a-b616-9f030a506b8a")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.1 0)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "478b03c9-8f52-4976-a000-82119f524384")
+	)
+	(pad "A" smd rect
+		(at 1.425 0 90)
+		(size 2.4 1.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "89407113-fbaa-47fe-9c64-4efc33c8a426")
+	)
+	(pad "C" smd rect
+		(at -1.425 0 90)
+		(size 2.4 1.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "f6ea7cb9-f31e-4532-b1ba-18693f3a1d27")
+	)
+)
