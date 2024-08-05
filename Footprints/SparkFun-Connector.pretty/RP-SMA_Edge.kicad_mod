@@ -38,6 +38,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -50,6 +51,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -62,8 +64,20 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
+	)
+	(fp_rect
+		(start -3.556 -2.286)
+		(end 3.556 2.286)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "188b4aaf-8e50-4695-b425-21b83e04202d")
 	)
 	(fp_line
 		(start -3.965 -3.581)
@@ -652,6 +666,14 @@
 		(uuid "d11a48bc-64e2-4424-bde4-b1d888f13060")
 	)
 	(pad "1" smd rect
+		(at 0 0)
+		(size 1.5 4)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "f13aed7c-1390-4ca1-86f2-fbfd50c1776c")
+	)
+	(pad "2" smd rect
 		(at -2.54 0)
 		(size 1.5 4)
 		(layers "F.Cu" "F.Mask")
@@ -667,7 +689,7 @@
 		(thermal_bridge_angle 0)
 		(uuid "1b9d910b-e710-49e8-b23f-a32c9de4d86e")
 	)
-	(pad "3" smd rect
+	(pad "2" smd rect
 		(at 2.54 0)
 		(size 1.5 4)
 		(layers "F.Cu" "F.Mask")
@@ -675,20 +697,12 @@
 		(thermal_bridge_angle 0)
 		(uuid "f52b610f-a214-4bea-be0d-e6d085c493e8")
 	)
-	(pad "4" smd rect
+	(pad "2" smd rect
 		(at 2.54 0)
 		(size 1.5 4)
 		(layers "B.Cu" "B.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "e6b5a517-dd0d-4552-8cb6-7670f8a535fe")
-	)
-	(pad "SIG" smd rect
-		(at 0 0)
-		(size 1.5 4)
-		(layers "F.Cu" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "f13aed7c-1390-4ca1-86f2-fbfd50c1776c")
 	)
 )

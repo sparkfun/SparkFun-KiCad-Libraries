@@ -178,6 +178,791 @@
 			)
 		)
 	)
+	(symbol "DA16200MOD-AAC4WA32"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -0.762 31.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "DA16200MOD"
+			(at -0.508 -26.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "SparkFun-RF:XCVR_DA16200MOD-AAC4WA32"
+			(at -1.016 -28.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.renesas.com/us/en/document/dst/da16200mod-datasheet"
+			(at 1.778 -33.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Fully integrated Wi-Fi® module with ultra-low power consumption"
+			(at 3.048 -31.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "IC-16179"
+			(at -2.54 -36.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun da16200 Dialog Renasas wifi module DA16200MOD-AAC4"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DA16200MOD-AAC4WA32_1_0"
+			(pin no_connect line
+				(at 15.24 -20.32 180)
+				(length 2.54)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -5.08 180)
+				(length 2.54)
+				(name "GPIOC7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "GPIOC6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "UART_TXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 5.08 0)
+				(length 2.54)
+				(name "UART_RXD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 12.7 0)
+				(length 2.54)
+				(name "RTC_WAKE_UP2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 22.86 0)
+				(length 2.54)
+				(name "VDD_DIO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -5.08 0)
+				(length 2.54)
+				(name "F_CSN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -10.16 0)
+				(length 2.54)
+				(name "F_IO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -12.7 0)
+				(length 2.54)
+				(name "F_IO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -7.62 0)
+				(length 2.54)
+				(name "F_IO0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -22.86 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -15.24 0)
+				(length 2.54)
+				(name "F_IO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional clock
+				(at -15.24 -2.54 0)
+				(length 2.54)
+				(name "F_CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "GPIOA11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 2.54 180)
+				(length 2.54)
+				(name "GPIOA10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "GPIOA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "GPIOA8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "GPIOA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 12.7 180)
+				(length 2.54)
+				(name "GPIOA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 15.24 180)
+				(length 2.54)
+				(name "GPIOA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 17.78 180)
+				(length 2.54)
+				(name "GPIOA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 17.78 0)
+				(length 2.54)
+				(name "RTC_PWR_KEY"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 20.32 180)
+				(length 2.54)
+				(name "GPIOA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 22.86 180)
+				(length 2.54)
+				(name "GPIOA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 25.4 180)
+				(length 2.54)
+				(name "GPIOA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 27.94 180)
+				(length 2.54)
+				(name "GPIOA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 25.4 0)
+				(length 2.54)
+				(name "VDD_DIO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 27.94 0)
+				(length 2.54)
+				(name "VBAT_3V3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 15.24 -20.32 180)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 15.24 -20.32 180)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 15.24 0)
+				(length 2.54)
+				(name "RTC_WAKE_UP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -15.24 10.16 0)
+				(length 2.54)
+				(name "RTC_SENSOR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 15.24 -20.32 180)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -12.7 180)
+				(length 2.54)
+				(name "JTAG_TMS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional clock
+				(at 15.24 -15.24 180)
+				(length 2.54)
+				(name "JTAG_TCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -7.62 180)
+				(length 2.54)
+				(name "GPIOC8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -20.32 0)
+				(length 2.54)
+				(name "ANT_GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "ANT_GND"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -15.24 -22.86 0)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "GND"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(symbol "DA16200MOD-AAC4WA32_1_1"
+			(rectangle
+				(start -12.7 30.48)
+				(end 12.7 -25.4)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+	)
 	(symbol "ESP32-PICO-V3-02"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8192,6 +8977,7 @@
 		)
 	)
 	(symbol "RP-SMA_EdgeMount"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -8205,7 +8991,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "RP-SMA_Edge"
 			(at 2.921 0 90)
 			(effects
 				(font
@@ -8213,7 +8999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:RP-SMA-Edge"
+		(property "Footprint" "SparkFun-Connector:RP-SMA_Edge"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -8222,7 +9008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Wireless/Antenna/RPSMA-Connector.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -8232,7 +9018,7 @@
 			)
 		)
 		(property "Description" "Reverse Polarized SMA PCB Edge Mount connector"
-			(at 0 -15.24 0)
+			(at 0 -14.9225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8368,6 +9154,7 @@
 		)
 	)
 	(symbol "RP-SMA_EdgeMount_SMD"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -8381,7 +9168,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "RP-SMA_Edge_SMD"
 			(at 2.921 0 90)
 			(effects
 				(font
@@ -8389,7 +9176,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:RP-SMA-EDGE"
+		(property "Footprint" "SparkFun-Connector:RP-SMA_Edge_SMD"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -8398,7 +9185,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://sparkle.sparkfun.com/sparkle/file_store/parts/15471/8/2020-10-15_12:39:57/SMA-02-269-TGG.pdf"
 			(at 0 -11.43 0)
 			(effects
 				(font
@@ -8408,7 +9195,7 @@
 			)
 		)
 		(property "Description" "Reverse Polarized SMA PCB Edge Mount connector"
-			(at 0 -13.97 0)
+			(at 0 -13.6525 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8558,7 +9345,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "SMA_Edge"
 			(at 3.81 0 90)
 			(effects
 				(font
@@ -8566,7 +9353,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:SMA-Edge"
+		(property "Footprint" "SparkFun-Connector:SMA_Edge"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -8575,7 +9362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.sparkfun.com/datasheets/Wireless/Antenna/SMA-Connector.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -8585,7 +9372,7 @@
 			)
 		)
 		(property "Description" "SMA PCB Edge Mount connector"
-			(at 0 -15.24 0)
+			(at 0 -14.9225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8683,9 +9470,9 @@
 		)
 		(symbol "SMA_EdgeMount_1_1"
 			(pin passive line
-				(at 0 -5.08 90)
+				(at -5.08 0 0)
 				(length 2.54)
-				(name "1"
+				(name "In"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8702,8 +9489,8 @@
 			)
 			(pin passive line
 				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "2"
+				(length 2.54)
+				(name "Ext"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8718,63 +9505,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -5.08 90)
-				(length 2.54) hide
-				(name "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "In"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "SIG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 	)
 	(symbol "SMA_EdgeMount_SMD"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -8788,7 +9522,7 @@
 				)
 			)
 		)
-		(property "Value" "SMA_EdgeMount"
+		(property "Value" "SMA_Edge_SMD"
 			(at 2.921 0 90)
 			(effects
 				(font
@@ -8796,7 +9530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:SMA-Edge-SMD"
+		(property "Footprint" "SparkFun-Connector:SMA_Edge_SMD"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -8805,7 +9539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://sparkle.sparkfun.com/sparkle/file_store/parts/15470/8/2020-10-01_09:03:37/SMA-02-40-2-TGG.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -8815,7 +9549,7 @@
 			)
 		)
 		(property "Description" "SMA PCB Edge Mount connector SMD"
-			(at 0 -15.24 0)
+			(at 0 -14.9225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8951,6 +9685,7 @@
 		)
 	)
 	(symbol "U.FL"
+		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
 		(exclude_from_sim no)
@@ -8991,7 +9726,7 @@
 			)
 		)
 		(property "Description" "SMA PCB Edge Mount connector SMD"
-			(at 0 -15.24 0)
+			(at 0.3175 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
