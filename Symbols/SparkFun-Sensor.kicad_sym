@@ -1220,7 +1220,7 @@
 			)
 		)
 	)
-	(symbol "SEN55"
+	(symbol "SEN55_Connector"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1233,7 +1233,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SEN55"
+		(property "Value" "SEN55_Connector"
 			(at -2.54 5.715 0)
 			(effects
 				(font
@@ -1262,7 +1262,7 @@
 			)
 		)
 		(property "Description" "Environmental Sensor for HVAC and Air Quality Applications "
-			(at 0 0 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1270,7 +1270,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "IC-21278"
+		(property "PROD_ID" "IC-16497"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -1297,7 +1297,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SEN55_0_1"
+		(symbol "SEN55_Connector_0_1"
 			(rectangle
 				(start -6.35 3.81)
 				(end 6.35 -3.81)
@@ -1310,7 +1310,7 @@
 				)
 			)
 		)
-		(symbol "SEN55_1_1"
+		(symbol "SEN55_Connector_1_1"
 			(pin power_in line
 				(at -8.89 2.54 0)
 				(length 2.54)
@@ -1480,7 +1480,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Sensor:SEN5x_Outline"
-			(at -1.905 -8.89 0)
+			(at -1.27 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1490,7 +1490,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/b/0/3/c/0/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf"
-			(at 3.81 -11.43 0)
+			(at 4.445 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1499,7 +1499,16 @@
 			)
 		)
 		(property "Description" "Environmental Sensor for HVAC and Air Quality Applications "
-			(at 0 0 0)
+			(at 0.635 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "COMP-20319"
+			(at 0.635 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
