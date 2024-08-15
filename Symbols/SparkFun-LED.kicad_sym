@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "APA-104-1010"
+	(symbol "APA102_2020-6Pin"
 		(pin_names
 			(offset 0.254)
 		)
@@ -17,7 +17,7 @@
 				)
 			)
 		)
-		(property "Value" "APA-104-1010"
+		(property "Value" "APA102-2020"
 			(at 7.62 -6.35 0)
 			(do_not_autoplace)
 			(effects
@@ -26,7 +26,211 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:APA-104-1010"
+		(property "Footprint" "SparkFun-LED:APA102_2020-6Pin"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/d/c/a/4/2/APA_102-2020-256-6.pdf"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Description" "APA102-2020 SMD 2x2mm 2-Wire Addressable RGB LED (6 pin) "
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "DIO-14111"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun RGB LED DotStar addressable APA102 6-Pin"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "APA102_2020-6Pin_0_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "APA102_2020-6Pin_1_1"
+			(pin output line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "CO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "CI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "DO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "DI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "APA104_1010"
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at -5.08 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "APA104-1010"
+			(at 7.62 -6.35 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-LED:APA104_1010"
 			(at 0 -8.89 0)
 			(effects
 				(font
@@ -64,7 +268,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SparkFun RGB LED NeoPixel addressable WS2812 APA102"
+		(property "ki_keywords" "SparkFun RGB LED NeoPixel addressable WS2812 APA104"
 			(at 0 0 0)
 			(effects
 				(font
@@ -82,7 +286,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "APA-104-1010_0_0"
+		(symbol "APA104_1010_0_0"
 			(text "RGB"
 				(at 2.286 -4.191 0)
 				(effects
@@ -92,7 +296,7 @@
 				)
 			)
 		)
-		(symbol "APA-104-1010_0_1"
+		(symbol "APA104_1010_0_1"
 			(polyline
 				(pts
 					(xy 1.27 -3.556) (xy 1.778 -3.556)
@@ -189,7 +393,7 @@
 				)
 			)
 		)
-		(symbol "APA-104-1010_1_1"
+		(symbol "APA104_1010_1_1"
 			(pin power_in line
 				(at 0 -7.62 90)
 				(length 2.54)
@@ -1502,7 +1706,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric"
+		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric_White"
 			(at 0 -5.08 0)
 			(effects
 				(font
@@ -1859,7 +2063,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812-2020"
+		(property "Footprint" "SparkFun-LED:WS2812_2020"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -2120,7 +2324,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812-5050-4pin"
+		(property "Footprint" "SparkFun-LED:WS2812_5050-4pin"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -2380,7 +2584,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812B-CBI"
+		(property "Footprint" "SparkFun-LED:WS2812B_CBI"
 			(at 0 -10.16 0)
 			(effects
 				(font
