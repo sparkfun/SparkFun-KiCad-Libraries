@@ -1,4 +1,4 @@
-(footprint "Push_SMD_5.2x5.2mm"
+(footprint "Push_SMD_5.2x5.2mm_h1.9mm"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -40,6 +40,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -52,6 +53,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -64,6 +66,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -230,5 +233,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "2da6da5c-2bc6-455d-bd3b-4a7700ad09bd")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Switch/Tactile_Switch_5.2x5.2mm_h1.9mm.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )
