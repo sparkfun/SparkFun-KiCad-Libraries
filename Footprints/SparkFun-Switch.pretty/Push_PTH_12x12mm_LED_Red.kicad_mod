@@ -1,10 +1,10 @@
-(footprint "Push_PTH_12x12mm_LED"
+(footprint "Push_PTH_12x12mm_LED_Red"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(descr "https://www.sparkfun.com/datasheets/Components/General/TSD1265.png")
-	(tags "SparkFun Momentary Switch (Pushbutton)")
+	(tags "SparkFun Momentary Switch (Pushbutton) Illuminated")
 	(property "Reference" "Ref**"
 		(at 0 -5.08 0)
 		(layer "F.Fab")
@@ -516,5 +516,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "726fcbe8-4d6a-4d52-914e-cb3c8e932f17")
+	)
+	(model "${SPARKFUN_3DMODEL_DIR}/Switch/Tactal Switch - THRU(12mmx12mm - Illuminated - Red.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
