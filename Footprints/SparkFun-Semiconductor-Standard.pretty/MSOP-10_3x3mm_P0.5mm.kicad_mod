@@ -1,9 +1,8 @@
-(footprint "MSOP-10"
+(footprint "MSOP-10_3x3mm_P0.5mm"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(descr "<b>10 Lead Platic MSOP</b><p>\nSource: http://www.linear.com .. LT1996")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
 		(at 0 -1.905 0)
@@ -18,7 +17,7 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "MSOP-10"
+	(property "Value" "MSOP-10_3x3mm_P0.5mm"
 		(at 0 2.54 0)
 		(layer "F.Fab")
 		(uuid "b552e139-7d79-4d3f-8088-dbc36a72338a")
@@ -568,5 +567,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "e5c1868b-0388-42b7-b9bb-75780c7f958c")
+	)
+	(model "${SPARKFUN_3DMODEL_DIR}/Semiconductor-Standard/MSOP-10_3x3mm_P0.5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
