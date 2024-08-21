@@ -37,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -49,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,12 +63,13 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(fp_line
 		(start -4 1)
-		(end -4 4.5)
+		(end -4 4.6)
 		(stroke
 			(width 0.2032)
 			(type solid)
@@ -75,8 +78,8 @@
 		(uuid "ac2b7834-00fa-4929-a498-d6cb819d0911")
 	)
 	(fp_line
-		(start -4 4.5)
-		(end -3.2 4.5)
+		(start -4 4.6)
+		(end -3.2 4.6)
 		(stroke
 			(width 0.2032)
 			(type solid)
@@ -95,7 +98,7 @@
 		(uuid "dbf40b5d-4c5b-4a0f-80ca-ef368a204055")
 	)
 	(fp_line
-		(start -3.2 4.5)
+		(start -3.2 4.6)
 		(end -3.2 2)
 		(stroke
 			(width 0.2032)
@@ -126,7 +129,7 @@
 	)
 	(fp_line
 		(start 3.2 2)
-		(end 3.2 4.5)
+		(end 3.2 4.6)
 		(stroke
 			(width 0.2032)
 			(type solid)
@@ -135,8 +138,8 @@
 		(uuid "4e1c72bb-313a-4441-8e3c-2380ee66d06e")
 	)
 	(fp_line
-		(start 3.2 4.5)
-		(end 4 4.5)
+		(start 3.2 4.6)
+		(end 4 4.6)
 		(stroke
 			(width 0.2032)
 			(type solid)
@@ -145,7 +148,7 @@
 		(uuid "12477be4-81bc-4dc4-a415-3c34a066c63c")
 	)
 	(fp_line
-		(start 4 4.5)
+		(start 4 4.6)
 		(end 4 1)
 		(stroke
 			(width 0.2032)
@@ -196,5 +199,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "df075972-ab7d-471e-bff5-56822ad88c2e")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/JST - PH - SMD (R) - 2Pin - 2.00mm Black.step"
+		(offset
+			(xyz 0 3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
 	)
 )
