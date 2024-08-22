@@ -20482,7 +20482,7 @@
 			)
 		)
 	)
-	(symbol "Debug-Cortex-2x5-SMD-Unshrouded"
+	(symbol "Debug-Cortex-2x5_P1.27mm"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -20504,7 +20504,7 @@
 				(justify bottom)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:2x5_1.27mm_SMD_Unshrouded"
+		(property "Footprint" "SparkFun-Connector:2x05_P1.27mm"
 			(at 0 -8.89 0)
 			(effects
 				(font
@@ -20513,7 +20513,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn.sparkfun.com/assets/f/7/4/1/5/21200.pdf"
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/3/0/b/4/0/00140.pdf"
 			(at 0 -11.43 0)
 			(effects
 				(font
@@ -20531,8 +20531,17 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CONN-15353"
+		(property "PROD_ID" "~"
 			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SF_ID" "PRT-15362"
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20549,7 +20558,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "Debug-Cortex-2x5-SMD-Unshrouded_1_0"
+		(symbol "Debug-Cortex-2x5_P1.27mm_1_0"
 			(pin power_in line
 				(at -10.16 5.08 0)
 				(length 2.54)
@@ -20695,7 +20704,234 @@
 				)
 			)
 		)
-		(symbol "Debug-Cortex-2x5-SMD-Unshrouded_1_1"
+		(symbol "Debug-Cortex-2x5_P1.27mm_1_1"
+			(rectangle
+				(start -7.62 7.62)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+	)
+	(symbol "Debug-Cortex-2x5_P1.27mm-SMD-Unshrouded"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0 8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "SWD"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Footprint" "SparkFun-Connector:2x5_1.27mm_SMD_Unshrouded"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/f/7/4/1/5/21200.pdf"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Cortex Debug Connector 10 pin"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "CONN-15353"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun swd arm cortex debug debugger 2x5"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Debug-Cortex-2x5_P1.27mm-SMD-Unshrouded_1_0"
+			(pin power_in line
+				(at -10.16 5.08 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 10.16 5.08 180)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SWDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SWDCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SWO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Debug-Cortex-2x5_P1.27mm-SMD-Unshrouded_1_1"
 			(rectangle
 				(start -7.62 7.62)
 				(end 7.62 -5.08)
