@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun")
+	(tags "SparkFun WSON")
 	(property "Reference" "REF**"
 		(at 0 -3.175 0)
 		(layer "F.Fab")
@@ -354,5 +354,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "beffa0c6-287d-483a-847e-8de51ac39585")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )
