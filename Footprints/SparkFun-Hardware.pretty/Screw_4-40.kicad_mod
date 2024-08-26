@@ -1,9 +1,9 @@
-(footprint "Standoff"
+(footprint "Screw_4-40"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun")
+	(tags "SparkFun 440 Screw")
 	(property "Reference" "REF**"
 		(at 0 -2.032 0)
 		(layer "F.Fab")
@@ -16,7 +16,7 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "Standoff"
+	(property "Value" "Screw_4-40"
 		(at 0 2.032 0)
 		(layer "F.Fab")
 		(uuid "2f3e0527-c2a0-41cc-a226-47818eab181b")
@@ -77,9 +77,20 @@
 	)
 	(pad "" np_thru_hole circle
 		(at 0 0)
-		(size 3.302 3.302)
-		(drill 3.302)
+		(size 2.9 2.9)
+		(drill 2.9)
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
+	)
+	(model "${SPARKFUN_3DMODEL_DIR}/Hardware/Screw_4-40.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
 	)
 )
