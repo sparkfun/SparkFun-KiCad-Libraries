@@ -40,15 +40,16 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://www.olander.com/items/4C37PPMBP"
+		(at 0 3.25 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "aefdd260-c12a-40f1-9f50-f05343f3926f")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -68,12 +69,23 @@
 		(center 0 0)
 		(end 2.794 0)
 		(stroke
-			(width 0.127)
+			(width 0.05)
 			(type solid)
 		)
 		(fill none)
 		(layer "F.CrtYd")
 		(uuid "782e1303-f664-4d84-8614-72db80e9927d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.794 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "daaed8c4-e0f4-49b8-b138-b62096e7f4ff")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 0)
@@ -82,7 +94,7 @@
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
 	)
-	(model "${SPARKFUN_3DMODEL_DIR}/Hardware/Screw_4-40.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Hardware/Screw_4-40.step"
 		(offset
 			(xyz 0 0 0)
 		)

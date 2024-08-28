@@ -68,7 +68,7 @@
 		(center 0 0)
 		(end 2.794 0)
 		(stroke
-			(width 0.127)
+			(width 0.05)
 			(type solid)
 		)
 		(fill none)
@@ -77,9 +77,33 @@
 	)
 	(pad "" np_thru_hole circle
 		(at 0 0)
-		(size 3.302 3.302)
-		(drill 3.302)
+		(size 3.1 3.1)
+		(drill 3.1)
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Hardware/Screw_4-40.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Hardware/Screw_M3.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
 	)
 )
