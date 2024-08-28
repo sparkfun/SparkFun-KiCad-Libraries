@@ -65,47 +65,16 @@
 			)
 		)
 	)
-	(fp_line
-		(start 2.54 -1.016)
-		(end 0 -1.016)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 3.81 1.27)
 		(stroke
 			(width 0.05)
 			(type default)
 		)
+		(fill none)
 		(layer "F.CrtYd")
-		(uuid "5cac51ff-5349-4816-b85d-65c75c6f7ce5")
-	)
-	(fp_line
-		(start 2.54 1.016)
-		(end 0 1.016)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "7e7c597a-51b9-4658-8dc9-d4c5eaf2961f")
-	)
-	(fp_arc
-		(start 0 1.016)
-		(mid -1.016 0)
-		(end 0 -1.016)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "442b38c2-365b-4860-a9a3-e02fbb05cf4b")
-	)
-	(fp_arc
-		(start 2.54 -1.016)
-		(mid 3.556 0)
-		(end 2.54 1.016)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "454a9f8c-bbb7-4847-8613-e5c92652e44f")
+		(uuid "611638a1-169f-4764-843e-5663139eb815")
 	)
 	(fp_poly
 		(pts
@@ -150,5 +119,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "8f8473b9-d553-43fd-8c9f-97db8bf758e3")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/PRPC040SAAN-RC.STEP"
+		(offset
+			(xyz 0 -0.1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )
