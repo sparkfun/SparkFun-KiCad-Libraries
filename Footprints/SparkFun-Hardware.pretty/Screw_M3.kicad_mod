@@ -1,0 +1,108 @@
+(footprint "Screw_M3"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun Metric Screw")
+	(property "Reference" "REF**"
+		(at 0 -2.032 0)
+		(layer "F.Fab")
+		(uuid "fe4d79d2-276a-4ace-be6a-96fe67c00535")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Screw_M3"
+		(at 0 2.032 0)
+		(layer "F.Fab")
+		(uuid "2f3e0527-c2a0-41cc-a226-47818eab181b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05d2e165-b789-43fc-96db-796fa3d81209")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.olander.com/items/.3C5PPMS"
+		(at 0 3.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aefdd260-c12a-40f1-9f50-f05343f3926f")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97880203-526e-4059-aaa5-e9f7ce352bc1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.794 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "782e1303-f664-4d84-8614-72db80e9927d")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.8 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "5f2fe651-042e-4924-80cd-bf82adee545e")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 3.1 3.1)
+		(drill 3.1)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Hardware/Screw_M3.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+)

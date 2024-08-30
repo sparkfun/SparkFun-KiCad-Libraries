@@ -38,6 +38,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -50,6 +51,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -62,6 +64,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -972,6 +975,111 @@
 		(uuid "5728b2af-8370-4e44-b864-dd04c65da295")
 	)
 	(fp_line
+		(start -5.08 0)
+		(end -3.6 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c19b1109-8d2b-427e-9a6f-0b645203baed")
+	)
+	(fp_line
+		(start -3.6 0)
+		(end -3.6 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d7fd3d39-0476-4018-aea4-f3f006e7999d")
+	)
+	(fp_line
+		(start -2.6 7)
+		(end 2.6 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4689990b-ca91-4e39-89fc-2bac504b05da")
+	)
+	(fp_line
+		(start 3.6 0)
+		(end 5.08 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c6f845b8-66b6-4c20-a101-d4922d62b23a")
+	)
+	(fp_line
+		(start 3.6 7)
+		(end 3.6 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "fa2fe9e1-069c-4c20-bdfe-44da5726e00d")
+	)
+	(fp_arc
+		(start -3.1 7.5)
+		(mid -3.453553 7.353553)
+		(end -3.6 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4ff10b12-2e5c-4fa1-a216-a16f291d5a09")
+	)
+	(fp_arc
+		(start -2.6 7)
+		(mid -2.746447 7.353553)
+		(end -3.1 7.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "fe74f3ef-2783-480f-bf5b-4ee60697315e")
+	)
+	(fp_arc
+		(start 3.1 7.5)
+		(mid 2.746447 7.353553)
+		(end 2.6 7)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c25ca797-6a60-45f6-a580-b08fd44ca013")
+	)
+	(fp_arc
+		(start 3.6 7)
+		(mid 3.453553 7.353553)
+		(end 3.1 7.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "6306f8c9-3354-41b2-b8f5-0937899f914c")
+	)
+	(fp_rect
+		(start -5.5 -0.5)
+		(end 5.5 9.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "bd6db412-7add-4b68-a276-f33dc54d979b")
+	)
+	(fp_line
 		(start -4.5 0)
 		(end -2.667 0)
 		(stroke
@@ -990,6 +1098,16 @@
 		)
 		(layer "F.Fab")
 		(uuid "227defd6-e368-4af5-b82a-c5d48e2a8c15")
+	)
+	(fp_line
+		(start -3.5 7)
+		(end -3.5 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "2f3a113f-1c6f-4529-9770-317709ca92df")
 	)
 	(fp_line
 		(start -3.175 -5.0094)
@@ -1522,6 +1640,16 @@
 		(uuid "03ba890b-91b6-4747-b45b-96434e80a954")
 	)
 	(fp_line
+		(start 3.5 0)
+		(end 3.5 7)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9d1912ae-893d-48c8-aab6-6fdc84260194")
+	)
+	(fp_line
 		(start 4.5 0)
 		(end 4.5 7)
 		(stroke
@@ -1553,7 +1681,7 @@
 		(layer "F.Fab")
 		(uuid "ae2fc1cb-2b69-48f9-80dd-91ba09528d55")
 	)
-	(fp_text user "Suggested\nCutout Polygon\nFor Any Internal\nPower Layers"
+	(fp_text user "Suggested \nCutout Polygon \nFor Any Internal\n Power Layers"
 		(at 0 5.08 0)
 		(layer "Cmts.User")
 		(uuid "1d3b8343-a543-4b74-b394-b97fa0f462e8")
@@ -1564,7 +1692,41 @@
 			)
 		)
 	)
-	(pad "GND@0" smd rect
+	(fp_text user "Route"
+		(at 0 2 0)
+		(unlocked yes)
+		(layer "Edge.Cuts")
+		(uuid "2297b20a-7513-406e-8644-146aac5d4e41")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(fp_text user "Out"
+		(at 0 3.1 0)
+		(unlocked yes)
+		(layer "Edge.Cuts")
+		(uuid "ea3609ac-c982-4f78-8f1c-79b7e52d0dbd")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 8.1)
+		(size 0.9 2.2)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "870cf470-b3a3-4d16-8bd9-b9cc29250bfb")
+	)
+	(pad "2" smd rect
 		(at -4.25 3.5)
 		(size 1.15 7)
 		(layers "F.Cu" "F.Mask")
@@ -1572,20 +1734,12 @@
 		(thermal_bridge_angle 0)
 		(uuid "2ab0869f-c2d8-48c0-90ae-80e7558e3da8")
 	)
-	(pad "GND@1" smd rect
+	(pad "2" smd rect
 		(at 4.25 3.5)
 		(size 1.15 7)
 		(layers "F.Cu" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "c932df91-74f8-44c5-8cbd-80bc96a7468f")
-	)
-	(pad "SIG" smd rect
-		(at 0 8.1)
-		(size 0.9 2.2)
-		(layers "F.Cu" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "870cf470-b3a3-4d16-8bd9-b9cc29250bfb")
 	)
 )

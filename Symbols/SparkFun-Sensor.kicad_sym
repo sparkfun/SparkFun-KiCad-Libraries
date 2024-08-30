@@ -2,6 +2,538 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
+	(symbol "MPU-6050"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -11.43 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MPU-6050"
+			(at 7.62 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:QFN-24-1EP_4x4mm_P0.5mm"
+			(at 0 -20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://invensense.tdk.com/wp-content/uploads/2015/02/MPU-6000-Datasheet1.pdf"
+			(at 0 -25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "InvenSense 6-Axis Motion Sensor, Gyroscope, Accelerometer, I2C"
+			(at 0 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "IC-..."
+			(at 0 -27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "mems IMU"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*QFN*4x4mm*P0.5mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MPU-6050_0_0"
+			(text ""
+				(at 12.7 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+		(symbol "MPU-6050_0_1"
+			(rectangle
+				(start -12.7 13.97)
+				(end 12.7 -13.97)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MPU-6050_1_1"
+			(pin input clock
+				(at -17.78 -7.62 0)
+				(length 5.08)
+				(name "CLKIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -7.62 180)
+				(length 5.08)
+				(name "REGOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 -5.08 0)
+				(length 5.08)
+				(name "FSYNC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 17.78 7.62 180)
+				(length 5.08)
+				(name "INT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 17.78 270)
+				(length 3.81)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 -10.16 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 12.7 180)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 10.16 180)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 5.08 180)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 -10.16 180)
+				(length 2.54) hide
+				(name "RESV"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 12.7 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -5.08 180)
+				(length 5.08)
+				(name "CPOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 -2.54 180)
+				(length 2.54) hide
+				(name "RESV"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 12.7 -12.7 180)
+				(length 2.54) hide
+				(name "RESV"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 5.08 0)
+				(length 5.08)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -17.78 7.62 0)
+				(length 5.08)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 10.16 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 0 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -12.7 -2.54 0)
+				(length 2.54) hide
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 17.78 2.54 180)
+				(length 5.08)
+				(name "AUX_DA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output clock
+				(at 17.78 0 180)
+				(length 5.08)
+				(name "AUX_CL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 17.78 270)
+				(length 3.81)
+				(name "VLOGIC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 2.54 0)
+				(length 5.08)
+				(name "AD0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "MQ-4 Gas Sensor"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -44,7 +576,7 @@
 			)
 		)
 		(property "Description" "MQ4 Flammable Gas Sensor"
-			(at 0 0 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -245,7 +777,7 @@
 			)
 		)
 		(property "Description" "Toxic Gas Sensor"
-			(at 0 0 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -446,7 +978,7 @@
 			)
 		)
 		(property "Description" "MEMS acoustic CO2 sensor"
-			(at 0 0 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -791,7 +1323,7 @@
 			)
 		)
 		(property "Description" "Photoacoustic CO2 Sensor"
-			(at 0 0 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1220,7 +1752,7 @@
 			)
 		)
 	)
-	(symbol "SEN55"
+	(symbol "SEN55_Connector"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1233,7 +1765,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SEN55"
+		(property "Value" "SEN55_Connector"
 			(at -2.54 5.715 0)
 			(effects
 				(font
@@ -1262,7 +1794,7 @@
 			)
 		)
 		(property "Description" "Environmental Sensor for HVAC and Air Quality Applications "
-			(at 0 0 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1270,7 +1802,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "IC-21278"
+		(property "PROD_ID" "IC-16497"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -1297,7 +1829,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SEN55_0_1"
+		(symbol "SEN55_Connector_0_1"
 			(rectangle
 				(start -6.35 3.81)
 				(end 6.35 -3.81)
@@ -1310,7 +1842,7 @@
 				)
 			)
 		)
-		(symbol "SEN55_1_1"
+		(symbol "SEN55_Connector_1_1"
 			(pin power_in line
 				(at -8.89 2.54 0)
 				(length 2.54)
@@ -1480,7 +2012,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Sensor:SEN5x_Outline"
-			(at -1.905 -8.89 0)
+			(at -1.27 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1490,7 +2022,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/b/0/3/c/0/Sensirion_Datasheet_Environmental_Node_SEN5x.pdf"
-			(at 3.81 -11.43 0)
+			(at 4.445 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1499,7 +2031,16 @@
 			)
 		)
 		(property "Description" "Environmental Sensor for HVAC and Air Quality Applications "
-			(at 0 0 0)
+			(at 0.635 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "COMP-20319"
+			(at 0.635 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1529,6 +2070,235 @@
 			(rectangle
 				(start -6.35 3.81)
 				(end 6.35 -3.81)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+	)
+	(symbol "SPH0641LM4H-1_Microphone"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "MK"
+			(at -10.414 1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SPH0641LM4H-1"
+			(at -17.526 -1.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Sensor:SPH0641LM4H-1_Microphone"
+			(at 1.016 -17.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0641LM4H-1.pdf"
+			(at 0.508 -19.812 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SPH0641LM4H-1 Microphone  A miniature, high-performance, low power, bottom port silicon digital microphone with a single bit PDM output."
+			(at -0.762 -22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "IC-14361"
+			(at -1.016 -25.654 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun MEMS Microphone Mic Knowles PDM Digital SPH0641LM4H-1 SPH0641"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SPH0641LM4H-1_Microphone_1_0"
+			(circle
+				(center -5.08 0)
+				(radius 2.2144)
+				(stroke
+					(width 0.3048)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -7.2586 -3.1116) (xy -7.2586 2.9844)
+				)
+				(stroke
+					(width 0.3048)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.8056 0.5791) (xy -1.2935 0.5781)
+				)
+				(stroke
+					(width 0.3048)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.7855 -0.4639) (xy -1.2811 -0.4639)
+				)
+				(stroke
+					(width 0.3048)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "MIC"
+				(at -7.112 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(thickness 0.3023)
+						(bold yes)
+					)
+					(justify left bottom)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "DATA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SEL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "SPH0641LM4H-1_Microphone_1_1"
+			(rectangle
+				(start -8.89 5.08)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)

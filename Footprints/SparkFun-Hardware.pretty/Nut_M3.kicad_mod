@@ -1,0 +1,156 @@
+(footprint "Nut_M3"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -2.032 0)
+		(layer "F.Fab")
+		(uuid "fe4d79d2-276a-4ace-be6a-96fe67c00535")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Nut_M3"
+		(at 0 2.032 0)
+		(layer "F.Fab")
+		(uuid "2f3e0527-c2a0-41cc-a226-47818eab181b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "05d2e165-b789-43fc-96db-796fa3d81209")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aefdd260-c12a-40f1-9f50-f05343f3926f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "97880203-526e-4059-aaa5-e9f7ce352bc1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.259601 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "782e1303-f664-4d84-8614-72db80e9927d")
+	)
+	(fp_line
+		(start -3.125 0)
+		(end -1.62 -2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "1e1cb7e3-3b0f-486f-af8d-f93851225fc1")
+	)
+	(fp_line
+		(start -3.125 0)
+		(end -1.62 2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "8f9896ad-f9ba-4de6-99db-58f7b8bc75e6")
+	)
+	(fp_line
+		(start -1.62 -2.75)
+		(end 1.62 -2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "5865d27a-5e0f-45cb-b8c1-8541d59fdadb")
+	)
+	(fp_line
+		(start -1.62 2.75)
+		(end 1.62 2.75)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "fa40acd9-903a-496f-bed0-d1c2f2ec926d")
+	)
+	(fp_line
+		(start 1.62 -2.75)
+		(end 3.125 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "43d0b510-d672-4732-8570-28638c6b2de1")
+	)
+	(fp_line
+		(start 1.62 2.75)
+		(end 3.125 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "96b0805a-9af0-4c0a-b959-bc572ef23c16")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 3.1 3.1)
+		(drill 3.1)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Hardware/Nut_M3.step"
+		(offset
+			(xyz 0 0 1.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+)

@@ -35,6 +35,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -47,6 +48,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -59,8 +61,20 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 3.81 1.27)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "611638a1-169f-4764-843e-5663139eb815")
 	)
 	(fp_poly
 		(pts
@@ -105,5 +119,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "8f8473b9-d553-43fd-8c9f-97db8bf758e3")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/PRPC040SAAN-RC.STEP"
+		(offset
+			(xyz 0 -0.1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )

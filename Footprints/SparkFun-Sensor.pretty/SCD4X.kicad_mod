@@ -1,4 +1,4 @@
-(footprint "SCD4X"
+(footprint "SCD4x"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -434,5 +434,16 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "90144455-25b3-49ff-b524-3362c54c1b22")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Sensor/SCD4x.step"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
 	)
 )

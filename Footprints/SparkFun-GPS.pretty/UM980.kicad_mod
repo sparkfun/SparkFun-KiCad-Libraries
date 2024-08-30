@@ -7,7 +7,7 @@
 	(property "Reference" "U1"
 		(at 0 -10 0)
 		(unlocked yes)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "1287f7a7-46b7-4cd6-bb75-4f2f0a4564d3")
 		(effects
 			(font
@@ -39,6 +39,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -51,6 +52,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -63,6 +65,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -802,5 +805,16 @@
 		(size 1.1 1.1)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "17cf4eb5-c7e4-494c-aef6-b919848d3442")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/GPS/UM980.stp"
+		(offset
+			(xyz 0 0 0.4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
 	)
 )

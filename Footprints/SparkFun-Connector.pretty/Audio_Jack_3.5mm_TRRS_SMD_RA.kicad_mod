@@ -3,9 +3,9 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun")
+	(tags "SparkFun Audio Jack 3.mm TRRS")
 	(property "Reference" "REF**"
-		(at 3.175 -0.127 0)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "73f2a43b-4248-4a8f-abb4-c25f048b4b80")
 		(effects
@@ -13,11 +13,10 @@
 				(size 0.5 0.5)
 				(thickness 0.1)
 			)
-			(justify left bottom)
 		)
 	)
 	(property "Value" "Audio_Jack_3.5mm_TRRS_SMD_RA"
-		(at 3.175 1.397 0)
+		(at 0 1.3 0)
 		(layer "F.Fab")
 		(uuid "74b82bbd-ed97-42e9-a0d0-a35628addcd5")
 		(effects
@@ -25,11 +24,10 @@
 				(size 0.5 0.5)
 				(thickness 0.1)
 			)
-			(justify left bottom)
 		)
 	)
 	(property "Footprint" ""
-		(at 0 0 0)
+		(at -5.1 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -40,20 +38,21 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://cdn.sparkfun.com/datasheets/Prototyping/20153.pdf"
+		(at 0 5.9 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "e22299e2-9816-43f0-bd95-56f76138513c")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at -5.1 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -65,8 +64,8 @@
 		)
 	)
 	(fp_line
-		(start 0.5 -3.3)
-		(end 2.4 -3.3)
+		(start -4.6 -3.3)
+		(end -2.7 -3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -75,8 +74,8 @@
 		(uuid "8649bf45-25a3-4242-a0f2-f56482c71626")
 	)
 	(fp_line
-		(start 0.5 3.3)
-		(end 10.5 3.3)
+		(start -4.6 3.3)
+		(end 5.4 3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -85,8 +84,8 @@
 		(uuid "791e62b6-94d0-4fc7-8e00-21abaedc11b6")
 	)
 	(fp_line
-		(start 4 -3.3)
-		(end 5.4 -3.3)
+		(start -1.1 -3.3)
+		(end 0.3 -3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -95,8 +94,8 @@
 		(uuid "aec9cd4d-b263-480b-94e2-d3fe19f40d4a")
 	)
 	(fp_line
-		(start 7 -3.3)
-		(end 9.4 -3.3)
+		(start 1.9 -3.3)
+		(end 4.3 -3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -105,8 +104,8 @@
 		(uuid "ed6db314-90be-47b0-b956-7e4fb3f1e43a")
 	)
 	(fp_line
-		(start 12.2 -3.3)
-		(end 11 -3.3)
+		(start 7.1 -3.3)
+		(end 5.9 -3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -115,8 +114,8 @@
 		(uuid "b4e4acd9-c4a2-43ed-8c24-508b15a2118d")
 	)
 	(fp_line
-		(start 12.2 -3.3)
-		(end 12.2 3.3)
+		(start 7.1 -3.3)
+		(end 7.1 3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -125,8 +124,8 @@
 		(uuid "2d58fb75-1daa-4ab3-9848-5e8ed010a11b")
 	)
 	(fp_line
-		(start -2 -2.8)
-		(end -2 2.8)
+		(start -7.1 -2.8)
+		(end -7.1 2.8)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -135,8 +134,8 @@
 		(uuid "9c818f4d-10f6-4e88-b8af-f40a8f415e06")
 	)
 	(fp_line
-		(start -2 2.8)
-		(end 0 2.8)
+		(start -7.1 2.8)
+		(end -5.1 2.8)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -145,8 +144,8 @@
 		(uuid "203f7b1c-2d1a-495b-bd05-c9c61f6ba5c9")
 	)
 	(fp_line
-		(start 0 -3.3)
-		(end 0 -2.8)
+		(start -5.1 -3.3)
+		(end -5.1 -2.8)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -155,8 +154,8 @@
 		(uuid "e58f045c-da70-46ea-97a8-2c9059dbb662")
 	)
 	(fp_line
-		(start 0 -2.8)
-		(end -2 -2.8)
+		(start -5.1 -2.8)
+		(end -7.1 -2.8)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -165,8 +164,8 @@
 		(uuid "38695fbd-b025-405c-bb10-a85aa0827171")
 	)
 	(fp_line
-		(start 0 -2.8)
-		(end 0 2.8)
+		(start -5.1 -2.8)
+		(end -5.1 2.8)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -175,8 +174,8 @@
 		(uuid "4e6dac6b-96a1-4718-8720-36462f63e3bd")
 	)
 	(fp_line
-		(start 0 2.8)
-		(end 0 3.3)
+		(start -5.1 2.8)
+		(end -5.1 3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -185,8 +184,8 @@
 		(uuid "a1df5f92-f0fd-4de9-a690-5b1066feb0fe")
 	)
 	(fp_line
-		(start 0 3.3)
-		(end 0.5 3.3)
+		(start -5.1 3.3)
+		(end -4.6 3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -195,8 +194,8 @@
 		(uuid "9bff05e7-fca2-4ff5-b342-83b2e5250654")
 	)
 	(fp_line
-		(start 0.5 -3.3)
-		(end 0 -3.3)
+		(start -4.6 -3.3)
+		(end -5.1 -3.3)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -205,45 +204,45 @@
 		(uuid "9bdb71e3-29bb-4592-979e-326b1b10bb15")
 	)
 	(pad "" np_thru_hole circle
-		(at 1.6 0)
+		(at -3.5 0)
 		(size 1.2 1.2)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(uuid "b8b05029-2f7f-40ed-87e5-dab3d3234edb")
 	)
 	(pad "" np_thru_hole circle
-		(at 8.6 0)
+		(at 3.5 0)
 		(size 1.2 1.2)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(uuid "9d1416f0-46bf-41d4-aad9-390b39d9283e")
 	)
-	(pad "EARTH" smd rect
-		(at 11.3 3.25)
-		(size 1.2 2.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "bba0f236-7396-479e-9a07-835d012e3c82")
-	)
-	(pad "RING1" smd rect
-		(at 6.2 -3.25)
+	(pad "R1" smd rect
+		(at 1.1 -3.25)
 		(size 1.2 2.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "0086ee87-5d18-4770-8d7d-558ea9b4130b")
 	)
-	(pad "RING2" smd rect
-		(at 3.2 -3.25 180)
+	(pad "R2" smd rect
+		(at -1.9 -3.25 180)
 		(size 1.2 2.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "a1e764dc-6f58-4802-ab4a-d566fceeaafc")
 	)
-	(pad "TIP" smd rect
-		(at 10.2 -3.25)
+	(pad "S" smd rect
+		(at 6.2 3.25)
+		(size 1.2 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "bba0f236-7396-479e-9a07-835d012e3c82")
+	)
+	(pad "T" smd rect
+		(at 5.1 -3.25)
 		(size 1.2 2.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)

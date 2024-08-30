@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "APA-104-1010"
+	(symbol "APA102_2020-6Pin"
 		(pin_names
 			(offset 0.254)
 		)
@@ -17,7 +17,7 @@
 				)
 			)
 		)
-		(property "Value" "APA-104-1010"
+		(property "Value" "APA102-2020"
 			(at 7.62 -6.35 0)
 			(do_not_autoplace)
 			(effects
@@ -26,37 +26,28 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:APA-104-1010"
-			(at -13.97 -8.89 0)
+		(property "Footprint" "SparkFun-LED:APA102_2020-6Pin"
+			(at 0 -8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at -31.75 -10.795 0)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/d/c/a/4/2/APA_102-2020-256-6.pdf"
+			(at 0 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
+				(justify top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller "
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" ""
-			(at 0 -13.97 0)
+		(property "Description" "APA102-2020 SMD 2x2mm 2-Wire Addressable RGB LED (6 pin) "
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64,7 +55,16 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SparkFun RGB LED NeoPixel addressable WS2812 APA102"
+		(property "PROD_ID" "DIO-14111"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun RGB LED DotStar addressable APA102 6-Pin"
 			(at 0 0 0)
 			(effects
 				(font
@@ -82,7 +82,211 @@
 				(hide yes)
 			)
 		)
-		(symbol "APA-104-1010_0_0"
+		(symbol "APA102_2020-6Pin_0_1"
+			(rectangle
+				(start -5.08 5.08)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "APA102_2020-6Pin_1_1"
+			(pin output line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "CO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "CI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name "DO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "DI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "APA104_1010"
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at -5.08 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "APA104-1010"
+			(at 7.62 -6.35 0)
+			(do_not_autoplace)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-LED:APA104_1010"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/3/c/c/0/9/SparkFun_APA-104-1010__5mA__LED_Datasheet.pdf"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller "
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "LED-21408"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun RGB LED NeoPixel addressable WS2812 APA104"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "APA104_1010_0_0"
 			(text "RGB"
 				(at 2.286 -4.191 0)
 				(effects
@@ -92,7 +296,7 @@
 				)
 			)
 		)
-		(symbol "APA-104-1010_0_1"
+		(symbol "APA104_1010_0_1"
 			(polyline
 				(pts
 					(xy 1.27 -3.556) (xy 1.778 -3.556)
@@ -189,7 +393,7 @@
 				)
 			)
 		)
-		(symbol "APA-104-1010_1_1"
+		(symbol "APA104_1010_1_1"
 			(pin power_in line
 				(at 0 -7.62 90)
 				(length 2.54)
@@ -264,6 +468,509 @@
 			)
 		)
 	)
+	(symbol "CBI_LED_Triple_3mm_PTH_YGR"
+		(pin_numbers hide)
+		(pin_names hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 5.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CBI_LED_3mm_YGR"
+			(at 0 -5.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-LED:CBI_LED_Triple_3mm_PTH"
+			(at 0 -8.255 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/2/244/SSF-LXH340LYGID-1176757.pdf"
+			(at 0 -13.335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Triple CBI LED, 3mm dia., PTH, Yellow-Green-Red"
+			(at 0 -10.795 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "DIO-19990"
+			(at 0 -15.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun CBI LED RYG"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CBI_LED_Triple_3mm_PTH_YGR_0_1"
+			(polyline
+				(pts
+					(xy 0.3175 -2.54) (xy 2.54 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.3175 -1.5875) (xy 0.3175 -3.4925)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.3175 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.3175 0.9525) (xy 0.3175 -0.9525)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.3175 2.54) (xy 2.54 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.3175 3.4925) (xy 0.3175 1.5875)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -3.4925) (xy 1.27 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -2.8575) (xy 1.905 -3.4925)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -0.9525) (xy 1.27 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -0.3175) (xy 1.905 -0.9525)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.5875) (xy 1.27 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 2.2225) (xy 1.905 1.5875)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -3.4925) (xy 1.5875 -3.4925)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -3.4925) (xy 1.905 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -0.9525) (xy 1.5875 -0.9525)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 -0.9525) (xy 1.905 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 1.5875) (xy 1.5875 1.5875)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.905 1.5875) (xy 1.905 1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 -2.8575) (xy 1.27 -3.4925) (xy 0.9525 -3.4925)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 -0.3175) (xy 1.27 -0.9525) (xy 0.9525 -0.9525)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.635 2.2225) (xy 1.27 1.5875) (xy 0.9525 1.5875)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -2.54) (xy -1.27 -2.54) (xy -1.27 -1.5875) (xy 0.3175 -2.54) (xy -1.27 -3.4925) (xy -1.27 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -1.27 0) (xy -1.27 0.9525) (xy 0.3175 0) (xy -1.27 -0.9525) (xy -1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 2.54) (xy -1.27 2.54) (xy -1.27 3.4925) (xy 0.3175 2.54) (xy -1.27 1.5875) (xy -1.27 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CBI_LED_Triple_3mm_PTH_YGR_1_1"
+			(rectangle
+				(start -2.54 4.445)
+				(end 2.54 -4.445)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "G"
+				(at 1.27 0.635 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "R"
+				(at 1.27 -1.905 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(text "Y"
+				(at 1.27 3.175 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(name "ANODE_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "ANODE_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "ANODE_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "ANODE_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 2.54)
+				(name "ANODE_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "ANODE_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "CATHODE_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CATHODE_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "CATHODE_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CATHODE_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 -2.54 180)
+				(length 2.54)
+				(name "CATHODE_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "CATHODE_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "LED"
 		(pin_numbers hide)
 		(pin_names
@@ -306,7 +1013,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -465,8 +1172,8 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric"
-			(at 1.27 -5.08 0)
+		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric_Blue"
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -475,7 +1182,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Rohm%20PDFs/SMLE12_Series_Rev2.0_2007.pdf"
-			(at 2.54 -10.16 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -484,7 +1191,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -493,7 +1200,7 @@
 			)
 		)
 		(property "PROD_ID" "DIO-08575"
-			(at -0.254 -7.874 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -643,7 +1350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric"
+		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric_Green"
 			(at 0 -5.08 0)
 			(effects
 				(font
@@ -662,7 +1369,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -671,7 +1378,7 @@
 			)
 		)
 		(property "PROD_ID" "DIO-00821"
-			(at -0.254 -7.874 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -821,8 +1528,8 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric"
-			(at 0 -6.35 0)
+		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric_Red"
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,7 +1538,7 @@
 			)
 		)
 		(property "Datasheet" "https://docs.broadcom.com/docs/AV02-0551EN"
-			(at -1.27 -8.89 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -840,7 +1547,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -849,7 +1556,7 @@
 			)
 		)
 		(property "PROD_ID" "DIO-17976"
-			(at 0 -4.572 0)
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -999,7 +1706,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric"
+		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric_White"
 			(at 0 -5.08 0)
 			(effects
 				(font
@@ -1018,7 +1725,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1027,7 +1734,7 @@
 			)
 		)
 		(property "PROD_ID" "DIO-09004"
-			(at -0.254 -7.874 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1177,8 +1884,8 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric"
-			(at 0 -4.826 0)
+		(property "Footprint" "SparkFun-LED:LED_0603_1608Metric_Yellow"
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1894,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SYCK.pdf"
-			(at 0 -8.89 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1196,7 +1903,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 0 0 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1205,7 +1912,7 @@
 			)
 		)
 		(property "PROD_ID" "DIO-09003"
-			(at 0 -6.858 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1356,28 +2063,26 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812-2020"
-			(at -11.43 -10.16 0)
+		(property "Footprint" "SparkFun-LED:WS2812_2020"
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/e/1/0/f/b/WS2812C-2020_V1.2_EN_19112716191654.pdf"
-			(at -34.29 -14.605 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 0 0 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1619,28 +2324,26 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812-5050-4pin"
-			(at -16.51 -8.89 0)
+		(property "Footprint" "SparkFun-LED:WS2812_5050-4pin"
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"
-			(at -33.02 -10.795 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 0 0 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1649,7 +2352,7 @@
 			)
 		)
 		(property "PROD_ID" "DIO-12503"
-			(at 0 -13.97 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1881,28 +2584,26 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-LED:WS2812B-CBI"
-			(at -13.97 -8.89 0)
+		(property "Footprint" "SparkFun-LED:WS2812B_CBI"
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"
-			(at -31.75 -10.795 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 0 0 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1911,7 +2612,7 @@
 			)
 		)
 		(property "PROD_ID" "LED-20286"
-			(at 0 -13.97 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
