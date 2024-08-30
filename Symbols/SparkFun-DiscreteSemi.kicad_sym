@@ -600,7 +600,7 @@
 		(symbol "D_Schottky_0.12A_40V_0.37V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -612,7 +612,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -624,7 +624,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -637,8 +637,8 @@
 		)
 		(symbol "D_Schottky_0.12A_40V_0.37V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 1.778)
 				(name "A"
 					(effects
 						(font
@@ -655,8 +655,8 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 1.778)
 				(name "C"
 					(effects
 						(font
@@ -956,7 +956,7 @@
 		(symbol "D_Schottky_0.5A_40V_0.42V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -968,7 +968,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -980,7 +980,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -993,8 +993,8 @@
 		)
 		(symbol "D_Schottky_0.5A_40V_0.42V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 1.778)
 				(name "A"
 					(effects
 						(font
@@ -1011,8 +1011,8 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 1.778)
 				(name "C"
 					(effects
 						(font
@@ -8036,7 +8036,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Semiconductor-Standard:ST_PowerFLAT-8L_3.3x3.3mm_P0.65mm"
+		(property "Footprint" "SparkFun-Semiconductor-Standard:PowerVDFN-8_3.3x3.3mm_P0.65mm"
 			(at 0 -9.144 0)
 			(effects
 				(font

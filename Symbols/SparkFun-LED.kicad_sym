@@ -522,7 +522,7 @@
 		(symbol "LED_Blue_0603_0_1"
 			(polyline
 				(pts
-					(xy -1.27 -1.27) (xy -1.27 1.27)
+					(xy -0.762 -1.016) (xy -0.762 1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -534,7 +534,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 0) (xy 1.27 0)
+					(xy 1.016 0) (xy -0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -546,7 +546,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -558,7 +558,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
 				)
 				(stroke
 					(width 0)
@@ -570,7 +570,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					(xy 0.4414 1.1638) (xy -0.0666 1.6718) (xy 0.1874 1.6718) (xy -0.0666 1.6718) (xy -0.0666 1.4178)
 				)
 				(stroke
 					(width 0)
@@ -583,8 +583,8 @@
 		)
 		(symbol "LED_Blue_0603_1_1"
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 1.778)
 				(name "K"
 					(effects
 						(font
@@ -601,8 +601,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 1.778)
 				(name "A"
 					(effects
 						(font
@@ -806,7 +806,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "D"
-			(at 0 2.54 0)
+			(at 0 2.794 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -878,7 +878,7 @@
 		(symbol "LED_Red_0603_0_1"
 			(polyline
 				(pts
-					(xy -1.27 -1.27) (xy -1.27 1.27)
+					(xy -0.762 -1.016) (xy -0.762 1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -890,7 +890,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 0) (xy 1.27 0)
+					(xy 1.016 0) (xy -0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -902,7 +902,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -914,7 +914,7 @@
 			)
 			(polyline
 				(pts
-					(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
 				)
 				(stroke
 					(width 0)
@@ -926,7 +926,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
 				)
 				(stroke
 					(width 0)
@@ -939,8 +939,8 @@
 		)
 		(symbol "LED_Red_0603_1_1"
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 1.778)
 				(name "K"
 					(effects
 						(font
@@ -957,8 +957,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 1.778)
 				(name "A"
 					(effects
 						(font
