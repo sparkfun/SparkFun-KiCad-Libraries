@@ -66,6 +66,7 @@
 			)
 		)
 	)
+	(attr smd)
 	(fp_line
 		(start -3.477 -0.427)
 		(end -3.477 0.427)
@@ -255,7 +256,7 @@
 		(thermal_bridge_angle 0)
 		(uuid "cc3a676c-9593-427a-9375-4a41f6ccc021")
 	)
-	(pad "NC" smd rect
+	(pad "MT1" smd rect
 		(at -3.65 -1)
 		(size 1 0.6)
 		(layers "F.Cu" "F.Paste" "F.Mask")
@@ -263,7 +264,7 @@
 		(thermal_bridge_angle 0)
 		(uuid "aedd2493-4a6c-4ec1-9c9f-d79cd39e6e0c")
 	)
-	(pad "NC" smd rect
+	(pad "MT2" smd rect
 		(at -3.65 1.1)
 		(size 1 0.8)
 		(layers "F.Cu" "F.Paste" "F.Mask")
@@ -271,21 +272,21 @@
 		(thermal_bridge_angle 0)
 		(uuid "1d8a7943-eef5-40e7-a463-7f5383ad1b63")
 	)
-	(pad "NC" smd rect
-		(at 3.65 -1)
-		(size 1 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "bfdaff90-1529-4363-8f19-638745b53df7")
-	)
-	(pad "NC" smd rect
+	(pad "MT3" smd rect
 		(at 3.65 1.1)
 		(size 1 0.8)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "cc9623dd-87a5-448b-8b31-d8d0bbe5f7fb")
+	)
+	(pad "MT4" smd rect
+		(at 3.65 -1)
+		(size 1 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "bfdaff90-1529-4363-8f19-638745b53df7")
 	)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Switch/SW_SPDT_PCM12.step"
 		(offset
