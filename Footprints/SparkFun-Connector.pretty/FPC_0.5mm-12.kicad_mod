@@ -3,7 +3,8 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun")
+	(descr "12 pin backflip connector")
+	(tags "SparkFun FPC Back flip SMD")
 	(property "Reference" "Ref**"
 		(at 0 2.6 0)
 		(layer "F.Fab")
@@ -37,18 +38,20 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://gct.co/files/specs/0.5mm-ffc-spec.pdf"
+		(at 0 4.25 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "109adcc5-0997-4c1e-a935-b286632c6c6f")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -61,6 +64,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
