@@ -1,4 +1,4 @@
-(footprint "LED_1206-Bottom"
+(footprint "LED_1206_Bottom_Green"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -17,7 +17,7 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "LED_1206-Bottom"
+	(property "Value" "LED_1206_Bottom_Green"
 		(at 0 1.27 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -39,6 +39,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -51,6 +52,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -63,6 +65,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -84,7 +87,7 @@
 			(type default)
 		)
 		(fill none)
-		(layer "Margin")
+		(layer "F.CrtYd")
 		(uuid "1fc99ef8-2504-4e6b-ace5-3b1f64dadbbb")
 	)
 	(fp_poly
@@ -137,5 +140,17 @@
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
+	)
+	(model "${SPARKFUN_3DMODEL_DIR}/LED/LED_1206_3216Metric_Castellated_Green.step"
+		(opacity 0.8500)
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 0 180)
+		)
 	)
 )
