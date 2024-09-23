@@ -28214,7 +28214,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:microSD_Friction_Fit_Atom"
+		(property "Footprint" "SparkFun-Connector:microSD_Friction_Fit_Common"
 			(at 1.27 -15.24 0)
 			(effects
 				(font
@@ -28271,7 +28271,7 @@
 		(symbol "microSD_Friction_0_1"
 			(polyline
 				(pts
-					(xy -1.27 10.16) (xy 0 10.16)
+					(xy 0 -5.08) (xy -0.9525 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -28283,31 +28283,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 12.7) (xy 0 12.7)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 12.7) (xy 0 11.7475)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 10.16) (xy 0 10.795) (xy 0.635 11.43)
+					(xy -2.54 -5.08) (xy -1.905 -5.08) (xy -1.27 -4.445)
 				)
 				(stroke
 					(width 0)
@@ -28330,8 +28306,16 @@
 					(type background)
 				)
 			)
+			(text "VDD"
+				(at 2.54 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(pin bidirectional line
-				(at -8.89 5.08 0)
+				(at -8.89 7.62 0)
 				(length 2.54)
 				(name "DAT2"
 					(effects
@@ -28367,7 +28351,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 7.62 0)
+				(at -8.89 10.16 0)
 				(length 2.54)
 				(name "DAT3/~{CS}"
 					(effects
@@ -28385,7 +28369,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 -5.08 0)
+				(at -8.89 -2.54 0)
 				(length 2.54)
 				(name "CMD/SDI"
 					(effects
@@ -28421,7 +28405,7 @@
 				)
 			)
 			(pin input line
-				(at -8.89 -2.54 0)
+				(at -8.89 0 0)
 				(length 2.54)
 				(name "CLK/SCK"
 					(effects
@@ -28457,7 +28441,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 0 0)
+				(at -8.89 2.54 0)
 				(length 2.54)
 				(name "DAT0/SDO"
 					(effects
@@ -28475,7 +28459,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -8.89 2.54 0)
+				(at -8.89 5.08 0)
 				(length 2.54)
 				(name "DAT1"
 					(effects
@@ -28493,7 +28477,7 @@
 				)
 			)
 			(pin passive line
-				(at -8.89 10.16 0)
+				(at -8.89 -5.08 0)
 				(length 2.54)
 				(name "DET"
 					(effects
@@ -28543,7 +28527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2110151630_XKB-Connectivity-XKTF-015-N_C381082.pdf"
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/a/d/6/0/8/microSD_Datasheet_msd-1-a.pdf"
 			(at 0 -17.78 0)
 			(effects
 				(font
