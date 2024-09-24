@@ -6,7 +6,7 @@
 	(descr "U.FL SMD Antenna Connector")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
-		(at 0 -2.5 0)
+		(at 0 -2.1336 0)
 		(layer "F.Fab")
 		(uuid "c4eb0984-154b-4936-971e-06616ed91a54")
 		(effects
@@ -40,6 +40,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -52,6 +53,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -64,39 +66,110 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
 	(fp_line
-		(start -1.524 -1.778)
-		(end -1.016 -2.286)
+		(start -1.4954 -1.5014)
+		(end -1.2954 -1.5014)
 		(stroke
-			(width 0.1524)
+			(width 0.1778)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "35cd092f-ba17-4a24-8568-2612490f6904")
+		(uuid "98e466fb-e5b0-42b5-a6b1-b941692cad23")
 	)
 	(fp_line
-		(start -1.524 -1.016)
-		(end -1.524 -1.778)
+		(start -1.4954 -0.7014)
+		(end -1.4954 -1.5014)
 		(stroke
-			(width 0.1524)
+			(width 0.1778)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "64baed3b-57fe-401f-8b9c-54d92703d4a6")
+		(uuid "0e8aa766-037d-437f-85b3-00f7807659cd")
 	)
 	(fp_line
-		(start -1.016 -2.286)
-		(end -0.254 -2.286)
+		(start -1.4954 1.4986)
+		(end -1.4954 0.6986)
 		(stroke
-			(width 0.1524)
+			(width 0.1778)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "5e9bb0b4-d330-49a0-83ac-e4a76ceb4d7e")
+		(uuid "7d05b5d4-536b-4428-a331-e8b928b95e26")
+	)
+	(fp_line
+		(start -1.2954 1.4986)
+		(end -1.4954 1.4986)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aa8778de-d063-4622-966d-5a0a3e09d304")
+	)
+	(fp_line
+		(start 1.3046 -1.5014)
+		(end 1.5046 -1.5014)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0f0a7795-e6fb-4761-b978-b377e982a943")
+	)
+	(fp_line
+		(start 1.5046 -1.5014)
+		(end 1.5046 -0.7014)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "660e6f13-10e6-48a7-a53b-a7483f2f8709")
+	)
+	(fp_line
+		(start 1.5046 -0.7014)
+		(end 2.0046 -0.7014)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e240eaa-9573-4243-b2d7-23e4a7b5973b")
+	)
+	(fp_line
+		(start 1.5046 0.6986)
+		(end 1.5046 1.2986)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d2d2856e-1d00-41e5-b675-0d9cb6f22979")
+	)
+	(fp_line
+		(start 1.5046 0.6986)
+		(end 2.0046 0.6986)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "de03b6f4-4f1d-42e9-bcce-4877a6a3373f")
+	)
+	(fp_line
+		(start 1.5046 1.2986)
+		(end 1.3046 1.4986)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "63f62b8b-ca68-48da-a05a-5d15d37fc469")
 	)
 	(fp_rect
 		(start 2.2 -2)
@@ -111,18 +184,18 @@
 	)
 	(fp_circle
 		(center 0 0)
-		(end 0.127 0)
+		(end 0.15 0)
 		(stroke
-			(width 0.254)
+			(width 0.3)
 			(type solid)
 		)
 		(fill none)
 		(layer "F.Fab")
-		(uuid "533eb9d6-07af-4222-8760-98106df4810b")
+		(uuid "70b6760f-5830-4b3b-a137-c5f2564fbda0")
 	)
 	(fp_poly
 		(pts
-			(xy 0.9017 0.5207) (xy 0.2413 0.5207) (xy 0.2413 -0.5207) (xy 0.9017 -0.5207)
+			(xy 0 0.3) (xy 1.55 0.3) (xy 1.55 -0.3) (xy 0 -0.3)
 		)
 		(stroke
 			(width 0)
@@ -130,7 +203,7 @@
 		)
 		(fill solid)
 		(layer "F.Fab")
-		(uuid "64c063ce-2051-42c4-90cd-fba937e3517b")
+		(uuid "69c9a7c8-6d40-4c06-aaa0-8f56be455802")
 	)
 	(pad "1" smd rect
 		(at 1.525 0)

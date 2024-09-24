@@ -1,0 +1,203 @@
+(footprint "Navigation_Right_Angle"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun Horizontal Navigation Switch Select")
+	(property "Reference" "REF**"
+		(at 0.3175 -1.27 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8fa7ed7b-84f1-4203-97f8-74c0cafe4fd4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Navigation_Switch"
+		(at 0 1.27 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "fba54b20-0cb2-4c5a-92f2-7e56a7d2b1f1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce5d1cde-ac72-4327-9f55-06a6a822c6da")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/Switches/LEVER8184.pdf"
+		(at 0 6 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9699b75-3349-48bd-9af6-2b1418dab963")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" "SparkFun Horizontal Navigation Switch With Select"
+		(at 0 6.985 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2870f5b4-74d8-4c80-b3b2-a3be241caa5f")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_line
+		(start -5.9 4.1)
+		(end -5.9 0.25)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3cf28d79-5dce-424f-8afd-5094a1879357")
+	)
+	(fp_line
+		(start -5.9 4.1)
+		(end -4 4.1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51b1ecf6-c27f-4a2b-9c37-dd10c38c54c2")
+	)
+	(fp_line
+		(start 5.9 4.1)
+		(end 4 4.1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "58218115-0b5e-42cf-986d-441f4339c5f3")
+	)
+	(fp_line
+		(start 5.9 4.1)
+		(end 5.9 0.25)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "807d3f4d-9634-428c-854c-c794dabd3d47")
+	)
+	(fp_arc
+		(start -5.9 -2)
+		(mid 0 -4.60001)
+		(end 5.9 -2)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c02d9073-e55b-467a-acbe-9a522e6a478d")
+	)
+	(fp_line
+		(start -7.5 2)
+		(end -7.5 -1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9d4ab1fe-8fe1-4122-8a16-3e7cdf27948f")
+	)
+	(fp_line
+		(start 7.5 2)
+		(end 7.5 -1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "894858e4-25e2-4189-88ac-6b34f5cb585b")
+	)
+	(fp_arc
+		(start -7.5 -1)
+		(mid 0.000001 -7.699965)
+		(end 7.5 -0.999998)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "728c9c81-5610-4362-9691-375f67e6c220")
+	)
+	(pad "" np_thru_hole circle
+		(at -2.5 0)
+		(size 1.1 1.1)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "783f77b9-7a5f-4cce-a355-02c6d192224a")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.5 0)
+		(size 1.1 1.1)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(uuid "1bcefce0-1a72-4c4c-8150-da0b24dbf6a0")
+	)
+	(pad "1" smd rect
+		(at -2.5 3.8)
+		(size 1.9 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "25d02ed3-8bbc-4fae-9df8-dc887cf9f4bd")
+	)
+	(pad "2" smd rect
+		(at 2.5 3.8)
+		(size 1.9 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "36dcf4e1-2b60-4cbb-8f16-7cbfa42c0f98")
+	)
+	(pad "GND" smd rect
+		(at 5.4 -0.95)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "09b85979-d0ed-45cf-9b35-7c340f65e1ce")
+	)
+	(pad "MP1" smd rect
+		(at -5.4 -0.95)
+		(size 1.6 1.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "f4187c00-537a-4437-bcee-3ced2a026d7a")
+	)
+	(pad "T" smd rect
+		(at 0 3.8)
+		(size 1.9 1.8)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "6b187158-269a-4632-b223-2bbfc7d7310b")
+	)
+)

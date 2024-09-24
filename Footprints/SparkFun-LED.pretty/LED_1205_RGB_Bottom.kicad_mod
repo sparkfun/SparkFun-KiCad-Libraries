@@ -1,9 +1,9 @@
-(footprint "LED_1206_Bottom_Green"
+(footprint "LED_1205_RGB_Bottom"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun LED")
+	(tags "SparkFun LED Tri-color Discrete RGB Rear Mount")
 	(property "Reference" "REF**"
 		(at 0 -1.27 0)
 		(unlocked yes)
@@ -17,7 +17,7 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "LED_1206_Bottom_Green"
+	(property "Value" "LED_1205_RGB_Bottom"
 		(at 0 1.27 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -43,16 +43,16 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://cdn.sparkfun.com/assets/a/1/8/3/f/MEIHUA-MHT151RGBCT.pdf"
+		(at 0 2.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "fd70a01f-82d3-4a56-ad64-13cce2994531")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -69,19 +69,20 @@
 			)
 		)
 	)
-	(fp_line
-		(start 2.7686 -1.016)
-		(end 2.7686 1.016)
+	(fp_circle
+		(center -2.369779 0.590599)
+		(end -2.369779 0.690599)
 		(stroke
-			(width 0.1778)
+			(width 0.2)
 			(type solid)
 		)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "b9f08a86-8843-45fb-9b88-1d3de097f0c4")
+		(uuid "5eda617b-ce7c-4111-86b0-e65245c83311")
 	)
 	(fp_rect
-		(start -2.8 -1.1)
-		(end 2.8 1.1)
+		(start -2.25 -1.1)
+		(end 2.25 1.1)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -90,56 +91,55 @@
 		(layer "F.CrtYd")
 		(uuid "1fc99ef8-2504-4e6b-ace5-3b1f64dadbbb")
 	)
-	(fp_poly
-		(pts
-			(xy 1.6 -0.25) (xy 1.600001 -0.25) (xy 1.523464 -0.234776) (xy 1.458579 -0.191422) (xy 1.4 -0.05)
-			(xy 1.4 0.049999) (xy 1.415224 0.126536) (xy 1.458579 0.19142) (xy 1.6 0.25) (xy 1.6 0.5) (xy 1.1 0.5)
-			(xy 1.1 -0.5) (xy 1.6 -0.5)
-		)
+	(fp_rect
+		(start -1.6 -0.625)
+		(end 1.6 0.625)
 		(stroke
-			(width 0)
+			(width 0.05)
 			(type default)
 		)
-		(fill solid)
+		(fill none)
 		(layer "F.Fab")
-		(uuid "5278bdbd-bfcd-4ad2-9f56-896e6a045db1")
-	)
-	(fp_poly
-		(pts
-			(xy -1.1 0.5) (xy -1.6 0.5) (xy -1.6 0.25) (xy -1.600001 0.25) (xy -1.523464 0.234776) (xy -1.458579 0.191422)
-			(xy -1.415224 0.126537) (xy -1.4 0.05) (xy -1.4 -0.049999) (xy -1.415224 -0.126536) (xy -1.458579 -0.19142)
-			(xy -1.6 -0.25) (xy -1.6 -0.5) (xy -1.1 -0.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill solid)
-		(layer "F.Fab")
-		(uuid "9bf0f69d-f6ad-4820-9dd8-bc821a0a0e41")
+		(uuid "632c1446-5bf7-4c34-b03d-f774c89315b8")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 0)
-		(size 2.3 2.3)
-		(drill 2.3)
-		(layers "*.Cu" "*.Mask")
+		(size 2.1 2.1)
+		(drill 2.1)
+		(layers "F&B.Cu" "*.Mask")
 		(uuid "05e02bd1-71f9-4443-a6d8-b2bb6b05d231")
 	)
 	(pad "1" smd rect
-		(at 1.8 0)
-		(size 1.5 1.6)
+		(at -1.55 0.55)
+		(size 0.8 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
+	)
+	(pad "2" smd rect
+		(at -1.55 -0.55)
+		(size 0.8 0.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "abdf5efe-1f8d-46a0-912c-8422c9ef6d21")
 	)
-	(pad "2" smd rect
-		(at -1.8 0)
-		(size 1.5 1.6)
+	(pad "3" smd rect
+		(at 1.55 -0.55)
+		(size 0.8 0.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
-		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
+		(uuid "9d8481c7-6169-4ee8-8d07-5f84831fdad6")
+	)
+	(pad "4" smd rect
+		(at 1.55 0.55)
+		(size 0.8 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "5b3b2d77-76bd-4d51-b2da-012569629262")
 	)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_1206_3216Metric_Castellated_Green.step"
 		(opacity 0.8500)
