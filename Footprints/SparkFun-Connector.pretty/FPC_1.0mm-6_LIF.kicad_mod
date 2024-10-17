@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
-		(at 0 3.75 0)
+		(at 0 -1 0)
 		(layer "F.Fab")
 		(uuid "5c330c99-5074-4769-b78e-355b26d6cebd")
 		(effects
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "Val**"
-		(at 0 4.5 0)
+		(at 0 0 0)
 		(layer "F.Fab")
 		(uuid "ff8d588a-a5f9-4834-8c2c-41dba76ec183")
 		(effects
@@ -37,11 +37,12 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/198719/pcb-c5-xx-sa-smt-data-sheet.pdf"
-		(at 0 5.4 0)
+		(at 0 8.75 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -54,7 +55,7 @@
 		)
 	)
 	(property "Description" "6 pin friction fit connector"
-		(at 0 6.3 0)
+		(at 0 9.65 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -107,6 +108,19 @@
 		(layer "F.SilkS")
 		(uuid "a24f4e79-cdd3-4cce-89be-583e8348304e")
 	)
+	(fp_poly
+		(pts
+			(xy 3 -2.25) (xy 3 -4.25) (xy -3 -4.25) (xy -3 -2.25) (xy -4.25 -2.25) (xy -4.25 7.75) (xy 4.25 7.75)
+			(xy 4.25 -2.25)
+		)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "38891b99-ef47-402b-b3f6-0918519bf02b")
+	)
 	(fp_line
 		(start -4 -2)
 		(end 4 -2)
@@ -148,8 +162,8 @@
 		(uuid "68f9aec8-3cdf-4bd8-a6e1-06ef0b645c0d")
 	)
 	(fp_line
-		(start 0 1.25)
-		(end -0.2 1.45)
+		(start 0 6.3)
+		(end -0.2 6.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -158,8 +172,8 @@
 		(uuid "501b6cdd-14c0-4064-a996-29ceefbbaaa4")
 	)
 	(fp_line
-		(start 0 1.25)
-		(end 0.2 1.45)
+		(start 0 6.3)
+		(end 0.2 6.5)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -168,8 +182,8 @@
 		(uuid "8c3a759f-dd23-4fcc-bea7-63d842dbcafe")
 	)
 	(fp_line
-		(start 0 1.95)
-		(end 0 1.25)
+		(start 0 7)
+		(end 0 6.3)
 		(stroke
 			(width 0.05)
 			(type solid)
@@ -280,7 +294,7 @@
 		(uuid "d27795ed-b434-4d0d-8cec-0d7b8f979b26")
 	)
 	(fp_text user "Ribbon Insert"
-		(at 0 2.25 0)
+		(at 0 7.3 0)
 		(layer "F.Fab")
 		(uuid "0171ea8a-ae4f-4848-82b9-f5b07baaae91")
 		(effects

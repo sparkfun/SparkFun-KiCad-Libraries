@@ -70,8 +70,8 @@
 		)
 	)
 	(fp_circle
-		(center -2.369779 0.590599)
-		(end -2.369779 0.690599)
+		(center -2.369779 -0.635)
+		(end -2.369779 -0.535)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -110,14 +110,6 @@
 		(uuid "05e02bd1-71f9-4443-a6d8-b2bb6b05d231")
 	)
 	(pad "1" smd rect
-		(at -1.55 0.55)
-		(size 0.8 0.7)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
-	)
-	(pad "2" smd rect
 		(at -1.55 -0.55)
 		(size 0.8 0.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
@@ -125,21 +117,29 @@
 		(thermal_bridge_angle 0)
 		(uuid "abdf5efe-1f8d-46a0-912c-8422c9ef6d21")
 	)
-	(pad "3" smd rect
-		(at 1.55 -0.55)
+	(pad "2" smd rect
+		(at -1.55 0.55)
 		(size 0.8 0.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
-		(uuid "9d8481c7-6169-4ee8-8d07-5f84831fdad6")
+		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
 	)
-	(pad "4" smd rect
+	(pad "3" smd rect
 		(at 1.55 0.55)
 		(size 0.8 0.7)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "5b3b2d77-76bd-4d51-b2da-012569629262")
+	)
+	(pad "4" smd rect
+		(at 1.55 -0.55)
+		(size 0.8 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "9d8481c7-6169-4ee8-8d07-5f84831fdad6")
 	)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_1206_3216Metric_Castellated_Green.step"
 		(opacity 0.8500)

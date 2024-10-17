@@ -1,0 +1,332 @@
+(footprint "MPM3630GQV"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun DC Buck Module")
+	(property "Reference" "REF**"
+		(at 0 -3.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7b3ccb3d-33c9-4f16-9c0c-3afe354ac9d9")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "MPM3630GQV"
+		(at 0 3.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "16344ef0-6794-478b-bba0-1b2be4c13a75")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e6bec61b-07c7-493b-b63d-c496fd419df6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MPM3630GQV/document_id/2114"
+		(at 0 4.3 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6845c4f-3924-4057-95bb-ffe87aaa08c5")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "996e1a7c-334e-46d7-98b7-6ce0be0a34f9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -1.8 -2.55)
+		(end -1.8 -2.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9a4aafb6-3163-4bdf-baa5-1b18ddb9ffe8")
+	)
+	(fp_line
+		(start -1.8 -2.55)
+		(end -1.75 -2.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3e6f49f8-cc3f-4dfc-a58b-d12e379e38ca")
+	)
+	(fp_line
+		(start -0.325 2.55)
+		(end 0.325 2.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bcf5b369-615c-4211-9523-09648b4e674d")
+	)
+	(fp_line
+		(start 1.75 -2.55)
+		(end 1.8 -2.55)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9592377a-92f8-4980-97b6-2bc0ed076d97")
+	)
+	(fp_line
+		(start 1.8 -2.55)
+		(end 1.8 -2.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9b05510a-d778-4529-8d82-cced4d05dc72")
+	)
+	(fp_circle
+		(center -2.2 -2.4)
+		(end -2.3 -2.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "48cf55c7-12d1-42c2-9a03-ceeba177945a")
+	)
+	(fp_rect
+		(start -2 -3)
+		(end 2 2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "f2004db3-f588-489a-88e0-6ad3061e9ac7")
+	)
+	(fp_rect
+		(start -1.5 -2.5)
+		(end 1.5 2.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "40cc35aa-bd8c-4a69-87ec-55b94de39984")
+	)
+	(pad "" smd custom
+		(at -1.8 -1.425 270)
+		(size 0.000001 0.000001)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.000001)
+		(solder_paste_margin 0.000001)
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy -0.25 0) (xy -0.25 -0.675) (xy -0.125 -0.8) (xy 0 -0.8)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "88ee4cda-c501-49d1-9a49-36ed7e3edcc9")
+	)
+	(pad "" smd custom
+		(at -1.8 0.275 270)
+		(size 0.000001 0.000001)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.000001)
+		(solder_paste_margin 0.000001)
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 0 -1.1) (xy 1.95 -1.1) (xy 1.95 0) (xy 1.7 0) (xy 1.7 -0.5) (xy 1.1 -0.5) (xy 1.1 0)
+					(xy 0.85 0) (xy 0.85 -0.5) (xy 0.25 -0.5) (xy 0.25 0)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "9df11e51-d223-4b5e-8b50-bec4b2dc095b")
+	)
+	(pad "" smd custom
+		(at 1.8 0.275 270)
+		(size 0.000001 0.000001)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(solder_mask_margin 0.000001)
+		(solder_paste_margin 0.000001)
+		(thermal_bridge_angle 90)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0 0) (xy 0 1.1) (xy 1.95 1.1) (xy 1.95 0) (xy 1.7 0) (xy 1.7 0.5) (xy 1.1 0.5) (xy 1.1 0) (xy 0.85 0)
+					(xy 0.85 0.5) (xy 0.25 0.5) (xy 0.25 0)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "8620ce4c-12ea-48bd-8ee0-ee677e7f81f0")
+	)
+	(pad "1" smd circle
+		(at -1.4 -1.55)
+		(size 0.225 0.225)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 90)
+		(uuid "69995f1d-cf90-4c8f-b05e-6dd150cda2b1")
+	)
+	(pad "2" smd rect
+		(at -1.25 -0.9)
+		(size 1.1 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b8676ad7-5d92-4b20-afc3-effb08ab3916")
+	)
+	(pad "3" smd rect
+		(at -1.25 -0.25)
+		(size 1.1 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "358e37af-addc-4ce7-86e1-050bb14fdbd2")
+	)
+	(pad "4" smd circle
+		(at -0.975 1.95)
+		(size 0.495 0.495)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 90)
+		(uuid "ad418a41-777d-43bd-8444-81fbf8a22520")
+	)
+	(pad "5" smd circle
+		(at -1 1.3)
+		(size 0.495 0.495)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 90)
+		(uuid "1fccdec2-c65d-4019-a475-68ef76924848")
+	)
+	(pad "6" smd circle
+		(at -1 0.6)
+		(size 0.495 0.495)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 90)
+		(uuid "29c93f08-764f-4aae-a07a-e0314f3b82b4")
+	)
+	(pad "7-8-9" smd circle
+		(at 0.975 1.4)
+		(size 0.495 0.495)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 90)
+		(uuid "81c2a837-92a3-4f47-b015-7bad90f32ad2")
+	)
+	(pad "10" smd rect
+		(at 1.25 -0.25)
+		(size 1.1 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e14acb39-2161-4c51-85e2-85bc0a8250a3")
+	)
+	(pad "11" smd rect
+		(at 1.25 -0.9)
+		(size 1.1 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "829da8e9-0cef-4ccd-ba46-0ce45970b087")
+	)
+	(pad "12" smd rect
+		(at 1.45 -1.55)
+		(size 0.7 0.25)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "2aaef560-632b-4b6e-86c3-1946ad121cae")
+	)
+	(pad "13" smd rect
+		(at 1.25 -2.45)
+		(size 0.25 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "dd47445d-f26d-4352-9eed-c342ca3ffd94")
+	)
+	(pad "14" smd rect
+		(at 0.75 -2.45)
+		(size 0.25 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "7e470648-062f-4771-8fd0-7b68fba53857")
+	)
+	(pad "15" smd rect
+		(at 0.25 -2.25)
+		(size 0.25 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "04113d28-016c-4367-9994-018306942a42")
+	)
+	(pad "16" smd rect
+		(at -0.25 -2.25)
+		(size 0.25 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "098547e6-0875-4a0a-8076-33f07e7b53cf")
+	)
+	(pad "17" smd rect
+		(at -0.75 -2.45)
+		(size 0.25 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "0eafa543-c958-4087-9296-b0b1110e25b5")
+	)
+	(pad "18" smd rect
+		(at -1.25 -2.45)
+		(size 0.25 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b53a4633-ee2d-4edf-8e87-2ed9da6d1865")
+	)
+	(model "${KIPRJMOD}/ALTIUM_EMBEDDED_MODELS/IC_Monolithic_Power_Systems_MPM3630GQV-P_eec.STEP"
+		(offset
+			(xyz -0 -0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 0)
+		)
+	)
+)
