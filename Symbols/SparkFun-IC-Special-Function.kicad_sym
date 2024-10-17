@@ -2,7 +2,10 @@
 	(version 20231120)
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
-	(symbol "PCA9554PW"
+	(symbol "PCA9306"
+		(pin_names
+			(offset 1.016)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -15,8 +18,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PCA9554PW"
-			(at 2.54 11.43 0)
+		(property "Value" "PCA9306"
+			(at 5.08 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24,8 +27,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Semiconductor-Standard:TSSOP-16_4.4x5mm_P0.65mm"
-			(at 0 -15.875 0)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:VSSOP8_SOT765-1"
+			(at 0 -29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33,8 +36,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tca9554.pdf"
-			(at 0 -20.955 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/pca9306.pdf"
+			(at 0 -26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42,16 +45,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-bit I2C-bus and SMBus I/O port with interrupt, TSSOP-16"
-			(at 0 -18.415 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "IC-23589"
+		(property "Description" "Dual bidirectional I2C Bus and SMBus voltage level translator"
 			(at 0 -23.495 0)
 			(effects
 				(font
@@ -60,7 +54,16 @@
 				(hide yes)
 			)
 		)
-		(property "ki_keywords" "SparkFun TCA9554 8 pin SMBUS I2C Expander with Interrupt"
+		(property "PROD_ID" "IC-14450"
+			(at 0 -32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Dual bidirectional I2C Bus SMBus voltage level translator"
 			(at 0 0 0)
 			(effects
 				(font
@@ -69,7 +72,7 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "TSSOP*4.4x5mm*P0.65mm*"
+		(property "ki_fp_filters" "SSOP*2.95x2.8mm*P0.65mm* VSSOP*2.3x2mm*P0.5mm* X2SON*1.4x1mm*P0.35mm*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -78,10 +81,10 @@
 				(hide yes)
 			)
 		)
-		(symbol "PCA9554PW_0_1"
+		(symbol "PCA9306_0_1"
 			(rectangle
-				(start -7.62 -12.7)
-				(end 7.62 10.16)
+				(start -7.62 10.16)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -91,11 +94,11 @@
 				)
 			)
 		)
-		(symbol "PCA9554PW_1_1"
-			(pin input line
-				(at -10.16 -5.08 0)
+		(symbol "PCA9306_1_1"
+			(pin power_in line
+				(at 0 -12.7 90)
 				(length 2.54)
-				(name "A0"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -110,136 +113,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 10.16 -5.08 180)
-				(length 2.54)
-				(name "IO5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 -7.62 180)
-				(length 2.54)
-				(name "IO6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 -10.16 180)
-				(length 2.54)
-				(name "IO7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -10.16 2.54 0)
-				(length 2.54)
-				(name "~{INT}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 7.62 0)
-				(length 2.54)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -10.16 5.08 0)
-				(length 2.54)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at -2.54 12.7 270)
 				(length 2.54)
-				(name "VDD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -10.16 -7.62 0)
-				(length 2.54)
-				(name "A1"
+				(name "VREF1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -254,10 +131,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -10.16 0)
+			(pin bidirectional line
+				(at -10.16 0 0)
 				(length 2.54)
-				(name "A2"
+				(name "SCL1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -273,9 +150,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 7.62 180)
+				(at -10.16 -2.54 0)
 				(length 2.54)
-				(name "IO0"
+				(name "SDA1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -291,9 +168,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 5.08 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
-				(name "IO1"
+				(name "SDA2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -309,9 +186,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 2.54 180)
+				(at 10.16 0 180)
 				(length 2.54)
-				(name "IO2"
+				(name "SCL2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -326,10 +203,10 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 10.16 0 180)
+			(pin power_in line
+				(at 2.54 12.7 270)
 				(length 2.54)
-				(name "IO3"
+				(name "VREF2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -344,10 +221,10 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -15.24 90)
+			(pin input line
+				(at 10.16 2.54 180)
 				(length 2.54)
-				(name "GND"
+				(name "EN"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -355,24 +232,6 @@
 					)
 				)
 				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "IO4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
