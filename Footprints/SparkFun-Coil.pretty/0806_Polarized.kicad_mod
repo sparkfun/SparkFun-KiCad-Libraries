@@ -1,0 +1,150 @@
+(footprint "0806_Polarized"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -1.4 0)
+		(layer "F.Fab")
+		(uuid "f967eddb-805c-4867-832b-1d7cdf04096b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "0806_Polarized"
+		(at 0 1.5 0)
+		(layer "F.Fab")
+		(uuid "2bbd5616-9e5b-4870-b0cd-7e85be146efd")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "084bc12c-d304-47fb-b4f3-53309ee8506d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5338/SRP2010DPA_Series_DS.pdf"
+		(at 0 3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ab89025f-9a0e-4749-8242-5691181dc2e3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "029cc497-fbfc-4388-aa3b-53306ee73e7e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_circle
+		(center -1.35 0.6)
+		(end -1.25 0.6)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "a21566e9-bb3c-4ac8-83c7-ca3441e74010")
+	)
+	(fp_rect
+		(start -1.25 -1)
+		(end 1.25 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "73dd0605-b068-4c08-94cc-e2c1b489b2ec")
+	)
+	(fp_rect
+		(start -1.01 -0.8)
+		(end 1 0.81)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "eec1bf49-ec17-434e-98fd-6d246f7fdf57")
+	)
+	(fp_poly
+		(pts
+			(xy -1.01 0.81) (xy -0.48 0.81) (xy -0.48 -0.81) (xy -1.01 -0.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "29f2f21f-51bb-49e7-91d9-08f063e3fc62")
+	)
+	(fp_poly
+		(pts
+			(xy 0.48 0.81) (xy 1.01 0.81) (xy 1.01 -0.82) (xy 0.48 -0.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "290f75dd-889e-4a2b-a4be-5a02c2b8d6e0")
+	)
+	(pad "1" smd rect
+		(at -0.725 0 90)
+		(size 1.6 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "9a9658d4-412b-407d-b4f8-1d282ae21701")
+	)
+	(pad "2" smd rect
+		(at 0.725 0 90)
+		(size 1.6 0.55)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 45)
+		(uuid "be0f8a34-92bb-4c0a-8962-f5ca30e8de6f")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Coil/Inductor_0806.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

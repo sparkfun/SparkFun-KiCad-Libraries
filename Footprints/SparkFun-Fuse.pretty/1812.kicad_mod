@@ -39,6 +39,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -51,6 +52,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -63,6 +65,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -122,7 +125,6 @@
 		(at -2.3876 0)
 		(size 1.6764 2.8956)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "71bbf98b-1d18-420e-9a31-263aa8edb86e")
 	)
@@ -130,8 +132,18 @@
 		(at 2.3876 0)
 		(size 1.6764 2.8956)
 		(layers "F.Cu" "F.Paste" "F.Mask")
-		(solder_mask_margin 0.1016)
 		(thermal_bridge_angle 0)
 		(uuid "0ef6a654-d235-4122-b46c-4165c83a7b01")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Fuse/Fuse_1812_4532Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )
