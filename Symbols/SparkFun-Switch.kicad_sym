@@ -1709,7 +1709,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "SWCH-23886"
+		(property "PROD_ID" "SWCH-09905"
 			(at 0 -17.78 0)
 			(effects
 				(font
@@ -1961,9 +1961,9 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 0 180)
+				(at -11.43 0 0)
 				(length 1.905)
-				(name "Right"
+				(name "Left"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1971,60 +1971,6 @@
 					)
 				)
 				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 11.43 8.89 180)
-				(length 1.905)
-				(name "Center"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 11.43 270)
-				(length 1.905)
-				(name "Up"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -11.43 90)
-				(length 1.905)
-				(name "Down"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2042,6 +1988,60 @@
 						)
 					)
 				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -11.43 90)
+				(length 1.905)
+				(name "Down"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 0 180)
+				(length 1.905)
+				(name "Right"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 8.89 180)
+				(length 1.905)
+				(name "Center"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(number "5"
 					(effects
 						(font
@@ -2051,9 +2051,9 @@
 				)
 			)
 			(pin passive line
-				(at -11.43 0 0)
+				(at 0 11.43 270)
 				(length 1.905)
-				(name "Left"
+				(name "Up"
 					(effects
 						(font
 							(size 1.27 1.27)
