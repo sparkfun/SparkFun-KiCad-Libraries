@@ -29,29 +29,29 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
+	(property "Footprint" "RP-SMA_Edge"
+		(at 0 4.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "ad86877f-a82b-436b-9aa5-ed1916dd8f49")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://www.sparkfun.com/datasheets/Wireless/Antenna/RPSMA-Connector.pdf"
+		(at 0 5.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "160a62a1-2c55-4407-b6c6-0b54a25104f0")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -701,15 +701,15 @@
 		(thermal_bridge_angle 0)
 		(uuid "e6b5a517-dd0d-4552-8cb6-7670f8a535fe")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/SMA_Samtec_SMA-J-P-H-ST-EM1_EdgeMount.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/RP-SMA-Edge.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 2.5 0.7)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 -90)
+			(xyz 0 0 0)
 		)
 	)
 )
