@@ -3,14 +3,11 @@
 	(generator "kicad_symbol_editor")
 	(generator_version "8.0")
 	(symbol "AP2112K-3.3"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U3"
-			(at 0 8.89 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18,7 +15,7 @@
 			)
 		)
 		(property "Value" "AP2112K-3.3"
-			(at 0 6.35 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44,7 +41,7 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-			(at 0 -27.94 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62,21 +59,21 @@
 			)
 		)
 		(property "VMax" "6V"
-			(at 0 -19.05 0)
+			(at 0 8.89 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Imax" "600mA"
-			(at 0 -24.13 0)
+		(property "IMax" "600mA"
+			(at 0 6.35 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Iq" "55µA"
@@ -211,14 +208,11 @@
 		)
 	)
 	(symbol "AP2127-1.8"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U3"
-			(at 0 8.89 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -226,7 +220,7 @@
 			)
 		)
 		(property "Value" "AP2127-1.8"
-			(at 0 6.35 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -252,7 +246,7 @@
 			)
 		)
 		(property "Description" "300mA low dropout linear regulator, with enable pin, 2.5V-6V input voltage range, 1.8V fixed positive output, SOT-23-5"
-			(at 0 -27.94 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -270,21 +264,21 @@
 			)
 		)
 		(property "VMax" "6V"
-			(at 0 -19.05 0)
+			(at 0 8.89 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Imax" "300mA"
-			(at 0 -24.13 0)
+		(property "IMax" "300mA"
+			(at 0 6.35 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Iq" "60µA"
@@ -426,7 +420,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 8.89 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -434,7 +428,7 @@
 			)
 		)
 		(property "Value" "AP7361C-3.3V"
-			(at 0 6.35 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -442,7 +436,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:UDFN-8"
-			(at -0.254 -21.336 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -451,7 +445,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
-			(at 0 -24.13 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -460,7 +454,7 @@
 			)
 		)
 		(property "Description" "1A low dropout linear regulator, with enable pin, 2.2-6.0V input, 3.3V output, UDFN-8"
-			(at -1.016 -18.542 0)
+			(at 0 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -469,7 +463,7 @@
 			)
 		)
 		(property "PROD_ID" "VREG-14094"
-			(at -1.27 -26.67 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -478,16 +472,16 @@
 			)
 		)
 		(property "VMax" "6V"
-			(at 0 -29.21 0)
+			(at 0 8.89 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Ityp" "1.0A"
-			(at 0 -31.75 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -495,17 +489,17 @@
 				(hide yes)
 			)
 		)
-		(property "Imax" "1.5A"
-			(at 0 -34.29 0)
+		(property "IMax" "1.5A"
+			(at 0 6.35 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Iq" "60µA"
-			(at 0 -36.83 0)
+			(at 0 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -533,7 +527,7 @@
 		)
 		(symbol "AP7361C-3.3V_1_1"
 			(rectangle
-				(start -5.08 3.81)
+				(start -5.08 4.445)
 				(end 5.08 -5.08)
 				(stroke
 					(width 0.254)
@@ -715,7 +709,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 8.89 0)
+			(at 0 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -723,7 +717,7 @@
 			)
 		)
 		(property "Value" "AP7361C-ADJ"
-			(at 0 6.35 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -731,7 +725,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:UDFN-8"
-			(at -0.254 -21.336 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,7 +734,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP7361C.pdf"
-			(at 0 -24.13 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -749,7 +743,7 @@
 			)
 		)
 		(property "Description" "1A low dropout linear adjustable regulator, with enable pin, 2.2-6.0V input, 0.8-5.0V output, UDFN-8"
-			(at -1.016 -18.542 0)
+			(at 0 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -758,7 +752,7 @@
 			)
 		)
 		(property "PROD_ID" "VREG-17088"
-			(at -1.27 -26.67 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -767,16 +761,16 @@
 			)
 		)
 		(property "VMax" "6V"
-			(at 0 -29.21 0)
+			(at 0 11.43 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Ityp" "1.0A"
-			(at 0 -31.75 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -784,22 +778,31 @@
 				(hide yes)
 			)
 		)
-		(property "Imax" "1.5A"
-			(at 0 -34.29 0)
+		(property "IMax" "1.5A"
+			(at 0 8.89 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Iq" "60µA"
-			(at 0 -36.83 0)
+			(at 0 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "VAdj" "0.8V"
+			(at 0 6.35 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "SparkFun linear regulator ldo adjustable output"
@@ -822,7 +825,7 @@
 		)
 		(symbol "AP7361C-Adjustable_1_1"
 			(rectangle
-				(start -5.08 3.81)
+				(start -5.08 4.445)
 				(end 5.08 -5.08)
 				(stroke
 					(width 0.254)
@@ -1001,7 +1004,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -3.81 6.35 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1009,7 +1012,7 @@
 			)
 		)
 		(property "Value" "LP5907MFX-3.3"
-			(at 6.35 6.35 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1052,6 +1055,33 @@
 				(hide yes)
 			)
 		)
+		(property "VMax" "5.5V"
+			(at 0 8.89 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IMax" "250mA"
+			(at 0 6.35 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Iq" "12uA"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(property "ki_keywords" "SparkFun Single Output LDO Low-Noise Audio"
 			(at 0 0 0)
 			(effects
@@ -1072,7 +1102,7 @@
 		)
 		(symbol "LP5907MFX-3.3_0_1"
 			(rectangle
-				(start -5.08 5.08)
+				(start -5.08 4.445)
 				(end 5.08 -5.08)
 				(stroke
 					(width 0.254)
@@ -1080,24 +1110,6 @@
 				)
 				(fill
 					(type background)
-				)
-			)
-			(pin power_in line
-				(at -7.62 2.54 0)
-				(length 2.54)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
 				)
 			)
 			(pin power_in line
@@ -1154,10 +1166,30 @@
 					)
 				)
 			)
+		)
+		(symbol "LP5907MFX-3.3_1_1"
+			(pin power_in line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_out line
 				(at 7.62 2.54 180)
 				(length 2.54)
-				(name "OUT"
+				(name "VOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1179,7 +1211,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 7.62 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1187,7 +1219,7 @@
 			)
 		)
 		(property "Value" "RT9080-1.8V"
-			(at 0.254 5.588 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1195,7 +1227,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT23-5"
-			(at 0 -19.558 0)
+			(at 0 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1204,7 +1236,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.richtek.com/SaveDownload.aspx?specid=RT9080"
-			(at 1.27 -22.352 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1213,7 +1245,7 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 1.8V fixed positive output, SOT-23-5"
-			(at 1.27 -24.892 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,7 +1254,7 @@
 			)
 		)
 		(property "PROD_ID" "VREG-21045"
-			(at 7.366 -9.906 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1230,26 +1262,26 @@
 				(hide yes)
 			)
 		)
-		(property "VMAX" "5.5V"
-			(at 4.318 -11.684 0)
+		(property "VMax" "5.5V"
+			(at 0 8.89 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "IMAX" "600mA"
-			(at 4.826 -13.462 0)
+		(property "IMax" "600mA"
+			(at 0 6.35 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Iq" "4uA"
-			(at 3.81 -15.24 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1362,14 +1394,11 @@
 		)
 	)
 	(symbol "RT9080-3.3"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U3"
-			(at 0 8.89 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1377,7 +1406,7 @@
 			)
 		)
 		(property "Value" "RT9080-3.3"
-			(at 0 6.35 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,24 +1432,6 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-			(at 0 -27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "VREG-19034"
-			(at -1.27 -16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VMax" "6V"
 			(at 0 -19.05 0)
 			(effects
 				(font
@@ -1429,13 +1440,31 @@
 				(hide yes)
 			)
 		)
-		(property "Imax" "600mA"
-			(at 0 -24.13 0)
+		(property "PROD_ID" "VREG-19034"
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "VMax" "5.5V"
+			(at 0 8.89 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "IMax" "600mA"
+			(at 0 6.35 0)
+			(show_name)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Iq" "4µA"
@@ -1570,14 +1599,11 @@
 		)
 	)
 	(symbol "STLQ015-3.3"
-		(pin_names
-			(offset 0.254)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U3"
-			(at 0 8.89 0)
+			(at 0 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1585,7 +1611,7 @@
 			)
 		)
 		(property "Value" "STLQ015-3.3"
-			(at 0 6.35 0)
+			(at 0 11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1611,7 +1637,7 @@
 			)
 		)
 		(property "Description" "150mA low dropout linear regulator, 1.4uA quiescent current"
-			(at 0 -26.67 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1629,21 +1655,21 @@
 			)
 		)
 		(property "VMax" "5.5V"
-			(at 0 -19.05 0)
+			(at 0 8.89 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Imax" "150mA"
-			(at 0 -24.13 0)
+		(property "IMax" "150mA"
+			(at 0 6.35 0)
+			(show_name)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Iq" "1.4µA"
