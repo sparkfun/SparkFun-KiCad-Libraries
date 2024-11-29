@@ -35322,7 +35322,7 @@
 				)
 			)
 			(text_box "3V3"
-				(at -8.89 11.43 0)
+				(at -8.89 -11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35342,7 +35342,7 @@
 				)
 			)
 			(text_box "3V3"
-				(at 0 -11.43 0)
+				(at 0 11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35362,7 +35362,7 @@
 				)
 			)
 			(text_box "EVENTA"
-				(at 0 6.35 0)
+				(at -8.89 6.35 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35378,11 +35378,11 @@
 						(size 1.016 1.016)
 						(color 255 255 255 1)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(text_box "EVENTB"
-				(at 0 3.81 0)
+				(at -8.89 3.81 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35398,11 +35398,11 @@
 						(size 1.016 1.016)
 						(color 255 255 255 1)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(text_box "GND"
-				(at -8.89 8.89 0)
+				(at -8.89 -8.89 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35422,7 +35422,7 @@
 				)
 			)
 			(text_box "GND"
-				(at 0 -8.89 0)
+				(at 0 8.89 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35442,166 +35442,6 @@
 				)
 			)
 			(text_box "I2C SCL"
-				(at -8.89 -3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 108 183 90 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "I2C SDA"
-				(at -8.89 -1.27 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 108 183 90 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "PPS1"
-				(at 0 11.43 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "PPS2"
-				(at 0 8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "PVT LED"
-				(at -8.89 1.27 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RTK LED"
-				(at -8.89 3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "SD CLK"
-				(at 0 -1.27 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 67 61 255 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "SD CMD"
-				(at 0 1.27 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 67 61 255 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "SD DAT0"
 				(at 0 -3.81 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -35611,7 +35451,7 @@
 				)
 				(fill
 					(type color)
-					(color 67 61 255 1)
+					(color 108 183 90 1)
 				)
 				(effects
 					(font
@@ -35621,8 +35461,8 @@
 					(justify right)
 				)
 			)
-			(text_box "SD DAT3"
-				(at 0 -6.35 0)
+			(text_box "I2C SDA"
+				(at 0 -1.27 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35631,7 +35471,7 @@
 				)
 				(fill
 					(type color)
-					(color 67 61 255 1)
+					(color 108 183 90 1)
 				)
 				(effects
 					(font
@@ -35641,8 +35481,8 @@
 					(justify right)
 				)
 			)
-			(text_box "USB D+"
-				(at -8.89 -8.89 0)
+			(text_box "PPS1"
+				(at -8.89 11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35651,7 +35491,87 @@
 				)
 				(fill
 					(type color)
-					(color 255 136 181 1)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "PPS2"
+				(at -8.89 8.89 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "PVT LED"
+				(at 0 1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "RTK LED"
+				(at 0 3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "SD CLK"
+				(at -8.89 -1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 67 61 255 1)
 				)
 				(effects
 					(font
@@ -35661,7 +35581,47 @@
 					(justify left)
 				)
 			)
-			(text_box "USB D-"
+			(text_box "SD CMD"
+				(at -8.89 1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 67 61 255 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "SD DAT0"
+				(at -8.89 -3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 67 61 255 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "SD DAT3"
 				(at -8.89 -6.35 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -35671,6 +35631,26 @@
 				)
 				(fill
 					(type color)
+					(color 67 61 255 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "USB D+"
+				(at 0 -8.89 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
 					(color 255 136 181 1)
 				)
 				(effects
@@ -35678,11 +35658,31 @@
 						(size 1.016 1.016)
 						(color 255 255 255 1)
 					)
-					(justify left)
+					(justify right)
+				)
+			)
+			(text_box "USB D-"
+				(at 0 -6.35 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 136 181 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify right)
 				)
 			)
 			(text_box "VBACKUP"
-				(at -8.89 6.35 0)
+				(at 0 6.35 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35698,11 +35698,11 @@
 						(size 1.016 1.016)
 						(color 255 255 255 1)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
 			(text_box "VUSB"
-				(at -8.89 -11.43 0)
+				(at 0 -11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -35718,7 +35718,7 @@
 						(size 1.016 1.016)
 						(color 255 255 255 1)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
 			(pin passive line
@@ -36383,7 +36383,7 @@
 				)
 			)
 			(text_box "3V3"
-				(at -8.89 11.43 0)
+				(at -8.89 -11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36403,7 +36403,7 @@
 				)
 			)
 			(text_box "3V3"
-				(at 0 -11.43 0)
+				(at 0 11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36423,7 +36423,7 @@
 				)
 			)
 			(text_box "GND"
-				(at -8.89 -1.27 0)
+				(at -8.89 -8.89 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36443,7 +36443,7 @@
 				)
 			)
 			(text_box "GND"
-				(at -8.89 8.89 0)
+				(at -8.89 1.27 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36463,7 +36463,7 @@
 				)
 			)
 			(text_box "GND"
-				(at 0 -8.89 0)
+				(at 0 -1.27 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36483,7 +36483,7 @@
 				)
 			)
 			(text_box "GND"
-				(at 0 1.27 0)
+				(at 0 8.89 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36503,186 +36503,6 @@
 				)
 			)
 			(text_box "MDC"
-				(at -8.89 6.35 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "MDIO"
-				(at 0 8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "nRST LAN"
-				(at -8.89 -6.35 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "ON OFF"
-				(at -8.89 -8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "PMIC ON"
-				(at 0 -6.35 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "READY"
-				(at -8.89 -11.43 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RMII CLK"
-				(at 0 11.43 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "RMII CRSDV"
-				(at 0 3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "RMII RXD0"
-				(at -8.89 3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RMII RXD1"
 				(at 0 6.35 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -36702,8 +36522,8 @@
 					(justify right)
 				)
 			)
-			(text_box "RMII RXER"
-				(at -8.89 1.27 0)
+			(text_box "MDIO"
+				(at -8.89 8.89 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36720,29 +36540,189 @@
 						(color 255 255 255 1)
 					)
 					(justify left)
+				)
+			)
+			(text_box "nRST LAN"
+				(at 0 -6.35 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "ON OFF"
+				(at 0 -8.89 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "PMIC ON"
+				(at -8.89 -6.35 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "READY"
+				(at 0 -11.43 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "RMII CLK"
+				(at -8.89 11.43 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "RMII CRSDV"
+				(at -8.89 3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "RMII RXD0"
+				(at 0 3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "RMII RXD1"
+				(at -8.89 6.35 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "RMII RXER"
+				(at 0 1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify right)
 				)
 			)
 			(text_box "RMII TXD0"
-				(at -8.89 -3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 209 9 255 1)
-				)
-				(effects
-					(font
-						(size 0.762 0.762)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RMII TXD1"
 				(at 0 -3.81 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -36762,8 +36742,8 @@
 					(justify right)
 				)
 			)
-			(text_box "RMII TXEN"
-				(at 0 -1.27 0)
+			(text_box "RMII TXD1"
+				(at -8.89 -3.81 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -36779,7 +36759,27 @@
 						(size 0.762 0.762)
 						(color 255 255 255 1)
 					)
-					(justify right)
+					(justify left)
+				)
+			)
+			(text_box "RMII TXEN"
+				(at -8.89 -1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 209 9 255 1)
+				)
+				(effects
+					(font
+						(size 0.762 0.762)
+						(color 255 255 255 1)
+					)
+					(justify left)
 				)
 			)
 			(pin passive line
@@ -37444,7 +37444,7 @@
 				)
 			)
 			(text_box "3V3"
-				(at -8.89 11.43 0)
+				(at -8.89 -11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -37464,7 +37464,7 @@
 				)
 			)
 			(text_box "3V3"
-				(at 0 -11.43 0)
+				(at 0 11.43 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -37484,226 +37484,6 @@
 				)
 			)
 			(text_box "CTS1"
-				(at 0 -3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "CTS2"
-				(at -8.89 3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "CTS3"
-				(at 0 8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "GND"
-				(at -8.89 8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 0 0 0 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "GND"
-				(at 0 -8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 0 0 0 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "RTS1"
-				(at -8.89 -8.89 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RTS2"
-				(at -8.89 1.27 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RTS3"
-				(at -8.89 6.35 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 248 32 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 0 0 0 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RXD1"
-				(at -8.89 -11.43 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify left)
-				)
-			)
-			(text_box "RXD2"
-				(at 0 -1.27 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "RXD3"
-				(at 0 3.81 0)
-				(size 8.89 -2.54)
-				(stroke
-					(width 0.0254)
-					(type default)
-					(color 0 0 1 1)
-				)
-				(fill
-					(type color)
-					(color 255 178 23 1)
-				)
-				(effects
-					(font
-						(size 1.016 1.016)
-						(color 255 255 255 1)
-					)
-					(justify right)
-				)
-			)
-			(text_box "RXD4"
 				(at -8.89 -3.81 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -37723,8 +37503,108 @@
 					(justify left)
 				)
 			)
-			(text_box "TXD1"
-				(at -8.89 -6.35 0)
+			(text_box "CTS2"
+				(at 0 3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "CTS3"
+				(at -8.89 8.89 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "GND"
+				(at -8.89 -8.89 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 0 0 0 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "GND"
+				(at 0 8.89 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 0 0 0 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "ID"
+				(at -8.89 11.43 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 99 96 99 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "RTS1"
+				(at 0 -8.89 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -37740,10 +37620,10 @@
 						(size 1.016 1.016)
 						(color 0 0 0 1)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
-			(text_box "TXD2"
+			(text_box "RTS2"
 				(at 0 1.27 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -37763,7 +37643,7 @@
 					(justify right)
 				)
 			)
-			(text_box "TXD3"
+			(text_box "RTS3"
 				(at 0 6.35 0)
 				(size 8.89 -2.54)
 				(stroke
@@ -37783,8 +37663,108 @@
 					(justify right)
 				)
 			)
-			(text_box "TXD4"
+			(text_box "RXD1"
+				(at 0 -11.43 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "RXD2"
 				(at -8.89 -1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "RXD3"
+				(at -8.89 3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "RXD4"
+				(at 0 -3.81 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 178 23 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 255 255 255 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "TXD1"
+				(at 0 -6.35 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify right)
+				)
+			)
+			(text_box "TXD2"
+				(at -8.89 1.27 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -37803,8 +37783,48 @@
 					(justify left)
 				)
 			)
+			(text_box "TXD3"
+				(at -8.89 6.35 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify left)
+				)
+			)
+			(text_box "TXD4"
+				(at 0 -1.27 0)
+				(size 8.89 -2.54)
+				(stroke
+					(width 0.0254)
+					(type default)
+					(color 0 0 1 1)
+				)
+				(fill
+					(type color)
+					(color 255 248 32 1)
+				)
+				(effects
+					(font
+						(size 1.016 1.016)
+						(color 0 0 0 1)
+					)
+					(justify right)
+				)
+			)
 			(text_box "~{RESET}"
-				(at 0 -6.35 0)
+				(at -8.89 -6.35 0)
 				(size 8.89 -2.54)
 				(stroke
 					(width 0.0254)
@@ -37820,7 +37840,7 @@
 						(size 1.016 1.016)
 						(color 255 255 255 1)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(pin passive line
