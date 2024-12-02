@@ -252,7 +252,7 @@
 		(symbol "D_250mA_100V_0_1"
 			(polyline
 				(pts
-					(xy -1.27 1.27) (xy -1.27 -1.27)
+					(xy -0.762 -1.016) (xy -0.762 1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -264,7 +264,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -276,7 +276,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -289,16 +289,16 @@
 		)
 		(symbol "D_250mA_100V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -307,16 +307,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -600,7 +600,7 @@
 		(symbol "D_Schottky_0.12A_40V_0.37V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -612,7 +612,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -624,7 +624,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -637,16 +637,16 @@
 		)
 		(symbol "D_Schottky_0.12A_40V_0.37V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -655,16 +655,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -778,7 +778,7 @@
 		(symbol "D_Schottky_0.5A_20V_0.47V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -790,7 +790,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -802,7 +802,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -815,16 +815,16 @@
 		)
 		(symbol "D_Schottky_0.5A_20V_0.47V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -833,16 +833,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -956,7 +956,7 @@
 		(symbol "D_Schottky_0.5A_40V_0.42V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -968,7 +968,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -980,7 +980,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -993,16 +993,16 @@
 		)
 		(symbol "D_Schottky_0.5A_40V_0.42V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1011,16 +1011,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1134,7 +1134,7 @@
 		(symbol "D_Schottky_1A_23V_0.62V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -1146,7 +1146,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -1158,7 +1158,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -1171,16 +1171,16 @@
 		)
 		(symbol "D_Schottky_1A_23V_0.62V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1189,16 +1189,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1312,7 +1312,7 @@
 		(symbol "D_Schottky_1A_40V_0.5V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -1324,7 +1324,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -1336,7 +1336,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -1349,16 +1349,16 @@
 		)
 		(symbol "D_Schottky_1A_40V_0.5V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1367,16 +1367,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1490,7 +1490,7 @@
 		(symbol "D_Schottky_1A_60V_0.68V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -1502,7 +1502,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -1514,7 +1514,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -1527,16 +1527,16 @@
 		)
 		(symbol "D_Schottky_1A_60V_0.68V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1545,16 +1545,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1668,7 +1668,7 @@
 		(symbol "D_Schottky_3A_10V_0.28V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -1680,7 +1680,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -1692,7 +1692,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -1705,16 +1705,16 @@
 		)
 		(symbol "D_Schottky_3A_10V_0.28V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1723,16 +1723,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1846,7 +1846,7 @@
 		(symbol "D_Schottky_3A_40V_0.55V_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -0.762 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -1858,7 +1858,7 @@
 			)
 			(polyline
 				(pts
-					(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -1870,7 +1870,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
 				)
 				(stroke
 					(width 0.254)
@@ -1883,16 +1883,16 @@
 		)
 		(symbol "D_Schottky_3A_40V_0.55V_1_1"
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
-				(name "A"
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1901,16 +1901,340 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D_Schottky_Small"
+		(pin_numbers hide)
+		(pin_names
+			(offset 1.016) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1A"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:SOD-323"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PMEG4005EJ.pdf"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 0 -17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "DIO-"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VDrop" "0.7V"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "VMax" "12V"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "SparkFun diode Schottky"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Schottky_Small_0_1"
+			(polyline
+				(pts
+					(xy -0.762 0) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 0.762) (xy -1.27 1.016) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.016) (xy -0.254 -0.762)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Schottky_Small_1_1"
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D_Small"
+		(pin_numbers hide)
+		(pin_names
+			(offset 1.016) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" ""
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:SOD-323"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "~"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Small_0_1"
+			(polyline
+				(pts
+					(xy -0.762 -1.016) (xy -0.762 1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 0) (xy 0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Small_1_1"
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2154,7 +2478,7 @@
 		(symbol "D_TVS_0402_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -1.27 0) (xy 1.27 0)
 				)
 				(stroke
 					(width 0)
@@ -2166,7 +2490,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					(xy 0.508 1.016) (xy 0 1.016) (xy 0 -1.016) (xy -0.508 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -2178,7 +2502,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+					(xy -1.27 1.016) (xy -1.27 -1.016) (xy 1.27 1.016) (xy 1.27 -1.016) (xy -1.27 1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -2191,8 +2515,8 @@
 		)
 		(symbol "D_TVS_0402_1_1"
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 1.27)
 				(name "A1"
 					(effects
 						(font
@@ -2209,8 +2533,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 1.27)
 				(name "A2"
 					(effects
 						(font
@@ -2308,7 +2632,7 @@
 		(symbol "D_TVS_0603_0_1"
 			(polyline
 				(pts
-					(xy 1.27 0) (xy -1.27 0)
+					(xy -1.27 0) (xy 1.27 0)
 				)
 				(stroke
 					(width 0)
@@ -2320,7 +2644,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+					(xy 0.508 1.016) (xy 0 1.016) (xy 0 -1.016) (xy -0.508 -1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -2332,7 +2656,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+					(xy -1.27 1.016) (xy -1.27 -1.016) (xy 1.27 1.016) (xy 1.27 -1.016) (xy -1.27 1.016)
 				)
 				(stroke
 					(width 0.254)
@@ -2345,8 +2669,8 @@
 		)
 		(symbol "D_TVS_0603_1_1"
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
+				(at -2.54 0 0)
+				(length 1.27)
 				(name "A1"
 					(effects
 						(font
@@ -2363,8 +2687,8 @@
 				)
 			)
 			(pin passive line
-				(at 3.81 0 180)
-				(length 2.54)
+				(at 2.54 0 180)
+				(length 1.27)
 				(name "A2"
 					(effects
 						(font
@@ -4624,6 +4948,160 @@
 			)
 		)
 	)
+	(symbol "D_TVS_Small"
+		(pin_numbers hide)
+		(pin_names
+			(offset 1.016) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TVS"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT-323"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "IC-"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun diode TVS thyrector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_TVS_Small_0_1"
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 1.016) (xy 0 1.016) (xy 0 -1.016) (xy -0.508 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 1.016) (xy -1.27 -1.016) (xy 1.27 1.016) (xy 1.27 -1.016) (xy -1.27 1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_TVS_Small_1_1"
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.27)
+				(name "A1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 1.27)
+				(name "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "D_Zener"
 		(pin_numbers hide)
 		(pin_names
@@ -4741,6 +5219,24 @@
 		)
 		(symbol "D_Zener_1_1"
 			(pin passive line
+				(at -3.81 0 0)
+				(length 2.54)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 3.81 0 180)
 				(length 2.54)
 				(name "A"
@@ -4750,7 +5246,143 @@
 						)
 					)
 				)
-				(number "A"
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "D_Zener_Small"
+		(pin_numbers hide)
+		(pin_names
+			(offset 1.016) hide)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Zener"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "~"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "DIO-"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun diode"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_Zener_Small_0_1"
+			(polyline
+				(pts
+					(xy 0.762 0) (xy -0.762 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 1.016) (xy -0.762 0) (xy 0.762 -1.016) (xy 0.762 1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_Zener_Small_1_1"
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.778)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4759,16 +5391,16 @@
 				)
 			)
 			(pin passive line
-				(at -3.81 0 0)
-				(length 2.54)
-				(name "C"
+				(at 2.54 0 180)
+				(length 1.778)
+				(name "A"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "C"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
