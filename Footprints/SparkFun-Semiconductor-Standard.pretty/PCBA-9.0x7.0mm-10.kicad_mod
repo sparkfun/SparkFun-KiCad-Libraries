@@ -6,13 +6,13 @@
 	(descr "10L PCBA 9.0x7.0mm as used by SiTime")
 	(tags "SparkFun PCBA SiTime")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 -5.55625 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "14eba773-45e8-4e46-816e-ab6d961229b4")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.5 0.5)
 				(thickness 0.1)
 			)
 		)
@@ -24,8 +24,8 @@
 		(uuid "9d8a8437-6710-4bd9-ab19-c0d93ac780ee")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -42,16 +42,16 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://www.sitime.com/support/resource-library/datasheets/sit5811-datasheet"
+		(at 0 7.3025 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "f8e71272-f97b-4b91-b417-c2f2e4761123")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -245,14 +245,15 @@
 		(uuid "d280236f-6afa-4e39-9309-46e6757b9063")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 7 0)
+		(at 0 6.35 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "cb40e88e-7dbd-49b9-bba8-dd8654fbb179")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
 			)
 		)
 	)
