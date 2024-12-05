@@ -40,7 +40,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "64Mb Serial PSRAM, Standard/Quad SPI, 8-USON"
+		(property "Description" "64Mb (8MB) Serial PSRAM, Standard/Quad SPI, 8-USON"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -292,7 +292,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "4Mb Serial Flash Memory, Standard/Dual/Quad SPI, 8-SOIC"
+		(property "Description" "4Mb (0.5MB) Serial Flash Memory, Standard/Dual/Quad SPI, 8-SOIC"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -760,7 +760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "128Mb Serial Flash Memory, Standard/Dual/Quad SPI, 8-WDFN"
+		(property "Description" "128Mb (16MB) Serial Flash Memory, Standard/Dual/Quad SPI, 8-WDFN"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -954,6 +954,24 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -10.16 -5.08 0)
+				(length 2.54) hide
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "EPAD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 	)
 	(symbol "W25Q128JWSIQ"
@@ -994,7 +1012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1.8V 128Mb Serial Flash Memory, Standard/Dual/Quad SPI, 8-WDFN"
+		(property "Description" "1.8V 128Mb (16MB) Serial Flash Memory, Standard/Dual/Quad SPI, 8-WDFN"
 			(at 0 -15.24 0)
 			(effects
 				(font
