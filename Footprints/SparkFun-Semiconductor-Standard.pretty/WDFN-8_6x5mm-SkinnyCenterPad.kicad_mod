@@ -68,18 +68,6 @@
 	(attr smd)
 	(fp_poly
 		(pts
-			(xy 0.455 2.025) (xy -0.455 2.025) (xy -0.455 -1.410355) (xy 0.159645 -2.025) (xy 0.455 -2.025)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill solid)
-		(layer "F.Cu")
-		(uuid "a6984a2a-ef1d-4589-abc6-2bd21fee4f3e")
-	)
-	(fp_poly
-		(pts
 			(xy -0.4 0.4) (xy 0.4 0.4) (xy 0.4 -0.4) (xy -0.4 -0.4)
 		)
 		(stroke
@@ -120,18 +108,6 @@
 		(fill none)
 		(layer "F.SilkS")
 		(uuid "39aaa09f-dd62-40ce-aad2-21eb914058a5")
-	)
-	(fp_poly
-		(pts
-			(xy 0.555 2.125) (xy -0.555 2.125) (xy -0.555 -1.485355) (xy 0.109645 -2.15) (xy 0.555 -2.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "1178e7e2-e0ba-4c30-96ac-bd8d95c2dbb3")
 	)
 	(fp_rect
 		(start -3.3 -2.8)
@@ -347,6 +323,16 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "beffa0c6-287d-483a-847e-8de51ac39585")
+	)
+	(pad "EPAD" smd roundrect
+		(at 0 0)
+		(size 0.91 4.05)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.5)
+		(chamfer top_left)
+		(thermal_bridge_angle 0)
+		(uuid "70bf438a-c19e-4cf2-a115-a064b400fc56")
 	)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm.step"
 		(offset
