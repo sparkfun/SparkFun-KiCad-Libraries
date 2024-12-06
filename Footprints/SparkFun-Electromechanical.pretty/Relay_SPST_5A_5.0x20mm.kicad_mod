@@ -70,8 +70,8 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -3.65125 -10.31875)
-		(end 3.65125 10.31875)
+		(start -2.65 -10.4)
+		(end 2.65 10.4)
 		(stroke
 			(width 0.2032)
 			(type default)
@@ -222,8 +222,8 @@
 		(uuid "85eba6fe-a38c-4ab6-8ef0-cd4bcd77f4a1")
 	)
 	(fp_rect
-		(start -3.75 10.5)
-		(end 3.75 -10.5)
+		(start -2.8 10.85)
+		(end 2.8 -10.85)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -233,8 +233,8 @@
 		(uuid "0ab00fab-bb30-4900-8365-f9f48bfb2e2c")
 	)
 	(fp_rect
-		(start -3.5 -10.25)
-		(end 3.5 10.25)
+		(start -2.5 -10.75)
+		(end 2.5 10.75)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -244,7 +244,7 @@
 		(uuid "71bf756a-a949-49d1-b637-0e4d0632d9b4")
 	)
 	(pad "1" thru_hole circle
-		(at -1.6 8.89)
+		(at -1.3 8.89)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -252,7 +252,7 @@
 		(uuid "d9f870f4-467d-4825-ada6-b7e5cbae4814")
 	)
 	(pad "2" thru_hole circle
-		(at -1.6 6.35)
+		(at -1.3 6.35)
 		(size 1.7 1.7)
 		(drill 1)
 		(layers "*.Cu" "*.Mask")
@@ -260,7 +260,7 @@
 		(uuid "e7abb529-7d92-485a-8e3f-679e15d64358")
 	)
 	(pad "5" thru_hole circle
-		(at -1.6 -3.81)
+		(at -1.3 -3.81)
 		(size 2.1 2.1)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
@@ -268,11 +268,22 @@
 		(uuid "56634703-4b6b-4d88-87eb-64e90890032c")
 	)
 	(pad "6" thru_hole circle
-		(at -1.6 -8.89)
+		(at -1.3 -8.89)
 		(size 2.1 2.1)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "a23c3e01-cc76-4f51-a0a0-55d971e54082")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Relay_5.0x20.0mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
 	)
 )

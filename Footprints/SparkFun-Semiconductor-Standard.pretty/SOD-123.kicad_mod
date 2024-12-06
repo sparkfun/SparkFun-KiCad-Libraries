@@ -227,17 +227,17 @@
 		(layer "F.Fab")
 		(uuid "3ea8d381-2884-4493-a631-0d00c072c3e5")
 	)
-	(pad "A" smd rect
-		(at 1.6 0)
-		(size 1.2 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(uuid "6df6f7bc-2215-4f91-8920-244285a2df55")
-	)
-	(pad "C" smd rect
+	(pad "1" smd rect
 		(at -1.6 0)
 		(size 1.2 1.2)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "8ca7cf40-9887-436c-bea9-a303f4626eef")
+	)
+	(pad "2" smd rect
+		(at 1.6 0)
+		(size 1.2 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6df6f7bc-2215-4f91-8920-244285a2df55")
 	)
 	(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
 		(offset

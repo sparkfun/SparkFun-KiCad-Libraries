@@ -363,7 +363,7 @@
 			)
 		)
 	)
-	(symbol "Relay_SPDT_10A_3V_15.2x19.0mm"
+	(symbol "Relay_SPDT_10A_3V_15.6x21.6mm"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -455,7 +455,16 @@
 				(hide yes)
 			)
 		)
-		(symbol "Relay_SPDT_10A_3V_15.2x19.0mm_0_0"
+		(property "ki_keywords" "SparkFun Power Relay SPDT "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Relay_SPDT_10A_3V_15.6x21.6mm_0_0"
 			(polyline
 				(pts
 					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
@@ -481,7 +490,7 @@
 				)
 			)
 		)
-		(symbol "Relay_SPDT_10A_3V_15.2x19.0mm_0_1"
+		(symbol "Relay_SPDT_10A_3V_15.6x21.6mm_0_1"
 			(polyline
 				(pts
 					(xy -5.08 5.08) (xy -1.905 5.08)
@@ -625,7 +634,371 @@
 				)
 			)
 		)
-		(symbol "Relay_SPDT_10A_3V_15.2x19.0mm_1_1"
+		(symbol "Relay_SPDT_10A_3V_15.6x21.6mm_1_1"
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 5.08 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -7.62 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -2.54 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "Relay_SPDT_10A_5V_15.2x19.0mm"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "K"
+			(at -3.81 11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Relay_SPDT_10A_5V"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Electromechanical:Relay_SPDT_10A_15.2x19.0mm"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J107.pdf"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "5V DC Relay"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "COMP-24446"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VCoil" "5VDC"
+			(at 16.51 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VMax" "250VAC, 125VDC"
+			(at 21.59 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "IMax" "10A@120VAC, 7A@30VDC"
+			(at 25.4 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ICoil" "72mA"
+			(at 24.13 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Power Relay SPDT "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Relay_SPDT_10A_5V_15.2x19.0mm_0_0"
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "Relay_SPDT_10A_5V_15.2x19.0mm_0_1"
+			(polyline
+				(pts
+					(xy -5.08 5.08) (xy -1.905 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -5.08) (xy -5.08 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -5.08) (xy 3.81 -3.175)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.905 7.62) (xy 1.905 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.905) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -0.635) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0.635) (xy 0 0)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 1.905 8.255)
+				(end -1.905 1.905)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 5.08 10.16)
+				(end -5.08 -10.16)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "Relay_SPDT_10A_5V_15.2x19.0mm_1_1"
 			(pin passive line
 				(at -7.62 -5.08 0)
 				(length 2.54)
@@ -1129,7 +1502,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "COMP-..."
+		(property "PROD_ID" "COMP-24444"
 			(at 0 -24.13 0)
 			(effects
 				(font
@@ -1153,7 +1526,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "VMax" "125VAC, 60VDC"
@@ -1167,6 +1539,15 @@
 		)
 		(property "IMax" "2A@120VAC, 1@30VDC"
 			(at 25.4 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun Power Relay SPDT "
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1455,7 +1836,7 @@
 			)
 		)
 	)
-	(symbol "Relay_SPDT_5A_5V_10.2x18.4mm"
+	(symbol "Relay_SPDT_5A_5V_10.3x20.3mm"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1475,7 +1856,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Electromechanical:Relay_SPDT_5A_10.2x18.4mm"
+		(property "Footprint" "SparkFun-Electromechanical:Relay_SPDT_5A_10.3x20.3mm"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -1484,7 +1865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn.sparkfun.com/assets/f/4/7/b/0/DS-00100-Relay_SPDT_Sealed.pdf"
+		(property "Datasheet" "https://components.omron.com/us-en/sites/components.omron.com.us/files/datasheet_pdf/J155-E1.pdf"
 			(at 0 -19.05 0)
 			(effects
 				(font
@@ -1502,7 +1883,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "COMP-09533"
+		(property "PROD_ID" "COMP-24447"
 			(at 0 -24.13 0)
 			(effects
 				(font
@@ -1547,7 +1928,16 @@
 				(hide yes)
 			)
 		)
-		(symbol "Relay_SPDT_5A_5V_10.2x18.4mm_0_0"
+		(property "ki_keywords" "SparkFun Power Relay SPDT "
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "Relay_SPDT_5A_5V_10.3x20.3mm_0_0"
 			(polyline
 				(pts
 					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
@@ -1573,7 +1963,7 @@
 				)
 			)
 		)
-		(symbol "Relay_SPDT_5A_5V_10.2x18.4mm_0_1"
+		(symbol "Relay_SPDT_5A_5V_10.3x20.3mm_0_1"
 			(polyline
 				(pts
 					(xy -5.08 5.08) (xy -1.905 5.08)
@@ -1717,7 +2107,7 @@
 				)
 			)
 		)
-		(symbol "Relay_SPDT_5A_5V_10.2x18.4mm_1_1"
+		(symbol "Relay_SPDT_5A_5V_10.3x20.3mm_1_1"
 			(pin passive line
 				(at 7.62 5.08 180)
 				(length 2.54)
@@ -1737,7 +2127,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 5.08 0)
+				(at 7.62 -2.54 180)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1755,7 +2145,7 @@
 				)
 			)
 			(pin passive line
-				(at -7.62 -5.08 0)
+				(at 7.62 -7.62 180)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1773,7 +2163,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -2.54 180)
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1791,7 +2181,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -7.62 180)
+				(at -7.62 5.08 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1857,7 +2247,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "COMP-..."
+		(property "PROD_ID" "COMP-24445"
 			(at 0 -24.13 0)
 			(effects
 				(font

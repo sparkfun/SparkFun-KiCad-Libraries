@@ -1,11 +1,11 @@
-(footprint "Relay_SPDT_10A_15.2x19.0mm"
+(footprint "Relay_SPDT_10A_15.6x21.6mm"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(tags "SparkFun SPDT Power Relay 10A")
 	(property "Reference" "REF**"
-		(at 0 -9.75 180)
+		(at 0 -12.065 180)
 		(layer "F.Fab")
 		(uuid "7071620a-d598-434d-b482-9aa73391e61a")
 		(effects
@@ -16,8 +16,8 @@
 			)
 		)
 	)
-	(property "Value" "Relay_SPDT_10A_15.2x19.0mm"
-		(at 0 11.25 180)
+	(property "Value" "Relay_SPDT_10A_15.6x21.6mm"
+		(at 0 12.22375 180)
 		(layer "F.Fab")
 		(uuid "3bb18479-6681-4d1b-861e-decf4a6756b6")
 		(effects
@@ -41,8 +41,8 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J107.pdf"
-		(at 0 12.36125 0)
+	(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf"
+		(at 0 13.335 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -69,8 +69,8 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -7.75 -9)
-		(end 7.75 10.25)
+		(start -8.5 -11.5)
+		(end 8.5 11.5)
 		(stroke
 			(width 0.2032)
 			(type default)
@@ -222,8 +222,8 @@
 		(uuid "8a027643-7129-40e1-bd60-21f611b2ca5d")
 	)
 	(fp_rect
-		(start -8 -9.25)
-		(end 8 10.5)
+		(start -8.75 -11.75)
+		(end 8.75 11.75)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -233,8 +233,8 @@
 		(uuid "c8b3fdb8-a66e-4aa4-809d-018d0101670f")
 	)
 	(fp_rect
-		(start -7.6 -8.8)
-		(end 7.6 10.2)
+		(start -8.25 -11.25)
+		(end 8.25 11.25)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -284,15 +284,15 @@
 		(remove_unused_layers no)
 		(uuid "957399b8-43e4-4f2e-b8a5-4ca13af7cdcd")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Relay_15.2x19.0mm.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Relay_15.2x19.0mm_2.step"
 		(offset
-			(xyz 6.5 0 10.5)
+			(xyz 0 -8.75 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 90 0 180)
+			(xyz -90 0 -90)
 		)
 	)
 )

@@ -112,19 +112,19 @@
 		(layer "F.CrtYd")
 		(uuid "51c58776-1765-47f5-ad1f-c91bcc7545de")
 	)
-	(pad "A" smd rect
-		(at 1.15 0)
-		(size 0.63 0.83)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(thermal_bridge_angle 0)
-		(uuid "177a341e-552c-4e8e-b31e-ecd471e4031a")
-	)
-	(pad "C" smd rect
+	(pad "1" smd rect
 		(at -1.15 0)
 		(size 0.63 0.83)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "0f8b5f70-ab68-4e2e-8b07-c2fe2dbffe1e")
+	)
+	(pad "2" smd rect
+		(at 1.15 0)
+		(size 0.63 0.83)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "177a341e-552c-4e8e-b31e-ecd471e4031a")
 	)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/D_SOD-323.step"
 		(offset

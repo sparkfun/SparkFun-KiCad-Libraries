@@ -1,13 +1,14 @@
-(footprint "Relay_SPDT_2A_7.5x12.5mm"
+(footprint "Relay_SPDT_5A_10.3x20.3mm"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun SPDT Power Relay 2A")
+	(tags "SparkFun SPDT Power Relay 5A")
 	(property "Reference" "REF**"
-		(at 0 7 0)
+		(at 0 10.795 0)
 		(unlocked yes)
 		(layer "F.Fab")
+		(hide yes)
 		(uuid "f1818a46-5f8c-40ca-8ebb-c1f4990445fb")
 		(effects
 			(font
@@ -16,8 +17,8 @@
 			)
 		)
 	)
-	(property "Value" "Relay_SPDT_2A_7.5x12.5"
-		(at 0 -7 0)
+	(property "Value" "Relay_SPDT_5A_10.3x20.3mm"
+		(at 0 -10.795 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "d7de2dff-222d-40fa-9717-06813a789463")
@@ -30,7 +31,7 @@
 		)
 	)
 	(property "Footprint" ""
-		(at 1.143 1.5875 0)
+		(at -0.127 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -42,8 +43,8 @@
 			)
 		)
 	)
-	(property "Datasheet" "https://www.citrelay.com/Catalog%20Pages/RelayCatalog/J103.pdf"
-		(at 0 7.75 0)
+	(property "Datasheet" "https://components.omron.com/us-en/sites/components.omron.com.us/files/datasheet_pdf/J155-E1.pdf"
+		(at 0 11.684 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -56,7 +57,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 1.143 1.5875 0)
+		(at -0.127 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -70,8 +71,8 @@
 	)
 	(attr through_hole)
 	(fp_rect
-		(start -3.75 -6.25)
-		(end 3.75 6.25)
+		(start -5.25 -10.25)
+		(end 5.25 10.25)
 		(stroke
 			(width 0.2032)
 			(type default)
@@ -81,18 +82,8 @@
 		(uuid "572e8a79-6872-4829-9037-67c8efc9897b")
 	)
 	(fp_line
-		(start -1.651 -4.92125)
-		(end -1.27 -4.92125)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Dwgs.User")
-		(uuid "468fa60c-70fa-430c-baa5-d9417e7c2956")
-	)
-	(fp_line
-		(start -1.5875 -2.38125)
-		(end -0.9525 -2.38125)
+		(start -2.667 8.89)
+		(end -2.032 8.89)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -101,18 +92,18 @@
 		(uuid "63704085-d181-4d64-86b9-8d0057e46053")
 	)
 	(fp_line
-		(start -0.9855 -1.74625)
-		(end 0.2845 -3.01625)
+		(start -2.655 -6.35)
+		(end -1.524 -6.35)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "61ad7f7f-b557-4265-8f84-e7d247759c24")
+		(uuid "468fa60c-70fa-430c-baa5-d9417e7c2956")
 	)
 	(fp_line
-		(start -0.9525 -2.38125)
-		(end -0.3175 -3.01625)
+		(start -2.032 8.89)
+		(end -1.397 8.255)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -121,38 +112,58 @@
 		(uuid "19c9dbba-8efc-48d2-92f8-17d7b516c485")
 	)
 	(fp_line
-		(start -0.508 -4.953)
-		(end 1.27 -3.175)
+		(start -2.032 9.525)
+		(end -0.762 8.255)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "71674bda-d4f1-4fc0-b373-f2de6b660394")
+		(uuid "238534ac-da7d-4789-aaf5-30956525de4e")
 	)
 	(fp_line
-		(start -0.3505 -1.74625)
-		(end 0.9195 -3.01625)
+		(start -1.397 9.525)
+		(end -0.127 8.255)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "c8254872-1a45-406f-aab4-4c08dc72e162")
+		(uuid "90c47a88-c50f-4437-87f8-a342dda05f78")
 	)
 	(fp_line
-		(start 0.9195 -2.38125)
-		(end 0.2845 -1.74625)
+		(start -0.762 9.525)
+		(end 0.508 8.255)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "7433307f-b582-409b-ab40-19387d2a0240")
+		(uuid "2042d580-9781-4233-bff5-077340384154")
 	)
 	(fp_line
-		(start 1.27 5.23875)
-		(end 1.27 -3.175)
+		(start -0.127 9.525)
+		(end 1.143 8.255)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "61ad7f7f-b557-4265-8f84-e7d247759c24")
+	)
+	(fp_line
+		(start 0 -5.08)
+		(end -1.016 -6.096)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "8426b93f-2353-486f-ac63-852ce7df8d8a")
+	)
+	(fp_line
+		(start 0 -1.27)
+		(end 0 -5.03)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -161,8 +172,38 @@
 		(uuid "2db5a7c8-140d-4abe-96f1-108a798fb339")
 	)
 	(fp_line
-		(start 1.5875 -2.38125)
-		(end 0.9195 -2.38125)
+		(start 0 -1.27)
+		(end 2.54 -1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "a3fc0b56-dcb2-4d0b-a0e2-60e28b4c1d3d")
+	)
+	(fp_line
+		(start 0.508 9.525)
+		(end 1.778 8.255)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "c8254872-1a45-406f-aab4-4c08dc72e162")
+	)
+	(fp_line
+		(start 1.778 8.89)
+		(end 1.143 9.525)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "7433307f-b582-409b-ab40-19387d2a0240")
+	)
+	(fp_line
+		(start 2.667 8.89)
+		(end 1.778 8.89)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -171,28 +212,28 @@
 		(uuid "8dce2f41-6241-4ae4-aa5a-1ade68946768")
 	)
 	(fp_line
-		(start 1.6205 5.23875)
-		(end -1.5875 5.23875)
+		(start 3.81 -7.62)
+		(end 3.81 -6.35)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "cb358c67-31e6-4f19-bde3-51d4a5cfeb99")
+		(uuid "61eeb28c-4c23-4825-a0a3-5afdd34ede2c")
 	)
 	(fp_line
-		(start 1.651 -4.92125)
-		(end 1.27 -4.92125)
+		(start 3.81 -6.35)
+		(end 3.45898 -6.35)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "Dwgs.User")
-		(uuid "6e998501-c307-4dd2-b095-9d9c23eb82f9")
+		(uuid "5bd306db-4df3-466c-952a-4fba067cf9cb")
 	)
 	(fp_circle
-		(center -1.016 -4.92125)
-		(end -1.016 -4.66725)
+		(center -1.27 -6.35)
+		(end -1.27 -6.096)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -202,19 +243,19 @@
 		(uuid "85eba6fe-a38c-4ab6-8ef0-cd4bcd77f4a1")
 	)
 	(fp_circle
-		(center 1.016 -4.92125)
-		(end 1.016 -5.17525)
+		(center 3.175 -6.35)
+		(end 3.048 -6.096)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(fill none)
 		(layer "Dwgs.User")
-		(uuid "644e264b-1feb-4401-8b0b-28a251244631")
+		(uuid "c0a9a5cc-bd8f-4c9c-8ea7-e6c757790a45")
 	)
 	(fp_rect
-		(start -4 6.5)
-		(end 4 -6.5)
+		(start -5.5 10.5)
+		(end 5.5 -10.5)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -224,8 +265,8 @@
 		(uuid "0ab00fab-bb30-4900-8365-f9f48bfb2e2c")
 	)
 	(fp_rect
-		(start -3.75 -6.25)
-		(end 3.75 6.25)
+		(start -5.2 -10.15)
+		(end 5.2 10.15)
 		(stroke
 			(width 0.1)
 			(type default)
@@ -235,62 +276,54 @@
 		(uuid "71bf756a-a949-49d1-b637-0e4d0632d9b4")
 	)
 	(pad "1" thru_hole circle
-		(at 2.54 5.2)
-		(size 1.7 1.7)
-		(drill 1)
+		(at 3.8 8.89 270)
+		(size 2.286 2.286)
+		(drill 1.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "e7abb529-7d92-485a-8e3f-679e15d64358")
 	)
 	(pad "2" thru_hole circle
-		(at -2.54 5.2)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "d9f870f4-467d-4825-ada6-b7e5cbae4814")
-	)
-	(pad "3" thru_hole circle
-		(at 2.54 -2.42)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "85ac34da-fcff-4146-8f34-38bc8b5a0e70")
-	)
-	(pad "4" thru_hole circle
-		(at -2.54 -2.42)
-		(size 1.7 1.7)
-		(drill 1)
+		(at 3.8 -1.27 270)
+		(size 2.286 2.286)
+		(drill 1.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "56634703-4b6b-4d88-87eb-64e90890032c")
 	)
-	(pad "5" thru_hole circle
-		(at 2.54 -4.96)
-		(size 1.7 1.7)
-		(drill 1)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(uuid "b5bd1956-b4a6-40c2-9817-c5ae978d1e89")
-	)
-	(pad "6" thru_hole circle
-		(at -2.54 -4.96)
-		(size 1.7 1.7)
-		(drill 1)
+	(pad "3" thru_hole circle
+		(at 3.8 -8.89 270)
+		(size 2.286 2.286)
+		(drill 1.3)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "a23c3e01-cc76-4f51-a0a0-55d971e54082")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Relay_7.5x12.5mm.step"
+	(pad "4" thru_hole circle
+		(at -3.8 -6.35 270)
+		(size 2.286 2.286)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "85ac34da-fcff-4146-8f34-38bc8b5a0e70")
+	)
+	(pad "5" thru_hole circle
+		(at -3.8 8.89 270)
+		(size 2.286 2.286)
+		(drill 1.3)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d9f870f4-467d-4825-ada6-b7e5cbae4814")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Relay_10.2x18.4mm.step"
 		(offset
-			(xyz -2.5 5 0)
+			(xyz 3.75 -9 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 90)
+			(xyz -90 0 -90)
 		)
 	)
 )
