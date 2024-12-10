@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(tags "SparkFun")
+	(tags "SparkFun JTAG programming header")
 	(property "Reference" "REF**"
 		(at 0.158 -3.434 0)
 		(unlocked yes)
@@ -41,6 +41,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -53,6 +54,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -65,6 +67,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -290,5 +293,16 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "f124a753-9257-4ee4-9905-ee6da6620cce")
+	)
+	(model "${SPARKFUN_3DMODEL_DIR}/Connector/2x05_P1.27mm_SMD_Unshrouded.step"
+		(offset
+			(xyz 0 0 0.4)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )
