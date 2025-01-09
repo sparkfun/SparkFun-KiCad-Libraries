@@ -1,4 +1,4 @@
-(footprint "1x08_SMD_Pin1Right_Passthru"
+(footprint "1x08_SMD_Pin1Right"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -349,6 +349,26 @@
 		(uuid "1172b8c5-cd6f-49c4-ab41-70fe1713a2f1")
 	)
 	(fp_line
+		(start 0 -0.0508)
+		(end 0 0.0508)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "05a08532-6b59-4bcd-8a5d-389b31473fc1")
+	)
+	(fp_line
+		(start 0.0508 0)
+		(end -0.0508 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "4bc169f3-5a5a-4290-bfa1-f6d913149cd4")
+	)
+	(fp_line
 		(start 1.27 -9.21)
 		(end 0.32 -10.16)
 		(stroke
@@ -497,62 +517,6 @@
 		)
 		(layer "F.Fab")
 		(uuid "f11005d1-8889-4c28-b25a-fa4a8d9e1921")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 -8.89)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "00f38d23-d557-4d01-8aa3-bf9ad8d6ace1")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 -6.35)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "12946835-90eb-4db4-82ef-3e371943c937")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 -3.81)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "8d1af2b8-a44c-45e2-955e-e2c2296ce90e")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 -1.27)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "20b1e871-a0b2-4742-aa05-2865c41f8405")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 1.27)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "ffc074a4-39c5-4562-ab7e-5cf59527e06f")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 3.81)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "52ecb4d3-8682-4d19-bad3-7b24c0bdc255")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 6.35)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "1e0a0a53-6b4f-4995-a09f-4f689c86c869")
-	)
-	(pad "" np_thru_hole circle
-		(at 0 8.89)
-		(size 1.2 1.2)
-		(drill 1.2)
-		(layers "F&B.Cu" "*.Mask")
-		(uuid "b3cdfccd-5094-4be8-a47e-2f2c1659d732")
 	)
 	(pad "1" smd rect
 		(at 1.65 -8.89)
