@@ -37,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -49,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +63,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -258,25 +261,36 @@
 		(thermal_bridge_angle 0)
 		(uuid "ad48f733-3a70-4d6d-9677-77e5b9d1b706")
 	)
-	(pad "P$4" smd rect
+	(pad "GNDBREAK" smd rect
 		(at 6.1 5.7)
 		(size 2.8 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "b5cda775-b393-44b3-aea7-bd993f9f0477")
 	)
-	(pad "VIN0" smd rect
+	(pad "PWR" smd rect
 		(at 0 -5.7)
 		(size 2.8 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "6e22ad35-b53f-437a-89b3-ce929483d131")
 	)
-	(pad "VIN1" smd rect
+	(pad "PWR" smd rect
 		(at 6.1 -5.7)
 		(size 2.8 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "b0073b25-dd4c-4e57-8cc7-a2e0cf883723")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/DCJ200-05-A-K1-A.stp"
+		(offset
+			(xyz -5 0 6.45)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
 	)
 )
