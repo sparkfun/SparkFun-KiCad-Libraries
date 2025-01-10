@@ -3584,7 +3584,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "C"
-			(at 0.635 2.54 0)
+			(at 2.54 1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3593,7 +3593,7 @@
 			)
 		)
 		(property "Value" "10uF TANT"
-			(at 0.635 -2.54 0)
+			(at 2.54 -1.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3674,10 +3674,10 @@
 		(symbol "10uF_0603_6.3V_20%_Polar(Tant)_0_1"
 			(polyline
 				(pts
-					(xy -2.032 0.762) (xy 2.032 0.762)
+					(xy -1.524 0.508) (xy 1.524 0.508)
 				)
 				(stroke
-					(width 0.508)
+					(width 0.3048)
 					(type default)
 				)
 				(fill
@@ -3686,7 +3686,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.778 2.286) (xy -0.762 2.286)
+					(xy -1.27 1.524) (xy -0.762 1.524)
 				)
 				(stroke
 					(width 0)
@@ -3698,7 +3698,7 @@
 			)
 			(polyline
 				(pts
-					(xy -1.27 1.778) (xy -1.27 2.794)
+					(xy -1.016 1.27) (xy -1.016 1.778)
 				)
 				(stroke
 					(width 0)
@@ -3709,11 +3709,11 @@
 				)
 			)
 			(arc
-				(start 2.032 -1.27)
-				(mid 0 -0.5572)
-				(end -2.032 -1.27)
+				(start 1.524 -0.762)
+				(mid 0 -0.3734)
+				(end -1.524 -0.762)
 				(stroke
-					(width 0.508)
+					(width 0.3048)
 					(type default)
 				)
 				(fill
@@ -3723,8 +3723,8 @@
 		)
 		(symbol "10uF_0603_6.3V_20%_Polar(Tant)_1_1"
 			(pin passive line
-				(at 0 -3.81 90)
-				(length 3.302)
+				(at 0 2.54 270)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
@@ -3741,8 +3741,8 @@
 				)
 			)
 			(pin passive line
-				(at 0 3.81 270)
-				(length 2.794)
+				(at 0 -2.54 90)
+				(length 2.032)
 				(name "~"
 					(effects
 						(font
