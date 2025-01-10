@@ -1,4 +1,4 @@
-(footprint "1x07_SMD_2mm_Pin1RightDown"
+(footprint "1x07_2.0mm_SMD_Pin1RightDown"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "1x07_SMD_2mm_Pin1RightDown"
+	(property "Value" "1x07_2.0mm_SMD_Pin1RightDown"
 		(at 0 2.9 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -332,5 +332,16 @@
 		(roundrect_rratio 0.25)
 		(thermal_bridge_angle 45)
 		(uuid "9332a8e0-1a20-47ca-a43b-6ae134cab178")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/1x07_2.0mm_SMD_Pin1RightDown.step"
+		(offset
+			(xyz 0 0 0.15)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
 	)
 )

@@ -99,48 +99,48 @@
 		(uuid "7da0d003-0f4a-4a95-b516-eaaa71c61582")
 	)
 	(fp_arc
-		(start -4.299999 -1.4)
-		(mid -1.84881 -4.126971)
-		(end 1.817866 -4.140695)
+		(start -4.2 -1.6)
+		(mid -1.796085 -4.119961)
+		(end 1.686282 -4.166108)
 		(stroke
 			(width 0.1778)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "7e8e74a5-67a9-439a-ab4b-4ca57bdcce5c")
+		(uuid "7ad7a41b-7fc1-469b-835b-27ef54021994")
 	)
 	(fp_arc
 		(start -2.6 3.699999)
-		(mid -3.124101 3.266774)
-		(end -3.5796 2.761911)
+		(mid -3.096672 3.295545)
+		(end -3.531219 2.824975)
 		(stroke
 			(width 0.1778)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "04dc4d63-72fb-4675-9187-34b1fed001e9")
+		(uuid "ef74177c-2e5e-4d94-ba0d-c14efa946a4d")
 	)
 	(fp_arc
-		(start 2.7 -3.599999)
-		(mid 3.650799 -2.666799)
-		(end 4.282012 -1.493576)
+		(start 2.877271 -3.452725)
+		(mid 3.65788 -2.611496)
+		(end 4.2 -1.6)
 		(stroke
 			(width 0.1778)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "5869dfdf-9496-4d7a-838f-739456b823e0")
+		(uuid "96af08d0-f1bf-4cb3-aa55-82842ebc76a9")
 	)
 	(fp_arc
-		(start 4.32867 1.308668)
-		(mid 3.664865 2.649295)
+		(start 4.140695 1.817866)
+		(mid 3.499264 2.864462)
 		(end 2.6 3.699999)
 		(stroke
 			(width 0.1778)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "c774b8f5-e4e0-4c85-9727-51fc5c02ff5f")
+		(uuid "deb25286-8e75-4911-b5ed-62dce2e1a337")
 	)
 	(fp_line
 		(start -2.9 6.2)
@@ -149,7 +149,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "Margin")
+		(layer "F.CrtYd")
 		(uuid "c2157f52-00a3-47a5-9338-4b7317171c4b")
 	)
 	(fp_line
@@ -159,7 +159,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "Margin")
+		(layer "F.CrtYd")
 		(uuid "f9e8cb74-c542-4392-a84b-6daa3b3ac3fa")
 	)
 	(fp_line
@@ -169,7 +169,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "Margin")
+		(layer "F.CrtYd")
 		(uuid "872aa831-b203-4f32-87f5-98a2c4b97a43")
 	)
 	(fp_arc
@@ -180,7 +180,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "Margin")
+		(layer "F.CrtYd")
 		(uuid "e94227de-761d-44e3-ab91-daaf9b843af3")
 	)
 	(fp_line
@@ -249,5 +249,16 @@
 		(size 3.2 2.5)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "207a7b0d-0cb0-4e3f-9874-7e304d818f4a")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Buzzer_9mm_SMD.step"
+		(offset
+			(xyz 0 0 2.54)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
 	)
 )
