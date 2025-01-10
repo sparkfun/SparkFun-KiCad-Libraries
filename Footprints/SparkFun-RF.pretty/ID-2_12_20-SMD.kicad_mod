@@ -3,6 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
+	(tags "SparkFun ID Innovations RFID")
 	(property "Reference" "REF**"
 		(at 0 -13.2 0)
 		(unlocked yes)
@@ -10,7 +11,7 @@
 		(uuid "2fcb2d4e-ea84-4a30-8261-5608b9f15232")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.5 0.5)
 				(thickness 0.1)
 			)
 		)
@@ -22,13 +23,13 @@
 		(uuid "7be04315-9b10-4453-82b4-9c29076f468c")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
-	(property "Footprint" "ID-2_12_20-SMD"
-		(at 0 0 0)
+	(property "Footprint" ""
+		(at 0 23.1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -54,7 +55,7 @@
 		)
 	)
 	(property "Description" "Marks the proper relative position of the 2mm headers needed to mount an ID-Innovations RFID reader module"
-		(at 0 0 0)
+		(at -0.1 21.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -243,58 +244,6 @@
 		(layer "Dwgs.User")
 		(uuid "7cf94f52-0730-4c86-a613-d6b15d1bd16e")
 	)
-	(fp_text user "12"
-		(at 8.4 -5.3 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "082c50a1-6cc2-4142-acce-7185b4ababd8")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(fp_text user "1"
-		(at 4.6 9.8 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "437080d6-0faa-4e03-9f8d-08b1e02d915f")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(fp_text user "5"
-		(at -7.5 9.9 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "a41d981c-2475-4bfa-bd76-062500bb05b5")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
-	(fp_text user "6"
-		(at -7.5 -5.3 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "b7de568e-40b2-448e-ba32-041d81396244")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left bottom)
-		)
-	)
 	(fp_text user "ID-12"
 		(at -12.8 -12.3 0)
 		(unlocked yes)
@@ -334,16 +283,56 @@
 			(justify left bottom)
 		)
 	)
-	(fp_text user "${REFERENCE}"
-		(at 0 15.5 0)
+	(fp_text user "12"
+		(at 8.4 -5.3 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "b010d386-7c61-42e5-a99a-09e72e6e6da4")
+		(uuid "082c50a1-6cc2-4142-acce-7185b4ababd8")
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
+				(thickness 0.1)
 			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "1"
+		(at 4.6 9.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "437080d6-0faa-4e03-9f8d-08b1e02d915f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "5"
+		(at -7.5 9.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a41d981c-2475-4bfa-bd76-062500bb05b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(fp_text user "6"
+		(at -7.5 -5.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b7de568e-40b2-448e-ba32-041d81396244")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 )
