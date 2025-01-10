@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
-	(descr "https://cdn.sparkfun.com/assets/c/f/a/b/d/Korean-Hroparts-Elec-K1-5202UA-01.pdf")
+	(descr "http://www.sparkfun.com/datasheets/Components/Buttons/SF303GJ26-3.pdf")
 	(tags "SparkFun D-Pad Navigation Switch with Post Multi-Directional 5-way")
 	(property "Reference" "Ref**"
 		(at 0 -4.8 180)
@@ -150,6 +150,26 @@
 		(uuid "a1bc9c7d-f82a-48c2-a9d4-85d683b925b4")
 	)
 	(fp_line
+		(start 1.74625 1.74625)
+		(end 2.54 1.74625)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a41c7ccf-e726-4083-a817-2f1a5313a9a2")
+	)
+	(fp_line
+		(start 1.74625 2.54)
+		(end 1.74625 1.74625)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0fd0b903-5c77-4cec-b3a4-bc55e38cc932")
+	)
+	(fp_line
 		(start 1.909188 3.606245)
 		(end 1.06066 4.454773)
 		(stroke
@@ -201,8 +221,8 @@
 		(uuid "13308a57-752b-4913-88f1-fbcd1fba43e0")
 	)
 	(fp_circle
-		(center 4.85 0.3)
-		(end 4.850001 0.4)
+		(center 4.3 2)
+		(end 4.300001 2.1)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -462,6 +482,36 @@
 		(uuid "609c11fd-4e77-4e46-964b-f270e739e28c")
 	)
 	(fp_line
+		(start 0 -4)
+		(end -0.4 -3.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "519d39e4-bef0-4ca0-be93-5bd6593cf3c9")
+	)
+	(fp_line
+		(start 0 -4)
+		(end 0.4 -3.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "ba9dbae8-0e4a-4b70-9d59-6dea6a5f0333")
+	)
+	(fp_line
+		(start 0 -2.8)
+		(end 0 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "User.1")
+		(uuid "e9024aeb-2db0-480a-8dac-e34d90af0c98")
+	)
+	(fp_line
 		(start 0.7 0.949999)
 		(end -0.699999 0.949999)
 		(stroke
@@ -581,46 +631,46 @@
 		(uuid "dbdf8007-9475-4e64-91e7-ed772c08f20d")
 	)
 	(pad "1" smd rect
-		(at 3.323402 -1.343503 45)
+		(at -3.323402 1.343503 45)
 		(size 1.4 1.1)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
-		(uuid "377eb63a-5579-48e8-bafe-9cc4852e89b4")
+		(uuid "fde90b01-4bbf-48d6-93be-4f50974c42cd")
 	)
 	(pad "2" smd rect
-		(at 2.333452 -2.333452 45)
-		(size 1.4 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(thermal_bridge_angle 0)
-		(uuid "493b83a9-da97-4dd4-9e2d-aa22938f2dbf")
-	)
-	(pad "3" smd rect
-		(at 1.343503 -3.323402 45)
-		(size 1.4 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(thermal_bridge_angle 0)
-		(uuid "a65d53c6-5479-41ff-9063-5f957fb97660")
-	)
-	(pad "4" smd rect
-		(at -1.343503 3.323402 45)
-		(size 1.4 1.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(thermal_bridge_angle 0)
-		(uuid "4a11e495-9de8-41fd-830a-aaa891e99650")
-	)
-	(pad "5" smd rect
 		(at -2.333452 2.333452 45)
 		(size 1.4 1.1)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "96f96ff1-96f7-41f3-a70e-3e9326c79a47")
 	)
-	(pad "6" smd rect
-		(at -3.323402 1.343503 45)
+	(pad "3" smd rect
+		(at -1.343503 3.323402 45)
 		(size 1.4 1.1)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
-		(uuid "fde90b01-4bbf-48d6-93be-4f50974c42cd")
+		(uuid "4a11e495-9de8-41fd-830a-aaa891e99650")
+	)
+	(pad "4" smd rect
+		(at 3.323402 -1.343503 45)
+		(size 1.4 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "377eb63a-5579-48e8-bafe-9cc4852e89b4")
+	)
+	(pad "5" smd rect
+		(at 2.333452 -2.333452 45)
+		(size 1.4 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "493b83a9-da97-4dd4-9e2d-aa22938f2dbf")
+	)
+	(pad "6" smd rect
+		(at 1.343503 -3.323402 45)
+		(size 1.4 1.1)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "a65d53c6-5479-41ff-9063-5f957fb97660")
 	)
 	(pad "MP1" smd rect
 		(at 2.863782 2.863782 45)
