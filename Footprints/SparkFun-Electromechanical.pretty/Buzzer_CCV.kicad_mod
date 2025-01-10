@@ -29,7 +29,7 @@
 		)
 	)
 	(property "Footprint" ""
-		(at 0.1 9.4 0)
+		(at 0.1 5.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -70,23 +70,13 @@
 	(attr smd)
 	(fp_line
 		(start -2.6 3.7)
-		(end -2.6 4.7)
-		(stroke
-			(width 0.1778)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "00a8899a-4c98-4781-9d18-0b14ff523a66")
-	)
-	(fp_line
-		(start -2.6 4.7)
 		(end -2.6 6)
 		(stroke
 			(width 0.1778)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "991c9212-5c44-402c-a197-3cb510839f09")
+		(uuid "00a8899a-4c98-4781-9d18-0b14ff523a66")
 	)
 	(fp_line
 		(start -2.6 6)
@@ -152,6 +142,36 @@
 		(layer "F.SilkS")
 		(uuid "c774b8f5-e4e0-4c85-9727-51fc5c02ff5f")
 	)
+	(fp_line
+		(start -2.6 3.7)
+		(end -2.6 6)
+		(stroke
+			(width 0.1016)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a396a14b-2e6c-4dd5-ad5f-cf4b08258337")
+	)
+	(fp_line
+		(start -2.6 6)
+		(end 2.6 6)
+		(stroke
+			(width 0.1016)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5e2b2b3d-7f50-4f5d-a3c1-708921efaa92")
+	)
+	(fp_line
+		(start 2.6 6)
+		(end 2.6 3.7)
+		(stroke
+			(width 0.1016)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5e3e79a1-69b3-4e99-9923-2809e1222008")
+	)
 	(fp_circle
 		(center 0 0)
 		(end 4.5 0)
@@ -160,7 +180,7 @@
 			(type default)
 		)
 		(fill none)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "40323ac8-2f4f-4b5b-9aec-93287251769e")
 	)
 	(pad "" np_thru_hole circle
