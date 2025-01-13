@@ -1,0 +1,264 @@
+(footprint "Buzzer_9mm_SMD"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun SMD Buzzer")
+	(property "Reference" "REF**"
+		(at 0 -5 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "57580873-ad84-433f-9460-e4c312384ff3")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Buzzer_9mm_SMD"
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d2dc86dc-fc02-49ac-962d-113f1b4f7009")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0.1 5.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "af9bace5-ad69-4e77-95f6-94bf7a819598")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn.sparkfun.com/datasheets/Components/General/CCV-084B16-CUI-datasheet-29139.pdf"
+		(at 0 7.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9afb953e-57ba-4cce-8186-5840154fe08f")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ce11e363-4cd2-4d7b-b8f0-5520e1d5fe4f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.6 3.7)
+		(end -2.6 6)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "00a8899a-4c98-4781-9d18-0b14ff523a66")
+	)
+	(fp_line
+		(start -2.6 6)
+		(end 2.6 6)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "68770687-b464-47c2-b55a-e3c903d4b6ab")
+	)
+	(fp_line
+		(start 2.6 6)
+		(end 2.6 3.7)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7da0d003-0f4a-4a95-b516-eaaa71c61582")
+	)
+	(fp_arc
+		(start -4.2 -1.6)
+		(mid -1.796085 -4.119961)
+		(end 1.686282 -4.166108)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "7ad7a41b-7fc1-469b-835b-27ef54021994")
+	)
+	(fp_arc
+		(start -2.6 3.699999)
+		(mid -3.096672 3.295545)
+		(end -3.531219 2.824975)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "ef74177c-2e5e-4d94-ba0d-c14efa946a4d")
+	)
+	(fp_arc
+		(start 2.877271 -3.452725)
+		(mid 3.65788 -2.611496)
+		(end 4.2 -1.6)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "96af08d0-f1bf-4cb3-aa55-82842ebc76a9")
+	)
+	(fp_arc
+		(start 4.140695 1.817866)
+		(mid 3.499264 2.864462)
+		(end 2.6 3.699999)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "deb25286-8e75-4911-b5ed-62dce2e1a337")
+	)
+	(fp_line
+		(start -2.9 6.2)
+		(end -2.9 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c2157f52-00a3-47a5-9338-4b7317171c4b")
+	)
+	(fp_line
+		(start 2.9 6.2)
+		(end -2.9 6.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "f9e8cb74-c542-4392-a84b-6daa3b3ac3fa")
+	)
+	(fp_line
+		(start 2.9 6.2)
+		(end 2.9 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "872aa831-b203-4f32-87f5-98a2c4b97a43")
+	)
+	(fp_arc
+		(start -2.9 3.8)
+		(mid 0 -4.780167)
+		(end 2.9 3.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e94227de-761d-44e3-ab91-daaf9b843af3")
+	)
+	(fp_line
+		(start -2.6 3.7)
+		(end -2.6 6)
+		(stroke
+			(width 0.1016)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a396a14b-2e6c-4dd5-ad5f-cf4b08258337")
+	)
+	(fp_line
+		(start -2.6 6)
+		(end 2.6 6)
+		(stroke
+			(width 0.1016)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5e2b2b3d-7f50-4f5d-a3c1-708921efaa92")
+	)
+	(fp_line
+		(start 2.6 6)
+		(end 2.6 3.7)
+		(stroke
+			(width 0.1016)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5e3e79a1-69b3-4e99-9923-2809e1222008")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 4.5 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Fab")
+		(uuid "40323ac8-2f4f-4b5b-9aec-93287251769e")
+	)
+	(pad "" np_thru_hole circle
+		(at -3.9 2.3)
+		(size 0.8 0.8)
+		(drill 0.8)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "f40b029d-0860-406c-8240-34cf154346ec")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.3 -3.9)
+		(size 0.8 0.8)
+		(drill 0.8)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "aacf7e53-e5f9-46c0-9392-2e7afcea7d20")
+	)
+	(pad "1" smd rect
+		(at 4 0)
+		(size 3.2 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "b4175f96-29c1-404c-afdd-22707175a923")
+	)
+	(pad "2" smd rect
+		(at -4 0)
+		(size 3.2 2.5)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "207a7b0d-0cb0-4e3f-9874-7e304d818f4a")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Electromechanical/Buzzer_9mm_SMD.step"
+		(offset
+			(xyz 0 0 2.54)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
+)
