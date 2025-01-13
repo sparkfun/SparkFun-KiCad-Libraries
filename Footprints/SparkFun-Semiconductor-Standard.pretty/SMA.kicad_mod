@@ -36,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -48,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +62,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -185,19 +188,19 @@
 		(layer "F.Fab")
 		(uuid "51d90f77-9af3-4b28-ac62-47ba1ba8635f")
 	)
-	(pad "A" smd roundrect
-		(at 2 0)
-		(size 1.5 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
-		(roundrect_rratio 0.1388888889)
-		(uuid "30a204f2-227e-4550-8e1a-50e73e516621")
-	)
-	(pad "C" smd roundrect
+	(pad "1" smd roundrect
 		(at -2 0)
 		(size 1.5 2.2)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(roundrect_rratio 0.1388888889)
 		(uuid "9f2df30c-2d7a-4388-9c71-579b4758432a")
+	)
+	(pad "2" smd roundrect
+		(at 2 0)
+		(size 1.5 2.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1388888889)
+		(uuid "30a204f2-227e-4550-8e1a-50e73e516621")
 	)
 	(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl"
 		(offset
