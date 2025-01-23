@@ -1,4 +1,4 @@
-(footprint "ESP32-WROOM-32D-DFM_PASTE"
+(footprint "ESP32-WROOM-32D-DFM_Paste"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -17,7 +17,7 @@
 			)
 		)
 	)
-	(property "Value" "ESP32-WROOM-32D-DFM_PASTE"
+	(property "Value" "ESP32-WROOM-32D-DFM_Paste"
 		(at -5.08 0 90)
 		(layer "F.Fab")
 		(uuid "cb4a69d2-fc9b-4db2-8667-525ef9027c92")
@@ -38,6 +38,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -50,6 +51,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -62,6 +64,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -1632,5 +1635,27 @@
 		(layers "F.Cu" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "e93deb7f-ebdc-4455-ac94-021163da9a3d")
+	)
+	(model "${SPARKFUN_3DMODEL_DIR}/RF/ESP32-WROOM-32D.step"
+		(offset
+			(xyz 1.15 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/RF/ESP32-WROOM-32D.step"
+		(offset
+			(xyz 1.2 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 90)
+		)
 	)
 )
