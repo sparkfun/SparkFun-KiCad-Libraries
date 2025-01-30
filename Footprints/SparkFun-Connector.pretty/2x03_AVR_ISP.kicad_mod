@@ -64,15 +64,16 @@
 			)
 		)
 	)
-	(fp_line
-		(start -2.8956 2.0574)
-		(end -2.2098 2.0574)
+	(fp_circle
+		(center -1.5875 1.27)
+		(end -1.5875 1.37)
 		(stroke
-			(width 0.2032)
+			(width 0.2)
 			(type solid)
 		)
+		(fill solid)
 		(layer "F.SilkS")
-		(uuid "16960e55-d33e-4b57-884b-99abeaa5588c")
+		(uuid "05744dba-d0cb-4709-a133-9ba602991794")
 	)
 	(fp_circle
 		(center -2.54 -1.27)
@@ -139,6 +140,17 @@
 		(fill solid)
 		(layer "F.Mask")
 		(uuid "6fb01615-6769-48b1-8c6a-f9587f743042")
+	)
+	(fp_rect
+		(start -3.3 -2)
+		(end 3.3 2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "773cf70f-4a56-4a8c-a64b-8d37d125f911")
 	)
 	(fp_text user "Programmer This Side"
 		(at -1.905 0 0)
