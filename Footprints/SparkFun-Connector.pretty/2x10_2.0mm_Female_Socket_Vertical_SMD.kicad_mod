@@ -163,17 +163,17 @@
 	)
 	(pad "" np_thru_hole circle
 		(at 0 -8)
-		(size 1.1 1.1)
-		(drill 1.1)
-		(layers "*.Mask")
+		(size 1.5 1.5)
+		(drill 1.5)
+		(layers "F&B.Cu" "*.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "0fa58d2b-da0e-4c6d-9c25-a2d0988a617a")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 8)
-		(size 1.1 1.1)
-		(drill 1.1)
-		(layers "*.Mask")
+		(size 1.5 1.5)
+		(drill 1.5)
+		(layers "F&B.Cu" "*.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "10560f4d-3dd8-47d8-a9eb-b942994a3145")
 	)
@@ -316,5 +316,16 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "61b88287-391d-4135-bf2a-fc4768b38586")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/2x10_2.0mm_Socket_SMD_Peg-1.1x0.8mm.stp"
+		(offset
+			(xyz 0 10.3 0.3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
 	)
 )
