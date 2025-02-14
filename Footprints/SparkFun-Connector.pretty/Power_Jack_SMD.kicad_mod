@@ -41,7 +41,7 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://gct.co/files/drawings/dcj200-05.pdf"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -210,6 +210,17 @@
 		(layer "F.SilkS")
 		(uuid "cb62d9ae-718e-4332-949a-2e04beb727d7")
 	)
+	(fp_rect
+		(start -5.1 -7)
+		(end 9.9 6.9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "f8d55077-9772-410f-8f5e-9f84c34c79b0")
+	)
 	(fp_line
 		(start -5 -4.5)
 		(end -5 4.5)
@@ -282,7 +293,7 @@
 		(thermal_bridge_angle 0)
 		(uuid "b0073b25-dd4c-4e57-8cc7-a2e0cf883723")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/DCJ200-05-A-K1-A.stp"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/DCJ200-05-A-K1-A.step"
 		(offset
 			(xyz -5 0 6.45)
 		)
