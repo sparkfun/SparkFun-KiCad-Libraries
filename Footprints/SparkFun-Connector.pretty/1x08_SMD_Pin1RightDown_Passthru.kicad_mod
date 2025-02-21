@@ -1,4 +1,4 @@
-(footprint "1x08_SMD_Pin1Right_Passthru"
+(footprint "1x08_SMD_Pin1RightDown_Passthru"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -40,16 +40,16 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://gct.co/files/drawings/bg125.pdf"
+		(at 0 11.938 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "cc450f8e-4e00-4086-b8bb-99d3b3f43d4d")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -602,15 +602,15 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "7288e37b-9dc6-4bd1-a5bf-1a351cc7d98f")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/PinSocket_1x08_P2.54mm_Vertical_SMD_Pin1Right.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/1x08_SMD_Pin1RightDown.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 8.89 -0.05)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz 0 0 90)
 		)
 	)
 )

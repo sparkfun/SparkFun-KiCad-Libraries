@@ -37,18 +37,20 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 0 0 0)
+	(property "Datasheet" "https://gct.co/files/drawings/dcj200-05.pdf"
+		(at 0 9.144 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "38377fa8-0821-45ae-8fc5-a857d74e40e8")
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -61,6 +63,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -254,6 +257,17 @@
 		)
 		(layer "F.SilkS")
 		(uuid "8aaac061-0083-403f-8df5-9d6168e161ec")
+	)
+	(fp_rect
+		(start -5.2 -8.5)
+		(end 10 8.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "9f2ea6a4-89a6-4aa8-b9e1-acfddf1a0dbf")
 	)
 	(fp_line
 		(start -5 -4.5)
@@ -474,25 +488,36 @@
 		(thermal_bridge_angle 0)
 		(uuid "cc3b97fe-0de0-416a-bd77-2a3c7c54daa7")
 	)
-	(pad "P$4" smd rect
+	(pad "GNDBREAK" smd rect
 		(at 6.1 5.7)
 		(size 2.8 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "d50b1db6-fa8e-475d-aecb-5edd39d55cb0")
 	)
-	(pad "VIN0" smd rect
+	(pad "PWR" smd rect
 		(at 0 -5.7)
 		(size 2.8 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "631b962c-2604-44d1-8add-b7096911a660")
 	)
-	(pad "VIN1" smd rect
+	(pad "PWR" smd rect
 		(at 6.1 -5.7)
 		(size 2.8 2.4)
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "18ec2259-9c8a-4dd3-b7d4-6822b373b76d")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/Power_Jack_SMD.step"
+		(offset
+			(xyz -5 0 6.45)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
 	)
 )
