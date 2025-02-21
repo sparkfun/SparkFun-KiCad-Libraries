@@ -165,7 +165,7 @@
 		(at 0 -8)
 		(size 1.1 1.1)
 		(drill 1.1)
-		(layers "*.Mask")
+		(layers "F&B.Cu" "*.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "6e90dae4-c146-4fa1-bbc8-0925a05d63ec")
 	)
@@ -173,7 +173,7 @@
 		(at 0 8)
 		(size 1.1 1.1)
 		(drill 1.1)
-		(layers "*.Mask")
+		(layers "F&B.Cu" "*.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "eaa8db2d-95f7-466c-9f99-5d7fc0069a69")
 	)
@@ -316,5 +316,16 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "a204c51c-e69e-43f3-8e04-f3910377bc5b")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/2x10_2.0mm_Header_SMD_Peg-1.0mm.stp"
+		(offset
+			(xyz 0 10.1 0.775)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
 	)
 )

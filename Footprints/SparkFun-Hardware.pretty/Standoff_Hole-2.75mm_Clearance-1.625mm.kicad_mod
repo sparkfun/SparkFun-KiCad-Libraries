@@ -1,0 +1,113 @@
+(footprint "Standoff_Hole-2.75mm_Clearance-1.625mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Standoff; hole dia. 2.75mm; clearance 1.625mm; overall clearance dia. 6.0mm; as used on Raspberry Pi pHAT")
+	(tags "SparkFun stand off Raspberry Pi RPi HAT")
+	(property "Reference" "REF**"
+		(at 0 -3.15 0)
+		(layer "F.Fab")
+		(uuid "8bd37bb3-71ab-4c7a-a16c-586c1d902c5c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Standoff_Hole-2.75mm_Clearance-1.625mm"
+		(at 0 3.2 0)
+		(layer "F.Fab")
+		(uuid "0c5a706e-67e6-4032-afa0-55771e322154")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75a85ac6-af6d-490f-bc03-99db94d96b13")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "54a2e47e-c306-48a9-8147-08458a14fb49")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3a349ba7-9a45-41f5-8cf4-144a3ed8496b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_bom)
+	(fp_circle
+		(center 0 0)
+		(end 2.9 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill solid)
+		(layer "B.Mask")
+		(uuid "34484c6f-6fea-41e0-b904-161970f6f0b9")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.9 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Mask")
+		(uuid "ba850df4-558c-41fd-9e7b-10464ac47fb4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3 0)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "a004b3f4-66bb-4e4f-98ab-7bff20ca868f")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 2.75 2.75)
+		(drill 2.75)
+		(layers "F&B.Cu" "*.Mask")
+		(clearance 1.625)
+		(uuid "08f225bb-86a4-419a-b95e-51a74617fc8a")
+	)
+)
