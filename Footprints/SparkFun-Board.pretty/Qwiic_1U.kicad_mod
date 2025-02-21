@@ -3,14 +3,15 @@
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
+	(tags "SparkFun Qwiic 1 inch Outline")
 	(property "Reference" "REF**"
 		(at 0 -13.97 0)
 		(unlocked yes)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(uuid "0707d707-75bb-48a3-b66c-f1f355ea7bfb")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.5 0.5)
 				(thickness 0.1)
 			)
 		)
@@ -22,12 +23,12 @@
 		(uuid "f4563e54-12dd-45fa-93b8-7105ca9c6fdf")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
-	(property "Footprint" "Qwiic_1U"
+	(property "Footprint" ""
 		(at 0 -16.51 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -149,17 +150,5 @@
 		(fill none)
 		(layer "User.1")
 		(uuid "99542674-3b94-4b7c-890c-b892a69c5194")
-	)
-	(fp_text user "${REFERENCE}"
-		(at 0 15.24 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "4e72a281-27a1-4fa3-b422-300a6e890e41")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
 	)
 )
