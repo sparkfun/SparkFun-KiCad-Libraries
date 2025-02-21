@@ -1,11 +1,11 @@
-(footprint "SO-16_WIDE_POWER"
+(footprint "SO-16_Wide_Power"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
 	(layer "F.Cu")
 	(tags "SparkFun SOIC 16")
 	(property "Reference" "REF**"
-		(at 2.54 -6.35 0)
+		(at 0 -6.35 0)
 		(layer "F.Fab")
 		(uuid "300f7928-e489-47d7-bb29-1ff3e093ca4f")
 		(effects
@@ -16,8 +16,8 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "SO-16_WIDE_POWER"
-		(at 3.81 6.985 0)
+	(property "Value" "SO-16_Wide_Power"
+		(at 0 6.858 0)
 		(layer "F.Fab")
 		(uuid "e765313d-da0b-43f8-bcd8-2e8e18caff95")
 		(effects
@@ -28,8 +28,8 @@
 			(justify bottom)
 		)
 	)
-	(property "Footprint" "SO-16_WIDE_POWER"
-		(at 2.59 -36.08 0)
+	(property "Footprint" ""
+		(at 0 8.89 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -41,16 +41,16 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
-		(at 20.434 -18.519 0)
+	(property "Datasheet" "https://www.allegromicro.com/-/media/files/datasheets/acs37800-datasheet.pdf?sc_lang=en"
+		(at 0 7.62 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "72ba257f-376e-4ff3-9788-7181ad2c9eba")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -68,45 +68,16 @@
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start -3.76 -5.65)
-		(end -3.76 5.65)
+	(fp_rect
+		(start -3.81 -5.334)
+		(end 3.81 5.334)
 		(stroke
-			(width 0.5)
+			(width 0.15)
 			(type default)
 		)
+		(fill none)
 		(layer "F.SilkS")
-		(uuid "cdd2d492-aab3-4fbc-8458-03814db3861d")
-	)
-	(fp_line
-		(start 3.76 -5.65)
-		(end -3.76 -5.65)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "e64b9261-b16a-4037-9f3e-7bf873b9256e")
-	)
-	(fp_line
-		(start 3.76 -5.65)
-		(end 3.76 5.65)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "cae8b75f-f058-4b8b-8249-e83f99e0d393")
-	)
-	(fp_line
-		(start 3.76 5.65)
-		(end -3.76 5.65)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "4485ae66-f87a-46bb-abc9-109d955ceba3")
+		(uuid "7684c2f4-dfc8-4a16-b3b7-1bf79b5894a8")
 	)
 	(fp_circle
 		(center -5.08 -5.715)
@@ -200,6 +171,28 @@
 		)
 		(layer "F.CrtYd")
 		(uuid "c3fb2d5c-0138-4090-b964-6f92d947cc64")
+	)
+	(fp_rect
+		(start -6.35 -5.588)
+		(end 6.35 5.588)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "5885d260-24bc-42a8-a843-0a37f62797ca")
+	)
+	(fp_rect
+		(start -3.75 -5.105)
+		(end 3.75 5.105)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "c9756a16-f429-4253-9239-d434518aebc2")
 	)
 	(pad "1" smd roundrect
 		(at -5.08 -4.445 270)
