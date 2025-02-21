@@ -1,4 +1,4 @@
-(footprint "1x06_SMD_Pin1Right"
+(footprint "1x06_SMD_Pin1RightDown"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -35,21 +35,21 @@
 		(uuid "32b613f8-a1fe-4b59-b475-b3a9d0913757")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
 	(property "Datasheet" "https://gct.co/files/drawings/bg125.pdf"
-		(at 0 2.54 0)
+		(at 0 9.398 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "cc450f8e-4e00-4086-b8bb-99d3b3f43d4d")
 		(effects
 			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -474,7 +474,7 @@
 		(layers "F.Cu" "F.Paste" "F.Mask")
 		(uuid "363ef036-a8e2-48b5-8ea3-1ba34474b58e")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/BG125-06-A-2-1-0420-N-C.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/1x06_SMD_Pin1RightDown.step"
 		(offset
 			(xyz 0 6.35 -0.05)
 		)
