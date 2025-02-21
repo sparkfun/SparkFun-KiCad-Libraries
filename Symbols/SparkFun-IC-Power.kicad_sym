@@ -58,68 +58,21 @@
 				(hide yes)
 			)
 		)
-		(symbol "ACS37800_1_1"
-			(rectangle
-				(start -6.35 10.16)
-				(end 6.35 -10.16)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
+		(symbol "ACS37800_1_0"
 			(pin input line
-				(at 8.89 -6.35 180)
+				(at -8.89 6.35 0)
 				(length 2.54)
-				(name "DIO_0"
+				(name "IP+"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "C_IN"
 					(effects
 						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 8.89 -8.89 180)
-				(length 2.54)
-				(name "DIO_1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 8.89 3.81 180)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
@@ -134,10 +87,221 @@
 						)
 					)
 				)
-				(number ""
+				(number "C_IN_BREAKOUT"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ACS37800_1_1"
+			(rectangle
+				(start -6.35 10.16)
+				(end 6.35 -10.16)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin input line
+				(at -8.89 6.35 0)
+				(length 2.54)
+				(name "IP+"
 					(effects
 						(font
 							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -3.81 180)
+				(length 2.54)
+				(name "DIO_0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 1.27 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 8.89 180)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -8.89 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 3.81 180)
+				(length 2.54)
+				(name "VINN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 6.35 180)
+				(length 2.54)
+				(name "VINP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 6.35 0)
+				(length 2.54)
+				(name "IP+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 6.35 0)
+				(length 2.54)
+				(name "IP+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 6.35 0)
+				(length 2.54)
+				(name "IP+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0 0)
 						)
 					)
 				)
@@ -152,100 +316,118 @@
 						)
 					)
 				)
-				(number ""
+				(number "5"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 			)
 			(pin input line
-				(at 8.89 -3.81 180)
+				(at -8.89 -6.35 0)
 				(length 2.54)
-				(name "SCL"
+				(name "IP-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "6"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 			)
 			(pin input line
-				(at 8.89 -1.27 180)
+				(at -8.89 -6.35 0)
 				(length 2.54)
-				(name "SDA"
+				(name "IP-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "7"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 			)
 			(pin input line
-				(at 8.89 1.27 180)
+				(at -8.89 -6.35 0)
 				(length 2.54)
-				(name "VCC"
+				(name "IP-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "8"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 			)
 			(pin input line
-				(at 8.89 6.35 180)
+				(at 8.89 -6.35 180)
 				(length 2.54)
-				(name "VINN"
+				(name "DIO_1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "9"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0 0)
 						)
 					)
 				)
 			)
 			(pin input line
-				(at 8.89 8.89 180)
+				(at -8.89 -6.35 0)
 				(length 2.54)
-				(name "VINP"
+				(name "IP-"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "C_OUT"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 -6.35 0)
+				(length 2.54)
+				(name "IP-"
 					(effects
 						(font
 							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C_OUT_BREAKOUT"
+					(effects
+						(font
+							(size 0 0)
 						)
 					)
 				)
