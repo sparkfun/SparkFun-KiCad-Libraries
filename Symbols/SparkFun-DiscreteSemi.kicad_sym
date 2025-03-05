@@ -2278,7 +2278,7 @@
 			)
 		)
 	)
-	(symbol "D_TVS_0402"
+	(symbol "D_TVS_0402_14V"
 		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
@@ -2302,7 +2302,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric"
-			(at 0 -3.81 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2311,7 +2311,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/product_specifications/polymer_esd_suppressors/littelfuse_polymer_esd_suppressor_pesd0402_140_product_specification.pdf.pdf"
-			(at 0 -8.89 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2320,7 +2320,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 0 -11.43 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2329,12 +2329,20 @@
 			)
 		)
 		(property "PROD_ID" "DIO-15359"
-			(at 0 -6.35 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "14VWM/40VC"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "SparkFun diode TVS thyrector"
@@ -2355,7 +2363,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_TVS_0402_0_1"
+		(symbol "D_TVS_0402_14V_0_1"
 			(polyline
 				(pts
 					(xy -1.27 0) (xy 1.27 0)
@@ -2393,7 +2401,7 @@
 				)
 			)
 		)
-		(symbol "D_TVS_0402_1_1"
+		(symbol "D_TVS_0402_14V_1_1"
 			(pin passive line
 				(at -2.54 0 0)
 				(length 1.27)
@@ -2432,7 +2440,7 @@
 			)
 		)
 	)
-	(symbol "D_TVS_0603"
+	(symbol "D_TVS_0603_24V"
 		(pin_numbers hide)
 		(pin_names
 			(offset 1.016) hide)
@@ -2456,7 +2464,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Capacitor:C_0603_1608Metric"
-			(at 0 -3.81 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2465,7 +2473,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.littelfuse.com/media?resourcetype=datasheets&itemid=5186ff3a-844f-4b9e-926a-f506c7d3d551&filename=littelfuse-polymer-esd-suppressor-pesd-catalog-datasheet"
-			(at 0 -8.89 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2474,7 +2482,7 @@
 			)
 		)
 		(property "Description" "Bidirectional transient-voltage-suppression diode, Diode TVS 24VWM 45VClamp"
-			(at 0 -11.43 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2483,12 +2491,20 @@
 			)
 		)
 		(property "PROD_ID" "DIO-14502"
-			(at 0 -6.35 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "24VWM/45VC"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "SparkFun diode TVS thyrector zener"
@@ -2509,7 +2525,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_TVS_0603_0_1"
+		(symbol "D_TVS_0603_24V_0_1"
 			(polyline
 				(pts
 					(xy -1.27 0) (xy 1.27 0)
@@ -2547,7 +2563,7 @@
 				)
 			)
 		)
-		(symbol "D_TVS_0603_1_1"
+		(symbol "D_TVS_0603_24V_1_1"
 			(pin passive line
 				(at -2.54 0 0)
 				(length 1.27)
@@ -2586,7 +2602,7 @@
 			)
 		)
 	)
-	(symbol "D_TVS_ESD_4"
+	(symbol "D_TVS_ESD_4_3.3V"
 		(pin_numbers hide)
 		(pin_names hide)
 		(exclude_from_sim no)
@@ -2609,7 +2625,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT-353"
-			(at 0 -10.16 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2618,7 +2634,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESDXL4UF_G_W.pdf"
-			(at 0 -12.7 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2627,7 +2643,7 @@
 			)
 		)
 		(property "Description" "Low capacitance unidirectional quadruple ESD protection diode array, 3.3V, Common Anode, SOT-353"
-			(at 0 -17.78 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2636,12 +2652,20 @@
 			)
 		)
 		(property "PROD_ID" "DIO-19494"
-			(at 0 -15.24 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "3.3VWM/12V"
+			(at -3.81 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "SparkFun diode"
@@ -2662,7 +2686,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_TVS_ESD_4_0_1"
+		(symbol "D_TVS_ESD_4_3.3V_0_1"
 			(polyline
 				(pts
 					(xy -2.54 1.016) (xy -2.54 -2.54)
@@ -2808,7 +2832,7 @@
 				)
 			)
 		)
-		(symbol "D_TVS_ESD_4_1_1"
+		(symbol "D_TVS_ESD_4_3.3V_1_1"
 			(rectangle
 				(start -3.81 2.54)
 				(end 6.35 -3.81)
@@ -2996,7 +3020,7 @@
 			)
 		)
 	)
-	(symbol "D_TVS_ESD_4_HS"
+	(symbol "D_TVS_ESD_4_HS_3.3V"
 		(pin_numbers hide)
 		(pin_names hide)
 		(exclude_from_sim no)
@@ -3019,7 +3043,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT-353"
-			(at 0 -10.16 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3028,7 +3052,7 @@
 			)
 		)
 		(property "Datasheet" "https://toshiba.semicon-storage.com/info/DF5A5.6LFU_datasheet_en_20140301.pdf?did=22260&prodName=DF5A5.6LFU"
-			(at 0 -12.7 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3037,7 +3061,7 @@
 			)
 		)
 		(property "Description" "Low capacitance microSD unidirectional quadruple ESD protection diode array, 3.3V, Common Anode, SOT-353"
-			(at 0 -17.78 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3046,12 +3070,20 @@
 			)
 		)
 		(property "PROD_ID" "DIO-20454"
-			(at 0 -15.24 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "3.3VWM/12VC"
+			(at -3.81 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "SparkFun diode"
@@ -3072,7 +3104,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_TVS_ESD_4_HS_0_1"
+		(symbol "D_TVS_ESD_4_HS_3.3V_0_1"
 			(polyline
 				(pts
 					(xy -2.54 1.016) (xy -2.54 -2.54)
@@ -3218,7 +3250,7 @@
 				)
 			)
 		)
-		(symbol "D_TVS_ESD_4_HS_1_1"
+		(symbol "D_TVS_ESD_4_HS_3.3V_1_1"
 			(rectangle
 				(start -3.81 2.54)
 				(end 6.35 -3.81)
@@ -3406,7 +3438,7 @@
 			)
 		)
 	)
-	(symbol "D_TVS_ESD_USB"
+	(symbol "D_TVS_ESD_USB_5V"
 		(pin_names hide)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3430,7 +3462,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT23-6"
-			(at 0 -13.97 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3439,7 +3471,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DT1042-04SO.pdf"
-			(at 0 -16.51 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3448,7 +3480,7 @@
 			)
 		)
 		(property "Description" "Very low capacitance ESD protection diode, 4 data-line, SOT-23-6"
-			(at 0.254 -21.59 0)
+			(at 0.254 -20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3457,12 +3489,20 @@
 			)
 		)
 		(property "PROD_ID" "IC-13538"
-			(at 0 -19.05 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Rating" "5VWM/9VC"
+			(at 11.43 -1.27 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "ki_keywords" "SparkFun usb ethernet sim card video"
@@ -3483,7 +3523,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_TVS_ESD_USB_0_1"
+		(symbol "D_TVS_ESD_USB_5V_0_1"
 			(circle
 				(center -5.08 1.27)
 				(radius 0.254)
@@ -3942,7 +3982,7 @@
 				)
 			)
 		)
-		(symbol "D_TVS_ESD_USB_1_1"
+		(symbol "D_TVS_ESD_USB_5V_1_1"
 			(rectangle
 				(start -7.62 6.35)
 				(end 7.62 -8.89)
@@ -4310,7 +4350,7 @@
 			)
 		)
 	)
-	(symbol "D_TVS_ESD_USB_SOT886"
+	(symbol "D_TVS_ESD_USB_SOT886_5.5V"
 		(pin_names hide)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4369,6 +4409,14 @@
 				(hide yes)
 			)
 		)
+		(property "Rating" "5.5VWM/9VC"
+			(at 11.43 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "ki_keywords" "SparkFun usb tvs esd"
 			(at 0 0 0)
 			(effects
@@ -4387,7 +4435,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "D_TVS_ESD_USB_SOT886_0_1"
+		(symbol "D_TVS_ESD_USB_SOT886_5.5V_0_1"
 			(circle
 				(center -6.35 0)
 				(radius 0.254)
@@ -4658,7 +4706,7 @@
 				)
 			)
 		)
-		(symbol "D_TVS_ESD_USB_SOT886_1_1"
+		(symbol "D_TVS_ESD_USB_SOT886_5.5V_1_1"
 			(rectangle
 				(start -7.62 -7.62)
 				(end 7.62 7.62)
