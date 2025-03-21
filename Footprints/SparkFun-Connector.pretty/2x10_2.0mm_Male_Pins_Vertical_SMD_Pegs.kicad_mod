@@ -1,4 +1,4 @@
-(footprint "2x10_2.0mm_Male_Pins_Vertical_SMD"
+(footprint "2x10_2.0mm_Male_Pins_Vertical_SMD_Pegs"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "2x10_2.0mm_Male_Pins_Vertical_SMD"
+	(property "Value" "2x10_2.0mm_Male_Pins_Vertical_SMD_Pegs"
 		(at 0 11 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -163,16 +163,16 @@
 	)
 	(pad "" np_thru_hole circle
 		(at 0 -8)
-		(size 1.1 1.1)
-		(drill 1.1)
+		(size 1.2 1.2)
+		(drill 1.2)
 		(layers "F&B.Cu" "*.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "6e90dae4-c146-4fa1-bbc8-0925a05d63ec")
 	)
 	(pad "" np_thru_hole circle
 		(at 0 8)
-		(size 1.1 1.1)
-		(drill 1.1)
+		(size 1.2 1.2)
+		(drill 1.2)
 		(layers "F&B.Cu" "*.Mask")
 		(thermal_bridge_angle 0)
 		(uuid "eaa8db2d-95f7-466c-9f99-5d7fc0069a69")
@@ -317,15 +317,15 @@
 		(thermal_bridge_angle 0)
 		(uuid "a204c51c-e69e-43f3-8e04-f3910377bc5b")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/2x10_2.0mm_Header_SMD_Peg-1.0mm.stp"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/2x10_2.0mm_Header_SMD_Pegs-1.0mm_22817.step"
 		(offset
-			(xyz 0 10.1 0.775)
+			(xyz -2 10 -1.5)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 90)
+			(xyz 180 0 0)
 		)
 	)
 )
