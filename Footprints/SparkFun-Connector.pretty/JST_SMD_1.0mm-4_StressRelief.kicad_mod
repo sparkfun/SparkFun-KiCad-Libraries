@@ -168,16 +168,18 @@
 		(layer "Edge.Cuts")
 		(uuid "952ec55c-3922-4a52-814d-cf82b091394e")
 	)
-	(fp_rect
-		(start 3.51 4.797)
-		(end -3.51 -0.78)
+	(fp_poly
+		(pts
+			(xy -3.55 4.85) (xy -3.55 2.5) (xy -3.25 2.5) (xy -3.25 0.1) (xy -1.95 0.1) (xy -1.95 -0.8) (xy 1.95 -0.8)
+			(xy 1.95 0.1) (xy 3.25 0.1) (xy 3.25 2.5) (xy 3.55 2.5) (xy 3.55 4.847)
+		)
 		(stroke
 			(width 0.05)
-			(type default)
+			(type solid)
 		)
 		(fill none)
 		(layer "F.CrtYd")
-		(uuid "5c92ae8e-a807-4190-a656-81e1cbf540d8")
+		(uuid "f428fcb9-de87-43e9-a2f6-33240e269d1a")
 	)
 	(pad "1" smd rect
 		(at -1.5 0)
