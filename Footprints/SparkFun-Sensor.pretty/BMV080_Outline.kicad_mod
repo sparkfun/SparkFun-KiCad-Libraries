@@ -158,39 +158,9 @@
 		(layer "F.SilkS")
 		(uuid "1257f7ef-eec8-4e18-9420-0195aafcde12")
 	)
-	(fp_line
-		(start -2.286 1.78)
-		(end -2.286 19.6088)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "d01e4b94-5454-4094-8b3a-5be83c09d907")
-	)
-	(fp_line
-		(start -2.286 19.6088)
-		(end 2.3368 19.6088)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "8e656d7f-2958-4d2c-9ca5-737189bcfb63")
-	)
-	(fp_line
-		(start 2.3368 19.6088)
-		(end 2.3368 1.777)
-		(stroke
-			(width 0.05)
-			(type default)
-		)
-		(layer "F.CrtYd")
-		(uuid "932b9111-87a1-4b9d-9a6c-89065431fae8")
-	)
 	(fp_rect
 		(start -3.08 -1.567)
-		(end 3.08 1.784)
+		(end 3.08 19.978)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -590,66 +560,6 @@
 		(fill none)
 		(layer "F.Fab")
 		(uuid "a33fcb7c-93c5-47f3-8ed5-b623d2df0536")
-	)
-	(fp_text user "^^INSERT THIS END^^"
-		(at -0.016 2.314 0)
-		(unlocked yes)
-		(layer "User.1")
-		(uuid "220e8b3f-d64b-45c0-b434-9d21c44f6844")
-		(effects
-			(font
-				(size 0.3 0.3)
-				(thickness 0.075)
-			)
-			(justify bottom)
-		)
-	)
-	(fp_text user "^^INSERTION DEPTH^^"
-		(at 3.367 -0.171 0)
-		(unlocked yes)
-		(layer "User.2")
-		(uuid "173812f6-38ce-4b03-8549-aa71ce98a210")
-		(effects
-			(font
-				(size 0.2 0.2)
-				(thickness 0.05)
-			)
-			(justify left bottom)
-		)
-	)
-	(dimension
-		(type orthogonal)
-		(layer "User.2")
-		(uuid "767c5360-32f8-4571-a969-6f144886f0b9")
-		(pts
-			(xy 2.52 -0.525) (xy 2.51 1.625)
-		)
-		(height 4.077)
-		(orientation 1)
-		(gr_text "0.08 in"
-			(at 6.602 -0.849 90)
-			(layer "User.2")
-			(uuid "767c5360-32f8-4571-a969-6f144886f0b9")
-			(effects
-				(font
-					(size 0.2 0.2)
-					(thickness 0.15)
-				)
-				(justify left)
-			)
-		)
-		(format
-			(prefix "")
-			(suffix "")
-			(units 3)
-			(units_format 1)
-			(precision 2) suppress_zeroes)
-		(style
-			(thickness 0.05)
-			(arrow_length -0.25)
-			(text_position_mode 2)
-			(extension_height 0.58642)
-			(extension_offset 0) keep_text_aligned)
 	)
 	(group ""
 		(uuid "4f2a4b28-ac17-4d35-b69c-e38803ad4cd0")
