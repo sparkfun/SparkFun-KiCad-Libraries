@@ -1,4 +1,4 @@
-(footprint "ZED-F9"
+(footprint "ZED-F9P_F9T_F9R_X20P"
 	(version 20240108)
 	(generator "pcbnew")
 	(generator_version "8.0")
@@ -17,8 +17,8 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "ZED-F9"
-		(at -10 9.5 0)
+	(property "Value" "ZED-F9P_F9T_F9R_X20P"
+		(at -6.75 9.6 0)
 		(layer "F.Fab")
 		(uuid "2876a13f-642a-4c8b-92ce-a8f43007b71a")
 		(effects
@@ -2151,6 +2151,18 @@
 		(uuid "6c98c7e5-96c4-457b-bf5e-a70f20fc3585")
 	)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/GPS/zed-f9p.STEP"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/GPS/u-blox_ZED_Generic.step"
 		(offset
 			(xyz 0 0 0)
 		)
