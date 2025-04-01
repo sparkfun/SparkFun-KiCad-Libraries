@@ -1,9 +1,9 @@
 (footprint "Panasonic_C"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "<b>Panasonic Aluminium Electrolytic Capacitor VS-Serie Package E</b>")
+	(descr "Panasonic Aluminium Electrolytic Capacitor VS-Series Package C")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
 		(at 0 -2.867 0)
@@ -29,19 +29,6 @@
 				(bold yes)
 			)
 			(justify top)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 -0.2 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a267baab-260d-4665-b829-8d54c869996b")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
 		)
 	)
 	(property "Datasheet" ""
@@ -182,7 +169,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "66f0ffa3-2edc-427a-ba9a-d82c8124f052")
 	)
@@ -253,24 +240,25 @@
 			(width 0.1016)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "b2fe242a-0678-460d-a58b-9ef4dc203df0")
 	)
 	(pad "1" smd rect
 		(at 1.9 0)
 		(size 2.2 0.65)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "16c95e9f-efa6-449c-a708-2a94700dd7da")
 	)
 	(pad "2" smd rect
 		(at -1.8 0)
 		(size 2.2 0.65)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "6955ad24-0389-4cb6-b255-7e1feefad0f5")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Capacitor/CP_Elec_5x4.4.step"
 		(offset
 			(xyz 0 0 0)
