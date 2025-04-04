@@ -1711,9 +1711,13 @@
 		(embedded_fonts no)
 	)
 	(symbol "LED_PTH"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 1.016) hide)
+			(offset 1.016)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1760,15 +1764,6 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "LED-"
-			(at 0 -10.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "ki_keywords" "SparkFun LED diode PTH"
 			(at 0 0 0)
 			(effects
@@ -1802,7 +1797,19 @@
 			)
 			(polyline
 				(pts
-					(xy 1.016 0) (xy -0.762 0)
+					(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
 				)
 				(stroke
 					(width 0)
@@ -1826,19 +1833,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0.762) (xy -0.508 1.27) (xy -0.254 1.27) (xy -0.508 1.27) (xy -0.508 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.508 1.27) (xy 0 1.778) (xy 0.254 1.778) (xy 0 1.778) (xy 0 1.524)
+					(xy 1.016 0) (xy -0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -1887,6 +1882,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "LED_RGB_1205_Bottom"
 		(pin_names
