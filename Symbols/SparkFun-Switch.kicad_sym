@@ -1,10 +1,12 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "Capacitive Button"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -93,10 +95,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "DP3T_Slide_SMD_9.8x3.5mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -182,43 +187,7 @@
 		(symbol "DP3T_Slide_SMD_9.8x3.5mm_0_0"
 			(polyline
 				(pts
-					(xy 0 -6.35) (xy 0 -5.715)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -5.08) (xy 0 -4.445)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -3.81) (xy 0 -3.175)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -1.905)
+					(xy 0 0) (xy 0 0.635)
 				)
 				(stroke
 					(width 0)
@@ -242,7 +211,43 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 0.635)
+					(xy 0 -2.54) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -6.35) (xy 0 -5.715)
 				)
 				(stroke
 					(width 0)
@@ -255,17 +260,6 @@
 		)
 		(symbol "DP3T_Slide_SMD_9.8x3.5mm_0_1"
 			(circle
-				(center -2.032 -7.62)
-				(radius 0.4572)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
 				(center -2.032 0)
 				(radius 0.4572)
 				(stroke
@@ -276,10 +270,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -1.651 -7.366) (xy 1.651 -5.334)
-				)
+			(circle
+				(center -2.032 -7.62)
+				(radius 0.4572)
 				(stroke
 					(width 0)
 					(type default)
@@ -300,9 +293,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 -10.16)
-				(radius 0.4572)
+			(polyline
+				(pts
+					(xy -1.651 -7.366) (xy 1.651 -5.334)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -312,29 +306,7 @@
 				)
 			)
 			(circle
-				(center 2.032 -7.62)
-				(radius 0.4572)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 2.032 -5.08)
-				(radius 0.4572)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 2.032 -2.54)
+				(center 2.032 2.54)
 				(radius 0.4572)
 				(stroke
 					(width 0)
@@ -356,7 +328,40 @@
 				)
 			)
 			(circle
-				(center 2.032 2.54)
+				(center 2.032 -2.54)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -5.08)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -7.62)
+				(radius 0.4572)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.032 -10.16)
 				(radius 0.4572)
 				(stroke
 					(width 0)
@@ -368,6 +373,42 @@
 			)
 		)
 		(symbol "DP3T_Slide_SMD_9.8x3.5mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 2.54)
+				(name "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 5.08 2.54 180)
 				(length 2.54)
@@ -397,24 +438,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -477,24 +500,6 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
-				(length 2.54)
-				(name "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 5.08 -10.16 180)
 				(length 2.54)
 				(name "8"
@@ -513,10 +518,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "DPDT_Slide_SMD_7.2x3.5mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -601,17 +609,6 @@
 		)
 		(symbol "DPDT_Slide_SMD_7.2x3.5mm_0_0"
 			(circle
-				(center -2.032 -8.89)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
 				(center -2.032 0)
 				(radius 0.508)
 				(stroke
@@ -622,10 +619,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -7.62) (xy 0 -6.985)
-				)
+			(circle
+				(center -2.032 -8.89)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -636,43 +632,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -6.35) (xy 0 -5.715)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -5.08) (xy 0 -4.445)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -3.81) (xy 0 -3.175)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -1.905)
+					(xy 0 0) (xy 0 0.635)
 				)
 				(stroke
 					(width 0)
@@ -696,7 +656,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 0.635)
+					(xy 0 -2.54) (xy 0 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -706,9 +666,46 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 -11.43)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -6.35) (xy 0 -5.715)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -7.62) (xy 0 -6.985)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -728,12 +725,9 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "DPDT_Slide_SMD_7.2x3.5mm_0_1"
-			(polyline
-				(pts
-					(xy -1.524 -8.636) (xy 1.651 -6.604)
-				)
+			(circle
+				(center 2.032 -11.43)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -742,6 +736,8 @@
 					(type none)
 				)
 			)
+		)
+		(symbol "DPDT_Slide_SMD_7.2x3.5mm_0_1"
 			(polyline
 				(pts
 					(xy -1.524 0.254) (xy 1.651 2.286)
@@ -754,9 +750,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 -6.35)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy -1.524 -8.636) (xy 1.651 -6.604)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -776,26 +773,19 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "DPDT_Slide_SMD_7.2x3.5mm_1_1"
-			(pin passive line
-				(at 5.08 2.54 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center 2.032 -6.35)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
+		)
+		(symbol "DPDT_Slide_SMD_7.2x3.5mm_1_1"
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
@@ -807,6 +797,42 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -8.89 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -851,24 +877,6 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -8.89 0)
-				(length 2.54)
-				(name "B"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 5.08 -11.43 180)
 				(length 2.54)
 				(name "C"
@@ -887,10 +895,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "DPDT_Slide_SMD_9.0x3.6mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -975,17 +986,6 @@
 		)
 		(symbol "DPDT_Slide_SMD_9.0x3.6mm_0_0"
 			(circle
-				(center -2.032 -7.62)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
 				(center -2.032 1.27)
 				(radius 0.508)
 				(stroke
@@ -996,10 +996,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0 -6.35) (xy 0 -5.715)
-				)
+			(circle
+				(center -2.032 -7.62)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -1010,43 +1009,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -5.08) (xy 0 -4.445)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -3.81) (xy 0 -3.175)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -2.54) (xy 0 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.27) (xy 0 -0.635)
+					(xy 0 1.27) (xy 0 1.905)
 				)
 				(stroke
 					(width 0)
@@ -1070,7 +1033,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.27) (xy 0 1.905)
+					(xy 0 -1.27) (xy 0 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -1080,9 +1043,46 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 -10.16)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -5.08) (xy 0 -4.445)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -6.35) (xy 0 -5.715)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -1102,12 +1102,9 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "DPDT_Slide_SMD_9.0x3.6mm_0_1"
-			(polyline
-				(pts
-					(xy -1.524 -7.366) (xy 1.651 -5.334)
-				)
+			(circle
+				(center 2.032 -10.16)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -1116,6 +1113,8 @@
 					(type none)
 				)
 			)
+		)
+		(symbol "DPDT_Slide_SMD_9.0x3.6mm_0_1"
 			(polyline
 				(pts
 					(xy -1.524 1.524) (xy 1.651 3.556)
@@ -1128,9 +1127,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 -5.08)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy -1.524 -7.366) (xy 1.651 -5.334)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -1150,26 +1150,19 @@
 					(type none)
 				)
 			)
-		)
-		(symbol "DPDT_Slide_SMD_9.0x3.6mm_1_1"
-			(pin passive line
-				(at 5.08 3.81 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(circle
+				(center 2.032 -5.08)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(fill
+					(type none)
 				)
 			)
+		)
+		(symbol "DPDT_Slide_SMD_9.0x3.6mm_1_1"
 			(pin passive line
 				(at -5.08 1.27 0)
 				(length 2.54)
@@ -1181,6 +1174,42 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 2.54)
+				(name "B"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 3.81 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1225,24 +1254,6 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
-				(length 2.54)
-				(name "B"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 5.08 -10.16 180)
 				(length 2.54)
 				(name "C"
@@ -1261,11 +1272,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Joystick_PTH"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1509,32 +1525,8 @@
 					(type none)
 				)
 			)
-			(text "GND"
-				(at -8.128 -7.62 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
 			(text "Left/Right"
 				(at -8.636 0 900)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(text "Select"
-				(at 7.62 8.128 0)
-				(effects
-					(font
-						(size 0.635 0.635)
-					)
-				)
-			)
-			(text "Up/Down"
-				(at 0 8.636 0)
 				(effects
 					(font
 						(size 0.635 0.635)
@@ -1549,35 +1541,41 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -11.43 -7.62 0)
-				(length 1.905)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(text "GND"
+				(at -8.128 -7.62 0)
+				(effects
+					(font
+						(size 0.635 0.635)
 					)
 				)
-				(number "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			)
+			(text "Up/Down"
+				(at 0 8.636 0)
+				(effects
+					(font
+						(size 0.635 0.635)
+					)
+				)
+			)
+			(text "Select"
+				(at 7.62 8.128 0)
+				(effects
+					(font
+						(size 0.635 0.635)
 					)
 				)
 			)
 			(pin passive line
-				(at 11.43 -7.62 180)
+				(at -11.43 7.62 0)
 				(length 1.905)
-				(name "GND"
+				(name "VCC"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "GND"
+				(number "VCC"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1604,34 +1602,16 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 7.62 180)
+				(at -11.43 -7.62 0)
 				(length 1.905)
-				(name "Select"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "Select"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -11.43 7.62 0)
-				(length 1.905)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "VCC"
+				(number "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1657,12 +1637,53 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 11.43 7.62 180)
+				(length 1.905)
+				(name "Select"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "Select"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 11.43 -7.62 180)
+				(length 1.905)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Navigation_5Way_SMD_7.5x7.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1978,6 +1999,44 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at -11.43 -5.08 0)
+				(length 1.905)
+				(hide yes)
+				(name "MP1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "MP1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -11.43 -6.35 0)
+				(length 1.905)
+				(hide yes)
+				(name "MP2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "MP2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at -11.43 -8.89 0)
 				(length 1.905)
@@ -1989,6 +2048,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 11.43 270)
+				(length 1.905)
+				(name "Up"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2015,24 +2092,6 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 0 180)
-				(length 1.905)
-				(name "Right"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 11.43 8.89 180)
 				(length 1.905)
 				(name "Center"
@@ -2051,52 +2110,16 @@
 				)
 			)
 			(pin passive line
-				(at 0 11.43 270)
+				(at 11.43 0 180)
 				(length 1.905)
-				(name "Up"
+				(name "Right"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -11.43 -5.08 0)
-				(length 1.905) hide
-				(name "MP1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "MP1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -11.43 -6.35 0)
-				(length 1.905) hide
-				(name "MP2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "MP2"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2105,11 +2128,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Navigation_5Way_SMD_9.9x9.9mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2408,16 +2436,16 @@
 				)
 			)
 			(pin passive line
-				(at 0 11.43 270)
+				(at -11.43 0 0)
 				(length 1.905)
-				(name "Up"
+				(name "Left"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2444,26 +2472,9 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 0 180)
-				(length 1.905)
-				(name "Right"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -11.43 -8.89 0)
-				(length 1.905) hide
+				(length 1.905)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -2480,16 +2491,73 @@
 				)
 			)
 			(pin passive line
-				(at 11.43 8.89 180)
+				(at -11.43 -8.89 0)
 				(length 1.905)
-				(name "Center"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "4"
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -11.43 -8.89 0)
+				(length 1.905)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -11.43 -8.89 0)
+				(length 1.905)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 11.43 270)
+				(length 1.905)
+				(name "Up"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2516,52 +2584,16 @@
 				)
 			)
 			(pin passive line
-				(at -11.43 -8.89 0)
-				(length 1.905) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -11.43 0 0)
+				(at 11.43 8.89 180)
 				(length 1.905)
-				(name "Left"
+				(name "Center"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -11.43 -8.89 0)
-				(length 1.905) hide
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2570,16 +2602,16 @@
 				)
 			)
 			(pin passive line
-				(at -11.43 -8.89 0)
-				(length 1.905) hide
-				(name "GND"
+				(at 11.43 0 180)
+				(length 1.905)
+				(name "Right"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "9"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2588,10 +2620,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SP3T_Slide_SMD_9.0x3.6mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2699,7 +2734,7 @@
 				)
 			)
 			(circle
-				(center 2.032 -2.54)
+				(center 2.032 2.54)
 				(radius 0.4572)
 				(stroke
 					(width 0)
@@ -2721,7 +2756,7 @@
 				)
 			)
 			(circle
-				(center 2.032 2.54)
+				(center 2.032 -2.54)
 				(radius 0.4572)
 				(stroke
 					(width 0)
@@ -2733,6 +2768,43 @@
 			)
 		)
 		(symbol "SP3T_Slide_SMD_9.0x3.6mm_1_1"
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 5.08 2.54 180)
 				(length 2.54)
@@ -2770,24 +2842,6 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 5.08 -2.54 180)
 				(length 2.54)
 				(name "4"
@@ -2805,29 +2859,14 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -5.08 2.54 0)
-				(length 2.54) hide
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SP3T_Slide_SMD_9.8x3.5mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2926,7 +2965,7 @@
 				)
 			)
 			(circle
-				(center 2.032 -2.54)
+				(center 2.032 2.54)
 				(radius 0.4572)
 				(stroke
 					(width 0)
@@ -2948,7 +2987,7 @@
 				)
 			)
 			(circle
-				(center 2.032 2.54)
+				(center 2.032 -2.54)
 				(radius 0.4572)
 				(stroke
 					(width 0)
@@ -2960,6 +2999,100 @@
 			)
 		)
 		(symbol "SP3T_Slide_SMD_9.8x3.5mm_1_1"
+			(pin no_connect line
+				(at -5.08 10.16 0)
+				(length 2.54)
+				(hide yes)
+				(name "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 7.62 0)
+				(length 2.54)
+				(hide yes)
+				(name "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 5.08 2.54 180)
 				(length 2.54)
@@ -2997,24 +3130,6 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 5.08 -2.54 180)
 				(length 2.54)
 				(name "4"
@@ -3032,83 +3147,14 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -5.08 2.54 0)
-				(length 2.54) hide
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 5.08 0)
-				(length 2.54) hide
-				(name "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 7.62 0)
-				(length 2.54) hide
-				(name "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 10.16 0)
-				(length 2.54) hide
-				(name "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPDT_Slide_PTH_11.6x4.0mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3233,24 +3279,6 @@
 		)
 		(symbol "SPDT_Slide_PTH_11.6x4.0mm_1_1"
 			(pin passive line
-				(at 5.08 2.54 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "B"
@@ -3261,6 +3289,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3287,10 +3333,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3415,24 +3464,6 @@
 		)
 		(symbol "SPDT_Slide_PTH_11.6x4.0mm-ShortPin_1_1"
 			(pin passive line
-				(at 5.08 2.54 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "B"
@@ -3443,6 +3474,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3469,10 +3518,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPDT_Slide_SMD_6.7x2.6mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3597,24 +3649,6 @@
 		)
 		(symbol "SPDT_Slide_SMD_6.7x2.6mm_1_1"
 			(pin passive line
-				(at 5.08 2.54 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "2"
@@ -3625,6 +3659,24 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3652,7 +3704,8 @@
 			)
 			(pin no_connect line
 				(at 15.24 2.54 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "MT1"
 					(effects
 						(font
@@ -3670,7 +3723,8 @@
 			)
 			(pin no_connect line
 				(at 15.24 0 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "MT2"
 					(effects
 						(font
@@ -3688,7 +3742,8 @@
 			)
 			(pin no_connect line
 				(at 15.24 -2.54 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "MT3"
 					(effects
 						(font
@@ -3706,7 +3761,8 @@
 			)
 			(pin no_connect line
 				(at 15.24 -5.08 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "MT4"
 					(effects
 						(font
@@ -3723,10 +3779,13 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPDT_Slide_SMD_7.2x3.5mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3850,17 +3909,56 @@
 			)
 		)
 		(symbol "SPDT_Slide_SMD_7.2x3.5mm_1_1"
-			(pin passive line
-				(at 5.08 2.54 180)
+			(pin no_connect line
+				(at -5.08 7.62 0)
 				(length 2.54)
-				(name "A"
+				(hide yes)
+				(name "6"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3887,6 +3985,24 @@
 				)
 			)
 			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 5.08 -2.54 180)
 				(length 2.54)
 				(name "C"
@@ -3904,65 +4020,14 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -5.08 2.54 0)
-				(length 2.54) hide
-				(name "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 5.08 0)
-				(length 2.54) hide
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 7.62 0)
-				(length 2.54) hide
-				(name "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4086,17 +4151,56 @@
 			)
 		)
 		(symbol "SPDT_Slide_SMD_7.2x3.5mm-HighFriction_1_1"
-			(pin passive line
-				(at 5.08 2.54 180)
+			(pin no_connect line
+				(at -5.08 7.62 0)
 				(length 2.54)
-				(name "A"
+				(hide yes)
+				(name "6"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4123,6 +4227,24 @@
 				)
 			)
 			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 5.08 -2.54 180)
 				(length 2.54)
 				(name "C"
@@ -4140,65 +4262,14 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -5.08 2.54 0)
-				(length 2.54) hide
-				(name "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 5.08 0)
-				(length 2.54) hide
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 7.62 0)
-				(length 2.54) hide
-				(name "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPDT_Slide_SMD_9.0x3.6mm"
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4331,17 +4402,56 @@
 			)
 		)
 		(symbol "SPDT_Slide_SMD_9.0x3.6mm_1_1"
-			(pin passive line
-				(at 5.08 3.81 180)
+			(pin no_connect line
+				(at -5.08 8.89 0)
 				(length 2.54)
-				(name "A"
+				(hide yes)
+				(name "6"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 6.35 0)
+				(length 2.54)
+				(hide yes)
+				(name "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -5.08 3.81 0)
+				(length 2.54)
+				(hide yes)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -4368,6 +4478,24 @@
 				)
 			)
 			(pin passive line
+				(at 5.08 3.81 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 5.08 -1.27 180)
 				(length 2.54)
 				(name "C"
@@ -4385,66 +4513,17 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -5.08 3.81 0)
-				(length 2.54) hide
-				(name "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 6.35 0)
-				(length 2.54) hide
-				(name "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at -5.08 8.89 0)
-				(length 2.54) hide
-				(name "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_PTH_12x12mm_h8.0mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4542,10 +4621,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -4554,9 +4632,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -4604,11 +4683,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_PTH_LED-Red"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4685,7 +4769,7 @@
 		(symbol "SPST_Push_PTH_LED-Red_0_0"
 			(polyline
 				(pts
-					(xy -3.81 -1.905) (xy -2.54 -0.635)
+					(xy -3.81 -1.27) (xy -3.81 -1.905) (xy -3.175 -1.905)
 				)
 				(stroke
 					(width 0)
@@ -4697,7 +4781,7 @@
 			)
 			(polyline
 				(pts
-					(xy -2.54 -1.905) (xy -1.27 -0.635)
+					(xy -3.81 -1.905) (xy -2.54 -0.635)
 				)
 				(stroke
 					(width 0)
@@ -4721,31 +4805,31 @@
 			)
 			(polyline
 				(pts
-					(xy -0.635 1.27) (xy -0.635 -1.27)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -3.81 -1.27) (xy -3.81 -1.905) (xy -3.175 -1.905)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy -2.54 -1.27) (xy -2.54 -1.905) (xy -1.905 -1.905)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -1.905) (xy -1.27 -0.635)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 1.27) (xy -0.635 -1.27)
 				)
 				(stroke
 					(width 0)
@@ -4792,10 +4876,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 3.81) (xy -2.54 3.81)
-				)
+			(circle
+				(center 2.032 2.54)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -4804,9 +4887,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 2.54)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 3.81) (xy -2.54 3.81)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -4854,24 +4938,6 @@
 		)
 		(symbol "SPST_Push_PTH_LED-Red_1_1"
 			(pin passive line
-				(at 5.08 0 180)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "K"
@@ -4889,12 +4955,35 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 5.08 0 180)
+				(length 2.54)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_PTH_RA_7.4x4.3mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4992,10 +5081,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -5004,9 +5092,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -5055,7 +5144,8 @@
 		(symbol "SPST_Push_PTH_RA_7.4x4.3mm_1_1"
 			(pin passive line
 				(at -5.08 2.54 0)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "M1"
 					(effects
 						(font
@@ -5073,7 +5163,8 @@
 			)
 			(pin passive line
 				(at 5.08 2.54 180)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "M2"
 					(effects
 						(font
@@ -5090,11 +5181,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_PTH_RA_h7.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5192,6 +5288,17 @@
 					(type none)
 				)
 			)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
 					(xy 2.54 1.27) (xy -2.54 1.27)
@@ -5204,19 +5311,27 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 		)
 		(symbol "SPST_Push_PTH_RA_h7.5mm_1_1"
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "M1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
@@ -5228,6 +5343,25 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 5.08 2.54 180)
+				(length 2.54)
+				(hide yes)
+				(name "M2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "M2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5253,48 +5387,17 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -5.08 2.54 0)
-				(length 2.54) hide
-				(name "M1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "M1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 5.08 2.54 180)
-				(length 2.54) hide
-				(name "M2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "M2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_12x12mm_h8.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5392,10 +5495,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -5404,9 +5506,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -5454,11 +5557,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_4.2x3.2mm_h2.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5556,10 +5664,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -5568,9 +5675,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -5616,11 +5724,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_4.6x2.8mm_h1.9mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5718,10 +5831,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -5730,9 +5842,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -5778,11 +5891,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_4.6x2.8mm_h2.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5871,10 +5989,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -5883,9 +6000,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -5933,11 +6051,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_5.2x5.2mm_h1.9mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6026,10 +6149,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -6038,9 +6160,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -6088,11 +6211,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_5.2x5.2mm_h2.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6181,10 +6309,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -6193,9 +6320,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -6243,11 +6371,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_6.2x6.2mm_h7.0mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6345,10 +6478,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -6357,9 +6489,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -6407,11 +6540,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_6x3.5mm_h2.5mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6509,10 +6647,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -6521,9 +6658,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -6571,11 +6709,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_RA_4.5x3.4mm_h3.3mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6673,10 +6816,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -6685,9 +6827,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -6735,11 +6878,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SPST_Push_SMD_RA_5x3mm_h3.6mm"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6837,10 +6985,9 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 2.54 1.27) (xy -2.54 1.27)
-				)
+			(circle
+				(center 2.032 0)
+				(radius 0.508)
 				(stroke
 					(width 0)
 					(type default)
@@ -6849,9 +6996,10 @@
 					(type none)
 				)
 			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
+			(polyline
+				(pts
+					(xy 2.54 1.27) (xy -2.54 1.27)
+				)
 				(stroke
 					(width 0)
 					(type default)
@@ -6899,11 +7047,16 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "SW_Reed"
-		(pin_numbers hide)
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
-			(offset 0) hide)
+			(offset 0)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -6969,18 +7122,6 @@
 			)
 		)
 		(symbol "SW_Reed_0_0"
-			(arc
-				(start -2.159 1.397)
-				(mid -3.55 0)
-				(end -2.159 -1.397)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(polyline
 				(pts
 					(xy -2.54 0) (xy 1.27 0.762)
@@ -6997,6 +7138,30 @@
 				(pts
 					(xy -2.159 -1.397) (xy 2.286 -1.397)
 				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -2.159 -1.397)
+				(mid -3.55 0)
+				(end -2.159 1.397)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 2.159 1.397)
+				(mid 3.55 0)
+				(end 2.159 -1.397)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -7023,18 +7188,6 @@
 				)
 				(stroke
 					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(arc
-				(start 2.159 -1.397)
-				(mid 3.55 0)
-				(end 2.159 1.397)
-				(stroke
-					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -7080,5 +7233,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )
