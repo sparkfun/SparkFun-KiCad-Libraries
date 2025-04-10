@@ -1,7 +1,7 @@
 (footprint "Creative_Commons_License"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun Creative Commons License")
 	(property "Reference" "Ref**"
@@ -21,19 +21,6 @@
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "e449b932-e5d1-42c1-ae41-7e8d04339bdc")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "f54ca916-dcc7-4e29-92dd-4a4b5513fa43")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -70,7 +57,7 @@
 	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_text user "Released under the Creative Commons Attribution Share-Alike 4.0 License"
 		(at 0 -1.27 0)
-		(layer "F.Fab")
+		(layer "Eco2.User")
 		(uuid "a8d13a97-46d3-488a-b5cc-370087215902")
 		(effects
 			(font
@@ -82,7 +69,7 @@
 	)
 	(fp_text user " https://creativecommons.org/licenses/by-sa/4.0/"
 		(at 0 1.27 0)
-		(layer "F.Fab")
+		(layer "Eco2.User")
 		(uuid "b23dc741-f28d-48a6-a230-d1c456221459")
 		(effects
 			(font
@@ -92,4 +79,5 @@
 			(justify bottom)
 		)
 	)
+	(embedded_fonts no)
 )
