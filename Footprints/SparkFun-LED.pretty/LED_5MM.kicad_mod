@@ -162,16 +162,7 @@
 		(layer "F.Fab")
 		(uuid "079df514-14a3-4d87-8ae6-9c0a76c5ff6c")
 	)
-	(pad "A" thru_hole circle
-		(at -1.27 0)
-		(size 1.8796 1.8796)
-		(drill 1.016)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(thermal_bridge_angle 0)
-		(uuid "23b9468d-8965-47cd-8715-054cfba8ebc8")
-	)
-	(pad "K" thru_hole circle
+	(pad "1" thru_hole circle
 		(at 1.27 0)
 		(size 1.8796 1.8796)
 		(drill 1.016)
@@ -179,6 +170,15 @@
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
 		(uuid "03b787a1-65e7-4788-8168-5675873b1068")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 0)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "23b9468d-8965-47cd-8715-054cfba8ebc8")
 	)
 	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_PTH_5mm_Red.step"
