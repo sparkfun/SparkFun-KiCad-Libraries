@@ -1,7 +1,7 @@
 (footprint "1x01"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
@@ -23,19 +23,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "cd3f11bb-54eb-4856-8416-4e020501d039")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -72,7 +59,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "83232b3b-258d-4676-825e-4cc69583894c")
 	)
@@ -84,7 +71,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "4c8b89e4-b47b-4a70-b2b5-2ac08d1b8666")
 	)
@@ -97,5 +84,18 @@
 		(keep_end_layers yes)
 		(thermal_bridge_angle 0)
 		(uuid "86687de8-a791-4b0d-b05f-82a702ba1f6f")
+	)
+	(embedded_fonts no)
+	(model "${DROPBOX_PROJECTS}/SparkFun-KiCad-Libraries/Footprints/SparkFun-3D-models/Connector/PinHeader_1x01_P2.54mm_Vertical.step"
+		(hide yes)
+		(offset
+			(xyz 0 2.5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
 	)
 )
