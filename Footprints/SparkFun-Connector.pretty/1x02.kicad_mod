@@ -1,7 +1,7 @@
 (footprint "1x02"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
@@ -23,19 +23,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "62476eeb-abee-4027-9bf8-c768c87eabce")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -72,7 +59,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "611638a1-169f-4764-843e-5663139eb815")
 	)
@@ -84,7 +71,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "0b665c56-bcbb-432c-8c33-340aab917552")
 	)
@@ -96,7 +83,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "68cac61f-732d-4c31-a7a7-304725de54ca")
 	)
@@ -120,15 +107,17 @@
 		(thermal_bridge_angle 0)
 		(uuid "8f8473b9-d553-43fd-8c9f-97db8bf758e3")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/PRPC040SAAN-RC.STEP"
+	(embedded_fonts no)
+	(model "${DROPBOX_PROJECTS}/SparkFun-KiCad-Libraries/Footprints/SparkFun-3D-models/Connector/PinHeader_1x02_P2.54mm_Vertical.step"
+		(hide yes)
 		(offset
-			(xyz 0 -0.1 0)
+			(xyz -5 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -90 0 0)
+			(xyz -0 -0 -90)
 		)
 	)
 )

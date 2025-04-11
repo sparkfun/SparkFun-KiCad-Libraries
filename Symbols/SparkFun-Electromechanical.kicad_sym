@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "Buzzer_9mm_SMD"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -128,6 +128,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Micro_XY_FFC"
 		(exclude_from_sim no)
@@ -219,16 +220,16 @@
 				)
 			)
 			(pin input line
-				(at 16.51 5.08 180)
+				(at -16.51 5.08 0)
 				(length 2.54)
-				(name "Y_LIMIT"
+				(name "X_LIMIT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -237,16 +238,16 @@
 				)
 			)
 			(pin input line
-				(at 16.51 2.54 180)
+				(at -16.51 2.54 0)
 				(length 2.54)
-				(name "Y_LIMIT_VCC"
+				(name "X_LIMIT_GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -326,45 +327,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -16.51 5.08 0)
-				(length 2.54)
-				(name "X_LIMIT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -16.51 2.54 0)
-				(length 2.54)
-				(name "X_LIMIT_GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin no_connect line
 				(at 0 -11.43 90)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name "NC"
 					(effects
 						(font
@@ -373,6 +339,78 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -11.43 90)
+				(length 2.54)
+				(name "ANCHOR"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 7.62 180)
+				(length 2.54)
+				(name "Y_LIMIT_GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 5.08 180)
+				(length 2.54)
+				(name "Y_LIMIT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 16.51 2.54 180)
+				(length 2.54)
+				(name "Y_LIMIT_VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -452,43 +490,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at 16.51 7.62 180)
-				(length 2.54)
-				(name "Y_LIMIT_GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -11.43 90)
-				(length 2.54)
-				(name "ANCHOR"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Relay_SPDT_10A_3V_15.6x21.6mm"
 		(exclude_from_sim no)
@@ -594,18 +597,6 @@
 		(symbol "Relay_SPDT_10A_3V_15.6x21.6mm_0_0"
 			(polyline
 				(pts
-					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
 				)
 				(stroke
@@ -614,6 +605,18 @@
 				)
 				(fill
 					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)
@@ -668,31 +671,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.175) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.905) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.635) (xy 0 -1.27)
+					(xy 0 1.905) (xy 0 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -716,7 +695,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.905) (xy 0 1.27)
+					(xy 0 -0.635) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -728,10 +707,22 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 5.08) (xy 1.905 5.08)
+					(xy 0 -1.905) (xy 0 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -760,26 +751,20 @@
 					(type background)
 				)
 			)
-		)
-		(symbol "Relay_SPDT_10A_3V_15.6x21.6mm_1_1"
-			(pin passive line
-				(at -7.62 -5.08 0)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
+		)
+		(symbol "Relay_SPDT_10A_3V_15.6x21.6mm_1_1"
 			(pin passive line
 				(at -7.62 5.08 0)
 				(length 2.54)
@@ -799,7 +784,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -7.62 180)
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -808,7 +793,25 @@
 						)
 					)
 				)
-				(number "3"
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -835,7 +838,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 5.08 180)
+				(at 7.62 -7.62 180)
 				(length 2.54)
 				(name ""
 					(effects
@@ -844,7 +847,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -853,6 +856,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Relay_SPDT_10A_5V_15.2x19.0mm"
 		(exclude_from_sim no)
@@ -958,18 +962,6 @@
 		(symbol "Relay_SPDT_10A_5V_15.2x19.0mm_0_0"
 			(polyline
 				(pts
-					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
 				)
 				(stroke
@@ -978,6 +970,18 @@
 				)
 				(fill
 					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)
@@ -1032,31 +1036,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.175) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.905) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.635) (xy 0 -1.27)
+					(xy 0 1.905) (xy 0 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1080,7 +1060,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.905) (xy 0 1.27)
+					(xy 0 -0.635) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1092,10 +1072,22 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 5.08) (xy 1.905 5.08)
+					(xy 0 -1.905) (xy 0 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1124,26 +1116,20 @@
 					(type background)
 				)
 			)
-		)
-		(symbol "Relay_SPDT_10A_5V_15.2x19.0mm_1_1"
-			(pin passive line
-				(at -7.62 -5.08 0)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
+		)
+		(symbol "Relay_SPDT_10A_5V_15.2x19.0mm_1_1"
 			(pin passive line
 				(at -7.62 5.08 0)
 				(length 2.54)
@@ -1163,7 +1149,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -7.62 180)
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1172,7 +1158,25 @@
 						)
 					)
 				)
-				(number "3"
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1199,7 +1203,7 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 5.08 180)
+				(at 7.62 -7.62 180)
 				(length 2.54)
 				(name ""
 					(effects
@@ -1208,7 +1212,7 @@
 						)
 					)
 				)
-				(number "5"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1217,6 +1221,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Relay_SPDT_20A_5V_27.6x32.0mm"
 		(exclude_from_sim no)
@@ -1322,18 +1327,6 @@
 		(symbol "Relay_SPDT_20A_5V_27.6x32.0mm_0_0"
 			(polyline
 				(pts
-					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
 				)
 				(stroke
@@ -1342,6 +1335,18 @@
 				)
 				(fill
 					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)
@@ -1396,31 +1401,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.175) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.905) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.635) (xy 0 -1.27)
+					(xy 0 1.905) (xy 0 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1444,7 +1425,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.905) (xy 0 1.27)
+					(xy 0 -0.635) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1456,10 +1437,22 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 5.08) (xy 1.905 5.08)
+					(xy 0 -1.905) (xy 0 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1488,6 +1481,18 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "Relay_SPDT_20A_5V_27.6x32.0mm_1_1"
 			(pin passive line
@@ -1509,24 +1514,6 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 5.08 180)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -7.62 -5.08 0)
 				(length 2.54)
 				(name ""
@@ -1537,6 +1524,24 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1581,6 +1586,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Relay_SPDT_2A_5V_7.5x12.5mm"
 		(exclude_from_sim no)
@@ -1685,18 +1691,6 @@
 		(symbol "Relay_SPDT_2A_5V_7.5x12.5mm_0_0"
 			(polyline
 				(pts
-					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
 				)
 				(stroke
@@ -1705,6 +1699,18 @@
 				)
 				(fill
 					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)
@@ -1759,31 +1765,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.175) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.905) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.635) (xy 0 -1.27)
+					(xy 0 1.905) (xy 0 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1807,7 +1789,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.905) (xy 0 1.27)
+					(xy 0 -0.635) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -1819,10 +1801,22 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 5.08) (xy 1.905 5.08)
+					(xy 0 -1.905) (xy 0 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -1851,8 +1845,38 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "Relay_SPDT_2A_5V_7.5x12.5mm_1_1"
+			(pin passive line
+				(at -7.62 5.08 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at -7.62 -5.08 0)
 				(length 2.54)
@@ -1873,7 +1897,8 @@
 			)
 			(pin passive line
 				(at -7.62 -5.08 0)
-				(length 2.54) hide
+				(length 2.54)
+				(hide yes)
 				(name ""
 					(effects
 						(font
@@ -1882,24 +1907,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -7.62 5.08 0)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1926,24 +1933,6 @@
 				)
 			)
 			(pin passive line
-				(at 7.62 -7.62 180)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at 7.62 -2.54 180)
 				(length 2.54)
 				(name ""
@@ -1961,7 +1950,26 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 7.62 -7.62 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Relay_SPDT_5A_5V_10.3x20.3mm"
 		(exclude_from_sim no)
@@ -2067,18 +2075,6 @@
 		(symbol "Relay_SPDT_5A_5V_10.3x20.3mm_0_0"
 			(polyline
 				(pts
-					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
 				)
 				(stroke
@@ -2087,6 +2083,18 @@
 				)
 				(fill
 					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
 		)
@@ -2141,31 +2149,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.175) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.905) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.635) (xy 0 -1.27)
+					(xy 0 1.905) (xy 0 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -2189,7 +2173,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.905) (xy 0 1.27)
+					(xy 0 -0.635) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -2201,10 +2185,22 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 5.08) (xy 1.905 5.08)
+					(xy 0 -1.905) (xy 0 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -2233,8 +2229,56 @@
 					(type background)
 				)
 			)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 		)
 		(symbol "Relay_SPDT_5A_5V_10.3x20.3mm_1_1"
+			(pin passive line
+				(at -7.62 5.08 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin passive line
 				(at 7.62 5.08 180)
 				(length 2.54)
@@ -2289,43 +2333,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -7.62 -5.08 0)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -7.62 5.08 0)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "Relay_SPST_5A_5V_5.0x20mm"
 		(exclude_from_sim no)
@@ -2493,31 +2502,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 -3.175) (xy 0 -3.81)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -1.905) (xy 0 -2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 -0.635) (xy 0 -1.27)
+					(xy 0 1.905) (xy 0 1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -2541,7 +2526,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 1.905) (xy 0 1.27)
+					(xy 0 -0.635) (xy 0 -1.27)
 				)
 				(stroke
 					(width 0.254)
@@ -2553,10 +2538,22 @@
 			)
 			(polyline
 				(pts
-					(xy 5.08 5.08) (xy 1.905 5.08)
+					(xy 0 -1.905) (xy 0 -2.54)
 				)
 				(stroke
-					(width 0)
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.175) (xy 0 -3.81)
+				)
+				(stroke
+					(width 0.254)
 					(type default)
 				)
 				(fill
@@ -2585,26 +2582,20 @@
 					(type background)
 				)
 			)
-		)
-		(symbol "Relay_SPST_5A_5V_5.0x20mm_1_1"
-			(pin passive line
-				(at 7.62 5.08 180)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(polyline
+				(pts
+					(xy 5.08 5.08) (xy 1.905 5.08)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
 				)
 			)
+		)
+		(symbol "Relay_SPST_5A_5V_5.0x20mm_1_1"
 			(pin passive line
 				(at -7.62 5.08 0)
 				(length 2.54)
@@ -2616,24 +2607,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 -7.62 180)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2659,6 +2632,43 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 7.62 5.08 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 7.62 -7.62 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
+		(embedded_fonts no)
 	)
 )

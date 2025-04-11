@@ -1,7 +1,7 @@
 (kicad_symbol_lib
-	(version 20231120)
+	(version 20241209)
 	(generator "kicad_symbol_editor")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(symbol "0.9V"
 		(power)
 		(pin_names
@@ -67,7 +67,7 @@
 		(symbol "0.9V_0_1"
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -79,7 +79,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -105,7 +105,8 @@
 			)
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "0.9V"
 					(effects
 						(font
@@ -122,6 +123,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "1.1V"
 		(power)
@@ -188,7 +190,7 @@
 		(symbol "1.1V_0_1"
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -200,7 +202,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -226,7 +228,8 @@
 			)
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "1.1V"
 					(effects
 						(font
@@ -243,6 +246,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "1.8V"
 		(power)
@@ -309,7 +313,7 @@
 		(symbol "1.8V_0_1"
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -321,7 +325,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -347,7 +351,8 @@
 			)
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "1.8V"
 					(effects
 						(font
@@ -364,6 +369,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "12V"
 		(power)
@@ -442,7 +448,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -454,7 +460,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -468,7 +474,8 @@
 		(symbol "12V_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "12V"
 					(effects
 						(font
@@ -485,6 +492,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "2.8V"
 		(power)
@@ -551,7 +559,7 @@
 		(symbol "2.8V_0_1"
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -563,7 +571,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -589,7 +597,8 @@
 			)
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "2.8V"
 					(effects
 						(font
@@ -606,6 +615,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "3.3V"
 		(power)
@@ -684,7 +694,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -696,7 +706,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -710,7 +720,8 @@
 		(symbol "3.3V_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "3.3V"
 					(effects
 						(font
@@ -727,6 +738,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "3.3V_A"
 		(power)
@@ -805,7 +817,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -817,7 +829,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -831,7 +843,8 @@
 		(symbol "3.3V_A_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "3.3V_A"
 					(effects
 						(font
@@ -848,6 +861,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "3.3V_P"
 		(power)
@@ -914,7 +928,7 @@
 		(symbol "3.3V_P_0_1"
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -926,7 +940,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -952,7 +966,8 @@
 			)
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "3.3V_P"
 					(effects
 						(font
@@ -969,6 +984,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "5V"
 		(power)
@@ -1047,7 +1063,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1059,7 +1075,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1073,7 +1089,8 @@
 		(symbol "5V_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "5V"
 					(effects
 						(font
@@ -1090,6 +1107,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "GND"
 		(power)
@@ -1170,7 +1188,8 @@
 		(symbol "GND_1_1"
 			(pin power_in line
 				(at 0 0 270)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -1187,6 +1206,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VBATT"
 		(power)
@@ -1265,7 +1285,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1277,7 +1297,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1291,7 +1311,8 @@
 		(symbol "VBATT_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VBATT"
 					(effects
 						(font
@@ -1308,6 +1329,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VBUS"
 		(power)
@@ -1386,7 +1408,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1398,7 +1420,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1412,7 +1434,8 @@
 		(symbol "VBUS_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VBUS"
 					(effects
 						(font
@@ -1429,6 +1452,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VCC"
 		(power)
@@ -1507,7 +1531,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1519,7 +1543,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1533,7 +1557,8 @@
 		(symbol "VCC_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VCC"
 					(effects
 						(font
@@ -1550,6 +1575,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VDD"
 		(power)
@@ -1628,7 +1654,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1640,7 +1666,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1654,7 +1680,8 @@
 		(symbol "VDD_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VDD"
 					(effects
 						(font
@@ -1671,6 +1698,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VDDA"
 		(power)
@@ -1749,7 +1777,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1761,7 +1789,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1775,7 +1803,8 @@
 		(symbol "VDDA_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VDDA"
 					(effects
 						(font
@@ -1792,6 +1821,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VIN"
 		(power)
@@ -1870,7 +1900,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -1882,7 +1912,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -1896,7 +1926,8 @@
 		(symbol "VIN_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VIN"
 					(effects
 						(font
@@ -1913,6 +1944,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VOUT"
 		(power)
@@ -1991,7 +2023,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -2003,7 +2035,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -2017,7 +2049,8 @@
 		(symbol "VOUT_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VOUT"
 					(effects
 						(font
@@ -2034,6 +2067,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VRAW"
 		(power)
@@ -2112,7 +2146,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -2124,7 +2158,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -2138,7 +2172,8 @@
 		(symbol "VRAW_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VRAW"
 					(effects
 						(font
@@ -2155,6 +2190,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "VUSB"
 		(power)
@@ -2233,7 +2269,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 0) (xy 0 2.54)
+					(xy 0 2.54) (xy 0.762 1.27)
 				)
 				(stroke
 					(width 0)
@@ -2245,7 +2281,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0 2.54) (xy 0.762 1.27)
+					(xy 0 0) (xy 0 2.54)
 				)
 				(stroke
 					(width 0)
@@ -2259,7 +2295,8 @@
 		(symbol "VUSB_1_1"
 			(pin power_in line
 				(at 0 0 90)
-				(length 0) hide
+				(length 0)
+				(hide yes)
 				(name "VUSB"
 					(effects
 						(font
@@ -2276,5 +2313,6 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 )
