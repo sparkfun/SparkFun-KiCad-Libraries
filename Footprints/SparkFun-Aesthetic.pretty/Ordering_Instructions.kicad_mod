@@ -1,7 +1,7 @@
 (footprint "Ordering_Instructions"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Examples: Layers: 2, Soldermask Color: Red, Thickness:1.6mm")
 	(tags "SparkFun")
@@ -22,19 +22,6 @@
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "b440668c-94d5-4fb8-b553-fbdc91da04d9")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "cda069e6-ee03-4439-9f2e-3b9ea2071226")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -75,7 +62,7 @@
 			(width 0.2032)
 			(type solid)
 		)
-		(layer "F.Fab")
+		(layer "Eco1.User")
 		(uuid "33deb798-1315-43c9-865d-7fd9916fce00")
 	)
 	(fp_rect
@@ -85,13 +72,13 @@
 			(width 0.2)
 			(type default)
 		)
-		(fill none)
-		(layer "F.Fab")
+		(fill no)
+		(layer "Eco1.User")
 		(uuid "91ce8450-cbdc-4327-ad75-5cdf945f4624")
 	)
 	(fp_text user "Ordering Instructions:"
 		(at 1.27 1.27 0)
-		(layer "F.Fab")
+		(layer "Eco1.User")
 		(uuid "0f285b17-0ea1-4d71-b910-89220947b7f5")
 		(effects
 			(font
@@ -101,4 +88,5 @@
 			(justify left top)
 		)
 	)
+	(embedded_fonts no)
 )
