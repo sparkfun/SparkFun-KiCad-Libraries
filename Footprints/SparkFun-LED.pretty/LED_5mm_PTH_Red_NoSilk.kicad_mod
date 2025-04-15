@@ -1,0 +1,195 @@
+(footprint "LED_5mm_PTH_Red_NoSilk"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "LED 5mm PTH")
+	(tags "SparkFun PTH LED 5mm Red")
+	(property "Reference" "Ref**"
+		(at 0 -3.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1c402ef6-290a-4b55-ba7a-091bf41b6e89")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 3.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9146ec9e-2a12-40e3-b2fc-1ad289d136f0")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn.sparkfun.com/assets/e/c/e/c/5/COM-09590-YSL-R531R3D-D2.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d7e46389-952f-4d02-a8f6-5d54e3a8df18")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Red LED 5mm PTH"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5f90bbe8-557d-48ac-b0ee-411a1de4b4a1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 2.54 1.905)
+		(end 2.54 -1.905)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a9a08029-aa18-421b-89e0-7a34b340b9aa")
+	)
+	(fp_line
+		(start 2.54 1.905)
+		(end 2.54 -1.905)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c88edf43-7592-4181-b958-c4cd41695e51")
+	)
+	(fp_arc
+		(start -2.159 0)
+		(mid -1.526644 -1.526644)
+		(end 0 -2.159)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fb82f721-ea56-4d4d-ac59-68719244f38a")
+	)
+	(fp_arc
+		(start -1.651 0)
+		(mid -1.167433 -1.167433)
+		(end 0 -1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "59ac72c8-aac6-4dc1-9c8e-04bac8702632")
+	)
+	(fp_arc
+		(start -1.143 0)
+		(mid -0.808223 -0.808223)
+		(end 0 -1.143)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "331b7a18-4db2-403c-b2af-a88ca7b702f5")
+	)
+	(fp_arc
+		(start 1.143 0)
+		(mid 0.808223 0.808223)
+		(end 0 1.143)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "568d1c57-ec5f-44a3-a8ec-164d635799d0")
+	)
+	(fp_arc
+		(start 1.651 0)
+		(mid 1.167433 1.167433)
+		(end 0 1.651)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1eeba761-c6f4-4630-b3b8-7af6b3dff237")
+	)
+	(fp_arc
+		(start 2.159 0)
+		(mid 1.526644 1.526644)
+		(end 0 2.159)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f1540833-6946-4a8e-a0f5-4b7a9092b075")
+	)
+	(fp_arc
+		(start 2.54 1.905)
+		(mid -3.175 0)
+		(end 2.54 -1.905)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e744621e-3e26-46e2-9db2-9493f59d0bcc")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 2.54 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "079df514-14a3-4d87-8ae6-9c0a76c5ff6c")
+	)
+	(pad "1" thru_hole circle
+		(at 1.27 0)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "03b787a1-65e7-4788-8168-5675873b1068")
+	)
+	(pad "2" thru_hole circle
+		(at -1.27 0)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "23b9468d-8965-47cd-8715-054cfba8ebc8")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_PTH_5mm_Red.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
