@@ -1,7 +1,7 @@
-(footprint "DFN-8_2x3mm"
-	(version 20240108)
+(footprint "DFN-8_2x3mm_P0.5mm"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun DFN 2x3mm")
 	(property "Reference" "REF**"
@@ -17,7 +17,7 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "DFN-8_2x3mm"
+	(property "Value" "DFN-8_2x3mm_P0.5mm"
 		(at 0 1.524 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -30,20 +30,8 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 -90)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "5fa66c67-a1aa-4590-a6ec-fcbbf07dea7a")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
-		(at 0 0 -90)
+		(at 0 0 270)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "10dac3cf-55da-4790-807b-2b874716298c")
@@ -55,7 +43,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -90)
+		(at 0 0 270)
 		(layer "F.Fab")
 		(hide yes)
 		(uuid "eda54227-8932-4691-9e20-99b734e44114")
@@ -93,7 +81,7 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "03d3daa9-f6c4-4174-ac20-440f6ecc90d6")
 	)
@@ -104,7 +92,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "ff1bdb8d-48c0-4a33-816c-3618247b1f7f")
 	)
@@ -115,14 +103,14 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "User.1")
 		(uuid "2cd36946-e36f-4a64-aa70-cc155035fe6f")
 	)
 	(pad "1" smd rect
 		(at -1.45 -0.75 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "8e34a46e-0fdf-4823-9999-10dc262b3c4d")
@@ -130,7 +118,7 @@
 	(pad "2" smd rect
 		(at -1.45 -0.25 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "ca0dd2bf-dae7-4367-810e-18634f9da4ec")
@@ -138,7 +126,7 @@
 	(pad "3" smd rect
 		(at -1.45 0.25 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "d11b880c-74f7-4dea-a031-23d638601c5d")
@@ -146,7 +134,7 @@
 	(pad "4" smd rect
 		(at -1.45 0.75 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "39fbaeb7-8375-427b-baba-232c73b8f863")
@@ -154,7 +142,7 @@
 	(pad "5" smd rect
 		(at 1.45 0.75 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "651054f8-f7ea-4339-9677-8f548b118782")
@@ -162,7 +150,7 @@
 	(pad "6" smd rect
 		(at 1.45 0.25 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "bbaf3242-92d5-4623-9705-158eb5bf181b")
@@ -170,7 +158,7 @@
 	(pad "7" smd rect
 		(at 1.45 -0.25 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "b5c1ab7c-15df-43fd-b5c2-60e82f39f08d")
@@ -178,11 +166,12 @@
 	(pad "8" smd rect
 		(at 1.45 -0.75 270)
 		(size 0.3 0.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_paste_margin_ratio -0.05)
 		(thermal_bridge_angle 0)
 		(uuid "5116f302-728e-4e7f-b9ee-7ba843f06a21")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/DFN-8_2x3mm.step"
 		(offset
 			(xyz 0 0 0)
