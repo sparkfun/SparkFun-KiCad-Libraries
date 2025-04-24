@@ -1,11 +1,11 @@
 (footprint "1x01_Castellated"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
-		(at 0 -1.27 0)
+		(at 0 -1.524 0)
 		(layer "F.Fab")
 		(uuid "21fd6e20-c36e-4169-b08f-8e57f7b0ddb7")
 		(effects
@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "Val**"
-		(at 0 1.27 0)
+		(at 0 1.778 0)
 		(layer "F.Fab")
 		(uuid "5c500bcc-0ccd-4076-a17d-029f4ac4ddb4")
 		(effects
@@ -26,20 +26,8 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "90d9c748-02ad-41c5-8a5c-c94451d9538e")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
-		(at 0 0 0)
+		(at 0 0 270)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -47,11 +35,12 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(property "Description" ""
-		(at 0 0 0)
+		(at 0 0 270)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -59,28 +48,40 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
-	(fp_poly
-		(pts
-			(xy 0.254 0.254) (xy 0.254 -0.254) (xy -0.254 -0.254) (xy -0.254 0.254)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.05)
+			(type default)
 		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7abc72c2-c179-4028-a007-b51ab06fb875")
+	)
+	(fp_rect
+		(start -0.254 -0.254)
+		(end 0.254 0.254)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "39ac6f6d-4240-4c6f-83c1-4fc6854bba31")
 	)
 	(pad "1" thru_hole custom
-		(at 0 0 180)
+		(at 0 0 90)
 		(size 1.016 1.016)
 		(drill 0.85)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers yes)
 		(keep_end_layers yes)
+		(thermal_bridge_angle 0)
 		(options
 			(clearance outline)
 			(anchor circle)
@@ -100,7 +101,7 @@
 		(uuid "f30250f6-8ea5-4de7-9d23-af440908c2cd")
 	)
 	(pad "1B" thru_hole circle
-		(at -1.57 0)
+		(at 0 -1.57 270)
 		(size 1.75 1.75)
 		(drill 1.7)
 		(layers "*.Cu" "*.Mask")
@@ -109,4 +110,5 @@
 		(thermal_bridge_angle 0)
 		(uuid "0dc9a71f-0ba5-4395-b606-afc92eb1fd9e")
 	)
+	(embedded_fonts no)
 )

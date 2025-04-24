@@ -1,7 +1,7 @@
 (footprint "JST_SMD_1.0mm-4_Black"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun Qwiic Connector")
 	(property "Reference" "REF**"
@@ -26,19 +26,6 @@
 				(thickness 0.1)
 			)
 			(justify bottom)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "44b7e807-99b6-4254-9b1c-ca5ccbe41e53")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
 		)
 	)
 	(property "Datasheet" "https://cdn.sparkfun.com/assets/parts/1/2/2/8/9/Qwiic_Connector_Datasheet.pdf"
@@ -120,59 +107,60 @@
 	)
 	(fp_poly
 		(pts
-			(xy -3.55 4.85) (xy -3.55 2.5) (xy -3.25 2.5) (xy -3.25 0.1) (xy -1.95 0.1) (xy -1.95 -0.8) (xy 1.95 -0.8)
-			(xy 1.95 0.1) (xy 3.25 0.1) (xy 3.25 2.5) (xy 3.55 2.5) (xy 3.55 4.847)
+			(xy -3.55 4.95) (xy -3.55 2.6) (xy -3.25 2.6) (xy -3.25 0.2) (xy -1.95 0.2) (xy -1.95 -0.7) (xy 1.95 -0.7)
+			(xy 1.95 0.2) (xy 3.25 0.2) (xy 3.25 2.6) (xy 3.55 2.6) (xy 3.55 4.95)
 		)
 		(stroke
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "e6ea2a4b-f2d8-4f9b-877d-3d042fd44c50")
 	)
 	(pad "1" smd rect
 		(at -1.5 0)
 		(size 0.6 1.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "14d70267-94a9-4e99-a44d-2414c8000c9e")
 	)
 	(pad "2" smd rect
 		(at -0.5 0)
 		(size 0.6 1.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "0fd8a1b7-b9ca-4fd6-991c-0c0ba8455e0b")
 	)
 	(pad "3" smd rect
 		(at 0.5 0)
 		(size 0.6 1.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "407aed1c-51ab-4332-8257-73d8667b9fba")
 	)
 	(pad "4" smd rect
 		(at 1.5 0)
 		(size 0.6 1.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "971e6e73-aa62-460c-b145-d75dd2c9535c")
 	)
 	(pad "NC1" smd rect
 		(at 2.8 3.675)
 		(size 1.2 2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "a98a1614-27af-4dad-88d2-4186365c5a1d")
 	)
 	(pad "NC2" smd rect
 		(at -2.8 3.675)
 		(size 1.2 2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "ea11a954-385e-4581-a50e-c0bdae077bf8")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/Qwiic-Horizontal.STEP"
 		(offset
 			(xyz 0 -0.7 -0.3)
