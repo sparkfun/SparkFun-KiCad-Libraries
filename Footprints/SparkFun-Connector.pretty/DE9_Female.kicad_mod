@@ -4,15 +4,14 @@
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 0 -0.5 0)
+		(at 0 -18 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(hide yes)
 		(uuid "b6d1aa47-b6a4-4fae-8c0f-f9d0692b4997")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -316,19 +315,6 @@
 		(layer "F.Fab")
 		(uuid "f713b2ed-7a8c-4373-b0c8-10207e5de960")
 	)
-	(fp_text user "${REFERENCE}"
-		(at 0 -4.519998 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "70589f2a-276f-455c-9680-0b4005ce0bf9")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.1)
-				(bold yes)
-			)
-		)
-	)
 	(pad "1" thru_hole circle
 		(at -5.539999 0)
 		(size 2 2)
@@ -420,13 +406,13 @@
 	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/DE9-Female.step"
 		(offset
-			(xyz 0 12.5 0)
+			(xyz 0 10.5 6.25)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -180)
+			(xyz -90 -0 -180)
 		)
 	)
 )
