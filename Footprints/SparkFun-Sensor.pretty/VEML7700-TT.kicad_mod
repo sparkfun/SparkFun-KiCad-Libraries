@@ -29,7 +29,7 @@
 			)
 		)
 	)
-	(property "Datasheet" ""
+	(property "Datasheet" "https://www.vishay.com/docs/84286/veml7700.pdf"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -362,4 +362,15 @@
 		(uuid "dcb6eb87-6965-4ccd-bab8-d6f6d10b122d")
 	)
 	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Sensor/VEML7700-TT.step"
+		(offset
+			(xyz 0 -0.25 1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -180 90)
+		)
+	)
 )
