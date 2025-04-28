@@ -1,7 +1,7 @@
 (footprint "Screw_Terminal_3.5mm-3_NoSilk"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "Screw_Terminal_3.5mm-3"
-		(at 0 4.5 0)
+		(at 0 2.2 0)
 		(layer "F.Fab")
 		(uuid "3209a2c6-b89c-4332-8b05-2033baed04ed")
 		(effects
@@ -26,18 +26,6 @@
 				(thickness 0.1)
 			)
 			(justify bottom)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "79075d5a-e544-4692-a477-251e1b03b84f")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
 		)
 	)
 	(property "Datasheet" ""
@@ -49,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,10 +50,22 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr through_hole)
+	(fp_rect
+		(start -1.8 -3.6)
+		(end 8.7 3.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "6ee00fb9-6b90-4547-acd5-f71794e22e2e")
+	)
 	(fp_line
 		(start -2.25 1.35)
 		(end -2.25 2.35)
@@ -124,6 +125,36 @@
 		)
 		(layer "F.Fab")
 		(uuid "64c45c9c-90f7-4166-ab0d-df1e8485c544")
+	)
+	(fp_line
+		(start 3.5 4)
+		(end 3.3 4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "18297121-83d0-4b30-9081-b9ee54be834d")
+	)
+	(fp_line
+		(start 3.5 4)
+		(end 3.7 4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ce749fb4-005a-4f87-a144-f2680ad9b859")
+	)
+	(fp_line
+		(start 3.5 4.7)
+		(end 3.5 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4f3dff97-8861-4c7d-a06d-eea4881d7eb5")
 	)
 	(fp_line
 		(start 8.75 -3.4)
@@ -195,6 +226,17 @@
 		(layer "F.Fab")
 		(uuid "ff9c3b10-e4ad-4004-ba9a-2eae6ebc2665")
 	)
+	(fp_text user "Wire Insert"
+		(at 3.5 5 180)
+		(layer "F.Fab")
+		(uuid "552b139b-725c-47c2-8720-0ebe9ea71580")
+		(effects
+			(font
+				(size 0.184 0.184)
+				(thickness 0.016)
+			)
+		)
+	)
 	(pad "1" thru_hole circle
 		(at 0 0)
 		(size 2.413 2.413)
@@ -222,4 +264,5 @@
 		(thermal_bridge_angle 0)
 		(uuid "7603f065-edd3-4ca8-ad7f-6cdf7686a4b1")
 	)
+	(embedded_fonts no)
 )
