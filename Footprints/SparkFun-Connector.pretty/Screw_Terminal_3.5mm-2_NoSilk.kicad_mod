@@ -1,7 +1,7 @@
 (footprint "Screw_Terminal_3.5mm-2_NoSilk"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -28,18 +28,6 @@
 			(justify bottom)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "f128ef59-e685-4d5c-95a6-d8e7ca656792")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -49,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,10 +50,22 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr through_hole)
+	(fp_rect
+		(start -1.8 -3.6)
+		(end 5.3 3.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "bb489466-576e-487a-8170-9c3361bd2dc7")
+	)
 	(fp_line
 		(start -2.15 1.35)
 		(end -2.15 2.35)
@@ -124,6 +125,36 @@
 		)
 		(layer "F.Fab")
 		(uuid "64e98c90-fd77-4ea5-b46b-01cb04d0ce6a")
+	)
+	(fp_line
+		(start 1.75 4)
+		(end 1.55 4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c1033d2a-a1bb-4661-b3bc-7c98155c0609")
+	)
+	(fp_line
+		(start 1.75 4)
+		(end 1.95 4.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "68ee5e18-d3e0-4e7e-9a0e-bddba8637b09")
+	)
+	(fp_line
+		(start 1.75 4.7)
+		(end 1.75 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "40051358-cebb-479d-9557-ad1a12229fdd")
 	)
 	(fp_line
 		(start 5.25 -3.4)
@@ -195,20 +226,20 @@
 		(layer "F.Fab")
 		(uuid "3260da5a-64d1-4852-8b21-b6657847c26d")
 	)
-	(fp_circle
-		(center 2 -3)
-		(end 2.2828 -3)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(fill none)
+	(fp_text user "Wire Insert"
+		(at 1.75 5 180)
 		(layer "F.Fab")
-		(uuid "3d82a57a-57bd-4abc-ab73-0b444665a349")
+		(uuid "92000b6e-1f02-4270-a57c-a56c77b65ac5")
+		(effects
+			(font
+				(size 0.184 0.184)
+				(thickness 0.016)
+			)
+		)
 	)
 	(pad "1" thru_hole rect
 		(at 0 0)
-		(size 2.032 2.032)
+		(size 2.5 2.5)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -217,10 +248,11 @@
 	)
 	(pad "2" thru_hole circle
 		(at 3.5 0)
-		(size 2.032 2.032)
+		(size 2.5 2.5)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "0b31cdc9-facb-4b8b-be68-a34e9062e55e")
 	)
+	(embedded_fonts no)
 )

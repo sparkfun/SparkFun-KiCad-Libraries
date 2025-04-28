@@ -1,11 +1,11 @@
-(footprint "Screw_Terminal_3.5mm-2"
-	(version 20240108)
+(footprint "Screw_Terminal_3.5mm-2-Blue"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
-		(at 1.778 4.318 0)
+		(at 0 -1.5 0)
 		(layer "F.Fab")
 		(uuid "483a06c6-ef38-431d-98f4-362013caea53")
 		(effects
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "Screw_Terminal_3.5mm-2"
-		(at 1.778 5.08 0)
+		(at 0 2.2 0)
 		(layer "F.Fab")
 		(uuid "55da535c-d63c-45a3-adf3-5c00f6343c64")
 		(effects
@@ -26,19 +26,6 @@
 				(thickness 0.1)
 			)
 			(justify bottom)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "be0c20f8-5a59-4e7e-ad1c-e5cfed255e09")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
 		)
 	)
 	(property "Datasheet" ""
@@ -138,6 +125,17 @@
 		(layer "F.SilkS")
 		(uuid "176b863c-a940-405d-b9cb-735a38f251b5")
 	)
+	(fp_rect
+		(start -1.8 -3.6)
+		(end 5.3 3.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "52ce720e-2848-4e32-b166-4b3c144606aa")
+	)
 	(fp_line
 		(start -2.25 1.35)
 		(end -2.25 2.35)
@@ -169,6 +167,36 @@
 		(uuid "e0b363cd-74f3-48b0-9bc8-7cb31c7dd364")
 	)
 	(fp_line
+		(start 1.8 3.9)
+		(end 1.6 4.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "546fa08d-d9e6-488f-9f3b-1de5dfe76639")
+	)
+	(fp_line
+		(start 1.8 3.9)
+		(end 2 4.1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0735a5e0-6a2f-4bea-a075-f6ca78472808")
+	)
+	(fp_line
+		(start 1.8 4.6)
+		(end 1.8 3.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e568232e-626f-4f1e-b9dd-1bc7366519b5")
+	)
+	(fp_line
 		(start 5.25 -3.15)
 		(end 5.75 -3.15)
 		(stroke
@@ -198,20 +226,20 @@
 		(layer "F.Fab")
 		(uuid "ae178fea-b03f-4ce7-b5c3-a88598c98cf6")
 	)
-	(fp_circle
-		(center 2 -3)
-		(end 2.2828 -3)
-		(stroke
-			(width 0.127)
-			(type solid)
-		)
-		(fill none)
+	(fp_text user "Wire Insert"
+		(at 1.8 4.9 180)
 		(layer "F.Fab")
-		(uuid "cae45301-8c71-431e-89b6-7815581d3477")
+		(uuid "aacba3c8-0c38-47e1-9458-12e574bdd2b0")
+		(effects
+			(font
+				(size 0.184 0.184)
+				(thickness 0.016)
+			)
+		)
 	)
 	(pad "1" thru_hole rect
 		(at 0 0)
-		(size 2.032 2.032)
+		(size 2.5 2.5)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
@@ -220,12 +248,13 @@
 	)
 	(pad "2" thru_hole circle
 		(at 3.5 0)
-		(size 2.032 2.032)
+		(size 2.5 2.5)
 		(drill 1.2)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "f548f62b-0aef-4dc3-952e-48bbf49d0d2a")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/Screw_Terminal_3.5mm_2P_Blue.step"
 		(offset
 			(xyz 1.8 3.4 0)
