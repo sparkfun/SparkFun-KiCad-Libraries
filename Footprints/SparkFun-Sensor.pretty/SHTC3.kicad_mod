@@ -1,0 +1,211 @@
+(footprint "SHTC3"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "Digital, Humidity, Temperature, Sensor")
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e1c5b6f8-6143-45aa-be87-69f156a68af4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "SHTC3"
+		(at 0 1.9 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bf25d472-0103-41cc-9acc-5752ead16006")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Datasheet" "https://sensirion.com/products/catalog/SHTC3"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "18beab5e-ee3c-4782-8f53-37f706359445")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Digital Humidity and Temperature Sensor"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3b632835-09a5-496f-ae8f-d62d2be1671a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start 1.01 -1.116)
+		(end -1.022 -1.116)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "879a9e4e-a5a3-430d-80e2-9f7bdc9a86f4")
+	)
+	(fp_line
+		(start 1.01 1.17)
+		(end -1.022 1.17)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "523c206a-83fd-4789-a1aa-7a5cee92ac60")
+	)
+	(fp_circle
+		(center -1.4 -1)
+		(end -1.3 -1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "475c8ae5-8d00-4756-bc00-860203c4424d")
+	)
+	(fp_poly
+		(pts
+			(xy 0.244 0.727) (xy 0.244 -0.673) (xy -0.256 -0.673) (xy -0.256 0.727)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "fa4b5138-6e82-4b29-a7f7-9f61c557c4cd")
+	)
+	(fp_rect
+		(start -1.276 -1.243)
+		(end 1.264 1.297)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "529f7465-d225-4161-86a1-a578abd02951")
+	)
+	(fp_line
+		(start -1.006 -0.973)
+		(end -1.006 1.027)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6a5ea1e3-d42f-460f-8dda-74aa7fe12344")
+	)
+	(fp_line
+		(start -1.006 1.027)
+		(end 0.994 1.027)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4133ff87-2f59-4ec9-ac8c-c9acd423020b")
+	)
+	(fp_line
+		(start 0.994 -0.973)
+		(end -1.006 -0.973)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e031301a-bfd4-41a3-a28a-b1a297b33ddc")
+	)
+	(fp_line
+		(start 0.994 1.027)
+		(end 0.994 -0.973)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0b2a8436-a492-4823-abc2-7dc376eb0630")
+	)
+	(pad "1" smd rect
+		(at -0.931 -0.473 90)
+		(size 0.35 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "70ba4246-8d63-48c9-8c46-b090bda9090d")
+	)
+	(pad "2" smd rect
+		(at -0.931 0.527 90)
+		(size 0.35 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "8da870e2-7f32-4d78-a4f6-21f01bd4b791")
+	)
+	(pad "3" smd rect
+		(at 0.919 0.527 90)
+		(size 0.35 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "2c5e57ce-5a09-49d3-90dc-485f54369bc7")
+	)
+	(pad "4" smd rect
+		(at 0.919 -0.473 90)
+		(size 0.35 0.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "78a84fab-f2eb-4bd8-ae75-c5bace5eefad")
+	)
+	(pad "5" smd rect
+		(at -0.006 0.027 270)
+		(size 1.6 0.7)
+		(layers "F.Cu" "F.Mask")
+		(solder_mask_margin 0.1016)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "cb49f17e-adbd-4672-86c4-6f293835afe8")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Sensor/SHTC3.STEP"
+		(offset
+			(xyz 122.25 17.23 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 180 -0)
+		)
+	)
+)
