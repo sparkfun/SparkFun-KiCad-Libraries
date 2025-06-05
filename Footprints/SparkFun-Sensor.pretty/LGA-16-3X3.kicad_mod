@@ -147,6 +147,17 @@
 		(layer "F.SilkS")
 		(uuid "16559d48-c612-4cff-b5ba-85cddf998613")
 	)
+	(fp_rect
+		(start -1.9 -1.85)
+		(end 1.9 1.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "fe34c3dc-dad3-4d2a-a367-12fe1e4cb45c")
+	)
 	(fp_line
 		(start -1.5 -1.5)
 		(end 1.5 -1.5)
@@ -346,6 +357,39 @@
 		(solder_paste_margin_ratio -0.1)
 		(thermal_bridge_angle 0)
 		(uuid "d8676b6f-1c04-4369-892c-86e2f1bf1bc8")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "F.SilkS")
+		(uuid "e74b79b2-b83c-40a1-bf7c-b2a47d8ccd42")
+		(name "MEMs Keepout")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -0.95 -0.95) (xy -0.95 0.95) (xy 0.95 0.95) (xy 0.95 -0.95)
+			)
+		)
 	)
 	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Sensor/LIS3DH_LGA-16_3x3x1mm.step"
