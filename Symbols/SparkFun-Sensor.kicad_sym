@@ -1468,26 +1468,8 @@
 			)
 		)
 		(symbol "MPR121QR2_1_1"
-			(pin passive line
-				(at -12.7 15.24 0)
-				(length 2.54)
-				(name "VREG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin bidirectional line
-				(at -12.7 11.43 0)
+				(at -12.7 15.24 0)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -1505,7 +1487,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 8.89 0)
+				(at -12.7 12.7 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -1522,8 +1504,26 @@
 					)
 				)
 			)
+			(pin open_collector line
+				(at -12.7 10.16 0)
+				(length 2.54)
+				(name "~{IRQ}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at -12.7 6.35 0)
+				(at -12.7 -7.62 0)
 				(length 2.54)
 				(name "ADDR"
 					(effects
@@ -1540,17 +1540,17 @@
 					)
 				)
 			)
-			(pin open_collector line
-				(at -12.7 3.81 0)
+			(pin passive line
+				(at -12.7 -10.16 0)
 				(length 2.54)
-				(name "~{IRQ}"
+				(name "VREG"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
