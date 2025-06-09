@@ -299,6 +299,73 @@
 		(solder_paste_margin -0.05)
 		(uuid "864eb8b2-d1a9-4c30-99df-a19e3d86f1da")
 	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "c48db861-68bc-4335-97c5-cef264f4ca84")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -1.5 -2.05) (xy 1.5 -2.05) (xy 1.5 2.05) (xy -1.5 2.05)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layer "F.Cu")
+		(uuid "5c238987-f6e3-4ea1-9460-7b8e0d24d1f1")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -0.6 -2.05) (xy 0.6 -2.05) (xy 0.6 -1.6) (xy 1.5 -1.6) (xy 1.5 -0.9) (xy 0.6 -0.9) (xy 0.6 -0.35)
+				(xy 1.5 -0.35) (xy 1.5 0.35) (xy 0.6 0.35) (xy 0.6 0.9) (xy 1.5 0.9) (xy 1.5 1.6) (xy 0.6 1.6) (xy 0.6 2.05)
+				(xy -0.6 2.05) (xy -0.6 1.6) (xy -1.5 1.6) (xy -1.5 0.9) (xy -0.6 0.9) (xy -0.6 0.35) (xy -1.5 0.35)
+				(xy -1.5 -0.35) (xy -0.6 -0.35) (xy -0.6 -0.9) (xy -1.5 -0.9) (xy -1.5 -1.6) (xy -0.6 -1.6)
+			)
+		)
+	)
 	(embedded_fonts no)
 	(model "${KICAD9_3DMODEL_DIR}/Package_LGA.3dshapes/LGA-8_3x5mm_P1.25mm.wrl"
 		(offset
