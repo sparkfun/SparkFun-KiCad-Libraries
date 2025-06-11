@@ -1,7 +1,7 @@
 (footprint "R_1206_Array_Convex"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -2.3 0)
@@ -20,19 +20,6 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "c6df1677-4690-43a0-ac93-8874761c1ee7")
-		(effects
-			(font
-				(size 0.5 0.5)
-				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 -2.05 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "44cfb9ca-0656-4393-b194-143bb11f34c8")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -94,7 +81,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "a2c74349-5440-446d-b65e-88f8f08fd602")
 	)
@@ -141,60 +128,61 @@
 	(pad "1" smd rect
 		(at -0.875 -1.2)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "359a1d33-c4a9-4ca6-92bd-e64dd594988b")
 	)
 	(pad "2" smd rect
 		(at 0.875 -1.2)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "61e45c9e-4643-476c-b57d-e0d7cb3e084d")
 	)
 	(pad "3" smd rect
 		(at -0.875 -0.4)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "49aa63ee-de8d-4f1b-abe3-f8cfe2c4e0d8")
 	)
 	(pad "4" smd rect
 		(at 0.875 -0.4)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "e077d549-c88b-483d-b3b8-a443c0e2b566")
 	)
 	(pad "5" smd rect
 		(at -0.875 0.4)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "301d0a2a-509d-4859-8156-cbde80b11ecc")
 	)
 	(pad "6" smd rect
 		(at 0.875 0.4)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "bda9ae58-c3c1-44a2-b1d1-eb439dd805d6")
 	)
 	(pad "7" smd rect
 		(at -0.875 1.2)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "d53063f1-6415-4e1f-9793-4c10b22581e4")
 	)
 	(pad "8" smd rect
 		(at 0.875 1.2)
 		(size 1.05 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "25679034-b470-4251-9303-695fd814219b")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Resistor/RES_1206_4_ARR.step"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Resistor/R_Array_Convex_4x0603.step"
 		(offset
 			(xyz 0 0 0)
 		)
