@@ -689,34 +689,16 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 0 180)
+				(at -10.16 0 0)
 				(length 2.54)
-				(name "VOUT"
+				(name "VIN"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -8.89 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -743,6 +725,42 @@
 				)
 			)
 			(pin passive line
+				(at -3.81 8.89 270)
+				(length 2.54)
+				(name "C+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -8.89 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
 				(at 3.81 8.89 270)
 				(length 2.54)
 				(name "C-"
@@ -761,34 +779,16 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 0 0)
+				(at 10.16 0 180)
 				(length 2.54)
-				(name "VIN"
+				(name "VOUT"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -3.81 8.89 270)
-				(length 2.54)
-				(name "C+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -797,6 +797,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(symbol "AP63357DV-7"
 		(pin_names
@@ -3882,7 +3883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT-323"
+		(property "Footprint" "SparkFun-Semiconductor-Standard:SOT-363"
 			(at -17.145 -11.43 0)
 			(effects
 				(font
@@ -3902,7 +3903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "High Side Power Switch, 2A continuous, 77mΩ, SOT-323 (SC-70)"
+		(property "Description" "High Side Power Switch, 2A continuous, 77mΩ, SOT-363 (SC-70)"
 			(at 0 -19.05 0)
 			(effects
 				(font
