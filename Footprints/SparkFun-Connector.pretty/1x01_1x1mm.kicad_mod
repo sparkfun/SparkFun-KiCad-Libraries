@@ -1,9 +1,10 @@
-(footprint "1x01_PTH_1x1mm"
+(footprint "1x01_1x1mm"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Plated Through Hole - No Silk Outline\n\nSpecifications:\n\n• Pin count:1\n• Pin pitch:0.1mm\n• Hole Size: .7mm\n• Annular Ring: 1.2mm\n\nMade for the small  https://www.sparkfun.com/products/18221  1mm Pitch Headers.")
+	(tags "SparkFun")
 	(property "Reference" "Ref**"
 		(at 0 -0.889 0)
 		(unlocked yes)
@@ -55,6 +56,17 @@
 				(thickness 0.15)
 			)
 		)
+	)
+	(fp_rect
+		(start -1 -1)
+		(end 1 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d9d92122-0533-4db7-aa1c-6155e88bddc4")
 	)
 	(fp_poly
 		(pts
