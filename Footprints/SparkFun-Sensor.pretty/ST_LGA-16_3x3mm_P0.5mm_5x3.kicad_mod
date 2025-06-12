@@ -1,9 +1,9 @@
-(footprint "LGA-16-3X3"
+(footprint "ST_LGA-16_3x3mm_P0.5mm_5x3"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "16-Pin Land Grid Array (LGA) (3 x 3 mm)")
+	(descr "ST 16-Pin Land Grid Array (LGA) (3 x 3 mm)")
 	(property "Reference" "REF**"
 		(at 0 -1.905 0)
 		(unlocked yes)
@@ -18,7 +18,7 @@
 			(justify bottom)
 		)
 	)
-	(property "Value" "LGA-16-3X3"
+	(property "Value" "ST_LGA-16_3x3mm_P0.5mm_5x3"
 		(at 0 1.905 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -179,6 +179,66 @@
 		(uuid "08bb9cb9-9cb4-4734-b660-be2fa1825906")
 	)
 	(fp_line
+		(start -1 0)
+		(end -0.8 -0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "92dc9356-a280-474e-a628-5e72f9f28905")
+	)
+	(fp_line
+		(start -1 0)
+		(end -0.8 0.2)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "eb8edd6d-722a-40fc-9624-041831cece97")
+	)
+	(fp_line
+		(start 0 0)
+		(end -1 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "7b72ec01-f353-4771-98fa-c9d4ce67635f")
+	)
+	(fp_line
+		(start 0 0)
+		(end 0 1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "5ff9c29c-1ed9-458d-9c99-8e0b937d893b")
+	)
+	(fp_line
+		(start 0 1)
+		(end -0.2 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a3058360-9bc7-49e5-8e7b-7f8d9eedb811")
+	)
+	(fp_line
+		(start 0 1)
+		(end 0.2 0.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a9a100e1-a5e6-4a58-b8bb-71795f7dde3b")
+	)
+	(fp_line
 		(start 1.5 -1.5)
 		(end 1.5 1.5)
 		(stroke
@@ -197,6 +257,64 @@
 		)
 		(layer "F.Fab")
 		(uuid "a124df63-b4e7-4d5f-bc19-5784515a7811")
+	)
+	(fp_circle
+		(center 0 0)
+		(end -0.25 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6e11de37-57bd-47de-8d99-683561e64882")
+	)
+	(fp_circle
+		(center 0 0)
+		(end -0.05 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1556336a-c305-4370-9ce6-199b5c0911ca")
+	)
+	(fp_text user "Z"
+		(at 0.4 -0.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "36ff7ac3-1f1f-4e9e-b708-e487a923eab5")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.0625)
+			)
+		)
+	)
+	(fp_text user "Y"
+		(at 0.25 0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bbaab2eb-69e5-41f4-8dee-a3e58af96aae")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.0625)
+			)
+		)
+	)
+	(fp_text user "X"
+		(at -0.8 -0.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e19ce676-cbb2-492f-8ef3-ec0d48f6c683")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.0625)
+			)
+		)
 	)
 	(pad "1" smd rect
 		(at -1.4 -1 180)
