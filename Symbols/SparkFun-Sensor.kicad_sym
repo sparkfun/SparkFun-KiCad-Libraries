@@ -732,7 +732,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Nonstandard:ST_LGA-16_3x3mm_P0.5mm_5x3"
-			(at -0.762 -29.972 0)
+			(at -0.762 -23.368 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -741,7 +741,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.st.com/en/mems-and-sensors/lis3dh.html"
-			(at 0 -23.114 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +750,7 @@
 			)
 		)
 		(property "Description" "The LIS3DH has dynamically user-selectable full scales of ±2g/±4g/±8g/±16g and is capable of measuring accelerations with output data rates from 1 Hz to 5.3 kHz."
-			(at 0.762 -26.416 0)
+			(at 0.762 -19.812 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -759,7 +759,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-13419"
-			(at 0.254 -33.528 0)
+			(at 0.254 -26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -843,24 +843,6 @@
 				)
 			)
 			(pin power_out line
-				(at -12.7 -11.43 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
 				(at -12.7 -13.97 0)
 				(length 2.54)
 				(name "GND"
@@ -871,6 +853,25 @@
 					)
 				)
 				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at -12.7 -13.97 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
