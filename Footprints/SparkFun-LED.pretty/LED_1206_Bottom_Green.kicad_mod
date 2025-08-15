@@ -1,7 +1,7 @@
 (footprint "LED_1206_Bottom_Green"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun LED")
 	(property "Reference" "REF**"
@@ -28,19 +28,6 @@
 				(thickness 0.1)
 			)
 			(justify top)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "90893dda-4156-45ec-9d87-47efbb1a32a4")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
 		)
 	)
 	(property "Datasheet" ""
@@ -86,7 +73,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "1fc99ef8-2504-4e6b-ace5-3b1f64dadbbb")
 	)
@@ -100,7 +87,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "5278bdbd-bfcd-4ad2-9f56-896e6a045db1")
 	)
@@ -114,7 +101,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "9bf0f69d-f6ad-4820-9dd8-bc821a0a0e41")
 	)
@@ -152,26 +139,28 @@
 	(pad "1" smd rect
 		(at 1.8 0)
 		(size 1.5 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "abdf5efe-1f8d-46a0-912c-8422c9ef6d21")
 	)
 	(pad "2" smd rect
 		(at -1.8 0)
 		(size 1.5 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_1206_3216Metric_Castellated_Green.step"
+		(opacity 0.8900)
 		(offset
-			(xyz 0 0 1)
+			(xyz 0 0 0.5)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 -180 0)
+			(xyz -0 -180 -0)
 		)
 	)
 )

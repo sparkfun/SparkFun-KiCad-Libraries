@@ -11023,7 +11023,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SMA_EdgeMount"
+	(symbol "SMA_EdgeMount_6.3mm"
 		(pin_numbers
 			(hide yes)
 		)
@@ -11050,7 +11050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Connector:SMA_Edge"
+		(property "Footprint" "SparkFun-Connector:SMA_Edge_6.3mm"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -11059,7 +11059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.sparkfun.com/datasheets/Wireless/Antenna/SMA-Connector.pdf"
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/4/1/2/2/0/SMA-Connector.pdf"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -11068,7 +11068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SMA PCB Edge Mount connector"
+		(property "Description" "Not for new designs. Use 8mm variant. SMA PCB Edge Mount connector"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -11104,7 +11104,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SMA_EdgeMount_0_1"
+		(symbol "SMA_EdgeMount_6.3mm_0_1"
 			(polyline
 				(pts
 					(xy -2.54 0) (xy -0.508 0)
@@ -11165,7 +11165,189 @@
 				)
 			)
 		)
-		(symbol "SMA_EdgeMount_1_1"
+		(symbol "SMA_EdgeMount_6.3mm_1_1"
+			(pin passive line
+				(at -5.08 0 0)
+				(length 2.54)
+				(name "In"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 2.54)
+				(name "Ext"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "SMA_EdgeMount_8mm"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 0.254 3.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMA_Edge"
+			(at 3.81 0 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Connector:SMA_Edge_8mm"
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/c/2/9/a/7/SMA-KE-347C-H13.5-1.pdf"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMA PCB Edge Mount connector"
+			(at 0 -15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "CONN-19593"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun SMA coxaial connector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SMA_EdgeMount_8mm_0_1"
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -0.508 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.778 0)
+				(mid 0.222 -1.8079)
+				(end -1.778 -0.508)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -1.778 0.508)
+				(mid 0.2221 1.8084)
+				(end 1.778 0)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 0.508)
+				(stroke
+					(width 0.2032)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -2.54) (xy 0 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "SMA_EdgeMount_8mm_1_1"
 			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
