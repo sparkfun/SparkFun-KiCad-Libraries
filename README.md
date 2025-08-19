@@ -1,13 +1,15 @@
 SparkFun Electronics KiCad Libraries
 ====================================
 
-This repository contains the SparkFun KiCad Library of commonly used parts. It is a cultivated combination of KiCad parts (mostly symbols) and original SparkFun-designed Eagle footprints. This is a work in progress so be very cautious when using these symbols or footprints as they may contain errors.
+This repository contains the SparkFun KiCad Library of commonly used parts. It is a cultivated combination of KiCad stock parts,  SparkFun-unique footprints, and open-source 3D models. The main branch is generally proven out but we apologize in advance if this library has errors. Please report any issues! We'll fix them quickly.
 
-**Note:** The SparkFun KiCad components contain internal part numbers for ease of manufacture for the SparkFun SMD lines. 
+![alt text](SparkFun_GNSS_LG290P_Breakout_3D.png)
+
+**Note:** The SparkFun KiCad components contain internal part numbers (**PROD_ID-\***) for ease of manufacture for the SparkFun SMD lines. 
 
 ### Theory
 
-KiCad is very good and has a large number of stock and industry common symbols and footprints. SparkFun has a large number of unique Eagle footprints and symbols that it has created over the years. KiCad can directly and easily import Eagle footprints, but it cannot easily import Eagle schematic symbols. Rather than converting all previous [SparkFun Eagle libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries) to KiCad, we are adding new parts to this library as we need them for new projects. This gives us the opportunity to clear out old badness, but opens the door to new badness (ie, incorrect footprints) so reader beware!
+KiCad is very good and has a large number of industry specified symbols and footprints. SparkFun has a large number of unique parts and components created since 2002. Rather than converting all previous [SparkFun Eagle libraries](https://github.com/sparkfun/SparkFun-Eagle-Libraries) to KiCad, we are adding new parts to this library as we need them for new projects. This gives us the opportunity to clear out old badness, but opens the door to new badness (ie, incorrect footprints) so reader beware!
 
 The SparkFun approach: when a new part needs to be added we decide whether to use a KiCad stock symbol, edit it for use, or create it from scratch. We give preference to the stock KiCad symbol. We give heavy preference to using the original SparkFun footprint, but look at the stock KiCad footprint for inspiration as well. We'll try to follow the [KiCad Library Conventions](https://klc.kicad.org/) where it makes sense.
 
