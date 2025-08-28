@@ -1,7 +1,7 @@
 (footprint "RFCMF1220100M4T"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
@@ -28,18 +28,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "474c17bf-1fc8-467e-97ac-1ea8888ac936")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -49,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -92,7 +82,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "b0343ecf-538a-431b-98ea-206ce15a8fb4")
 	)
@@ -139,40 +129,41 @@
 	(pad "1" smd rect
 		(at -0.85 -0.4)
 		(size 0.9 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "b0eb5fad-00b2-4bb2-9b47-f3c88eb3d1b1")
 	)
 	(pad "2" smd rect
 		(at 0.85 -0.4)
 		(size 0.9 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "96968559-f13d-4c36-b1b3-a7fa98008a26")
 	)
 	(pad "3" smd rect
 		(at -0.85 0.4)
 		(size 0.9 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "6e91a0f2-cd4c-4ccc-9399-14b891f2e1b1")
 	)
 	(pad "4" smd rect
 		(at 0.85 0.4)
 		(size 0.9 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "356aa3e9-7b10-4ad7-904f-1498342e85df")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Coil/CHIP_100M4T_WAL.step"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Coil/RFCMF1220100M4T.stp"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0 -0.02)
 		)
 		(scale
-			(xyz 1 0.9 0.9)
+			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )
