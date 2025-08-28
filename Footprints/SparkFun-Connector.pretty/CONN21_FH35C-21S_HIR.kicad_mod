@@ -5,7 +5,7 @@
 	(layer "F.Cu")
 	(tags "FH35C-21S-0.3SHW50 ")
 	(property "Reference" "REF**"
-		(at 0 3 0)
+		(at 0 5 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "05031c31-3d06-468a-8881-022c51d46774")
@@ -17,7 +17,7 @@
 		)
 	)
 	(property "Value" "CONN21_FH35C-21S_HIR"
-		(at 0 5 0)
+		(at 0 7 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "72c9a0f9-1dad-4a58-82e4-e0d3407d2b17")
@@ -74,6 +74,16 @@
 		(uuid "83a32bdf-bf6c-4390-9006-428188283895")
 	)
 	(fp_line
+		(start 4 2.55)
+		(end 3 2.55)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "68f95fc5-9846-4767-b4a3-43aae9375841")
+	)
+	(fp_line
 		(start 4.0767 -1.6256)
 		(end 3.485139 -1.6256)
 		(stroke
@@ -92,17 +102,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "6fb93054-9704-471a-9496-f14997ed2da9")
-	)
-	(fp_circle
-		(center -3.8 2.5)
-		(end -3.5 2.5)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill yes)
-		(layer "F.SilkS")
-		(uuid "c7c65396-cd03-4edf-b6b6-bd499f248449")
 	)
 	(fp_rect
 		(start -4.25 -2.75)
@@ -139,6 +138,16 @@
 	)
 	(fp_line
 		(start -3.3 0.05)
+		(end -3.3 4.05)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "User.2")
+		(uuid "794c7acc-fb7b-4ea3-9577-ba7c0b354458")
+	)
+	(fp_line
+		(start -3.3 0.05)
 		(end 3.3 0.05)
 		(stroke
 			(width 0.1)
@@ -148,21 +157,31 @@
 		(uuid "a2ff8340-9aea-4c9c-a495-0d230faa7368")
 	)
 	(fp_line
-		(start -3.3 1.5)
-		(end -3.3 0.05)
+		(start -3.3 2.55)
+		(end 3.3 2.55)
 		(stroke
 			(width 0.1)
 			(type default)
 		)
 		(layer "User.2")
-		(uuid "794c7acc-fb7b-4ea3-9577-ba7c0b354458")
+		(uuid "e4589e16-94d5-4832-a2f5-31834f876122")
 	)
 	(fp_line
-		(start 3.3 0.05)
-		(end 3.3 1.5)
+		(start -3.3 4.05)
+		(end 3.3 4.05)
 		(stroke
 			(width 0.1)
 			(type default)
+		)
+		(layer "User.2")
+		(uuid "9deb3948-59ec-4754-84fa-65baea88e959")
+	)
+	(fp_line
+		(start 3.3 0.05)
+		(end 3.3 4.05)
+		(stroke
+			(width 0.1)
+			(type solid)
 		)
 		(layer "User.2")
 		(uuid "cf354d7a-f73b-4763-9e96-fd4f24b6e3fc")
@@ -172,6 +191,18 @@
 		(unlocked yes)
 		(layer "User.2")
 		(uuid "7c27b87b-19d7-420d-b841-979879bc400e")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.125)
+			)
+		)
+	)
+	(fp_text user "Stiffener"
+		(at 0 0.6 0)
+		(unlocked yes)
+		(layer "User.2")
+		(uuid "c00ab440-e1e4-4c4f-a3b8-2c370fc928fb")
 		(effects
 			(font
 				(size 0.5 0.5)
