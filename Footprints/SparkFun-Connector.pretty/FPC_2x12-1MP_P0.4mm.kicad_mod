@@ -1,30 +1,31 @@
-(footprint "Socket_2x12_0.4mm"
+(footprint "FPC_2x12-1MP_P0.4mm"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(tags "Sparkfun connector 5055502420")
+	(descr "Board to board mezzanine connector")
+	(tags "SparkFun Molex connector 5055502420")
 	(property "Reference" "REF**"
-		(at 0.7 -2.6 0)
+		(at 0 -2.1 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "a2a040ce-3151-4f97-af20-21c5d2982572")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
-	(property "Value" "Socket_2x12_0.4mm-pitch"
-		(at 0.2 3.4 0)
+	(property "Value" "FPC_2x12-1MP_P0.4mm"
+		(at 0 3.2 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(uuid "072ad11f-7814-4627-b85f-1db0a9bbb9e7")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -59,7 +60,7 @@
 		(start -3.7 1.4)
 		(end -3.7 -1.4)
 		(stroke
-			(width 0.1)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -69,7 +70,7 @@
 		(start -3.4 -1.4)
 		(end -3.7 -1.4)
 		(stroke
-			(width 0.1)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -79,7 +80,7 @@
 		(start -3.4 1.4)
 		(end -3.7 1.4)
 		(stroke
-			(width 0.1)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -89,7 +90,7 @@
 		(start 3.4 -1.4)
 		(end 3.7 -1.4)
 		(stroke
-			(width 0.1)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -99,7 +100,7 @@
 		(start 3.4 1.4)
 		(end 3.7 1.4)
 		(stroke
-			(width 0.1)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -109,7 +110,7 @@
 		(start 3.7 -1.4)
 		(end 3.7 1.4)
 		(stroke
-			(width 0.1)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -182,18 +183,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(fp_text user "${REFERENCE}"
-		(at -0.6 5.6 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "e5c99776-f52d-441e-a1db-24311cc3f7bf")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
 			)
 		)
 	)
