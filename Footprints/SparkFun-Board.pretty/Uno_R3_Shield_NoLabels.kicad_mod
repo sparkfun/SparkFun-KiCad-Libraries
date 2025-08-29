@@ -1,7 +1,7 @@
 (footprint "Uno_R3_Shield_NoLabels"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Arduino Uno-Compatible Footprint No holes, no ICSP connections, no silk labels")
 	(tags "SparkFun Uno shield")
@@ -26,18 +26,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "8d5d4b09-5289-4215-bfd6-7e3299cfbc0a")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -627,17 +615,7 @@
 		(thermal_bridge_angle 0)
 		(uuid "0e550ede-96b5-4131-8fb4-f1d7f99cd9b6")
 	)
-	(pad "A4/SDA" thru_hole circle
-		(at -24.13 17.78 90)
-		(size 1.8796 1.8796)
-		(drill 1.016)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "471ddd2d-6baa-489e-b197-7af8f2ea6a8b")
-	)
-	(pad "A4/SDA" thru_hole circle
+	(pad "A4" thru_hole circle
 		(at 24.13 -21.59 90)
 		(size 1.8796 1.8796)
 		(drill 1.016)
@@ -647,17 +625,7 @@
 		(thermal_bridge_angle 0)
 		(uuid "95d24c44-abad-498c-96f4-a671d00ade53")
 	)
-	(pad "A5/SCL" thru_hole circle
-		(at -24.13 20.32 90)
-		(size 1.8796 1.8796)
-		(drill 1.016)
-		(layers "*.Cu" "*.Mask")
-		(remove_unused_layers no)
-		(solder_mask_margin 0.1016)
-		(thermal_bridge_angle 0)
-		(uuid "125db49d-1a48-4840-b48c-98365fe9012d")
-	)
-	(pad "A5/SCL" thru_hole circle
+	(pad "A5" thru_hole circle
 		(at 24.13 -24.13 90)
 		(size 1.8796 1.8796)
 		(drill 1.016)
@@ -867,6 +835,26 @@
 		(thermal_bridge_angle 0)
 		(uuid "3d914acd-a8d3-42fa-996c-d02242d598c9")
 	)
+	(pad "SCL" thru_hole circle
+		(at -24.13 20.32 90)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "125db49d-1a48-4840-b48c-98365fe9012d")
+	)
+	(pad "SDA" thru_hole circle
+		(at -24.13 17.78 90)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "471ddd2d-6baa-489e-b197-7af8f2ea6a8b")
+	)
 	(pad "VIN" thru_hole circle
 		(at 24.13 -6.35 90)
 		(size 1.8796 1.8796)
@@ -887,4 +875,5 @@
 		(thermal_bridge_angle 0)
 		(uuid "449f6227-b922-4c0e-9ba5-5bae65b41cec")
 	)
+	(embedded_fonts no)
 )
