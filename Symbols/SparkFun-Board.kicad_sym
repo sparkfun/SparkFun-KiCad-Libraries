@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "B"
-			(at -10.16 26.67 0)
+			(at -10.16 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15,7 +15,7 @@
 			)
 		)
 		(property "Value" "Arduino_Uno_R3_Shield"
-			(at 0 -26.67 0)
+			(at 0 -29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Board:Uno_R3_Shield_NoLabels"
-			(at 0 -31.75 0)
+			(at 0 -34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/d/6/e/b/RedBoard_Plus_USB-C_Schematic.pdf"
-			(at 1.27 -34.29 0)
+			(at 1.27 -36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Description" "Arduino R3 Footprint with SPI header"
-			(at 0 -29.21 0)
+			(at 0 -31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -60,7 +60,7 @@
 		)
 		(symbol "Arduino_Uno_R3_Shield_1_0"
 			(pin power_in line
-				(at -12.7 24.13 0)
+				(at -12.7 26.67 0)
 				(length 2.54)
 				(name "VIN"
 					(effects
@@ -78,7 +78,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 21.59 0)
+				(at -12.7 24.13 0)
 				(length 2.54)
 				(name "5V"
 					(effects
@@ -96,7 +96,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 19.05 0)
+				(at -12.7 21.59 0)
 				(length 2.54)
 				(name "3.3V"
 					(effects
@@ -114,7 +114,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 16.51 0)
+				(at -12.7 19.05 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -132,7 +132,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 7.62 0)
 				(length 2.54)
 				(name "IOREF"
 					(effects
@@ -150,7 +150,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 1.27 0)
+				(at -12.7 3.81 0)
 				(length 2.54)
 				(name "AREF"
 					(effects
@@ -168,7 +168,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -12.7 -1.27 0)
+				(at -12.7 1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -187,7 +187,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -24.13 0)
+				(at -12.7 -26.67 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -205,7 +205,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 24.13 180)
+				(at 12.7 26.67 180)
 				(length 2.54)
 				(name "D0/TXO"
 					(effects
@@ -223,7 +223,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 21.59 180)
+				(at 12.7 24.13 180)
 				(length 2.54)
 				(name "D1/RXI"
 					(effects
@@ -241,7 +241,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 19.05 180)
+				(at 12.7 21.59 180)
 				(length 2.54)
 				(name "D2"
 					(effects
@@ -259,7 +259,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 16.51 180)
+				(at 12.7 19.05 180)
 				(length 2.54)
 				(name "*D3"
 					(effects
@@ -277,7 +277,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 13.97 180)
+				(at 12.7 16.51 180)
 				(length 2.54)
 				(name "D4"
 					(effects
@@ -295,7 +295,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 11.43 180)
+				(at 12.7 13.97 180)
 				(length 2.54)
 				(name "*D5"
 					(effects
@@ -313,7 +313,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 8.89 180)
+				(at 12.7 11.43 180)
 				(length 2.54)
 				(name "*D6"
 					(effects
@@ -331,7 +331,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 6.35 180)
+				(at 12.7 8.89 180)
 				(length 2.54)
 				(name "D7"
 					(effects
@@ -349,7 +349,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 3.81 180)
+				(at 12.7 6.35 180)
 				(length 2.54)
 				(name "D8"
 					(effects
@@ -367,7 +367,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 1.27 180)
+				(at 12.7 3.81 180)
 				(length 2.54)
 				(name "*D9"
 					(effects
@@ -385,7 +385,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -1.27 180)
+				(at 12.7 1.27 180)
 				(length 2.54)
 				(name "*D10"
 					(effects
@@ -403,7 +403,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -3.81 180)
+				(at 12.7 -1.27 180)
 				(length 2.54)
 				(name "*D11/PICO"
 					(effects
@@ -421,7 +421,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -6.35 180)
+				(at 12.7 -3.81 180)
 				(length 2.54)
 				(name "D12/POCI"
 					(effects
@@ -439,7 +439,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -8.89 180)
+				(at 12.7 -6.35 180)
 				(length 2.54)
 				(name "D13/SCK"
 					(effects
@@ -457,7 +457,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -11.43 180)
+				(at 12.7 -8.89 180)
 				(length 2.54)
 				(name "A0"
 					(effects
@@ -475,7 +475,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -13.97 180)
+				(at 12.7 -11.43 180)
 				(length 2.54)
 				(name "A1"
 					(effects
@@ -493,7 +493,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -16.51 180)
+				(at 12.7 -13.97 180)
 				(length 2.54)
 				(name "A2"
 					(effects
@@ -511,7 +511,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -19.05 180)
+				(at 12.7 -16.51 180)
 				(length 2.54)
 				(name "A3"
 					(effects
@@ -529,16 +529,34 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -21.59 180)
+				(at 12.7 -19.05 180)
 				(length 2.54)
-				(name "A4/SDA"
+				(name "A4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A4/SDA"
+				(number "A4"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -21.59 180)
+				(length 2.54)
+				(name "A5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A5"
 					(effects
 						(font
 							(size 0 0)
@@ -549,14 +567,32 @@
 			(pin bidirectional line
 				(at 12.7 -24.13 180)
 				(length 2.54)
-				(name "A5/SCL"
+				(name "SDA"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A5/SCL"
+				(number "SDA"
+					(effects
+						(font
+							(size 0 0)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -26.67 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "SCL"
 					(effects
 						(font
 							(size 0 0)
@@ -567,8 +603,8 @@
 		)
 		(symbol "Arduino_Uno_R3_Shield_1_1"
 			(rectangle
-				(start -10.16 25.4)
-				(end 10.16 -25.4)
+				(start -10.16 27.94)
+				(end 10.16 -27.94)
 				(stroke
 					(width 0)
 					(type default)
