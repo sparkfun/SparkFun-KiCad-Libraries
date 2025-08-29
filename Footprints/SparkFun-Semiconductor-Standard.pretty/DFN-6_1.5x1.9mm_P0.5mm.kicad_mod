@@ -1,0 +1,158 @@
+(footprint "DFN-6_1.5x1.9mm_P0.5mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "6-pin Low Noise Amplifier")
+	(tags "SparkFun RF Amplifier LNA GNSS GPS DFN")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(layer "F.Fab")
+		(uuid "4979c99d-1d25-4408-b83d-e51784a2156a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "DFN-6_1.5x1.9mm_P0.5mm"
+		(at 0 1.1 0)
+		(layer "F.Fab")
+		(uuid "5888c89c-76e7-41c9-af02-d070ef166cbc")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://doc.awinic.com/doc/20230609wm/5f84407b-a5e6-4587-bc98-f20377595fcd.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc0f188f-6595-4e30-977a-4c148617582d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a62cb4aa-06aa-4539-938a-5f96c1a14486")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.9 -0.5)
+		(end -0.9 0.5)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "18ccf2a0-771e-4668-9ac7-79a8c4289d6e")
+	)
+	(fp_line
+		(start 0.9 -0.5)
+		(end 0.9 0.5)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "27aaf075-4db6-4fa5-b6ee-8009115f7fad")
+	)
+	(fp_circle
+		(center -0.5 0.8)
+		(end -0.5 0.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "74bdfbca-8baf-4d8d-8dde-39c20041be53")
+	)
+	(fp_rect
+		(start -0.8 -0.6)
+		(end 0.8 0.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "179c2246-6bf3-47ef-846c-4f3b2837bd1f")
+	)
+	(fp_rect
+		(start -0.75 -0.5)
+		(end 0.75 0.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a29d9989-88a0-4279-8bfc-0fd1a2d78e9e")
+	)
+	(pad "1" smd rect
+		(at -0.5 0.35)
+		(size 0.2 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51ce9031-6904-4996-bd6f-3f6719db6d23")
+	)
+	(pad "2" smd rect
+		(at 0 0.35)
+		(size 0.2 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "52358ab7-3437-4b82-bf8a-523ba55d87a1")
+	)
+	(pad "3" smd rect
+		(at 0.5 0.35)
+		(size 0.2 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8ce67607-0a2e-425d-832f-fa6870f815fb")
+	)
+	(pad "4" smd rect
+		(at 0.5 -0.35)
+		(size 0.2 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c1dac8d7-99b8-4bbf-b514-a01138efcee7")
+	)
+	(pad "5" smd rect
+		(at 0 -0.35)
+		(size 0.2 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ec72c41c-f403-495b-a34e-0322dfaf5390")
+	)
+	(pad "6" smd rect
+		(at -0.5 -0.35)
+		(size 0.2 0.5)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "07280895-bb21-4646-b3db-954d96b39be0")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/RF/DFN-6_1.5x1.9mm_P0.5mm.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

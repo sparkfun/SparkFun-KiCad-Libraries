@@ -1,0 +1,405 @@
+(footprint "GNSS_Ceramic_Antenna_18.0x18.0mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "18x18mm GNSS L1 Antenna")
+	(tags "SparkFun GNSS GPS Antenna")
+	(property "Reference" "REF**"
+		(at 0 -9.4 0)
+		(layer "F.Fab")
+		(uuid "4979c99d-1d25-4408-b83d-e51784a2156a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "GNSS_Ceramic_Antenna_18.0x18.0mm"
+		(at 0 9.6 0)
+		(layer "F.Fab")
+		(uuid "5888c89c-76e7-41c9-af02-d070ef166cbc")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://quectel.com/content/uploads/2024/03/Quectel_Antenna_YCGS005AA_Datasheet_V1.2.pdf?wpId=110034"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc0f188f-6595-4e30-977a-4c148617582d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a62cb4aa-06aa-4539-938a-5f96c1a14486")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -9.1 -7.1)
+		(end -9.1 7.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5ffde603-409a-4660-9d27-d74c878a0d96")
+	)
+	(fp_line
+		(start -7.1 -9.1)
+		(end -9.1 -7.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "afab79f6-e322-4637-a7c8-6b8a1c943fe6")
+	)
+	(fp_line
+		(start -7.1 9.1)
+		(end 7.1 9.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b3f176ba-3b47-4f51-aedf-58faeb11706b")
+	)
+	(fp_line
+		(start 7.1 -9.1)
+		(end -7.1 -9.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e6f54f45-933c-42c6-bd65-8e62bb1f3c84")
+	)
+	(fp_line
+		(start 9.1 7.1)
+		(end 9.1 -7.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d83ec1d2-93f2-4161-952d-f655df6ec420")
+	)
+	(fp_arc
+		(start -7.1 9.1)
+		(mid -8.514214 8.514214)
+		(end -9.1 7.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6e15f79c-7783-4d1b-a421-7ec0a86b4cf7")
+	)
+	(fp_arc
+		(start 7.1 -9.1)
+		(mid 8.514214 -8.514214)
+		(end 9.1 -7.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "48c4c2d8-25bb-4032-8365-bde68e7d441e")
+	)
+	(fp_arc
+		(start 9.1 7.1)
+		(mid 8.514214 8.514214)
+		(end 7.1 9.1)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "f42a28d3-9959-4353-81eb-731dddc6ddee")
+	)
+	(fp_circle
+		(center 9.4 0)
+		(end 9.3 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "3335364a-0226-4796-85da-334b8dfb65ae")
+	)
+	(fp_line
+		(start -9.1 -7.1)
+		(end -9.1 7.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "df1fa2a8-0021-43b8-bcb9-0acfb62351d2")
+	)
+	(fp_line
+		(start -7.1 -9.1)
+		(end -9.1 -7.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d4baf24d-8abc-4557-82f7-7785597b06f8")
+	)
+	(fp_line
+		(start -7.1 9.1)
+		(end 7.1 9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "debc27d6-75e4-434a-80aa-589c6ee01ccb")
+	)
+	(fp_line
+		(start 7.1 -9.1)
+		(end -7.1 -9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "add44fa9-c19b-40eb-b703-1f74afaf01f4")
+	)
+	(fp_line
+		(start 9.1 7.1)
+		(end 9.1 -7.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "67ef9538-5105-4649-b5c7-18bf893e3ee7")
+	)
+	(fp_arc
+		(start -7.1 9.1)
+		(mid -8.514214 8.514214)
+		(end -9.1 7.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "aa5fc309-3768-40b9-b5d4-18206e0fe965")
+	)
+	(fp_arc
+		(start 7.1 -9.1)
+		(mid 8.514214 -8.514214)
+		(end 9.1 -7.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ec0b71b1-fcfc-405b-a6eb-2cc12b029789")
+	)
+	(fp_arc
+		(start 9.1 7.1)
+		(mid 8.514214 8.514214)
+		(end 7.1 9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "cc9fb970-e626-48c3-a352-b27671b3642a")
+	)
+	(fp_line
+		(start -9 -7)
+		(end -8.999998 6.999999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "efd8588f-4316-49b1-9a14-1e4d7cb239a5")
+	)
+	(fp_line
+		(start -7 -9)
+		(end -9 -7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "a5586751-7d5e-4134-bdae-f7f354f466d0")
+	)
+	(fp_line
+		(start -6.999999 8.999999)
+		(end 7 8.999999)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "aac977a7-99f1-4836-865f-ff91105e1ff6")
+	)
+	(fp_line
+		(start 7 -9)
+		(end -7 -9)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "6ef84469-c2f3-47ce-9bca-2772cac6ccf3")
+	)
+	(fp_line
+		(start 8.999998 6.999999)
+		(end 9 -7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "1ad79b20-a8a0-44de-b5ff-d449792b89ec")
+	)
+	(fp_rect
+		(start 6.4 -2)
+		(end 9 2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "af583c28-5da3-4bf5-9d7d-a41680d68657")
+	)
+	(fp_rect
+		(start 7.4 -1)
+		(end 9 1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "abb9944b-2a62-4fd0-8f94-70fe2f217ea2")
+	)
+	(fp_arc
+		(start -6.999999 8.999999)
+		(mid -8.414213 8.414213)
+		(end -8.999999 6.999999)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "bd1d03c3-ea6a-461f-ae73-d9803c8fb82e")
+	)
+	(fp_arc
+		(start 7 -9)
+		(mid 8.414214 -8.414214)
+		(end 9 -7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "efe18f4e-653d-46b6-a539-64a8aa4505cc")
+	)
+	(fp_arc
+		(start 8.999999 6.999999)
+		(mid 8.414213 8.414213)
+		(end 6.999999 8.999999)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0142ff2f-23d2-4c5d-9e43-c58d737fca9a")
+	)
+	(pad "1" smd rect
+		(at 8.21 0 90)
+		(size 2 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51ce9031-6904-4996-bd6f-3f6719db6d23")
+	)
+	(pad "2" smd rect
+		(at -5 -5.5 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "56928132-bf8b-4636-8e61-07e0aee5eca7")
+	)
+	(pad "2" smd rect
+		(at -5 0 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "80ca322d-1b1e-403a-997b-703a11ba9a2d")
+	)
+	(pad "2" smd rect
+		(at -5 5.5 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d392ecd6-2f89-40a6-8afb-33c6f087d0e1")
+	)
+	(pad "2" smd rect
+		(at 0 -5.5 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f1004cbc-f1b8-4a56-b325-f0db8b3ddaae")
+	)
+	(pad "2" smd rect
+		(at 0 5.5 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7e0f5b0e-532b-4bed-8581-26e30570498c")
+	)
+	(pad "2" smd rect
+		(at 1 0 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d1f6fdff-4e88-42b9-85b2-1c286dbd5333")
+	)
+	(pad "2" smd rect
+		(at 5 -5.5 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f709c379-523c-4047-ba10-093b122b747b")
+	)
+	(pad "2" smd rect
+		(at 5 5.5 90)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2a4c9e62-8a54-4fe2-b979-8db5a9a2edef")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/RF/GNSS_Ceramic_Antenna_18.0x18.0mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
+	)
+)
