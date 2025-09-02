@@ -1,4 +1,4 @@
-(footprint "2x10_2.54mm_Socket_SMD"
+(footprint "2x10_Socket_P2.54mm_SMD"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "Conn_02x10_2.54mm_SMD"
+	(property "Value" "02x10_Socket_P2.54mm_SMD"
 		(at 0 14 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -41,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" "Basic 0.1\" PTH"
+	(property "Description" ""
 		(at 0 -14.4 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -56,64 +56,75 @@
 	)
 	(attr smd)
 	(fp_line
-		(start -2.7 -13)
-		(end 2.6 -13)
+		(start -2.75 -13)
+		(end 2.75 -13)
 		(stroke
-			(width 0.15)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "9c37832e-322c-493b-8f39-f9279c693056")
+		(uuid "dad985df-39c4-466c-a802-425f8ac17f43")
 	)
 	(fp_line
-		(start -2.7 -12.2)
-		(end -2.7 -13)
+		(start -2.75 -12.25)
+		(end -2.75 -13)
 		(stroke
-			(width 0.15)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "01190c9a-f601-48ee-861c-84a08c943b05")
+		(uuid "6cda33b3-9c10-450e-a2c9-72cfb50a440b")
 	)
 	(fp_line
-		(start -2.6 13)
-		(end -2.6 12.2)
+		(start -2.75 13)
+		(end -2.75 12.25)
 		(stroke
-			(width 0.15)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "ee6c30c6-8cdc-4261-83f2-a4e1d7d83578")
 	)
 	(fp_line
-		(start 2.6 -13)
-		(end 2.6 -12.2)
+		(start 2.75 -13)
+		(end 2.75 -12.25)
 		(stroke
-			(width 0.15)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "fdf7dd5f-461f-491b-a712-ecc6afa1d84b")
+		(uuid "0b1e5b9f-5e6d-4df0-8cfe-5a42341f41c7")
 	)
 	(fp_line
-		(start 2.6 12.2)
-		(end 2.6 13)
+		(start 2.75 12.25)
+		(end 2.75 13)
 		(stroke
-			(width 0.15)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "c71cb350-4ade-43e1-b6ce-286fec540433")
 	)
 	(fp_line
-		(start 2.6 13)
-		(end -2.6 13)
+		(start 2.75 13)
+		(end -2.75 13)
 		(stroke
-			(width 0.15)
+			(width 0.1524)
 			(type default)
 		)
 		(layer "F.SilkS")
 		(uuid "3184ca71-db2a-4a12-9258-9af1987270e6")
+	)
+	(fp_circle
+		(center 3.25 -12.5)
+		(end 3.35 -12.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "9fd52410-d9c6-4e99-863b-b7c679220097")
 	)
 	(fp_rect
 		(start -4.1 -13.1)
