@@ -1,0 +1,134 @@
+(footprint "1x05_P2.0mm_Socket_Vertical_PTH"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "SparkFun Plated Through Hole 5 Pin 2mm")
+	(property "Reference" "REF**"
+		(at 0 -2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b254c7c6-d5e9-4245-9752-bf43cb47c297")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "1x05_2.0mm"
+		(at 0 1.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f06c3f92-98fd-408c-9123-aec95388b4a4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.mouser.com/datasheet/2/837/bf085-1994323.pdf"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7279a4a8-f5aa-41ac-8f0a-ecc551b668f4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ec0940d-bebd-47e3-93d9-b08661123fcb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -1.25 -1.25)
+		(end 9.25 1.25)
+		(stroke
+			(width 0.1778)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bcca36a0-55f1-42e1-8431-d68659b018bc")
+	)
+	(fp_rect
+		(start -1.5 -1.5)
+		(end 9.5 1.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e7622818-d31a-48ad-8149-f8e79430e0fe")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "d340e3fc-72d7-40cf-a7d3-c40ee766e2ec")
+	)
+	(pad "2" thru_hole circle
+		(at 2 0)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "01b6cc03-607a-4e33-a765-de02204d0d56")
+	)
+	(pad "3" thru_hole circle
+		(at 4 0)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "4d563f07-3a30-4f5f-b0a2-13a4cc15b793")
+	)
+	(pad "4" thru_hole circle
+		(at 6 0)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "c83e3129-0412-4b05-8e12-637bd9d74717")
+	)
+	(pad "5" thru_hole circle
+		(at 8 0)
+		(size 1.4 1.4)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "f06df68a-2612-4f90-b743-b27d1e9ac0a6")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/1x05_2.0mm.step"
+		(offset
+			(xyz 0 0 4.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

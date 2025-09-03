@@ -1,0 +1,114 @@
+(footprint "1x01_P2.54mm_Castellated"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 -1.524 0)
+		(layer "F.Fab")
+		(uuid "21fd6e20-c36e-4169-b08f-8e57f7b0ddb7")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 1.778 0)
+		(layer "F.Fab")
+		(uuid "5c500bcc-0ccd-4076-a17d-029f4ac4ddb4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 270)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e305b5b8-61ff-4059-be6b-b048c42e05c8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 270)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a337853e-797b-4ddb-980b-dc6d3236c4cf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7abc72c2-c179-4028-a007-b51ab06fb875")
+	)
+	(fp_rect
+		(start -0.254 -0.254)
+		(end 0.254 0.254)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "39ac6f6d-4240-4c6f-83c1-4fc6854bba31")
+	)
+	(pad "1" thru_hole custom
+		(at 0 0 90)
+		(size 1.016 1.016)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(thermal_bridge_angle 0)
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.188651 0.803455) (xy -0.352371 0.733074) (xy -0.497855 0.630155) (xy -0.618729 0.499208)
+					(xy -0.709699 0.345969) (xy -0.766779 0.17715) (xy -0.7874 0.000741) (xy -0.7874 -0.000592) (xy -0.770781 -0.178542)
+					(xy -0.715922 -0.349474) (xy -0.625481 -0.504547) (xy -0.503717 -0.636459) (xy -0.356363 -0.738996)
+					(xy -0.19036 -0.807333) (xy -0.013803 -0.8382) (xy 1.27 -0.8382) (xy 1.27 0.8382) (xy -0.013951 0.8382)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "f30250f6-8ea5-4de7-9d23-af440908c2cd")
+	)
+	(pad "1B" thru_hole circle
+		(at 0 -1.57 270)
+		(size 1.75 1.75)
+		(drill 1.7)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers yes)
+		(keep_end_layers yes)
+		(thermal_bridge_angle 0)
+		(uuid "0dc9a71f-0ba5-4395-b606-afc92eb1fd9e")
+	)
+	(embedded_fonts no)
+)
