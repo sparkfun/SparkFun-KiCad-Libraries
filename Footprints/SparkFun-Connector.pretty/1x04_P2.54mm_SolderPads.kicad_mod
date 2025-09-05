@@ -1,7 +1,7 @@
-(footprint "1x04_Solder_Pads"
-	(version 20240108)
+(footprint "1x04_P2.54mm_SolderPads"
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
@@ -26,18 +26,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a53d9bd1-edbd-4a5c-bb57-27f4284a4a94")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -47,6 +35,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -59,6 +48,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -90,4 +80,5 @@
 		(thermal_bridge_angle 0)
 		(uuid "65c983b6-86a1-423f-be72-422bdc9e8f6f")
 	)
+	(embedded_fonts no)
 )
