@@ -307,7 +307,7 @@
 	(pad "SH" thru_hole oval
 		(at -8.04 -7.7)
 		(size 1.2 3.5)
-		(drill oval 0.7 2.2)
+		(drill oval 0.7 2.5)
 		(layers "*.Cu" "*.Mask" "F.Paste")
 		(remove_unused_layers no)
 		(solder_paste_margin_ratio 0.1)
@@ -316,14 +316,14 @@
 	(pad "SH" thru_hole oval
 		(at 8.04 -7.7)
 		(size 1.2 3.5)
-		(drill oval 0.7 2.2)
+		(drill oval 0.7 2.5)
 		(layers "*.Cu" "*.Mask" "F.Paste")
 		(remove_unused_layers no)
 		(solder_paste_margin_ratio 0.1)
 		(uuid "f895a7ff-1f6f-4df7-bec9-9f4bfaf3461e")
 	)
 	(embedded_fonts no)
-	(model "/home/amo/SparkFun/SparkFun-KiCad-Libraries/Footprints/SparkFun-3D-models/Connector/RJ45 SMD.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/RJ45 SMD.step"
 		(offset
 			(xyz 0 8.5 3)
 		)
