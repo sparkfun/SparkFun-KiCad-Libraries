@@ -1,0 +1,148 @@
+(footprint "C_1210_3225Metric_SuperCap"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Seiko 1210 Super Cap")
+	(tags "SparkFun super capacitor")
+	(property "Reference" "REF**"
+		(at 0 -2.3 0)
+		(layer "F.Fab")
+		(uuid "ba50cbf0-c8e2-4263-b5b2-a672c5571e4c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "C_1210"
+		(at 0 2.3 0)
+		(layer "F.Fab")
+		(uuid "7545b299-e0fe-40f2-adba-d22c1074409b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6537/rev05-CPHCPM.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0d6e7e1d-92c8-49e2-b5d3-011c13730034")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db6179ee-ce46-42d7-bdaf-9eab30dcf3ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.7 0.711252)
+		(end -1.7 -0.711252)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7bc5ce64-8af7-4e4e-b4ae-110585e8d8d8")
+	)
+	(fp_line
+		(start -0.711252 -1.36)
+		(end 0.711252 -1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "229a5c26-5bb8-4091-95cc-3cae1b9b9abd")
+	)
+	(fp_line
+		(start -0.711252 1.36)
+		(end 0.711252 1.36)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e8e3e62a-3492-4400-989d-75f88b91de23")
+	)
+	(fp_line
+		(start 1.7 0.711252)
+		(end 1.7 -0.711252)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "79c75b9b-fd41-49e8-9907-ec019aec24f8")
+	)
+	(fp_rect
+		(start -1.7 -1.4)
+		(end 1.7 1.4)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c9d324c2-ce81-4bf2-bfd4-868e02e2643c")
+	)
+	(fp_rect
+		(start -1.6 -1.25)
+		(end 1.6 1.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b464fdf1-59ef-4d28-bd5c-28829867720a")
+	)
+	(pad "1" smd rect
+		(at -1.1 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3f8fd7e9-61c1-4fa9-92f6-762298e161d8")
+	)
+	(pad "2" smd roundrect
+		(at 1.1 0)
+		(size 1 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.4)
+		(chamfer top_left)
+		(uuid "584ba531-83e4-40ff-a284-a4520b8b7d41")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Capacitor/CPH3225A-2K.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
