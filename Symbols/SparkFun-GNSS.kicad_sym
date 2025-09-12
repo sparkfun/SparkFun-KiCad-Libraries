@@ -6580,7 +6580,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:Quectel_L7X"
+		(property "Footprint" "SparkFun-GNSS:Quectel_L7X"
 			(at 1.27 -17.78 0)
 			(effects
 				(font
@@ -7001,7 +7001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:Quectel_LG290P"
+		(property "Footprint" "SparkFun-GNSS:Quectel_LG290P"
 			(at 1.27 -20.32 0)
 			(effects
 				(font
@@ -7519,6 +7519,993 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "LG580P"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -10.16 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LG580P"
+			(at -7.62 -29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-GNSS:Quectel_LG580P"
+			(at 3.81 -31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/1/8/d/6/6/Quectel_LG580P_03__Hardware_Design_V1.0.0_Preliminary_20241012.pdf"
+			(at 2.54 -39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quectel Quadband GNSS Receiver with Heading"
+			(at 2.54 -36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "GPS-25039"
+			(at 2.54 -34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun GNSS GPS RTK Receiver with Heading"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "LG580P_1_1"
+			(rectangle
+				(start -11.43 29.21)
+				(end 11.43 -27.94)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at -13.97 27.94 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 27.94 0)
+				(length 2.54)
+				(hide yes)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 25.4 0)
+				(length 2.54)
+				(name "V_BCKP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -13.97 22.86 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -13.97 16.51 0)
+				(length 2.54)
+				(name "RF_IN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -13.97 11.43 0)
+				(length 2.54)
+				(name "RF_IN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "PowerPins" input line)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -13.97 -26.67 0)
+				(length 2.54)
+				(hide yes)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 27.94 180)
+				(length 2.54)
+				(name "TXD1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 25.4 180)
+				(length 2.54)
+				(name "RXD1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 22.86 180)
+				(length 2.54)
+				(name "TXD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 20.32 180)
+				(length 2.54)
+				(name "RXD2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 17.78 180)
+				(length 2.54)
+				(name "TXD3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 15.24 180)
+				(length 2.54)
+				(name "RXD3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 13.97 11.43 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 13.97 8.89 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 3.81 180)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 1.27 180)
+				(length 2.54)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -1.27 180)
+				(length 2.54)
+				(name "MISO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -3.81 180)
+				(length 2.54)
+				(name "MOSI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -6.35 180)
+				(length 2.54)
+				(name "~{SDRY}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -11.43 180)
+				(length 2.54)
+				(name "HEADING_STAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -13.97 180)
+				(length 2.54)
+				(name "~{ERR}_STAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -16.51 180)
+				(length 2.54)
+				(name "PVT_STAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -19.05 180)
+				(length 2.54)
+				(name "RTK_STAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 13.97 -21.59 180)
+				(length 2.54)
+				(name "PPS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 13.97 -26.67 180)
+				(length 2.54)
+				(name "EVENT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 15.24 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 12.7 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 10.16 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 7.62 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -7.62 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -10.16 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -12.7 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -15.24 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 31.75 -17.78 0)
+				(length 2.54)
+				(hide yes)
+				(name "Reserved"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "LS550G"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7539,7 +8526,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:Quectel_LS5x"
+		(property "Footprint" "SparkFun-GNSS:Quectel_LS5x"
 			(at 1.27 -25.4 0)
 			(effects
 				(font
@@ -7628,24 +8615,6 @@
 			(pin power_in line
 				(at -11.43 13.97 0)
 				(length 2.54)
-				(name "V_BCKP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -11.43 11.43 0)
-				(length 2.54)
 				(name "VCC_CORE"
 					(effects
 						(font
@@ -7662,16 +8631,16 @@
 				)
 			)
 			(pin power_in line
-				(at -11.43 8.89 0)
+				(at -11.43 11.43 0)
 				(length 2.54)
-				(name "VCC_RF"
+				(name "V_BCKP"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "21"
+				(number "19"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7680,7 +8649,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 2.54 0)
+				(at -11.43 6.35 0)
 				(length 2.54)
 				(name "RF_IN"
 					(effects
@@ -7697,8 +8666,26 @@
 					)
 				)
 			)
+			(pin power_in line
+				(at -11.43 1.27 0)
+				(length 2.54)
+				(name "VCC_RF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin output line
-				(at -11.43 -1.27 0)
+				(at -11.43 -3.81 0)
 				(length 2.54)
 				(name "ANT_ON"
 					(effects
@@ -7943,7 +8930,7 @@
 		)
 		(symbol "LS550G_1_1"
 			(pin input line
-				(at -11.43 6.35 0)
+				(at -11.43 8.89 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -7953,24 +8940,6 @@
 					)
 				)
 				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at -11.43 -3.81 0)
-				(length 2.54)
-				(name "PPS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8025,6 +8994,24 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at -11.43 -13.97 0)
+				(length 2.54)
+				(name "PPS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -8293,7 +9280,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:NEO-M9N_M8T_M8U_D9S_F9P_F10N"
+		(property "Footprint" "SparkFun-GNSS:NEO-M9N_M8T_M8U_D9S_F9P_F10N"
 			(at 0 -22.86 0)
 			(effects
 				(font
@@ -8810,7 +9797,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:NEO-M9N_M8T_M8U_D9S_F9P_F10N"
+		(property "Footprint" "SparkFun-GNSS:NEO-M9N_M8T_M8U_D9S_F9P_F10N"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -9327,7 +10314,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:u-blox_SAM-M8Q"
+		(property "Footprint" "SparkFun-GNSS:u-blox_SAM-M8Q"
 			(at 0 -27.94 0)
 			(effects
 				(font
@@ -9786,7 +10773,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:UM980"
+		(property "Footprint" "SparkFun-GNSS:UM980"
 			(at 0 -29.21 0)
 			(effects
 				(font
@@ -11767,7 +12754,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:ZED-F9P_F9T_F9R_X20P"
+		(property "Footprint" "SparkFun-GNSS:ZED-F9P_F9T_F9R_X20P"
 			(at 0 -27.94 0)
 			(effects
 				(font
@@ -13762,7 +14749,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:ZED-F9P_F9T_F9R_X20P"
+		(property "Footprint" "SparkFun-GNSS:ZED-F9P_F9T_F9R_X20P"
 			(at 0 -27.94 0)
 			(effects
 				(font
@@ -15376,7 +16363,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:ZED-F9P_F9T_F9R_X20P"
+		(property "Footprint" "SparkFun-GNSS:ZED-F9P_F9T_F9R_X20P"
 			(at 0 -27.94 0)
 			(effects
 				(font
@@ -17374,7 +18361,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:Septentrio_mosaic-G5_LGA54"
+		(property "Footprint" "SparkFun-GNSS:Septentrio_mosaic-G5_LGA54"
 			(at 0 -29.718 0)
 			(effects
 				(font
@@ -19227,7 +20214,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:Septentrio_mosaic_LGA"
+		(property "Footprint" "SparkFun-GNSS:Septentrio_mosaic_LGA"
 			(at -1.27 -60.96 0)
 			(effects
 				(font
@@ -22650,7 +23637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-GPS:Septentrio_mosaic_LGA"
+		(property "Footprint" "SparkFun-GNSS:Septentrio_mosaic_LGA"
 			(at -1.27 -60.96 0)
 			(effects
 				(font
