@@ -70,3 +70,5 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 We would like the opportunity to feature your device on our homepage.
 
 Please consider contributing back to this library or others to help the open-source hardware community continue to thrive and grow! 
+
+- Your friends at SparkFun
