@@ -30,17 +30,17 @@ The structure of these libraries is close to, but does not conform to the [KiCad
 
 ### Download ZIP
 
-You can download a copy of the library by clicking on the big green `<> Code` button above and selecting the `Download ZIP` option. Unzip the file somewhere convenient, usually in `Documents`. Open the **Symbol Editor** and navigate to `Preferences \ Configure Paths`. Add a new Environmental Variable called `SPARKFUN_KICAD_LIBRARY` and set the Path to the `SparkFun-KiCad-Libraries` folder :
+You can download a copy of the library by clicking on the big green `<> Code` button above and selecting the `Download ZIP` option. Unzip the file somewhere convenient, usually in `Documents`. Open the KiCad **Symbol Editor** and navigate to `Preferences \ Configure Paths`. Add a new Environmental Variable called `SPARKFUN_KICAD_LIBRARY` and set the Path to the `SparkFun-KiCad-Libraries` folder :
 
 ![SPARKFUN_KICAD_LIBRARY Environment Variable](./img/Environment_Variable.png)
 
-Then navigate to `Preferences \ Manage Symbol Libraries`. Click the folder button to "Add existing library to table". Navigate to the `SparkFun-KiCad-Libraries \ Symbols` folder, select all the `SparlFun-.kicad_sym` symbol files and click `Open` :
+Then navigate to `Preferences \ Manage Symbol Libraries`. Click the folder button to "Add existing library to table". Navigate to the `SparkFun-KiCad-Libraries \ Symbols` folder, select all the `SparkFun-.kicad_sym` symbol files and click `Open` :
 
 ![Adding the symbols](./img/Add_Symbols.png)
 
 ![Added symbols](./img/Added_Symbols.png)
 
-Then likewise in the **Footprint Editor**, navigate to `Preferences \ Manage Footprint Libraries` and use the folder button to "Add existing (KiCad folder)`. Select everything except the `3D-Models` folder (strictly, that one is in the wrong place) and click `Open` :
+Then likewise in the **Footprint Editor**, navigate to `Preferences \ Manage Footprint Libraries` and use the folder button to "Add existing (KiCad folder)". Select everything except the `3D-Models` folder (Strictly, that one is in the wrong place. Sorry about that) and click `Select Folder` :
 
 ![Adding the footprints](./img/Add_Footprints.png)
 
