@@ -52,7 +52,7 @@ If you're familiar with GitHub and Git / [GitHub Desktop](https://desktop.github
 
 Again, add the Symbols and Footprints Paths as described in the previous section.
 
-If you use the "Watch All Activity" option above, you will be notified each time we Push or Merge changes in the libraries. You can then Pull the changes to stay completely up to date. 
+If you use the "Watch All Activity" option above, you will be notified each time we Push or Merge changes in the libraries. You can then Pull the changes to stay completely up to date. (It's what we do!)
 
 Contents
 -------------------
