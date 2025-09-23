@@ -9783,6 +9783,24 @@
 			(pin power_in line
 				(at -11.43 11.43 0)
 				(length 2.54)
+				(name "VCC_RF"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -11.43 8.89 0)
+				(length 2.54)
 				(name "V_BCKP"
 					(effects
 						(font
@@ -9799,7 +9817,7 @@
 				)
 			)
 			(pin input line
-				(at -11.43 6.35 0)
+				(at -11.43 3.81 0)
 				(length 2.54)
 				(name "RF_IN"
 					(effects
@@ -9809,24 +9827,6 @@
 					)
 				)
 				(number "30"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -11.43 1.27 0)
-				(length 2.54)
-				(name "VCC_RF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10080,7 +10080,7 @@
 		)
 		(symbol "LS550G_1_1"
 			(pin input line
-				(at -11.43 8.89 0)
+				(at -11.43 6.35 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
