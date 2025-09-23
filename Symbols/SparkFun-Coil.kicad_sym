@@ -608,7 +608,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "SparkFun inductor choke coil reactor magnetic LQW18ANR13G00D"
@@ -719,7 +718,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "15uH_0805_0.35A"
+	(symbol "15uH_0805_0.7A"
 		(pin_numbers
 			(hide yes)
 		)
@@ -808,7 +807,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "15uH_0805_0.35A_0_1"
+		(symbol "15uH_0805_0.7A_0_1"
 			(arc
 				(start -2.032 0)
 				(mid -1.524 0.5058)
@@ -858,7 +857,7 @@
 				)
 			)
 		)
-		(symbol "15uH_0805_0.35A_1_1"
+		(symbol "15uH_0805_0.7A_1_1"
 			(pin passive line
 				(at -2.54 0 0)
 				(length 0.508)
@@ -1679,7 +1678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Frequency" "100MHz"
+		(property "Current" "300mA"
 			(at 0 -3.81 0)
 			(effects
 				(font
@@ -1706,82 +1705,10 @@
 			)
 		)
 		(symbol "33nH_0603_0.3A_0_1"
-			(polyline
-				(pts
-					(xy -1.905 1.016) (xy -1.651 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.651 0.762) (xy -1.905 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start -2.032 0)
 				(mid -1.524 0.5058)
 				(end -1.016 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.397 1.016) (xy -1.143 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.143 0.762) (xy -1.397 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.889 1.016) (xy -0.635 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.635 0.762) (xy -0.889 0.762)
-				)
 				(stroke
 					(width 0)
 					(type default)
@@ -1802,54 +1729,6 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -0.381 1.016) (xy -0.127 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.127 0.762) (xy -0.381 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.127 1.016) (xy 0.381 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.381 0.762) (xy 0.127 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start 0 0)
 				(mid 0.508 0.5058)
@@ -1862,82 +1741,10 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0.635 1.016) (xy 0.889 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.889 0.762) (xy 0.635 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.143 1.016) (xy 1.397 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.397 0.762) (xy 1.143 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start 1.016 0)
 				(mid 1.524 0.5058)
 				(end 2.032 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.651 1.016) (xy 1.905 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 0.762) (xy 1.651 0.762)
-				)
 				(stroke
 					(width 0)
 					(type default)
@@ -2229,13 +2036,12 @@
 				(hide yes)
 			)
 		)
-		(property "Resistance" "0.72"
+		(property "Current" "300mA"
 			(at 0 -3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "SparkFun inductor choke coil reactor magnetic"
@@ -2257,82 +2063,10 @@
 			)
 		)
 		(symbol "47nH_0402_0.3A_0_1"
-			(polyline
-				(pts
-					(xy -1.905 1.016) (xy -1.651 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.651 0.762) (xy -1.905 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start -2.032 0)
 				(mid -1.524 0.5058)
 				(end -1.016 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.397 1.016) (xy -1.143 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.143 0.762) (xy -1.397 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.889 1.016) (xy -0.635 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.635 0.762) (xy -0.889 0.762)
-				)
 				(stroke
 					(width 0)
 					(type default)
@@ -2353,54 +2087,6 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy -0.381 1.016) (xy -0.127 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -0.127 0.762) (xy -0.381 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.127 1.016) (xy 0.381 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.381 0.762) (xy 0.127 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start 0 0)
 				(mid 0.508 0.5058)
@@ -2413,82 +2099,10 @@
 					(type none)
 				)
 			)
-			(polyline
-				(pts
-					(xy 0.635 1.016) (xy 0.889 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.889 0.762) (xy 0.635 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.143 1.016) (xy 1.397 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.397 0.762) (xy 1.143 0.762)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
 			(arc
 				(start 1.016 0)
 				(mid 1.524 0.5058)
 				(end 2.032 0)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.651 1.016) (xy 1.905 1.016)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.905 0.762) (xy 1.651 0.762)
-				)
 				(stroke
 					(width 0)
 					(type default)
@@ -2965,7 +2579,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "SparkFun inductor choke coil reactor magnetic"
@@ -3837,7 +3450,7 @@
 				)
 			)
 		)
-		(property "Value" "2.66Ohm"
+		(property "Value" "2.66 Ohm"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -4226,7 +3839,7 @@
 				)
 			)
 		)
-		(property "Value" "30Ohm"
+		(property "Value" "30 Ohm"
 			(at 0 -1.27 0)
 			(effects
 				(font
@@ -4597,7 +4210,7 @@
 				)
 			)
 		)
-		(property "Value" "470Ohm"
+		(property "Value" "470 Ohm"
 			(at 0 -1.27 0)
 			(effects
 				(font
