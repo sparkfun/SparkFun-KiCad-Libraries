@@ -1,7 +1,7 @@
 (footprint "Fuseholder_Automotive"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Blade Fuse Clip Holder https://www.keyelco.com/userAssets/file/M65p41.pdf")
 	(tags "SparkFun Blade Fuse Clip Holder 3522")
@@ -24,19 +24,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "241e4e69-fe5c-465b-94a6-a735fadfb434")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -94,7 +81,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "f02fa495-1fc6-44ad-bf49-c30b67981343")
 	)
@@ -105,7 +92,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "e9a2d8d1-9812-4779-ad98-45151f62a060")
 	)
@@ -145,7 +132,8 @@
 		(roundrect_rratio 0.4)
 		(uuid "1d7b51d8-4c1f-4c19-860d-6cd509a4939d")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_Keystone_3555-2.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Fuse/Fuse_3522-2.step"
 		(offset
 			(xyz 0 0 0)
 		)
@@ -153,7 +141,7 @@
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -90 -0 -0)
 		)
 	)
 )

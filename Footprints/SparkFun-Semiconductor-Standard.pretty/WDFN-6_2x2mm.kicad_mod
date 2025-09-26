@@ -1,7 +1,7 @@
 (footprint "WDFN-6_2x2mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "http://www.ti.com/lit/ds/symlink/tps61040.pdf#page=35")
 	(tags "SparkFun WSON 6 pin")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "8804fec1-5a06-4d8f-8379-47175fae2bd6")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -91,7 +81,7 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "1635ba41-e205-4066-a65b-d4734373dade")
 	)
@@ -202,42 +192,42 @@
 	(pad "1" smd roundrect
 		(at -0.8875 -0.65)
 		(size 0.375 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "94cc876b-64cd-455d-8d60-e263c480130b")
 	)
 	(pad "2" smd roundrect
 		(at -0.8875 0)
 		(size 0.375 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "b156cb72-844c-4b35-9e8f-6f2b4493d23c")
 	)
 	(pad "3" smd roundrect
 		(at -0.8875 0.65)
 		(size 0.375 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "fbfdb79b-51bd-4d79-ad67-d29c722381ab")
 	)
 	(pad "4" smd roundrect
 		(at 0.8875 0.65)
 		(size 0.375 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "a6c663ae-642e-4bb8-a3fe-5037e052a9ce")
 	)
 	(pad "5" smd roundrect
 		(at 0.8875 0)
 		(size 0.375 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "3a47b2f1-0773-4015-b42c-ab4eb6dba9d6")
 	)
 	(pad "6" smd roundrect
 		(at 0.8875 -0.65)
 		(size 0.375 0.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "12bfff3c-d620-4d0a-80cb-3e0041396ced")
 	)
@@ -247,7 +237,8 @@
 		(layers "F.Cu" "F.Mask")
 		(uuid "08809f74-f163-4af2-be75-b264c3d28cc2")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Package_SON.3dshapes/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

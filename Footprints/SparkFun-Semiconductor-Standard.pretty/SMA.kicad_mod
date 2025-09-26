@@ -1,7 +1,7 @@
 (footprint "SMA"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Diode SMA (DO-214AC) https://goodarksemi.com/docs/datasheets/schottky_rectifiers/SK32A-SK36A.pdf")
 	(tags "SparkFun")
@@ -24,19 +24,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "ad989247-2a03-4af5-bedf-f6bb94d7fffe")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -84,7 +71,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "2abe6801-9b13-4a26-971e-6870308a7a01")
 	)
@@ -191,18 +178,19 @@
 	(pad "1" smd roundrect
 		(at -2 0)
 		(size 1.5 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.1388888889)
 		(uuid "9f2df30c-2d7a-4388-9c71-579b4758432a")
 	)
 	(pad "2" smd roundrect
 		(at 2 0)
 		(size 1.5 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.1388888889)
 		(uuid "30a204f2-227e-4550-8e1a-50e73e516621")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/D_SMA.step"
 		(offset
 			(xyz 0 0 0)
 		)

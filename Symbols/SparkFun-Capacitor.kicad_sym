@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "0.1uF_0402_10V_10%"
+	(symbol "0.15uF_0603_25V_10%"
 		(pin_numbers
 			(hide yes)
 		)
@@ -21,7 +21,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
+		(property "Value" "0.15uF"
 			(at 0.635 -2.54 0)
 			(effects
 				(font
@@ -30,7 +30,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric"
+		(property "Footprint" "SparkFun-Capacitor:C_0603_1608Metric"
 			(at 0 -11.43 0)
 			(effects
 				(font
@@ -57,7 +57,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-15083"
+		(property "PROD_ID" "CAP-25564"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -66,7 +66,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "10V"
+		(property "Voltage" "25V"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -82,7 +82,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "SparkFun cap capacitor 100nF"
+		(property "ki_keywords" "SparkFun cap capacitor 150nF"
 			(at 0 0 0)
 			(effects
 				(font
@@ -100,7 +100,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "0.1uF_0402_10V_10%_0_1"
+		(symbol "0.15uF_0603_25V_10%_0_1"
 			(polyline
 				(pts
 					(xy -1.524 0.508) (xy 1.524 0.508)
@@ -126,7 +126,7 @@
 				)
 			)
 		)
-		(symbol "0.1uF_0402_10V_10%_1_1"
+		(symbol "0.15uF_0603_25V_10%_1_1"
 			(pin passive line
 				(at 0 2.54 270)
 				(length 2.032)
@@ -221,7 +221,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-12416"
+		(property "PROD_ID" "CAP-25565"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -291,170 +291,6 @@
 			)
 		)
 		(symbol "0.1uF_0402_16V_10%_1_1"
-			(pin passive line
-				(at 0 2.54 270)
-				(length 2.032)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 0 -2.54 90)
-				(length 2.032)
-				(name "~"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "0.1uF_0402_6.3V_10%"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0.254)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "C"
-			(at 0.635 2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 0.635 -2.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric"
-			(at 0 -11.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
-			(at 0 -13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 0 -19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "CAP-14993"
-			(at 0 -16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Voltage" "6.3V"
-			(at 0 -6.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Tolerance" "10%"
-			(at 0 -8.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "SparkFun cap capacitor 100nF"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ki_fp_filters" "C_*"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "0.1uF_0402_6.3V_10%_0_1"
-			(polyline
-				(pts
-					(xy -1.524 0.508) (xy 1.524 0.508)
-				)
-				(stroke
-					(width 0.3048)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.524 -0.508) (xy 1.524 -0.508)
-				)
-				(stroke
-					(width 0.3302)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "0.1uF_0402_6.3V_10%_1_1"
 			(pin passive line
 				(at 0 2.54 270)
 				(length 2.032)
@@ -877,7 +713,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-14846"
+		(property "PROD_ID" "CAP-24996"
 			(at 0 -16.51 0)
 			(effects
 				(font
@@ -2799,6 +2635,170 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "100uF_1206_50V_10%"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SparkFun-Capacitor:C_1206_3216Metric"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/7134/c02e.pdf"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "CAP-24990"
+			(at -1.27 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "10V"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "SparkFun cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "100uF_1206_50V_10%_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.508) (xy 1.524 0.508)
+				)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 -0.508) (xy 1.524 -0.508)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "100uF_1206_50V_10%_1_1"
+			(pin passive line
+				(at 0 2.54 270)
+				(length 2.032)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 2.032)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "100uF_6.6x6.6_25V_20%"
 		(pin_numbers
 			(hide yes)
@@ -3043,7 +3043,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-16508"
+		(property "PROD_ID" "CAP-24997"
 			(at 0 -13.97 0)
 			(effects
 				(font
@@ -3052,7 +3052,7 @@
 				(hide yes)
 			)
 		)
-		(property "Voltage" "25V"
+		(property "Voltage" "50V"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -3863,7 +3863,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-11015"
+		(property "PROD_ID" "CAP-25001"
 			(at -1.27 -13.97 0)
 			(effects
 				(font
@@ -4489,7 +4489,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "11mF_1210_3.3V_SuperCap"
+	(symbol "11mF_1210_3.3V"
 		(pin_numbers
 			(hide yes)
 		)
@@ -4536,7 +4536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor Tantalum 10uF 6.3V +/-20% 0603"
+		(property "Description" "Capacitor Double Layer SMD 11mF 3.3V 3.2x2.5mm"
 			(at 0 -17.78 0)
 			(effects
 				(font
@@ -4545,7 +4545,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-..."
+		(property "PROD_ID" "CAP-27086"
 			(at 0 -12.7 0)
 			(effects
 				(font
@@ -4562,7 +4562,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "SparkFun cap super capacitor"
+		(property "ki_keywords" "SparkFun cap super capacitor SMD"
 			(at 0 0 0)
 			(effects
 				(font
@@ -4580,7 +4580,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "11mF_1210_3.3V_SuperCap_0_1"
+		(symbol "11mF_1210_3.3V_0_1"
 			(polyline
 				(pts
 					(xy -1.524 0.508) (xy 1.524 0.508)
@@ -4630,7 +4630,171 @@
 				)
 			)
 		)
-		(symbol "11mF_1210_3.3V_SuperCap_1_1"
+		(symbol "11mF_1210_3.3V_1_1"
+			(pin passive line
+				(at 0 2.54 270)
+				(length 2.032)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 2.032)
+				(name "~"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "11pF_0402_50V_5%"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "11pF"
+			(at 0.635 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SparkFun-Capacitor:C_0402_1005Metric"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.sparkfun.com/assets/8/a/4/a/5/Kemet_Capacitor_Datasheet.pdf"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "CAP-25011"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "11pF_0402_50V_5%_0_1"
+			(polyline
+				(pts
+					(xy -1.524 0.508) (xy 1.524 0.508)
+				)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.524 -0.508) (xy 1.524 -0.508)
+				)
+				(stroke
+					(width 0.3302)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "11pF_0402_50V_5%_1_1"
 			(pin passive line
 				(at 0 2.54 270)
 				(length 2.032)
@@ -4725,7 +4889,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-14665"
+		(property "PROD_ID" "CAP-24998"
 			(at 0 -13.97 0)
 			(effects
 				(font
@@ -5709,7 +5873,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-07888"
+		(property "PROD_ID" "CAP-24999"
 			(at -1.27 -13.97 0)
 			(effects
 				(font
@@ -6529,7 +6693,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-14674"
+		(property "PROD_ID" "CAP-25012"
 			(at 0 -13.97 0)
 			(effects
 				(font
@@ -8194,7 +8358,7 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "CAP-14240"
+		(property "PROD_ID" "CAP-24988"
 			(at 0 -13.97 0)
 			(effects
 				(font
