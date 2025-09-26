@@ -1,7 +1,7 @@
 (footprint "MagJack_RJ45_2.5GB"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "2500MB capable mag jack")
 	(tags "SparkFun Magnetic Mag Jack ")
@@ -29,18 +29,6 @@
 				(size 0.5 0.5)
 				(thickness 0.1)
 				(bold yes)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "9d54ca70-d51c-4e6d-8424-d7802b76643c")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -127,7 +115,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "193fca56-d37d-4156-a555-b289e91e72b9")
 	)
@@ -357,15 +345,16 @@
 		(thermal_bridge_angle 90)
 		(uuid "c18e3d9e-973c-4f4f-8437-b171ae20a67e")
 	)
-	(model "${KIPRJMOD}/ALTIUM_EMBEDDED_MODELS/L829-1J1T-43.stp"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/L829-1J1T-43.step"
 		(offset
-			(xyz -0.00012 -0.00012 0)
+			(xyz -0 1.2 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz -0 -0 -180)
+			(xyz -90 -0 -0)
 		)
 	)
 )
