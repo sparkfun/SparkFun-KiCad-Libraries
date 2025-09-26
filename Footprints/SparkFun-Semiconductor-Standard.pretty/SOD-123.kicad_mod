@@ -1,7 +1,7 @@
 (footprint "SOD-123"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "SOD-123 (Small Outline Diode)")
 	(tags "SparkFun SOD-123 Diode")
@@ -24,19 +24,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "9dca1065-a94c-43ed-b1ea-493610e4b266")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -230,16 +217,17 @@
 	(pad "1" smd rect
 		(at -1.6 0)
 		(size 1.2 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "8ca7cf40-9887-436c-bea9-a303f4626eef")
 	)
 	(pad "2" smd rect
 		(at 1.6 0)
 		(size 1.2 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "6df6f7bc-2215-4f91-8920-244285a2df55")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/D_SOD-123.step"
 		(offset
 			(xyz 0 0 0)
 		)

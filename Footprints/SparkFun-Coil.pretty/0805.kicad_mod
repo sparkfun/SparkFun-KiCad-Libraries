@@ -1,7 +1,7 @@
 (footprint "0805"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Inductor SMD 0805 (2012 Metric)")
 	(tags "SparkFun inductor")
@@ -24,19 +24,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "f1ec91e6-5d72-4a98-8fbb-366619baa0ea")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -94,7 +81,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "3a79a3f0-2f88-4d76-9238-f4ab7ade5268")
 	)
@@ -141,18 +128,19 @@
 	(pad "1" smd roundrect
 		(at -1.0625 0)
 		(size 0.875 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "171f46e0-0a30-46fe-b67d-10d60e84326d")
 	)
 	(pad "2" smd roundrect
 		(at 1.0625 0)
 		(size 0.875 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "0b60df63-080f-4ae6-9bf1-5284ea4641e0")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0805_2012Metric.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Coil/L_0805_2012Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)
