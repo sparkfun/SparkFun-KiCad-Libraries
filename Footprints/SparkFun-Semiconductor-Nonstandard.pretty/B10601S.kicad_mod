@@ -3,27 +3,28 @@
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
+	(tags "SparkFun Pulse Ethernet Transformer")
 	(property "Reference" "U1"
-		(at 0.68 -5.96 0)
+		(at 0 -5.75 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "6b54a17d-0f67-4bf1-b38b-9693dca5b5bd")
+		(uuid "fad16485-5167-47b2-b019-6ef43d6e2d42")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.5 0.5)
 				(thickness 0.1)
 			)
 		)
 	)
 	(property "Value" "B10601S"
-		(at 0 6.6 0)
+		(at 0 6 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "69336876-b90a-4045-af77-ec157fbabc31")
+		(uuid "45a9e7e0-0da0-4bee-9b54-cd67d1378016")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -32,7 +33,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "12a1d19c-9fa3-4dd5-bbbe-c5444519b65f")
+		(uuid "a134243a-ffc2-4504-9615-308729bee3e3")
 		(effects
 			(font
 				(size 1 1)
@@ -45,20 +46,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "afc948d4-a2c2-4527-940f-24082aa0f9bc")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "PROD_ID" "IC-27019"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "059bbb67-e835-42f0-b107-aefc21728a9b")
+		(uuid "31aa51f7-c432-454d-b84d-3dc3ec09e65e")
 		(effects
 			(font
 				(size 1 1)
@@ -159,8 +147,8 @@
 		(uuid "f9e08cdc-e6be-413c-ad86-b90d16c47453")
 	)
 	(fp_rect
-		(start -6.4 -5.2)
-		(end 6.5 5.2)
+		(start -6.75 -5.25)
+		(end 6.75 5.25)
 		(stroke
 			(width 0.05)
 			(type default)
@@ -179,18 +167,6 @@
 		(fill no)
 		(layer "F.Fab")
 		(uuid "ec9cfc87-6799-448f-bb62-d7a2f9759447")
-	)
-	(fp_text user "${REFERENCE}"
-		(at 0 8.9 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "0ee16362-06db-47ba-b2ed-13df65ccd69a")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
 	)
 	(pad "1" smd roundrect
 		(at -4.4 4.2)
@@ -305,15 +281,15 @@
 		(uuid "2df2c33f-39ff-4825-8f9c-9ce09f0dc211")
 	)
 	(embedded_fonts no)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Nonstandard/B1601S.STP"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Nonstandard/Ethernet_Transformer_B1601S_SMD.step"
 		(offset
-			(xyz 0 0 5.5)
+			(xyz 0 0 -7.7)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 90 -0 -180)
+			(xyz -0 -0 -0)
 		)
 	)
 )

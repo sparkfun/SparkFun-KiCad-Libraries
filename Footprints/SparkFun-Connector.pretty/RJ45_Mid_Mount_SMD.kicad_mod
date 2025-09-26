@@ -1,10 +1,10 @@
-(footprint "RJ45_Recessed_SMD"
+(footprint "RJ45_Mid_Mount_SMD"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "SMD Recessed RJ45 Ethernet Jack")
-	(tags "Ethernet, RJ45, Jack")
+	(descr "SMD Recessed RJ45 Ethernet Jack with LEDs")
+	(tags "SparkFun Ethernet, RJ45, Jack Mid Mount")
 	(property "Reference" "REF**"
 		(at 0 -7 0)
 		(unlocked yes)
@@ -57,6 +57,86 @@
 		)
 	)
 	(attr smd)
+	(fp_line
+		(start -8.25 -15.5)
+		(end -8.25 -10)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "46ca64ee-fc80-42d4-9257-b3a636abd693")
+	)
+	(fp_line
+		(start -8.25 -5.5)
+		(end -8.25 -0.25)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0ff58a9f-89a4-4b58-baee-ba51ff4f03c3")
+	)
+	(fp_line
+		(start -8.25 -0.25)
+		(end -7.75 -0.25)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "0c46af9f-2500-4719-9542-f0ecce81f0d0")
+	)
+	(fp_line
+		(start -6.5 -0.25)
+		(end -5.5 -0.25)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3897d4fd-f9c6-4b53-b73e-8c9d01aeaa4c")
+	)
+	(fp_line
+		(start 6.5 -0.25)
+		(end 5.5 -0.25)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "a95fba16-7ea2-48cc-a6bd-fa35804d7023")
+	)
+	(fp_line
+		(start 8.25 -15.5)
+		(end 8.25 -10)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "06e6df35-cae3-45ad-ac7a-eba92a0012c2")
+	)
+	(fp_line
+		(start 8.25 -5.5)
+		(end 8.25 -0.25)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2ea3ca59-287b-452d-81d4-f0deb44d2437")
+	)
+	(fp_line
+		(start 8.25 -0.25)
+		(end 7.75 -0.25)
+		(stroke
+			(width 0.1524)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1529fddc-ec77-498b-a8d8-e3ae3763d86a")
+	)
 	(fp_rect
 		(start -8.5 -15.8)
 		(end 8.5 1.4)
@@ -314,9 +394,9 @@
 		(uuid "f895a7ff-1f6f-4df7-bec9-9f4bfaf3461e")
 	)
 	(embedded_fonts no)
-	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/RJ45 SMD.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/RJ45_Ethernet_Mid_Mount_SMD.step"
 		(offset
-			(xyz 0 8.5 3)
+			(xyz 0 8.4 3)
 		)
 		(scale
 			(xyz 1 1 1)
