@@ -1,7 +1,7 @@
-(footprint "2x03_P2.0mm"
-	(version 20241229)
+(footprint "2x03_P2.00mm"
+	(version 20240108)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "8.0")
 	(layer "F.Cu")
 	(descr "Through hole straight pin header, 2x03, 2.00mm pitch, double rows")
 	(tags "SparkFun Through hole pin header THT 2x03 2.00mm double row")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "2x03_P2.0mm"
+	(property "Value" "2x03_P2.00mm"
 		(at 0.016 4.06 0)
 		(layer "F.Fab")
 		(uuid "6d8acc6f-62f1-4909-9223-a3fa81201603")
@@ -24,6 +24,19 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -0.984 -2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7f136f77-999a-48bc-a1e4-7b9aea2fa5c6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,7 +74,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill no)
+		(fill none)
 		(layer "F.SilkS")
 		(uuid "75d965c9-12e7-4baa-8cdd-3542beea77fb")
 	)
@@ -72,7 +85,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill no)
+		(fill none)
 		(layer "F.CrtYd")
 		(uuid "c6ac9315-be00-475c-a776-67c317f9e10b")
 	)
@@ -83,7 +96,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill no)
+		(fill none)
 		(layer "F.Fab")
 		(uuid "221a12c1-4021-4dac-bcf8-265dc3d3ccfc")
 	)
@@ -135,5 +148,4 @@
 		(remove_unused_layers no)
 		(uuid "16acefee-50d1-46b2-b74c-1d3dc8bae444")
 	)
-	(embedded_fonts no)
 )
