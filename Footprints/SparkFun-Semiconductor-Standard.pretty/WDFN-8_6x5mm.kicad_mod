@@ -1,7 +1,7 @@
 (footprint "WDFN-8_6x5mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
@@ -26,18 +26,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "eb7925ab-ff42-4702-91d7-a263a923f445")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -47,6 +35,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -59,6 +48,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -90,7 +80,7 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
 		(uuid "3eeb11f8-1446-42a7-bf0d-c271728acae8")
 	)
@@ -215,56 +205,56 @@
 	(pad "1" smd roundrect
 		(at -2.8375 -1.905)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "26a0c66d-050e-497c-a81f-ba82217b5cc7")
 	)
 	(pad "2" smd roundrect
 		(at -2.8375 -0.635)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "9fec3014-8156-4c71-abcf-95d5cbc2b375")
 	)
 	(pad "3" smd roundrect
 		(at -2.8375 0.635)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "cb2816c6-bff2-443a-a783-b896d97c6905")
 	)
 	(pad "4" smd roundrect
 		(at -2.8375 1.905)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "3b51e77e-8985-4c7b-848b-d00225f01ba2")
 	)
 	(pad "5" smd roundrect
 		(at 2.8375 1.905)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "d2165018-6f4f-42bb-9fa7-7096a1add0f4")
 	)
 	(pad "6" smd roundrect
 		(at 2.8375 0.635)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "2ee11201-4f73-408d-a797-3578d41e9809")
 	)
 	(pad "7" smd roundrect
 		(at 2.8375 -0.635)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "4fdcf99b-e15d-4dae-a81b-da3352b9f422")
 	)
 	(pad "8" smd roundrect
 		(at 2.8375 -1.905)
 		(size 1.025 0.45)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "bd700cf9-51ad-49f6-b6e9-6c376ce8adcf")
 	)
@@ -274,7 +264,8 @@
 		(layers "F.Cu" "F.Mask")
 		(uuid "7a6517e4-f827-4f3c-bb73-f2134780c540")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/WDFN-8-1EP_6x5mm_P1.27mm_EP3.4x4mm.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Semiconductor-Standard/W-PDFN-8-1EP_6x5mm_P1.27mm_EP3x3mm.step"
 		(offset
 			(xyz 0 0 0)
 		)

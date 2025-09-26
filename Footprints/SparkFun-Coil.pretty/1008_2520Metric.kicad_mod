@@ -1,7 +1,7 @@
 (footprint "1008_2520Metric"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Inductor SMD 1008 (2520 Metric), square (rectangular) end terminal, IPC_7351 nominal, ")
 	(tags "SparkFun inductor")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "26d8a748-2b9d-437d-bf37-4818729754d9")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -91,7 +81,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "4af0cad8-afd2-4fc7-92ff-639f3cc8d1ac")
 	)
@@ -138,18 +128,19 @@
 	(pad "1" smd roundrect
 		(at -1.075 0)
 		(size 1.25 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
 		(uuid "275f8612-fd3a-405f-ada1-f34b356c4efd")
 	)
 	(pad "2" smd roundrect
 		(at 1.075 0)
 		(size 1.25 2.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
 		(uuid "2ed6e4a6-e1ba-445a-9bbe-1cf3ea918791")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_1008_2520Metric.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Coil/L_1008_2520Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -1,7 +1,7 @@
 (footprint "LED_0603_1608Metric"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun LED")
 	(property "Reference" "REF**"
@@ -23,19 +23,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "e6c1ccdc-f729-42e8-9432-78ea93bc8eda")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -169,19 +156,20 @@
 	(pad "1" smd roundrect
 		(at -0.7875 0)
 		(size 0.875 0.95)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "902f25b0-cb45-4114-bb5f-def34f8704c7")
 	)
 	(pad "2" smd roundrect
 		(at 0.7875 0)
 		(size 0.875 0.95)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "dd9eecb5-87cb-42a6-baae-af0c098b27ff")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.wrl"
-		(opacity 0.5000)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_0603_1608Metric.step"
+		(opacity 0.6200)
 		(offset
 			(xyz 0 0 0)
 		)

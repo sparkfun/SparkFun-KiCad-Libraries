@@ -1,7 +1,7 @@
 (footprint "LED_1206_3216Metric"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 	(tags "SparkFun LED")
@@ -24,19 +24,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "4809cc5c-658b-4598-8e4b-9d065fa94803")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -170,18 +157,19 @@
 	(pad "1" smd roundrect
 		(at -1.4 0)
 		(size 1.25 1.75)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
 		(uuid "56d1c6a2-bdc7-4da5-82c6-650a4bcb00f3")
 	)
 	(pad "2" smd roundrect
 		(at 1.4 0)
 		(size 1.25 1.75)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.2)
 		(uuid "b3c337f7-9a93-46b2-b1a2-2268f1bd00dd")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_1206_3216Metric.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/LED/LED_1206_3216Metric_Castellated.step"
 		(offset
 			(xyz 0 0 0)
 		)

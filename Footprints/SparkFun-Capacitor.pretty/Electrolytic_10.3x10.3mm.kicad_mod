@@ -1,7 +1,7 @@
 (footprint "Electrolytic_10.3x10.3mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "SMD capacitor, aluminum electrolytic, Panasonic F8, 10.0x7.9mm")
 	(tags "SparkFun capacitor electrolytic")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "8fac7dc7-788f-4466-8b68-0831a3e11942")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -371,25 +361,26 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "f1a51575-1e20-42ae-8dfe-0c535729a7ff")
 	)
 	(pad "1" smd roundrect
 		(at -4.35 0)
 		(size 4.4 1.9)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.131579)
 		(uuid "6fd05249-912c-4b18-9a21-00669585cbfe")
 	)
 	(pad "2" smd roundrect
 		(at 4.35 0)
 		(size 4.4 1.9)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.131579)
 		(uuid "5397df2a-1a2d-4226-9315-c1db1e29a94f")
 	)
-	(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_10x7.9.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Capacitor/CP_Elec_10x7.9.step"
 		(offset
 			(xyz 0 0 0)
 		)
