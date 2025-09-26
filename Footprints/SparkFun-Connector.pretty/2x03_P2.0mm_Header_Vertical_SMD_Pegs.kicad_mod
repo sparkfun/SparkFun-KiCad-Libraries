@@ -1,0 +1,150 @@
+(footprint "2x03_P2.0mm_Header_Vertical_SMD_Pegs"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "2x03 SMD Connector with Posts")
+	(tags "SparkFun 2x03, connector")
+	(property "Reference" "REF**"
+		(at 0 3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8c016dfa-2452-4edf-85e6-011f37c8f4fa")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "2x03_P2.0mm_Header_Vertical_SMD_Pegs"
+		(at 0 4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "9f01ea69-bc49-4e5d-bf8b-274bb0d0d590")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Datasheet" "https://drawings-pdf.s3.amazonaws.com/10495.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c8a533c-f659-4f69-a1ea-71b53c2bb617")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "2x03 SMD Connector with Posts"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7340137e-e470-4219-b916-5faa273bc88f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -2.1 -2.9)
+		(end -2 -2.9)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "4ec5bc1d-8fa4-4711-a79c-90e56c2b5651")
+	)
+	(fp_rect
+		(start -3.75 -2.75)
+		(end 3.75 2.75)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "72463f42-26d7-439f-8d81-cad5859592cb")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 -1)
+		(size 1.17 1.17)
+		(drill 1.17)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "5993a2ca-67b1-446c-b2d0-33a583201c0d")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 1)
+		(size 1.17 1.17)
+		(drill 1.17)
+		(layers "F&B.Cu" "*.Mask")
+		(uuid "b519437c-d3c3-4fa4-a1da-a0a9c8baa590")
+	)
+	(pad "1" smd roundrect
+		(at -2.1 -2)
+		(size 3 1.02)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "125acddb-3cfc-4a53-bb78-2198b8c25fa5")
+	)
+	(pad "2" smd roundrect
+		(at -2.1 0)
+		(size 3 1.02)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "07804ab3-c273-4ec5-91fc-fa95baeeb3fe")
+	)
+	(pad "3" smd roundrect
+		(at -2.1 2)
+		(size 3 1.02)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "cfa67249-8bc2-4992-88a4-180385a1bbda")
+	)
+	(pad "4" smd roundrect
+		(at 2.1 2)
+		(size 3 1.02)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "c8795a38-ddf6-4d42-9940-7b0fa5a4f430")
+	)
+	(pad "5" smd roundrect
+		(at 2.1 0)
+		(size 3 1.02)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "9088bcdf-b25e-4fdc-b92b-ee78dfc62e55")
+	)
+	(pad "6" smd roundrect
+		(at 2.1 -2)
+		(size 3 1.02)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "3d5a0cfd-76e0-4028-99c8-9bbd3d16f1cb")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Connector/2x03_2.0mm_SMD_Male.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
+	)
+)
