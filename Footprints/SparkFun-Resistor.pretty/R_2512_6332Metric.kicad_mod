@@ -1,7 +1,7 @@
 (footprint "R_2512_6332Metric"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "resistor")
 	(property "Reference" "REF**"
@@ -23,19 +23,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "45ac47cd-8289-49f8-8e69-eac733bd8dd1")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -169,18 +156,19 @@
 	(pad "1" smd roundrect
 		(at -2.9625 0)
 		(size 1.225 3.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.204082)
 		(uuid "85a182cd-6354-48c2-8a93-32f4a4e239aa")
 	)
 	(pad "2" smd roundrect
 		(at 2.9625 0)
 		(size 1.225 3.35)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.204082)
 		(uuid "5e98c8d6-3754-4467-901a-5d1d849a64da")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_2512_6332Metric.wrl"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/Footprints/SparkFun-3D-models/Resistor/R_2512_6332Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)
