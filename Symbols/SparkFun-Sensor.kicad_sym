@@ -911,7 +911,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 7.874 0)
+			(at -10.16 9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -920,7 +920,7 @@
 			)
 		)
 		(property "Value" "HMC6343"
-			(at 1.016 9.398 0)
+			(at 1.016 10.668 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -976,7 +976,7 @@
 		(symbol "HMC6343_1_0"
 			(polyline
 				(pts
-					(xy -10.16 7.62) (xy -10.16 -10.16)
+					(xy -10.16 8.89) (xy -10.16 -8.89)
 				)
 				(stroke
 					(width 0.254)
@@ -988,7 +988,7 @@
 			)
 			(polyline
 				(pts
-					(xy -10.16 -10.16) (xy 10.16 -10.16)
+					(xy -10.16 -8.89) (xy 10.16 -8.89)
 				)
 				(stroke
 					(width 0.254)
@@ -1000,7 +1000,7 @@
 			)
 			(polyline
 				(pts
-					(xy 10.16 7.62) (xy -10.16 7.62)
+					(xy 10.16 8.89) (xy -10.16 8.89)
 				)
 				(stroke
 					(width 0.254)
@@ -1012,7 +1012,7 @@
 			)
 			(polyline
 				(pts
-					(xy 10.16 -10.16) (xy 10.16 7.62)
+					(xy 10.16 -8.89) (xy 10.16 8.89)
 				)
 				(stroke
 					(width 0.254)
@@ -1023,7 +1023,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 5.08 0)
+				(at -12.7 6.35 0)
 				(length 2.54)
 				(name "VDD@3"
 					(effects
@@ -1041,7 +1041,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 2.54 0)
+				(at -12.7 3.81 0)
 				(length 2.54)
 				(name "VDD@21"
 					(effects
@@ -1059,7 +1059,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 0 0)
+				(at -12.7 1.27 0)
 				(length 2.54)
 				(name "VDD@11"
 					(effects
@@ -1077,7 +1077,7 @@
 				)
 			)
 			(pin power_out line
-				(at -12.7 -5.08 0)
+				(at -12.7 -3.81 0)
 				(length 2.54)
 				(name "GND@25"
 					(effects
@@ -1095,7 +1095,7 @@
 				)
 			)
 			(pin power_out line
-				(at -12.7 -7.62 0)
+				(at -12.7 -6.35 0)
 				(length 2.54)
 				(name "GND@29"
 					(effects
@@ -1113,7 +1113,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 5.08 180)
+				(at 12.7 6.35 180)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -1131,7 +1131,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 2.54 180)
+				(at 12.7 3.81 180)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -1149,7 +1149,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -5.08 180)
+				(at 12.7 -3.81 180)
 				(length 2.54)
 				(name "CS"
 					(effects
@@ -1167,7 +1167,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -7.62 180)
+				(at 12.7 -6.35 180)
 				(length 2.54)
 				(name "CSC"
 					(effects
