@@ -911,7 +911,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -10.16 9.144 0)
+			(at -6.604 9.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -920,7 +920,7 @@
 			)
 		)
 		(property "Value" "HMC6343"
-			(at 1.016 10.668 0)
+			(at -6.35 -9.652 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -928,7 +928,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SparkFun-Semiconductor-Nonstandard:LCC-36"
+		(property "Footprint" "SparkFun-Sensor:LCC-36"
 			(at 0 -18.288 0)
 			(effects
 				(font
@@ -974,65 +974,29 @@
 			)
 		)
 		(symbol "HMC6343_1_0"
-			(polyline
-				(pts
-					(xy -10.16 8.89) (xy -10.16 -8.89)
-				)
+			(rectangle
+				(start -6.35 8.89)
+				(end 6.35 -8.89)
 				(stroke
-					(width 0.254)
+					(width 0)
 					(type solid)
 				)
 				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -10.16 -8.89) (xy 10.16 -8.89)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 8.89) (xy -10.16 8.89)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 10.16 -8.89) (xy 10.16 8.89)
-				)
-				(stroke
-					(width 0.254)
-					(type solid)
-				)
-				(fill
-					(type none)
+					(type background)
 				)
 			)
 			(pin power_in line
-				(at -12.7 6.35 0)
+				(at -8.89 6.35 0)
 				(length 2.54)
-				(name "VDD@3"
+				(hide yes)
+				(name "VDD@11"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "11"
 					(effects
 						(font
 							(size 0 0)
@@ -1041,8 +1005,9 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 3.81 0)
+				(at -8.89 6.35 0)
 				(length 2.54)
+				(hide yes)
 				(name "VDD@21"
 					(effects
 						(font
@@ -1059,16 +1024,16 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 1.27 0)
+				(at -8.89 6.35 0)
 				(length 2.54)
-				(name "VDD@11"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "3"
 					(effects
 						(font
 							(size 0 0)
@@ -1077,9 +1042,9 @@
 				)
 			)
 			(pin power_out line
-				(at -12.7 -3.81 0)
+				(at -8.89 -6.35 0)
 				(length 2.54)
-				(name "GND@25"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1095,8 +1060,9 @@
 				)
 			)
 			(pin power_out line
-				(at -12.7 -6.35 0)
+				(at -8.89 -6.35 0)
 				(length 2.54)
+				(hide yes)
 				(name "GND@29"
 					(effects
 						(font
@@ -1113,7 +1079,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 6.35 180)
+				(at 8.89 6.35 180)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -1131,7 +1097,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 3.81 180)
+				(at 8.89 3.81 180)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -1149,7 +1115,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -3.81 180)
+				(at 8.89 -3.81 180)
 				(length 2.54)
 				(name "CS"
 					(effects
@@ -1167,7 +1133,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 12.7 -6.35 180)
+				(at 8.89 -6.35 180)
 				(length 2.54)
 				(name "CSC"
 					(effects
