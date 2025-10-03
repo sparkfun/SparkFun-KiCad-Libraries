@@ -985,44 +985,6 @@
 			(pin power_in line
 				(at -8.89 6.35 0)
 				(length 2.54)
-				(hide yes)
-				(name "VDD@11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -8.89 6.35 0)
-				(length 2.54)
-				(hide yes)
-				(name "VDD@21"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 0 0)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -8.89 6.35 0)
-				(length 2.54)
 				(name "VDD"
 					(effects
 						(font
@@ -1048,29 +1010,10 @@
 						)
 					)
 				)
-				(number "25"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at -8.89 -6.35 0)
-				(length 2.54)
-				(hide yes)
-				(name "GND@29"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
 				(number "29"
 					(effects
 						(font
-							(size 0 0)
+							(size 1.27 1.27)
 						)
 					)
 				)
@@ -1112,27 +1055,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 8.89 -3.81 180)
-				(length 2.54)
-				(name "CS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "22"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
 				(at 8.89 -6.35 180)
 				(length 2.54)
-				(name "CSC"
+				(name "DRDY"
 					(effects
 						(font
 							(size 1.27 1.27)
