@@ -1,0 +1,228 @@
+(footprint "SSOP-4"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Ultra small SSOP-4")
+	(tags "SparkFun Optoisolator Optocoupler")
+	(property "Reference" "REF**"
+		(at 0 -2.159 0)
+		(layer "F.Fab")
+		(uuid "9cbc34a1-9c03-4813-abf2-b174b5eb52f3")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "SSOP-4"
+		(at 0 2.286 0)
+		(layer "F.Fab")
+		(uuid "3f6c7d80-1e33-4e83-a5f7-0d8f2471ed53")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Footprint" "https://everlightamericas.com/index.php?controller=attachment&id_attachment=2584"
+		(at 0 3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7de4893b-dd9a-462f-98f3-c1070bea160c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0.594 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7b7e0466-3f4b-469d-950a-e1d199803198")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0.594 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4c5ca35-94e9-4eab-855a-bb5859ed33aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.295477 1.211046)
+		(end -2.295477 -1.248954)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8c65d470-a85e-4142-8194-3d220e04dcfc")
+	)
+	(fp_line
+		(start -2.045477 1.471046)
+		(end 2.032 1.470223)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "69ce4cc7-f252-4220-803a-ea75811e4f8a")
+	)
+	(fp_line
+		(start 2.036 -1.49)
+		(end -2.036 -1.49)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "333a54d3-6716-4d64-864f-265f42b06a19")
+	)
+	(fp_line
+		(start 2.286 -1.23)
+		(end 2.286 1.23)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2d79926c-a040-485b-976c-d05b83be35cb")
+	)
+	(fp_arc
+		(start -2.291477 -1.239177)
+		(mid -2.218254 -1.415954)
+		(end -2.041477 -1.489177)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7141afe5-0c47-47b6-a030-6628516059a4")
+	)
+	(fp_arc
+		(start -2.045477 1.471046)
+		(mid -2.222254 1.397823)
+		(end -2.295477 1.221046)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "21c190db-d5dd-47a4-9738-e424ab041e74")
+	)
+	(fp_arc
+		(start 2.036 -1.49)
+		(mid 2.212777 -1.416777)
+		(end 2.286 -1.24)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "26e72bbf-0b52-4a3f-aa43-c1867facc700")
+	)
+	(fp_arc
+		(start 2.282 1.220223)
+		(mid 2.208777 1.397)
+		(end 2.032 1.470223)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "085d4216-332f-488b-bcc3-12397b0647f6")
+	)
+	(fp_circle
+		(center -2.794 -1.524)
+		(end -2.794 -1.424)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "eec84875-76c4-4fc1-a8c2-606575b55ec9")
+	)
+	(fp_rect
+		(start 4 -1.7)
+		(end -4 1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "6c610346-6141-42be-8fd9-4c65a3671f61")
+	)
+	(fp_rect
+		(start -2.2 -1.35)
+		(end 2.2 1.35)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "User.1")
+		(uuid "47999cdc-15d4-46d2-b385-64a324d8e7c0")
+	)
+	(pad "1" smd rect
+		(at -3.175 -0.635)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "c9de5194-8490-4db5-9e65-94d7e2978f51")
+	)
+	(pad "2" smd rect
+		(at -3.175 0.635)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "943ea2bc-930a-42f0-931c-d0fbb9230d38")
+	)
+	(pad "3" smd rect
+		(at 3.175 0.635)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "8a3c0b38-742e-40d3-a1ea-674c91b3f502")
+	)
+	(pad "4" smd rect
+		(at 3.175 -0.635)
+		(size 1.5 0.6)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "3777ef59-9c81-455c-a5bb-463eada797ea")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Semiconductor-Standard/SSOP-4.step"
+		(offset
+			(xyz 0 0 1.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

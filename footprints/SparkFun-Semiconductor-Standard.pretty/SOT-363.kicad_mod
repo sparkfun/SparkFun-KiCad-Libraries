@@ -1,0 +1,204 @@
+(footprint "SOT-363"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "SparkFun SOT-363 SC-70-6")
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "565c0959-6391-409b-b847-e497444da25a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SOT-363"
+		(at 0 1.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "3304e168-652f-498f-8215-aa8dd9ab4d23")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.diodes.com/assets/Package-Files/SOT363.pdf"
+		(at 0 2.3 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "667d1705-cb76-485e-a664-63f2d776a217")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -1.4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c31d9bfc-0dbf-4e57-a8a5-9dacf80da8e1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.71 -1.16)
+		(end 0.7 -1.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fa2d7ba7-95de-459f-bd53-ffa3779371fa")
+	)
+	(fp_line
+		(start -0.7 1.16)
+		(end 0.7 1.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "494c8fa7-a6b4-4bbc-9972-241dd8db1cd0")
+	)
+	(fp_circle
+		(center -1 -1.1)
+		(end -0.9 -1.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "07d778db-eb2d-47ca-800d-86ea2c1d94b7")
+	)
+	(fp_rect
+		(start -1.4 -1.3)
+		(end 1.4 1.3)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a2b28178-32b4-4ee5-8c22-2899c6ca97d3")
+	)
+	(fp_line
+		(start -0.675 -0.6)
+		(end -0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "df60335f-ee2a-4b3d-8c18-a26c691b208d")
+	)
+	(fp_line
+		(start -0.175 -1.1)
+		(end -0.675 -0.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1abf3f1e-7783-4e3d-a466-b41780605c31")
+	)
+	(fp_line
+		(start 0.675 -1.1)
+		(end -0.175 -1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "09e816c6-40f9-4acb-8e0a-d13335cd0094")
+	)
+	(fp_line
+		(start 0.675 -1.1)
+		(end 0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "17b53466-f76f-4697-a2b7-03201d9851ab")
+	)
+	(fp_line
+		(start 0.675 1.1)
+		(end -0.675 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f33d0b80-ee99-41ca-abe9-95a9dc8dcde5")
+	)
+	(pad "1" smd roundrect
+		(at -0.95 -0.65)
+		(size 0.65 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "35f7cc34-9149-453a-9684-e7bd88167e40")
+	)
+	(pad "2" smd roundrect
+		(at -0.95 0)
+		(size 0.65 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "2fe7a029-80d2-4524-a8aa-623082eed1be")
+	)
+	(pad "3" smd roundrect
+		(at -0.95 0.65)
+		(size 0.65 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d78a1a3c-b448-4d1e-a87f-46449dc88c12")
+	)
+	(pad "4" smd roundrect
+		(at 0.95 0.65)
+		(size 0.65 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "378e9cb6-4366-4aed-8e1e-50caafb67b03")
+	)
+	(pad "5" smd roundrect
+		(at 0.95 0)
+		(size 0.65 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e019b5d3-9a21-4d27-8e57-db39af7f14d5")
+	)
+	(pad "6" smd roundrect
+		(at 0.95 -0.65)
+		(size 0.65 0.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "0e485ad7-56b1-4f8a-851b-22434d4f9ec0")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Semiconductor-Standard/SOT-363_SC-70-6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

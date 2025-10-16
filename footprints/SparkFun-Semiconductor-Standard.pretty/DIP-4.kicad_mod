@@ -1,0 +1,215 @@
+(footprint "DIP-4"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)")
+	(tags "SparkFun THT DIP DIL PDIP 2.54mm 7.62mm 300mil")
+	(property "Reference" "REF**"
+		(at 0 3.556 0)
+		(layer "F.Fab")
+		(uuid "ed365f64-1a53-41b9-ab8f-bc077c00c3e0")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "DIP-4"
+		(at 0 -3.302 0)
+		(layer "F.Fab")
+		(uuid "e254f5db-26f7-457d-9d2b-6c11247c0e60")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6dac89d0-eb19-427d-b621-53d74eeaa66b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d719a36-d25c-4062-9df5-ba4281f626b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.65 -2.6)
+		(end -2.65 2.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a1ac4417-3ee1-43f9-bd15-de40314cf5f6")
+	)
+	(fp_line
+		(start -2.65 2.6)
+		(end 2.65 2.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6722ed82-7978-48ff-b389-ce9e889e7d65")
+	)
+	(fp_line
+		(start -1 -2.6)
+		(end -2.65 -2.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bb19dd79-69eb-42fc-9da4-a2f0b186fad7")
+	)
+	(fp_line
+		(start 2.65 -2.6)
+		(end 1 -2.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a893c317-fe31-4ae7-b2b6-db3c5cb5ab51")
+	)
+	(fp_line
+		(start 2.65 2.6)
+		(end 2.65 -2.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3a4019ed-9fc5-4648-a587-1a1ec054a357")
+	)
+	(fp_arc
+		(start 1 -2.6)
+		(mid 0 -1.6)
+		(end -1 -2.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "519dfec5-e31c-47c4-9dba-c8c2f0f75418")
+	)
+	(fp_circle
+		(center -3.21 -3.27)
+		(end -3.21 -3.17)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5929af6d-0bb1-404e-949c-5f07f4368368")
+	)
+	(fp_line
+		(start -4.91 -2.82)
+		(end -4.91 2.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "968c1800-e02d-42be-a531-dfee4d153171")
+	)
+	(fp_line
+		(start -4.91 2.83)
+		(end 4.89 2.83)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d72f541a-4508-4e1b-bfe1-dd6dc0bbd7c2")
+	)
+	(fp_line
+		(start 4.89 -2.82)
+		(end -4.91 -2.82)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a910e9d5-3396-48d2-bffb-52f765fa479a")
+	)
+	(fp_line
+		(start 4.89 2.83)
+		(end 4.89 -2.82)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cfb002d7-7a0a-4ea1-8865-cdffbcd16a1b")
+	)
+	(pad "1" thru_hole rect
+		(at -3.81 -1.27)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d6f76f5c-4358-4a13-9323-cc527f72c17f")
+	)
+	(pad "2" thru_hole circle
+		(at -3.81 1.27)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "59a7d2e5-4228-4795-821f-0cc892dddac2")
+	)
+	(pad "3" thru_hole circle
+		(at 3.81 1.27)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8f0b6d54-3993-48ca-8fe9-05e76c841a1c")
+	)
+	(pad "4" thru_hole circle
+		(at 3.81 -1.27)
+		(size 1.6 1.6)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0179b067-8b5b-4e8b-aa74-7428ff266a6a")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Semiconductor-Standard/DIP-4_W7.62mm.step"
+		(offset
+			(xyz -3.8 1.3 -0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)

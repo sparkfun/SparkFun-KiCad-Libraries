@@ -1,0 +1,233 @@
+(footprint "Ceramic_QFN_5.0x3.2mm-10"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "Ceramic QFN 5032 10pins")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -2.5 0)
+		(layer "F.Fab")
+		(uuid "7aa0a544-5700-414e-8643-22c9d635e53c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "Ceramic_QFN_5.0x3.2mm-10"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "e12d9ba2-7ba0-4a45-830b-77ef587443ee")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a19bd4c-0542-4ebb-b998-542199571503")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "20cf5105-5939-4508-b7c5-7457f6de049e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb51e128-bb6d-4940-a1ed-49cfc70e0d1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -3.25 1.25)
+		(end -2.9 1.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "82a69b20-a99d-4ac3-a144-e09f6533cda8")
+	)
+	(fp_rect
+		(start -3 -2)
+		(end 3 2)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "e6694f5c-f5ab-4104-8297-a50126cb2e2e")
+	)
+	(fp_line
+		(start -2.5 -1.6)
+		(end 2.5 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "acc552ec-be40-433d-b0e7-8acc9a6ebf87")
+	)
+	(fp_line
+		(start -2.5 1.6)
+		(end -2.5 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7fe17b25-8414-49d7-b1f1-1096a62b0a3c")
+	)
+	(fp_line
+		(start -1.7 0.7)
+		(end -1.5 0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "cab2bede-8b90-497b-87d9-ef14623b8e98")
+	)
+	(fp_line
+		(start 2.5 -1.6)
+		(end 2.5 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a2df7bbb-539d-4b7d-966c-1796749d46fb")
+	)
+	(fp_line
+		(start 2.5 1.6)
+		(end -2.5 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1583fb9d-93e1-4325-9e3d-b349a3f8f396")
+	)
+	(fp_circle
+		(center -2 1.1)
+		(end -1.75 1.1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "1acf1ba0-d2da-475f-adb8-506d08b32f4e")
+	)
+	(pad "1" smd rect
+		(at -2.025 1.175)
+		(size 1.15 1.05)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "bc6f33f6-87a1-4973-9d2b-e14c18917ca9")
+	)
+	(pad "2" smd rect
+		(at -0.6 1.025 90)
+		(size 1.35 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "da69f0ea-ac98-45ff-b0c4-c7b2e0aa0b93")
+	)
+	(pad "3" smd rect
+		(at 0.6 1.025 90)
+		(size 1.35 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "4be9ad4d-cb22-4af4-967d-73cc3e2456ef")
+	)
+	(pad "4" smd rect
+		(at 2.025 1.175)
+		(size 1.15 1.05)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "2d45b738-dc8a-433b-bc86-5453c4270ee5")
+	)
+	(pad "5" smd rect
+		(at 2.025 0)
+		(size 1.15 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "14766cd6-b4f5-401e-8c60-06826671cb22")
+	)
+	(pad "6" smd rect
+		(at 2.025 -1.175)
+		(size 1.15 1.05)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "9dd837f8-7328-4d81-a3f9-6988aa853a19")
+	)
+	(pad "7" smd rect
+		(at 0.6 -1.025 90)
+		(size 1.35 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "04909d9a-6bfa-42bd-b8ce-cb6b7dc77819")
+	)
+	(pad "8" smd rect
+		(at -0.6 -1.025 90)
+		(size 1.35 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "caee7e57-5115-45d1-8c2d-c0c6d0539885")
+	)
+	(pad "9" smd rect
+		(at -2.025 -1.175)
+		(size 1.15 1.05)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "bde2d34e-8ef6-46fb-a8c2-5b9795ca34ad")
+	)
+	(pad "10" smd rect
+		(at -2.025 0)
+		(size 1.15 0.7)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "8fd5c7f2-a891-4c40-82f9-b938e9db0313")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Clock/Ceramic_5032_10pins.STEP"
+		(offset
+			(xyz 0 0 0.68)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 -90 0)
+		)
+	)
+)

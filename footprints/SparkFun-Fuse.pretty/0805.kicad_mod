@@ -1,0 +1,136 @@
+(footprint "0805"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "<p><b>Generic 2012 (0805) package</b></p>\n<p>0.2mm courtyard excess rounded to nearest 0.05mm.</p>")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -0.889 0)
+		(layer "F.Fab")
+		(uuid "b3974bc3-7127-40fd-ba04-959e321b230c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "0805"
+		(at 0 0.889 0)
+		(layer "F.Fab")
+		(uuid "974a355a-f056-4d27-9f06-b251225c3ce4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3e17f0de-adb7-4b6b-9e1a-4b5b2bd66ea1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc236159-eebf-4ed6-accb-14bc35471ee5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4b67d301-2f4f-4205-8f59-5ef5474c97ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.5 -0.8)
+		(end 1.5 -0.8)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "84f863eb-c89c-4176-8745-7e9a680a2c99")
+	)
+	(fp_line
+		(start -1.5 0.8)
+		(end -1.5 -0.8)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "19b7535e-0993-45dc-9ce0-736b4b8c9aeb")
+	)
+	(fp_line
+		(start 1.5 -0.8)
+		(end 1.5 0.8)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "57c610ad-71a0-4d90-bfed-fc512a7142ed")
+	)
+	(fp_line
+		(start 1.5 0.8)
+		(end -1.5 0.8)
+		(stroke
+			(width 0.0508)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9b600d81-0aaf-40ab-a20c-6fa17bb8bf7c")
+	)
+	(pad "1" smd rect
+		(at -0.9 0)
+		(size 0.8 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "accfd785-c4e1-4069-9562-300bf49fbe02")
+	)
+	(pad "2" smd rect
+		(at 0.9 0)
+		(size 0.8 1.2)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "affce1da-567f-41c4-8945-ee6e0bc0cf27")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Fuse/Fuse_0805_2012Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

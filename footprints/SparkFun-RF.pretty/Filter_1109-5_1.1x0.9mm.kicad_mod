@@ -1,0 +1,201 @@
+(footprint "Filter_1109-5_1.1x0.9mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "5-pin SAW filter package - 1.1x0.9 mm Body; (see https://www.murata.com/~/media/webrenewal/support/library/catalog/products/filter/rf/p73e.ashx?la=en-gb)")
+	(tags "SparkFun SAW Filter 5 GNSS GPS")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(layer "F.Fab")
+		(uuid "4979c99d-1d25-4408-b83d-e51784a2156a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Filter_1109-5_1.1x0.9mm"
+		(at 0 1.1 0)
+		(layer "F.Fab")
+		(uuid "5888c89c-76e7-41c9-af02-d070ef166cbc")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.murata.com/en/products/productdata/8797683712030/DS-SAFFB1G56KB0F0A.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fc0f188f-6595-4e30-977a-4c148617582d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a62cb4aa-06aa-4539-938a-5f96c1a14486")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.6 -0.5)
+		(end -0.6 0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "18ccf2a0-771e-4668-9ac7-79a8c4289d6e")
+	)
+	(fp_line
+		(start -0.6 0.5)
+		(end 0.6 0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a5077aaa-32b9-4d8e-a245-271eec310767")
+	)
+	(fp_line
+		(start 0.6 -0.5)
+		(end -0.6 -0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d647419-0d33-44c1-8a41-61c27f4ef9ae")
+	)
+	(fp_line
+		(start 0.6 0.5)
+		(end 0.6 -0.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7ebddce5-3bde-4406-838f-53af9a0e937d")
+	)
+	(fp_circle
+		(center -0.9 0.4)
+		(end -0.9 0.3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5f0170b4-69da-4eda-9c38-e72625e3a8dc")
+	)
+	(fp_line
+		(start -0.7 -0.6)
+		(end 0.7 -0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "36067fd0-ceb7-426e-926f-b60de6315fc4")
+	)
+	(fp_line
+		(start -0.7 0.6)
+		(end -0.7 -0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11780f57-bb16-4daf-8947-325e195ce15e")
+	)
+	(fp_line
+		(start 0.7 -0.6)
+		(end 0.7 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "463e1c04-86b6-4d99-9566-17bb16e87245")
+	)
+	(fp_line
+		(start 0.7 0.6)
+		(end -0.7 0.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "de95f7ae-5cd8-4556-9104-5f35eff106f7")
+	)
+	(fp_rect
+		(start -0.55 -0.45)
+		(end 0.55 0.45)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "0f66eda6-5ed0-40bd-afb1-3909706c1ea5")
+	)
+	(pad "1" smd rect
+		(at -0.385 0 90)
+		(size 0.25 0.18)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "51ce9031-6904-4996-bd6f-3f6719db6d23")
+	)
+	(pad "2" smd rect
+		(at 0 0.25 90)
+		(size 0.25 0.18)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2a4c9e62-8a54-4fe2-b979-8db5a9a2edef")
+	)
+	(pad "3" smd rect
+		(at 0.385 0.25 90)
+		(size 0.25 0.18)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fcf5eecd-b261-4c30-8034-bbf2026a1cea")
+	)
+	(pad "4" smd rect
+		(at 0.385 -0.25 90)
+		(size 0.25 0.18)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8148804a-843d-4b62-8d51-3e6accd654ad")
+	)
+	(pad "5" smd rect
+		(at 0 -0.25 90)
+		(size 0.25 0.18)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7cfffc7f-1f9c-4999-92a5-4fe879a82627")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/RF/Filter_1109-5_1.1x0.9mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

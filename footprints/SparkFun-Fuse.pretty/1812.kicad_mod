@@ -1,0 +1,149 @@
+(footprint "1812"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -1.778 0)
+		(layer "F.Fab")
+		(uuid "b1ac9c98-27e8-4af2-91f5-5f6fd5187788")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "1812"
+		(at 0 1.778 0)
+		(layer "F.Fab")
+		(uuid "266f9c98-6042-4272-832b-0021a91707af")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4819d54e-a1fa-436a-a731-3c37e34150d2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "de3443a3-273b-421f-8181-25e6ce751663")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9d092b3b-f18c-4eba-bf7d-510ce1f3bedf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -3.4 -1.7)
+		(end 3.4 1.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "9ca2128c-f09f-49dc-8f17-597394c5bb73")
+	)
+	(fp_line
+		(start -2.286 -1.524)
+		(end 2.286 -1.524)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cae1fed7-b1c0-4335-93b5-2eb1e44ca79a")
+	)
+	(fp_line
+		(start -2.286 1.524)
+		(end -2.286 -1.524)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ce08dfe6-f956-4ed0-8b5a-9206ebf52ed1")
+	)
+	(fp_line
+		(start 2.286 -1.524)
+		(end 2.286 1.524)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "84b61173-3b2f-40f9-a198-b072d691104f")
+	)
+	(fp_line
+		(start 2.286 1.524)
+		(end -2.286 1.524)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6791a59f-a4e0-4e6f-a9fc-0839fec1172d")
+	)
+	(pad "1" smd rect
+		(at -2.3876 0)
+		(size 1.6764 2.8956)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "71bbf98b-1d18-420e-9a31-263aa8edb86e")
+	)
+	(pad "2" smd rect
+		(at 2.3876 0)
+		(size 1.6764 2.8956)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "0ef6a654-d235-4122-b46c-4165c83a7b01")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Fuse/Fuse_1812_4532Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

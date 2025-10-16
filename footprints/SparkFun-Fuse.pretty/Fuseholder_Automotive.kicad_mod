@@ -1,0 +1,147 @@
+(footprint "Fuseholder_Automotive"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Blade Fuse Clip Holder https://www.keyelco.com/userAssets/file/M65p41.pdf")
+	(tags "SparkFun Blade Fuse Clip Holder 3522")
+	(property "Reference" "REF**"
+		(at 0.35 4.25 0)
+		(layer "F.Fab")
+		(uuid "ef258c9c-653f-4c3d-9d2a-7a7ad10486a6")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Fuseholder_Automotive"
+		(at 0.35 -4.25 0)
+		(layer "F.Fab")
+		(uuid "1b80804c-db46-4f50-b9d7-9ac555ae956a")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c44f4e3b-36f5-4461-bcbc-52fcf2f957ed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f41e8668-c601-42ee-8024-5739c59b2b36")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.81 0)
+		(end -5.334 0)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "dfcf6ad2-f393-447e-8338-450b6e679df4")
+	)
+	(fp_line
+		(start 5.334 0)
+		(end 3.81 0)
+		(stroke
+			(width 0.762)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "d5129384-89d9-4f1c-8083-c132e33a7b03")
+	)
+	(fp_rect
+		(start 9.9 -3.3)
+		(end -9.9 1.8)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f02fa495-1fc6-44ad-bf49-c30b67981343")
+	)
+	(fp_rect
+		(start -9.65 -3)
+		(end 9.65 1.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e9a2d8d1-9812-4779-ad98-45151f62a060")
+	)
+	(pad "1" thru_hole roundrect
+		(at -7.15 0)
+		(size 3.2 6)
+		(drill 2.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.4)
+		(uuid "05d0f76d-3d2d-436f-98ac-d24a37907723")
+	)
+	(pad "1" thru_hole roundrect
+		(at -2.05 0)
+		(size 3.2 6)
+		(drill 2.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.4)
+		(uuid "563246d3-de4f-4a67-925e-546d7f7e6ed8")
+	)
+	(pad "2" thru_hole roundrect
+		(at 2.05 0)
+		(size 3.2 6)
+		(drill 2.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.4)
+		(uuid "fef47c63-975f-4dc2-95ea-632cf01014af")
+	)
+	(pad "2" thru_hole roundrect
+		(at 7.15 0)
+		(size 3.2 6)
+		(drill 2.6)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.4)
+		(uuid "1d7b51d8-4c1f-4c19-860d-6cd509a4939d")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/Fuse/Fuse_3522-2.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
