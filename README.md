@@ -37,7 +37,7 @@ From the fall of 2025, releases of these libraries are available via the KiCad P
 
 Open the PCM, select the "Libraries" tab, and type "SparkFun" into the search box. The "Install" button will install the latest release of the libraries.
 
-Note: this method assumes you have the KiCad Library nickname prefix set to the default of 'PCM_'. If you have cleared the Library nickname prefix, use the [next option](#installing-a-release-from-zip-file---without-the-pcm_-library-nickname-prefix) to install from zip file.
+**Note:** this method assumes you have the KiCad Library nickname prefix set to the default of 'PCM_'. If you have cleared the Library nickname prefix, use the [next option](#installing-a-release-from-zip-file---without-the-pcm_-library-nickname-prefix) to install from zip file.
 
 ### Installing a release from zip file - without the PCM_ Library nickname prefix
 
@@ -45,7 +45,7 @@ In the KiCad Preferences, you will find settings for "Packages and Updates". The
 
 ![Library nickname prefix](./img/PCM_prefix.png)
 
-If you install these libraries trhough the PCM, the installation assumes the prefix is 'PCM_'. The symbol footprint names will all be prefixed with 'PCM_'. If you have cleared the prefix, you will need to manually install a different version of the libraries without the footprint prefix:
+If you install these libraries though the PCM, the installation assumes the prefix is 'PCM_'. The symbol footprint names will all be prefixed with 'PCM_'. If you have cleared the prefix, you will need to manually install a different version of the libraries without the footprint prefix:
 
 * Navigate to the libraries [Releases page](https://github.com/sparkfun/SparkFun-KiCad-Libraries/releases)
 * You will find two zip file "Assets" attached to each release
