@@ -18,15 +18,15 @@ def findReplace(directory, find, replace, filePattern):
     for path, dirs, files in os.walk(os.path.abspath(directory)):
         for filename in fnmatch.filter(files, filePattern):
             filepath = os.path.join(path, filename)
-            with open(filepath) as f:
+            with open(filepath, 'rb') as f:
                 s = f.read()
             s = s.replace(find, replace)
-            with open(filepath, "w") as f:
+            with open(filepath, 'wb') as f:
                 f.write(s)
 
 # ======================================================
 
-# Delete build and recreate
+# Delete build content and recreate
 try:
     shutil.rmtree(build_path)
 except FileNotFoundError:
@@ -36,20 +36,19 @@ os.mkdir(path.join(build_path,'content'))
 os.chdir(build_path)
 
 # Copy symbols, footprints and 3dmodels
-shutil.copytree(path.join(src_path,'symbols'), path.join('content'))
-shutil.copytree(path.join(src_path,'footprints'), path.join('content'))
-shutil.copytree(path.join(src_path,'3dmodels'), path.join('content'))
+shutil.copytree(path.join(src_path,'symbols'), path.join('content','symbols'), dirs_exist_ok = True)
+shutil.copytree(path.join(src_path,'footprints'), path.join('content','footprints'), dirs_exist_ok = True)
+shutil.copytree(path.join(src_path,'3dmodels'), path.join('content','3dmodels'), dirs_exist_ok = True)
 
 # Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/"
 # with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/3d-library.3dshapes/"
-findReplace(path.join('content'), '(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/',
-    '(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/3d-library.3dshapes/', '*.*')
+findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/',
+    b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/3d-library.3dshapes/', '*.*')
 
 # This is the with-PCM_ version
-# Replace every occurrence of "(symbol "SparkFun-"
-# with "(symbol "PCM_SparkFun-"
-findReplace(path.join('content'), "(symbol \"SparkFun-",
-    "(symbol \"PCM_SparkFun-", "*.*")
+# Replace every occurrence of ""Footprint" "SparkFun-"
+# with ""Footprint" "PCM_SparkFun-"
+findReplace(path.join('content'), b'"Footprint" "SparkFun-', b'"Footprint" "PCM_SparkFun-', '*.*')
 
 # Copy icon
 shutil.copytree(resources_path, path.join('content','resources'))
@@ -96,14 +95,14 @@ shutil.move('content', 'SparkFun-KiCad-Libraries-{0}-with-pcm'.format(md['versio
 os.mkdir(path.join('content'))
 
 # Copy symbols, footprints and 3dmodels
-shutil.copytree(path.join(src_path,'symbols'), path.join('content'))
-shutil.copytree(path.join(src_path,'footprints'), path.join('content'))
-shutil.copytree(path.join(src_path,'3dmodels'), path.join('content'))
+shutil.copytree(path.join(src_path,'symbols'), path.join('content','symbols'), dirs_exist_ok = True)
+shutil.copytree(path.join(src_path,'footprints'), path.join('content','footprints'), dirs_exist_ok = True)
+shutil.copytree(path.join(src_path,'3dmodels'), path.join('content','3dmodels'), dirs_exist_ok = True)
 
 # Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/"
 # with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/3d-library.3dshapes/"
-findReplace(path.join('content'), '(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/',
-    '(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/3d-library.3dshapes/', '*.*')
+findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/',
+    b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/3d-library.3dshapes/', '*.*')
 
 # Copy icon
 shutil.copytree(resources_path, path.join('content','resources'))
