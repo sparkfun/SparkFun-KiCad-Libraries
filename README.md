@@ -31,6 +31,8 @@ We use the following naming conventions to create our 'bubble gum' parts:
 * [Download the current libraries as a zip file](#download-the-current-libraries-as-a-zip-file)
 * [Using Git](#using-git)
 
+Internally, these libraries use an Environmental Variable named `SPARKFUN_KICAD_LIBRARY` to reference the footprints and 3D models. This is converted into `KICAD9_3RD_PARTY` during the release process. The release zip file Assets contain `KICAD9_3RD_PARTY` paths. At SparkFun, we use the library as-is with the original `SPARKFUN_KICAD_LIBRARY` environmental variable paths. Our open-source KiCad designs will contain those same environmental variable paths. If you want to be able to _edit_ existing SparkFun schematics and board designs directly, rather than just make use of our components, you need to manually install a true copy or clone of the library. See [Download the current libraries as a zip file](#download-the-current-libraries-as-a-zip-file) and [Using Git](#using-git) below.
+
 ### Installing a release via the KiCad PCM
 
 From the fall of 2025, releases of these libraries are available via the KiCad Plugin and Content Manager (PCM).
@@ -85,7 +87,7 @@ Contents
 
 * [/symbols](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/symbols) -- Schematic symbols
 * [/footprints](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/footprints) -- PCB footprints
-* [/3dmodels/3d-library.3dshapes](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/3dmodels/3d-library.3dshapes) -- 3D models - usually in step format
+* [/3dmodels](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/3dmodels) -- 3D models - usually in step format
 
 License
 -------------------
