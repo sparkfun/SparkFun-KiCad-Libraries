@@ -85,7 +85,7 @@ Contents
 
 * [/symbols](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/symbols) -- Schematic symbols
 * [/footprints](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/footprints) -- PCB footprints
-* [/3dmodels/3d-library.3dshapes](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/3dmodels/3d-library.3dshapes) -- 3D models - usually in step format
+* [/3dmodels](https://github.com/sparkfun/SparkFun-KiCad-Libraries/tree/main/3dmodels) -- 3D models - usually in step format
 
 License
 -------------------
