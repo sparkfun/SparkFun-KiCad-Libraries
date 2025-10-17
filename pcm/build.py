@@ -41,7 +41,7 @@ shutil.copytree(path.join(src_path,'footprints'), path.join('content','footprint
 shutil.copytree(path.join(src_path,'3dmodels'), path.join('content','3dmodels'), dirs_exist_ok = True)
 
 # Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/"
-# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/"
+# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/"
 findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/',
     b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/', '*.*')
 
@@ -100,7 +100,7 @@ shutil.copytree(path.join(src_path,'footprints'), path.join('content','footprint
 shutil.copytree(path.join(src_path,'3dmodels'), path.join('content','3dmodels'), dirs_exist_ok = True)
 
 # Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/"
-# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/"
+# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/"
 findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/',
     b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/', '*.*')
 
