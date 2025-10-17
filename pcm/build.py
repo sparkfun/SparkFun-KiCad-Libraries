@@ -40,10 +40,10 @@ shutil.copytree(path.join(src_path,'symbols'), path.join('content','symbols'), d
 shutil.copytree(path.join(src_path,'footprints'), path.join('content','footprints'), dirs_exist_ok = True)
 shutil.copytree(path.join(src_path,'3dmodels'), path.join('content','3dmodels'), dirs_exist_ok = True)
 
-# Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/"
-# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/3d-library.3dshapes/"
-findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/',
-    b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/3d-library.3dshapes/', '*.*')
+# Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/"
+# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/"
+findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/',
+    b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/', '*.*')
 
 # This is the with-PCM_ version
 # Replace every occurrence of ""Footprint" "SparkFun-"
@@ -99,10 +99,10 @@ shutil.copytree(path.join(src_path,'symbols'), path.join('content','symbols'), d
 shutil.copytree(path.join(src_path,'footprints'), path.join('content','footprints'), dirs_exist_ok = True)
 shutil.copytree(path.join(src_path,'3dmodels'), path.join('content','3dmodels'), dirs_exist_ok = True)
 
-# Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/"
-# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/3d-library.3dshapes/"
-findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/3d-library.3dshapes/',
-    b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/3d-library.3dshapes/', '*.*')
+# Replace every occurrence of "(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/"
+# with "(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_sparkfun-kicad-libraries/"
+findReplace(path.join('content'), b'(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/',
+    b'(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_sparkfun_SparkFun-KiCad-Libraries/', '*.*')
 
 # Copy icon
 shutil.copytree(resources_path, path.join('content','resources'))
