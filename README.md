@@ -37,6 +37,8 @@ Internally, these libraries use an Environmental Variable named `SPARKFUN_KICAD_
 
 From the fall of 2025, releases of these libraries are available via the KiCad Plugin and Content Manager (PCM).
 
+![SparkFun KiCad Libraries in the PCM](./img/PCM.png)
+
 Open the PCM, select the "Libraries" tab, and type "SparkFun" into the search box. The "Install" button will install the latest release of the libraries.
 
 **Note:** this method assumes you have the KiCad Library nickname prefix set to the default of 'PCM_'. If you have cleared the Library nickname prefix, use the [next option](#installing-a-release-from-zip-file---without-the-pcm_-library-nickname-prefix) to install from zip file.
@@ -53,6 +55,10 @@ If you install these libraries though the PCM, the installation assumes the pref
 * You will find two zip file "Assets" attached to each release
 * Download the **"without-pcm"** zip file
 * In the PCM, use the "Install from File..." option to install the zip file
+
+![Release Assets](./img/Release_Assets.png)
+
+![PCM Install From File](./img/PCM_Install_From_File.png)
 
 If you are changing the Library prefix to use this installation method, we recommend: clearing the prefix, OK the changes, **close KiCad** and reopen before installing the zip file.
 
