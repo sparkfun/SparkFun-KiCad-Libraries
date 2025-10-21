@@ -68,7 +68,7 @@ Instead of waiting for a release, you can download a copy of the libraries at an
 
 [![Download ZIP](./img/Download_Zip.png)](https://github.com/sparkfun/SparkFun-KiCad-Libraries/archive/refs/heads/main.zip "Download ZIP")
 
-Unzip the file somewhere convenient, usually in `Documents`. Open the KiCad **Symbol Editor** and select `Preferences \ Configure Paths`. Add a new Environmental Variable called `SPARKFUN_KICAD_LIBRARY` and set the Path to the `SparkFun-KiCad-Libraries` folder :
+Unzip the file somewhere convenient, usually in `Documents`. If needed, change the folder name from `SparkFun-KiCad-Libraries-main` to `SparkFun-KiCad-Libraries`. Open the KiCad **Symbol Editor** and select `Preferences \ Configure Paths`. Add a new Environmental Variable called `SPARKFUN_KICAD_LIBRARY` and set the Path to the `SparkFun-KiCad-Libraries` folder :
 
 ![SPARKFUN_KICAD_LIBRARY Environment Variable](./img/Environment_Variable.png)
 
