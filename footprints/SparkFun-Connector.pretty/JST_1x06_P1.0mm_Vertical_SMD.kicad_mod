@@ -1,0 +1,183 @@
+(footprint "JST_1x06_P1.0mm_Vertical_SMD"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "https://www.jst-mfg.com/product/pdf/eng/eSH.pdf")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 1 0)
+		(layer "F.Fab")
+		(uuid "153d324e-5268-4389-8cfa-725beed35386")
+		(effects
+			(font
+				(size 0.48768 0.48768)
+				(thickness 0.12192)
+			)
+		)
+	)
+	(property "Value" "JST_SMD_1.0mm-6_Vertical"
+		(at 0 2.5 0)
+		(layer "F.Fab")
+		(uuid "c4a6a056-d588-41b9-9464-086887b2a838")
+		(effects
+			(font
+				(size 0.48768 0.48768)
+				(thickness 0.12192)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "81c0aa74-5d18-4edd-a168-ea37274c705d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "563c5894-b5c3-466f-900b-1cac08e8a879")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -4.318 -1.905)
+		(end -3.302 -1.905)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9f9683e0-4f9e-436a-8cf8-a60a4923b1d9")
+	)
+	(fp_line
+		(start -4.318 -0.508)
+		(end -4.318 -1.905)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1044a258-9694-4c02-b9d8-eb3b20798a7d")
+	)
+	(fp_line
+		(start -2.54 1.651)
+		(end 2.54 1.651)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "89997d24-b22b-422f-941d-763fa36605db")
+	)
+	(fp_line
+		(start 3.302 -1.905)
+		(end 4.318 -1.905)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e1e56d5-119d-464f-b7b3-ec43f5c42cc5")
+	)
+	(fp_line
+		(start 4.318 -1.905)
+		(end 4.318 -0.508)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9f85ea89-a374-41df-8bf4-5bfaf2d4b6d4")
+	)
+	(fp_rect
+		(start 4.5 2)
+		(end -4.5 -2.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "641a77a5-e501-4169-9ed9-19a90c396f6d")
+	)
+	(pad "1" smd rect
+		(at -2.5 -1.27)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "34329591-253e-414b-bebb-d065a584288a")
+	)
+	(pad "2" smd rect
+		(at -1.5 -1.27)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "a8cda478-271d-4d8c-a3f7-69c35170129a")
+	)
+	(pad "3" smd rect
+		(at -0.5 -1.27)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "b59bb1e0-9bc0-490e-8c4c-478ded70d395")
+	)
+	(pad "4" smd rect
+		(at 0.5 -1.27)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "44c1183c-d637-4976-a2b7-a67e066f75c1")
+	)
+	(pad "5" smd rect
+		(at 1.5 -1.27)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "c25f5506-a73c-477a-b390-3daacfac8eef")
+	)
+	(pad "6" smd rect
+		(at 2.5 -1.27)
+		(size 0.6 1.55)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "bbba4841-4827-4cb1-ad95-633fa8358405")
+	)
+	(pad "NC1" smd rect
+		(at -3.8 0.955)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "1a36018c-4b54-4751-af58-154199d58f1a")
+	)
+	(pad "NC2" smd rect
+		(at 3.8 0.955)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "4f631e31-805a-47af-aed9-dada80cd1801")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Connector.3dshapes/JST_SMD_1.0mm-6_Vertical.step"
+		(offset
+			(xyz 0 -1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 180)
+		)
+	)
+)

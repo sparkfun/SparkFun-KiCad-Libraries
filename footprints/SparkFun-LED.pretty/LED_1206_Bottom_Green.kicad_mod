@@ -1,0 +1,166 @@
+(footprint "LED_1206_Bottom_Green"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "SparkFun LED")
+	(property "Reference" "REF**"
+		(at 0 -1.27 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b2af616d-3347-4f65-bfea-b94e30655637")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "LED_1206_Bottom_Green"
+		(at 0 1.27 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0732ae0d-d883-4a3b-a711-41c46d1f74d4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fd70a01f-82d3-4a56-ad64-13cce2994531")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c6434bb6-7733-4b97-85ba-bd33783fa5e7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start 2.7686 -1.016)
+		(end 2.7686 1.016)
+		(stroke
+			(width 0.1778)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9f08a86-8843-45fb-9b88-1d3de097f0c4")
+	)
+	(fp_rect
+		(start -2.8 -1.1)
+		(end 2.8 1.1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1fc99ef8-2504-4e6b-ace5-3b1f64dadbbb")
+	)
+	(fp_poly
+		(pts
+			(xy 1.6 -0.25) (xy 1.600001 -0.25) (xy 1.523464 -0.234776) (xy 1.458579 -0.191422) (xy 1.4 -0.05)
+			(xy 1.4 0.049999) (xy 1.415224 0.126536) (xy 1.458579 0.19142) (xy 1.6 0.25) (xy 1.6 0.5) (xy 1.1 0.5)
+			(xy 1.1 -0.5) (xy 1.6 -0.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "5278bdbd-bfcd-4ad2-9f56-896e6a045db1")
+	)
+	(fp_poly
+		(pts
+			(xy -1.1 0.5) (xy -1.6 0.5) (xy -1.6 0.25) (xy -1.600001 0.25) (xy -1.523464 0.234776) (xy -1.458579 0.191422)
+			(xy -1.415224 0.126537) (xy -1.4 0.05) (xy -1.4 -0.049999) (xy -1.415224 -0.126536) (xy -1.458579 -0.19142)
+			(xy -1.6 -0.25) (xy -1.6 -0.5) (xy -1.1 -0.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "9bf0f69d-f6ad-4820-9dd8-bc821a0a0e41")
+	)
+	(fp_text user "+"
+		(at -1.8 -1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "bb2e7e4f-af4e-48cc-9a21-8b6cc61a97b7")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.0625)
+			)
+		)
+	)
+	(fp_text user "-"
+		(at 1.8 -1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "d70c4687-ae7d-4a72-bad6-12414c4ace34")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.0625)
+			)
+		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 2.3 2.3)
+		(drill 2.3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "05e02bd1-71f9-4443-a6d8-b2bb6b05d231")
+	)
+	(pad "1" smd rect
+		(at 1.8 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "abdf5efe-1f8d-46a0-912c-8422c9ef6d21")
+	)
+	(pad "2" smd rect
+		(at -1.8 0)
+		(size 1.5 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 0)
+		(uuid "5909a5b5-3001-4bb4-95fd-a43a8c0cd5e4")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/LED.3dshapes/LED_1206_3216Metric_Castellated_Green.step"
+		(opacity 0.8900)
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -180 -0)
+		)
+	)
+)

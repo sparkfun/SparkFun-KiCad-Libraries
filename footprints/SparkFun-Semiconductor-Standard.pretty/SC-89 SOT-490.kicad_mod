@@ -1,0 +1,175 @@
+(footprint "SC-89 SOT-490"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOT-416FL")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 -0.9 0)
+		(layer "F.Fab")
+		(uuid "df3f4ae6-5282-4ba7-ab09-143c19f5f837")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(uuid "c8924b49-ea6e-4999-9191-3e81ea4c4aaf")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f1407f0c-6ed6-4f30-8413-941429019b19")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1ea3b217-0eab-4daa-a935-d54a9bdbd93d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0eba2c61-87da-4b10-9313-14d90bff73da")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.725 0.175)
+		(end -0.425 0.175)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9dbe9344-2478-47eb-bff3-0323d625ba2b")
+	)
+	(fp_line
+		(start -0.725 0.525)
+		(end -0.725 0.175)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf19be5d-13ef-4600-b9b5-4c3b7a04105e")
+	)
+	(fp_line
+		(start -0.075 0.875)
+		(end 0.075 0.875)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b9df59f5-52a0-49d1-b07d-ebb2e592ba40")
+	)
+	(fp_line
+		(start 0.425 0.175)
+		(end 0.725 0.175)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dc54f10b-34c7-4888-b845-4887e1e16408")
+	)
+	(fp_line
+		(start 0.725 0.175)
+		(end 0.725 0.525)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01316927-9ebb-47aa-a9b4-13b675a25846")
+	)
+	(fp_rect
+		(start -0.9 -0.6)
+		(end 0.9 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "a9612e3c-33ae-4d68-b2f1-33bc81c55d08")
+	)
+	(fp_poly
+		(pts
+			(xy -0.8 0.955) (xy 0.8 0.955) (xy 0.8 0.095) (xy -0.8 0.095)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "3635005f-c6f3-4cff-bb51-36555e890cde")
+	)
+	(pad "1" smd rect
+		(at -0.5 1.1)
+		(size 0.46 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "2825637d-76ee-4de0-8021-bbfe5f4ba568")
+	)
+	(pad "2" smd rect
+		(at 0.5 1.1)
+		(size 0.46 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "faa4fdc5-6b10-4603-b6de-fbe6f688dc9b")
+	)
+	(pad "3" smd rect
+		(at 0 -0.05)
+		(size 0.46 0.65)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "4e971b79-2a9a-4717-94ee-0686d19443cc")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Semiconductor-Standard.3dshapes/SOT-490.step"
+		(offset
+			(xyz 0 -0.5225 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)

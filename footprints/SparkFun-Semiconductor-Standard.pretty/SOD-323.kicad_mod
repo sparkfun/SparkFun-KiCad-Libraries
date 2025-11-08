@@ -1,0 +1,140 @@
+(footprint "SOD-323"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "SOD-323 (Small Outline Diode)")
+	(tags "SparkFun")
+	(property "Reference" "REF**"
+		(at 0 -0.762 0)
+		(layer "F.Fab")
+		(uuid "ed3ce3a2-8b4b-4b32-b85c-e5b26dee02a0")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "SOD-323"
+		(at 0 0.762 0)
+		(layer "F.Fab")
+		(uuid "652a939c-9e8c-4c47-bf9a-a39fb2746af4")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+				(bold yes)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c3d85716-1f17-4513-a705-cd6d0bfdebba")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "914c39b8-9d9b-4300-9aee-fc417e58c77e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0033d421-cfec-4a33-b58c-710b1466a539")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.77 -0.625)
+		(end -1.77 0.625)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dfd75095-4782-4189-a185-d8945b6d76a0")
+	)
+	(fp_line
+		(start -0.9 -0.625)
+		(end 0.9 -0.625)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "40d4d52b-9ee5-47db-ba40-6e954c71266f")
+	)
+	(fp_line
+		(start -0.9 0.625)
+		(end 0.9 0.625)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0bc481f3-8a3a-4095-b68c-5715a48e44dd")
+	)
+	(fp_rect
+		(start -1.6 -0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "51c58776-1765-47f5-ad1f-c91bcc7545de")
+	)
+	(pad "1" smd rect
+		(at -1.15 0)
+		(size 0.63 0.83)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "0f8b5f70-ab68-4e2e-8b07-c2fe2dbffe1e")
+	)
+	(pad "2" smd rect
+		(at 1.15 0)
+		(size 0.63 0.83)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "177a341e-552c-4e8e-b31e-ecd471e4031a")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Semiconductor-Standard.3dshapes/D_SOD-323.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

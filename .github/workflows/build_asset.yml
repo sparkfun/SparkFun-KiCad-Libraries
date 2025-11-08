@@ -1,0 +1,43 @@
+name: Build Asset
+on: 
+  workflow_dispatch:
+    branches: 
+
+jobs:
+  build:
+    
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Update zip
+        run: |
+          cd pcm
+          python build.py
+          cd build
+          echo "ZIP_NAME_WITH=$(ls SparkFun-KiCad-Libraries*-with-pcm.zip)" >> $GITHUB_ENV
+          echo "PCM_NAME_WITH=$(ls SparkFun-KiCad-Libraries*-with-pcm.zip | rev | cut -c 5- | rev)" >> $GITHUB_ENV
+          echo "ZIP_NAME_WITHOUT=$(ls SparkFun-KiCad-Libraries*-without-pcm.zip)" >> $GITHUB_ENV
+          echo "PCM_NAME_WITHOUT=$(ls SparkFun-KiCad-Libraries*-without-pcm.zip | rev | cut -c 5- | rev)" >> $GITHUB_ENV
+
+      - name: Upload with-pcm build to action - avoid double-zip
+        uses: actions/upload-artifact@v4
+        with: 
+          name: ${{ env.PCM_NAME_WITH }}
+          path: ./pcm/build/${{ env.PCM_NAME_WITH }}
+          retention-days: 7
+
+      - name: Upload without-pcm build to action - avoid double-zip
+        uses: actions/upload-artifact@v4
+        with: 
+          name: ${{ env.PCM_NAME_WITHOUT }}
+          path: ./pcm/build/${{ env.PCM_NAME_WITHOUT }}
+          retention-days: 7

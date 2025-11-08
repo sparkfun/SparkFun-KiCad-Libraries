@@ -1,0 +1,190 @@
+(footprint "Slide_DPDT_SMD_7.2x3.5mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "https://www.sparkfun.com/datasheets/Components/SW_slide_ayz.pdf")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 -3.81 180)
+		(layer "F.Fab")
+		(uuid "7cc0b9de-8a23-47fe-8add-5811451d41a1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 3.81 180)
+		(layer "F.Fab")
+		(uuid "9d65b0ae-561b-4da3-a434-21c02dd063c8")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04bf02cb-e0be-4139-a521-a0311f33eff4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "434e8008-1401-4951-9f01-32e59aa1ac46")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a257436a-6532-4514-b556-2f875d2768a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.75 -3.6)
+		(end -1.75 3.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f883fa1c-c574-4095-adbe-a82b8e886703")
+	)
+	(fp_line
+		(start -1.75 3.6)
+		(end 1.75 3.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11d487a8-e306-4769-8444-4c69ce2d5a91")
+	)
+	(fp_line
+		(start 1.75 -3.6)
+		(end -1.75 -3.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6a60f028-94d9-4cc8-aac9-3946b6f0056b")
+	)
+	(fp_line
+		(start 1.75 3.6)
+		(end 1.75 -3.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "51f751aa-4df9-456b-85a9-77fe78759dbe")
+	)
+	(fp_rect
+		(start -3.6 -3.8)
+		(end 3.6 3.8)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "313dff65-4764-4246-b3d5-4584ac3bc63c")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 -1.5 90)
+		(size 0.85 0.85)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(uuid "f511dd3b-04e1-41d7-b9dd-d60ee84c3e98")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 1.5 90)
+		(size 0.85 0.85)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(uuid "f1217c79-8024-4b5b-b794-a6f4fc79fafd")
+	)
+	(pad "1" smd rect
+		(at -2.825 2.5 90)
+		(size 1 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "ad5237f1-df90-4b4c-afda-04c46daf9512")
+	)
+	(pad "2" smd rect
+		(at -2.825 0 90)
+		(size 1 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "d79e69e8-65d7-4787-80df-259f2e8c4faa")
+	)
+	(pad "3" smd rect
+		(at -2.825 -2.5 90)
+		(size 1 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "4ad8d9c0-3b36-404e-9bcd-4f79fbfad1c1")
+	)
+	(pad "4" smd rect
+		(at 2.825 2.5 90)
+		(size 1 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "cd531d4e-d0e8-4e0c-bcef-fd62ba126ae6")
+	)
+	(pad "5" smd rect
+		(at 2.825 0 90)
+		(size 1 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "57d02ca1-9bd7-419b-89ac-5769f7be35df")
+	)
+	(pad "6" smd rect
+		(at 2.825 -2.5 90)
+		(size 1 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(thermal_bridge_angle 0)
+		(uuid "b8524447-b1e4-4179-b4bc-271f1ca04894")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/Slide_DPDT_SMD_7.2x3.5mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 90)
+		)
+	)
+)

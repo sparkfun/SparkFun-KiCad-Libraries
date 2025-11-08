@@ -1,0 +1,158 @@
+(footprint "Slide_SPDT_PTH_11.6x4.0mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "https://www.sparkfun.com/datasheets/Components/Buttons/P040040c.pdf")
+	(tags "SparkFun")
+	(property "Reference" "Ref**"
+		(at 0 -6 180)
+		(layer "F.Fab")
+		(uuid "3819b30b-8b1a-4927-a26c-5402b6a6fdef")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 6 180)
+		(layer "F.Fab")
+		(uuid "55181725-48d9-4639-8a79-fb5186ab639d")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ff1e2f42-3132-477c-941a-c34eecf48186")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a14433f-b139-4d71-a610-a0469bd74686")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "27954b2a-3008-4dfc-a15c-c1858e731e7c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -2.175 -5.815)
+		(end -2.175 5.815)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "13c412c2-b489-4312-866f-f5eb7480f3ac")
+	)
+	(fp_line
+		(start -2.175 5.815)
+		(end 2.175 5.815)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e65822f-5228-4264-ac7a-a38c9235f811")
+	)
+	(fp_line
+		(start 2.175 -5.815)
+		(end -2.175 -5.815)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b0ec54b6-1554-4a5b-9faa-c4ed9e20c0a0")
+	)
+	(fp_line
+		(start 2.175 5.815)
+		(end 2.175 -5.815)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7bdf74ea-469e-416f-9282-fd9aada3ad87")
+	)
+	(fp_rect
+		(start 2.5 -6.1)
+		(end -2.5 6.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "089c0fe3-50bc-45eb-bf28-9e5c39595f63")
+	)
+	(pad "1" thru_hole circle
+		(at 0 -2.54)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "121b1615-6fb2-449d-a219-3fb6ce724529")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "c904d284-45de-47e9-9e91-cc9ddcde7783")
+	)
+	(pad "3" thru_hole circle
+		(at 0 2.54)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(thermal_bridge_angle 0)
+		(uuid "7c7a50d9-06a2-4805-a9aa-aa08038c04d4")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/Slide_SPDT_PTH_11.6x4.0mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)
