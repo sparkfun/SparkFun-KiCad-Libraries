@@ -1,0 +1,272 @@
+(footprint "Trimpot_PTH_3386U"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Trimpot - PTH, Trimpot w/ finger-adjustable knob\n\nhttps://www.sparkfun.com/products/9806 Trimpot 10K with Knob (COM-09806)\n\nhttp://www.sparkfun.com/datasheets/Components/General/TSR-3386.pdf Datasheet")
+	(tags "SparkFun Potentiometer PTH")
+	(property "Reference" "REF**"
+		(at 0 -4.953 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "64be00a0-178b-4b1b-9c9b-c7fc806fdb4b")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(property "Value" "Trimpot_PTH_3386U"
+		(at 0 4.572 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0a3bbf23-b427-44f6-ba6f-a4c462f973fc")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Datasheet" "http://www.sparkfun.com/datasheets/Components/General/TSR-3386.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ecfde6b-4c87-48da-baed-3971b6b7401b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9df80d2e-b7d9-4547-ab49-57f3643ca855")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start -4.765 -4.765)
+		(end -4.765 4.765)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a3a7c39e-2143-4076-9c5d-832f51809332")
+	)
+	(fp_line
+		(start -4.765 4.765)
+		(end -4 4.765)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bc377094-13a8-44ba-825f-22646adad6e0")
+	)
+	(fp_line
+		(start -4 4.365)
+		(end 4 4.365)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "effd7224-44a6-4cd7-83e7-55ec634a1d64")
+	)
+	(fp_line
+		(start -4 4.765)
+		(end -4 4.365)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "39c3e913-31c0-4a09-b791-9f936df4891e")
+	)
+	(fp_line
+		(start 4 4.365)
+		(end 4 4.765)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "78d8155c-0083-414e-8dc9-c4975d1a2dc2")
+	)
+	(fp_line
+		(start 4 4.765)
+		(end 4.765 4.765)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b04f0d04-b758-48e6-9efd-510968b1deb8")
+	)
+	(fp_line
+		(start 4.765 -4.765)
+		(end -4.765 -4.765)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1f8286d4-89e2-4264-a325-aecf31bb3572")
+	)
+	(fp_line
+		(start 4.765 4.765)
+		(end 4.765 -4.765)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "40385a0c-fa18-4c37-b34e-fd4420d846a4")
+	)
+	(fp_rect
+		(start -5 -5)
+		(end 5 5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "4b54430c-7fbb-4083-a829-7ebfed30097d")
+	)
+	(fp_line
+		(start -1.5 -2.2)
+		(end -0.5 -2.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "63903129-2e2b-4ebe-8916-c914adb23ccf")
+	)
+	(fp_line
+		(start -0.5 -2.2)
+		(end -0.5 1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "dc6374cd-090d-4111-b017-f4fb6c098433")
+	)
+	(fp_line
+		(start -0.5 1.8)
+		(end 0.5 1.8)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4a72d2a4-08ad-4f03-a224-9f6eb55cd70d")
+	)
+	(fp_line
+		(start 0 -3.7)
+		(end -1.5 -2.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d98f75f3-8fb1-4aea-8b34-475981483dd0")
+	)
+	(fp_line
+		(start 0.5 -2.2)
+		(end 1.5 -2.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "60eafc20-bc61-44d9-a937-d3ac410f73a1")
+	)
+	(fp_line
+		(start 0.5 1.8)
+		(end 0.5 -2.2)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "68866971-73ee-4927-a045-bcd7a9526c05")
+	)
+	(fp_line
+		(start 1.5 -2.2)
+		(end 0 -3.7)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4e3c1ea-8060-4337-9388-9c78ec5f5340")
+	)
+	(fp_circle
+		(center 0 -0.575)
+		(end 4 -0.575)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "91737693-455c-4602-bb17-e41e34b58283")
+	)
+	(pad "1" thru_hole rect
+		(at -2.54 0.015)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "2737c164-7657-4b19-b39d-54cf314b289e")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0.015)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "ea5c8f6d-e22a-4471-9bc9-8f877c4a9f62")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 0.015)
+		(size 1.8796 1.8796)
+		(drill 1.016)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1016)
+		(thermal_bridge_angle 0)
+		(uuid "dd1b32cc-24f8-42e1-8d13-2bb77d454cd5")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Resistor.3dshapes/Trimpot 3386U With Knob.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
