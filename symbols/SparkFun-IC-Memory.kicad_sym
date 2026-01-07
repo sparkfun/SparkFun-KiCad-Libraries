@@ -1494,7 +1494,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -6.35 10.16 0)
+			(at -6.35 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1502,7 +1502,7 @@
 			)
 		)
 		(property "Value" "MX25LM25645G"
-			(at 7.62 10.16 0)
+			(at 7.62 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1510,7 +1510,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:TFBGA-24"
-			(at 0 -25.4 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1519,7 +1519,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mxic.com.tw/Lists/Datasheet/Attachments/8735/MX25LM25645G,%203V,%20256Mb,%20v1.1.pdf"
-			(at 0 -27.94 0)
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1528,7 +1528,7 @@
 			)
 		)
 		(property "Description" "256Mb (32MB) Serial Flash Memory, Standard/Dual/Quad/Octal SPI, 24-BGA"
-			(at 0 -33.02 0)
+			(at 0 -26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1537,7 +1537,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-27417"
-			(at 0 -30.48 0)
+			(at 0 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1565,8 +1565,8 @@
 		)
 		(symbol "MX25LM25645G_0_1"
 			(rectangle
-				(start -7.62 8.89)
-				(end 7.62 -22.86)
+				(start -7.62 15.24)
+				(end 7.62 -16.51)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -1578,7 +1578,7 @@
 		)
 		(symbol "MX25LM25645G_1_1"
 			(pin power_in line
-				(at -10.16 7.62 0)
+				(at -10.16 13.97 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -1596,7 +1596,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 5.08 0)
+				(at -10.16 11.43 0)
 				(length 2.54)
 				(name "VCCQ"
 					(effects
@@ -1614,7 +1614,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 5.08 0)
+				(at -10.16 11.43 0)
 				(length 2.54)
 				(hide yes)
 				(name "VCCQ"
@@ -1633,7 +1633,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 2.54 0)
+				(at -10.16 8.89 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -1651,7 +1651,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -10.16 -3.81 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -1670,7 +1670,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -10.16 -6.35 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -1689,7 +1689,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -10.16 -8.89 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -1707,11 +1707,10 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -10.16 -11.43 0)
+			(pin input line
+				(at -10.16 -5.08 0)
 				(length 2.54)
-				(hide yes)
-				(name "DNU"
+				(name "SCLK_1V8"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1727,7 +1726,7 @@
 				)
 			)
 			(pin no_connect line
-				(at -10.16 -13.97 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(hide yes)
 				(name "DNU"
@@ -1746,7 +1745,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -19.05 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(name "VSSQ"
 					(effects
@@ -1764,7 +1763,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -19.05 0)
+				(at -10.16 -12.7 0)
 				(length 2.54)
 				(hide yes)
 				(name "VSSQ"
@@ -1783,7 +1782,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -21.59 0)
+				(at -10.16 -15.24 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -1801,7 +1800,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 7.62 180)
+				(at 10.16 13.97 180)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -1819,7 +1818,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 5.08 180)
+				(at 10.16 11.43 180)
 				(length 2.54)
 				(name "SCLK"
 					(effects
@@ -1837,7 +1836,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 2.54 180)
+				(at 10.16 8.89 180)
 				(length 2.54)
 				(name "~{ECS}"
 					(effects
@@ -1855,7 +1854,7 @@
 				)
 			)
 			(pin input line
-				(at 10.16 0 180)
+				(at 10.16 6.35 180)
 				(length 2.54)
 				(name "DQS"
 					(effects
@@ -1873,7 +1872,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -3.81 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "SI/SIO0"
 					(effects
@@ -1891,7 +1890,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -6.35 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "SO/SIO1"
 					(effects
@@ -1909,7 +1908,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -8.89 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "SIO2"
 					(effects
@@ -1927,7 +1926,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -11.43 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "SIO3"
 					(effects
@@ -1945,7 +1944,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -13.97 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "SIO4"
 					(effects
@@ -1963,7 +1962,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -16.51 180)
+				(at 10.16 -10.16 180)
 				(length 2.54)
 				(name "SIO5"
 					(effects
@@ -1981,7 +1980,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -19.05 180)
+				(at 10.16 -12.7 180)
 				(length 2.54)
 				(name "SIO6"
 					(effects
@@ -1999,7 +1998,536 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 -21.59 180)
+				(at 10.16 -15.24 180)
+				(length 2.54)
+				(name "SIO7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "MX25UW12845G"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at -6.35 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX25UW12845G"
+			(at 7.62 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:TFBGA-24"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.macronix.com/Lists/Datasheet/Attachments/9106/MX25U12845G,%201.8V,%20128Mb,%20v1.0.pdf"
+			(at 0 -21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "128Mb (16MB) Serial Flash Memory, Standard/Dual/Quad/Octal SPI, 24-BGA 1.8V"
+			(at 0 -26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "IC-27519"
+			(at 0 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun flash memory octal SPI"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "SOIC*5.23x5.23mm*P1.27mm*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MX25UW12845G_0_1"
+			(rectangle
+				(start -7.62 15.24)
+				(end 7.62 -16.51)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MX25UW12845G_1_1"
+			(pin power_in line
+				(at -10.16 13.97 0)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 11.43 0)
+				(length 2.54)
+				(name "VCCQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 11.43 0)
+				(length 2.54)
+				(hide yes)
+				(name "VCCQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 8.89 0)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(name "SCLK_1V8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 -7.62 0)
+				(length 2.54)
+				(hide yes)
+				(name "DNU"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -12.7 0)
+				(length 2.54)
+				(name "VSSQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -12.7 0)
+				(length 2.54)
+				(hide yes)
+				(name "VSSQ"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -15.24 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 13.97 180)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 11.43 180)
+				(length 2.54)
+				(name "SCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 8.89 180)
+				(length 2.54)
+				(name "~{ECS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 6.35 180)
+				(length 2.54)
+				(name "DQS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "SI/SIO0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SO/SIO1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "SIO2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "C4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -5.08 180)
+				(length 2.54)
+				(name "SIO3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -7.62 180)
+				(length 2.54)
+				(name "SIO4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "D5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -10.16 180)
+				(length 2.54)
+				(name "SIO5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -12.7 180)
+				(length 2.54)
+				(name "SIO6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "E2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 10.16 -15.24 180)
 				(length 2.54)
 				(name "SIO7"
 					(effects
