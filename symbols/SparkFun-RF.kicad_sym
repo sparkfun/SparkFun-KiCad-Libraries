@@ -1356,7 +1356,7 @@
 		(symbol "ESP32-C5-WROOM-1_0_1"
 			(polyline
 				(pts
-					(xy 11.43 -10.16) (xy -10.16 -10.16) (xy -10.16 -17.78) (xy 5.08 -17.78) (xy 5.08 -12.7) (xy 11.43 -12.7)
+					(xy 11.43 -10.16) (xy -2.54 -10.16) (xy -2.54 -13.97) (xy 5.715 -13.97) (xy 5.715 -12.7) (xy 11.43 -12.7)
 				)
 				(stroke
 					(width 0)
@@ -1368,7 +1368,7 @@
 			)
 			(polyline
 				(pts
-					(xy 11.43 -22.86) (xy -3.81 -22.86) (xy -3.81 -27.94)
+					(xy 11.43 -22.86) (xy -2.54 -22.86) (xy -2.54 -27.94)
 				)
 				(stroke
 					(width 0)
@@ -1391,19 +1391,19 @@
 					(type background)
 				)
 			)
-			(text "IO15 can't be\nused if module\nhas PSRAM"
-				(at -2.54 -13.97 0)
+			(text "IO15 can't be\nused if module\nhas PSRAM."
+				(at 1.905 -12.065 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 				)
 			)
-			(text "Boot pins"
-				(at 1.27 -25.4 0)
+			(text "Caution!\nIO27 and IO28\nset boot mode,\nsee datasheet."
+				(at 1.905 -25.4 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 				)
 			)
@@ -2004,7 +2004,7 @@
 		(symbol "ESP32-C5-WROOM-1-NARROW_0_1"
 			(polyline
 				(pts
-					(xy 11.43 -10.16) (xy -10.16 -10.16) (xy -10.16 -17.78) (xy 5.08 -17.78) (xy 5.08 -12.7) (xy 11.43 -12.7)
+					(xy 11.43 -10.16) (xy -2.54 -10.16) (xy -2.54 -13.97) (xy 5.715 -13.97) (xy 5.715 -12.7) (xy 11.43 -12.7)
 				)
 				(stroke
 					(width 0)
@@ -2016,7 +2016,7 @@
 			)
 			(polyline
 				(pts
-					(xy 11.43 -22.86) (xy -3.81 -22.86) (xy -3.81 -27.94)
+					(xy 11.43 -22.86) (xy -2.54 -22.86) (xy -2.54 -27.94)
 				)
 				(stroke
 					(width 0)
@@ -2039,19 +2039,19 @@
 					(type background)
 				)
 			)
-			(text "IO15 can't be\nused if module\nhas PSRAM"
-				(at -2.54 -13.97 0)
+			(text "IO15 can't be\nused if module\nhas PSRAM."
+				(at 1.905 -12.065 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 				)
 			)
-			(text "Boot pins"
-				(at 1.27 -25.4 0)
+			(text "Caution!\nIO27 and IO28\nset boot mode,\nsee datasheet."
+				(at 1.905 -25.4 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 0.635 0.635)
 					)
 				)
 			)
