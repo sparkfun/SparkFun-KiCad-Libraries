@@ -1,10 +1,10 @@
-(footprint "LED_5mm_PTH_Red_NoSilk"
+(footprint "LED_5mm_PTH_White_Clear_Silk"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "LED 5mm PTH")
-	(tags "SparkFun PTH LED 5mm Red")
+	(tags "SparkFun PTH LED 5mm White Clear")
 	(property "Reference" "Ref**"
 		(at 0 -3.8 0)
 		(unlocked yes)
@@ -41,7 +41,7 @@
 			)
 		)
 	)
-	(property "Description" "Red LED 5mm PTH"
+	(property "Description" "White Clear LED 5mm PTH"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -61,8 +61,19 @@
 			(width 0.254)
 			(type solid)
 		)
-		(layer "F.Fab")
+		(layer "F.SilkS")
 		(uuid "a9a08029-aa18-421b-89e0-7a34b340b9aa")
+	)
+	(fp_arc
+		(start 2.6 1.5)
+		(mid -3.001666 0)
+		(end 2.6 -1.5)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e744621e-3e26-46e2-9db2-9493f59d0bcc")
 	)
 	(fp_arc
 		(start -2.159 0)
@@ -130,17 +141,6 @@
 		(layer "F.Fab")
 		(uuid "f1540833-6946-4a8e-a0f5-4b7a9092b075")
 	)
-	(fp_arc
-		(start 2.6 1.5)
-		(mid -3.001666 0)
-		(end 2.6 -1.5)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(layer "F.Fab")
-		(uuid "e744621e-3e26-46e2-9db2-9493f59d0bcc")
-	)
 	(fp_circle
 		(center 0 0)
 		(end 2.54 0)
@@ -171,7 +171,7 @@
 		(uuid "23b9468d-8965-47cd-8715-054cfba8ebc8")
 	)
 	(embedded_fonts no)
-	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/LED.3dshapes/LED_PTH_5mm_Red.step"
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/LED.3dshapes/LED_PTH_5mm_White_Clear.step"
 		(offset
 			(xyz 0 0 0)
 		)
