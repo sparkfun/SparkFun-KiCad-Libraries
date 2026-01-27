@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Nonstandard:OLGA16"
-			(at 0 -17.78 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/b/8/6/d/2/AS7331_DS001047_4-00.pdf"
-			(at 0 -12.7 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Description" "3-Channel UV Spectral Sensor"
-			(at 0 -10.16 0)
+			(at 0 -11.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50,7 +50,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-20090"
-			(at 0 -15.24 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70,7 +70,7 @@
 		(symbol "AS7331_1_1"
 			(rectangle
 				(start -7.62 7.62)
-				(end 7.62 -7.62)
+				(end 7.62 -10.16)
 				(stroke
 					(width 0)
 					(type solid)
@@ -81,7 +81,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 6.35 0)
+				(at -10.16 5.08 0)
 				(length 2.54)
 				(name "VDDD"
 					(effects
@@ -99,7 +99,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 3.81 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "VDDA"
 					(effects
@@ -117,7 +117,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 1.27 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "REXT"
 					(effects
@@ -135,7 +135,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -3.81 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "VSSD"
 					(effects
@@ -153,7 +153,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -6.35 0)
+				(at -10.16 -7.62 0)
 				(length 2.54)
 				(name "VSSA"
 					(effects
@@ -171,7 +171,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 6.35 180)
+				(at 10.16 5.08 180)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -189,7 +189,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 3.81 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -207,7 +207,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 1.27 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "READY"
 					(effects
@@ -225,7 +225,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -1.27 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "14"
 					(effects
@@ -243,7 +243,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -3.81 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "SYN"
 					(effects
@@ -261,7 +261,7 @@
 				)
 			)
 			(pin passive line
-				(at 10.16 -6.35 180)
+				(at 10.16 -7.62 180)
 				(length 2.54)
 				(name "A1"
 					(effects
