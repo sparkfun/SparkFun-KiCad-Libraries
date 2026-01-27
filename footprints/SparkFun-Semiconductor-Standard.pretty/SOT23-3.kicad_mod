@@ -1,7 +1,7 @@
 (footprint "SOT23-3"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -28,19 +28,6 @@
 				(bold yes)
 			)
 			(justify top)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2e848247-d018-45e6-9b7a-be5e7804ad39")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
 		)
 	)
 	(property "Datasheet" ""
@@ -117,7 +104,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "cb032fbf-37c1-4e13-ba73-ca53e5e0c3d2")
 	)
@@ -164,24 +151,25 @@
 	(pad "1" smd rect
 		(at -1 -0.95 270)
 		(size 0.8 0.9)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "83a8860f-7f46-4458-9ba4-db77279e7fdf")
 	)
 	(pad "2" smd rect
 		(at -1 0.95 270)
 		(size 0.8 0.9)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "8bf1c581-73f6-4aac-a11c-c5472b7cb954")
 	)
 	(pad "3" smd rect
 		(at 1.1 0 270)
 		(size 0.8 0.9)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "2a482e57-ec8a-4400-96ec-6f7bdb0779c0")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Semiconductor-Standard.3dshapes/SOT-23.step"
 		(offset
 			(xyz 0 0 0)

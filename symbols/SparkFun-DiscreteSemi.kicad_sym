@@ -205,7 +205,7 @@
 				)
 			)
 		)
-		(property "Value" "1N4007"
+		(property "Value" "FR107W"
 			(at 0 -2.54 0)
 			(effects
 				(font
@@ -222,7 +222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mmsz4678t1-d.pdf"
+		(property "Datasheet" "https://www.rectron.com/public/product_datasheets/fr101w-fr107w.pdf"
 			(at 0 -15.24 0)
 			(effects
 				(font
@@ -4958,6 +4958,165 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "D_TVS_SMA_16V"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SMAJ16A"
+			(at 0 -2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-Semiconductor-Standard:SMA"
+			(at 0 -7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-smaj-datasheet"
+			(at 0 -12.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unidirectional transient-voltage-suppression diode 93.6V"
+			(at 0 -5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PROD_ID" "DIO-..."
+			(at 0 -10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "SparkFun diode TVS thyrector"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "D_TVS_SMA_16V_0_1"
+			(polyline
+				(pts
+					(xy -1.27 0) (xy 1.27 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.635 0) (xy -0.635 0) (xy 0.635 1.016) (xy 0.635 -1.016) (xy -0.635 0)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.127 1.016) (xy -0.635 1.016) (xy -0.635 -1.016) (xy -1.143 -1.016)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "D_TVS_SMA_16V_1_1"
+			(pin passive line
+				(at -2.54 0 0)
+				(length 1.27)
+				(name "K"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 1.27)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10318,8 +10477,8 @@
 				)
 			)
 		)
-		(symbol "Q_NPN_D_BEC_0.1A_50V_1_0"
-			(text "4k7"
+		(symbol "Q_NPN_D_BEC_0.1A_50V_1_1"
+			(text "2k2"
 				(at -3.302 0.889 0)
 				(effects
 					(font
@@ -10327,7 +10486,7 @@
 					)
 				)
 			)
-			(text "10k"
+			(text "47k"
 				(at -2.159 -1.524 900)
 				(effects
 					(font
@@ -10335,8 +10494,6 @@
 					)
 				)
 			)
-		)
-		(symbol "Q_NPN_D_BEC_0.1A_50V_1_1"
 			(pin input line
 				(at -6.35 0 0)
 				(length 2.54)
