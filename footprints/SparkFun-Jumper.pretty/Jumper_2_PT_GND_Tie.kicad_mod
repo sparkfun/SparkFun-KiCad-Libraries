@@ -1,0 +1,98 @@
+(footprint "Jumper_2_PT_GND_Tie"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -1.8288 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "28b9b354-21dc-4ed3-a834-34dbbf607ce1")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Jumper_2_PT_GND_Tie"
+		(at 0 1.8796 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "f9f9f491-bcf6-487d-81c1-123ef7c8a1cb")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "79d55dcd-c72c-47c6-82ae-82254c0c25a1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "758a17cf-3a15-485a-a545-5345d4af1eda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_line
+		(start 0 -0.635)
+		(end 0 0.635)
+		(stroke
+			(width 0.4064)
+			(type solid)
+		)
+		(layer "F.Cu")
+		(uuid "16b81e43-ea15-4727-b097-5b88c6bfd74e")
+	)
+	(fp_rect
+		(start -1.016 -1.2446)
+		(end 1.016 1.27)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a646faf2-002a-4cb5-9824-f747cc3daf65")
+	)
+	(pad "1" smd roundrect
+		(at 0 -0.635)
+		(size 1.27 0.635)
+		(layers "F.Cu")
+		(roundrect_rratio 0.08)
+		(solder_mask_margin 0.0635)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "959ee053-9a77-4b97-906c-966e5497d55e")
+	)
+	(pad "2" smd roundrect
+		(at 0 0.635)
+		(size 1.27 0.635)
+		(layers "F.Cu")
+		(roundrect_rratio 0.08)
+		(solder_mask_margin 0.0635)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "f9b8cc1f-40c6-4f67-b97b-2624e35e9e98")
+	)
+	(embedded_fonts no)
+)
