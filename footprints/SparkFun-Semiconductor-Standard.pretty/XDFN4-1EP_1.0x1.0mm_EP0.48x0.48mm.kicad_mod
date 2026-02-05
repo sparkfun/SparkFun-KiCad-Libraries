@@ -1,0 +1,296 @@
+(footprint "XDFN4-1EP_1.0x1.0mm_EP0.48x0.48mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "XDFN4 footprint (https://www.ti.com/lit/ds/symlink/tlv772.pdf)")
+	(tags "SparkFun XDFN4")
+	(property "Reference" "REF**"
+		(at 0 1.35 0)
+		(layer "F.Fab")
+		(uuid "66ea7b90-9354-4be1-9f46-f8a12a683c45")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "XDFN4-1EP_1.0x1.0mm_EP0.48x0.48mm"
+		(at 0 -1.375 0)
+		(layer "F.Fab")
+		(uuid "2b5f70c4-2768-4f0a-ba7b-380db68a0996")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv772.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "823534d8-deed-4f2c-aca2-838d0d1428a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b12bf442-f8eb-4abf-aa61-b9610451e011")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.5 0.72)
+		(end 0.5 0.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8351203e-90b8-4649-8b9a-ca1d92f9e58d")
+	)
+	(fp_line
+		(start 0.5 -0.72)
+		(end -0.5 -0.72)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ac171e64-9f55-4785-ae0a-3eaeed1f5569")
+	)
+	(fp_circle
+		(center -0.8 -0.7)
+		(end -0.9 -0.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "75c2faa9-4382-4b55-b96e-9fe62ddfb42d")
+	)
+	(fp_rect
+		(start -0.645 -0.43)
+		(end -0.61 -0.22)
+		(stroke
+			(width 0.001)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "94d74071-d04f-4d59-83bf-1e0431015386")
+	)
+	(fp_rect
+		(start -0.645 0.22)
+		(end -0.61 0.43)
+		(stroke
+			(width 0.001)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "b88e23d8-c830-4852-bab4-875518c8c932")
+	)
+	(fp_rect
+		(start 0.61 -0.43)
+		(end 0.645 -0.22)
+		(stroke
+			(width 0.001)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "e7c1fa13-f7ad-4cc3-9701-4c945048242c")
+	)
+	(fp_rect
+		(start 0.61 0.22)
+		(end 0.645 0.43)
+		(stroke
+			(width 0.001)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Paste")
+		(uuid "4258fb9b-fdf3-4190-bec6-bd64bccb3538")
+	)
+	(fp_rect
+		(start -0.8 -0.7)
+		(end 0.8 0.7)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "0ecf43ad-264e-487d-94e0-4e431160d4d5")
+	)
+	(fp_line
+		(start -0.5 -0.25)
+		(end -0.25 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cccef342-87dd-4330-9010-f8a3478b3002")
+	)
+	(fp_line
+		(start -0.5 0.5)
+		(end -0.5 -0.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3347bbff-b44a-49d0-8136-6636601ab5a7")
+	)
+	(fp_line
+		(start -0.25 -0.5)
+		(end 0.5 -0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "85358420-2fcf-4825-80ec-ab3bc82db96f")
+	)
+	(fp_line
+		(start 0.5 -0.5)
+		(end 0.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "aa3f6219-24c1-4f2a-a59e-f3bc0dc6c6b3")
+	)
+	(fp_line
+		(start 0.5 0.5)
+		(end -0.5 0.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fc635145-e799-4f65-ae50-bb3e22ba2f88")
+	)
+	(pad "1" smd custom
+		(at -0.52 -0.325)
+		(size 0.18 0.21)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 0)
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.27 -0.075589) (xy 0.09 0.105) (xy 0.086653 -0.105017) (xy 0.27 -0.105589)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "83db9a3d-2f2a-4cf1-8755-207707fdb7a7")
+	)
+	(pad "2" smd custom
+		(at -0.52 0.325 180)
+		(size 0.18 0.21)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 0)
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.27 -0.105) (xy -0.085 -0.105) (xy -0.09 0.105) (xy -0.27 -0.075)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "b8d6772c-7a9d-4e1f-b3ac-6c602f090434")
+	)
+	(pad "3" smd custom
+		(at 0.52 0.325 180)
+		(size 0.18 0.21)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 0)
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy 0.27 -0.075589) (xy 0.09 0.105) (xy 0.086653 -0.105017) (xy 0.27 -0.105589)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "999e72a8-7543-43b3-a426-3b6a03036f43")
+	)
+	(pad "4" smd custom
+		(at 0.52 -0.325)
+		(size 0.18 0.21)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(zone_connect 0)
+		(thermal_bridge_angle 45)
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.27 -0.105) (xy -0.085 -0.105) (xy -0.09 0.105) (xy -0.27 -0.075)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "a7e21854-19bb-4ee8-8fdd-3fea638d5ad2")
+	)
+	(pad "5" smd rect
+		(at 0 0 135)
+		(size 0.48 0.48)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_paste_margin_ratio -0.05)
+		(uuid "ce8d3bd9-5d3f-45e3-a6f1-7848c33ef7a0")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Semiconductor-Standard.3dshapes/XDFN4-1EP_1.0x1.0mm_EP0.48x0.48mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
