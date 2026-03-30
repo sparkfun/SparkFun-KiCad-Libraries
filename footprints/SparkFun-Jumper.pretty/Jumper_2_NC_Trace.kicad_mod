@@ -1,7 +1,7 @@
 (footprint "Jumper_2_NC_Trace"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -30,19 +30,6 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2365870b-f049-492f-949c-3f9ef001e202")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -69,7 +56,7 @@
 			)
 		)
 	)
-	(attr allow_soldermask_bridges)
+	(attr exclude_from_pos_files exclude_from_bom dnp allow_soldermask_bridges)
 	(net_tie_pad_groups "1,2")
 	(fp_poly
 		(pts
@@ -79,9 +66,21 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Cu")
 		(uuid "bdffd73e-28f8-4ae3-a57f-ad1e94946a69")
+	)
+	(fp_poly
+		(pts
+			(xy 0.254 0.2405) (xy -0.254 0.2405) (xy -0.254 -0.2405) (xy 0.254 -0.2405)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "a8347624-5c60-4722-94a1-1f95992a27c4")
 	)
 	(fp_line
 		(start -1.2192 0.5588)
@@ -167,18 +166,6 @@
 		(layer "F.SilkS")
 		(uuid "53f6c34a-9edd-4b5b-8b89-7e6ab5ae8c27")
 	)
-	(fp_poly
-		(pts
-			(xy 0.254 0.2405) (xy -0.254 0.2405) (xy -0.254 -0.2405) (xy 0.254 -0.2405)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill solid)
-		(layer "F.Mask")
-		(uuid "a8347624-5c60-4722-94a1-1f95992a27c4")
-	)
 	(fp_rect
 		(start -1.1 -0.9)
 		(end 1.1 0.9)
@@ -186,7 +173,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "acee495b-ac7d-4bc4-9884-ec3b45885a52")
 	)
@@ -204,4 +191,5 @@
 		(thermal_bridge_angle 0)
 		(uuid "8627dd31-aaf8-4078-b9a4-831d547eb798")
 	)
+	(embedded_fonts no)
 )

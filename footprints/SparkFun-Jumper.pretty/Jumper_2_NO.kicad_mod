@@ -1,7 +1,7 @@
 (footprint "Jumper_2_NO"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -30,18 +30,6 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "3e7e486a-83e9-4b9d-a749-a94bfb46b505")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -51,6 +39,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -63,9 +52,11 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
+	(attr exclude_from_pos_files exclude_from_bom dnp)
 	(fp_line
 		(start -1.1176 0.762)
 		(end -1.1176 -0.762)
@@ -157,7 +148,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "4d9bcd54-81ca-47a0-b213-052ec953859d")
 	)
@@ -175,4 +166,5 @@
 		(thermal_bridge_angle 0)
 		(uuid "b45389f8-b02a-486c-a629-7efe1c50855f")
 	)
+	(embedded_fonts no)
 )

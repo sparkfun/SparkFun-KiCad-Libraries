@@ -1,7 +1,7 @@
 (footprint "Fiducial_0.5mm_Mask1mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Circular Fiducial, 0.5mm bare copper, 1mm soldermask opening (Level C)")
 	(tags "SparkFun fiducial")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2c93c6cc-f696-4288-9751-3caf04f19ed7")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,10 +49,11 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
-	(attr smd)
+	(attr smd exclude_from_pos_files exclude_from_bom dnp)
 	(fp_circle
 		(center 0 0)
 		(end 0.75 0)
@@ -71,7 +61,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "4c78e013-71f1-4909-a070-4cd089eaf3dd")
 	)
@@ -82,7 +72,7 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "bef66854-39df-4aca-8c72-c7bef9ecd307")
 	)
@@ -93,4 +83,5 @@
 		(clearance 0.25)
 		(uuid "d9c4ce61-8eb7-423a-b180-a4997020369c")
 	)
+	(embedded_fonts no)
 )
