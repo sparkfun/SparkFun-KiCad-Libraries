@@ -11449,7 +11449,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at -8.89 12.7 0)
+			(at -8.89 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11457,7 +11457,7 @@
 			)
 		)
 		(property "Value" "P23M"
-			(at 7.62 12.7 0)
+			(at 7.62 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11465,7 +11465,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-GNSS:P23M"
-			(at 0 -12.7 0)
+			(at 0 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11474,7 +11474,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/9/d/a/7/3/P23M_Datasheet_1.3.pdf"
-			(at 0 -17.78 0)
+			(at 0 -19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11483,7 +11483,7 @@
 			)
 		)
 		(property "Description" "Tri-band high percision RTK GNSS receiver with HAS capabilities"
-			(at 0 -21.59 0)
+			(at 0 -22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11492,7 +11492,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-28074"
-			(at 0 -15.24 0)
+			(at 0 -16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11511,7 +11511,7 @@
 		)
 		(symbol "P23M_1_0"
 			(pin output line
-				(at 12.7 5.08 180)
+				(at 12.7 6.35 180)
 				(length 2.54)
 				(name "TXD2"
 					(effects
@@ -11529,7 +11529,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 2.54 180)
+				(at 12.7 3.81 180)
 				(length 2.54)
 				(name "RXD2"
 					(effects
@@ -11547,7 +11547,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 12.7 1.27 180)
 				(length 2.54)
 				(name "TXD3"
 					(effects
@@ -11565,7 +11565,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 -2.54 180)
+				(at 12.7 -1.27 180)
 				(length 2.54)
 				(name "RXD3"
 					(effects
@@ -11582,8 +11582,44 @@
 					)
 				)
 			)
+			(pin bidirectional line
+				(at 12.7 -3.81 180)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 12.7 -6.35 180)
+				(length 2.54)
+				(name "SCL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
-				(at 12.7 -7.62 180)
+				(at 12.7 -8.89 180)
 				(length 2.54)
 				(name "EXTINT"
 					(effects
@@ -11601,7 +11637,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 21.59 8.89 180)
+				(at 21.59 7.62 180)
 				(length 2.54)
 				(hide yes)
 				(name "RESERVED"
@@ -11620,7 +11656,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 21.59 3.81 180)
+				(at 21.59 2.54 180)
 				(length 2.54)
 				(hide yes)
 				(name "PICO"
@@ -11639,7 +11675,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 21.59 1.27 180)
+				(at 21.59 0 180)
 				(length 2.54)
 				(hide yes)
 				(name "POCI"
@@ -11657,49 +11693,11 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at 21.59 -1.27 180)
-				(length 2.54)
-				(hide yes)
-				(name "SDA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 21.59 -3.81 180)
-				(length 2.54)
-				(hide yes)
-				(name "SCL"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 		)
 		(symbol "P23M_1_1"
 			(rectangle
-				(start -10.16 11.43)
-				(end 10.16 -11.43)
+				(start -10.16 12.7)
+				(end 10.16 -12.7)
 				(stroke
 					(width 0)
 					(type default)
@@ -11709,7 +11707,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 10.16 0)
+				(at -12.7 11.43 0)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -11727,7 +11725,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 7.62 0)
+				(at -12.7 8.89 0)
 				(length 2.54)
 				(name "VBAT"
 					(effects
@@ -11745,7 +11743,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 5.08 0)
+				(at -12.7 6.35 0)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -11763,7 +11761,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 0 0)
+				(at -12.7 1.27 0)
 				(length 2.54)
 				(name "RF_IN"
 					(effects
@@ -11781,7 +11779,7 @@
 				)
 			)
 			(pin power_out line
-				(at -12.7 -2.54 0)
+				(at -12.7 -1.27 0)
 				(length 2.54)
 				(name "VCC_RF"
 					(effects
@@ -11799,7 +11797,7 @@
 				)
 			)
 			(pin output line
-				(at -12.7 -5.08 0)
+				(at -12.7 -3.81 0)
 				(length 2.54)
 				(name "RTK_STAT"
 					(effects
@@ -11817,7 +11815,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -10.16 0)
+				(at -12.7 -11.43 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -11835,7 +11833,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -10.16 0)
+				(at -12.7 -11.43 0)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -11854,7 +11852,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -10.16 0)
+				(at -12.7 -11.43 0)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -11873,7 +11871,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -10.16 0)
+				(at -12.7 -11.43 0)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -11892,7 +11890,7 @@
 				)
 			)
 			(pin power_in line
-				(at -12.7 -10.16 0)
+				(at -12.7 -11.43 0)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -11911,7 +11909,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 10.16 180)
+				(at 12.7 11.43 180)
 				(length 2.54)
 				(name "TXD1"
 					(effects
@@ -11929,7 +11927,7 @@
 				)
 			)
 			(pin input line
-				(at 12.7 7.62 180)
+				(at 12.7 8.89 180)
 				(length 2.54)
 				(name "RXD1"
 					(effects
@@ -11947,7 +11945,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -10.16 180)
+				(at 12.7 -11.43 180)
 				(length 2.54)
 				(name "TIMEPULSE"
 					(effects
@@ -11965,7 +11963,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 21.59 6.35 180)
+				(at 21.59 5.08 180)
 				(length 2.54)
 				(hide yes)
 				(name "RESERVED"
