@@ -2199,7 +2199,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "CH213B"
+	(symbol "CH213K"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2241,7 +2241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Ideal diode with PTC, max 5V/0.5A"
+		(property "Description" "Ideal diode with PTC, max 5V/0.5A, reverse polarity protection"
 			(at 0 -6.35 0)
 			(effects
 				(font
@@ -2250,8 +2250,35 @@
 				(hide yes)
 			)
 		)
-		(property "PROD_ID" "IC-..."
+		(property "PROD_ID" "IC-28273"
 			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Iq" "3.2uA"
+			(at 0 -19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "VDrop" "80mV"
+			(at 0 -16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Trip" "1.3A"
+			(at 0 -21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2268,7 +2295,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "CH213B_1_0"
+		(symbol "CH213K_1_0"
 			(polyline
 				(pts
 					(xy -1.27 2.2225) (xy -1.27 1.27)
@@ -2420,7 +2447,7 @@
 				)
 			)
 		)
-		(symbol "CH213B_1_1"
+		(symbol "CH213K_1_1"
 			(rectangle
 				(start -7.62 2.54)
 				(end 7.62 -2.54)
