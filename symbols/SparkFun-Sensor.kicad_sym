@@ -23,7 +23,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Nonstandard:OLGA16"
-			(at 0 -34.29 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,7 +32,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn.sparkfun.com/assets/b/8/6/d/2/AS7331_DS001047_4-00.pdf"
-			(at 0 -29.21 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41,7 +41,7 @@
 			)
 		)
 		(property "Description" "3-Channel UV Spectral Sensor"
-			(at 0 -26.67 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -50,7 +50,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-20090"
-			(at 0 -31.75 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -70,14 +70,13 @@
 		(symbol "AS7331_1_1"
 			(rectangle
 				(start -7.62 10.16)
-				(end 7.62 -12.7)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0)
 					(type solid)
 				)
 				(fill
-					(type color)
-					(color 255 255 194 1)
+					(type background)
 				)
 			)
 			(pin power_in line
@@ -171,62 +170,9 @@
 				)
 			)
 			(pin power_in line
-				(at -5.08 -15.24 90)
+				(at -10.16 -5.08 0)
 				(length 2.54)
-				(name "VSSA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at -2.54 -15.24 90)
-				(length 2.54)
-				(name "VSSA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -15.24 90)
-				(length 2.54)
-				(name "VSSA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -15.24 90)
-				(length 2.54)
+				(hide yes)
 				(name "VSSA"
 					(effects
 						(font
@@ -243,8 +189,9 @@
 				)
 			)
 			(pin power_in line
-				(at 5.08 -15.24 90)
+				(at -10.16 -5.08 0)
 				(length 2.54)
+				(hide yes)
 				(name "VSSA"
 					(effects
 						(font
@@ -253,6 +200,63 @@
 					)
 				)
 				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "VSSA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "VSSA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -5.08 0)
+				(length 2.54)
+				(hide yes)
+				(name "VSSA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7266,7 +7270,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-			(at 0 10.16 0)
+			(at 0 8.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7274,7 +7278,7 @@
 			)
 		)
 		(property "Value" "TCS3430"
-			(at 0 7.62 0)
+			(at 0 6.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7282,7 +7286,7 @@
 			)
 		)
 		(property "Footprint" "SparkFun-Sensor:TCS3430"
-			(at 0 -16.51 0)
+			(at 0 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7291,7 +7295,7 @@
 			)
 		)
 		(property "Datasheet" "https://look.ams-osram.com/m/565e57ee81583733/original/TCS3430-Color-and-ALS-sensor.pdf"
-			(at 0 -11.43 0)
+			(at 0 -10.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7300,7 +7304,7 @@
 			)
 		)
 		(property "Description" "Tristimulus color sensor"
-			(at 0 -8.89 0)
+			(at 0 -7.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7309,7 +7313,7 @@
 			)
 		)
 		(property "PROD_ID" "IC-27845"
-			(at 0 -13.97 0)
+			(at 0 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7319,8 +7323,8 @@
 		)
 		(symbol "TCS3430_0_1"
 			(rectangle
-				(start -7.62 6.35)
-				(end 7.62 -6.35)
+				(start -7.62 3.81)
+				(end 7.62 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -7332,7 +7336,7 @@
 		)
 		(symbol "TCS3430_1_1"
 			(pin power_in line
-				(at -10.16 5.08 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -7349,8 +7353,46 @@
 					)
 				)
 			)
+			(pin no_connect line
+				(at -10.16 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 0 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -10.16 -3.81 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -7368,8 +7410,9 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -5.08 0)
+				(at -10.16 -3.81 0)
 				(length 2.54)
+				(hide yes)
 				(name "GND"
 					(effects
 						(font
@@ -7386,7 +7429,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 5.08 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -7404,7 +7447,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 2.54 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -7422,7 +7465,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 0 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "~{INT}"
 					(effects
@@ -7432,42 +7475,6 @@
 					)
 				)
 				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 -2.54 180)
-				(length 2.54)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 10.16 -5.08 180)
-				(length 2.54)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
