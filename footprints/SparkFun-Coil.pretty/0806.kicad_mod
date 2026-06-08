@@ -1,7 +1,7 @@
 (footprint "0806"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -23,19 +23,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "084bc12c-d304-47fb-b4f3-53309ee8506d")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -73,8 +60,8 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
-		(layer "Margin")
+		(fill no)
+		(layer "F.CrtYd")
 		(uuid "73dd0605-b068-4c08-94cc-e2c1b489b2ec")
 	)
 	(fp_rect
@@ -84,7 +71,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
 		(uuid "eec1bf49-ec17-434e-98fd-6d246f7fdf57")
 	)
@@ -96,7 +83,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "29f2f21f-51bb-49e7-91d9-08f063e3fc62")
 	)
@@ -108,22 +95,34 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "290f75dd-889e-4a2b-a4be-5a02c2b8d6e0")
 	)
 	(pad "1" smd rect
 		(at -0.9 0 90)
 		(size 1.8 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "9a9658d4-412b-407d-b4f8-1d282ae21701")
 	)
 	(pad "2" smd rect
 		(at 0.9 0 90)
 		(size 1.8 0.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 45)
 		(uuid "be0f8a34-92bb-4c0a-8962-f5ca30e8de6f")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Coil.3dshapes/Inductor_0806.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
 	)
 )
