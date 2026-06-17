@@ -183,6 +183,17 @@
 		(layer "F.CrtYd")
 		(uuid "1a8f2675-ea40-4822-9dd9-ed65935da123")
 	)
+	(fp_rect
+		(start -4.75 -1.5)
+		(end 4.75 2.55)
+		(stroke
+			(width 0.01)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "61c11a27-1855-422b-9a1d-a57b707c2894")
+	)
 	(fp_poly
 		(pts
 			(xy -4.475 2.55) (xy -4.275 2.55) (xy -4.275 0.35) (xy -4.475 0.35)
@@ -268,25 +279,14 @@
 		(uuid "157acf48-a0a7-44d2-8999-a6a406e87129")
 	)
 	(fp_rect
-		(start -4.75 -1.5)
-		(end 4.75 2.55)
-		(stroke
-			(width 0.01)
-			(type default)
-		)
-		(fill no)
-		(layer "User.1")
-		(uuid "61c11a27-1855-422b-9a1d-a57b707c2894")
-	)
-	(fp_rect
 		(start -3.75 -0.3)
 		(end 3.75 5.4)
 		(stroke
 			(width 0.01)
-			(type default)
+			(type solid)
 		)
 		(fill no)
-		(layer "User.1")
+		(layer "User.2")
 		(uuid "a8b42097-90d4-45d1-8311-7365504c22e7")
 	)
 	(fp_text user "Connector"
