@@ -1,0 +1,228 @@
+(footprint "SFA40"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 6.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f7efd3b0-122d-4387-8303-5d13c371b153")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SFA40"
+		(at 0 8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a39ed054-ca49-45e7-a66b-4471e66e6963")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://sensirion.com/media/documents/5B06EDD9/69F84BD8/Sensirion_Datasheet_SFA40.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3946d8d0-cbc6-4d3e-b646-2846de4942c0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "153d8569-2c68-4c1a-926f-bd443a921922")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "PROD_ID" "IC-28735"
+		(at 0 11 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "95a7b8b7-d31e-445d-bfa9-9eba5f3b2f5a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -6.5 -5)
+		(end 6.5 -5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3077a9fd-b003-4abe-85d6-04739875f235")
+	)
+	(fp_line
+		(start -6.5 -3.5)
+		(end -6.5 -5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "de374721-caf3-4ae9-9e2c-5a60152a09f8")
+	)
+	(fp_line
+		(start -6.5 5)
+		(end -6.5 3.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8d175a00-dcdd-49aa-85c2-8405fd4f753d")
+	)
+	(fp_line
+		(start 6.5 -5)
+		(end 6.5 -3.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "2aece562-7c05-49c3-94ba-685dbe1f6ce9")
+	)
+	(fp_line
+		(start 6.5 3.5)
+		(end 6.5 5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "3badd67a-8e95-4775-a7f5-af9d58bb381c")
+	)
+	(fp_line
+		(start 6.5 5)
+		(end -6.5 5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "72e3d264-2ccb-4670-879e-153eed2c943e")
+	)
+	(fp_circle
+		(center -7 -4.5)
+		(end -7 -4.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "740076f6-33bd-41c6-b1e4-a074ffd67a78")
+	)
+	(fp_rect
+		(start -6.5 -5)
+		(end 6.5 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8baa8227-9770-43fa-8cf1-92040428b122")
+	)
+	(fp_rect
+		(start -6.5 -5)
+		(end 6.5 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "10d5c98b-1bb4-4494-bdf6-4d5f7a131626")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 9.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "77d9b00e-e1f5-46cd-8656-b48a09b4eb73")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -6.655 -2.5)
+		(size 1.19 1.06)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "9f3e8814-9f21-4eb5-ad29-3a2c14452036")
+	)
+	(pad "2" smd roundrect
+		(at -6.655 0)
+		(size 1.19 1.06)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "f4097301-118e-49dc-8f5f-fc9c1a55fa2b")
+	)
+	(pad "3" smd roundrect
+		(at -6.655 2.5)
+		(size 1.19 1.06)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "3045ef65-1f21-409d-b4d5-84b2ca6c4ba1")
+	)
+	(pad "4" smd roundrect
+		(at 6.655 2.5)
+		(size 1.19 1.06)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "fd6695fb-c1cf-4567-a790-7877a54fe957")
+	)
+	(pad "5" smd roundrect
+		(at 6.655 0)
+		(size 1.19 1.06)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "4286f609-ba42-4b78-b72f-8f00d8965f38")
+	)
+	(pad "6" smd roundrect
+		(at 6.655 -2.5)
+		(size 1.19 1.06)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(uuid "49dbaa4b-8c6d-4e3d-adee-17dc74aa3bfd")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/geoff.mcintyre/Downloads/STEP_file_SFA40 (1).stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

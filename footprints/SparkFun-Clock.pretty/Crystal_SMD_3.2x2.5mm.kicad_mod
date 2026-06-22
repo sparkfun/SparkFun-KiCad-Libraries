@@ -1,7 +1,7 @@
 (footprint "Crystal_SMD_3.2x2.5mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "<h3>3.2 x 2.5mm SMD Crystal Package</h3>\n<p>Example: <a href=\"http://www.digikey.com/product-search/en?keywords=SER3627TR-ND\">SX-32S</a></p>")
 	(tags "SparkFun")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "47cadf41-d575-4d2e-bef9-b2bcb6178135")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -104,6 +94,17 @@
 		(layer "F.SilkS")
 		(uuid "565c4926-f7d3-47d7-a61c-48c781c6fd8e")
 	)
+	(fp_circle
+		(center -1.75 2)
+		(end -1.85 2)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "1eeda2d3-669c-4d58-938e-b7382f2a6446")
+	)
 	(fp_rect
 		(start 1.9 -1.6)
 		(end -1.9 1.6)
@@ -111,7 +112,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "025a3e38-ccdc-4439-99ab-3d987da99470")
 	)
@@ -163,7 +164,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "9f48c8fc-d40a-4484-b484-e23bb595fbf1")
 	)
@@ -175,7 +176,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "2280558a-b499-435b-8996-6b4f37134f59")
 	)
@@ -187,7 +188,7 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "52d39e09-5942-4a31-b5a2-688118879b97")
 	)
@@ -199,38 +200,39 @@
 			(width 0)
 			(type default)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
 		(uuid "4b92949f-8384-4d71-8705-4658e92a0d50")
 	)
 	(pad "1" smd rect
 		(at -1.1 0.85 180)
 		(size 1.4 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "29b5d5ab-5675-4ece-9cef-c8b83f777a29")
 	)
 	(pad "2" smd rect
 		(at 1.1 0.85)
 		(size 1.4 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "104313e5-a58d-4ef8-ba5a-37b2bcf73c64")
 	)
 	(pad "3" smd rect
 		(at 1.1 -0.85)
 		(size 1.4 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "ff1df89a-dcdf-495c-8062-49cdeedea400")
 	)
 	(pad "4" smd rect
 		(at -1.1 -0.85 180)
 		(size 1.4 1.2)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
 		(uuid "d7ad2bd3-dfeb-4509-9dd4-163427a4765d")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Clock.3dshapes/Crystal_SMD_3.2x2.5mm.step"
 		(offset
 			(xyz 0 0 0)
