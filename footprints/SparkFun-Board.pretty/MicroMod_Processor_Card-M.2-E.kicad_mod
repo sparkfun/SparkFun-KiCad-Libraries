@@ -1,4 +1,4 @@
-(footprint "M.2-CARD-E-22"
+(footprint "MicroMod_Processor_Card-M.2-E"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -6,12 +6,12 @@
 	(property "Reference" "REF**"
 		(at 0 1 0)
 		(unlocked yes)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(hide yes)
 		(uuid "40a5dd0d-654d-48ed-8e9a-6d2d7850138c")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.5 0.5)
 				(thickness 0.1)
 			)
 		)
@@ -24,8 +24,8 @@
 		(uuid "0339a480-e9f4-43b5-a3b3-8b172dbf468a")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -344,28 +344,6 @@
 		(layer "F.Fab")
 		(uuid "1f71b756-a367-4b21-a313-9ff564500f99")
 	)
-	(fp_text user "Chamfered edge"
-		(at -6 1 0)
-		(unlocked yes)
-		(layer "Dwgs.User")
-		(uuid "d42df42e-e0a9-4cfe-a6f9-e156d370780c")
-		(effects
-			(font
-				(size 0.6 0.6)
-			)
-		)
-	)
-	(fp_text user "0.8mm PCB"
-		(at -6 2 0)
-		(unlocked yes)
-		(layer "Dwgs.User")
-		(uuid "936515d0-147e-4d71-8a56-767ebef202d8")
-		(effects
-			(font
-				(size 0.6 0.6)
-			)
-		)
-	)
 	(fp_text user "Critical dimension"
 		(at -2.5 3 0)
 		(unlocked yes)
@@ -374,6 +352,7 @@
 		(effects
 			(font
 				(size 0.6 0.6)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -385,6 +364,7 @@
 		(effects
 			(font
 				(size 0.6 0.6)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -396,17 +376,30 @@
 		(effects
 			(font
 				(size 0.3 0.3)
+				(thickness 0.15)
 			)
 		)
 	)
-	(fp_text user "${REFERENCE}"
-		(at 0 -6.25 0)
+	(fp_text user "0.8mm PCB"
+		(at -6 2 0)
 		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "707ced3f-9d2b-4bd2-94c7-7560431a98f9")
+		(layer "Dwgs.User")
+		(uuid "936515d0-147e-4d71-8a56-767ebef202d8")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "Chamfered edge"
+		(at -6 1 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "d42df42e-e0a9-4cfe-a6f9-e156d370780c")
+		(effects
+			(font
+				(size 0.6 0.6)
 				(thickness 0.15)
 			)
 		)
@@ -1165,6 +1158,8 @@
 		(uuid "54559729-76e4-442a-9b8d-64bd83e654a0")
 	)
 	(zone
+		(net 0)
+		(net_name "")
 		(layer "B.CrtYd")
 		(uuid "14234928-e88d-4a2e-b0f0-8c3c776cc918")
 		(hatch edge 0.5)
@@ -1172,6 +1167,7 @@
 			(clearance 0)
 		)
 		(min_thickness 0.25)
+		(filled_areas_thickness no)
 		(keepout
 			(tracks allowed)
 			(vias not_allowed)
@@ -1186,7 +1182,6 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
@@ -1196,6 +1191,8 @@
 		)
 	)
 	(zone
+		(net 0)
+		(net_name "")
 		(layer "F.CrtYd")
 		(uuid "2e0aca8a-9214-464c-bd7e-144dadc21a5b")
 		(hatch edge 0.5)
@@ -1203,6 +1200,7 @@
 			(clearance 0)
 		)
 		(min_thickness 0.25)
+		(filled_areas_thickness no)
 		(keepout
 			(tracks allowed)
 			(vias not_allowed)
@@ -1217,7 +1215,6 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
 		)
 		(polygon
 			(pts

@@ -1,4 +1,4 @@
-(footprint "M.2-CARD-E-22_FUNCTION_STANDARD"
+(footprint "MicroMod_Function_Card-M.2-E"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -6,12 +6,12 @@
 	(property "Reference" "REF**"
 		(at 0 -0.5 0)
 		(unlocked yes)
-		(layer "F.SilkS")
+		(layer "F.Fab")
 		(hide yes)
 		(uuid "0b710541-e844-4c27-9a8b-5b0d94443d82")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.5 0.5)
 				(thickness 0.1)
 			)
 		)
@@ -24,8 +24,8 @@
 		(uuid "cbab6e50-2ba1-41b7-a02b-60238637f773")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
@@ -369,39 +369,7 @@
 		(effects
 			(font
 				(size 0.3 0.3)
-			)
-		)
-	)
-	(fp_text user "Chamfered edge"
-		(at -6 1 0)
-		(unlocked yes)
-		(layer "Dwgs.User")
-		(uuid "bf3ea9b5-6d4f-42f3-b30d-3c2dbb18b270")
-		(effects
-			(font
-				(size 0.6 0.6)
-			)
-		)
-	)
-	(fp_text user "0.8mm PCB"
-		(at -6 2 0)
-		(unlocked yes)
-		(layer "Dwgs.User")
-		(uuid "c9de24ae-eefe-4ff9-97fb-3f56dd279de7")
-		(effects
-			(font
-				(size 0.6 0.6)
-			)
-		)
-	)
-	(fp_text user "Critical dimension"
-		(at -2.5 3 0)
-		(unlocked yes)
-		(layer "Dwgs.User")
-		(uuid "278c15a9-6f04-4f0c-9fb1-b81eaf3ed390")
-		(effects
-			(font
-				(size 0.6 0.6)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -413,6 +381,19 @@
 		(effects
 			(font
 				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "Critical dimension"
+		(at -2.5 3 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "278c15a9-6f04-4f0c-9fb1-b81eaf3ed390")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -424,17 +405,30 @@
 		(effects
 			(font
 				(size 0.3 0.3)
+				(thickness 0.15)
 			)
 		)
 	)
-	(fp_text user "${REFERENCE}"
-		(at 0.754 -7.75 0)
+	(fp_text user "Chamfered edge"
+		(at -6 1 0)
 		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "668cb018-fee7-4c8d-96b3-d18e38bf87b8")
+		(layer "Dwgs.User")
+		(uuid "bf3ea9b5-6d4f-42f3-b30d-3c2dbb18b270")
 		(effects
 			(font
-				(size 1 1)
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "0.8mm PCB"
+		(at -6 2 0)
+		(unlocked yes)
+		(layer "Dwgs.User")
+		(uuid "c9de24ae-eefe-4ff9-97fb-3f56dd279de7")
+		(effects
+			(font
+				(size 0.6 0.6)
 				(thickness 0.15)
 			)
 		)
@@ -1297,6 +1291,8 @@
 		(uuid "8e6c660c-d390-44e6-91f8-f604ae717bbb")
 	)
 	(zone
+		(net 0)
+		(net_name "")
 		(layer "B.CrtYd")
 		(uuid "4aec6fcb-8fff-4517-b603-956dfe4641a3")
 		(hatch edge 0.5)
@@ -1304,6 +1300,7 @@
 			(clearance 0)
 		)
 		(min_thickness 0.25)
+		(filled_areas_thickness no)
 		(keepout
 			(tracks allowed)
 			(vias not_allowed)
@@ -1318,7 +1315,6 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
@@ -1328,6 +1324,8 @@
 		)
 	)
 	(zone
+		(net 0)
+		(net_name "")
 		(layer "F.CrtYd")
 		(uuid "28db6838-2ee2-4384-afbe-7f4aaa01d27c")
 		(hatch edge 0.5)
@@ -1335,6 +1333,7 @@
 			(clearance 0)
 		)
 		(min_thickness 0.25)
+		(filled_areas_thickness no)
 		(keepout
 			(tracks allowed)
 			(vias not_allowed)
@@ -1349,7 +1348,6 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
-			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
