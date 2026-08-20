@@ -29,14 +29,14 @@ jobs:
           echo "PCM_NAME_WITHOUT=$(ls SparkFun-KiCad-Libraries*-without-pcm.zip | rev | cut -c 5- | rev)" >> $GITHUB_ENV
 
       - name: Upload with-pcm build to action - avoid double-zip
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with: 
           name: ${{ env.PCM_NAME_WITH }}
           path: ./pcm/build/${{ env.PCM_NAME_WITH }}
           retention-days: 7
 
       - name: Upload without-pcm build to action - avoid double-zip
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with: 
           name: ${{ env.PCM_NAME_WITHOUT }}
           path: ./pcm/build/${{ env.PCM_NAME_WITHOUT }}
