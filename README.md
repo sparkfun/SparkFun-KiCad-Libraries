@@ -41,6 +41,8 @@ From the fall of 2025, releases of these libraries are available via the KiCad P
 
 Open the PCM, select the "Libraries" tab, and type "SparkFun" into the search box. The "Install" button will install the latest release of the libraries.
 
+**If you are using KiCad 10 :** after installing the libraries through the PCM, **close KiCad** and reopen. Only then will the new libraries be visible.
+
 **Note:** this method assumes you have the KiCad Library nickname prefix set to the default of 'PCM_'. If you have cleared the Library nickname prefix, use the [next option](#installing-a-release-from-zip-file---without-the-pcm_-library-nickname-prefix) to install from zip file.
 
 ### Installing a release from zip file - without the PCM_ Library nickname prefix
@@ -59,6 +61,8 @@ If you install these libraries though the PCM, the installation assumes the pref
 ![Release Assets](./img/Release_Assets.png)
 
 ![PCM Install From File](./img/PCM_Install_From_File.png)
+
+**If you are using KiCad 10 :** after installing the libraries from file, **close KiCad** and reopen. Only then will the new libraries be visible.
 
 If you are changing the Library prefix to use this installation method, we recommend: clearing the prefix, OK the changes, **close KiCad** and reopen before installing the zip file.
 
@@ -83,6 +87,8 @@ Then likewise in the **Footprint Editor**, select `Preferences \ Manage Footprin
 ![Adding the footprints](./img/Add_Footprints.png)
 
 ![Added footprints](./img/Added_Footprints.png)
+
+**If you are using KiCad 10 :** after installing the libraries from zip file, **close KiCad** and reopen. Only then will the new libraries be usable.
 
 ### Using Git
 
