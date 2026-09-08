@@ -56422,9 +56422,9 @@
 		)
 		(symbol "Debug-Cortex-2x5_P1.27mm_1_0"
 			(pin power_in line
-				(at -10.16 5.08 0)
+				(at -15.24 6.35 0)
 				(length 2.54)
-				(name "VCC"
+				(name "VCC/VTREF"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56440,9 +56440,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 2.54 180)
+				(at 15.24 3.81 180)
 				(length 2.54)
-				(name "SWDIO"
+				(name "SWDIO/JTMS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56458,7 +56458,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -15.24 -3.81 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -56476,9 +56476,9 @@
 				)
 			)
 			(pin output line
-				(at 10.16 0 180)
+				(at 15.24 1.27 180)
 				(length 2.54)
-				(name "SWDCLK"
+				(name "SWCLK/JTCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56494,7 +56494,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -15.24 -3.81 0)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -56513,9 +56513,9 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -2.54 180)
+				(at 15.24 -1.27 180)
 				(length 2.54)
-				(name "SWO"
+				(name "SWO/JTDO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56530,11 +56530,28 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -2.54 0)
+			(pin output line
+				(at 15.24 -3.81 180)
 				(length 2.54)
-				(hide yes)
-				(name "GND"
+				(name "JTDI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -1.27 0)
+				(length 2.54)
+				(name "GND/nTRST"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56544,13 +56561,13 @@
 				(number "9"
 					(effects
 						(font
-							(size 0 0)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin open_collector line
-				(at 10.16 5.08 180)
+				(at 15.24 6.35 180)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -56570,8 +56587,8 @@
 		)
 		(symbol "Debug-Cortex-2x5_P1.27mm_1_1"
 			(rectangle
-				(start -7.62 7.62)
-				(end 7.62 -5.08)
+				(start -12.7 7.62)
+				(end 12.7 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -56668,9 +56685,9 @@
 		)
 		(symbol "Debug-Cortex-2x5_P1.27mm-SMD-Unshrouded_1_0"
 			(pin power_in line
-				(at -10.16 5.08 0)
+				(at -15.24 6.35 0)
 				(length 2.54)
-				(name "VCC"
+				(name "VCC/VTREF"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56686,9 +56703,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 10.16 2.54 180)
+				(at 15.24 3.81 180)
 				(length 2.54)
-				(name "SWDIO"
+				(name "SWDIO/JTMS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56704,7 +56721,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -15.24 -3.81 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -56722,9 +56739,9 @@
 				)
 			)
 			(pin output line
-				(at 10.16 0 180)
+				(at 15.24 1.27 180)
 				(length 2.54)
-				(name "SWDCLK"
+				(name "SWCLK/JTCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56740,7 +56757,7 @@
 				)
 			)
 			(pin power_in line
-				(at -10.16 -2.54 0)
+				(at -15.24 -3.81 0)
 				(length 2.54)
 				(hide yes)
 				(name "GND"
@@ -56759,9 +56776,9 @@
 				)
 			)
 			(pin input line
-				(at 10.16 -2.54 180)
+				(at 15.24 -1.27 180)
 				(length 2.54)
-				(name "SWO"
+				(name "SWO/JTDO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56776,11 +56793,28 @@
 					)
 				)
 			)
-			(pin input line
-				(at -10.16 -2.54 0)
+			(pin output line
+				(at 15.24 -3.81 180)
 				(length 2.54)
-				(hide yes)
-				(name "GND"
+				(name "JTDI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -15.24 -1.27 0)
+				(length 2.54)
+				(name "GND/nTRST"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -56790,13 +56824,13 @@
 				(number "9"
 					(effects
 						(font
-							(size 0 0)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin open_collector line
-				(at 10.16 5.08 180)
+				(at 15.24 6.35 180)
 				(length 2.54)
 				(name "~{RESET}"
 					(effects
@@ -56816,8 +56850,8 @@
 		)
 		(symbol "Debug-Cortex-2x5_P1.27mm-SMD-Unshrouded_1_1"
 			(rectangle
-				(start -7.62 7.62)
-				(end 7.62 -5.08)
+				(start -12.7 7.62)
+				(end 12.7 -5.08)
 				(stroke
 					(width 0.254)
 					(type default)
