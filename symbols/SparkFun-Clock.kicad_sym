@@ -35,7 +35,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SparkFun-Clock:Crystal-SMD-5x3.2mm"
+		(property "Footprint" "SparkFun-Clock:Crystal_SMD_3.2x1.5mm"
 			(at 0 -7.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -46,7 +46,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -417,7 +417,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Y"
-			(at 0 2.54 0)
+			(at 0 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -427,7 +427,7 @@
 			)
 		)
 		(property "Value" "16MHz"
-			(at 0 -2.54 0)
+			(at 0 3.175 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -515,9 +515,21 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(rectangle
-				(start -0.762 -1.524)
-				(end 0.762 1.524)
+				(start -0.762 1.524)
+				(end 0.762 -1.524)
 				(stroke
 					(width 0)
 					(type default)
@@ -553,14 +565,14 @@
 				(number "1"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
 			(pin passive line
-				(at 2.54 0 180)
-				(length 1.27)
+				(at 0 -2.54 90)
+				(length 0.635)
 				(name "2"
 					(effects
 						(font
@@ -571,45 +583,44 @@
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
-			(pin no_connect line
-				(at -2.54 2.54 0)
+			(pin passive line
+				(at 2.54 0 180)
 				(length 1.27)
-				(hide yes)
-				(name "NC1"
+				(name "3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "NC1"
+				(number "3"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
-			(pin no_connect line
-				(at 2.54 2.54 180)
-				(length 1.27)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 0.635)
 				(hide yes)
-				(name "NC2"
+				(name "4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "NC2"
+				(number "4"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -631,7 +642,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Y"
-			(at 0 2.54 0)
+			(at 0 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -641,7 +652,7 @@
 			)
 		)
 		(property "Value" "24MHz"
-			(at 0 -2.54 0)
+			(at 0 3.175 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -729,9 +740,21 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(rectangle
-				(start -0.762 -1.524)
-				(end 0.762 1.524)
+				(start -0.762 1.524)
+				(end 0.762 -1.524)
 				(stroke
 					(width 0)
 					(type default)
@@ -767,14 +790,14 @@
 				(number "1"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
 			(pin passive line
-				(at 2.54 0 180)
-				(length 1.27)
+				(at 0 -2.54 90)
+				(length 0.635)
 				(name "2"
 					(effects
 						(font
@@ -785,45 +808,44 @@
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
-			(pin no_connect line
-				(at -2.54 2.54 0)
+			(pin passive line
+				(at 2.54 0 180)
 				(length 1.27)
-				(hide yes)
-				(name "NC1"
+				(name "3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "NC1"
+				(number "3"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
-			(pin no_connect line
-				(at 2.54 2.54 180)
-				(length 1.27)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 0.635)
 				(hide yes)
-				(name "NC2"
+				(name "4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "NC2"
+				(number "4"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -1070,7 +1092,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Y"
-			(at 0 2.54 0)
+			(at 0 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1080,7 +1102,7 @@
 			)
 		)
 		(property "Value" "25MHz"
-			(at 0 -2.54 0)
+			(at 0 3.175 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1168,9 +1190,21 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(rectangle
-				(start -0.762 -1.524)
-				(end 0.762 1.524)
+				(start -0.762 1.524)
+				(end 0.762 -1.524)
 				(stroke
 					(width 0)
 					(type default)
@@ -1206,14 +1240,14 @@
 				(number "1"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
 			(pin passive line
-				(at 2.54 0 180)
-				(length 1.27)
+				(at 0 -2.54 90)
+				(length 0.635)
 				(name "2"
 					(effects
 						(font
@@ -1224,45 +1258,44 @@
 				(number "2"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
-			(pin no_connect line
-				(at -2.54 2.54 0)
+			(pin passive line
+				(at 2.54 0 180)
 				(length 1.27)
-				(hide yes)
-				(name "NC1"
+				(name "3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "NC1"
+				(number "3"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
-			(pin no_connect line
-				(at 2.54 2.54 180)
-				(length 1.27)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 0.635)
 				(hide yes)
-				(name "NC2"
+				(name "4"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "NC2"
+				(number "4"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -1284,7 +1317,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "Y"
-			(at 0 2.54 0)
+			(at 0 5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1294,7 +1327,7 @@
 			)
 		)
 		(property "Value" "27.12MHz"
-			(at 0 -2.54 0)
+			(at 0 3.175 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1336,7 +1369,7 @@
 				)
 			)
 		)
-		(property "PROD_ID" "XTAL-"
+		(property "PROD_ID" "XTAL-09102"
 			(at 0 -10.16 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1382,9 +1415,21 @@
 					(type none)
 				)
 			)
+			(polyline
+				(pts
+					(xy -1.27 -1.27) (xy -1.27 -1.905) (xy 1.27 -1.905) (xy 1.27 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(rectangle
-				(start -0.762 -1.524)
-				(end 0.762 1.524)
+				(start -0.762 1.524)
+				(end 0.762 -1.524)
 				(stroke
 					(width 0)
 					(type default)
@@ -1420,14 +1465,14 @@
 				(number "1"
 					(effects
 						(font
-							(size 1.27 1.27)
+							(size 0.762 0.762)
 						)
 					)
 				)
 			)
 			(pin passive line
-				(at 2.54 0 180)
-				(length 1.27)
+				(at 0 -2.54 90)
+				(length 0.635)
 				(name "2"
 					(effects
 						(font
@@ -1438,7 +1483,44 @@
 				(number "2"
 					(effects
 						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 0 180)
+				(length 1.27)
+				(name "3"
+					(effects
+						(font
 							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 0.635)
+				(hide yes)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 0.762 0.762)
 						)
 					)
 				)
@@ -1848,6 +1930,9 @@
 		(embedded_fonts no)
 	)
 	(symbol "Crystal_GND"
+		(pin_numbers
+			(hide yes)
+		)
 		(pin_names
 			(offset 1.016)
 			(hide yes)
@@ -1888,7 +1973,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1899,7 +1984,7 @@
 				)
 			)
 		)
-		(property "Description" "Crystal GND"
+		(property "Description" "Crystal"
 			(at 0 -12.7 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1969,8 +2054,8 @@
 				)
 			)
 			(rectangle
-				(start -0.762 -1.524)
-				(end 0.762 1.524)
+				(start -0.762 1.524)
+				(end 0.762 -1.524)
 				(stroke
 					(width 0)
 					(type default)
@@ -2040,6 +2125,25 @@
 					)
 				)
 				(number "3"
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 90)
+				(length 0.635)
+				(hide yes)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 0.762 0.762)

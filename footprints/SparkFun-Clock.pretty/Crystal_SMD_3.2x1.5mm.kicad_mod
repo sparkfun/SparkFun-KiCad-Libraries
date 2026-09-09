@@ -1,14 +1,14 @@
 (footprint "Crystal_SMD_3.2x1.5mm"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "http://www.sii.co.jp/en/quartz/files/2013/03/file_PRODUCT_MASTER_50812_GRAPHIC03.pdf https://abracon.com/Resonators/ABS07.pdf ")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
 		(at 0 -1.5 0)
 		(layer "F.Fab")
-		(uuid "c7d6ac32-6180-4d39-9a6c-76c5b6933dc6")
+		(uuid "10bc3b01-6824-4155-9976-7db06421f7b2")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -19,23 +19,11 @@
 	(property "Value" "Val**"
 		(at 0 1.5 0)
 		(layer "F.Fab")
-		(uuid "5ad98717-4699-4496-aa89-a375b9553a65")
+		(uuid "57933899-514d-4e88-8880-0bfb7920dcfc")
 		(effects
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "78444cd2-24ed-43c5-ad0e-8df033a0ca04")
-		(effects
-			(font
-				(size 1.27 1.27)
 			)
 		)
 	)
@@ -44,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "436ba3bd-6749-4b9e-8541-10420b9bf4c0")
+		(uuid "97fecfde-ef4e-4cca-ba9d-3c54081770a2")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,7 +44,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "0b9b88d1-a1b1-449e-a8f0-c08162fb4a27")
+		(uuid "8f005948-48f0-46cb-9245-dc917621be34")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -64,6 +52,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.5 -0.85)
 		(end 0.5 -0.85)
@@ -72,7 +61,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "479d8a2e-708a-44cc-923b-fe1cee721196")
+		(uuid "ffad0e16-adbc-4d86-bc63-40599b8d7feb")
 	)
 	(fp_line
 		(start 0.5 0.85)
@@ -82,7 +71,87 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "bd15f611-65e3-47c3-b9ee-45687117cc7f")
+		(uuid "531bf36a-7f76-4c06-be22-0b1c3c16a80c")
+	)
+	(fp_line
+		(start -0.35921 0)
+		(end -0.898026 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "773a3d67-cc48-432c-aaa4-16919eac1e02")
+	)
+	(fp_line
+		(start -0.35921 0.538815)
+		(end -0.35921 -0.538815)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "3b82dc14-d484-4989-a4bd-d9e279929bbe")
+	)
+	(fp_line
+		(start -0.179605 -0.35921)
+		(end 0.179605 -0.35921)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "243c802e-f640-47dc-acb1-3d74c0f972a2")
+	)
+	(fp_line
+		(start -0.179605 0.35921)
+		(end -0.179605 -0.35921)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "343fec1a-d803-430d-9eb1-936362770f8b")
+	)
+	(fp_line
+		(start -0.179605 0.35921)
+		(end 0.179605 0.35921)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "f1a7526d-db52-4728-b181-63b67c5b87a9")
+	)
+	(fp_line
+		(start 0.179605 0.35921)
+		(end 0.179605 -0.35921)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "e90b172d-31f4-4f8c-884c-ee57866962c9")
+	)
+	(fp_line
+		(start 0.35921 0.538815)
+		(end 0.35921 -0.538815)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "eab7c703-7b31-4a11-87fc-175b379bf381")
+	)
+	(fp_line
+		(start 0.898026 0)
+		(end 0.35921 0)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "88bc7705-a0be-462d-a20f-c80645fa6a66")
 	)
 	(fp_rect
 		(start 1.9 -1.1)
@@ -91,9 +160,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "3a700ba2-706f-4963-9820-269e96f848e0")
+		(uuid "61669b26-fb4f-4656-bb7c-d74358315edb")
 	)
 	(fp_line
 		(start -1.6 -0.75)
@@ -103,7 +172,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "a7dd4de0-a62c-434c-9bf4-4caed7ca4fad")
+		(uuid "6db9f8f1-1f57-431c-a97f-8c49964d0c34")
 	)
 	(fp_line
 		(start -1.6 0.75)
@@ -113,7 +182,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "d4f59ef7-d727-4ef1-9fc4-4244ed2c0a97")
+		(uuid "d4010a35-de6f-4f60-a3e6-8c8d0d5ff6be")
 	)
 	(fp_line
 		(start 1.6 -0.75)
@@ -123,7 +192,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "692b9f6d-7355-4cad-847d-fe4e78761735")
+		(uuid "c44e8d06-3b88-45e4-bc43-70cb8eb721f5")
 	)
 	(fp_line
 		(start 1.6 0.75)
@@ -133,22 +202,23 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "8106c420-f653-4f38-ba2b-b80882208ae8")
+		(uuid "8c46ea71-fd15-4358-bf10-7b68512660e6")
 	)
 	(pad "1" smd rect
 		(at -1.25 0)
 		(size 1 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "9fb8b81e-fc77-47f6-8431-183be4ac846a")
+		(uuid "b9f5b85b-be78-4ae9-b30a-9b48553f99ba")
 	)
 	(pad "2" smd rect
 		(at 1.25 0)
 		(size 1 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "cc96a263-0657-4b69-a34a-e04510e0b917")
+		(uuid "d0917842-1241-4dc0-9aff-e3952f6d49cc")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Clock.3dshapes/Crystal_SMD_3.2x1.5mm.step"
 		(offset
 			(xyz 0 0 0)
