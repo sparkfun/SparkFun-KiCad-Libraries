@@ -1,14 +1,14 @@
 (footprint "Inductor_7.3x6.6mm"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "https://productfinder.pulseelectronics.com/api/open/part-attachments/datasheet/BMRA000606306R8MA1")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
 		(at 0 -3.75 0)
 		(layer "F.Fab")
-		(uuid "82859c1f-f958-4e4c-aa60-23c600f6495d")
+		(uuid "64b85c3a-bb11-44e5-871f-30739a75142c")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -21,7 +21,7 @@
 	(property "Value" "Inductor_7.3x6.6mm"
 		(at 0 3.75 0)
 		(layer "F.Fab")
-		(uuid "027f9b1c-0768-40aa-a699-69ad88128d12")
+		(uuid "3621f42a-8d40-47b6-86ee-71387052c8f1")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -31,25 +31,12 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 90)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "8c9a0751-94bc-4b49-a39f-77362de88d59")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 90)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c556b192-67fc-49b9-bc25-4b7e611fa508")
+		(uuid "4c80289a-590b-41ad-997a-1be2d05ff724")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -62,7 +49,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "ce430919-c7ea-43cf-ba54-7dafbe55acb0")
+		(uuid "03c202f6-8f8d-4fde-87df-782da586346c")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -70,6 +57,8 @@
 			)
 		)
 	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -3.5 -3.5)
 		(end 3.5 -3.5)
@@ -78,7 +67,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "5158b745-26d6-4a2f-b46d-9aaa9646e334")
+		(uuid "55f357ad-1592-4948-a0c8-f09d82d237eb")
 	)
 	(fp_line
 		(start -3.5 3.5)
@@ -88,7 +77,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "3b384ec5-f350-46f6-91d6-35beeb97907a")
+		(uuid "5b3ed525-a56a-49a7-8056-cffe981d649a")
 	)
 	(fp_rect
 		(start -4 -3.5)
@@ -97,9 +86,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "13413304-1639-462b-92b6-411327bd60e5")
+		(uuid "1932d5af-cec1-4b36-a876-52a1018a133a")
 	)
 	(fp_rect
 		(start -3.65 -3.3)
@@ -108,24 +97,25 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "f194d075-8413-4c25-bee7-0b1650be3408")
+		(uuid "6db611a4-24e9-4702-9771-02f4dc7b1bae")
 	)
 	(pad "1" smd rect
 		(at -2.775 0)
 		(size 1.85 3.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "a1792448-55ab-4bf3-b1e4-0d11dd14e27a")
+		(uuid "ce3834e3-1020-4c4a-92c6-ce86dee6dfd0")
 	)
 	(pad "2" smd rect
 		(at 2.775 0)
 		(size 1.85 3.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "67e186a6-39a6-4f73-b3df-b0a5bd5129b9")
+		(uuid "4d2dd34f-96bb-4636-bc8d-9abbdbaf5ee6")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Coil.3dshapes/Inductor_7.3x6.6mm.stp"
 		(offset
 			(xyz 0 0 0)
