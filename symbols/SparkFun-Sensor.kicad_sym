@@ -353,7 +353,7 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
-			(at -17.78 20.828 0)
+			(at -16.764 16.764 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -364,7 +364,7 @@
 			)
 		)
 		(property "Value" "BNO086"
-			(at -17.78 -22.606 0)
+			(at -16.764 -19.304 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -430,8 +430,8 @@
 			)
 		)
 		(symbol "BNO086_1_0"
-			(pin bidirectional line
-				(at -20.32 -15.24 0)
+			(pin power_in line
+				(at -19.05 -13.97 0)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -448,8 +448,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -20.32 17.78 0)
+			(pin power_in line
+				(at -19.05 13.97 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -466,8 +466,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -20.32 5.08 0)
+			(pin input line
+				(at -19.05 6.35 0)
 				(length 2.54)
 				(name "~{BOOT}"
 					(effects
@@ -485,7 +485,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 10.16 0)
+				(at -19.05 -6.35 0)
 				(length 2.54)
 				(name "PS1"
 					(effects
@@ -503,7 +503,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 12.7 0)
+				(at -19.05 -3.81 0)
 				(length 2.54)
 				(name "PS0/WAKE"
 					(effects
@@ -521,7 +521,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -17.78 180)
+				(at -19.05 -11.43 0)
 				(length 2.54)
 				(name "CAP"
 					(effects
@@ -539,7 +539,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -20.32 -12.7 0)
+				(at 19.05 -13.97 180)
 				(length 2.54)
 				(name "CLKSEL0"
 					(effects
@@ -556,8 +556,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 17.78 180)
+			(pin input line
+				(at -19.05 1.27 0)
 				(length 2.54)
 				(name "~{RST}"
 					(effects
@@ -574,8 +574,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 0 180)
+			(pin output line
+				(at 19.05 -3.81 180)
 				(length 2.54)
 				(name "~{H_INT}"
 					(effects
@@ -593,7 +593,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 12.7 180)
+				(at 19.05 11.43 180)
 				(length 2.54)
 				(name "ENV_SCL"
 					(effects
@@ -611,7 +611,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 15.24 180)
+				(at 19.05 13.97 180)
 				(length 2.54)
 				(name "ENV_SDA"
 					(effects
@@ -629,7 +629,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 10.16 180)
+				(at 19.05 6.35 180)
 				(length 2.54)
 				(name "H_SA0/MOSI"
 					(effects
@@ -646,8 +646,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 17.78 2.54 180)
+			(pin input line
+				(at 19.05 -1.27 180)
 				(length 2.54)
 				(name "~{H_CS}"
 					(effects
@@ -665,7 +665,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 7.62 180)
+				(at 19.05 3.81 180)
 				(length 2.54)
 				(name "H_SCL/SCLK/RX"
 					(effects
@@ -683,7 +683,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 5.08 180)
+				(at 19.05 1.27 180)
 				(length 2.54)
 				(name "H_SDA/MISO/TX"
 					(effects
@@ -700,10 +700,11 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -20.32 -17.78 0)
+			(pin power_in line
+				(at -19.05 -13.97 0)
 				(length 2.54)
-				(name "GNDIO"
+				(hide yes)
+				(name "GND"
 					(effects
 						(font
 							(size 1.524 1.524)
@@ -719,9 +720,9 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -10.16 180)
+				(at 19.05 -11.43 180)
 				(length 2.54)
-				(name "CLKSEL1"
+				(name "CLKSEL1/XOUT32"
 					(effects
 						(font
 							(size 1.524 1.524)
@@ -737,7 +738,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 17.78 -7.62 180)
+				(at 19.05 -8.89 180)
 				(length 2.54)
 				(name "XIN32"
 					(effects
@@ -754,8 +755,8 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -20.32 15.24 0)
+			(pin power_in line
+				(at -19.05 11.43 0)
 				(length 2.54)
 				(name "VDDIO"
 					(effects
@@ -775,8 +776,8 @@
 		)
 		(symbol "BNO086_1_1"
 			(rectangle
-				(start -17.78 20.32)
-				(end 15.24 -20.32)
+				(start -16.51 16.51)
+				(end 16.51 -16.51)
 				(stroke
 					(width 0)
 					(type solid)
@@ -786,7 +787,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -805,7 +806,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -824,7 +825,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -843,7 +844,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -862,7 +863,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -881,7 +882,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -900,7 +901,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -919,7 +920,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
@@ -938,7 +939,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 17.78 -5.08 180)
+				(at -19.05 -1.27 0)
 				(length 2.54)
 				(hide yes)
 				(name "RESV_NC"
