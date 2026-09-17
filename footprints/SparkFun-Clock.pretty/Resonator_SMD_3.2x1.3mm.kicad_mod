@@ -1,7 +1,7 @@
 (footprint "Resonator_SMD_3.2x1.3mm"
-	(version 20241229)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "https://www.murata.com/en/products/productdata/8801162231838/SPEC-CSTNE16M0V530000R0.pdf")
 	(tags "SparkFun Resonator SMD")
@@ -9,7 +9,7 @@
 		(at 0 -1.27 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "1226ff78-d446-4bec-999d-98a892b6598a")
+		(uuid "bf56f6d2-378c-4c20-8ec2-d3da838489ce")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -22,7 +22,7 @@
 		(at 0 1.27 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "7032ad18-9e32-4e1e-a0c4-e281b78b155b")
+		(uuid "6422b6fd-8f2b-4432-b909-7bc8218c541a")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -35,7 +35,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c623b9f4-c5b6-40cd-bf31-681514163dab")
+		(uuid "6e69a89e-0140-45e5-af9b-9f74d0ea6ae7")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -47,7 +47,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "d2516750-e5b3-4e7e-8868-f4398170361f")
+		(uuid "6e4c6952-6a3e-4c51-95d4-b7ac45916bb6")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -55,6 +55,7 @@
 			)
 		)
 	)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_poly
 		(pts
 			(xy -1.750056 0.769615) (xy 1.744981 0.769615) (xy 1.744981 -0.76454) (xy -1.750056 -0.76454)
@@ -65,7 +66,7 @@
 		)
 		(fill yes)
 		(layer "F.Mask")
-		(uuid "0542c659-9dcc-46e6-aa14-4ab08bbf5970")
+		(uuid "cb9c0ca6-b45f-49ee-bc96-48bd94ec1383")
 	)
 	(fp_line
 		(start -1.87874 0.63984)
@@ -75,7 +76,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d378a262-7bfe-4c12-ab2d-059d9e5bf04a")
+		(uuid "19a0b16a-1720-4299-a6e9-bfa07f96d0be")
 	)
 	(fp_line
 		(start 1.871118 -0.660159)
@@ -85,7 +86,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "48387bf3-4858-44b9-91d8-5e44aabb7233")
+		(uuid "84e668e0-1479-4ba4-b4df-015bad584d60")
 	)
 	(fp_rect
 		(start -1.905 -0.9525)
@@ -96,7 +97,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "4527993a-8b8f-44cd-a13c-54a67cef27d3")
+		(uuid "7e196f52-cb1c-4412-8fdb-5f3e10c6247b")
 	)
 	(fp_line
 		(start -1.6 -0.65)
@@ -106,7 +107,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "98396875-acd4-4b4c-be15-90131e911d48")
+		(uuid "d177a735-3bb1-45f0-8b5f-017ca570a5e8")
 	)
 	(fp_line
 		(start -1.6 0.65)
@@ -116,7 +117,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fb74550c-b2d7-401d-a5a5-41330101aa92")
+		(uuid "da4b4c80-e525-4741-8858-684da07e5e18")
 	)
 	(fp_line
 		(start 1.6 -0.65)
@@ -126,7 +127,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9928b896-3678-4f89-a3f5-0b4425417efb")
+		(uuid "22dab6e5-3173-4af3-9c8e-5bafa639ff7f")
 	)
 	(fp_line
 		(start 1.6 0.65)
@@ -136,7 +137,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "763a005e-4461-4a1d-b832-ed646c3763dc")
+		(uuid "a70645ab-dc6f-4682-816c-6f3b15da3e4f")
 	)
 	(pad "1" smd roundrect
 		(at -1.2 0)
@@ -146,7 +147,7 @@
 		(solder_mask_margin 0.1016)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "7dc49914-3121-4559-9806-790ab92eea77")
+		(uuid "f0a17c05-16dd-4926-9250-21a60032f3c5")
 	)
 	(pad "2" smd roundrect
 		(at 0 0)
@@ -156,7 +157,7 @@
 		(solder_mask_margin 0.1016)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "8571641d-4fde-48fb-b614-ddfd632e89f9")
+		(uuid "52e74351-0a28-4b79-94f1-795d1de4d260")
 	)
 	(pad "3" smd roundrect
 		(at 1.2 0)
@@ -166,19 +167,16 @@
 		(solder_mask_margin 0.1016)
 		(solder_paste_margin 0)
 		(thermal_bridge_angle 0)
-		(uuid "9de3c091-c9bd-4d65-82b0-8496c47ff009")
+		(uuid "45a1b0c7-f0f4-4876-aba9-4bbecec42026")
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
-		(uuid "fd9f5a95-46ba-46df-8449-fddfb964c74a")
+		(uuid "75a1b148-c80e-4c80-8a40-5a3868cde4fe")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
 		)
 		(min_thickness 0.25)
-		(filled_areas_thickness no)
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
@@ -193,6 +191,7 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
@@ -201,16 +200,13 @@
 		)
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
-		(uuid "76e21c1f-73ba-4486-a613-7e647e7e3966")
+		(uuid "c0c1d285-9e32-4d61-835e-5d087f066cbf")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
 		)
 		(min_thickness 0.25)
-		(filled_areas_thickness no)
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
@@ -225,6 +221,7 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
@@ -233,16 +230,13 @@
 		)
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
-		(uuid "d2a4e52d-e78f-407a-9df7-52607fee01c9")
+		(uuid "b39863a0-dbb4-4d2d-a260-bd316b8e62d9")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
 		)
 		(min_thickness 0.25)
-		(filled_areas_thickness no)
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
@@ -257,6 +251,7 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
 		)
 		(polygon
 			(pts
@@ -265,16 +260,13 @@
 		)
 	)
 	(zone
-		(net 0)
-		(net_name "")
 		(layer "F.Cu")
-		(uuid "8cfcc80b-4fa0-4daf-9b20-7ae7a3e06434")
+		(uuid "b60aaca4-3c91-4e5b-98a5-16f9f451ebc7")
 		(hatch edge 0.5)
 		(connect_pads
 			(clearance 0)
 		)
 		(min_thickness 0.25)
-		(filled_areas_thickness no)
 		(keepout
 			(tracks not_allowed)
 			(vias not_allowed)
@@ -289,6 +281,7 @@
 		(fill
 			(thermal_gap 0.5)
 			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
 		)
 		(polygon
 			(pts

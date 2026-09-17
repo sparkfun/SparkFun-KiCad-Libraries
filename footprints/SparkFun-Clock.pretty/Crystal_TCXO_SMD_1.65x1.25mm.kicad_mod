@@ -1,14 +1,14 @@
 (footprint "Crystal_TCXO_SMD_1.65x1.25mm"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
-	(descr "<h3>IQD 26MHz TCXO</h3>\n<p>Specifications:\n<ul><li>Pin count: 4</li>\n<li>Area: 1.65 mm x 1.25 mm</li>\n</ul></p>\n<p><a href=https://www.mouser.co.uk/datasheet/2/741/iqxt-350-1-33-1075257.pdf>Datasheet referenced for footprint</a></p>")
+	(descr "IQD 26MHz TCXO https://www.mouser.co.uk/datasheet/2/741/iqxt-350-1-33-1075257.pdf")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
 		(at 0 -1.5 0)
 		(layer "F.Fab")
-		(uuid "466226ef-7cb9-4869-b60f-8a0fa15c7f2e")
+		(uuid "621bd938-b979-41b7-9849-c10e6c842d4d")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -19,23 +19,11 @@
 	(property "Value" "Crystal_TCXO_SMD-1.65x1.25mm"
 		(at 0 1.6 0)
 		(layer "F.Fab")
-		(uuid "a61cb438-e55f-4c11-987d-d16b6ce9d445")
+		(uuid "695e4f5a-6d62-4bca-b3dd-29373b4c69fb")
 		(effects
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c7ac70fc-648b-441c-836d-25868ba9a234")
-		(effects
-			(font
-				(size 1.27 1.27)
 			)
 		)
 	)
@@ -44,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9463d7c0-aba9-4537-8802-30368c3ff980")
+		(uuid "0134589f-5d5e-4ab4-b863-6d842126c9ea")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -56,7 +44,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "805e57a6-dc90-495c-a548-d74dbdea4603")
+		(uuid "8ff44021-cc55-4fe1-94fd-09981f58d65e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -64,6 +52,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -0.25 -0.625)
 		(end 0.25 -0.625)
@@ -72,7 +61,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "7528ef8e-4f41-4e69-ac2c-509c608c149b")
+		(uuid "1e1f548c-476a-4516-b761-91c58b10f9db")
 	)
 	(fp_line
 		(start -0.25 0.625)
@@ -82,7 +71,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e9442ef9-a5f1-4186-a65b-1df043dc733b")
+		(uuid "6c8310b4-4b04-4203-96dd-cf84c86fa75a")
 	)
 	(fp_circle
 		(center -1.297 0.508)
@@ -91,9 +80,9 @@
 			(width 0.2)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.SilkS")
-		(uuid "13ab26fa-70f1-4816-a2fd-3dcb04a3fae9")
+		(uuid "cb84d4bf-1c05-4401-b8c0-2a0d306cbb08")
 	)
 	(fp_rect
 		(start 1.1 -0.9)
@@ -102,9 +91,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "593be4cc-085e-4981-ba03-530061fea162")
+		(uuid "ccdee83f-ac4d-40fd-a2d5-93ebc56fc547")
 	)
 	(fp_line
 		(start -0.825 -0.625)
@@ -114,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "60da5a28-ffee-452f-8de4-28b7161e3557")
+		(uuid "f34640d7-9414-4553-a4d0-e9cde7d9b027")
 	)
 	(fp_line
 		(start -0.825 -0.625)
@@ -124,7 +113,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "78459295-1d17-4732-aeb7-ef99f206e18c")
+		(uuid "ac2827f0-a5bd-4375-a1ff-7ad967388c8a")
 	)
 	(fp_line
 		(start -0.825 0.625)
@@ -134,7 +123,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "77ee3a76-a0a6-4777-9967-2f2eab503cad")
+		(uuid "8f8d0dd1-ba2c-4fd6-a7d6-9c3585215010")
 	)
 	(fp_line
 		(start 0.825 -0.625)
@@ -144,34 +133,35 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c41c8943-8722-4652-aa34-33824f88c874")
+		(uuid "3d4bae80-7254-475a-b055-71afb4db4448")
 	)
 	(pad "1" smd rect
 		(at -0.7 0.475)
 		(size 0.5 0.55)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "47ad4961-bffe-443d-9b78-e64e2e34c251")
+		(uuid "82e6a1fc-6a90-4b58-8dbe-6a3af361b949")
 	)
 	(pad "2" smd rect
 		(at 0.7 0.475)
 		(size 0.5 0.55)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "33412ccf-3271-4a6e-8be5-30d64a688c6e")
+		(uuid "c05cc395-9553-4331-965c-772152e82d18")
 	)
 	(pad "3" smd rect
 		(at 0.7 -0.475)
 		(size 0.5 0.55)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "f4ab787c-b38c-42e0-8a1b-f4c112f515b6")
+		(uuid "12d20d99-6771-40c8-940d-bb421f54c422")
 	)
 	(pad "4" smd rect
 		(at -0.7 -0.475)
 		(size 0.5 0.55)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "fe4dbdc5-5458-4122-bd92-0ff8fc56c0a8")
+		(uuid "613b8b39-9924-437d-b06a-ec0d524de28f")
 	)
+	(embedded_fonts no)
 )
