@@ -1,14 +1,14 @@
 (footprint "Push_SMD_RA_4.5x3.4mm"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "Momentary Switch (Pushbutton)")
 	(tags "SparkFun")
 	(property "Reference" "Ref**"
 		(at 0 -2.5 0)
 		(layer "F.Fab")
-		(uuid "b8b93d44-9daa-412b-90c1-622cfca4a0da")
+		(uuid "60b7e0ec-21da-4fbd-bd91-5e0a82c844d6")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -20,7 +20,7 @@
 	(property "Value" "Val**"
 		(at 0 2.5 0)
 		(layer "F.Fab")
-		(uuid "69263b64-3684-4c72-aec3-d7e932ef09b6")
+		(uuid "5f1a4ecf-e877-4d30-9b2e-1f682abf1e05")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -29,29 +29,16 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0.45 180)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "50cc5a0c-64b9-4b16-817e-2cf9919ffd06")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2405161820_G-Switch-GT-TC108A-H034-L1S_C22396279.pdf"
 		(at 0 3.25 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "56d88772-7d50-4e82-bce1-3ad117a79a89")
+		(uuid "f95bcba6-f7f2-44f2-a7e3-921ee2565e18")
 		(effects
 			(font
 				(size 0.25 0.25)
-				(thickness 0.15)
+				(thickness 0.0625)
 			)
 		)
 	)
@@ -60,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "99197edd-0fb0-4327-b8f4-372f53fad8dc")
+		(uuid "84c28ac2-c733-402d-8a4e-9d8005cb3322")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -69,6 +56,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -2.6 -2.25)
 		(end 2.6 2)
@@ -76,9 +64,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "4d74b17a-d99f-43af-8f74-c8de02fec76d")
+		(uuid "190bac4a-0a2d-467c-9291-1034a4773ecc")
 	)
 	(fp_line
 		(start -1 -2.08)
@@ -88,7 +76,7 @@
 			(type default)
 		)
 		(layer "F.Fab")
-		(uuid "c6e183b2-a6bf-4ea7-a80b-0794c2827826")
+		(uuid "a1ca7cd7-a325-4759-9e43-95b90851a88c")
 	)
 	(fp_line
 		(start -1 -1.21)
@@ -98,7 +86,7 @@
 			(type default)
 		)
 		(layer "F.Fab")
-		(uuid "467ce698-edd8-4443-93bf-08dfb33f5398")
+		(uuid "9437da52-fcdd-4964-9294-35e13245fc58")
 	)
 	(fp_line
 		(start 1 -2.08)
@@ -108,7 +96,7 @@
 			(type default)
 		)
 		(layer "F.Fab")
-		(uuid "0d850b36-4879-4e19-83ad-cb2f0d021c1d")
+		(uuid "21550c3b-f038-4669-81f8-48985a1567db")
 	)
 	(fp_rect
 		(start -2.25 -1.21)
@@ -117,9 +105,9 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "fe3dc5c0-ce21-4dee-acd5-248db23cc640")
+		(uuid "e9d4561c-6407-4b4c-81ff-258814a4febb")
 	)
 	(fp_rect
 		(start -2.25 -1.21)
@@ -128,9 +116,9 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "dc8a1e76-f47a-4875-851d-a8455a743e80")
+		(uuid "d771082d-71d6-4a43-b4d9-7aadb8a52654")
 	)
 	(fp_rect
 		(start -2.25 -0.35)
@@ -139,9 +127,9 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "4895ba80-3c03-4fa0-b943-67a0ce3dd517")
+		(uuid "cf9aeeee-bedd-4f21-bd49-cea49c012dfc")
 	)
 	(fp_rect
 		(start -1.5 0.12)
@@ -150,9 +138,9 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "c23e28e0-f2a9-492f-a143-acff0b5c2c5b")
+		(uuid "ccdd9946-bd70-4a01-892a-4c6b95619ef3")
 	)
 	(fp_rect
 		(start -0.25 0.32)
@@ -161,9 +149,9 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "1cfa27bc-ee5f-4ec6-b410-b0bc8f8c05d1")
+		(uuid "bae99f43-0e55-43ea-bbfc-b5631b7fadc6")
 	)
 	(fp_rect
 		(start 0.9 0.12)
@@ -172,9 +160,9 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "260aa119-36a1-4ba5-a561-b33fff88ca5b")
+		(uuid "ff9c07e6-3869-4ee7-98fd-5b4983f6f8ff")
 	)
 	(fp_rect
 		(start 1.6 -1.21)
@@ -183,9 +171,9 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "e95c45b7-eb23-4194-a808-f61c528b3ed1")
+		(uuid "65917ea9-4c93-45aa-9764-01304815c26f")
 	)
 	(fp_rect
 		(start 2.05 -0.35)
@@ -194,30 +182,30 @@
 			(width 0)
 			(type solid)
 		)
-		(fill solid)
+		(fill yes)
 		(layer "F.Fab")
-		(uuid "06d53dc2-70b1-4e3c-a24d-b34d6d470ff4")
+		(uuid "cfccc014-1525-41cd-a125-9186084d12a9")
 	)
 	(pad "1" smd rect
 		(at -1.2 1.255 180)
 		(size 0.8 1.09)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "15a48eab-28c6-4c4c-8d72-ae211e60f49c")
+		(uuid "fe108e66-ddd5-45a1-b55e-254a87f52728")
 	)
 	(pad "1" smd rect
 		(at 1.2 1.255 180)
 		(size 0.8 1.09)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "a9f5456f-c2be-4d4b-8861-9f96d8f9311f")
+		(uuid "05389630-f937-4b8c-8da9-87e776370953")
 	)
 	(pad "2" smd rect
 		(at 0 0.9 180)
 		(size 0.6 1.8)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "321bffc2-5112-4241-abc3-2e266b9873f4")
+		(uuid "59a24ec8-43d5-44b0-9b5c-f286ceaae78a")
 	)
 	(pad "NC" thru_hole oval
 		(at -2.15 0 180)
@@ -226,21 +214,21 @@
 		(layers "*.Cu" "*.Mask" "F.Paste")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "5aa28abd-b5a9-459f-8bdf-6e44f1c1ba08")
+		(uuid "0e4f4864-1c99-496b-9f3c-593b68a17544")
 	)
 	(pad "NC" smd rect
 		(at -1.9 -1.11 180)
 		(size 1.1 0.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "145f990f-4f2c-4858-90d2-96cfc758065c")
+		(uuid "dc998f1f-e9b6-476d-9971-da36f456125f")
 	)
 	(pad "NC" smd rect
 		(at 1.9 -1.11 180)
 		(size 1.1 0.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "e977b603-28f4-4bf3-831f-190f09cc64a3")
+		(uuid "294d937b-eaf1-4d5f-a033-1d251738cc42")
 	)
 	(pad "NC" thru_hole oval
 		(at 2.15 0 180)
@@ -249,9 +237,10 @@
 		(layers "*.Cu" "*.Mask" "F.Paste")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "72530454-1e01-45e3-a2bb-27b6c04981fd")
+		(uuid "7155c9bf-f708-49c0-8222-686c85642f64")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/Push_SMD_RA_4.5x3.4mm.stp"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/Push_SMD_Horizontal_4.5x3.4mm.stp"
 		(offset
 			(xyz 0 1 1.65)
 		)
