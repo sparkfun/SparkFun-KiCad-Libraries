@@ -1,13 +1,13 @@
-(footprint "Push_PTH_RA_8-020_h7.5mm"
-	(version 20240108)
+(footprint "Push_PTH_Horizontal_8-020_h7.5mm"
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(tags "SparkFun Momentary Switch (Pushbutton)")
 	(property "Reference" "Ref**"
 		(at 0 -3.285 0)
 		(layer "F.Fab")
-		(uuid "68f39bec-9fa2-4fcb-884f-0c1e92a1e342")
+		(uuid "9f762d42-8985-4300-b3b3-28f9911c1760")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -20,7 +20,7 @@
 	(property "Value" "Val**"
 		(at 0 -2.08 0)
 		(layer "F.Fab")
-		(uuid "8cfaa84a-2e3f-4450-a3ce-9621c5830018")
+		(uuid "d1322648-c012-45fa-8610-d6b7f288a363")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -30,24 +30,12 @@
 			(justify bottom)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "ac4e8e64-97f8-4820-b23d-bb5d5d2a62a3")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "21a1f373-6052-493f-ad87-fe7bbb3af8bb")
+		(uuid "bb49054f-61ed-470b-abf6-bc79f91fd902")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -59,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "4e200efa-daa6-41d7-a84b-0f8bad2bdf84")
+		(uuid "ed3e4d0d-7265-40d8-989b-09abccff8099")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -67,6 +55,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -3.75 -3.8)
 		(end -3.75 -4.4)
@@ -75,7 +64,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "cd75e9e6-c8b0-4304-8200-855a9a60f27e")
+		(uuid "a33d3f14-2338-43b3-ad89-160aaee400bf")
 	)
 	(fp_line
 		(start -3.75 2.35)
@@ -85,7 +74,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "95afbb5a-e47e-40f0-aadd-51e2c763cf36")
+		(uuid "f72634cf-4ee9-4b1c-9719-12ddaab8aec9")
 	)
 	(fp_line
 		(start -3.75 2.35)
@@ -95,7 +84,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "53097841-fbba-4b35-97a2-fe2d3c1cbad7")
+		(uuid "b7dda0b5-de55-4927-b7ec-080f25c48246")
 	)
 	(fp_line
 		(start 3.75 -3.8)
@@ -105,7 +94,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "daa88d35-cec6-40e2-becf-25c26bec75e1")
+		(uuid "04bff938-dd98-4cec-8f59-754dc3f0eb82")
 	)
 	(fp_line
 		(start 3.75 2.35)
@@ -115,7 +104,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "3d4554cc-4bac-4855-9c22-0a61592d494d")
+		(uuid "cec6dbf7-a953-4535-9994-072f9c27e48f")
 	)
 	(fp_rect
 		(start 4.7 -4.6)
@@ -124,9 +113,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "150534b0-6d46-4ada-8d23-741195592d5d")
+		(uuid "419a2c80-7a56-4754-97dc-c747ed5e6b72")
 	)
 	(fp_line
 		(start -3.75 -1.15)
@@ -136,7 +125,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "1b417186-05ea-4459-9c5f-5511bdf45872")
+		(uuid "a01fae43-681d-4b2b-8379-f711deaf338f")
 	)
 	(fp_line
 		(start -3.75 -1.15)
@@ -146,7 +135,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "a3ef94a5-b119-4907-89e4-ba46f21c9a58")
+		(uuid "56c4b9e9-8093-49f4-9c5c-cc65deed628f")
 	)
 	(fp_line
 		(start -3.75 2.35)
@@ -156,7 +145,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "00d4db47-8307-4703-a017-a733dfaafb5c")
+		(uuid "e290ee05-7b18-41f9-b068-5befdf1afbe1")
 	)
 	(fp_line
 		(start -3.75 2.35)
@@ -166,7 +155,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "2097ba13-820c-480a-bd31-53484f4f624d")
+		(uuid "56a9641c-5c55-4bf1-a282-e39035c07905")
 	)
 	(fp_line
 		(start -2.6 2.35)
@@ -176,7 +165,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "820fbd53-4f85-407b-9f29-baaa5254acf1")
+		(uuid "5152c5e1-89e5-4004-aad3-395db3c8d76a")
 	)
 	(fp_line
 		(start -1.9 2.35)
@@ -186,7 +175,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "225e2179-49a0-48e7-a5a5-484b4473d1d9")
+		(uuid "3e75f0e8-0aba-4a96-9d47-7712e90e3ab3")
 	)
 	(fp_line
 		(start -1.7 2.35)
@@ -196,7 +185,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6ea51df0-1dae-4fcf-9b05-401a7f269943")
+		(uuid "244151cc-a240-4779-9197-926d2662108d")
 	)
 	(fp_line
 		(start -1.7 2.35)
@@ -206,7 +195,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "397b71f4-210f-4ae8-89d5-83625b73e898")
+		(uuid "f501f5e7-a958-4000-8986-8f6e448cde53")
 	)
 	(fp_line
 		(start -1.5 5.95)
@@ -216,7 +205,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "40187ffe-02fa-4013-810a-6b1c4f8eeee9")
+		(uuid "ae1e0579-c3ac-4da9-baab-acd86f53a381")
 	)
 	(fp_line
 		(start -1.5 6.25)
@@ -226,7 +215,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "dfc55c12-3a92-4a42-8e9d-5e9ed49726f2")
+		(uuid "d7c14d92-5499-4835-acf4-6ff7ea100fc5")
 	)
 	(fp_line
 		(start 1.5 6.25)
@@ -236,7 +225,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "e6211b59-2927-4696-9899-5833cfe17ce5")
+		(uuid "e824b346-0543-4e9b-a11e-53514d9b3a29")
 	)
 	(fp_line
 		(start 1.7 2.35)
@@ -246,7 +235,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "134d7914-65c6-4832-bd61-0b140a75cc8c")
+		(uuid "c0f2731a-23c2-4f14-aeb9-24a3bac715f8")
 	)
 	(fp_line
 		(start 1.9 2.35)
@@ -256,7 +245,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f81bb0dc-21a9-4902-b466-0bd29314dced")
+		(uuid "c761278b-7dad-4327-bafa-a68a4136fddc")
 	)
 	(fp_line
 		(start 2.6 2.35)
@@ -266,7 +255,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "a2317b78-b2b5-431b-a8f6-735ed2d74ac8")
+		(uuid "b75db6a8-2625-4dc7-ab4d-2cac225028d7")
 	)
 	(fp_line
 		(start 3.75 -1.15)
@@ -276,7 +265,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "430ad5bc-5902-4866-bdd5-11daf2e3497f")
+		(uuid "5774e357-eb21-4f52-ae39-19a12508e146")
 	)
 	(fp_line
 		(start 3.75 2.35)
@@ -286,7 +275,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "abf07c00-2ee0-4853-8c87-30708a2722fb")
+		(uuid "5ce380e4-9cac-44c2-ba5c-d9f216b574e3")
 	)
 	(fp_arc
 		(start -1.9 2.35)
@@ -297,7 +286,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "484baffd-10e1-4ade-9950-0557f5fe181b")
+		(uuid "5e17bd83-fccf-424a-8d85-947a159a924c")
 	)
 	(fp_arc
 		(start 2.6 2.35)
@@ -308,30 +297,30 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9dd99cb9-3f5f-4ce1-8786-517226cbc127")
-	)
-	(fp_text user "Button center is\n 4.05mm above PCB"
-		(at 2 4 0)
-		(layer "F.Fab")
-		(uuid "31cd556d-7cad-4f84-a731-683fc5c4e37a")
-		(effects
-			(font
-				(size 0.23368 0.23368)
-				(thickness 0.02032)
-			)
-			(justify left bottom)
-		)
+		(uuid "b32b2afb-3239-4455-ab3b-bb0c60b2011a")
 	)
 	(fp_text user "Button dia \nis 3.40mm"
 		(at -2 4 0)
 		(layer "F.Fab")
-		(uuid "739710f5-e34a-4545-b5ce-4ac26519ff6e")
+		(uuid "a4bbd411-e09b-4fcf-9c57-f0814a47cfe5")
 		(effects
 			(font
 				(size 0.23368 0.23368)
 				(thickness 0.02032)
 			)
 			(justify right bottom)
+		)
+	)
+	(fp_text user "Button center is\n 4.05mm above PCB"
+		(at 2 4 0)
+		(layer "F.Fab")
+		(uuid "74dcaf55-90a8-49d8-b39d-0ab153c2a9fc")
+		(effects
+			(font
+				(size 0.23368 0.23368)
+				(thickness 0.02032)
+			)
+			(justify left bottom)
 		)
 	)
 	(pad "1" thru_hole circle
@@ -341,7 +330,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "4fb5c853-f9e2-4740-a118-aa1ca37e106a")
+		(uuid "5978a430-557b-4527-84d5-dbd2ad383c15")
 	)
 	(pad "2" thru_hole circle
 		(at 2.25 0)
@@ -350,7 +339,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "144ef36e-f77f-4b85-aff0-c23badbdd78c")
+		(uuid "df4b6432-bd53-4ab1-be08-58c2985c8937")
 	)
 	(pad "M1" thru_hole circle
 		(at -3.5 -2.5)
@@ -359,7 +348,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "c42407eb-f044-4665-bec3-2fa2fb5dcbde")
+		(uuid "0843bba1-59c6-4c3b-ae0a-cdabb48aa4a4")
 	)
 	(pad "M2" thru_hole circle
 		(at 3.5 -2.5)
@@ -368,8 +357,9 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "be3ea89a-16f2-4329-a49f-b1caa1633a72")
+		(uuid "7ec17a82-690e-40d1-9156-73c31f5f1312")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/SW_Tactile_SPST_Angled_PTS645Vx58-2LFS.step"
 		(offset
 			(xyz 2.25 0 0)
