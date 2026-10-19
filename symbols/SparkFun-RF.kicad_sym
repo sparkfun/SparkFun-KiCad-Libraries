@@ -35,8 +35,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 0 -8.89 0)
+		(property "Footprint" "~"
+			(at 0 -10.668 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -46,7 +46,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 -8.89 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -138,6 +138,142 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "Antenna_Ceramic_3.2x1.6mm"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "AE"
+			(at -3.81 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.4GHz Antenna"
+			(at -5.08 -1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SparkFun-RF:Antenna_Ceramic_3.2x1.6x1.2mm"
+			(at 0 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.waldom.com/upload/parts/datasheets/mf-abr/abr-amca31-2r450g-s1f-t3.pdf"
+			(at 0.254 -11.176 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bluetooth 2.4GHz Chip Antenna"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PROD_ID" "IC-14235"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "SparkFun Antenna Bluetooth 2.4GHz"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Antenna_Ceramic_3.2x1.6mm_0_1"
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 2.54) (xy 0 0) (xy -1.27 2.54)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Antenna_Ceramic_3.2x1.6mm_1_1"
+			(pin input line
+				(at 0 -1.27 90)
+				(length 0)
+				(name "A"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Antenna_Ceramic_GNSS_18.0x18.0mm"
 		(pin_numbers
 			(hide yes)
@@ -193,7 +329,7 @@
 				)
 			)
 		)
-		(property "Description" "Antenna Ceramic GNSS GPS"
+		(property "Description" "GNSS GPS SMD Ceramic Antenna"
 			(at 0 -5.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -403,7 +539,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" "Coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
 			(at 0 -15.24 0)
 			(show_name no)
 			(do_not_autoplace no)

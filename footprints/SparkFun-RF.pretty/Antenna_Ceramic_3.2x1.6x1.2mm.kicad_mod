@@ -1,0 +1,152 @@
+(footprint "Antenna_Ceramic_3.2x1.6x1.2mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SMD antenna 3.2x1.6mm 1.2mm height")
+	(tags "SparkFun SMD Chip Antenna 1206")
+	(property "Reference" "REF**"
+		(at 0 -1.85 0)
+		(layer "F.Fab")
+		(uuid "1ebe232d-84ff-4915-969f-1f9e169c8bee")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Antenna"
+		(at 0 1.85 0)
+		(layer "F.Fab")
+		(uuid "84eaaa16-6ad2-4689-a6a3-f6a257eed990")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7aef5c48-462a-4a18-addf-120c6e5bf9fb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "14be55c1-a491-4f27-93d4-7c95685b0bad")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center -1.9 -1.25)
+		(end -2 -1.25)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "5cbcf22c-b93d-4cd2-ba71-8ed7a803dcc4")
+	)
+	(fp_rect
+		(start -2.3 -1.15)
+		(end 2.3 1.15)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "527b609d-c82f-4141-9cee-946d4ba7857f")
+	)
+	(fp_line
+		(start -1.6 -0.4)
+		(end -1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "27fb087d-620b-46f5-8b97-877bec6932a0")
+	)
+	(fp_line
+		(start -1.6 0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7fe925dd-b82b-49e4-a62f-236650ad34f2")
+	)
+	(fp_line
+		(start -1.2 -0.8)
+		(end -1.6 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "50550a6a-5a1d-4368-ba5a-2fdcb8b22b3f")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end -1.2 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "95655238-ec44-48ce-968a-ad799d813eb6")
+	)
+	(fp_line
+		(start 1.6 0.8)
+		(end 1.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fbc9b4d5-0805-465c-828b-f1f88a72b99d")
+	)
+	(pad "1" smd roundrect
+		(at -1.45 0)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.208333)
+		(uuid "5efb0876-fd63-4547-801b-9a0d5fc5a521")
+	)
+	(pad "2" smd roundrect
+		(at 1.45 0)
+		(size 1.2 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.208333)
+		(uuid "8ed72cc4-8fc2-4668-9d42-d3bbb66ccf10")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/RF.3dshapes/Antenna_Ceramic_3.2x1.6x1.2mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
