@@ -734,7 +734,7 @@
 				)
 			)
 		)
-		(property "Footprint" "38-TSSOP"
+		(property "Footprint" "SparkFun-Semiconductor-Standard:38-TSSOP"
 			(at -0.508 -59.944 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -791,7 +791,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "DBT38_TEX DBT38_TEX-M DBT38_TEX-L"
+		(property "ki_fp_filters" "38-TSSOP*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -804,7 +804,7 @@
 		)
 		(symbol "ADS8688AIDBTR_0_1"
 			(pin input line
-				(at 22.86 7.62 180)
+				(at 15.24 7.62 180)
 				(length 2.54)
 				(name "SDI"
 					(effects
@@ -822,7 +822,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 -2.54 180)
+				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "DAISY"
 					(effects
@@ -840,7 +840,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at 22.86 -20.32 180)
+				(at 15.24 -20.32 180)
 				(length 2.54)
 				(name "REFIO"
 					(effects
@@ -876,7 +876,7 @@
 				)
 			)
 			(pin output line
-				(at 22.86 -17.78 180)
+				(at 15.24 -17.78 180)
 				(length 2.54)
 				(name "REFCAP"
 					(effects
@@ -930,7 +930,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -26.67 0)
+				(at -15.24 -26.67 0)
 				(length 2.54)
 				(name "AUX_IN"
 					(effects
@@ -947,8 +947,8 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at -22.86 -29.21 0)
+			(pin input line
+				(at -15.24 -29.21 0)
 				(length 2.54)
 				(name "AUX_GND"
 					(effects
@@ -966,7 +966,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -13.97 0)
+				(at -15.24 -13.97 0)
 				(length 2.54)
 				(name "AIN_6P"
 					(effects
@@ -984,7 +984,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -16.51 0)
+				(at -15.24 -16.51 0)
 				(length 2.54)
 				(name "AIN_6GND"
 					(effects
@@ -1002,7 +1002,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -20.32 0)
+				(at -15.24 -20.32 0)
 				(length 2.54)
 				(name "AIN_7P"
 					(effects
@@ -1020,7 +1020,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -22.86 0)
+				(at -15.24 -22.86 0)
 				(length 2.54)
 				(name "AIN_7GND"
 					(effects
@@ -1038,7 +1038,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 24.13 0)
+				(at -15.24 24.13 0)
 				(length 2.54)
 				(name "AIN_0P"
 					(effects
@@ -1056,7 +1056,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 21.59 0)
+				(at -15.24 21.59 0)
 				(length 2.54)
 				(name "AIN_0GND"
 					(effects
@@ -1074,7 +1074,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 17.78 0)
+				(at -15.24 17.78 0)
 				(length 2.54)
 				(name "AIN_1P"
 					(effects
@@ -1092,7 +1092,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 15.24 0)
+				(at -15.24 15.24 0)
 				(length 2.54)
 				(name "AIN_1GND"
 					(effects
@@ -1110,7 +1110,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 8.89 0)
+				(at -15.24 8.89 0)
 				(length 2.54)
 				(name "AIN_2GND"
 					(effects
@@ -1128,7 +1128,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 11.43 0)
+				(at -15.24 11.43 0)
 				(length 2.54)
 				(name "AIN_2P"
 					(effects
@@ -1146,7 +1146,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 2.54 0)
+				(at -15.24 2.54 0)
 				(length 2.54)
 				(name "AIN_3GND"
 					(effects
@@ -1164,7 +1164,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 5.08 0)
+				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "AIN_3P"
 					(effects
@@ -1182,7 +1182,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -3.81 0)
+				(at -15.24 -3.81 0)
 				(length 2.54)
 				(name "AIN_4GND"
 					(effects
@@ -1200,7 +1200,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -1.27 0)
+				(at -15.24 -1.27 0)
 				(length 2.54)
 				(name "AIN_4P"
 					(effects
@@ -1218,7 +1218,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -10.16 0)
+				(at -15.24 -10.16 0)
 				(length 2.54)
 				(name "AIN_5GND"
 					(effects
@@ -1236,7 +1236,7 @@
 				)
 			)
 			(pin input line
-				(at -22.86 -7.62 0)
+				(at -15.24 -7.62 0)
 				(length 2.54)
 				(name "AIN_5P"
 					(effects
@@ -1290,7 +1290,7 @@
 				)
 			)
 			(pin output line
-				(at 22.86 -5.08 180)
+				(at 15.24 -5.08 180)
 				(length 2.54)
 				(name "ALARM"
 					(effects
@@ -1308,7 +1308,7 @@
 				)
 			)
 			(pin output line
-				(at 22.86 5.08 180)
+				(at 15.24 5.08 180)
 				(length 2.54)
 				(name "SDO"
 					(effects
@@ -1326,7 +1326,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 10.16 180)
+				(at 15.24 10.16 180)
 				(length 2.54)
 				(name "SCLK"
 					(effects
@@ -1346,8 +1346,8 @@
 		)
 		(symbol "ADS8688AIDBTR_1_1"
 			(rectangle
-				(start -20.32 27.94)
-				(end 20.32 -33.02)
+				(start -12.7 27.94)
+				(end 12.7 -33.02)
 				(stroke
 					(width 0)
 					(type solid)
@@ -1357,7 +1357,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 0 180)
+				(at 15.24 0 180)
 				(length 2.54)
 				(name "~{RST}/~{PD}"
 					(effects
@@ -1375,7 +1375,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 -15.24 180)
+				(at 15.24 -15.24 180)
 				(length 2.54)
 				(name "~{REFSEL}"
 					(effects
@@ -1488,7 +1488,7 @@
 				)
 			)
 			(pin input line
-				(at 22.86 12.7 180)
+				(at 15.24 12.7 180)
 				(length 2.54)
 				(name "~{CS}"
 					(effects
@@ -1779,7 +1779,7 @@
 				)
 			)
 		)
-		(property "Value" "MCP4728T-E/UN"
+		(property "Value" "MCP4728"
 			(at 11.43 -11.938 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1789,7 +1789,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MSOP10_MC_MCH"
+		(property "Footprint" "SparkFun-Semiconductor-Standard:MSOP-10_3x3mm_P0.5mm"
 			(at -0.508 -26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1846,7 +1846,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "MSOP10_MC_MCH MSOP10_MC_MCH-M MSOP10_MC_MCH-L"
+		(property "ki_fp_filters" "MSOP-10_3x3mm_P0.5mm*"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1859,7 +1859,7 @@
 		)
 		(symbol "MCP4728T-E_UN_0_1"
 			(pin power_in line
-				(at 0 10.16 270)
+				(at 0 7.62 270)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -1877,7 +1877,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 2.54 0)
+				(at -10.16 2.54 0)
 				(length 2.54)
 				(name "SCL"
 					(effects
@@ -1895,7 +1895,7 @@
 				)
 			)
 			(pin bidirectional line
-				(at -12.7 0 0)
+				(at -10.16 0 0)
 				(length 2.54)
 				(name "SDA"
 					(effects
@@ -1913,7 +1913,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -5.08 180)
+				(at 10.16 -5.08 180)
 				(length 2.54)
 				(name "VOUTA"
 					(effects
@@ -1931,7 +1931,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 -2.54 180)
+				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "VOUTB"
 					(effects
@@ -1949,7 +1949,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 0 180)
+				(at 10.16 0 180)
 				(length 2.54)
 				(name "VOUTC"
 					(effects
@@ -1967,7 +1967,7 @@
 				)
 			)
 			(pin output line
-				(at 12.7 2.54 180)
+				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "VOUTD"
 					(effects
@@ -1985,7 +1985,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -10.16 90)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -2005,8 +2005,8 @@
 		)
 		(symbol "MCP4728T-E_UN_1_1"
 			(rectangle
-				(start -10.16 7.62)
-				(end 10.16 -10.16)
+				(start -7.62 5.08)
+				(end 7.62 -7.62)
 				(stroke
 					(width 0)
 					(type solid)
@@ -2016,7 +2016,7 @@
 				)
 			)
 			(pin input line
-				(at -12.7 -2.54 0)
+				(at -10.16 -2.54 0)
 				(length 2.54)
 				(name "~{LDAC}"
 					(effects
@@ -2034,7 +2034,7 @@
 				)
 			)
 			(pin output line
-				(at -12.7 -5.08 0)
+				(at -10.16 -5.08 0)
 				(length 2.54)
 				(name "RDY"
 					(effects
