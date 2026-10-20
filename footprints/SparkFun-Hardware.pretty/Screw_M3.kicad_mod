@@ -1,7 +1,7 @@
 (footprint "Screw_M3"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun Metric Screw")
 	(property "Reference" "REF**"
@@ -28,18 +28,6 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "05d2e165-b789-43fc-96db-796fa3d81209")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" "https://www.olander.com/items/.3C5PPMS"
 		(at 0 3.25 0)
 		(unlocked yes)
@@ -62,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -72,7 +61,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "782e1303-f664-4d84-8614-72db80e9927d")
 	)
@@ -83,8 +72,8 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
-		(layer "User.1")
+		(fill no)
+		(layer "F.Fab")
 		(uuid "5f2fe651-042e-4924-80cd-bf82adee545e")
 	)
 	(pad "" np_thru_hole circle
@@ -94,6 +83,7 @@
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Hardware.3dshapes/Screw_M3.step"
 		(offset
 			(xyz 0 0 0)

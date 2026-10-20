@@ -1,7 +1,7 @@
 (footprint "Relay_SPDT_10A_15.6x21.6mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun SPDT Power Relay 10A")
 	(property "Reference" "REF**"
@@ -28,19 +28,6 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 -90)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "c9b1803e-6a0f-4aa1-bbc6-c25584126408")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g5le.pdf"
 		(at 0 13.335 0)
 		(unlocked yes)
@@ -55,7 +42,7 @@
 		)
 	)
 	(property "Description" ""
-		(at 0 0 -90)
+		(at 0 0 270)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
@@ -75,7 +62,7 @@
 			(width 0.2032)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
 		(uuid "34cd4d2e-d1fc-4160-a9b1-a0edbe99b518")
 	)
@@ -206,7 +193,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Dwgs.User")
 		(uuid "811a9dbf-a171-4894-b0e3-415653b6dadb")
 	)
@@ -217,7 +204,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Dwgs.User")
 		(uuid "8a027643-7129-40e1-bd60-21f611b2ca5d")
 	)
@@ -228,7 +215,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "c8b3fdb8-a66e-4aa4-809d-018d0101670f")
 	)
@@ -239,8 +226,8 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
-		(layer "User.1")
+		(fill no)
+		(layer "F.Fab")
 		(uuid "49c7113a-9e7e-4e54-a972-ba247482aea6")
 	)
 	(pad "1" thru_hole circle
@@ -284,6 +271,7 @@
 		(remove_unused_layers no)
 		(uuid "957399b8-43e4-4f2e-b8a5-4ca13af7cdcd")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Electromechanical.3dshapes/Relay_15.2x19.0mm_2.step"
 		(offset
 			(xyz 0 -8.75 0)

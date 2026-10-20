@@ -1,7 +1,7 @@
 (footprint "Nut_M3"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
@@ -28,18 +28,6 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "05d2e165-b789-43fc-96db-796fa3d81209")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -49,6 +37,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -61,6 +50,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -71,7 +61,7 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "782e1303-f664-4d84-8614-72db80e9927d")
 	)
@@ -82,7 +72,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "1e1cb7e3-3b0f-486f-af8d-f93851225fc1")
 	)
 	(fp_line
@@ -92,7 +82,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "8f9896ad-f9ba-4de6-99db-58f7b8bc75e6")
 	)
 	(fp_line
@@ -102,7 +92,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "5865d27a-5e0f-45cb-b8c1-8541d59fdadb")
 	)
 	(fp_line
@@ -112,7 +102,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "fa40acd9-903a-496f-bed0-d1c2f2ec926d")
 	)
 	(fp_line
@@ -122,7 +112,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "43d0b510-d672-4732-8570-28638c6b2de1")
 	)
 	(fp_line
@@ -132,7 +122,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "96b0805a-9af0-4c0a-b959-bc572ef23c16")
 	)
 	(pad "" np_thru_hole circle
@@ -142,6 +132,7 @@
 		(layers "F&B.Cu" "*.Mask")
 		(uuid "dc13d82e-b35c-487a-a050-ff5a9bcd5391")
 	)
+	(embedded_fonts no)
 	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Hardware.3dshapes/Nut_M3.step"
 		(offset
 			(xyz 0 0 1.1)

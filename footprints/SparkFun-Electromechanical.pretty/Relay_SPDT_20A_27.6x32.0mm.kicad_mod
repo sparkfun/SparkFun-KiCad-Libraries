@@ -1,7 +1,7 @@
 (footprint "Relay_SPDT_20A_27.6x32.0mm"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(tags "SparkFun Large 40A SPDT Power Relay")
 	(property "Reference" "REF**"
@@ -23,19 +23,6 @@
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 9.34 -8.89 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "4d7e65c3-9e71-4efc-af4d-a6fc1295015d")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -401,7 +388,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Dwgs.User")
 		(uuid "3c7f7a49-0070-4c4f-93aa-a9cfeade899a")
 	)
@@ -412,7 +399,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "Dwgs.User")
 		(uuid "bf7de870-3d8b-4efa-84f1-8d1ba80f8d30")
 	)
@@ -503,7 +490,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "269dc3a4-07c6-4e88-92a1-e9b57a3d7696")
 	)
 	(fp_line
@@ -513,7 +500,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "0b5dbd79-59a0-4662-bb15-186b699660ff")
 	)
 	(fp_line
@@ -523,7 +510,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "76de53ac-0fdc-46bd-a178-1d10d85cb816")
 	)
 	(fp_line
@@ -533,7 +520,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "d0b11a29-5ace-4cdd-9ccb-f62ea6b70075")
 	)
 	(fp_line
@@ -543,7 +530,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "3b51dac0-3493-46bb-b1a2-0553082a8a11")
 	)
 	(fp_line
@@ -553,7 +540,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "44f32f32-deea-4827-80c6-795eb03a80fe")
 	)
 	(fp_line
@@ -563,7 +550,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "5e367681-6edd-4c83-8569-9917538896d6")
 	)
 	(fp_line
@@ -573,7 +560,7 @@
 			(width 0.1)
 			(type default)
 		)
-		(layer "User.1")
+		(layer "F.Fab")
 		(uuid "da450e20-70d0-4685-82a3-53120acf998f")
 	)
 	(pad "1" thru_hole circle
@@ -616,4 +603,5 @@
 		(remove_unused_layers no)
 		(uuid "bab4d8bf-302e-45b9-b5f7-8320ab7efb9a")
 	)
+	(embedded_fonts no)
 )
