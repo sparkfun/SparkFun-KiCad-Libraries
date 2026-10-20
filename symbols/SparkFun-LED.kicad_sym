@@ -5286,23 +5286,25 @@
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "D"
-			(at -2.54 12.7 0)
+			(at -1.27 13.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 			)
 		)
 		(property "Value" "SMA-B500LB"
-			(at -2.54 -2.54 0)
+			(at -1.27 -3.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify top)
 			)
 		)
 		(property "Footprint" "SparkFun-LED:SMA-B500"
@@ -5372,6 +5374,89 @@
 			)
 		)
 		(symbol "SMA-B500LB_0_1"
+			(rectangle
+				(start -3.81 12.7)
+				(end 1.27 -2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 10.16) (xy -2.032 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 7.62) (xy -2.032 7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 5.08) (xy -2.032 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 2.54) (xy -2.032 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -3.81 0) (xy -2.032 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 5.08) (xy 0 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
 					(xy -2.032 9.144) (xy -2.032 11.176)
@@ -5568,7 +5653,7 @@
 		(symbol "SMA-B500LB_1_1"
 			(pin passive line
 				(at -5.08 10.16 0)
-				(length 3.048)
+				(length 1.27)
 				(name "KA"
 					(effects
 						(font
@@ -5586,7 +5671,7 @@
 			)
 			(pin passive line
 				(at -5.08 7.62 0)
-				(length 3.048)
+				(length 1.27)
 				(name "KB"
 					(effects
 						(font
@@ -5604,7 +5689,7 @@
 			)
 			(pin passive line
 				(at -5.08 5.08 0)
-				(length 3.048)
+				(length 1.27)
 				(name "KC"
 					(effects
 						(font
@@ -5622,7 +5707,7 @@
 			)
 			(pin passive line
 				(at -5.08 2.54 0)
-				(length 3.048)
+				(length 1.27)
 				(name "KD"
 					(effects
 						(font
@@ -5640,7 +5725,7 @@
 			)
 			(pin passive line
 				(at -5.08 0 0)
-				(length 3.048)
+				(length 1.27)
 				(name "KE"
 					(effects
 						(font
@@ -5658,7 +5743,7 @@
 			)
 			(pin passive line
 				(at 2.54 5.08 180)
-				(length 2.54)
+				(length 1.27)
 				(name "A"
 					(effects
 						(font
