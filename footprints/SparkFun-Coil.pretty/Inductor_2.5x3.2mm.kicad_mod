@@ -1,14 +1,14 @@
 (footprint "Inductor_2.5x3.2mm"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "2.5x3.2mm Inductor - https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-9135.pdf")
 	(tags "SparkFun")
 	(property "Reference" "REF**"
 		(at 0 -2.442 0)
 		(layer "F.Fab")
-		(uuid "82859c1f-f958-4e4c-aa60-23c600f6495d")
+		(uuid "f1174535-3f6f-4d1e-92bf-987534d6934f")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -21,7 +21,7 @@
 	(property "Value" "Inductor_2.5x3.2mm"
 		(at 0 2.413 0)
 		(layer "F.Fab")
-		(uuid "027f9b1c-0768-40aa-a699-69ad88128d12")
+		(uuid "0623dc2a-29eb-4de3-915a-3c94cf788860")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -31,24 +31,12 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2acb745e-76e2-43a3-8101-03228dc0ec56")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9d94a318-c2e5-4304-a6f3-1753c52677e8")
+		(uuid "ce3df0b9-0886-4406-aa7e-b53ab7f8a26e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +48,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "cb2a850a-21b9-422c-83f1-b89a44ec9106")
+		(uuid "1b9befcd-83d1-45ae-b942-28cd41fa5a13")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -68,6 +56,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -1.2 -0.674687)
 		(end -1.2 0.674687)
@@ -76,7 +65,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "ff3c9d8d-fad0-44f1-af5d-82e7f0c30b6f")
+		(uuid "682d45bc-a21f-460c-85e1-7bc18a4aade1")
 	)
 	(fp_line
 		(start 1.2 -0.674687)
@@ -86,7 +75,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "5158b745-26d6-4a2f-b46d-9aaa9646e334")
+		(uuid "b3bcf24c-94d1-4b26-becd-a9e61d3efc2c")
 	)
 	(fp_rect
 		(start 1.4 -2.1)
@@ -95,9 +84,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "b2ce7195-8eec-4917-8b7e-2e344108f323")
+		(uuid "8fd05632-6e57-4976-9f65-d6caf94ecff6")
 	)
 	(fp_line
 		(start -1.25 -1.6)
@@ -107,7 +96,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "0a79ec70-6cef-45b0-a870-f77d92c6e97b")
+		(uuid "1fe602c1-5945-447d-ad14-5110905f64b4")
 	)
 	(fp_line
 		(start -1.25 1.6)
@@ -117,7 +106,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "12a0440e-45a1-4ebc-9bec-9805f12ea1ef")
+		(uuid "25c2ad7a-d7e2-430f-90d8-688d1d72d1f8")
 	)
 	(fp_line
 		(start 1.25 -1.6)
@@ -127,7 +116,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c2db9a0c-46e1-491a-97b9-6313d54a9586")
+		(uuid "eddea0bd-f06b-44f8-88a7-b2cc88166b63")
 	)
 	(fp_line
 		(start 1.25 1.6)
@@ -137,20 +126,32 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "f245f39f-dfc5-4c17-a7c1-9df24ca184e7")
+		(uuid "43dd25bd-8abb-44ae-a821-a0dfcf8811b4")
 	)
 	(pad "1" smd rect
 		(at 0 -1.275)
 		(size 2 1.25)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "a1792448-55ab-4bf3-b1e4-0d11dd14e27a")
+		(uuid "395ab347-61ad-4527-96f4-449fb45af482")
 	)
 	(pad "2" smd rect
 		(at 0 1.275)
 		(size 2 1.25)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "67e186a6-39a6-4f73-b3df-b0a5bd5129b9")
+		(uuid "a1c830b2-ffa8-4a61-b6f6-5c8374f4cb07")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Coil.3dshapes/LQH32PH_NC.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -90)
+		)
 	)
 )
