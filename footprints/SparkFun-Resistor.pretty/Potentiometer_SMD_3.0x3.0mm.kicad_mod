@@ -1,14 +1,14 @@
-(footprint "Trimpot_SMD_3.0x3.0mm"
-	(version 20240108)
+(footprint "Potentiometer_SMD_3.0x3.0mm"
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Datasheet/22.pdf")
-	(tags "SparkFun Trimmer")
+	(tags "SparkFun Trimmer Trimpot")
 	(property "Reference" "Ref**"
 		(at 0 -2.8 0)
 		(layer "F.Fab")
-		(uuid "04d81ebd-68c8-4679-b9a8-98c1f5860e21")
+		(uuid "b8b5b47e-a15a-490c-9493-a382eccb80e8")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -20,7 +20,7 @@
 	(property "Value" "10K"
 		(at 0.025 2.875 0)
 		(layer "F.Fab")
-		(uuid "530ae566-6ee3-43f9-a2d7-bd17c4431de1")
+		(uuid "d4653cea-da92-4e20-a280-fdb176917457")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -29,25 +29,12 @@
 			)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "2a06ab9b-061c-44f6-995b-35be1c9c4cc6")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c0a79a2b-a21f-48ac-ad8b-0b27a5a376f7")
+		(uuid "635b0f59-027d-4857-b9fe-991dfd7f9180")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9f6c6f34-ef87-491d-8886-fe85b2dc8d10")
+		(uuid "2657477b-0295-45d0-8a39-58fdbc08a718")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -69,6 +56,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -1.75 -1.9)
 		(end -0.9 -1.9)
@@ -77,7 +65,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "1c3c9c58-447e-40e9-9f23-3914fbbdf42d")
+		(uuid "02290685-91d6-437d-910f-4b8247aa3a17")
 	)
 	(fp_line
 		(start -1.75 0.475)
@@ -87,7 +75,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "fceeaf2c-c221-4a91-bbc8-84e61666839a")
+		(uuid "966947b7-72b7-44b2-aca9-c466cd484e60")
 	)
 	(fp_line
 		(start 0.5 1.9)
@@ -97,7 +85,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "05b32955-1ee2-4a45-83c2-e261863bebe9")
+		(uuid "55514798-6076-49d4-bd75-19445a580a66")
 	)
 	(fp_line
 		(start 1.75 -1.905)
@@ -107,7 +95,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "9c13ed27-3645-4155-a92b-9b420594d614")
+		(uuid "1c77c536-0334-40cd-b635-ebc100e3a241")
 	)
 	(fp_line
 		(start 1.75 0.5)
@@ -117,7 +105,7 @@
 			(type default)
 		)
 		(layer "F.SilkS")
-		(uuid "0ec49818-4de4-49f3-993b-8bbf0c47c668")
+		(uuid "ac3f595f-54a0-4eca-8638-0a4519c64cf2")
 	)
 	(fp_rect
 		(start -1.875 -2.37)
@@ -126,9 +114,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "4ce75af0-b433-4bfe-9ff5-359de170e240")
+		(uuid "19a2ee31-0580-4ce8-8619-8d8dd19df066")
 	)
 	(fp_rect
 		(start -1.6 -1.755)
@@ -137,32 +125,33 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "07bd3afb-2d27-4c53-a2d2-1467fff1d32a")
+		(uuid "197479a7-0295-41ea-9a8f-03754996582d")
 	)
 	(pad "1" smd rect
 		(at -1.155 1.45)
 		(size 1.09 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "40c8e736-8ef6-4c12-bc6c-cc11cef6c2c6")
+		(uuid "ec4dfffe-9d12-438e-9cc2-fcfa7ced2044")
 	)
 	(pad "2" smd rect
 		(at 0 -1.45)
 		(size 1.6 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "7646a868-3086-49cb-9fce-7e44fbb67bec")
+		(uuid "56d2a948-c67d-4def-be6d-6caeeb1b4046")
 	)
 	(pad "3" smd rect
 		(at 1.155 1.45)
 		(size 1.09 1.6)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "adebe904-16fa-4fa7-a8f8-157a53a0f60a")
+		(uuid "69993d24-277b-47da-be67-a415dad3513b")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Resistor.3dshapes/Trimpot_SMD_3.0x3.0mm.step"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Resistor.3dshapes/Potentiometer_SMD_3.0x3.0mm.step"
 		(offset
 			(xyz 0 0 2)
 		)

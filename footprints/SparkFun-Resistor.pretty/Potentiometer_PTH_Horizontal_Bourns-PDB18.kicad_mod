@@ -1,15 +1,15 @@
-(footprint "Bourns-PDB18"
-	(version 20240108)
+(footprint "Potentiometer_PTH_Horizontal_Bourns-PDB18"
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "https://www.bourns.com/docs/Product-Datasheets/PDB18.pdf ")
-	(tags "SparkFun https://www.ttelectronics.com/TTElectronics/media/ProductFiles/Datasheet/P160.pdf")
+	(tags "SparkFun Trimpot Potentiometer")
 	(property "Reference" "REF**"
 		(at 0 -8.8 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "a1be2cc8-e9dc-4f5c-90ba-f2f3dc8f69c3")
+		(uuid "afafd157-3119-47fc-8812-7de3a66c83fb")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -21,24 +21,11 @@
 		(at 0 9 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "b85a9769-2fc7-47ea-b9ca-294b51abec7b")
+		(uuid "a352203b-1e5a-4fe7-b9cd-5a0bae8c590c")
 		(effects
 			(font
 				(size 0.5 0.5)
 				(thickness 0.1)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "ad6cd613-3c42-4423-acaf-d6891c0ef4dd")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
 			)
 		)
 	)
@@ -47,7 +34,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9aee6c3e-cfe7-4aa0-b0d4-e2eed973edbc")
+		(uuid "5d4ecc69-682c-4e8e-b52a-952972b61781")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +47,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "81c8ea21-9b76-4b4f-aa4e-33eea341a045")
+		(uuid "3c7f718d-bc63-4da3-896d-f59f27057f13")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -69,6 +56,7 @@
 		)
 	)
 	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect
 		(start -5.8 -8.4)
 		(end 4 8.4)
@@ -76,9 +64,9 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
-		(uuid "aff58308-d29a-402a-a88c-6e1359585870")
+		(uuid "5e569af8-51da-4169-87f5-87530397ccb7")
 	)
 	(fp_poly
 		(pts
@@ -89,9 +77,9 @@
 			(width 0.05)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "1c4e841e-4e12-437d-8352-736dc44c8560")
+		(uuid "bf92fe06-f358-4bde-afc0-d8fa53e97866")
 	)
 	(fp_rect
 		(start -5.65 -8.3)
@@ -100,9 +88,9 @@
 			(width 0.1)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "959e1628-45ad-43c0-8ebb-c0763c6b1955")
+		(uuid "0a36ae19-77e0-416f-bf82-a02ef7ecbfd9")
 	)
 	(fp_poly
 		(pts
@@ -112,9 +100,9 @@
 			(width 0.1)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.Fab")
-		(uuid "45607463-1ad6-4a9a-8533-dea1791c1c23")
+		(uuid "1619c14c-70f8-4cee-ac4e-b4b61a818986")
 	)
 	(pad "1" thru_hole circle
 		(at 0 5)
@@ -123,7 +111,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "6521d9c2-8d7f-49be-bd93-f902c35cf9d5")
+		(uuid "9d55b085-ef63-4099-b383-62451fde302a")
 	)
 	(pad "2" thru_hole circle
 		(at 0 0)
@@ -132,7 +120,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "c7f8805c-9781-4ee2-9564-bbfd404a73a3")
+		(uuid "308a3f1b-3b07-42c6-8ec7-c48a9bd2a31b")
 	)
 	(pad "3" thru_hole circle
 		(at 0 -5)
@@ -141,6 +129,7 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(thermal_bridge_angle 0)
-		(uuid "8a638e23-63b1-47d6-a29c-b54ab07d35b3")
+		(uuid "fa8c744f-ec7a-41d4-a4b7-2bccfad4b0a5")
 	)
+	(embedded_fonts no)
 )
