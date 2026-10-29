@@ -23321,8 +23321,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
 			(at 0 15.24 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23331,6 +23335,8 @@
 		)
 		(property "Value" "Conn_01x12_FPC_0.5mm_Vertical"
 			(at 0.254 -18.542 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23339,56 +23345,68 @@
 		)
 		(property "Footprint" "SparkFun-Connector:FPC_1x12_P0.5mm_Vertical_LowerContact"
 			(at 0.254 -21.082 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://4uconnector.com/online/object/4udrawing/14682.pdf"
 			(at 0.254 -23.622 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Vertical FPC connector"
 			(at 0.254 -26.162 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "PROD_ID" "CONN"
 			(at -0.762 -28.448 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "SparkFun connector"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_fp_filters" "Connector*:*_1x??_*"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "Conn_01x12_FPC_P0.5mm_Vertical_LowerContact_1_1"
@@ -33260,8 +33278,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "J"
 			(at 0 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33270,6 +33292,8 @@
 		)
 		(property "Value" "Conn_01x18_FPC_0.5mm"
 			(at 0 -21.336 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33278,56 +33302,68 @@
 		)
 		(property "Footprint" "SparkFun-Connector:FPC_1x18_P0.5mm_Horizontal_BottomContact_Hinge"
 			(at 0 -23.876 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://4uconnector.com/online/object/4udrawing/06656.pdf"
 			(at 0 -26.416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "FPC connector with hinged (easy on) lever"
 			(at 0 -28.956 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "PROD_ID" "CONN"
 			(at -1.016 -31.242 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "SparkFun connector"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_fp_filters" "Connector*:*_1x??_*"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "Conn_01x18_FPC_P0.5mm_Horizontal_BottomContact_Hinge_1_1"
@@ -59212,8 +59248,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 0 0 0)
+		(property "Description" "9 pin serial male connector"
+			(at 0.254 -24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -59360,7 +59396,7 @@
 				)
 			)
 			(pin passive line
-				(at -6.35 5.08 0)
+				(at -6.35 -5.08 0)
 				(length 3.81)
 				(name "1"
 					(effects
@@ -59378,7 +59414,7 @@
 				)
 			)
 			(pin passive line
-				(at -6.35 2.54 0)
+				(at -6.35 -2.54 0)
 				(length 3.81)
 				(name "2"
 					(effects
@@ -59414,7 +59450,7 @@
 				)
 			)
 			(pin passive line
-				(at -6.35 -2.54 0)
+				(at -6.35 2.54 0)
 				(length 3.81)
 				(name "4"
 					(effects
@@ -59432,7 +59468,7 @@
 				)
 			)
 			(pin passive line
-				(at -6.35 -5.08 0)
+				(at -6.35 5.08 0)
 				(length 3.81)
 				(name "5"
 					(effects
@@ -59450,7 +59486,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 3.81 180)
+				(at 6.35 -3.81 180)
 				(length 3.81)
 				(name "6"
 					(effects
@@ -59468,7 +59504,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 1.27 180)
+				(at 6.35 -1.27 180)
 				(length 3.81)
 				(name "7"
 					(effects
@@ -59486,7 +59522,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 -1.27 180)
+				(at 6.35 1.27 180)
 				(length 3.81)
 				(name "8"
 					(effects
@@ -59504,7 +59540,7 @@
 				)
 			)
 			(pin passive line
-				(at 6.35 -3.81 180)
+				(at 6.35 3.81 180)
 				(length 3.81)
 				(name "9"
 					(effects
