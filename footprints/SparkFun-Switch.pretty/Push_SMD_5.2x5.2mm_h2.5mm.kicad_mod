@@ -1,14 +1,14 @@
 (footprint "Push_SMD_5.2x5.2mm_h2.5mm"
-	(version 20240108)
+	(version 20260206)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(layer "F.Cu")
 	(descr "https://www.sparkfun.com/datasheets/Components/Buttons/SMD-Button.pdf")
 	(tags "SparkFun Momentary Switch (Pushbutton)")
 	(property "Reference" "Ref**"
 		(at 0 -3.048 0)
 		(layer "F.Fab")
-		(uuid "a7568798-7d74-4acd-8e3f-dacf0834fdb4")
+		(uuid "e0aefa48-ebea-48eb-a04e-1d38c9adf6ad")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -21,7 +21,7 @@
 	(property "Value" "Val**"
 		(at 0 3.048 0)
 		(layer "F.Fab")
-		(uuid "b5269404-30b1-4f07-b1dd-f4305540f881")
+		(uuid "fa584c4c-95ba-4246-93e8-156e388c37fd")
 		(effects
 			(font
 				(size 0.5 0.5)
@@ -31,25 +31,12 @@
 			(justify top)
 		)
 	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "04088bee-0147-489c-8533-38e6fb09fa0d")
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.15)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c0078125-9ae4-459b-a080-655d7b8b2d75")
+		(uuid "8ac7ea88-3424-4c05-8e56-ca01b3584b5d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -62,7 +49,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "a5f02eb3-acfa-41e5-8f99-13daa77bd168")
+		(uuid "334d2b5a-0c05-448c-a964-4b9cd6e8e96d")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -71,6 +58,7 @@
 		)
 	)
 	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
 		(start -2.54 1.24)
 		(end -2.54 -1.27)
@@ -79,7 +67,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "a8b4f1f8-1f83-419a-9f9c-b452ab234dbf")
+		(uuid "eef27282-fb93-4f01-9269-1766c9b8c134")
 	)
 	(fp_line
 		(start -1.54 -2.54)
@@ -89,7 +77,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "6a7f3ff0-395e-4063-ac7e-4c1bfea66e90")
+		(uuid "2bbd9f77-33fe-4a4d-b5f1-557c660ae2f0")
 	)
 	(fp_line
 		(start 1.54 2.54)
@@ -99,7 +87,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0e7b5a9e-0482-4557-8d3d-a7398d276453")
+		(uuid "75b6cf11-86c5-4941-9f0f-b3d1a16e32ca")
 	)
 	(fp_line
 		(start 2.54 -1.24)
@@ -109,7 +97,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "aa1e6323-0c3d-46f8-809f-8cfa70094007")
+		(uuid "5f82722d-b073-4fa0-95e5-e1d0afeccb8a")
 	)
 	(fp_circle
 		(center 0 0)
@@ -118,9 +106,9 @@
 			(width 0.2032)
 			(type solid)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.SilkS")
-		(uuid "63a08aa2-26c7-40c8-b630-6203d4dfae8a")
+		(uuid "17fcc5da-6b72-4b6f-a1e9-eb93bbbe8189")
 	)
 	(fp_rect
 		(start 3.7 -2.7)
@@ -129,9 +117,9 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
-		(uuid "16b4efef-041e-4167-872b-0f700f0c18c9")
+		(uuid "00b6a516-921f-46b8-8059-504c092b76c5")
 	)
 	(fp_line
 		(start -2.54 -1.54)
@@ -141,7 +129,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4366cc5b-6ab6-4d81-aa27-8e37e042e6ca")
+		(uuid "0bbd25cd-7b04-4b4c-b9d5-e27bee9ba4cc")
 	)
 	(fp_line
 		(start -1.54 2.54)
@@ -151,7 +139,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "911711f5-cce4-4953-967d-97c24e4cb58c")
+		(uuid "01aea7a3-7d8a-4edb-b170-4555d25c4eb2")
 	)
 	(fp_line
 		(start 1.54 -2.54)
@@ -161,7 +149,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c7da6bd0-b9d8-43fe-a520-4157b205c830")
+		(uuid "257d8d10-5f48-44fa-9bb3-ec4e11e2531a")
 	)
 	(fp_line
 		(start 1.905 -1.27)
@@ -171,7 +159,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "e22757b7-b592-4cb7-9382-8d51a2e5942d")
+		(uuid "7b0ffaf1-813f-4ff5-bc82-6c57e9ef2efc")
 	)
 	(fp_line
 		(start 1.905 -0.445)
@@ -181,7 +169,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "fd307468-a099-4c09-93e3-5d4de92e0b43")
+		(uuid "36f5dfce-fb17-4a59-a9fa-124eca95d20d")
 	)
 	(fp_line
 		(start 1.905 0.23)
@@ -191,7 +179,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6d8b84bf-2ae4-4b31-92da-3f8b206c5ebf")
+		(uuid "5fc488d5-4ff8-460d-ae2c-64c53530bf11")
 	)
 	(fp_line
 		(start 2.54 1.54)
@@ -201,37 +189,38 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c9bb6dab-105a-4482-b22c-453094f3ccd5")
+		(uuid "d545fbff-ff69-4047-8f51-6be39a1f3a3e")
 	)
 	(pad "1" smd rect
 		(at -2.794 -1.905 90)
 		(size 0.762 1.524)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "5b025305-2bdd-4481-b177-044e4383c16c")
+		(uuid "33f2d094-be02-40a6-bd97-b9b5e766dbc4")
 	)
 	(pad "1" smd rect
 		(at 2.794 -1.905 90)
 		(size 0.762 1.524)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "5b703ba0-c779-4d56-86eb-baf4ed56f382")
+		(uuid "55e79c21-7171-410d-a7c4-06a7e93387fc")
 	)
 	(pad "2" smd rect
 		(at -2.794 1.905 90)
 		(size 0.762 1.524)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "87f2e465-ab4d-442d-ab35-8e3f94f7f1e6")
+		(uuid "e5f3fdd2-768f-4e6d-82b4-e20368995982")
 	)
 	(pad "2" smd rect
 		(at 2.794 1.905 90)
 		(size 0.762 1.524)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(thermal_bridge_angle 0)
-		(uuid "2da6da5c-2bc6-455d-bd3b-4a7700ad09bd")
+		(uuid "8cf793df-3044-4386-9fe9-6e86f7ce8f48")
 	)
-	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/Tactile_Switch_5.2x5.2mm_h2.5mm.step"
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/Push_SMD_5.2x5.2mm_h2.5mm.step"
 		(offset
 			(xyz 0 0 0)
 		)
