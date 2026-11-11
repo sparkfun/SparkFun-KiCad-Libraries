@@ -13732,8 +13732,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at -10.414 70.866 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13743,6 +13747,8 @@
 		)
 		(property "Value" "STM32G030F6P6"
 			(at 1.778 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13752,56 +13758,68 @@
 		)
 		(property "Footprint" "SparkFun-Semiconductor-Standard:TSSOP-20_4.4x6.5mm_P0.65mm"
 			(at 0 26.416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g030c6.pdf"
 			(at 0 28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "STM32 32-bit MCU"
 			(at -0.508 24.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "PROD_ID" "IC"
+		(property "PROD_ID" "IC-29546"
 			(at -0.254 21.844 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_keywords" "SparkFun Arm Cortex-M0+ STM32G030"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "ki_fp_filters" "LQFP*14x14mm*P0.5mm*"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(symbol "STM32G030F6P6_0_1"
@@ -13818,63 +13836,24 @@
 			)
 		)
 		(symbol "STM32G030F6P6_1_1"
-			(pin input line
-				(at -12.7 67.31 0)
+			(pin bidirectional line
+				(at 12.7 36.83 180)
 				(length 2.54)
-				(name "NRST"
+				(name "PB7"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "6"
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-			)
-			(pin input line
-				(at -12.7 57.15 0)
-				(length 2.54)
-				(name "SWCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "19"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "BOOT0" input line)
-				(alternate "PA14" bidirectional line)
-				(alternate "PA15" bidirectional line)
-			)
-			(pin input line
-				(at -12.7 54.61 0)
-				(length 2.54)
-				(name "SWDIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "18"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "PA13" bidirectional line)
+				(alternate "PB8" bidirectional line)
 			)
 			(pin passive line
 				(at -12.7 46.99 0)
@@ -13944,6 +13923,24 @@
 					)
 				)
 				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -12.7 67.31 0)
+				(length 2.54)
+				(name "NRST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -14096,6 +14093,27 @@
 				)
 			)
 			(pin bidirectional line
+				(at 12.7 41.91 180)
+				(length 2.54)
+				(name "PB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "PA8" bidirectional line)
+				(alternate "PB1" bidirectional line)
+				(alternate "PB2" bidirectional line)
+			)
+			(pin bidirectional line
 				(at 12.7 46.99 180)
 				(length 2.54)
 				(name "PA11"
@@ -14133,26 +14151,45 @@
 				)
 				(alternate "PA10" bidirectional line)
 			)
-			(pin bidirectional line
-				(at 12.7 41.91 180)
+			(pin input line
+				(at -12.7 54.61 0)
 				(length 2.54)
-				(name "PB0"
+				(name "SWDIO"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "15"
+				(number "18"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(alternate "PA8" bidirectional line)
-				(alternate "PB1" bidirectional line)
-				(alternate "PB2" bidirectional line)
+				(alternate "PA13" bidirectional line)
+			)
+			(pin input line
+				(at -12.7 57.15 0)
+				(length 2.54)
+				(name "SWCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "BOOT0" input line)
+				(alternate "PA14" bidirectional line)
+				(alternate "PA15" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 12.7 39.37 180)
@@ -14174,25 +14211,6 @@
 				(alternate "PB4" bidirectional line)
 				(alternate "PB5" bidirectional line)
 				(alternate "PB6" bidirectional line)
-			)
-			(pin bidirectional line
-				(at 12.7 36.83 180)
-				(length 2.54)
-				(name "PB7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(alternate "PB8" bidirectional line)
 			)
 		)
 		(embedded_fonts no)
