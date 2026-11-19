@@ -1,0 +1,151 @@
+(footprint "EIA-3216"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Tantalum Capacitor SMD Kemet-A (3216-18 Metric), IPC-7352 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf)")
+	(tags "SparkFun capacitor tantalum")
+	(property "Reference" "REF**"
+		(at 0 -1.75 0)
+		(layer "F.Fab")
+		(uuid "657f5342-a3b1-4232-be6d-0f108da62650")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "EIA-3216"
+		(at 0 1.75 0)
+		(layer "F.Fab")
+		(uuid "fe231604-2e27-4b22-99eb-b6f28e9036f8")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4aa8bfcb-ef05-4226-b94e-f8d4ac4be7bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96691e08-7705-41bd-9b32-8fd4c9e31342")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.32 0.762)
+		(end -2.32 -0.762)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "114e392c-40ce-4c80-ab91-470f92c92887")
+	)
+	(fp_rect
+		(start -2.31 -1.05)
+		(end 2.31 1.05)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f8d1586b-f498-4466-8508-141db3942e15")
+	)
+	(fp_line
+		(start -1.6 -0.4)
+		(end -1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "028e7d8a-dbb5-485f-a3a2-4a57ac0a081d")
+	)
+	(fp_line
+		(start -1.6 0.8)
+		(end 1.6 0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "11689502-9f89-459c-841b-6c236a6d450c")
+	)
+	(fp_line
+		(start -1.2 -0.8)
+		(end -1.6 -0.4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "305d2b46-8f15-44e0-8f2a-4bb98c4f41a2")
+	)
+	(fp_line
+		(start 1.6 -0.8)
+		(end -1.2 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d0cbe424-67e3-43ac-87e9-3c6d07b2ed38")
+	)
+	(fp_line
+		(start 1.6 0.8)
+		(end 1.6 -0.8)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5cfb0f14-edca-4798-ba95-e31f3c2b4bfb")
+	)
+	(pad "1" smd roundrect
+		(at -1.3525 0)
+		(size 1.415 1.39)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.179856)
+		(uuid "68b9a98b-ac4e-4e3c-8e4e-63c013d5c6d1")
+	)
+	(pad "2" smd roundrect
+		(at 1.3525 0)
+		(size 1.415 1.39)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.179856)
+		(uuid "33d20100-cc0b-4d83-9572-08e192d56567")
+	)
+	(embedded_fonts no)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Capacitor.3dshapes/CP_EIA-3216-18_Kemet-A.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
