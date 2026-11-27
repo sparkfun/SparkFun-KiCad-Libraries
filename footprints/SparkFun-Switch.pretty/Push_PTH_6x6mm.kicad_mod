@@ -1,0 +1,218 @@
+(footprint "Push_PTH_6x6mm"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "6x6 mm through-hole tactile switch, 6.5 x 4.5 mm pin grid (SparkFun COM-00097). Pads 1 and 2 are internally bussed pairs. https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
+	(tags "SparkFun switch momentary tactile pushbutton 6mm PTH")
+	(property "Reference" "Ref**"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "0b143310-e99f-5e93-9276-a9febed0be52")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Val**"
+		(at 0 3.85 0)
+		(layer "F.Fab")
+		(uuid "f9959d15-16d7-5c48-b409-bd5029ffba6c")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+			(justify top)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cfbe1951-6c9a-56a7-8c47-d18932706250")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.omron.com/ecb/products/pdf/en-b3f.pdf"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f3eb737b-7a72-5b85-a851-3ff600565e1b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "6x6 mm PTH tactile switch"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a0375c82-e1e3-5439-bbdc-5c6904bf6555")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -3.1 -1)
+		(end -3.1 1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "11fb0e2e-c9c5-5dd0-b827-bc327938f4d5")
+	)
+	(fp_line
+		(start -1.9 -3.1)
+		(end 1.9 -3.1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e54c843-9ad6-5e12-8160-ea62c72557af")
+	)
+	(fp_line
+		(start 3.1 -1)
+		(end 3.1 1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c27dfe92-3454-53e9-b00a-d29d54e4599a")
+	)
+	(fp_line
+		(start -1.9 3.1)
+		(end 1.9 3.1)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b1f207be-2962-5503-8e1a-02b944e37f89")
+	)
+	(fp_rect
+		(start -2.15 -1.35)
+		(end 2.15 1.35)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b1e5a64d-d898-5f19-83d7-c896095687df")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 0.85 0)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "1d2bdd80-e7e4-5bf6-abad-481c5d01856e")
+	)
+	(fp_rect
+		(start -4.6 -3.6)
+		(end 4.6 3.6)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d1ab7500-ddb7-5c47-84e6-a1d260ca9006")
+	)
+	(fp_rect
+		(start -3 -3)
+		(end 3 3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "7c8a3bc8-e5b9-5b25-ac8e-0f8349177d8b")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.75 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "661ea5f9-477e-54e2-a955-e50417351750")
+	)
+	(fp_circle
+		(center -4.4 -3.4)
+		(end -4.3 -3.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "267c1fbc-cad2-5fe4-84d4-791856dc10e2")
+	)
+	(pad "1" thru_hole circle
+		(at -3.251 -2.25)
+		(size 2.032 2.032)
+		(drill 1.1176)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "98133ae4-3cbf-5806-af61-55776333a4ec")
+	)
+	(pad "1" thru_hole circle
+		(at 3.251 -2.25)
+		(size 2.032 2.032)
+		(drill 1.1176)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "81f357f8-4290-5d0e-a225-6753d68d273f")
+	)
+	(pad "2" thru_hole circle
+		(at -3.251 2.25)
+		(size 2.032 2.032)
+		(drill 1.1176)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4b56d8ca-91b3-51f3-b458-c46ce046e91a")
+	)
+	(pad "2" thru_hole circle
+		(at 3.251 2.25)
+		(size 2.032 2.032)
+		(drill 1.1176)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1f3b289c-ebcf-597c-bfb7-e8485740b104")
+	)
+	(model "${SPARKFUN_KICAD_LIBRARY}/3dmodels/Switch.3dshapes/SW_PUSH_6mm_H5mm.step"
+		(offset
+			(xyz -3.25 2.25 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(embedded_fonts no)
+)
